@@ -1,0 +1,1754 @@
+[
+ {
+  "real_inspiration": "Chapel Hill, NC",
+  "parody_name": "Cathedral Mount",
+  "type": "town",
+  "district": "all"
+ },
+ {
+  "real_inspiration": "North Carolina",
+  "parody_name": "State of Pamlico",
+  "type": "state",
+  "district": "all"
+ },
+ {
+  "real_inspiration": "University of North Carolina at Chapel Hill",
+  "parody_name": "Old North State University (ONSU)",
+  "type": "university",
+  "district": "campus"
+ },
+ {
+  "real_inspiration": "Tar Heels (team nickname)",
+  "parody_name": "Pitch Soles",
+  "type": "team nickname",
+  "district": "campus"
+ },
+ {
+  "real_inspiration": "Rameses (mascot)",
+  "parody_name": "the Billram",
+  "type": "mascot (original ram-goat design)",
+  "district": "campus"
+ },
+ {
+  "real_inspiration": "Duke University",
+  "parody_name": "Earl University",
+  "type": "rival university",
+  "district": "outer_ring"
+ },
+ {
+  "real_inspiration": "Durham, NC",
+  "parody_name": "Steer City",
+  "type": "rival city",
+  "district": "outer_ring"
+ },
+ {
+  "real_inspiration": "Carrboro, NC",
+  "parody_name": "Carrburg",
+  "type": "town",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "Gimghoul neighborhood",
+  "parody_name": "Toadstool Hill",
+  "type": "neighborhood",
+  "district": "toadstool"
+ },
+ {
+  "real_inspiration": "Battle Park",
+  "parody_name": "Battle Ravine",
+  "type": "park",
+  "district": "battle_ravine"
+ },
+ {
+  "real_inspiration": "The Pit",
+  "parody_name": "The Quarry",
+  "type": "plaza",
+  "district": "quarry"
+ },
+ {
+  "real_inspiration": "McCorkle Place",
+  "parody_name": "ONSU North Quad",
+  "type": "quad",
+  "district": "north_quad"
+ },
+ {
+  "real_inspiration": "Polk Place",
+  "parody_name": "Founders' Quad",
+  "type": "quad",
+  "district": "founders_quad"
+ },
+ {
+  "real_inspiration": "Franklin St",
+  "parody_name": "Hamilton St",
+  "type": "street",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "Merritt Mill Rd",
+  "parody_name": "Miller's Run Rd",
+  "type": "street",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "Manning Dr",
+  "parody_name": "Manor Dr",
+  "type": "street",
+  "district": "carillon_south"
+ },
+ {
+  "real_inspiration": "Raleigh St / Raleigh Rd",
+  "parody_name": "Raleigh Pike",
+  "type": "street",
+  "district": "campus"
+ },
+ {
+  "real_inspiration": "Top of the Hill (intersection)",
+  "parody_name": "The Summit",
+  "type": "intersection",
+  "district": "summit"
+ },
+ {
+  "real_inspiration": "Old Well",
+  "parody_name": "The Old Cistern",
+  "type": "landmark",
+  "district": "north_quad"
+ },
+ {
+  "real_inspiration": "Morehead-Patterson Bell Tower",
+  "parody_name": "The Carillon Spire",
+  "type": "landmark",
+  "district": "carillon_south"
+ },
+ {
+  "real_inspiration": "Hill Hall / historic campus library",
+  "parody_name": "Wilberforce Library",
+  "type": "landmark",
+  "district": "north_quad"
+ },
+ {
+  "real_inspiration": "Davis Library",
+  "parody_name": "Davies Stacks",
+  "type": "landmark",
+  "district": "quarry"
+ },
+ {
+  "real_inspiration": "South Building",
+  "parody_name": "Founders' Hall",
+  "type": "landmark",
+  "district": "founders_quad"
+ },
+ {
+  "real_inspiration": "Old East / Old West",
+  "parody_name": "Elder East / Elder West",
+  "type": "landmark",
+  "district": "north_quad"
+ },
+ {
+  "real_inspiration": "Morehead Planetarium",
+  "parody_name": "Moorhouse Observatory",
+  "type": "landmark",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "Wilson Library",
+  "parody_name": "Ashgrove Library",
+  "type": "landmark",
+  "district": "founders_quad"
+ },
+ {
+  "real_inspiration": "Carolina Union / Lenoir Hall",
+  "parody_name": "Student Union & Dining Hall",
+  "type": "landmark",
+  "district": "quarry"
+ },
+ {
+  "real_inspiration": "Kenan Memorial Stadium",
+  "parody_name": "Benefactor Memorial Stadium",
+  "type": "landmark",
+  "district": "carillon_south"
+ },
+ {
+  "real_inspiration": "Dean E. Smith Center",
+  "parody_name": "The Coach's Dome",
+  "type": "landmark",
+  "district": "carillon_south"
+ },
+ {
+  "real_inspiration": "The Carolina Inn",
+  "parody_name": "Pamlico Inn",
+  "type": "landmark",
+  "district": "cameron_heights"
+ },
+ {
+  "real_inspiration": "UNC Hospitals",
+  "parody_name": "ONSU Medical Center",
+  "type": "landmark",
+  "district": "medical"
+ },
+ {
+  "real_inspiration": "Gimghoul Castle",
+  "parody_name": "Ghoulgrave Keep",
+  "type": "landmark",
+  "district": "toadstool"
+ },
+ {
+  "real_inspiration": "Forest Theatre",
+  "parody_name": "Grove Amphitheatre",
+  "type": "landmark",
+  "district": "battle_ravine"
+ },
+ {
+  "real_inspiration": "Carr Mill",
+  "parody_name": "Loomhouse Mill",
+  "type": "landmark",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "Sutton's Drug Store",
+  "parody_name": "Sutter's Pharmacy & Grill",
+  "type": "diner",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "Top of the Hill",
+  "parody_name": "Top of the Mount",
+  "type": "brewpub",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "Varsity Theatre",
+  "parody_name": "Junior Varsity Cinema",
+  "type": "cinema",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "Carolina Coffee Shop",
+  "parody_name": "Pamlico Coffee House",
+  "type": "cafe",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "campus spirit shops",
+  "parody_name": "Old North Outfitters",
+  "type": "retail",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "Bull’s Head Bookshop",
+  "parody_name": "Tarry Page Books",
+  "type": "bookstore",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "downtown slice shops",
+  "parody_name": "Mount Pizza Co.",
+  "type": "pizza",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "He's Not Here",
+  "parody_name": "The Grinding Stone",
+  "type": "bar",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "Ye Olde Waffle Shoppe",
+  "parody_name": "Ye Olde Waffle Hutch",
+  "type": "breakfast",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "late-night noodle counters",
+  "parody_name": "Late Night Lo Mein",
+  "type": "takeout",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "Schoolkids Records",
+  "parody_name": "Hamilton Records",
+  "type": "records",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "corner banks of Franklin St",
+  "parody_name": "Bluebird Savings Bank",
+  "type": "bank",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "upstairs dental offices",
+  "parody_name": "Jolly Molar Dental",
+  "type": "dental",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "Chapel Hill hardware stores",
+  "parody_name": "Hilltop Hardware",
+  "type": "hardware",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "Franklin St boutiques",
+  "parody_name": "Linen & Lamb",
+  "type": "clothing",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "Cosmic Cantina",
+  "parody_name": "Cosmic Carnitas",
+  "type": "tacos",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "upstairs test-prep offices",
+  "parody_name": "Cram Fortress Tutoring",
+  "type": "tutoring",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "downtown tattoo parlors",
+  "parody_name": "Pitch Soles Tattoo",
+  "type": "tattoo",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Pine Cone Lamp Supply",
+  "type": "retail",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Goatfoot Outfitters",
+  "type": "clothing",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Night Owl Tavern",
+  "type": "bar",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Ridgeline Anvil Print Shop",
+  "type": "gallery",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Sweet Gum Taco Counter",
+  "type": "tacos",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Oak Leaf Biscuit Florist",
+  "type": "florist",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Pine Cone Book Nook",
+  "type": "bookstore",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Dogwood Lantern Café",
+  "type": "cafe",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Hilltop Lamp Coffee Bar",
+  "type": "cafe",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Crooked Kettle Optics",
+  "type": "optics",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Wandering Gallery",
+  "type": "gallery",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Corner Fiddle Saloon",
+  "type": "bar",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Cardinal Fiddle Supply",
+  "type": "retail",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Summit Taco Counter",
+  "type": "tacos",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Brickyard Fiddle Mercantile",
+  "type": "retail",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Brickyard Supply",
+  "type": "retail",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Twin Pines Thimble Salon",
+  "type": "salon",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Crooked Goods",
+  "type": "retail",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Ridgeline Lantern Outfitters",
+  "type": "clothing",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Pine Cone Ledger Print Shop",
+  "type": "gallery",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Twin Pines Compass Mercantile",
+  "type": "retail",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Twin Pines Hearth Optics",
+  "type": "optics",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Silver Spoon Wok Shop",
+  "type": "takeout",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Tin Roof Noodle Bar",
+  "type": "takeout",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Twin Pines Florist",
+  "type": "florist",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Twin Pines Threads",
+  "type": "clothing",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Red Clay Bake Shop",
+  "type": "bakery",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Goatfoot Pennant Threads",
+  "type": "clothing",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Silver Spoon Salon",
+  "type": "salon",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Quarry Taquería",
+  "type": "tacos",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Copper Gallery",
+  "type": "gallery",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Cardinal Sandwich Co.",
+  "type": "deli",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Twin Pines Compass Salon",
+  "type": "salon",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Corner Lounge",
+  "type": "bar",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Red Clay Noodle Bar",
+  "type": "takeout",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Sweet Gum Barber Shop",
+  "type": "salon",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Sweet Gum Haberdashery",
+  "type": "clothing",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Goatfoot Thimble Goods",
+  "type": "retail",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Wandering Bake Shop",
+  "type": "bakery",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Ridgeline Outfitters",
+  "type": "clothing",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Hilltop Bakery",
+  "type": "bakery",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Night Owl Fiddle Optics",
+  "type": "optics",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Cardinal Wok Shop",
+  "type": "takeout",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Summit Satchel Lounge",
+  "type": "bar",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Goatfoot Ledger Florist",
+  "type": "florist",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Wandering Café",
+  "type": "cafe",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Quarry Pennant Roasters",
+  "type": "cafe",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Red Clay Pennant Café",
+  "type": "cafe",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Twin Pines Fiddle Lounge",
+  "type": "bar",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Billram Hearth Print Shop",
+  "type": "gallery",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Gilded Supply",
+  "type": "retail",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Summit Anvil Coffee Bar",
+  "type": "cafe",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Oak Leaf Anvil Supply",
+  "type": "retail",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Bluebell Lantern Outfitters",
+  "type": "clothing",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Silver Spoon Saloon",
+  "type": "bar",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Red Clay Barber Shop",
+  "type": "salon",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Sweet Gum Bakery",
+  "type": "bakery",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Copper Lounge",
+  "type": "bar",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Wandering Ledger Book Nook",
+  "type": "bookstore",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Cardinal Thimble Taquería",
+  "type": "tacos",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Sweet Gum Lamp Print Shop",
+  "type": "gallery",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Pine Cone Barrel Salon",
+  "type": "salon",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Dogwood Acorn Mercantile",
+  "type": "retail",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Wandering Satchel Sandwich Co.",
+  "type": "deli",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Red Clay Pizza",
+  "type": "pizza",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Old Cistern Roasters",
+  "type": "cafe",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Twin Pines Teacup Bake Shop",
+  "type": "bakery",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Copper Teacup Pizza",
+  "type": "pizza",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Copper Saddle Deli",
+  "type": "deli",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Silver Spoon Teacup Supply",
+  "type": "retail",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Old Cistern Compass Outfitters",
+  "type": "clothing",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Dogwood Sparrow Optics",
+  "type": "optics",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Wandering Kettle Tavern",
+  "type": "bar",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Red Clay Spoke Tavern",
+  "type": "bar",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Hilltop Salon",
+  "type": "salon",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Bluebell Acorn Mercantile",
+  "type": "retail",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Goatfoot Lantern Deli",
+  "type": "deli",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Dogwood Ladder Books",
+  "type": "bookstore",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Pine Cone Compass Gallery",
+  "type": "gallery",
+  "district": "hamilton_strip"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Sweet Gum Thimble Florist",
+  "type": "florist",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Corner Quill Goods",
+  "type": "retail",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Night Owl Roasters",
+  "type": "cafe",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Tin Roof Roasters",
+  "type": "cafe",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Brickyard Teacup Roasters",
+  "type": "cafe",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Summit Barrel Goods",
+  "type": "retail",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Gilded Bakery",
+  "type": "takeout",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Ridgeline Ladder Barber Shop",
+  "type": "takeout",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Night Owl Deli",
+  "type": "deli",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Cardinal Lamp Outfitters",
+  "type": "clothing",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Quarry Fiddle Saloon",
+  "type": "takeout",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Silver Spoon Outfitters",
+  "type": "clothing",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Crooked Hearth Goods",
+  "type": "retail",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Lantern Satchel Books",
+  "type": "bookstore",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Night Owl Biscuit Roasters",
+  "type": "takeout",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Old Cistern Print Shop",
+  "type": "takeout",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Hilltop Barrel Goods",
+  "type": "retail",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Quarry Ledger Haberdashery",
+  "type": "takeout",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Silver Spoon Ledger Salon",
+  "type": "salon",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Sweet Gum Saddle Salon",
+  "type": "salon",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Sweet Gum Compass Café",
+  "type": "takeout",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Twin Pines Spoke Sandwich Co.",
+  "type": "deli",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Night Owl Ladder Optics",
+  "type": "optics",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Hilltop Florist",
+  "type": "florist",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Twin Pines Thimble Lounge",
+  "type": "bar",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Twin Pines Anvil Bake Shop",
+  "type": "bakery",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Quarry Lantern Taquería",
+  "type": "takeout",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Ridgeline Spoke Gallery",
+  "type": "gallery",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Quarry Compass Wok Shop",
+  "type": "takeout",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Copper Gallery",
+  "type": "gallery",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Old Cistern Anvil Café",
+  "type": "cafe",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Copper Satchel Barber Shop",
+  "type": "takeout",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Goatfoot Lamp Florist",
+  "type": "takeout",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Gilded Café",
+  "type": "cafe",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Lantern Lamp Outfitters",
+  "type": "clothing",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Silver Spoon Acorn Bakery",
+  "type": "bakery",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Twin Pines Mercantile",
+  "type": "retail",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Twin Pines Bake Shop",
+  "type": "takeout",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Brickyard Taquería",
+  "type": "tacos",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Twin Pines Acorn Optics",
+  "type": "optics",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Sweet Gum Haberdashery",
+  "type": "takeout",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Ridgeline Hearth Goods",
+  "type": "retail",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Copper Roasters",
+  "type": "cafe",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Hilltop Haberdashery",
+  "type": "pizza",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Red Clay Saddle Coffee Bar",
+  "type": "cafe",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Night Owl Ledger Coffee Bar",
+  "type": "takeout",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Old Cistern Coffee Bar",
+  "type": "cafe",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Crooked Saddle Threads",
+  "type": "clothing",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Summit Teacup Books",
+  "type": "tacos",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Corner Pennant Coffee Bar",
+  "type": "cafe",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Old Cistern Bakery",
+  "type": "bakery",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Sweet Gum Book Nook",
+  "type": "bookstore",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Bluebell Anvil Roasters",
+  "type": "takeout",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Cardinal Teacup Roasters",
+  "type": "cafe",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Hilltop Outfitters",
+  "type": "clothing",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Dogwood Barrel Taco Counter",
+  "type": "tacos",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Sweet Gum Acorn Café",
+  "type": "cafe",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Cardinal Print Shop",
+  "type": "gallery",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Goatfoot Lounge",
+  "type": "bar",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Sweet Gum Books",
+  "type": "takeout",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Copper Haberdashery",
+  "type": "pizza",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Cardinal Satchel Pizza",
+  "type": "pizza",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Ridgeline Kettle Print Shop",
+  "type": "tacos",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Wandering Biscuit Threads",
+  "type": "clothing",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Old Cistern Fiddle Gallery",
+  "type": "tacos",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Oak Leaf Fiddle Salon",
+  "type": "pizza",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Crooked Hearth Threads",
+  "type": "pizza",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Hilltop Lantern Sandwich Co.",
+  "type": "takeout",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Goatfoot Wok Shop",
+  "type": "takeout",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Lantern Biscuit Outfitters",
+  "type": "clothing",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Sweet Gum Ledger Saloon",
+  "type": "bar",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Ridgeline Haberdashery",
+  "type": "pizza",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Bluebell Quill Print Shop",
+  "type": "gallery",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Old Cistern Goods",
+  "type": "takeout",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Ridgeline Print Shop",
+  "type": "tacos",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Old Cistern Café",
+  "type": "takeout",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Corner Saloon",
+  "type": "bar",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Red Clay Salon",
+  "type": "salon",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Crooked Print Shop",
+  "type": "takeout",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Cardinal Café",
+  "type": "cafe",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Wandering Ladder Threads",
+  "type": "tacos",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Gilded Florist",
+  "type": "florist",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Crooked Ladder Optics",
+  "type": "takeout",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Wandering Satchel Supply",
+  "type": "retail",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Copper Tavern",
+  "type": "takeout",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Brickyard Lantern Café",
+  "type": "takeout",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Tin Roof Kettle Café",
+  "type": "cafe",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Gilded Spoke Optics",
+  "type": "optics",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Quarry Print Shop",
+  "type": "gallery",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Twin Pines Compass Print Shop",
+  "type": "gallery",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Cardinal Saddle Slice Shop",
+  "type": "pizza",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Gilded Biscuit Noodle Bar",
+  "type": "takeout",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Wandering Spoke Gallery",
+  "type": "gallery",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Old Cistern Coffee Bar",
+  "type": "tacos",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Cardinal Sparrow Deli",
+  "type": "deli",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Copper Sparrow Threads",
+  "type": "clothing",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Goatfoot Satchel Florist",
+  "type": "florist",
+  "district": "rosemary_row"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Sweet Gum Goods",
+  "type": "retail",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Hilltop Lamp Threads",
+  "type": "clothing",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Tin Roof Salon",
+  "type": "salon",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Lantern Lamp Florist",
+  "type": "florist",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Red Clay Threads",
+  "type": "clothing",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Twin Pines Sandwich Co.",
+  "type": "deli",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Old Cistern Ledger Threads",
+  "type": "clothing",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Summit Biscuit Optics",
+  "type": "optics",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Ridgeline Taquería",
+  "type": "tacos",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Corner Thimble Mercantile",
+  "type": "retail",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Goatfoot Acorn Barber Shop",
+  "type": "salon",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Sweet Gum Teacup Barber Shop",
+  "type": "salon",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Goatfoot Anvil Gallery",
+  "type": "gallery",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Crooked Ladder Florist",
+  "type": "florist",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Quarry Acorn Outfitters",
+  "type": "clothing",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Goatfoot Hearth Lounge",
+  "type": "bar",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Night Owl Acorn Mercantile",
+  "type": "retail",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Silver Spoon Deli",
+  "type": "deli",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Goatfoot Barrel Tavern",
+  "type": "bar",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Quarry Barber Shop",
+  "type": "salon",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Silver Spoon Acorn Tavern",
+  "type": "bar",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Ridgeline Lamp Lounge",
+  "type": "bar",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Cardinal Teacup Noodle Bar",
+  "type": "takeout",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Pine Cone Roasters",
+  "type": "cafe",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Brickyard Kettle Print Shop",
+  "type": "gallery",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Night Owl Coffee Bar",
+  "type": "cafe",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Wandering Thimble Outfitters",
+  "type": "clothing",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Corner Café",
+  "type": "cafe",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Goatfoot Optics",
+  "type": "optics",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Ridgeline Supply",
+  "type": "retail",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Hilltop Biscuit Haberdashery",
+  "type": "clothing",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Old Cistern Kettle Roasters",
+  "type": "cafe",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Lantern Noodle Bar",
+  "type": "takeout",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Dogwood Kettle Threads",
+  "type": "clothing",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Crooked Sandwich Co.",
+  "type": "deli",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Goatfoot Wok Shop",
+  "type": "takeout",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Hilltop Acorn Tavern",
+  "type": "bar",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Hilltop Bakery",
+  "type": "bakery",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Tin Roof Barber Shop",
+  "type": "salon",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Oak Leaf Threads",
+  "type": "clothing",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Brickyard Bakery",
+  "type": "bakery",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Goatfoot Fiddle Roasters",
+  "type": "cafe",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "The Dogwood Sparrow Taquería",
+  "type": "tacos",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Silver Spoon Slice Shop",
+  "type": "pizza",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Cardinal Taco Counter",
+  "type": "tacos",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Silver Spoon Tavern",
+  "type": "bar",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "none (generated)",
+  "parody_name": "Oak Leaf Anvil Deli",
+  "type": "deli",
+  "district": "carrburg"
+ },
+ {
+  "real_inspiration": "invented",
+  "parody_name": "Columbia St",
+  "type": "street",
+  "district": ""
+ },
+ {
+  "real_inspiration": "invented",
+  "parody_name": "Rosemary St",
+  "type": "street",
+  "district": ""
+ },
+ {
+  "real_inspiration": "invented",
+  "parody_name": "Cameron Ave",
+  "type": "street",
+  "district": ""
+ },
+ {
+  "real_inspiration": "invented",
+  "parody_name": "Founders Rd",
+  "type": "street",
+  "district": ""
+ },
+ {
+  "real_inspiration": "invented",
+  "parody_name": "Chancel St",
+  "type": "street",
+  "district": ""
+ },
+ {
+  "real_inspiration": "invented",
+  "parody_name": "Henley St",
+  "type": "street",
+  "district": ""
+ },
+ {
+  "real_inspiration": "invented",
+  "parody_name": "Keep Lane",
+  "type": "street",
+  "district": ""
+ },
+ {
+  "real_inspiration": "invented",
+  "parody_name": "Bobbin Rd",
+  "type": "street",
+  "district": ""
+ },
+ {
+  "real_inspiration": "invented",
+  "parody_name": "Pell St",
+  "type": "street",
+  "district": ""
+ },
+ {
+  "real_inspiration": "invented",
+  "parody_name": "Harrow St",
+  "type": "street",
+  "district": ""
+ },
+ {
+  "real_inspiration": "invented",
+  "parody_name": "Vance Ln",
+  "type": "street",
+  "district": ""
+ },
+ {
+  "real_inspiration": "invented",
+  "parody_name": "Audley St",
+  "type": "street",
+  "district": ""
+ },
+ {
+  "real_inspiration": "invented",
+  "parody_name": "Glebe St",
+  "type": "street",
+  "district": ""
+ },
+ {
+  "real_inspiration": "invented",
+  "parody_name": "Tanner's Alley",
+  "type": "alley",
+  "district": ""
+ },
+ {
+  "real_inspiration": "invented",
+  "parody_name": "Inkwell Lane",
+  "type": "alley",
+  "district": ""
+ },
+ {
+  "real_inspiration": "invented",
+  "parody_name": "Blue Lantern Way",
+  "type": "alley",
+  "district": ""
+ },
+ {
+  "real_inspiration": "invented",
+  "parody_name": "Sutter's Court",
+  "type": "alley",
+  "district": ""
+ }
+]

@@ -1,0 +1,79 @@
+# Real trademarks / brand / business names that must never appear in generated text (CLAUDE.md §14/§19).
+# National brands & chains
+Coca-Cola
+Pepsi
+Starbucks
+McDonald
+Subway
+Domino's
+Papa John
+Chipotle
+Walgreens
+CVS
+Target
+Walmart
+Nike
+Adidas
+Under Armour
+Apple
+Google
+Microsoft
+Amazon
+Bank of America
+Wells Fargo
+Chase
+Truist
+Netflix
+Disney
+Marvel
+Budweiser
+Miller Lite
+Coors
+Red Bull
+Krispy Kreme
+Bojangles
+Cook Out
+Chick-fil-A
+Waffle House
+IHOP
+Dunkin
+Barnes & Noble
+Shell
+Exxon
+# Real university marks & nicknames
+UNC
+University of North Carolina
+Tar Heel
+Tar Heels
+Rameses
+Duke
+Blue Devils
+Kenan
+Dean Dome
+Dean E. Smith
+Smith Center
+Morehead
+Wilson Library
+Davis Library
+Polk Place
+McCorkle
+Carolina Inn
+Old Well
+Bell Tower
+# Real Chapel Hill / Carrboro businesses (inspirations only)
+Sutton's
+Top of the Hill
+Varsity Theatre
+Carolina Coffee Shop
+Bull's Head
+He's Not Here
+Ye Olde Waffle Shoppe
+Schoolkids Records
+Cosmic Cantina
+Weaver Street
+Carr Mill
+Gimghoul
+Franklin Street
+Chapel Hill
+Carrboro
+Durham

@@ -40,3 +40,15 @@ export function padCut(x: number, z: number, h: number): number {
   return h;
 }
 export function padsCount() { return pads.length; }
+
+/** Is (x,z) within `margin` m of any building pad footprint? */
+export function inPad(x: number, z: number, margin = 1.5): boolean {
+  const a = hash.get(K(x, z));
+  if (!a) return false;
+  for (const p of a) {
+    const dx = x - p.cx, dz = z - p.cz;
+    const lx = dx * p.c - dz * p.s, lz = dx * p.s + dz * p.c;
+    if (Math.abs(lx) < p.hw + margin && Math.abs(lz) < p.hd + margin) return true;
+  }
+  return false;
+}

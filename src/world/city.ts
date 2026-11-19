@@ -20,12 +20,17 @@ import { imUniforms } from '../interiors/interiorMapping';
 import { pc } from '../core/palette';
 import { sunDirection } from '../lighting/presets';
 import { buildingTiles } from '../buildings/tilePlugin';
+import { buildImpostors } from '../buildings/impostors';
+import { GrassField } from '../vegetation/grass';
+import { loadFonts } from '../signage/fonts';
 
 registerTileBuilder({ name: 'roads', order: 10, build: (ctx) => { buildRoadsForTile(ctx.name, ctx.g); buildMidblockForTile(ctx.name, ctx.gNoShadow); } });
 
 export async function createCity(app: App): Promise<WorldHandle> {
   const msg = document.getElementById('loadmsg');
   const say = (t: string) => { if (msg) msg.textContent = t; };
+  say('fonts…');
+  await loadFonts();
   say('terrain & road network…');
   await yieldFrame();
   const T = Terrain.get();
@@ -40,6 +45,10 @@ export async function createCity(app: App): Promise<WorldHandle> {
     imUniforms.uSky.value.copy(pc(p.horizon)); imUniforms.uSun.value.copy(sunDirection(p.sunElev, p.sunAz));
   });
   setGroundMaterialHook((m) => app.lighting.adopt(m));
+  say('far city impostors…');
+  await yieldFrame();
+  const impostors = buildImpostors(city);
+  for (const g of impostors.values()) app.scene.add(g);
   const far = buildFarTerrain();
   app.scene.add(far);
   const near = new NearTerrain();
@@ -86,6 +95,7 @@ export async function createCity(app: App): Promise<WorldHandle> {
     } else groundUniforms.activeRect.value.set(1e9, 1e9, -1e9, -1e9);
   };
   streamer.onChange.push(updateActiveRect);
+  streamer.onChange.push(() => { for (const [t, g] of impostors) g.visible = !streamer.isActive(t); });
 
   // near-detail (CLAUDE.md §5): real pavers/bricks/domes within 15 m
   const plan = roadPlan();
@@ -108,6 +118,9 @@ export async function createCity(app: App): Promise<WorldHandle> {
     return { y: hit.y + heave, pattern: key.includes('herringbone') ? 'herringbone' : 'running' };
   });
   app.scene.add(near15.root);
+  const grass = new GrassField();
+  app.scene.add(grass.mesh);
+  app.frameHooks.push(() => grass.update(app.camera.position));
   app.frameHooks.push(() => near15.update(app.camera.position));
   extraStats.push(() => `near-detail bricks ${near15.stats.bricks} · pavers ${near15.stats.pavers} · domes ${near15.stats.domes}`);
 

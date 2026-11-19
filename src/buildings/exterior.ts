@@ -36,6 +36,12 @@ export function sidePoint(f: SideFrame, at: number, y: number, z: number): Vecto
   // local +x -> (c, -s), local +z -> (s, c)
   return new Vector3(C(f.ox + at * c + z * s), C(y), C(f.oz - at * s + z * c));
 }
+/** Storefront opening span [x0, x1] (cm along the front) for a building with a storefront, else null. */
+export function storefrontSpan(spec: BuildingSpec, plan: Plan): [number, number] | null {
+  if (!spec.facade.storefront) return null;
+  const other = plan.extDoors.filter((d) => d.side === 'front' && d.floor === 0 && d.style !== 'storefront');
+  return [Math.max(30, ...other.map((d) => d.at + d.w + 45)), spec.w - 30];
+}
 export function buildingMatrix(spec: BuildingSpec): Matrix4 {
   return new Matrix4().makeRotationY(spec.rotY).setPosition(spec.x, spec.y, spec.z);
 }
@@ -234,6 +240,28 @@ export function buildExterior(spec: BuildingSpec, plan: Plan, opts: { frontGrade
   if (f.quoins) for (const side of ['front', 'back'] as Side[]) {
     const sf = sideFrame(spec, side);
     g.push(); g.translate(C(sf.ox), 0, C(sf.oz)); g.rotateY(sf.theta); quoins(g, roofY); g.translate(C(sf.len), 0, 0); g.rotateY(Math.PI / 2); quoins(g, roofY); g.pop();
+  }
+  // tag decorators: sawtooth mill roof monitors, church steeple
+  if (spec.tags?.includes('sawtooth')) {
+    const teeth = Math.floor(spec.w / 800);
+    for (let i = 0; i < teeth; i++) {
+      const x0 = i * (spec.w / teeth) + 20, x1 = (i + 1) * (spec.w / teeth) - 20;
+      const P = (x: number, y: number, z: number): [number, number, number] => [C(x), C(roofY + y), C(z)];
+      g.quad('tex:seam', P(x0, 0, 40), P(x0, 0, spec.d - 40), P(x1, 260, spec.d - 40), P(x1, 260, 40)); // long sloped side
+      g.quad('glassFar', P(x1, 260, 40), P(x1, 260, spec.d - 40), P(x1, 0, spec.d - 40), P(x1, 0, 40)); // north-light glazing
+      g.tri('brick:common:BRICK_DOWNTOWN_A', P(x0, 0, 40), P(x1, 260, 40), P(x1, 0, 40));
+      g.tri('brick:common:BRICK_DOWNTOWN_A', P(x0, 0, spec.d - 40), P(x1, 0, spec.d - 40), P(x1, 260, spec.d - 40));
+    }
+    // mill smokestack
+    g.push(); g.translate(C(spec.w - 300), 0, C(spec.d + 400)); g.lathe('brick:running:BRICK_DOWNTOWN_A', [[C(180), 0], [C(150), C(2600)], [C(170), C(2620)], [C(170), C(2700)], [C(130), C(2700)]], 24); g.pop();
+  }
+  if (spec.tags?.includes('church')) {
+    const sw = 400, x0 = spec.w / 2 - sw / 2, h = roofY + 900;
+    boxC(g, f.wall, x0, 0, -sw, x0 + sw, h, 0);
+    const P = (x: number, y: number, z: number): [number, number, number] => [C(x), C(y), C(z)];
+    const tip = h + 1400, cx = spec.w / 2, cz = -sw / 2;
+    for (const [a, b] of [[[x0, -sw], [x0 + sw, -sw]], [[x0 + sw, -sw], [x0 + sw, 0]], [[x0 + sw, 0], [x0, 0]], [[x0, 0], [x0, -sw]]] as [number, number][][]) g.tri('tex:slate', P(a[0], h, a[1]), P(cx, tip, cz), P(b[0], h, b[1]));
+    g.cylinder('metal:BRASS', C(3), C(tip), C(tip + 200), 6, true, C(cx), C(cz));
   }
   // rear fire escape for upper-floor back doors
   const fe = plan.extDoors.filter((d) => d.side === 'back' && d.floor > 0);

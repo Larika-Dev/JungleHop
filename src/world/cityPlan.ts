@@ -6,6 +6,7 @@ import { tileNameAt } from '../core/tiles';
 import { LANDMARK_HOOKS } from '../buildings/manager';
 import { landmarkSpecs } from '../buildings/landmarks/index';
 import type { BuildingSpec } from '../interiors/types';
+import '../districts/index';
 import { addPad, padFor } from './sites';
 
 export interface Sited { spec: BuildingSpec; grades: { front: number; low: number }; tile: string; }
@@ -77,10 +78,17 @@ export class CityPlanBuilder {
     return s;
   }
   reserve(spec: BuildingSpec) { this.rects.push(footprint(spec)); }
+  /** Site a building on top of another's roof (set-back towers above a base). */
+  reserveOnRoof(spec: BuildingSpec, base: BuildingSpec) {
+    const [g, u] = [450, 330];
+    spec.y = base.y + (g + u * (base.floors - 1)) / 100;
+    const r = footprint(spec);
+    const s: Sited = { spec, grades: { front: 0, low: 0 }, tile: tileNameAt(r.cx, r.cz) };
+    this.sited.push(s);
+  }
 }
 
-/** District generators register here (src/districts/*). */
-export const DISTRICT_GENERATORS: { name: string; order: number; run: (b: CityPlanBuilder) => void }[] = [];
+import { DISTRICT_GENERATORS } from './districtRegistry';
 
 let plan: CityPlan | null = null;
 export function cityPlan(): CityPlan {
