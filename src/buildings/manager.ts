@@ -83,6 +83,7 @@ export class BuildingManager {
     opts.exteriorOnly?.(ext);
     g.merge(ext.g, matrix);
     registerBricksFromBuilder(ext.g, matrix, `b:${spec.id}`);
+    ext.g.clear(); // merged into the tile; keep only doors/walls/floors/glass (cm geometry is ~88 B/vertex as JS arrays)
     this.records.set(spec.id, rec);
     return rec;
   }

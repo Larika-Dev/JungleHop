@@ -67,12 +67,16 @@ export async function createCity(app: App): Promise<WorldHandle> {
     const terrain = buildTerrainTile(t);
     group.add(terrain);
     await yieldFrame();
+    const trace = app.params.has('trace');
     for (const b of TILE_BUILDERS) {
+      const t0 = performance.now();
       try { await b.build(ctx); } catch (e) { console.error(`tile builder ${b.name} failed on ${name}`, e); }
+      if (trace) console.warn(`[trace] ${name} ${b.name} ${(performance.now() - t0).toFixed(0)}ms heap ${Math.round(((performance as any).memory?.usedJSHeapSize ?? 0) / 1e6)}MB`);
       await yieldFrame();
     }
     const merged = ctx.g.toGroup(mat, 'static');
     const flat = ctx.gNoShadow.toGroup(mat, 'decals', { castShadow: false });
+    ctx.g.clear(); ctx.gNoShadow.clear(); // release the JS-array copies once the typed geometry exists
     group.add(merged, flat);
     group.updateMatrixWorld(true);
     const content: TileContent = {
