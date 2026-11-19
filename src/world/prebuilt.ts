@@ -11,6 +11,22 @@ import type { App } from '../app';
 import { mat } from '../core/materials';
 import { tileBounds, parseTile } from '../core/tiles';
 
+/** The game's materials multiply by vertex color; packed tiles drop all-white color attributes, so
+ *  those meshes get a copy of the material with vertex colors off (same textures, palette and wetness). */
+const flatCache = new Map<string, Material>();
+function flatMat(key: string, app: App): Material {
+  let m = flatCache.get(key);
+  if (!m) {
+    const base = mat(key);
+    m = base.clone();
+    (m as MeshStandardMaterial).vertexColors = false;
+    m.userData = { ...base.userData, csm: false }; // let the lighting system set up cascaded shadows on the copy
+    app.lighting.adopt(m);
+    flatCache.set(key, m);
+  }
+  return m;
+}
+
 interface Entry { name: string; cx: number; cz: number; bytes: number; group: Group | null; loading: boolean; failed: boolean }
 
 export class PrebuiltTiles {
@@ -83,7 +99,7 @@ export class PrebuiltTiles {
         const m = o as Mesh;
         if (!m.isMesh) return;
         const name = (m.material as Material).name;
-        if (name && name !== 'terrain') m.material = mat(name);
+        if (name && name !== 'terrain') m.material = m.geometry.getAttribute('color') ? mat(name) : flatMat(name, this.app);
         else this.app.lighting.adopt(m.material as MeshStandardMaterial);
         m.userData.matKey = name;
         m.castShadow = name !== 'terrain' && !name.startsWith('tex:leaflitter');

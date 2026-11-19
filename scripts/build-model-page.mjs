@@ -20,7 +20,7 @@ ${body.trim()}
 `;
 writeFileSync(join(outDir, 'page.html'), page);
 const files = {};
-const walk = (d) => { for (const f of readdirSync(d)) { const p = join(d, f); if (statSync(p).isDirectory()) walk(p); else { const r = relative(outDir, p); if (r !== 'index.html' && r !== 'page.html' && !r.startsWith('files') && !r.endsWith('.txt') && !r.startsWith('tiles/') && !r.startsWith('.tmp')) files[r] = p; } } };
+const walk = (d) => { for (const f of readdirSync(d)) { const p = join(d, f); if (statSync(p).isDirectory()) walk(p); else { const r = relative(outDir, p); if (r !== 'index.html' && r !== 'page.html' && !r.startsWith('files') && !/^(batch|pub)\d*\.json$/.test(r) && !r.endsWith('.txt') && !r.startsWith('tiles/') && !r.startsWith('.tmp')) files[r] = p; } } };
 walk(outDir);
 writeFileSync(join(outDir, 'files.json'), JSON.stringify(files, null, 1));
 console.log(`built ${outDir}: page.html + ${Object.keys(files).length} files`);
