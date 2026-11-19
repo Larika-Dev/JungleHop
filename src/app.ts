@@ -214,7 +214,10 @@ export class App {
     this.ortho.updateMatrixWorld();
   }
 
-  frame = () => {
+  /** Screenshot mode renders only on demand (cm.frames): software GL makes every idle frame cost seconds. */
+  private autoRender = !new URLSearchParams(location.search).has('shot');
+  frame = (draw: boolean | number = true) => {
+    draw = draw === true || (typeof draw === 'number' && this.autoRender);
     this.clock.update();
     const dt = this.clock.getDelta();
     this.renderer.info.reset();
@@ -223,8 +226,7 @@ export class App {
     this.world?.update(dt);
     for (const h of this.frameHooks) h(dt);
     this.lighting.update(this.player.pos);
-    this.render();
-    this.hudUpdate();
+    if (draw) { this.render(); this.hudUpdate(); }
   };
 
   render() {
@@ -275,7 +277,7 @@ export class App {
       ortho: (cx: number, cz: number, w: number, h?: number) => this.setOrtho(cx, cz, w, h),
       orbitTo: (tx: number, ty: number, tz: number, px: number, py: number, pz: number) => { this.ortho = null; this.orbit?.target.set(tx, ty, tz); this.camera.position.set(px, py, pz); this.orbit?.update(); },
       preset: (n: PresetName) => this.lighting.apply(n),
-      frames: async (n = 3) => { for (let i = 0; i < n; i++) { this.frame(); await new Promise((r) => requestAnimationFrame(r)); } },
+      frames: async (n = 3) => { for (let i = 0; i < n; i++) { this.frame(true); await new Promise((r) => requestAnimationFrame(r)); } },
       stats: () => ({ calls: this.renderer.info.render.calls, tris: this.renderer.info.render.triangles, tile: tileNameAt(this.player.pos.x, this.player.pos.z), ...this.collision.stats(), doors: this.doors.count, world: this.world?.stats?.() ?? [] }),
       goto: (id: string, label?: string, facing = 0) => this.world?.goto?.(id, label, facing) ?? false,
       openDoorsNear: (r = 6) => { for (const d of this.doors.all()) if (d.hinge.distanceTo(this.player.pos) < r) this.doors.setOpen(d, true); },
