@@ -198,7 +198,12 @@ export class App {
   };
 
   render() {
-    if (this.ortho) { this.renderer.render(this.scene, this.ortho); return; }
+    if (this.ortho) {
+      const fog = this.scene.fog; this.scene.fog = null;
+      this.renderer.render(this.scene, this.ortho);
+      this.scene.fog = fog;
+      return;
+    }
     if (this.composer) this.composer.render(); else this.renderer.render(this.scene, this.camera);
   }
 

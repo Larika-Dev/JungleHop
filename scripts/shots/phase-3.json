@@ -1,0 +1,8 @@
+[
+  { "name": "overhead-ortho-core", "params": { "ao": "0" }, "ortho": [0, 60, 900], "frames": 3 },
+  { "name": "overhead-ortho-summit", "params": { "ao": "0" }, "ortho": [0, 0, 120], "frames": 3 },
+  { "name": "street-1-hamilton-west", "view": [40, null, -9, 90, -2], "fly": false },
+  { "name": "street-2-summit-scramble", "view": [18, 9, 18, 45, -28] },
+  { "name": "street-3-ravine-viaduct", "params": { "x": "520", "z": "430" }, "view": [460, -2, 470, 250, -8] },
+  { "name": "macro-curb-ramp", "view": [7.2, 0.45, 7.2, 45, -60] }
+]

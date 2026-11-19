@@ -65,6 +65,7 @@ function build(key: string): Material {
     case 'leafy': return std(col(a), a === 'MAGNOLIA_LEAF' ? 0.3 : 0.8, { side: DoubleSide });
     case 'metal': return std(col(a), 0.35, { metalness: 1 });
     case 'rough': return std(col(a), 0.95);
+    case 'mark': return std(col(a), 0.6, { polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -4 });
     case 'emit': return std(col(a), 0.9, { emissive: col(a), emissiveIntensity: 1.2 });
     case 'neon': return new MeshBasicMaterial({ color: col(a).clone().multiplyScalar(3), toneMapped: false });
     case 'glow': return std(col(a), 0.4, { emissive: col(a), emissiveIntensity: 0.0 });

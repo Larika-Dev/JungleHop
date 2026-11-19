@@ -187,31 +187,40 @@ export function brickTex(bond: Bond, base: PaletteKey, mortar: PaletteKey, opts:
 }
 
 // ------------------------------------------------------------------------------------------ PAVERS
+export const PAVER_U = 0.103; // 10 cm module + 0.3 cm sand joint (pavers 10 x 20 x 6 cm)
+export const PAVER_J = 0.003;
+/** Texture tile size (m) of a paver pattern. */
+export const paverRepeat = (pattern: 'herringbone' | 'running'): [number, number] => (pattern === 'herringbone' ? [PAVER_U * 8, PAVER_U * 8] : [PAVER_U * 8, PAVER_U * 8]);
+/** Paver rects [u, v, w, h] (UV meters, v up) covering one texture tile (with overhang for wrap). */
+export function paverLayout(pattern: 'herringbone' | 'running'): [number, number, number, number][] {
+  const U = PAVER_U, j = PAVER_J, out: [number, number, number, number][] = [];
+  if (pattern === 'running') {
+    for (let r = 0; r < 8; r++) for (let c = -1; c < 5; c++) out.push([c * 2 * U + (r % 2 ? U : 0), r * U, 2 * U - j, U - j]);
+  } else {
+    // 90° herringbone: H pavers on lattice (2k+m, 2k-m), V pavers offset (+1, +1); period 4U x 4U
+    for (let k = -6; k < 10; k++) for (let m = -10; m < 14; m++) {
+      const x = 2 * k + m, y = 2 * k - m;
+      if (x < -3 || x > 9 || y < -3 || y > 9) continue;
+      out.push([x * U, y * U, 2 * U - j, U - j]);
+      out.push([(x + 1) * U, (y + 1) * U, U - j, 2 * U - j]);
+    }
+  }
+  return out;
+}
+
 export function paverTex(pattern: 'herringbone' | 'running'): TexSet {
-  // pavers 10 x 20 cm, 0.3 cm sand joints
-  const U = 0.103; // module incl. joint
-  const size: [number, number] = pattern === 'herringbone' ? [U * 8, U * 8] : [U * 2 * 4, U * 8];
+  const size = paverRepeat(pattern);
   return make(`pavers_${pattern}`, size, 600, (a, h, _r, W, H, s) => {
     const rng = new Rng(`pavers_${pattern}`);
     a.fillStyle = keyHex('GRAVEL'); a.fillRect(0, 0, W, H);
     h.fillStyle = gray(0.25); h.fillRect(0, 0, W, H);
     const tmp = new Color();
-    const draw = (x: number, y: number, w: number, hh: number) => {
+    for (const [x, y, w, hh] of paverLayout(pattern)) {
       jitter(rng.chance(0.5) ? 'BRICK_PAVER_A' : 'BRICK_PAVER_B', rng.next(), rng.next(), 0.06, 3, tmp);
+      const px = x * s, py = H - (y + hh) * s;
       for (const ox of [-W, 0, W]) for (const oy of [-H, 0, H]) {
-        a.fillStyle = srgb(tmp); a.fillRect((x) * s + ox, (y) * s + oy, w * s, hh * s);
-        h.fillStyle = gray(0.6 + rng.next() * 0.08); h.fillRect(x * s + ox, y * s + oy, w * s, hh * s);
-      }
-    };
-    const j = 0.003;
-    if (pattern === 'running') {
-      for (let r = 0; r < 8; r++) for (let c = -1; c < 5; c++) draw(c * 2 * U + (r % 2 ? U : 0), r * U, 2 * U - j, U - j);
-    } else {
-      // 45-degree-free herringbone (90-degree): stair-stepped L pairs
-      for (let k = -8; k < 16; k++) for (let m = -8; m < 16; m++) {
-        const bx = (k + m) * U, by = (m - k) * U;
-        draw(bx, by, 2 * U - j, U - j);
-        draw(bx + U, by + U, U - j, 2 * U - j);
+        a.fillStyle = srgb(tmp); a.fillRect(px + ox, py + oy, w * s, hh * s);
+        h.fillStyle = gray(0.6 + rng.next() * 0.08); h.fillRect(px + ox, py + oy, w * s, hh * s);
       }
     }
     speckle(a, W, H, rng, 6000, [gray(0), gray(1)], [1, 2], 0.06);

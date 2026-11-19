@@ -63,15 +63,15 @@ export const ROADS: RoadDef[] = [
   { id: 'hamilton_w', name: 'Hamilton St', kind: 'main', pts: [[-900, 40], [-760, 26], [-620, 8], [-520, 0], [-480, 0]] },
   { id: 'columbia_n', name: 'Columbia St', kind: 'main', pts: [[0, -450], [0, 0]] },
   { id: 'columbia_s', name: 'Columbia St', kind: 'main', pts: [[0, 0], [0, 430], [-40, 505], [-110, 570], [-135, 640], [-140, 950]] },
-  { id: 'rosemary', name: 'Rosemary St', kind: 'secondary', pts: [[-480, -108], [380, -108], [440, -70], [480, 0]] },
+  { id: 'rosemary', name: 'Rosemary St', kind: 'secondary', pts: [[-480, -108], [380, -108], [425, -92], [452, -55], [460, 0]] },
   { id: 'cameron', name: 'Cameron Ave', kind: 'campus', pts: [[-480, 325], [390, 325]] },
   { id: 'raleigh', name: 'Raleigh Pike', kind: 'main', pts: [[390, 0], [390, 325], [470, 370], [560, 410], [700, 450]] },
   { id: 'founders', name: 'Founders Rd', kind: 'campus', pts: [[-40, 505], [40, 600], [95, 640], [95, 785]] },
-  { id: 'manor', name: 'Manor Dr', kind: 'main', pts: [[-480, 760], [-140, 775], [95, 785], [225, 795], [235, 935], [480, 940], [700, 900]] },
+  { id: 'manor', name: 'Manor Dr', kind: 'main', pts: [[-480, 760], [-140, 775], [95, 785], [212, 795], [218, 935], [480, 940], [700, 900]] },
   { id: 'millers_run', name: "Miller's Run Rd", kind: 'main', pts: [[-480, -450], [-480, 950]] },
   { id: 'chancel', name: 'Chancel St', kind: 'secondary', pts: [[-300, -450], [-300, 325]] },
   { id: 'henley', name: 'Henley St', kind: 'secondary', pts: [[300, -450], [300, 0]] },
-  { id: 'keep_lane', name: 'Keep Lane', kind: 'lane', pts: [[480, 0], [530, 50], [590, 70], [640, 130], [640, 195]] },
+  { id: 'keep_lane', name: 'Keep Lane', kind: 'lane', pts: [[530, 0], [545, 45], [590, 70], [640, 130], [640, 185]] },
   { id: 'bobbin', name: 'Bobbin Rd', kind: 'secondary', pts: [[-640, -300], [-640, 320]] },
   // Residential North grid (invented local streets)
   { id: 'pell', name: 'Pell St', kind: 'secondary', pts: [[-480, -230], [420, -230]] },
@@ -109,7 +109,7 @@ export const SPOTS: [number, number, number][] = [
   [-1200, -800, -10], [1000, -800, -7], [1100, 1200, -20], [-1100, 1200, -16],
 ];
 export const RAVINE = { creek: [[580, 120], [560, 300], [540, 450], [505, 600], [490, 770], [470, 900]] as P2[], bed: -18, halfWidth: 75 };
-export const BOWL = { cx: 360, cz: 810, rx: 70, rz: 48, falloff: 95, floor: -28 };
+export const BOWL = { cx: 360, cz: 810, rx: 70, rz: 48, falloff: 62, floor: -28 };
 export const QUARRY_PLAZA = { x0: 52, z0: 452, x1: 100, z1: 518, depth: 2.5 };
 
 // ------------------------------------------------------------------------------------------ LANDMARKS (CLAUDE.md §10)
@@ -133,6 +133,14 @@ export const LANDMARKS: LandmarkSite[] = [
   { n: 13, id: 'medical_center', name: 'ONSU Medical Center', x: -330, z: 680, rotY: 0 },
   { n: 14, id: 'ghoulgrave_keep', name: 'Ghoulgrave Keep', x: 640, z: 200, rotY: 0 },
   { n: 15, id: 'grove_amphitheatre', name: 'Grove Amphitheatre', x: 478, z: 292, rotY: Math.PI / 2 },
+];
+
+/** Desire paths worn across the quads (GRASS_WORN shortcut lines, CLAUDE.md §8/§9.5). w = width (m). */
+export const WORN_PATHS: { w: number; pts: P2[] }[] = [
+  { w: 1.6, pts: [[132, 30], [246, 288]] }, { w: 1.4, pts: [[248, 52], [150, 284]] }, { w: 1.1, pts: [[190, 20], [176, 160], [190, 292]] },
+  { w: 1.8, pts: [[118, 368], [262, 598]] }, { w: 1.8, pts: [[262, 368], [118, 598]] }, { w: 1.2, pts: [[190, 362], [146, 470], [190, 584]] },
+  { w: 1.0, pts: [[100, 520], [62, 562]] }, { w: 1.3, pts: [[230, 640], [265, 690], [330, 712]] }, { w: 1.0, pts: [[-20, 330], [40, 395]] },
+  { w: 1.2, pts: [[300, 120], [380, 210]] }, { w: 0.9, pts: [[455, 150], [470, 260]] },
 ];
 
 /** Fieldstone walls (plan polylines). */

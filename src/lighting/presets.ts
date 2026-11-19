@@ -59,7 +59,7 @@ export class LightingSystem {
       this.csm = new CSM({ maxFar: 400, cascades: 4, mode: 'practical', parent: this.root, shadowMapSize: 2048, lightDirection: new Vector3(0, -1, 0), camera, lightMargin: 120, lightNear: 1, lightFar: 2000 } as any);
       (this.csm as any).fade = true;
       for (const l of this.csm.lights) { l.shadow.bias = -0.0002; l.shadow.normalBias = 0.02; }
-      onMaterialCreated((m) => { if ((m as MeshStandardMaterial).isMeshStandardMaterial) this.csm!.setupMaterial(m); });
+      onMaterialCreated((m) => this.setupShadowMaterial(m));
     } else {
       this.sun = new DirectionalLight();
       this.sun.castShadow = opts.shadows === 'simple';
@@ -79,6 +79,18 @@ export class LightingSystem {
   }
 
   onChange(f: (p: Preset) => void) { this.listeners.push(f); f(this.preset); }
+
+  /** Enable CSM on a material, chaining any existing onBeforeCompile (custom shaders). */
+  setupShadowMaterial(m: Material) {
+    if (!this.csm || !(m as MeshStandardMaterial).isMeshStandardMaterial || m.userData.csm) return;
+    const prev = m.onBeforeCompile;
+    this.csm.setupMaterial(m);
+    const csmFn = m.onBeforeCompile;
+    m.onBeforeCompile = (sh, r) => { csmFn.call(m, sh, r); prev.call(m, sh, r); };
+    m.userData.csm = true;
+  }
+  /** Apply preset-dependent tweaks to custom materials not created via mat(). */
+  adopt(m: Material) { this.setupShadowMaterial(m); this.applyMaterial(m, this.preset); }
 
   apply(name: PresetName) {
     const p = PRESETS[name];
