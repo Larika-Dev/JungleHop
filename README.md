@@ -13,6 +13,8 @@ npm test             # Vitest: palette, kit dimensions, stairs/doors, interiors,
 npm run typecheck
 npm run data         # regenerate data/palette.json, buildings.json, rooms.json, parody-names.json
 npm run export       # export/cathedral-mount-map.glb (+ labels) — whole city at map detail
+npm run export:gltf  # export/landmarks/*.glb (full exterior + interior + room extras), export/tiles/T_c_r.glb (full detail)
+                     #   args: landmarks|tiles|all [filter], e.g. `npm run export:gltf -- tiles T_9_7`
 npm run shots -- 7   # Playwright screenshots for a phase (scripts/shots/phase-N.json → screenshots/phase-N/)
 ```
 
@@ -102,6 +104,7 @@ The items then stream with the building's interior automatically.
   - about 29k instanced trees (`EXT_mesh_gpu_instancing`)
 
   It uses vertex colors only and opens in any glTF viewer.
+- `export/landmarks/*.glb` and `export/tiles/*.glb` are full-detail files: about 220 MB for the 20 landmarks and about 65 MB per core tile. They are build output and git-ignored, so regenerate them with `npm run export:gltf`. Landmark files contain each room as a named node, with its §7.4 metadata stored as glTF `extras`.
 
 ## Credits
 

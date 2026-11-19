@@ -11,7 +11,8 @@
     "typecheck": "tsc --noEmit",
     "data": "vite-node scripts/build-data.ts",
     "shots": "node scripts/screenshots.mjs",
-    "export": "vite-node scripts/export-map.ts"
+    "export": "vite-node scripts/export-map.ts",
+    "export:gltf": "vite-node scripts/export-gltf.ts"
   },
   "dependencies": {
     "three": "^0.187.0"

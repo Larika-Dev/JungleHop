@@ -14,6 +14,8 @@ export type MaterialFactory = (key: string) => Material | null;
 const factories: MaterialFactory[] = [];
 /** Register an extra material factory (e.g. interior-mapping shader). */
 export function registerMaterialFactory(f: MaterialFactory) { factories.push(f); }
+/** Register a factory that takes precedence over all others (e.g. headless export with plain colors). */
+export function prependMaterialFactory(f: MaterialFactory) { factories.unshift(f); }
 
 const cache = new Map<string, Material>();
 const created: ((m: Material) => void)[] = [];
