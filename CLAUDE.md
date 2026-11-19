@@ -661,4 +661,10 @@ Read this whole file. Then:
 ---
 
 ## Project log
-- Phase 1 (concept map) delivered: `docs/phase-1/PHASE-1-CONCEPT.md`, `docs/phase-1/concept-layout.json`, `screenshots/phase-1/concept-map.png`. Awaiting approval before Phase 2.
+- Phase 1 (concept map) delivered: `docs/phase-1/PHASE-1-CONCEPT.md`, `docs/phase-1/concept-layout.json`, `screenshots/phase-1/concept-map.png`.
+- User approved continuing through all phases without approval stops.
+- Phases 2–6: scaffold, terrain/roads, kits + gallery, interior system, all 15 landmarks (screenshots in `screenshots/phase-2..6`).
+- Phases 7–10: Hamilton Strip roster + generated businesses, all districts (705 buildings, every plan valid), vegetation, street furniture, signage/parody (2,107 strings checked).
+- Phase 11 (in progress): rain (streaks, eave drips, puddles, sky env reflections) wired; performance pass pending real-GPU numbers.
+- Phase 12: `npm run export` (map GLB + labels), `npm run export:gltf` (per-landmark / per-tile full-detail GLB, git-ignored); data in `/data`; README; city map via `tools/city-map/render.cjs` → `screenshots/city-map.png`.
+- Pushing to GitHub fails with 403 (Claude GitHub App lacks access to the repo); commits are local on `claude/cathedral-mount-world-75m8a6`.

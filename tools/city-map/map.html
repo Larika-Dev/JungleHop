@@ -1,0 +1,133 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Cathedral Mount city map</title>
+<style>html,body{margin:0;background:#0B1424}canvas{display:block}</style></head>
+<body>
+<script type="importmap">{ "imports": { "three": "/three/build/three.module.js", "three/addons/": "/three/examples/jsm/" } }</script>
+<script type="module">
+// Illustrated city map (CLAUDE.md §20): overhead orthographic render of export/cathedral-mount-map.glb with
+// stylized cartographic overlays. Colors are CLAUDE.md §4 palette values.
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+
+const C = { navy: '#142B4E', blue: '#80B4D9', white: '#FFFFFF', paper: '#EDEDE6', gold: '#FFC98A', ink: '#0B1424', trim: '#F3F0E8', cream: '#E6D3A3' };
+const X0 = -960, X1 = 760, Z0 = -520, Z1 = 1000;          // map window (m)
+const PPM = 1.6;                                           // pixels per meter
+const W = Math.round((X1 - X0) * PPM), H = Math.round((Z1 - Z0) * PPM);
+const px = (x) => (x - X0) * PPM, py = (z) => (z - Z0) * PPM;
+
+for (const [fam, file, weight] of [['Oswald', 'oswald-latin-600-normal.woff2', 600], ['Libre Baskerville', 'libre-baskerville-latin-700-normal.woff2', 700], ['Bebas Neue', 'bebas-neue-latin-400-normal.woff2', 400], ['Roboto Slab', 'roboto-slab-latin-500-normal.woff2', 500]]) {
+  const f = new FontFace(fam, `url(/fonts/${file})`, { weight: String(weight) }); document.fonts.add(await f.load());
+}
+
+const renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
+renderer.setPixelRatio(1); renderer.setSize(W, H);
+renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1.25;
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x3E5A2F);
+const cam = new THREE.OrthographicCamera(-(X1 - X0) / 2, (X1 - X0) / 2, (Z1 - Z0) / 2, -(Z1 - Z0) / 2, 1, 5000);
+cam.up.set(0, 0, -1); cam.position.set((X0 + X1) / 2, 2000, (Z0 + Z1) / 2); cam.lookAt((X0 + X1) / 2, 0, (Z0 + Z1) / 2);
+scene.add(new THREE.HemisphereLight(0xD6E6F2, 0x8A7B5E, 1.4));
+const sun = new THREE.DirectionalLight(0xFFF4E5, 2.6);
+const e = THREE.MathUtils.degToRad(42), a = THREE.MathUtils.degToRad(215);
+const d = new THREE.Vector3(Math.sin(a) * Math.cos(e), Math.sin(e), -Math.cos(a) * Math.cos(e));
+sun.position.set(-100, 0, 240).addScaledVector(d, 3000); sun.target.position.set(-100, 0, 240);
+sun.castShadow = true; sun.shadow.mapSize.set(8192, 8192);
+Object.assign(sun.shadow.camera, { left: -1100, right: 1100, top: 1100, bottom: -1100, near: 10, far: 7000 });
+sun.shadow.bias = -0.0005; sun.shadow.normalBias = 1.0;
+scene.add(sun, sun.target);
+
+const gltf = await new GLTFLoader().loadAsync('/export/cathedral-mount-map.glb');
+gltf.scene.traverse((o) => {
+  if (!o.isMesh) return;
+  o.castShadow = o.name !== 'roads' && !o.name.startsWith('terrain'); o.receiveShadow = true;
+  if (o.name.startsWith('terrain') || o.name === 'roads') { o.geometry.computeVertexNormals(); o.material.flatShading = false; }
+  else o.material.flatShading = true;
+  if (o.name === 'landmarks') o.material.side = THREE.DoubleSide;
+  o.material.needsUpdate = true;
+});
+scene.add(gltf.scene);
+renderer.render(scene, cam);
+
+// ------------------------------------------------------------------ 2D cartography
+const L = await (await fetch('/export/cathedral-mount-map-labels.json')).json();
+const out = document.createElement('canvas'); out.width = W; out.height = H; document.body.appendChild(out);
+const g = out.getContext('2d');
+g.filter = 'saturate(0.95) contrast(1.05)'; g.drawImage(renderer.domElement, 0, 0); g.filter = 'none';
+// soft vignette toward the map edge
+const vg = g.createRadialGradient(W / 2, H / 2, Math.min(W, H) * 0.35, W / 2, H / 2, Math.max(W, H) * 0.75);
+vg.addColorStop(0, 'rgba(11,20,36,0)'); vg.addColorStop(1, 'rgba(11,20,36,0.55)');
+g.fillStyle = vg; g.fillRect(0, 0, W, H);
+
+function outlined(text, x, y, { font, fill = C.white, stroke = C.ink, lw = 4, align = 'center', rot = 0, spacing = 0, alpha = 1 }) {
+  g.save(); g.translate(x, y); g.rotate(rot); g.font = font; g.textAlign = align; g.textBaseline = 'middle';
+  g.letterSpacing = `${spacing}px`; g.globalAlpha = alpha;
+  g.lineJoin = 'round'; g.strokeStyle = stroke; g.lineWidth = lw; g.strokeText(text, 0, 0); g.fillStyle = fill; g.fillText(text, 0, 0); g.restore();
+}
+// street names along each road's longest segment (duplicate names: the longest instance only)
+const best = new Map();
+for (const r of L.roads) {
+  for (let i = 0; i < r.pts.length - 1; i++) {
+    const [ax, az] = r.pts[i], [bx, bz] = r.pts[i + 1], len = Math.hypot(bx - ax, bz - az);
+    const mx = (ax + bx) / 2, mz = (az + bz) / 2;
+    if (mx < X0 + 40 || mx > X1 - 40 || mz < Z0 + 40 || mz > Z1 - 40) continue;
+    if (!best.has(r.name) || best.get(r.name).len < len) best.set(r.name, { len, ax, az, bx, bz, kind: r.kind });
+  }
+}
+for (const [name, s] of best) {
+  let ang = Math.atan2(py(s.bz) - py(s.az), px(s.bx) - px(s.ax));
+  if (ang > Math.PI / 2) ang -= Math.PI; if (ang < -Math.PI / 2) ang += Math.PI;
+  const t = name === 'Hamilton St' ? 0.62 : name === 'Columbia St' ? 0.62 : 0.5;
+  const alley = s.kind === 'alley';
+  outlined(name.toUpperCase(), px(s.ax + (s.bx - s.ax) * t), py(s.az + (s.bz - s.az) * t), { font: `${alley ? 500 : 600} ${alley ? 13 : 17}px ${alley ? '"Roboto Slab"' : 'Oswald'}`, fill: alley ? C.cream : C.trim, lw: 4, rot: ang, spacing: alley ? 1 : 2.5 });
+}
+// districts
+for (const dl of L.districts) {
+  if (dl.name === 'The Summit') continue;
+  outlined(dl.name.toUpperCase(), px(dl.x), py(dl.z), { font: '34px "Bebas Neue"', fill: C.white, stroke: 'rgba(11,20,36,0.85)', lw: 6, spacing: 7, alpha: 0.92 });
+}
+// The Summit star
+{ const x = px(0), y = py(0); g.save(); g.translate(x, y); g.fillStyle = C.gold; g.strokeStyle = C.ink; g.lineWidth = 3; g.beginPath();
+  for (let i = 0; i < 10; i++) { const r = i % 2 ? 7 : 16, an = -Math.PI / 2 + (i * Math.PI) / 5; g.lineTo(Math.cos(an) * r, Math.sin(an) * r); }
+  g.closePath(); g.stroke(); g.fill(); g.restore();
+  outlined('THE SUMMIT', x + 22, y - 18, { font: '600 16px Oswald', fill: C.gold, align: 'left', spacing: 2 }); }
+// landmark pins
+for (const l of L.landmarks) {
+  const x = px(l.x), y = py(l.z);
+  g.save(); g.fillStyle = C.navy; g.strokeStyle = C.blue; g.lineWidth = 3;
+  g.beginPath(); g.arc(x, y - 22, 15, 0, Math.PI * 2); g.moveTo(x - 8, y - 10); g.lineTo(x, y); g.lineTo(x + 8, y - 10); g.fill(); g.stroke();
+  g.fillStyle = C.white; g.font = '600 16px Oswald'; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText(String(l.n), x, y - 22); g.restore();
+}
+// title cartouche
+function panel(x, y, w, h) { g.save(); g.fillStyle = 'rgba(20,43,78,0.92)'; g.strokeStyle = C.blue; g.lineWidth = 2; g.fillRect(x, y, w, h); g.strokeRect(x + 6, y + 6, w - 12, h - 12); g.restore(); }
+panel(36, 36, 660, 150);
+outlined('CATHEDRAL MOUNT', 66, 92, { font: '600 54px Oswald', fill: C.white, stroke: 'transparent', lw: 0, align: 'left', spacing: 5 });
+outlined('State of Pamlico  ·  Home of Old North State University', 68, 140, { font: 'italic 700 17px "Libre Baskerville"', fill: C.blue, stroke: 'transparent', lw: 0, align: 'left' });
+outlined('SEED 1795  ·  1 UNIT = 1 M', 68, 166, { font: '600 13px Oswald', fill: C.cream, stroke: 'transparent', lw: 0, align: 'left', spacing: 2 });
+// legend
+const uniq = []; for (const l of L.landmarks) if (!uniq.some((u) => u.n === l.n)) uniq.push({ n: l.n, name: l.n === 6 ? 'Elder East / Elder West' : l.n === 9 ? 'Student Union & Dining Hall' : l.name });
+const lh = 30, lw2 = 380, lhgt = 70 + uniq.length * lh;
+panel(36, H - lhgt - 36, lw2, lhgt);
+outlined('LANDMARKS', 66, H - lhgt - 36 + 38, { font: '600 20px Oswald', fill: C.gold, stroke: 'transparent', lw: 0, align: 'left', spacing: 3 });
+uniq.forEach((u, i) => {
+  const y = H - lhgt - 36 + 72 + i * lh;
+  g.save(); g.fillStyle = C.blue; g.beginPath(); g.arc(78, y, 11, 0, Math.PI * 2); g.fill(); g.fillStyle = C.navy; g.font = '600 13px Oswald'; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText(String(u.n), 78, y); g.restore();
+  outlined(u.name, 100, y, { font: '700 15px "Libre Baskerville"', fill: C.paper, stroke: 'transparent', lw: 0, align: 'left' });
+});
+// compass + scale bar
+{ const cx = W - 110, cy = 110; g.save(); g.translate(cx, cy); g.fillStyle = 'rgba(20,43,78,0.92)'; g.strokeStyle = C.blue; g.lineWidth = 2; g.beginPath(); g.arc(0, 0, 62, 0, Math.PI * 2); g.fill(); g.stroke();
+  g.fillStyle = C.gold; g.beginPath(); g.moveTo(0, -48); g.lineTo(12, 0); g.lineTo(0, -6); g.lineTo(-12, 0); g.closePath(); g.fill();
+  g.fillStyle = C.paper; g.beginPath(); g.moveTo(0, 48); g.lineTo(12, 0); g.lineTo(0, 6); g.lineTo(-12, 0); g.closePath(); g.fill(); g.restore();
+  outlined('N', cx, cy - 76, { font: '600 20px Oswald', fill: C.gold }); }
+{ const x = W - 36 - 200 * PPM - 24, y = H - 70; panel(x - 20, y - 46, 200 * PPM + 64, 92);
+  for (let i = 0; i < 4; i++) { g.fillStyle = i % 2 ? C.paper : C.navy; g.fillRect(x + (i * 50) * PPM, y, 50 * PPM, 10); }
+  g.strokeStyle = C.paper; g.lineWidth = 1.5; g.strokeRect(x, y, 200 * PPM, 10);
+  for (const [m, lab] of [[0, '0'], [100, '100'], [200, '200 m']]) outlined(lab, x + m * PPM, y - 16, { font: '600 14px Oswald', fill: C.paper, stroke: 'transparent', lw: 0 }); }
+// frame
+g.strokeStyle = C.navy; g.lineWidth = 14; g.strokeRect(7, 7, W - 14, H - 14);
+g.strokeStyle = C.blue; g.lineWidth = 2; g.strokeRect(18, 18, W - 36, H - 36);
+window.__png = out.toDataURL('image/png');
+window.__done = true;
+</script>
+</body></html>

@@ -271,10 +271,11 @@ for (const [part, pick] of parts) {
 }
 
 // labels for map viewers: districts + landmarks with terrain height
-const { DISTRICTS, LANDMARKS } = await import('../src/world/layout');
+const { DISTRICTS, LANDMARKS, ROADS } = await import('../src/world/layout');
 const labels = {
   districts: DISTRICTS.filter((d) => d.id !== 'campus_generic' || true).map((d) => ({ name: d.name, x: d.label[0], z: d.label[1], y: +T.height(d.label[0], d.label[1]).toFixed(1) })),
   landmarks: LANDMARKS.map((l) => ({ n: l.n, name: l.name, x: l.x, z: l.z, y: +T.height(l.x, l.z).toFixed(1) })),
+  roads: ROADS.filter((r) => r.kind !== 'rail').map((r) => ({ name: r.name, kind: r.kind, pts: r.pts })),
 };
 writeFileSync(out.replace(/\.glb$/, '-labels.json'), JSON.stringify(labels));
 console.log('wrote labels', labels.districts.length, labels.landmarks.length);
