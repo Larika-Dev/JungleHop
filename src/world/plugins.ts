@@ -3,4 +3,5 @@ import '../buildings/tilePlugin';
 import '../vegetation/plugin';
 import '../street/plugin';
 import '../signage/plugin';
+import '../lighting/rain';
 export {};

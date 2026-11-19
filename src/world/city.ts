@@ -23,6 +23,7 @@ import { buildingTiles } from '../buildings/tilePlugin';
 import { buildImpostors } from '../buildings/impostors';
 import { GrassField } from '../vegetation/grass';
 import { loadFonts } from '../signage/fonts';
+import { RainSystem } from '../lighting/rain';
 
 registerTileBuilder({ name: 'roads', order: 10, build: (ctx) => { buildRoadsForTile(ctx.name, ctx.g); buildMidblockForTile(ctx.name, ctx.gNoShadow); } });
 
@@ -122,6 +123,10 @@ export async function createCity(app: App): Promise<WorldHandle> {
   app.scene.add(grass.mesh);
   app.frameHooks.push(() => grass.update(app.camera.position));
   app.frameHooks.push(() => near15.update(app.camera.position));
+  // rain preset (CLAUDE.md §15): streaks, eave drips; puddles come from the 'puddles' tile builder
+  const rain = new RainSystem(app.scene, app.camera, () => !!bm.playerInside);
+  app.lighting.onChange((p) => rain.setPreset(p));
+  app.frameHooks.push((dt) => rain.update(dt));
   extraStats.push(() => `near-detail bricks ${near15.stats.bricks} · pavers ${near15.stats.pavers} · domes ${near15.stats.domes}`);
 
   const overlays = new DebugOverlays((x, z) => T.height(x, z));

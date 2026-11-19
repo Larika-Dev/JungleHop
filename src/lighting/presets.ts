@@ -1,6 +1,6 @@
 // Lighting & weather presets (CLAUDE.md §15). Sun azimuth = compass degrees clockwise from north
 // (north = -Z, east = +X). Golden Hour is the default.
-import {
+import { Mesh, PMREMGenerator, WebGLRenderTarget,
   Color, DirectionalLight, FogExp2, HemisphereLight, MeshStandardMaterial, Object3D, PerspectiveCamera, PointLight,
   Scene, Vector3, type Material, type WebGLRenderer,
 } from 'three';
@@ -113,7 +113,23 @@ export class LightingSystem {
     (this.scene.fog as FogExp2).density = p.fogDensity;
     this.renderer.toneMappingExposure = p.exposure;
     for (const [, m] of allMaterials()) this.applyMaterial(m, p);
+    this.updateEnvironment(p);
     for (const f of this.listeners) f(p);
+  }
+
+  /** Sky-only PMREM environment so glass, puddles and wet paving reflect the preset's sky. */
+  private pmrem: PMREMGenerator | null = null;
+  private envRT: WebGLRenderTarget | null = null;
+  private updateEnvironment(p: Preset) {
+    try {
+      this.pmrem ??= new PMREMGenerator(this.renderer);
+      const sc = new Scene();
+      sc.add(new Mesh(this.sky.mesh.geometry, this.sky.mesh.material));
+      this.envRT?.dispose();
+      this.envRT = this.pmrem.fromScene(sc, 0, 1, 6000);
+      this.scene.environment = this.envRT.texture;
+      this.scene.environmentIntensity = p.lampsOn && p.wet === 0 ? 0.12 : 0.3 + 0.4 * p.wet;
+    } catch { this.scene.environment = null; }
   }
 
   /** Wetness & night emissives per material (CLAUDE.md §15 rain: roughness -0.35, darken 15%). */
@@ -125,6 +141,7 @@ export class LightingSystem {
       sm.roughness = Math.max(0.04, (m.userData.baseRoughness ?? sm.roughness) - 0.35 * p.wet);
       sm.color.copy(m.userData.baseColor).multiplyScalar(1 - 0.15 * p.wet);
     }
+    if (m.userData.wetOnly) m.visible = p.wet > 0;
     if (key.startsWith('glow:')) sm.emissiveIntensity = p.lampsOn ? 3.5 : 0;
     if (key.startsWith('emit:INTERIOR')) sm.emissiveIntensity = p.lampsOn ? 1.6 : 0.6;
   }
