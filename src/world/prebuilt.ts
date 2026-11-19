@@ -100,7 +100,11 @@ export class PrebuiltTiles {
         if (!m.isMesh) return;
         const name = (m.material as Material).name;
         if (name && name !== 'terrain') m.material = m.geometry.getAttribute('color') ? mat(name) : flatMat(name, this.app);
-        else this.app.lighting.adopt(m.material as MeshStandardMaterial);
+        else {
+          // flat vertex-colored ground reads darker than the live textured splat; lift it to match
+          (m.material as MeshStandardMaterial).color.setScalar(1.55);
+          this.app.lighting.adopt(m.material as MeshStandardMaterial);
+        }
         m.userData.matKey = name;
         m.castShadow = name !== 'terrain' && !name.startsWith('tex:leaflitter');
         m.receiveShadow = true;
