@@ -41,7 +41,7 @@ function face(g: GeoBuilder, key: string, a: V3, b: V3, c: V3, d: V3, want: V3) 
 function trail(g: GeoBuilder, p: ParkPath, inTile: (x: number, z: number) => boolean) {
   const T = Terrain.get();
   const s = drape(p);
-  const key = p.kind === 'gravel' ? 'tex:gravel' : 'tex:dirt';
+  const key = p.kind === 'gravel' ? 'tex:gravel:DIRT_PATH' : 'tex:dirt'; // tan crushed-stone trunk trails
   const h = p.w / 2, UP: V3 = [0, 1, 0], k = 'paint:WALNUT_DARK', top = EDGE_H * 0.6;
   for (let i = 0; i < s.length - 1; i++) {
     const a = s[i], b = s[i + 1];

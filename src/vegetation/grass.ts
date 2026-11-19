@@ -29,7 +29,7 @@ const BAND = 0.18; // fraction of a ring boundary used for the cross-fade
 
 const VERT_HEAD = /* glsl */ `
 uniform vec3 uCam; uniform float uS, uRin, uRout, uBand, uWScale, uTime; uniform int uN;
-uniform sampler2D uData; uniform vec2 uOrigin; uniform float uWin;
+uniform sampler2D uData, uPath; uniform vec2 uOrigin; uniform float uWin;
 varying vec3 vGrass;
 float gh(vec2 p, float k) { return fract(sin(dot(p, vec2(127.1 + k, 311.7 - k))) * 43758.5453); }
 `;
@@ -42,6 +42,8 @@ const VERT_BODY = /* glsl */ `
   float wgt = (uRin > 0.0 ? smoothstep(uRin - bIn, uRin, d) : 1.0) * (1.0 - smoothstep(uRout - bOut, uRout, d));
   vec4 dat = texture2D(uData, (wp - uOrigin) / uWin);
   float dens = dat.g;
+  // trails: interpolated distance-to-trail-edge field keeps blades off the gravel and dirt exactly
+  dens *= smoothstep(0.0, 0.25, texture2D(uPath, (wp - uOrigin) / uWin).r);
   vec3 transformed;
   if (gh(cell, 3.0) > dens * wgt || d > uRout) {
     transformed = vec3(0.0, -1e4, 0.0); // culled blade (degenerate)
@@ -78,8 +80,10 @@ export class GrassField {
   private meshes: Mesh[] = [];
   private data = new Uint16Array(TEX * TEX * 4);
   private tex: DataTexture;
+  private pathData = new Uint16Array(TEX * TEX * 4);
+  private pathTex: DataTexture;
   private origin = new Vector2(1e9, 1e9);
-  private pending: { ox: number; oz: number; buf: Uint16Array; row: number } | null = null;
+  private pending: { ox: number; oz: number; buf: Uint16Array; pbuf: Uint16Array; row: number } | null = null;
   private mask = new Map<number, number>(); // packed ground type per 2.5 m cell
   private uniforms: Record<string, { value: unknown }>[] = [];
   private cam = new Vector3();
@@ -88,6 +92,9 @@ export class GrassField {
     this.tex = new DataTexture(this.data, TEX, TEX, RGBAFormat, HalfFloatType);
     this.tex.magFilter = this.tex.minFilter = LinearFilter;
     this.tex.needsUpdate = true;
+    this.pathTex = new DataTexture(this.pathData, TEX, TEX, RGBAFormat, HalfFloatType);
+    this.pathTex.magFilter = this.pathTex.minFilter = LinearFilter;
+    this.pathTex.needsUpdate = true;
     // blade: root (2 verts), mid (2), tip (1) — x = lateral factor, y = height factor
     const g0 = new InstancedBufferGeometry();
     g0.setAttribute('position', new BufferAttribute(new Float32Array([-0.5, 0, 0, 0.5, 0, 0, -0.38, 0.55, 0, 0.38, 0.55, 0, 0, 1, 0]), 3));
@@ -104,7 +111,7 @@ export class GrassField {
       const m = this.material.clone();
       const u = {
         uCam: { value: this.cam }, uS: { value: r.s }, uRin: { value: r.rIn }, uRout: { value: r.rOut }, uBand: { value: BAND },
-        uWScale: { value: r.w }, uTime: { value: 0 }, uN: { value: N }, uData: { value: this.tex }, uOrigin: { value: this.origin },
+        uWScale: { value: r.w }, uTime: { value: 0 }, uN: { value: N }, uData: { value: this.tex }, uPath: { value: this.pathTex }, uOrigin: { value: this.origin },
         uWin: { value: WINDOW }, uLawn: { value: pc('GRASS_OCT') }, uWorn: { value: pc('GRASS_WORN') }, uDry: { value: pc('PINE_STRAW').clone().lerp(pc('GINKGO_LEAF'), 0.35) },
       };
       this.uniforms.push(u);
@@ -135,7 +142,7 @@ export class GrassField {
       const T = Terrain.get();
       const cx = (i + 0.5) * MASK, cz = (j + 0.5) * MASK;
       const sp = splatAt(cx, cz, T);
-      if (inPark(cx, cz)) v = pathDist(cx, cz) < 0.4 ? 0 : 3;            // sparse sedges on the forest floor
+      if (inPark(cx, cz)) v = 3;                                            // sparse sedges on the forest floor
       else if (sp[0] < 0.3 || sp[2] > 0.5 || !canPlant(cx, cz, 0.25)) v = 0;
       else v = sp[1] > 0.3 ? 2 : 1;                                        // worn desire path / lawn
       if (this.mask.size > 400000) this.mask.clear();
@@ -155,14 +162,17 @@ export class GrassField {
         const t = this.groundType(x, z);
         const o = (p.row * TEX + c) * 4;
         p.buf[o] = H(T.height(x, z) - 0.01);
-        p.buf[o + 1] = H(t === 1 ? 1 : t === 2 ? 0.55 : t === 3 ? 0.07 : 0);
+        p.buf[o + 1] = H(t === 1 ? 1 : t === 2 ? 0.55 : t === 3 ? 0.018 : 0);
         p.buf[o + 2] = H(t === 2 ? 1 : 0);
         p.buf[o + 3] = H(t === 3 ? 0.32 : 0.12); // mowed lawns ~12 cm, woodland sedges ~32 cm
+        p.pbuf[o] = H(Math.max(-2, Math.min(4, pathDist(x, z))));
       }
     }
     if (p.row >= TEX) {
       this.data.set(p.buf);
       this.tex.needsUpdate = true;
+      this.pathData.set(p.pbuf);
+      this.pathTex.needsUpdate = true;
       this.origin.set(p.ox, p.oz);
       this.pending = null;
     }
@@ -178,7 +188,7 @@ export class GrassField {
     const cx = cam.x - (this.origin.x + WINDOW / 2), cz = cam.z - (this.origin.y + WINDOW / 2);
     if (!this.pending && (Math.abs(cx) > 40 || Math.abs(cz) > 40)) {
       const ox = Math.round((cam.x - WINDOW / 2) / 16) * 16, oz = Math.round((cam.z - WINDOW / 2) / 16) * 16;
-      this.pending = { ox, oz, buf: new Uint16Array(TEX * TEX * 4), row: 0 };
+      this.pending = { ox, oz, buf: new Uint16Array(TEX * TEX * 4), pbuf: new Uint16Array(TEX * TEX * 4), row: 0 };
       // the very first window (or a teleport far outside the current one) bakes at once
       const far = Math.abs(cx) > WINDOW / 2 - 100 || Math.abs(cz) > WINDOW / 2 - 100;
       if (force || far) this.bakeRows(TEX);
