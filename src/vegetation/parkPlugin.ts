@@ -2,7 +2,7 @@
 // narrow dirt side paths, draped on the terrain at 1 m steps. Trees, lanterns, benches and logs come
 // from the vegetation & furniture placement (parks.ts drives both).
 import { registerTileBuilder } from '../world/tileRegistry';
-import { tileBounds } from '../core/tiles';
+import { tileBounds, type TileId } from '../core/tiles';
 import { Terrain } from '../terrain/terrain';
 import type { GeoBuilder } from '../core/geo';
 import { parks, type ParkPath } from './parks';
@@ -59,14 +59,14 @@ function trail(g: GeoBuilder, p: ParkPath, inTile: (x: number, z: number) => boo
   }
 }
 
-registerTileBuilder({
-  name: 'park-trails', order: 41,
-  build: (ctx) => {
-    const b = tileBounds(ctx.tile);
-    const inTile = (x: number, z: number) => x >= b.x0 && x < b.x1 && z >= b.z0 && z < b.z1;
-    for (const p of parks().paths) {
-      if (!p.pts.some(([x, z]) => x > b.x0 - 4 && x < b.x1 + 4 && z > b.z0 - 4 && z < b.z1 + 4)) continue;
-      trail(ctx.gNoShadow, p, inTile);
-    }
-  },
-});
+/** All forest-park trail geometry inside one tile. */
+export function buildTrailsForTile(tile: TileId, g: GeoBuilder) {
+  const b = tileBounds(tile);
+  const inTile = (x: number, z: number) => x >= b.x0 && x < b.x1 && z >= b.z0 && z < b.z1;
+  for (const p of parks().paths) {
+    if (!p.pts.some(([x, z]) => x > b.x0 - 4 && x < b.x1 + 4 && z > b.z0 - 4 && z < b.z1 + 4)) continue;
+    trail(g, p, inTile);
+  }
+}
+
+registerTileBuilder({ name: 'park-trails', order: 41, build: (ctx) => buildTrailsForTile(ctx.tile, ctx.gNoShadow) });

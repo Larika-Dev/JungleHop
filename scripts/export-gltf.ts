@@ -22,6 +22,7 @@ import { SPECIES, treeGeometry, type TreeInst } from '../src/vegetation/trees';
 import { litterForTrees, shrubsForBuilding } from '../src/vegetation/shrubs';
 import { ivyForBuilding } from '../src/vegetation/ivy';
 import { furnitureByTile, furnitureGroup } from '../src/street/furniture';
+import { buildTrailsForTile } from '../src/vegetation/parkPlugin';
 import { Rng, hash01 } from '../src/core/rng';
 import { InstancedMesh, Quaternion, Vector3 } from 'three';
 
@@ -121,6 +122,7 @@ if (mode === 'all' || mode === 'tiles') {
     const vrng = new Rng(`veg:${name}`);
     const gFlat = new GeoBuilder();
     litterForTrees(gFlat, trees.filter((x) => x.sp !== 'loblolly'), vrng);
+    buildTrailsForTile(t, gFlat); // forest-park trails (gravel with timber edging, dirt)
     for (const s of city.byTile.get(name) ?? []) { shrubsForBuilding(g, s, vrng); ivyForBuilding(g, s); }
     // terrain at 1 m with the game's ground splat blended into vertex colors
     const b = tileBounds(t), step = 1, nx = (b.x1 - b.x0) / step;
