@@ -15,3 +15,7 @@ html, body { margin: 0; height: 100%; overflow: hidden; background: var(--c-SKY_
 .overlay2d { position: absolute; inset: 0; }
 .loading { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; flex-direction: column; color: var(--c-ONSU_WHITE); font: 14px monospace; background: var(--c-SKY_NIGHT); z-index: 10; }
 .loading h1 { font: bold 44px 'Libre Baskerville', Georgia, serif; letter-spacing: 6px; margin: 0 0 12px; color: var(--c-HEAVEN_BLUE); }
+
+body.orbit .crosshair, body.orbit .prompt { display: none; }
+body.orbit canvas { touch-action: none; cursor: grab; }
+body.orbit canvas:active { cursor: grabbing; }

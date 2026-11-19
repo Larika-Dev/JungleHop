@@ -24,6 +24,7 @@ import { buildImpostors } from '../buildings/impostors';
 import { GrassField } from '../vegetation/grass';
 import { loadFonts } from '../signage/fonts';
 import { RainSystem } from '../lighting/rain';
+import { installOrbitUi } from './orbitUi';
 
 registerTileBuilder({ name: 'roads', order: 10, build: (ctx) => { buildRoadsForTile(ctx.name, ctx.g); buildMidblockForTile(ctx.name, ctx.gNoShadow); } });
 
@@ -142,6 +143,14 @@ export async function createCity(app: App): Promise<WorldHandle> {
   say('streaming tiles…');
   await streamer.ready(sx, sz);
   app.player.teleport(sx, sz, undefined, Number(P.get('yaw') ?? 90) * Math.PI / 180, 0);
+  if (app.orbit) {
+    // model viewer: start over The Summit looking south-east across Hamilton St to the North Quad
+    const ty = T.height(sx, sz);
+    app.orbit.target.set(sx, ty, sz);
+    app.camera.position.set(sx - Number(P.get('dist') ?? 150) * 0.55, ty + Number(P.get('dist') ?? 150) * 0.6, sz - Number(P.get('dist') ?? 150) * 0.58);
+    app.orbit.update();
+    installOrbitUi(app, { tilesActive: () => streamer.activeNames().length, buildings: city.buildings.length });
+  }
 
   return {
     update: (dt: number) => {

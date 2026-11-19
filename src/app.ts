@@ -20,6 +20,7 @@ import { Player } from './player/controls';
 import { DoorSystem } from './player/doors';
 import { Minimap } from './player/minimap';
 import { Raycaster } from 'three';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import type { DebugOverlays } from './debug/overlays';
 
 export interface WorldHandle {
@@ -60,6 +61,8 @@ export class App {
   private debugPanel: HTMLDivElement;
   private raycaster = new Raycaster();
   frameHooks: ((dt: number) => void)[] = [];
+  /** ?view=orbit: model viewer — orbit camera; streaming follows the orbit target (player.pos). */
+  orbit: OrbitControls | null = null;
 
   constructor(public container: HTMLElement) {
     this.params = new URLSearchParams(location.search);
@@ -109,6 +112,32 @@ export class App {
     this.renderer.domElement.addEventListener('click', (e) => this.onClick(e));
     this.player.onKey.push((code) => this.onKey(code));
     this.lighting.apply((P.get('preset') ?? 'golden') as PresetName);
+    if ((P.get('view') ?? import.meta.env.VITE_DEFAULT_VIEW) === 'orbit') this.enableOrbit();
+  }
+
+  enableOrbit() {
+    const c = new OrbitControls(this.camera, this.renderer.domElement);
+    c.enableDamping = true; c.dampingFactor = 0.08;
+    c.maxPolarAngle = 1.5; c.minDistance = 0.4; c.maxDistance = 3200;
+    c.screenSpacePanning = false; c.zoomToCursor = true;
+    this.orbit = c;
+    this.player.enabled = false;
+    this.player.fly = true;
+    this.player.syncCamera = () => {}; // the orbit controls own the camera
+    document.body.classList.add('orbit');
+  }
+  private orbitFrame() {
+    const c = this.orbit!;
+    c.update();
+    // keep the target on the ground so streaming & interiors follow what you look at
+    const t = c.target;
+    this.player.pos.set(t.x, t.y, t.z);
+    this.player.yaw = c.getAzimuthalAngle();
+    const dist = this.camera.position.distanceTo(t);
+    // pan speed and near plane scale with distance (cm detail up close, whole city from above)
+    this.camera.near = Math.min(2, Math.max(0.02, dist * 0.0015));
+    this.camera.far = Math.max(6000, dist * 4);
+    this.camera.updateProjectionMatrix();
   }
 
   private resize() {
@@ -124,7 +153,7 @@ export class App {
       this.measure.click(ndc);
       return;
     }
-    this.player.requestLock();
+    if (!this.orbit) this.player.requestLock();
   }
 
   private onKey(code: string) {
@@ -189,7 +218,7 @@ export class App {
     this.clock.update();
     const dt = this.clock.getDelta();
     this.renderer.info.reset();
-    this.player.update(dt);
+    if (this.orbit) this.orbitFrame(); else this.player.update(dt);
     this.doors.update(dt);
     this.world?.update(dt);
     for (const h of this.frameHooks) h(dt);
@@ -244,6 +273,7 @@ export class App {
         if (y === null && fly) { this.player.pos.y += 1.65; this.player.syncCamera(); }
       },
       ortho: (cx: number, cz: number, w: number, h?: number) => this.setOrtho(cx, cz, w, h),
+      orbitTo: (tx: number, ty: number, tz: number, px: number, py: number, pz: number) => { this.ortho = null; this.orbit?.target.set(tx, ty, tz); this.camera.position.set(px, py, pz); this.orbit?.update(); },
       preset: (n: PresetName) => this.lighting.apply(n),
       frames: async (n = 3) => { for (let i = 0; i < n; i++) { this.frame(); await new Promise((r) => requestAnimationFrame(r)); } },
       stats: () => ({ calls: this.renderer.info.render.calls, tris: this.renderer.info.render.triangles, tile: tileNameAt(this.player.pos.x, this.player.pos.z), ...this.collision.stats(), doors: this.doors.count, world: this.world?.stats?.() ?? [] }),
