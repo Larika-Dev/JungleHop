@@ -1,5 +1,5 @@
 [
   { "name": "model-summit", "params": { "view": "orbit", "x": "0", "z": "0" }, "eval": "async (cm) => { cm.orbitTo(0, 0, 0, -85, 95, -90); }", "frames": 6 },
   { "name": "model-hamilton-close", "params": { "view": "orbit", "x": "30", "z": "-6" }, "eval": "async (cm) => { cm.orbitTo(30, 3, -11, 30, 8, 9); }", "frames": 6 },
-  { "name": "model-overview", "params": { "view": "orbit", "x": "-90", "z": "240", "ao": "0" }, "eval": "async (cm) => { cm.orbitTo(-90, -12, 240, -860, 760, 1260); }", "frames": 4 }
+  { "name": "model-overview", "params": { "view": "orbit", "x": "-90", "z": "240", "ao": "0" }, "eval": "async (cm) => { cm.orbitTo(-90, -12, 240, -640, 620, 980); }", "frames": 4 }
 ]

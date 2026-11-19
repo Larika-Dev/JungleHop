@@ -74,7 +74,7 @@ export function installOrbitUi(app: App, opts: { tilesActive: () => number; buil
     if (!isFinite(dir.x)) dir.set(0.5, 0, 0.8).normalize();
     return [new Vector3(x, y, z), new Vector3(x, y, z).addScaledVector(dir, dist * Math.cos(elev)).setY(y + dist * Math.sin(elev))] as const;
   };
-  card.querySelector('#ov-city')!.addEventListener('click', () => flyTo(new Vector3(-90, -12, 240), new Vector3(-860, 760, 1260)));
+  card.querySelector('#ov-city')!.addEventListener('click', () => flyTo(new Vector3(-90, -12, 240), new Vector3(-640, 620, 980)));
   card.querySelector('#ov-summit')!.addEventListener('click', () => { const [t, p] = around(0, 0, 160, 0.5); flyTo(t, p); });
   // a campus Flemish-bond wall at arm's length: Elder West's front face, between ground-floor windows
   card.querySelector('#ov-close')!.addEventListener('click', () => {

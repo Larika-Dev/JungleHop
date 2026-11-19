@@ -19,7 +19,7 @@ import { CollisionWorld } from './player/collision';
 import { Player } from './player/controls';
 import { DoorSystem } from './player/doors';
 import { Minimap } from './player/minimap';
-import { Raycaster } from 'three';
+import { FogExp2, Raycaster } from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import type { DebugOverlays } from './debug/overlays';
 
@@ -138,6 +138,9 @@ export class App {
     this.camera.near = Math.min(2, Math.max(0.02, dist * 0.0015));
     this.camera.far = Math.max(6000, dist * 4);
     this.camera.updateProjectionMatrix();
+    // street-level haze would wash out an aerial view: thin the fog with distance
+    const fog = this.scene.fog as FogExp2 | null;
+    if (fog) fog.density = this.lighting.preset.fogDensity * Math.min(1, Math.max(0.1, 160 / dist));
   }
 
   private resize() {
