@@ -4,3 +4,4 @@ dist/
 export/landmarks/
 export/tiles/
 export/*.gltf.json
+scripts/.probe.mjs
