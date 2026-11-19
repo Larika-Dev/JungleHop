@@ -7,6 +7,7 @@ import { RAIL, type P2 } from '../world/layout';
 import { naturalHeight, naturalSlope } from './heightfield';
 import { creekDistance } from './ravine';
 import { segDist } from './ravine';
+import { padCut } from '../world/sites';
 
 const RAIL_HALF_TOP = 2.2; // ballast shoulder half-width (m)
 const RAIL_LIFT = 1.5; // embankment height (CLAUDE.md §8)
@@ -59,7 +60,7 @@ export class Terrain {
 
   /** Height for the terrain mesh. */
   height(x: number, z: number): number {
-    let e = naturalHeight(x, z);
+    let e = padCut(x, z, naturalHeight(x, z));
     const rh = this.railHeight(x, z, e);
     if (rh !== null) e = rh;
     const hit = this.net.query(x, z);

@@ -7,7 +7,6 @@ import { css } from '../core/palette';
 import { DebugOverlays } from '../debug/overlays';
 import { KIT_REGISTRY } from './index';
 import { NearDetail, registerBricksFromBuilder } from './nearDetail';
-import { Matrix4 } from 'three';
 
 function label(text: string, sub: string): Mesh {
   const c = document.createElement('canvas'); c.width = 512; c.height = 96;
@@ -35,11 +34,14 @@ export function createGallery(app: App): WorldHandle {
       const b = g.bounds();
       const x = col * colW, z = -row * rowD;
       const grp = g.toGroup(mat, p.name);
-      grp.position.set(x - (b.min.x + b.max.x) / 2, 0.2 - Math.min(0, b.min.y), z);
+      // fronts face +z (toward the visitor walking north)
+      grp.rotation.y = Math.PI;
+      grp.position.set(x + (b.min.x + b.max.x) / 2, 0.2 - Math.min(0, b.min.y), z);
+      grp.updateMatrix();
       grp.traverse((o) => o.updateMatrix());
       grp.updateMatrixWorld(true);
       root.add(grp);
-      registerBricksFromBuilder(g, new Matrix4().makeTranslation(grp.position.x, grp.position.y, grp.position.z), `gallery:${p.name}`);
+      registerBricksFromBuilder(g, grp.matrixWorld.clone(), `gallery:${p.name}`);
       floor.box('tex:concrete_new', x - 5.5, 0, z - 6, x + 5.5, 0.2, z + 6);
       const l = label(`${kit}: ${p.name}`, `bbox ${(b.max.x - b.min.x) * 100 | 0} x ${(b.max.y - b.min.y) * 100 | 0} x ${(b.max.z - b.min.z) * 100 | 0} cm`);
       l.position.set(x, 0.6, z + 5.2); l.rotation.x = -0.6;

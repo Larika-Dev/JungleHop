@@ -4,7 +4,7 @@
 import { hash01 } from '../core/rng';
 import { TOTAL } from '../core/tiles';
 import { smoothstep } from '../core/units';
-import { BOWL, QUARRY_PLAZA, SPOTS } from '../world/layout';
+import { BOWL, QUARRY_PLAZA, SPOTS, STADIUM } from '../world/layout';
 import { ravineCarve } from './ravine';
 
 const STEP = 5;
@@ -50,8 +50,21 @@ export function baseElevation(x: number, z: number): number {
   return (a + (b - a) * tx) * (1 - tz) + (c + (d - c) * tx) * tz;
 }
 
-/** Benefactor bowl carve: elliptical floor at -28 m with smooth falloff to the rim. */
+/** Signed distance outside the stadium's inner rounded rectangle (m). */
+export function stadiumDist(x: number, z: number): number {
+  const S = STADIUM;
+  const qx = Math.abs(x - S.cx) - (S.hx - S.r), qz = Math.abs(z - S.cz) - (S.hz - S.r);
+  return Math.hypot(Math.max(qx, 0), Math.max(qz, 0)) + Math.min(Math.max(qx, qz), 0) - S.r;
+}
+/** Benefactor bowl carve: field floor at -28 m, ground kept below the seating tiers, easing out past the rim. */
 export function bowlCarve(x: number, z: number, e: number): number {
+  const S = STADIUM;
+  const d = stadiumDist(x, z);
+  if (d > S.rim + 60) return e;
+  const target = S.floor - 0.2 + Math.max(0, Math.min(d, S.rim)) * (S.slope - 0.03) + Math.max(0, d - S.rim) * 0.35;
+  return Math.min(e, target);
+}
+export function bowlCarveOld(x: number, z: number, e: number): number {
   const q = Math.hypot((x - BOWL.cx) / BOWL.rx, (z - BOWL.cz) / BOWL.rz);
   const r = Math.max(0, q - 1) * Math.min(BOWL.rx, BOWL.rz);
   return Math.min(e, BOWL.floor + (e - BOWL.floor) * smoothstep(0, BOWL.falloff, r));

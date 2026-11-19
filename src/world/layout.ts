@@ -110,6 +110,8 @@ export const SPOTS: [number, number, number][] = [
 ];
 export const RAVINE = { creek: [[580, 120], [560, 300], [540, 450], [505, 600], [490, 770], [470, 900]] as P2[], bed: -18, halfWidth: 75 };
 export const BOWL = { cx: 360, cz: 810, rx: 70, rz: 48, falloff: 62, floor: -28 };
+/** Benefactor stadium seating bowl: rounded-rect inner edge (field + apron), tier slope, rim offset (m). */
+export const STADIUM = { cx: 360, cz: 810, hx: 65, hz: 35, r: 16, slope: 0.445, rim: 28.4, floor: -28 };
 export const QUARRY_PLAZA = { x0: 52, z0: 452, x1: 100, z1: 518, depth: 2.5 };
 
 // ------------------------------------------------------------------------------------------ LANDMARKS (CLAUDE.md §10)

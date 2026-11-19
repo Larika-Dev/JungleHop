@@ -22,9 +22,9 @@ export interface Preset {
 
 export const PRESETS: Record<PresetName, Preset> = {
   golden: { name: 'golden', sunElev: 8, sunAz: 250, sunColor: 'SUN_GOLDEN', sunIntensity: 2.2, zenith: 'SKY_GOLDEN_ZENITH', horizon: 'SKY_GOLDEN_HORIZON', groundKey: 'GRASS_OCT',
-    hemiSky: 'SKY_GOLDEN_ZENITH', hemiGround: 'BRICK_DOWNTOWN_A', hemiIntensity: 0.55, fogKey: 'SKY_GOLDEN_HORIZON', fogDensity: 0.0009, exposure: 1.0, lampsOn: false, windowsLit: 0.15, wet: 0, overcast: 0, stars: 0 },
+    hemiSky: 'SKY_GOLDEN_ZENITH', hemiGround: 'LIMESTONE_TRIM', hemiIntensity: 0.6, fogKey: 'SKY_GOLDEN_HORIZON', fogDensity: 0.0009, exposure: 1.0, lampsOn: false, windowsLit: 0.15, wet: 0, overcast: 0, stars: 0 },
   midday: { name: 'midday', sunElev: 55, sunAz: 180, sunColor: 'SUN_NOON', sunIntensity: 3.0, zenith: 'SKY_MIDDAY_ZENITH', horizon: 'SKY_MIDDAY_HORIZON', groundKey: 'GRASS_OCT',
-    hemiSky: 'SKY_MIDDAY_ZENITH', hemiGround: 'GRASS_OCT', hemiIntensity: 0.8, fogKey: 'SKY_MIDDAY_HORIZON', fogDensity: 0.0006, exposure: 1.0, lampsOn: false, windowsLit: 0.05, wet: 0, overcast: 0, stars: 0 },
+    hemiSky: 'SKY_MIDDAY_ZENITH', hemiGround: 'CONCRETE_AGED', hemiIntensity: 0.8, fogKey: 'SKY_MIDDAY_HORIZON', fogDensity: 0.0006, exposure: 1.0, lampsOn: false, windowsLit: 0.05, wet: 0, overcast: 0, stars: 0 },
   night: { name: 'night', sunElev: 30, sunAz: 120, sunColor: 'MOON', sunIntensity: 0.15, zenith: 'SKY_NIGHT', horizon: 'SKY_NIGHT', groundKey: 'SKY_NIGHT',
     hemiSky: 'SKY_NIGHT', hemiGround: 'SKY_NIGHT', hemiIntensity: 0.6, fogKey: 'SKY_NIGHT', fogDensity: 0.0012, exposure: 1.0, lampsOn: true, windowsLit: 0.6, wet: 0, overcast: 0, stars: 1 },
   rain: { name: 'rain', sunElev: 40, sunAz: 200, sunColor: 'SKY_RAIN', sunIntensity: 0.55, zenith: 'SKY_RAIN', horizon: 'SKY_RAIN', groundKey: 'SKY_RAIN',

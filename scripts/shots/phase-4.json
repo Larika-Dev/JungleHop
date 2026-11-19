@@ -1,7 +1,7 @@
 [
-  { "name": "overhead-ortho-gallery", "params": { "scene": "gallery", "ao": "0" }, "ortho": [80, -95, 220] },
-  { "name": "street-1-walls-windows", "params": { "scene": "gallery" }, "view": [6, 2.2, 10, 20, -8] },
-  { "name": "street-2-columns-roofs", "params": { "scene": "gallery" }, "view": [20, 4, -62, 30, -10] },
-  { "name": "street-3-storefront-awning", "params": { "scene": "gallery" }, "view": [15, 2.5, -132, 10, -6] },
-  { "name": "macro-flemish-near-bricks", "params": { "scene": "gallery" }, "view": [-0.4, 1.2, 0.45, 0, 0], "frames": 6 }
+  { "name": "overhead-ortho-gallery", "params": { "scene": "gallery", "ao": "0" }, "ortho": [85, -110, 230] },
+  { "name": "street-1-brick-stone-rows", "params": { "scene": "gallery" }, "view": [16, 2.4, 10, 8, -8] },
+  { "name": "street-2-columns-stairs", "params": { "scene": "gallery" }, "view": [20, 3.2, -71, 10, -8] },
+  { "name": "street-3-storefront-awning", "params": { "scene": "gallery" }, "view": [16, 2.6, -135, 6, -6] },
+  { "name": "macro-flemish-near-bricks", "params": { "scene": "gallery" }, "view": [0.2, 1.45, 0.28, 0, -4], "frames": 6 }
 ]

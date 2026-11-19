@@ -32,6 +32,7 @@ export interface WorldHandle {
   ready(): Promise<void>;
   stats?(): string[];
   overlays?: DebugOverlays;
+  goto?: (id: string, label?: string, facing?: number) => boolean;
 }
 
 export class App {
@@ -244,6 +245,7 @@ export class App {
       preset: (n: PresetName) => this.lighting.apply(n),
       frames: async (n = 3) => { for (let i = 0; i < n; i++) { this.frame(); await new Promise((r) => requestAnimationFrame(r)); } },
       stats: () => ({ calls: this.renderer.info.render.calls, tris: this.renderer.info.render.triangles, tile: tileNameAt(this.player.pos.x, this.player.pos.z), ...this.collision.stats(), doors: this.doors.count, world: this.world?.stats?.() ?? [] }),
+      goto: (id: string, label?: string, facing = 0) => this.world?.goto?.(id, label, facing) ?? false,
       openDoorsNear: (r = 6) => { for (const d of this.doors.all()) if (d.hinge.distanceTo(this.player.pos) < r) this.doors.setOpen(d, true); },
       pos: () => new Vector3().copy(this.player.pos),
     };

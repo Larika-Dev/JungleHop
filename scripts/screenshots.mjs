@@ -5,7 +5,7 @@ import { createRequire } from 'node:module';
 import { readFileSync, mkdirSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { createServer } from 'vite';
+import { build, preview } from 'vite';
 
 const require = createRequire(import.meta.url);
 const { chromium } = require('playwright');
@@ -16,10 +16,11 @@ const shots = JSON.parse(readFileSync(resolve(root, `scripts/shots/phase-${phase
 const outDir = resolve(root, `screenshots/phase-${phase}`);
 mkdirSync(outDir, { recursive: true });
 
-const server = await createServer({ root, server: { port: 5199, strictPort: false, host: '127.0.0.1' }, logLevel: 'error' });
-await server.listen();
-const port = server.config.server.port ?? 5199;
-const url = server.resolvedUrls?.local?.[0] ?? `http://127.0.0.1:${port}/`;
+// production build into a private dir: immune to source edits during long render runs
+const outBuild = resolve(root, `node_modules/.shots-build-${phase}-${process.pid}`);
+await build({ root, logLevel: 'error', build: { outDir: outBuild, emptyOutDir: true } });
+const server = await preview({ root, logLevel: 'error', build: { outDir: outBuild }, preview: { port: 5200 + (process.pid % 500), strictPort: false, host: '127.0.0.1' } });
+const url = server.resolvedUrls?.local?.[0];
 const browser = await chromium.launch({ args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist', '--enable-webgl'] });
 const W = Number(process.env.SHOT_W ?? 1600), H = Number(process.env.SHOT_H ?? 900);
 let failed = 0;
@@ -44,7 +45,7 @@ for (const s of shots) {
       await cm.ready();
       await cm.frames(s.frames ?? 4);
     }, s);
-    await page.screenshot({ path: resolve(outDir, `${s.name}.png`) });
+    await page.screenshot({ path: resolve(outDir, `${s.name}.png`), timeout: 300000 });
     const stats = await page.evaluate(() => window.__cm.stats());
     console.log(`✓ ${s.name}  ${((Date.now() - t0) / 1000).toFixed(1)}s  calls=${stats.calls} tris=${(stats.tris / 1e6).toFixed(2)}M tile=${stats.tile}`);
   } catch (e) {
@@ -56,4 +57,5 @@ for (const s of shots) {
 }
 await browser.close();
 await server.close();
+(await import('node:fs')).rmSync(outBuild, { recursive: true, force: true });
 process.exit(failed ? 1 : 0);

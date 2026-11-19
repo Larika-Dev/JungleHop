@@ -12,6 +12,14 @@ import { NearTerrain, buildFarTerrain, buildTerrainTile, groundUniforms, setGrou
 import { Terrain } from '../terrain/terrain';
 import { TILE_BUILDERS, registerTileBuilder, type TileCtx } from './tileRegistry';
 import './plugins';
+import { BuildingManager, planFor } from '../buildings/manager';
+import { buildingMatrix } from '../buildings/exterior';
+import { Vector3 } from 'three';
+import { cityPlan } from './cityPlan';
+import { imUniforms } from '../interiors/interiorMapping';
+import { pc } from '../core/palette';
+import { sunDirection } from '../lighting/presets';
+import { buildingTiles } from '../buildings/tilePlugin';
 
 registerTileBuilder({ name: 'roads', order: 10, build: (ctx) => { buildRoadsForTile(ctx.name, ctx.g); buildMidblockForTile(ctx.name, ctx.gNoShadow); } });
 
@@ -21,7 +29,16 @@ export async function createCity(app: App): Promise<WorldHandle> {
   say('terrain & road network…');
   await yieldFrame();
   const T = Terrain.get();
+  say('city plan: siting buildings…');
+  await yieldFrame();
+  const city = cityPlan();
+  const bm = new BuildingManager(app);
+  (app as any).buildings = bm;
   app.collision.ground = (x, z) => T.surface(x, z);
+  app.lighting.onChange((p) => {
+    imUniforms.uLit.value = p.windowsLit; imUniforms.uNight.value = p.lampsOn ? 1 : 0;
+    imUniforms.uSky.value.copy(pc(p.horizon)); imUniforms.uSun.value.copy(sunDirection(p.sunElev, p.sunAz));
+  });
   setGroundMaterialHook((m) => app.lighting.adopt(m));
   const far = buildFarTerrain();
   app.scene.add(far);
@@ -29,6 +46,7 @@ export async function createCity(app: App): Promise<WorldHandle> {
   app.scene.add(near.mesh);
   const pickRoots: Object3D[] = [near.mesh];
   const rooms: Object3D[] = [];
+  void rooms;
   const extraStats: (() => string)[] = [];
 
   const streamer = new TileStreamer(async (t) => {
@@ -95,7 +113,8 @@ export async function createCity(app: App): Promise<WorldHandle> {
 
   const overlays = new DebugOverlays((x, z) => T.height(x, z));
   app.scene.add(overlays.root);
-  app.perf.extra.push(() => `tiles active ${streamer.activeNames().length} · loaded ${streamer.entries.size}`, ...extraStats);
+  app.perf.extra.push(() => `tiles active ${streamer.activeNames().length} · loaded ${streamer.entries.size}`, () => `buildings ${city.buildings.length} · interiors ${bm.loaded.size} · rooms ${bm.rooms().length}`, ...extraStats);
+  void buildingTiles;
 
   // start position: ?x=&z= or Hamilton St sidewalk in front of the North Quad wall, looking west to The Summit
   const P = app.params;
@@ -107,17 +126,30 @@ export async function createCity(app: App): Promise<WorldHandle> {
   app.player.teleport(sx, sz, undefined, Number(P.get('yaw') ?? 90) * Math.PI / 180, 0);
 
   return {
-    update: () => {
+    update: (dt: number) => {
       const p = app.player.pos;
       streamer.update(p.x, p.z);
       near.update(p.x, p.z);
       updateActiveRect();
       overlays.follow(p.x, p.y, p.z);
+      bm.update(dt, (rec) => streamer.isActive(rec.tile));
     },
     pickables: () => pickRoots,
-    rooms: () => rooms,
-    ready: async () => { const p = app.player.pos; near.update(p.x, p.z, true); await streamer.ready(p.x, p.z); updateActiveRect(); near15.update(app.camera.position, true); },
-    stats: () => [`tiles ${streamer.activeNames().join(',')}`],
+    rooms: () => bm.rooms(),
+    ready: async () => { const p = app.player.pos; near.update(p.x, p.z, true); await streamer.ready(p.x, p.z); updateActiveRect(); bm.update(1, (rec) => streamer.isActive(rec.tile), true); near15.update(app.camera.position, true); },
+    goto: (id: string, label?: string, facing = 0) => {
+      const s = city.byId.get(id); if (!s) return false;
+      const p = planFor(s.spec);
+      const M = buildingMatrix(s.spec);
+      for (const fp of p.floors) for (const r of fp.rooms) {
+        if (label && r.label !== label && r.type !== label) continue;
+        const c = new Vector3((r.rect.x0 + r.rect.x1) / 200, fp.y / 100, (r.rect.z0 + r.rect.z1) / 200).applyMatrix4(M);
+        app.player.fly = true; app.player.teleport(c.x, c.z, c.y + 1.65, s.spec.rotY + facing, 0);
+        return true;
+      }
+      return false;
+    },
+    stats: () => [`tiles ${streamer.activeNames().join(',')}`, `buildings ${city.buildings.length} · interiors loaded ${bm.loaded.size}`],
     overlays,
   };
 }

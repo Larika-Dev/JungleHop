@@ -1,2 +1,3 @@
-// Side-effect imports: each module registers its tile builders (later phases append here).
+// Side-effect imports: each module registers its tile builders.
+import '../buildings/tilePlugin';
 export {};

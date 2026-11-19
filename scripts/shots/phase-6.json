@@ -1,0 +1,13 @@
+[
+  { "name": "overhead-ortho-campus", "params": { "ao": "0", "x": "190", "z": "430" }, "ortho": [200, 470, 820], "frames": 3 },
+  { "name": "street-1-old-cistern-founders", "params": { "x": "190", "z": "330" }, "view": [186, -2.6, 326, 0, 8] },
+  { "name": "street-2-carillon-spire", "params": { "x": "215", "z": "720" }, "view": [215, -6.5, 722, -48, 22] },
+  { "name": "street-3-wilberforce-portico", "params": { "x": "222", "z": "150" }, "view": [222, 0.2, 147, -90, 8] },
+  { "name": "street-4-stadium-bowl", "params": { "x": "360", "z": "735" }, "view": [360, 2, 732, 180, -14] },
+  { "name": "street-5-medical-towers", "params": { "x": "-230", "z": "585" }, "view": [-232, -4.5, 585, 130, 14] },
+  { "name": "street-6-coachs-dome", "params": { "x": "0", "z": "770" }, "view": [0, -6, 772, 180, 6] },
+  { "name": "street-7-moorhouse", "params": { "x": "441", "z": "-8" }, "view": [441, 1.8, -8, 180, 6] },
+  { "name": "interior-wilberforce-rotunda", "params": { "x": "275", "z": "147" }, "eval": "async (cm) => { cm.goto('LM03_WILBERFORCE', 'Rotunda reading room', 0); }", "frames": 6 },
+  { "name": "interior-carillon-bells", "params": { "x": "270", "z": "668" }, "eval": "async (cm) => { cm.goto('LM02_CARILLON_SPIRE', 'bell_chamber', 0); }", "frames": 6 },
+  { "name": "macro-cistern-column", "params": { "x": "190", "z": "300" }, "view": [190.4, -3.2, 297.1, 0, -10] }
+]

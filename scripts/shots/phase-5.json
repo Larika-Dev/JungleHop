@@ -1,0 +1,9 @@
+[
+  { "name": "overhead-ortho-demo", "params": { "scene": "interiors", "ao": "0" }, "ortho": [10, -30, 110] },
+  { "name": "street-1-hall-facade", "params": { "scene": "interiors" }, "view": [-12, 1.7, 8, 0, 6] },
+  { "name": "street-2-shop-house", "params": { "scene": "interiors" }, "view": [34, 1.7, 2, 12, 3] },
+  { "name": "street-3-far-windows-night", "params": { "scene": "interiors", "preset": "night" }, "preset": "night", "view": [5, 1.7, 30, 0, 6] },
+  { "name": "interior-hall-corridor", "params": { "scene": "interiors" }, "view": [-12, 1.65, -32.3, -90, 0], "eval": "async (cm) => { cm.openDoorsNear(30); }" },
+  { "name": "interior-shop-retail", "params": { "scene": "interiors" }, "view": [24.5, 1.65, -34, 0, -2], "eval": "async (cm) => { cm.openDoorsNear(30); }" },
+  { "name": "macro-window-sash", "params": { "scene": "interiors" }, "view": [-27.8, 2.7, -40.25, 0, -10] }
+]
