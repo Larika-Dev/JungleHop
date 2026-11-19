@@ -30,10 +30,11 @@ const BAND = 0.18; // fraction of a ring boundary used for the cross-fade
 const VERT_HEAD = /* glsl */ `
 uniform vec3 uCam; uniform float uS, uRin, uRout, uBand, uWScale, uTime; uniform int uN;
 uniform sampler2D uData, uPath; uniform vec2 uOrigin; uniform float uWin;
-varying vec3 vGrass;
+varying vec3 vGrass; varying vec3 vViewUp;
 float gh(vec2 p, float k) { return fract(sin(dot(p, vec2(127.1 + k, 311.7 - k))) * 43758.5453); }
 `;
 const VERT_BODY = /* glsl */ `
+  vViewUp = normalize((viewMatrix * vec4(0.0, 1.0, 0.0, 0.0)).xyz);
   int ii = gl_InstanceID % uN, jj = gl_InstanceID / uN;
   vec2 cell = floor(uCam.xz / uS) + vec2(float(ii - uN / 2), float(jj - uN / 2));
   vec2 wp = (cell + vec2(gh(cell, 1.0), gh(cell, 2.0))) * uS;
@@ -59,13 +60,13 @@ const VERT_BODY = /* glsl */ `
     float wind = sin(uTime * 1.6 + wp.x * 0.37 + wp.y * 0.29) * 0.5 + sin(uTime * 2.7 + wp.x * 0.9) * 0.18;
     vec2 off = fdir * (lean * t * t) + vec2(0.7, 0.45) * wind * 0.09 * hgt * t * t;
     transformed = vec3(wp.x + side.x * wid + off.x, dat.r + t * hgt * (1.0 - 0.18 * t), wp.y + side.y * wid + off.y);
-    float shade = mix(0.42, 1.0, t);
+    float shade = mix(0.6, 1.05, t);
     vGrass = vec3(worn, gh(cell, 8.0), shade);
   }
 `;
 const FRAG_HEAD = /* glsl */ `
 uniform vec3 uLawn, uWorn, uDry;
-varying vec3 vGrass;
+varying vec3 vGrass; varying vec3 vViewUp;
 `;
 const FRAG_COLOR = /* glsl */ `
   vec3 gcol = mix(uLawn, uWorn, vGrass.x);
@@ -118,7 +119,10 @@ export class GrassField {
       m.onBeforeCompile = (sh) => {
         Object.assign(sh.uniforms, u);
         sh.vertexShader = VERT_HEAD + sh.vertexShader.replace('#include <begin_vertex>', VERT_BODY);
-        sh.fragmentShader = FRAG_HEAD + sh.fragmentShader.replace('#include <color_fragment>', '#include <color_fragment>\n' + FRAG_COLOR);
+        sh.fragmentShader = FRAG_HEAD + sh.fragmentShader
+          .replace('#include <color_fragment>', '#include <color_fragment>\n' + FRAG_COLOR)
+          // light every blade like the ground it grows from (no back-face flip on the thin double-sided strips)
+          .replace('#include <normal_fragment_begin>', '#include <normal_fragment_begin>\n  normal = vViewUp;');
       };
       m.customProgramCacheKey = () => 'cm-grass-blades';
       m.userData.matKey = 'leafy:GRASS_OCT';
