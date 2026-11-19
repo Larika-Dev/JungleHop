@@ -1,0 +1,7 @@
+[
+  { "name": "street-1-hamilton-rain", "params": {}, "preset": "rain", "view": [20, null, 7, -75, 2] },
+  { "name": "street-2-quad-night", "params": {}, "preset": "night", "view": [150, null, 40, 180, 6] },
+  { "name": "street-3-summit-midday", "params": {}, "preset": "midday", "view": [-6, null, 6, -78, 3] },
+  { "name": "macro-puddle-pavers", "params": {}, "preset": "rain", "view": [40, null, 8, -90, -55] },
+  { "name": "perf-overview-golden", "params": {}, "view": [-40, 60, 120, -30, -18] }
+]
