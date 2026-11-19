@@ -13,6 +13,8 @@ import { CURB_TOP, polyAt, profileAt, CROSS_SLOPE, CURB_H, type Road } from '../
 import { Terrain } from '../terrain/terrain';
 import { tileNameAt } from '../core/tiles';
 import type { LampPoint } from '../lighting/presets';
+import { parks, pathDist, PARK_CELL } from '../vegetation/parks';
+import { CORE } from '../core/tiles';
 
 // ------------------------------------------------------------------------------------------ models (origin at base)
 const models = new Map<string, GeoBuilder>();
@@ -39,6 +41,16 @@ export const MODELS: Record<string, () => GeoBuilder> = {
     bar(g, 'satin:GALV_STEEL', [0, C(800), 0], [0, C(840), C(-200)], C(7));
     boxC(g, 'satin:GALV_STEEL', -22, 825, -260, 22, 845, -180);
     boxC(g, 'glow:LAMP_SODIUM', -18, 822, -255, 18, 826, -185);
+  }),
+  // fallen old-growth trunk (4.6 m, Ø48 cm) with a broken limb stub and moss on top; stump with a sawn top
+  log: () => model('log', (g) => {
+    g.push(); g.translate(0, C(22), 0); g.rotateZ(Math.PI / 2); g.cylinder('tex:bark_oak', C(24), C(-230), C(230), 12, true); g.pop();
+    g.push(); g.translate(C(-60), C(30), 0); g.rotateX(-0.9); g.cylinder('tex:bark_oak', C(8), 0, C(70), 8, true); g.pop();
+    g.push(); g.translate(0, C(44), 0); g.scale(1, 0.18, 1); g.rotateZ(Math.PI / 2); g.cylinder('paint:MOSS', C(14), C(-150), C(120), 8, false); g.pop();
+  }),
+  stump: () => model('stump', (g) => {
+    g.lathe('tex:bark_oak', [[C(46), 0], [C(40), C(12)], [C(36), C(40)], [C(35), C(55)]], 12);
+    g.lathe('paint:WALNUT_DARK', [[C(35), C(55)], [C(20), C(56)], [C(0.5), C(56.5)]], 12);
   }),
   bench: () => model('bench', (g) => {
     const k = 'satin:IRON_GREEN';
@@ -181,6 +193,44 @@ export function furnitureByTile(): Map<string, Placement[]> {
       const y = n.y - CROSS_SLOPE * a.half + CURB_H;
       if (n.signal) add({ model: 'signal', x, y, z, rot });
       else add({ model: 'blade', x, y, z, rot });
+    }
+  }
+  // forest-park trails: campus lanterns every ~34 m (alternating sides), benches facing the trail with a
+  // trash can beside every other one; fallen logs and stumps scattered in the woods off the trails
+  const T = Terrain.get();
+  for (const p of parks().paths) {
+    let acc = 0, n = 0;
+    for (let i = 0; i < p.pts.length - 1; i++) {
+      const [ax, az] = p.pts[i], [bx, bz] = p.pts[i + 1];
+      const L = Math.hypot(bx - ax, bz - az); if (L < 1e-6) continue;
+      const tx = (bx - ax) / L, tz = (bz - az) / L, nx = -tz, nz = tx;
+      for (let t = 0; t < L; t += 1) {
+        acc += 1;
+        const x = ax + tx * t, z = az + tz * t;
+        if (p.kind === 'gravel' && acc >= 34) {
+          acc = 0; n++;
+          const side = n % 2 ? 1 : -1, d = side * (p.w / 2 + 0.55);
+          const lx = x + nx * d, lz = z + nz * d, ly = T.height(lx, lz);
+          add({ model: 'lantern', x: lx, y: ly, z: lz, rot: 0 });
+          LAMPS.push({ x: lx, y: ly + 3.35, z: lz, color: 'LAMP_CAMPUS', range: 16 });
+          if (n % 2 === 0) {
+            const bd = -side * (p.w / 2 + 0.75), bxp = x + tx * 6 + nx * bd, bzp = z + tz * 6 + nz * bd;
+            if (pathDist(bxp, bzp) > 0.3) {
+              add({ model: 'bench', x: bxp, y: T.height(bxp, bzp), z: bzp, rot: Math.atan2(-side * nx, -side * nz) }); // seat (local −z) faces the trail
+              if (n % 4 === 0) { const cx2 = bxp + tx * 1.4, cz2 = bzp + tz * 1.4; add({ model: 'trash', x: cx2, y: T.height(cx2, cz2), z: cz2, rot: 0 }); }
+            }
+          }
+        }
+      }
+    }
+  }
+  {
+    const pk = parks(), NX = (CORE.x1 - CORE.x0) / PARK_CELL;
+    for (let k = 0; k < pk.comp.length; k++) {
+      if (!pk.comp[k] || hash01(k, 3, 17) > 0.035) continue;
+      const x = CORE.x0 + ((k % NX) + hash01(k, 1, 17)) * PARK_CELL, z = CORE.z0 + (((k / NX) | 0) + hash01(k, 2, 17)) * PARK_CELL;
+      if (pathDist(x, z) < 3) continue;
+      add({ model: hash01(k, 4, 17) < 0.7 ? 'log' : 'stump', x, y: T.height(x, z) - 0.04, z, rot: hash01(k, 5, 17) * Math.PI * 2 });
     }
   }
   // bollards at alley mouths & the Quarry plaza edge

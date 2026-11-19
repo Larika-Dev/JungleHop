@@ -1,0 +1,7 @@
+[
+  { "name": "trail-1-gravel-oldgrowth", "params": { "x": "322", "z": "632" }, "view": [322.2, null, 632.2, -90, -4], "frames": 4 },
+  { "name": "trail-2-gravel-cameron", "params": { "x": "-98", "z": "440" }, "view": [-98.6, null, 439.9, 88, -4], "frames": 4 },
+  { "name": "lawn-north-quad-blades", "params": { "x": "190", "z": "140" }, "view": [190, null, 140, 180, -14], "frames": 4 },
+  { "name": "macro-grass-blades-35cm", "params": { "x": "176", "z": "120" }, "eval": "async (cm) => { cm.view(176, null, 120, 3.0, -0.35); const p = cm.pos(); cm.view(176, p.y - 1.3, 120, 3.0, -0.35); }", "frames": 4 },
+  { "name": "overhead-ortho-south-parks", "params": { "ao": "0", "x": "-60", "z": "620" }, "ortho": [-60, 620, 560, 320], "frames": 3 }
+]

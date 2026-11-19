@@ -130,6 +130,7 @@ export async function createCity(app: App): Promise<WorldHandle> {
   });
   app.scene.add(near15.root);
   const grass = new GrassField();
+  for (const m of grass.materials) app.lighting.adopt(m);
   app.scene.add(grass.mesh);
   app.frameHooks.push(() => grass.update(app.camera.position));
   app.frameHooks.push(() => near15.update(app.camera.position));
@@ -172,7 +173,7 @@ export async function createCity(app: App): Promise<WorldHandle> {
     },
     pickables: () => pickRoots,
     rooms: () => bm.rooms(),
-    ready: async () => { const p = app.player.pos; near.update(p.x, p.z, true); await streamer.ready(p.x, p.z); updateActiveRect(); bm.update(1, (rec) => streamer.isActive(rec.tile), true); near15.update(app.camera.position, true); },
+    ready: async () => { const p = app.player.pos; near.update(p.x, p.z, true); await streamer.ready(p.x, p.z); updateActiveRect(); bm.update(1, (rec) => streamer.isActive(rec.tile), true); near15.update(app.camera.position, true); grass.update(app.camera.position, true); },
     goto: (id: string, label?: string, facing = 0) => {
       const s = city.byId.get(id); if (!s) return false;
       const p = planFor(s.spec);

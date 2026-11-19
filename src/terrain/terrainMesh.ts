@@ -2,6 +2,7 @@
 // 0.5 m resolution in the core), and a 10 m far mesh for the whole 3.6 x 3.4 km map.
 // Ground material = 4-layer splat (grass / worn+dirt / red clay / forest floor) blended per vertex.
 import { BufferAttribute, BufferGeometry, Mesh, MeshStandardMaterial, Vector2, Vector4 } from 'three';
+import { inPark, pathDist } from '../vegetation/parks';
 import { hash01 } from '../core/rng';
 import { getTexSet } from '../core/textures';
 import { TOTAL, tileBounds, type TileId } from '../core/tiles';
@@ -31,6 +32,12 @@ export function splatAt(x: number, z: number, T: Terrain): [number, number, numb
       const r = segDist(x, z, p.pts[i] as P2, p.pts[i + 1] as P2);
       if (r.d < p.w) worn = Math.max(worn, 1 - smoothstep(p.w * 0.35, p.w, r.d));
     }
+  }
+  // old-growth forest parks: leaf-litter floor, trails worn to dirt
+  if (inPark(x, z)) {
+    forest = Math.max(forest, 0.9);
+    const pd = pathDist(x, z);
+    if (pd < 0.8) worn = Math.max(worn, 1 - smoothstep(-0.3, 0.8, pd));
   }
   // verges next to pavement are scuffed
   const hit = T.net.query(x, z);
