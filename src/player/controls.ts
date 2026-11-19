@@ -35,14 +35,21 @@ export class Player {
     window.addEventListener('keyup', (e) => this.keys.delete(e.code));
     window.addEventListener('blur', () => this.keys.clear());
     document.addEventListener('pointerlockchange', () => { this.locked = document.pointerLockElement === dom; });
+    // drag-to-look fallback where pointer lock is unavailable (sandboxed/embedded pages)
+    let drag = false;
+    dom.addEventListener('mousedown', () => { drag = true; });
+    window.addEventListener('mouseup', () => { drag = false; });
     document.addEventListener('mousemove', (e) => {
-      if (!this.locked) return;
+      if (!this.locked && !drag) return;
       this.yaw -= e.movementX * 0.0022;
       this.pitch = Math.max(-1.55, Math.min(1.55, this.pitch - e.movementY * 0.0022));
     });
   }
 
-  requestLock() { if (!this.locked) this.dom.requestPointerLock?.(); }
+  requestLock() {
+    if (this.locked) return;
+    try { const r = this.dom.requestPointerLock?.() as unknown as Promise<void> | undefined; r?.catch?.(() => {}); } catch { /* not allowed here: drag-to-look */ }
+  }
 
   toggleFly() {
     this.fly = !this.fly;

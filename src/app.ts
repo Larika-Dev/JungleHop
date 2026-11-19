@@ -240,6 +240,8 @@ export class App {
         this.ortho = null;
         this.player.fly = fly;
         this.player.teleport(x, z, y ?? undefined, yaw, pitch);
+        // null y in fly mode: stand on whatever is below at eye height (165 cm)
+        if (y === null && fly) { this.player.pos.y += 1.65; this.player.syncCamera(); }
       },
       ortho: (cx: number, cz: number, w: number, h?: number) => this.setOrtho(cx, cz, w, h),
       preset: (n: PresetName) => this.lighting.apply(n),

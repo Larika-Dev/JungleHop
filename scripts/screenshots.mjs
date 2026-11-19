@@ -32,6 +32,7 @@ for (const s of shots) {
   page.on('pageerror', (e) => logs.push('pageerror: ' + e.message));
   const q = new URLSearchParams({ shot: '1', ...(s.params ?? {}) });
   if (s.view) { q.set('x', s.view[0]); q.set('z', s.view[2]); }
+  if (s.preset) q.set('preset', s.preset);
   const t0 = Date.now();
   try {
     await page.goto(`${url}?${q}`, { timeout: 300000 });

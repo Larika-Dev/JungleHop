@@ -31,7 +31,7 @@ import { allTiles, tileName } from '../core/tiles';
 import { treesForTile } from '../vegetation/placement';
 import { SPECIES } from '../vegetation/trees';
 
-export function buildImpostors(city: CityPlan): Map<string, Group> {
+export function buildImpostors(city: CityPlan, opts: { trees?: boolean } = {}): Map<string, Group> {
   const out = new Map<string, Group>();
   const shared = new MeshStandardMaterial({ vertexColors: true, roughness: 0.9 });
   shared.userData.matKey = 'impostor';
@@ -73,7 +73,7 @@ export function buildImpostors(city: CityPlan): Map<string, Group> {
     out.set(tile, grp);
   }
   // far trees: crossed quads + trunk stub per tree, all tiles
-  for (const t of allTiles()) {
+  if (opts.trees !== false) for (const t of allTiles()) {
     const name = tileName(t);
     const trees = treesForTile(t);
     if (!trees.length) continue;

@@ -61,6 +61,8 @@ export function ensureDoorStyle(app: App, style: string) {
 
 export class BuildingManager {
   records = new Map<string, BuildingRec>();
+  /** building whose interior the player is standing in (rain / audio occlusion) */
+  playerInside: BuildingRec | null = null;
   loaded = new Set<BuildingRec>();
   roomsList: Object3D[] = [];
   private lights: PointLight[] = [];
@@ -184,8 +186,10 @@ export class BuildingManager {
     for (const [rec] of cands) if (!rec.interior && budget-- > 0) this.loadInterior(rec);
     // floor culling + interior lights for the building the player is in
     let lit = 0;
+    this.playerInside = null;
     for (const rec of this.loaded) {
-      const inside = this.inside(rec, p);
+      const inside = this.inside(rec, p) && p.y < rec.spec.y + rec.plan.roofY / 100;
+      if (inside) this.playerInside = rec;
       const localY = (p.y - rec.spec.y) * 100;
       let fl = 0;
       for (const fp of rec.plan.floors) if (localY >= fp.y - 50) fl = fp.floor;

@@ -1,0 +1,7 @@
+[
+  { "name": "overhead-ortho-summit", "params": { "ao": "0" }, "ortho": [20, -10, 180, 100], "frames": 3 },
+  { "name": "street-1-hamilton-night-neon", "params": {}, "preset": "night", "view": [90, null, 4, -60, 6] },
+  { "name": "street-2-cinema-marquee", "params": {}, "view": [47, null, 6, 0, 14] },
+  { "name": "street-3-alley-graffiti", "params": {}, "view": [160, null, -20, 0, 4] },
+  { "name": "macro-street-blade", "params": {}, "view": [-3.2, null, 9, -45, 20] }
+]

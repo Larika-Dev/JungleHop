@@ -1,0 +1,7 @@
+[
+  { "name": "overhead-ortho-north-quad-canopy", "params": { "ao": "0", "x": "160", "z": "160" }, "ortho": [160, 160, 340, 340], "frames": 3 },
+  { "name": "street-1-north-quad-oaks", "params": {}, "view": [150, null, 60, 180, 14] },
+  { "name": "street-2-hamilton-furniture", "params": {}, "view": [70, null, 9.2, -95, 0] },
+  { "name": "street-3-stadium-pines", "params": {}, "view": [300, null, 740, 150, 4] },
+  { "name": "macro-hydrant-bench", "params": {}, "view": [70, null, 9.2, -90, -35] }
+]

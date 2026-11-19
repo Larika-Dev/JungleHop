@@ -1,0 +1,10 @@
+[
+  { "name": "overhead-ortho-carrburg", "params": { "ao": "0", "x": "-700", "z": "0" }, "ortho": [-690, 0, 440, 640], "frames": 3 },
+  { "name": "overhead-ortho-north", "params": { "ao": "0", "x": "-20", "z": "-260" }, "ortho": [-20, -260, 900, 420], "frames": 3 },
+  { "name": "street-1-loomhouse-mill", "params": {}, "view": [-620, null, -72, 140, 8] },
+  { "name": "street-2-residential-pell", "params": {}, "view": [-60, null, -226, -80, 3] },
+  { "name": "street-3-rosemary-row", "params": {}, "view": [-60, null, -104, -85, 6] },
+  { "name": "street-4-toadstool-keep", "params": {}, "view": [628, null, 170, -160, 10] },
+  { "name": "interior-loomhouse-coop", "params": { "x": "-665", "z": "-90" }, "eval": "async (cm) => { cm.goto('CBG_1178', 'Co-op Market', 0); }", "frames": 6 },
+  { "name": "macro-house-siding", "params": {}, "view": [-60, null, -222, 0, -20] }
+]

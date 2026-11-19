@@ -1,0 +1,10 @@
+[
+  { "name": "overhead-ortho-hamilton", "params": { "ao": "0", "x": "40", "z": "0" }, "ortho": [40, -20, 460, 260], "frames": 3 },
+  { "name": "street-1-summit-looking-east", "params": {}, "view": [-6, null, 6, -78, 3] },
+  { "name": "street-2-north-storefronts", "params": {}, "view": [36, null, 5, -28, 10] },
+  { "name": "street-3-inkwell-lane", "params": {}, "view": [-110, null, -18, 0, 6] },
+  { "name": "street-4-sutters-west", "params": {}, "view": [-12, null, -4, 120, 4] },
+  { "name": "interior-sutters-counter", "params": { "x": "-26", "z": "11" }, "eval": "async (cm) => { cm.goto('HAM_S_002', 'dining', 0); }", "frames": 6 },
+  { "name": "interior-top-of-the-mount-bar", "params": { "x": "28", "z": "-11" }, "eval": "async (cm) => { cm.goto('HAM_N_000', 'bar', 0); }", "frames": 6 },
+  { "name": "macro-paver-curb", "params": {}, "view": [12, null, 8.6, -90, -62] }
+]

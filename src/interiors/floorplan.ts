@@ -316,8 +316,9 @@ function openCore(pb: PB, fl: Fl[], W: number, D: number, t: number) {
     const F = f.floor;
     const attic = F >= s.floors;
     const mainType: RoomType = F < 0 ? 'mechanical' : attic ? 'attic' : F === 0 ? 'lobby' : s.typology === 'library' ? 'stacks' : s.typology === 'modern_academic' ? 'classroom' : 'office';
-    const front = pb.room(F, { x0: t, z0: t, x1: W - t, z1: cz0 }, mainType, F === 0 ? 'Lobby' : undefined);
-    const back = pb.room(F, { x0: t, z0: cz1, x1: W - t, z1: D - t }, F === 0 ? (s.typology === 'office_lab' ? 'office' : 'dining') : mainType);
+    const mill = s.typology === 'mill' && F === 0; // §9.9: co-op market on the mill's ground floor
+    const front = pb.room(F, { x0: t, z0: t, x1: W - t, z1: cz0 }, mill ? 'retail_floor' : mainType, mill ? 'Co-op Market' : F === 0 ? 'Lobby' : undefined);
+    const back = pb.room(F, { x0: t, z0: cz1, x1: W - t, z1: D - t }, mill ? 'stockroom' : F === 0 ? (s.typology === 'office_lab' ? 'office' : 'dining') : mainType, mill ? 'Co-op stockroom' : undefined);
     if (wings) {
       const wl = pb.room(F, { x0: t, z0: cz0, x1: coreX0, z1: cz1 }, F === 0 ? 'office' : mainType === 'stacks' ? 'study' : 'office');
       const wr = pb.room(F, { x0: coreX1, z0: cz0, x1: W - t, z1: cz1 }, F === 0 ? 'office' : mainType === 'stacks' ? 'study' : 'office');
