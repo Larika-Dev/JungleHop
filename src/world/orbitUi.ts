@@ -110,12 +110,23 @@ export function installOrbitUi(app: App, opts: { tilesActive: () => number; buil
       if (fly.t >= 1) fly = null;
     }
     const w = innerWidth, h = innerHeight, dist = app.camera.position.distanceTo(c.target);
-    for (const l of labels) {
+    // declutter: nearest labels first; skip any whose box overlaps one already placed
+    const cam = app.camera.position;
+    const order = labels.map((l) => ({ l, d: l.p.distanceTo(cam) })).sort((a, b) => a.d - b.d);
+    const placed: [number, number, number, number][] = [];
+    for (const { l, d } of order) {
       v.copy(l.p).project(app.camera);
       const far = l.kind === 'district' ? dist > 300 : dist > 60;
-      const vis = far && v.z < 1 && Math.abs(v.x) < 1.1 && Math.abs(v.y) < 1.1;
+      let vis = far && d < Math.max(1400, dist * 2.2) && v.z < 1 && Math.abs(v.x) < 1.05 && Math.abs(v.y) < 1.05;
+      const x = (v.x * 0.5 + 0.5) * w, y = (-v.y * 0.5 + 0.5) * h;
+      if (vis) {
+        const bw = (l.el.offsetWidth || 120) / 2 + 4, bh = (l.el.offsetHeight || 22) / 2 + 3;
+        const box: [number, number, number, number] = [x - bw, y - bh, x + bw, y + bh];
+        if (placed.some((p) => box[0] < p[2] && box[2] > p[0] && box[1] < p[3] && box[3] > p[1])) vis = false;
+        else placed.push(box);
+      }
       l.el.style.display = vis ? '' : 'none';
-      if (vis) l.el.style.transform = `translate(${((v.x * 0.5 + 0.5) * w).toFixed(1)}px, ${((-v.y * 0.5 + 0.5) * h).toFixed(1)}px) translate(-50%, -50%)`;
+      if (vis) l.el.style.transform = `translate(${x.toFixed(1)}px, ${y.toFixed(1)}px) translate(-50%, -50%)`;
     }
     if ((statT += dt) > 0.4) {
       statT = 0;
