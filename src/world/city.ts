@@ -25,6 +25,7 @@ import { GrassField } from '../vegetation/grass';
 import { loadFonts } from '../signage/fonts';
 import { RainSystem } from '../lighting/rain';
 import { installOrbitUi } from './orbitUi';
+import { PrebuiltTiles } from './prebuilt';
 
 registerTileBuilder({ name: 'roads', order: 10, build: (ctx) => { buildRoadsForTile(ctx.name, ctx.g); buildMidblockForTile(ctx.name, ctx.gNoShadow); } });
 
@@ -101,7 +102,11 @@ export async function createCity(app: App): Promise<WorldHandle> {
     } else groundUniforms.activeRect.value.set(1e9, 1e9, -1e9, -1e9);
   };
   streamer.onChange.push(updateActiveRect);
-  streamer.onChange.push(() => { for (const [t, g] of impostors) g.visible = !streamer.isActive(t); });
+  // model viewer: prebuilt full-detail tiles (if published next to the page) cover the city beyond the live ring
+  const prebuilt = app.orbit ? new PrebuiltTiles(app, (t) => streamer.isActive(t)) : null;
+  const refreshImpostors = () => { for (const [t, g] of impostors) g.visible = !streamer.isActive(t) && !(prebuilt?.shown(t) ?? false); };
+  streamer.onChange.push(refreshImpostors);
+  if (prebuilt) { prebuilt.onChange.push(refreshImpostors); await prebuilt.init(); app.frameHooks.push((dt) => prebuilt.update(dt)); }
 
   // near-detail (CLAUDE.md §5): real pavers/bricks/domes within 15 m
   const plan = roadPlan();
@@ -153,7 +158,7 @@ export async function createCity(app: App): Promise<WorldHandle> {
     app.orbit.target.set(sx, ty, sz);
     app.camera.position.set(sx - Number(P.get('dist') ?? 150) * 0.55, ty + Number(P.get('dist') ?? 150) * 0.6, sz - Number(P.get('dist') ?? 150) * 0.58);
     app.orbit.update();
-    installOrbitUi(app, { tilesActive: () => streamer.activeNames().length, buildings: city.buildings.length });
+    installOrbitUi(app, { tilesActive: () => streamer.activeNames().length + (prebuilt ? [...prebuilt.entries.values()].filter((e) => e.group?.visible).length : 0), buildings: city.buildings.length });
   }
 
   return {

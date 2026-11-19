@@ -16,6 +16,14 @@ import { cityPlan } from '../src/world/cityPlan';
 import { planFor, LANDMARK_HOOKS } from '../src/buildings/manager';
 import { buildExterior, buildingMatrix, type ExteriorOut } from '../src/buildings/exterior';
 import { buildInterior } from '../src/interiors/build';
+import { splatAt } from '../src/terrain/terrainMesh';
+import { treesForTile } from '../src/vegetation/placement';
+import { SPECIES, treeGeometry, type TreeInst } from '../src/vegetation/trees';
+import { litterForTrees, shrubsForBuilding } from '../src/vegetation/shrubs';
+import { ivyForBuilding } from '../src/vegetation/ivy';
+import { furnitureByTile, furnitureGroup } from '../src/street/furniture';
+import { Rng, hash01 } from '../src/core/rng';
+import { InstancedMesh, Quaternion, Vector3 } from 'three';
 
 (globalThis as any).FileReader ??= class {
   result: ArrayBuffer | string | null = null; onloadend: (() => void) | null = null; onload: (() => void) | null = null;
@@ -108,13 +116,21 @@ if (mode === 'all' || mode === 'tiles') {
     for (const s of city.byTile.get(name) ?? []) {
       try { g.merge(noFar(exterior(s).g), buildingMatrix(s.spec)); n++; } catch (e) { console.warn('skip', s.spec.id, (e as Error).message); }
     }
-    // terrain at 2 m with ground colors
-    const b = tileBounds(t), step = 2, nx = (b.x1 - b.x0) / step;
+    // vegetation built exactly like the game's tile plug-in (same RNG stream): leaf litter, shrubs, ivy
+    const trees = treesForTile(t);
+    const vrng = new Rng(`veg:${name}`);
+    const gFlat = new GeoBuilder();
+    litterForTrees(gFlat, trees.filter((x) => x.sp !== 'loblolly'), vrng);
+    for (const s of city.byTile.get(name) ?? []) { shrubsForBuilding(g, s, vrng); ivyForBuilding(g, s); }
+    // terrain at 1 m with the game's ground splat blended into vertex colors
+    const b = tileBounds(t), step = 1, nx = (b.x1 - b.x0) / step;
     const pos: number[] = [], col: number[] = [], idx: number[] = [];
-    const grass = pc('GRASS_OCT');
+    const GC = [pc('GRASS_OCT'), pc('GRASS_WORN'), pc('RED_CLAY'), pc('PINE_STRAW')];
     for (let j = 0; j <= nx; j++) for (let i = 0; i <= nx; i++) {
       const x = b.x0 + i * step, z = b.z0 + j * step;
-      pos.push(x, T.height(x, z), z); col.push(grass.r, grass.g, grass.b);
+      const w = splatAt(x, z, T);
+      pos.push(x, T.height(x, z), z);
+      col.push(GC.reduce((a, c, k) => a + c.r * w[k], 0), GC.reduce((a, c, k) => a + c.g * w[k], 0), GC.reduce((a, c, k) => a + c.b * w[k], 0));
     }
     for (let j = 0; j < nx; j++) for (let i = 0; i < nx; i++) { const a = j * (nx + 1) + i, c = a + nx + 1; idx.push(a, c, a + 1, a + 1, c, c + 1); }
     const tg = new BufferGeometry();
@@ -126,7 +142,26 @@ if (mode === 'all' || mode === 'tiles') {
     root.userData = { tile: name, bounds: b, buildings: n, note: 'world meters; +X east, -Z north, origin = The Summit' };
     root.add(new Mesh(tg, new MeshStandardMaterial({ name: 'terrain', vertexColors: true, roughness: 0.95 })));
     root.add(g.toGroup(mat, 'built'));
-    void Matrix4;
+    root.add(gFlat.toGroup(mat, 'ground-detail'));
+    // trees: real trunks/limbs + leaf cards, instanced per species/variant (same variant hash as the game)
+    const by = new Map<string, TreeInst[]>();
+    for (const tr of trees) { const v = Math.floor(hash01(Math.round(tr.x * 10), Math.round(tr.z * 10), 3) * 3); const k = `${tr.sp}:${v}`; if (!by.has(k)) by.set(k, []); by.get(k)!.push(tr); }
+    const m4 = new Matrix4(), q = new Quaternion(), sc = new Vector3(), p = new Vector3(), up = new Vector3(0, 1, 0);
+    const tg2 = new Group(); tg2.name = 'trees';
+    for (const [k, arr] of by) {
+      const [sp, v] = k.split(':');
+      const geo = treeGeometry(sp as keyof typeof SPECIES, Number(v));
+      for (const bld of [geo.wood, geo.leaves]) for (const key of bld.buckets.keys()) {
+        const im = new InstancedMesh(bld.geometryFor(key)!, mat(key), arr.length);
+        im.name = `${k}:${key}`;
+        arr.forEach((tr, i) => { q.setFromAxisAngle(up, tr.rot); sc.setScalar(tr.scale); p.set(tr.x, tr.y, tr.z); m4.compose(p, q, sc); im.setMatrixAt(i, m4); });
+        tg2.add(im);
+      }
+    }
+    root.add(tg2);
+    // street furniture (lamps, signals, benches, hydrants, meters, shelters, manholes, blades), instanced
+    const fl = furnitureByTile().get(name) ?? [];
+    if (fl.length) root.add(furnitureGroup(fl));
     const bytes = await writeGlb(`export/tiles/${name}.glb`, root);
     console.log(`tile ${name}: ${n} buildings, ${(bytes / 1e6).toFixed(1)} MB`);
   }
