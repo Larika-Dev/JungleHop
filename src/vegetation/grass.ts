@@ -100,7 +100,7 @@ export class GrassField {
     g0.setAttribute('position', new BufferAttribute(new Float32Array([-0.5, 0, 0, 0.5, 0, 0, -0.38, 0.55, 0, 0.38, 0.55, 0, 0, 1, 0]), 3));
     g0.setAttribute('normal', new BufferAttribute(new Float32Array([0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0]), 3));
     g0.setIndex([0, 1, 2, 2, 1, 3, 2, 3, 4]);
-    this.material = new MeshStandardMaterial({ side: DoubleSide, roughness: 0.92 });
+    this.material = new MeshStandardMaterial({ side: DoubleSide, roughness: 0.95, envMapIntensity: 0.25 }); // matte blades: little sky reflection
     this.material.userData.matKey = 'leafy:GRASS_OCT';
     this.mesh = new Mesh(); // container (kept for API compatibility)
     this.mesh.name = 'grass-blades';
