@@ -1,0 +1,7 @@
+[
+  { "name": "overhead-ortho", "params": { "scene": "scaffold" }, "ortho": [0, -6, 30] },
+  { "name": "street-1-stair", "params": { "scene": "scaffold" }, "view": [-1, null, 2, 20, -8], "fly": false },
+  { "name": "street-2-door", "params": { "scene": "scaffold", "debug": "1" }, "view": [4.6, null, -2.5, 0, -5], "fly": false },
+  { "name": "street-3-walls", "params": { "scene": "scaffold" }, "view": [6, 1.65, -7, 0, 0] },
+  { "name": "macro-flemish-bond", "params": { "scene": "scaffold" }, "view": [-2, 1.2, -13.3, 0, 0], "fly": true }
+]
