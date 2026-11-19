@@ -256,6 +256,19 @@ const glb = await new GLTFExporter().parseAsync(scene, { binary: true }) as Arra
 mkdirSync(dirname(out), { recursive: true });
 writeFileSync(out, Buffer.from(glb));
 console.log(`wrote ${out} (${(glb.byteLength / 1e6).toFixed(1)} MB)`);
+// JSON glTF halves with embedded buffers (for hosts that only serve text): ground + structures/trees
+const parts: [string, (n: string) => boolean][] = [['ground', (n) => n.startsWith('terrain') || n === 'roads'], ['structures', (n) => !(n.startsWith('terrain') || n === 'roads')]];
+for (const [part, pick] of parts) {
+  const sc = new Scene(), g = new Group();
+  g.name = `CathedralMount_${part}`;
+  for (const c of [...root.children]) if (pick(c.name)) g.add(c.clone());
+  sc.add(g);
+  const json = await new GLTFExporter().parseAsync(sc, { binary: false });
+  const file = out.replace(/\.glb$/, `-${part}.gltf.json`);
+  const txt = JSON.stringify(json);
+  writeFileSync(file, txt);
+  console.log(`wrote ${file} (${(txt.length / 1e6).toFixed(1)} MB)`);
+}
 
 // labels for map viewers: districts + landmarks with terrain height
 const { DISTRICTS, LANDMARKS } = await import('../src/world/layout');
