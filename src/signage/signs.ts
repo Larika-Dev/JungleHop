@@ -75,12 +75,14 @@ function fitText(x: CanvasRenderingContext2D, text: string, w: number, h: number
 function faceQuad(s: Sited, x0: number, x1: number, y0: number, y1: number, off: number): Vector3[] {
   const sp = s.spec, y = sp.y;
   const P = (lx: number, ly: number) => { const [wx, wz] = localToWorld(sp, lx / 100, -off / 100); return new Vector3(wx, y + ly / 100, wz); };
-  return [P(x0, y0), P(x1, y0), P(x1, y1), P(x0, y1)];
+  // the front faces local −z, so for someone looking at it local +x runs to their LEFT: text starts at x1
+  return [P(x1, y0), P(x0, y0), P(x0, y1), P(x1, y1)];
 }
 /** Quad on the back face (local z = d + off), x measured from the back-left (looking at the back). */
 function backQuad(s: Sited, x0: number, x1: number, y0: number, y1: number, off: number): Vector3[] {
   const sp = s.spec, y = sp.y, W = sp.w, D = sp.d;
-  const P = (lx: number, ly: number) => { const [wx, wz] = localToWorld(sp, (W - lx) / 100, (D + off) / 100); return new Vector3(wx, y + ly / 100, wz); };
+  // the back faces local +z; looking at it, local +x runs to the viewer's right
+  const P = (lx: number, ly: number) => { const [wx, wz] = localToWorld(sp, lx / 100, (D + off) / 100); return new Vector3(wx, y + ly / 100, wz); };
   return [P(x0, y0), P(x1, y0), P(x1, y1), P(x0, y1)];
 }
 
