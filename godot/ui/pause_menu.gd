@@ -5,7 +5,6 @@ var _status: Label
 
 
 func _ready() -> void:
-	set_anchors_preset(Control.PRESET_CENTER)
 	custom_minimum_size = Vector2(420, 0)
 	var v := VBoxContainer.new()
 	v.add_theme_constant_override("separation", 10)
@@ -37,7 +36,7 @@ func _ready() -> void:
 	_status.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	v.add_child(_status)
 	await get_tree().process_frame
-	position = -size * 0.5
+	UI.center(self)
 	resume.grab_focus()
 
 

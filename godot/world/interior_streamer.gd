@@ -38,10 +38,40 @@ func _process(delta: float) -> void:
 	if _timer <= 0.0:
 		_timer = CHECK_EVERY
 		_refresh()
+		_update_lights()
 	if not _queue.is_empty():
 		var id: String = _queue.pop_front()
 		if not loaded.has(id) and _footprint_distance(id, target.global_position) < UNLOAD_RADIUS:
 			_build(id)
+
+
+var _lit_key := ""
+
+## Room lights are on only for the floor of the building the player is in (cheap and plenty).
+func _update_lights() -> void:
+	var r := CityData.room_at(target.global_position)
+	var key := "" if r.is_empty() else "%s|%d" % [r["buildingId"], int(r["floor"])]
+	if key == _lit_key:
+		return
+	_set_lights(_lit_key, false)
+	_lit_key = key
+	_set_lights(_lit_key, true)
+
+
+func _set_lights(key: String, on: bool) -> void:
+	if key == "":
+		return
+	var parts := key.split("|")
+	var root: Node3D = loaded.get(parts[0])
+	if root == null:
+		return
+	var n := 0
+	for room_node in root.get_children():
+		if room_node.has_meta("room") and int(room_node.get_meta("room")["floor"]) == int(parts[1]):
+			var l := room_node.get_node_or_null("Light")
+			if l and n < 40:
+				l.visible = on
+				n += 1
 
 
 ## Builds every interior within the radius right now (used at spawn, so the player never
@@ -132,10 +162,10 @@ class Builder:
 		var c := [
 			Vector3(lo.x, lo.y, lo.z), Vector3(hi.x, lo.y, lo.z), Vector3(hi.x, hi.y, lo.z), Vector3(lo.x, hi.y, lo.z),
 			Vector3(lo.x, lo.y, hi.z), Vector3(hi.x, lo.y, hi.z), Vector3(hi.x, hi.y, hi.z), Vector3(lo.x, hi.y, hi.z)]
-		_quad(s, c[0], c[3], c[2], c[1], Vector3.FORWARD)   # -z
-		_quad(s, c[5], c[6], c[7], c[4], Vector3.BACK)      # +z
-		_quad(s, c[4], c[7], c[3], c[0], Vector3.LEFT)      # -x
-		_quad(s, c[1], c[2], c[6], c[5], Vector3.RIGHT)     # +x
+		_quad(s, c[0], c[1], c[2], c[3], Vector3.FORWARD)   # -z
+		_quad(s, c[5], c[4], c[7], c[6], Vector3.BACK)      # +z
+		_quad(s, c[4], c[0], c[3], c[7], Vector3.LEFT)      # -x
+		_quad(s, c[1], c[5], c[6], c[2], Vector3.RIGHT)     # +x
 		_quad(s, c[3], c[7], c[6], c[2], Vector3.UP)        # +y
 		_quad(s, c[0], c[1], c[5], c[4], Vector3.DOWN)      # -y
 		if collide:
@@ -177,6 +207,15 @@ func _build(id: String) -> void:
 		room_node.name = String(r["roomId"])
 		room_node.set_meta("room", r)
 		root.add_child(room_node)
+		var lamp := OmniLight3D.new()
+		lamp.name = "Light"
+		lamp.position = Vector3((x0 + x1) * 0.5, y + h - 0.3, (z0 + z1) * 0.5)
+		lamp.omni_range = clampf(Vector2(x1 - x0, z1 - z0).length() * 0.75, 3.0, 18.0)
+		lamp.light_energy = 1.4
+		lamp.light_color = CityData.color(String(r.get("lightingKey", "INTERIOR_WARM")), Color(1, 0.85, 0.63))
+		lamp.shadow_enabled = false
+		lamp.visible = false
+		room_node.add_child(lamp)
 		# floor slab and ceiling
 		var ff: String = r.get("floorFinish", "OAK_FLOOR")
 		b.box(ff, Vector3(x0 - WALL_T, y - SLAB_T, z0 - WALL_T), Vector3(x1 + WALL_T, y, z1 + WALL_T))

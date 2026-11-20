@@ -51,7 +51,8 @@ Same as the three.js city: **1 unit = 1 m, +X east, −Z north, +Y up**, origin 
 ### `GameState` — `res://core/game_state.gd`
 | Member | Notes |
 |---|---|
-| `player_profile: Dictionary` | `{name, sex, height_cm, build, skin, hair_style, hair_color, shirt_color, pants_color}` set by the customization screen |
+| `player_profile: Dictionary` | set by the character creator: `{name, sex, age (18–80), height_cm (150–200), weight_kg (40–150), muscle (1–10 preset; 7 is best), build (0–1 from BMI), skin, hair_style, hair_color, shirt_color, pants_color, starting_cash (= 1000)}` |
+| `bmi(profile) -> float`, `STARTING_CASH` | every new life starts with $1,000; Life seeds its wallet and hidden stats (attractiveness, muscle, grooming, weight) from the profile on `game_started` |
 | `get_player() -> Node3D` | the player (also in group `"player"`) |
 | `world: Node3D` + `signal world_ready(world)` | the city root. **Add your streamers/managers as children of `world` when this fires.** |
 | `signal action_performed(action_id, target, actor)` | fired for every `Interactable` action. Life systems listen here. |
@@ -71,7 +72,8 @@ Read `Settings.view_distance` (m) and `Settings.quality` (0 low … 3 ultra) to 
 ### `UI` — `res://ui/ui_root.gd`
 `UI.notify(text)` toast, `UI.open_panel(control)` / `UI.close_panel()` (frees the mouse, stops player input),
 `UI.show_minigame(packed_scene) -> Node` (full-screen; the mini game calls `UI.close_panel()` when done),
-`UI.is_panel_open()`. The HUD shows clock/date and shows `Life.money` if a `Life` autoload exists with a `money` property.
+`UI.is_panel_open()`. The HUD shows clock/date and shows `Life.money` (or `Life.money.cash`) if a `Life` autoload exists.
+The HUD node (group `"hud"`) has `add_widget(control)` for extra panels in the top-right column.
 
 ## Interaction — `class_name Interactable extends Node3D` (`res://core/interaction/interactable.gd`)
 
@@ -104,7 +106,9 @@ func perform(action_id: String, actor: Node) -> void:
 Collision layers: 1 `world` (static city), 2 `player`, 3 `interact` (bodies the look ray should hit but the player can walk through, e.g. Area3D triggers), 4 `npc`.
 
 ## Player — `res://player/player.gd` (`CharacterBody3D`, group `player`)
-`set_input_enabled(bool)`, `sit_at(xform: Transform3D)` / `stand_up()`, `teleport(pos, yaw)`,
+`set_input_enabled(bool)`, `sit_at(xform)` (origin = seat surface where the hips go, −Z = facing out of the seat),
+`lie_at(xform)` (origin = mattress at the hips, −Z = toward the head), `stand_up()`, `posture` ("stand"/"sit"/"lie"),
+signals `sat_down(xform)` / `stood_up`, `teleport(pos, yaw)`,
 `camera: Camera3D`, `appearance: Node3D` (rebuilt from `GameState.player_profile`). Eye height 165 cm,
 walk 1.4 m/s, run 4 m/s (Shift), jump (Space), C toggles first/third person, F free-fly (debug).
 

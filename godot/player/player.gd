@@ -22,6 +22,9 @@ var focus: Interactable = null
 var flying := false
 var third_person := false
 var sitting := false
+## "stand" | "sit" | "lie"
+var posture := "stand"
+var _stand_from := Vector3.ZERO
 var input_enabled := true
 
 var _yaw := 0.0
@@ -88,21 +91,47 @@ func set_input_enabled(on: bool) -> void:
 		_e_down_t = -1.0
 
 
+## Sit on a seat. xform.origin = seat surface (where the hips go), -Z = the way the seat faces.
 func sit_at(xform: Transform3D) -> void:
-	sitting = true
-	velocity = Vector3.ZERO
-	global_position = xform.origin
-	_yaw = xform.basis.get_euler().y
-	appearance.set_pose("sit")
+	_enter_pose("sit", xform)
+	var hip := appearance.hip_height_sitting()
+	global_position = xform.origin - Vector3(0, hip, 0)
+	_head.position = Vector3(0, _eye - (appearance.hip_height_standing() - hip), 0)
 	sat_down.emit(xform)
 
 
+## Lie on a bed. xform.origin = mattress surface at the hips, -Z = toward the head.
+func lie_at(xform: Transform3D) -> void:
+	_enter_pose("lie", xform)
+	global_position = xform.origin
+	_head.position = Vector3(0, 0.2, -appearance.hip_to_eye())
+	_pitch = deg_to_rad(60.0)
+	sat_down.emit(xform)
+
+
+func _enter_pose(pose: String, xform: Transform3D) -> void:
+	sitting = true
+	posture = pose
+	velocity = Vector3.ZERO
+	_stand_from = global_position
+	_yaw = xform.basis.get_euler().y
+	rotation.y = _yaw
+	appearance.set_pose(pose)
+
+
+## Leave a seat or bed: step out in front of it (back to where you were if that is blocked).
 func stand_up() -> void:
 	if not sitting:
 		return
 	sitting = false
+	posture = "stand"
 	appearance.set_pose("stand")
-	global_position += -global_transform.basis.z * 0.5 + Vector3.UP * 0.05
+	_head.position = Vector3(0, _eye, 0)
+	_pitch = 0.0
+	var out := global_position + Basis(Vector3.UP, _yaw) * Vector3(0, 0, -0.6)
+	out.y = maxf(out.y, _stand_from.y) + 0.05
+	var probe := Transform3D(Basis.IDENTITY, out)
+	global_position = _stand_from + Vector3.UP * 0.05 if test_move(probe, Vector3.UP * 0.01) else out
 	stood_up.emit()
 
 
