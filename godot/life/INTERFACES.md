@@ -10,25 +10,52 @@ it. Everything is reached through one autoload:
 Life="*res://life/life.gd"
 ```
 
-Godot 4.5, GDScript, no addons. Nothing here assumes a particular scene; the
+Godot 4.5.1, GDScript, no addons. Nothing here assumes a particular scene; the
 core runs headless (see `tests/run_tests.gd`).
+
+### Hooks into the foundation (`godot/core/`)
+
+All optional, so the core also runs alone:
+
+- **GameClock:** `Life.clock` follows `/root/GameClock` (`total_minutes`,
+  `advance_minutes`) and re-emits its own signals.
+- **GameState:** Life listens to `GameState.action_performed(action_id, target, actor)`
+  and applies the life effects of that id when the actor is the player. It also
+  saves through `GameState.register_saveable("life", Life)` (`save_data()` / `load_data(d)`).
+- **CityData:** twice a second Life calls `CityData.room_at(player position)` and
+  sets `Life.place` from the room (`room_type`), building (`typology`,
+  `business.type`, `district`) and, when present, the business catalogue
+  (`category`, `social_hub`). Set `Life.auto_place = false` to drive it yourself.
+- **UI:** `ui/action_menu.gd` calls `UI.open_panel` / `UI.close_panel` when it exists.
+- **NPC Interactables:** return `Life.actions.interactable_actions(self_or_npc_node)`
+  from `get_actions(actor)` and call `Life.actions.perform(action_id, npc_node)`
+  in `perform()`. Life ignores the `GameState.action_performed` echo for NPC
+  targets, so nothing is applied twice.
+- **Other autoloads:** at start Life pulls `get_life_actions()` (or a no-argument
+  `get_actions()`) from `Education`, `JobSystem` and `Crime`/`CrimeSystem`/`Law`
+  when they exist. Items shaped `{id, label, building_id, callable}` become
+  place actions whose handler calls `callable`.
 
 ## Quick map
 
 | Object | What it owns | Main calls | Signals |
 |---|---|---|---|
-| `Life.clock` | game time (1 game hour = 1 real minute) | `total_minutes`, `hour()`, `minute_of_day()`, `day()`, `weekday()`, `advance_minutes(n)`, `time_string()` | `minute_passed(total)`, `hour_passed(hour, day)`, `day_passed(day)` |
+| `Life.clock` | game time (1 game hour = 1 real minute), mirrors `GameClock` | `total_minutes`, `hour()`, `minute_of_day()`, `day()`, `weekday()`, `is_between(h0, h1)`, `advance_minutes(n)`, `time_string()` | `minute_passed(total)`, `hour_passed(day, hour)`, `day_passed(day)` |
 | `Life.needs` | hunger, energy, hygiene, fun, social, bladder (0 to 100, 100 = satisfied) | `get_value(n)`, `change(n, d)`, `set_value(n, v)`, `mood()`, `performance_multiplier()`, `enabled` | `need_changed(n, v)`, `need_critical(n)` |
 | `Life.skills` | skills with XP and levels 0 to 10 | `level(id)`, `add_xp(id, xp)`, `xp(id)` | `skill_leveled(id, level)` |
 | `Life.money` | cash, bank, hourly pay sessions, recurring bills | `add(amount, reason)`, `spend(amount, reason) -> bool`, `can_afford(a)`, `deposit(a)`, `withdraw(a)`, `start_paid_session(...)`, `end_paid_session(id)`, `add_bill(...)` | `money_changed(cash, bank, delta, reason)`, `pay_credited(session_id, amount)`, `paid_session_ended(session_id, total, minutes)` |
 | `Life.relationships` | per-NPC friendship, romance, flags, memory | `register_npc(id, info)`, `get_rel(id)`, `change(id, friendship, romance, reason)`, `tier(id)`, `romance_tier(id)`, `add_flag(id, f)`, `has_flag(id, f)` | `relationship_changed(id, friendship, romance)`, `tier_changed(id, old, new)` |
-| `Life.actions` | action registry and runner | `register(def)`, `register_many(defs)`, `set_handler(id, callable)`, `set_check(id, callable)`, `available_for(target)`, `perform(id, target)`, `cancel()`, `busy()` | `action_started(id, target)`, `action_finished(id, target, result)`, `action_failed(id, target, reason)` |
-| `Life` | player flags, current place, save/load | `set_flag(k, v)`, `get_flag(k, default)`, `set_place(place)`, `place`, `register_save_provider(key, obj)`, `save_game(path)`, `load_game(path)` | `flag_changed(k, v)`, `place_changed(place)` |
+| `Life.actions` | action registry and runner (189 shipped) | `register(def)`, `register_many(defs)`, `set_handler(id, callable)`, `set_check(id, callable)`, `check(id, target)`, `available_for(target)`, `interactable_actions(target)`, `perform(id, target)`, `cancel()`, `busy()`, `progress()` | `action_started(id, target)`, `action_finished(id, target, result)`, `action_failed(id, target, reason)` |
+| `Life` | player flags, current place, save/load | `set_flag(k, v)`, `get_flag(k, default)`, `set_place(place)`, `place`, `register_save_provider(key, obj)`, `save_game(path)`, `load_game(path)` | `flag_changed(k, v)`, `place_changed(place)`, `notify(text)` |
+
+Shortcuts the jobs and education threads asked for: `Life.add_money(amount, reason)`,
+`Life.spend_money(amount, reason) -> bool`, `Life.get_money() -> float`,
+`Life.apply_need_delta(need, delta)`.
 
 ## Clock
 
-`Life.clock` uses an external clock when the Godot port provides one. On every
-frame it looks for an autoload at `/root/Clock`, `/root/GameClock` or
+`Life.clock` uses an external clock when the Godot port provides one. At start
+it looks for an autoload at `/root/GameClock`, `/root/Clock` or
 `/root/TimeManager` and reads, in order of preference, `total_minutes`,
 `get_total_minutes()`, or `day`, `hour`, `minute`. If none is found it runs its
 own: 1 real second = 1 game minute, so 1 game hour = 1 real minute. Either way
@@ -101,7 +128,8 @@ stealth, writing, gaming, knowledge`. Levels 0 to 10; `add_xp(id, xp)` with
 
 ## Actions
 
-Every player action is a dictionary. 100+ ship in `data/actions/*.json`; other
+Every player action is a dictionary. 189 ship in `data/actions/*.json`
+(social 46, romance 16, self 38, place 30, furniture 59); other
 systems add theirs at runtime with `Life.actions.register(def)` or drop a JSON
 file into `res://life/data/actions/` (all files there load at start).
 
