@@ -22,6 +22,7 @@ UI="*res://ui/ui_root.gd"
 Life="*res://life/life.gd"
 Furniture="*res://furniture/furniture_manager.gd"
 JobSystem="*res://jobs/job_system.gd"
+Education="*res://education/education.gd"
 
 [display]
 
