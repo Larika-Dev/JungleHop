@@ -267,8 +267,8 @@ Being married to you is the best decision I ever made. I made a pro-con list.
 You're perfect. I don't say that lightly.
 You make me want to relax. Sometimes I do.
 I love you more than a clean house.
-You're my partner in everything.
-I love how calm you are. It balances me.
+You're my partner in everything. Co-signer on my whole life.
+I love how you never panic. It's like a reset button for me.
 You're the only thing I'd never change.
 I'm so lucky to have you, sweetheart.
 You make my life feel organized and full.
@@ -383,7 +383,7 @@ How about a hike? I've mapped the route.
 Let's do a home improvement project. I have a list.
 Let's go to the museum. I've planned the optimal route.
 How about a spa day? Scheduled relaxation.
-Let's plan our anniversary. I want it to be perfect.
+Let's plan our anniversary. I've drafted three timelines.
 Let's have an unplanned day. Just once. I'll try.
 # memories
 Remember our first date? I planned every minute. Then it rained.
@@ -423,7 +423,7 @@ Goodnight, sweetheart. Tomorrow's planned.
 Sleep well. Your clothes are laid out.
 Goodnight! I love you more than my planner.
 Lights out at ten. It's 9:58.
-Goodnight, {player}. You did great today.
+Goodnight, {player}. Today's tasks: complete. You: perfect.
 Let's go to bed. I'll stop organizing.
 Sweet dreams, love.
 Goodnight. Thank you for being my calm.

@@ -84,7 +84,12 @@
    "base": 117,
    "dating": 52,
    "marriage": 200
+  },
+  "class_clown": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
   }
  },
- "total_lines": 6274
+ "total_lines": 6643
 }

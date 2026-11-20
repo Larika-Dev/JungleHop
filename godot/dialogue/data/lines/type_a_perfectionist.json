@@ -2447,7 +2447,7 @@
   {
    "tier": "marriage",
    "context": "affection",
-   "text": "You're my partner in everything.",
+   "text": "You're my partner in everything. Co-signer on my whole life.",
    "cond": {
     "romance": [
      "married"
@@ -2458,7 +2458,7 @@
   {
    "tier": "marriage",
    "context": "affection",
-   "text": "I love how calm you are. It balances me.",
+   "text": "I love how you never panic. It's like a reset button for me.",
    "cond": {
     "romance": [
      "married"
@@ -3635,7 +3635,7 @@
   {
    "tier": "marriage",
    "context": "plans",
-   "text": "Let's plan our anniversary. I want it to be perfect.",
+   "text": "Let's plan our anniversary. I've drafted three timelines.",
    "cond": {
     "romance": [
      "married"
@@ -4031,7 +4031,7 @@
   {
    "tier": "marriage",
    "context": "bedtime",
-   "text": "Goodnight, {player}. You did great today.",
+   "text": "Goodnight, {player}. Today's tasks: complete. You: perfect.",
    "cond": {
     "romance": [
      "married"
