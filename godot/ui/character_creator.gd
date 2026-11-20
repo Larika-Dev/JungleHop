@@ -11,7 +11,7 @@ var _height_label: Label
 
 
 func _ready() -> void:
-	set_anchors_preset(Control.PRESET_FULL_RECT)
+	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	var h := HBoxContainer.new()
 	h.add_theme_constant_override("separation", 24)
 	add_child(h)
@@ -78,34 +78,18 @@ func _ready() -> void:
 	_row(v, "Name", name_edit)
 	_choice(v, "Body", ["Male", "Female"], 0, func(i):
 		profile["sex"] = ["male", "female"][i]
-		profile["height_cm"] = 176 if i == 0 else 163
-		_height_slider.value = profile["height_cm"])
-	_height_slider = HSlider.new()
-	_height_slider.min_value = 150
-	_height_slider.max_value = 200
-	_height_slider.step = 1
-	_height_slider.value = profile["height_cm"]
-	_height_slider.custom_minimum_size.x = 300
-	_height_label = Label.new()
-	_height_slider.value_changed.connect(func(x):
-		profile["height_cm"] = int(x)
-		_height_label.text = _fmt_height(int(x))
-		_refresh())
-	_height_label.text = _fmt_height(profile["height_cm"])
-	var hh := HBoxContainer.new()
-	hh.add_child(_height_slider)
-	hh.add_child(_height_label)
-	_row(v, "Height", hh)
-	var build := HSlider.new()
-	build.min_value = 0
-	build.max_value = 1
-	build.step = 0.05
-	build.value = profile["build"]
-	build.custom_minimum_size.x = 300
-	build.value_changed.connect(func(x):
-		profile["build"] = x
-		_refresh())
-	_row(v, "Build", build)
+		_height_slider.value = 176 if i == 0 else 163
+		_weight_slider.value = 72 if i == 0 else 60)
+	_age_slider = _slider_row(v, "Age", 18, 80, 1, profile["age"], func(x): profile["age"] = int(x), func(x): "%d" % int(x))
+	_height_slider = _slider_row(v, "Height", 150, 200, 1, profile["height_cm"], func(x): profile["height_cm"] = int(x), func(x): _fmt_height(int(x)))
+	_weight_slider = _slider_row(v, "Weight", 40, 150, 1, profile["weight_kg"], func(x): profile["weight_kg"] = float(x), func(x): "%d kg (%d lb)" % [int(x), int(round(x * 2.20462))])
+	_choice(v, "Muscularity", MUSCLE_PRESETS.map(func(m): return m[0]), 1, func(i): profile["muscle"] = MUSCLE_PRESETS[i][1])
+	_bmi_label = Label.new()
+	_bmi_label.add_theme_color_override("font_color", UI.BLUE)
+	v.add_child(_bmi_label)
+	var cash := Label.new()
+	cash.text = "Everyone starts with $%d." % GameState.STARTING_CASH
+	v.add_child(cash)
 	_swatches(v, "Skin tone", CharacterAppearance.SKIN_TONES, "skin")
 	_choice(v, "Hair style", CharacterAppearance.HAIR_STYLES, profile["hair_style"], func(i): profile["hair_style"] = i)
 	_swatches(v, "Hair color", CharacterAppearance.HAIR_COLORS, "hair_color")
@@ -130,6 +114,32 @@ func _ready() -> void:
 
 
 var _height_slider: HSlider
+var _weight_slider: HSlider
+var _age_slider: HSlider
+var _bmi_label: Label
+const MUSCLE_PRESETS := [["Untrained", 2], ["Average", 4], ["Fit", 6], ["Athletic", 7], ["Very muscular", 9]]
+
+
+func _slider_row(v: VBoxContainer, label: String, lo: float, hi: float, step: float, val: float, set_cb: Callable, fmt: Callable) -> HSlider:
+	var sl := HSlider.new()
+	sl.min_value = lo
+	sl.max_value = hi
+	sl.step = step
+	sl.value = val
+	sl.custom_minimum_size.x = 260
+	sl.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	var l := Label.new()
+	l.custom_minimum_size.x = 170
+	l.text = fmt.call(val)
+	sl.value_changed.connect(func(x):
+		set_cb.call(x)
+		l.text = fmt.call(x)
+		_refresh())
+	var hh := HBoxContainer.new()
+	hh.add_child(sl)
+	hh.add_child(l)
+	_row(v, label, hh)
+	return sl
 
 
 func on_back() -> void:
@@ -147,6 +157,11 @@ static func _fmt_height(cm: int) -> String:
 
 
 func _refresh() -> void:
+	var bmi := GameState.bmi(profile)
+	profile["build"] = clampf((bmi - 17.0) / 18.0, 0.0, 1.0)
+	if _bmi_label:
+		var cat := "underweight" if bmi < 18.5 else ("healthy" if bmi < 25.0 else ("overweight" if bmi < 30.0 else "obese"))
+		_bmi_label.text = "BMI %.1f (%s)" % [bmi, cat]
 	_preview.build(profile)
 	_preview.set_first_person(false)
 

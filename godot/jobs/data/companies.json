@@ -1,0 +1,5872 @@
+{
+ "version": 1,
+ "seed": 1795,
+ "count": 231,
+ "companies": [
+  {
+   "id": "red_clay_roasters",
+   "name": "Red Clay Roasters",
+   "industry": "Coffee",
+   "buildings": [
+    "HAM_S_065",
+    "HAM_N_026",
+    "RRS_0154",
+    "HAM_S_066"
+   ],
+   "roles": [
+    "barista"
+   ],
+   "founded": 1913,
+   "manager": "Imani Collins",
+   "owner": "Mateo Chen",
+   "employees": 66,
+   "pay_scale": 0.95,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 3.2,
+   "perks": [
+    "flex_shifts",
+    "free_meal",
+    "staff_discount"
+   ],
+   "tagline": "Small-batch coffee roasted in Carrburg.",
+   "chain": true,
+   "branch_names": {
+    "HAM_S_065": "The Wandering Café",
+    "HAM_N_026": "Hilltop Lamp Coffee Bar",
+    "RRS_0154": "Red Clay Saddle Coffee Bar",
+    "HAM_S_066": "The Quarry Pennant Roasters"
+   }
+  },
+  {
+   "id": "golden_wok_group",
+   "name": "Golden Wok Group",
+   "industry": "Takeout",
+   "buildings": [
+    "RRN_0059",
+    "RRN_0112",
+    "RRS_0286",
+    "HAM_N_062"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 2001,
+   "manager": "Avery Moreau",
+   "owner": "June Santos",
+   "employees": 55,
+   "pay_scale": 0.97,
+   "standards": 0.1,
+   "experience_required": 0,
+   "rating": 4.1,
+   "perks": [
+    "flex_shifts",
+    "free_meal",
+    "staff_discount"
+   ],
+   "tagline": "Noodles until 3 AM, six days a week.",
+   "chain": true,
+   "branch_names": {
+    "RRN_0059": "Quarry Fiddle Saloon",
+    "RRN_0112": "Quarry Compass Wok Shop",
+    "RRS_0286": "The Gilded Biscuit Noodle Bar",
+    "HAM_N_062": "Cardinal Wok Shop"
+   }
+  },
+  {
+   "id": "ridgeline_apparel",
+   "name": "Ridgeline Apparel",
+   "industry": "Clothing",
+   "buildings": [
+    "HAM_N_056",
+    "RRN_0061",
+    "HAM_N_046"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1961,
+   "manager": "Wen Moreau",
+   "owner": "Theo Ivanova",
+   "employees": 80,
+   "pay_scale": 1.01,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 4.8,
+   "perks": [
+    "flex_shifts",
+    "staff_discount"
+   ],
+   "tagline": "Dressing the Mount since 1961.",
+   "chain": true,
+   "branch_names": {
+    "HAM_N_056": "Sweet Gum Haberdashery",
+    "RRN_0061": "The Silver Spoon Outfitters",
+    "HAM_N_046": "The Goatfoot Pennant Threads"
+   }
+  },
+  {
+   "id": "summit_taco_co",
+   "name": "Summit Taco Co.",
+   "industry": "Tacos",
+   "buildings": [
+    "RRK_0269",
+    "HAM_N_022",
+    "RRK_0288"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 1964,
+   "manager": "Odette Venable",
+   "owner": "Mae Lindqvist",
+   "employees": 54,
+   "pay_scale": 1.01,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.4,
+   "perks": [
+    "flex_shifts",
+    "free_meal",
+    "staff_discount"
+   ],
+   "tagline": "Hand-pressed tortillas, every shift.",
+   "chain": true,
+   "branch_names": {
+    "RRK_0269": "Wandering Ladder Threads",
+    "HAM_N_022": "Sweet Gum Taco Counter",
+    "RRK_0288": "The Old Cistern Coffee Bar"
+   }
+  },
+  {
+   "id": "hamilton_street_pizza_group",
+   "name": "Hamilton Street Pizza Group",
+   "industry": "Pizza",
+   "buildings": [
+    "CBG_1273",
+    "RRS_0206",
+    "HAM_S_010"
+   ],
+   "roles": [
+    "pizza_cook",
+    "delivery_rider"
+   ],
+   "founded": 1936,
+   "manager": "Jordan Pettigrew",
+   "owner": "Jordan Hartley",
+   "employees": 56,
+   "pay_scale": 0.99,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.4,
+   "perks": [
+    "flex_shifts",
+    "free_meal",
+    "staff_discount"
+   ],
+   "tagline": "Deck-oven pies by the slice.",
+   "chain": true,
+   "branch_names": {
+    "CBG_1273": "Silver Spoon Slice Shop",
+    "RRS_0206": "The Cardinal Satchel Pizza",
+    "HAM_S_010": "Mount Pizza Co."
+   }
+  },
+  {
+   "id": "night_owl_hospitality",
+   "name": "Night Owl Hospitality",
+   "industry": "Bar",
+   "buildings": [
+    "HAM_N_008",
+    "HAM_N_053",
+    "HAM_S_074"
+   ],
+   "roles": [
+    "bartender"
+   ],
+   "founded": 1906,
+   "manager": "Avery Whitaker",
+   "owner": "Greer Chen",
+   "employees": 38,
+   "pay_scale": 1.01,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 3.4,
+   "perks": [
+    "flex_shifts",
+    "free_meal",
+    "staff_discount"
+   ],
+   "tagline": "Three bars, one late-night crew.",
+   "chain": true,
+   "branch_names": {
+    "HAM_N_008": "The Grinding Stone",
+    "HAM_N_053": "Corner Lounge",
+    "HAM_S_074": "Silver Spoon Saloon"
+   }
+  },
+  {
+   "id": "twin_pines_salons",
+   "name": "Twin Pines Salons",
+   "industry": "Salon",
+   "buildings": [
+    "HAM_N_052",
+    "CBG_1268",
+    "CBG_1190"
+   ],
+   "roles": [
+    "barber"
+   ],
+   "founded": 2021,
+   "manager": "Greer Graves",
+   "owner": "Riley Chen",
+   "employees": 78,
+   "pay_scale": 0.97,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 3.5,
+   "perks": [
+    "flex_shifts",
+    "staff_discount"
+   ],
+   "tagline": "Walk-ins welcome at every chair.",
+   "chain": true,
+   "branch_names": {
+    "HAM_N_052": "Twin Pines Compass Salon",
+    "CBG_1268": "The Tin Roof Barber Shop",
+    "CBG_1190": "The Sweet Gum Teacup Barber Shop"
+   }
+  },
+  {
+   "id": "copper_saddle_delis",
+   "name": "Copper Saddle Delis",
+   "industry": "Deli",
+   "buildings": [
+    "CBG_1276",
+    "CBG_1240"
+   ],
+   "roles": [
+    "cashier",
+    "delivery_rider"
+   ],
+   "founded": 1950,
+   "manager": "Tobias Lindqvist",
+   "owner": "Quinn Tatum",
+   "employees": 36,
+   "pay_scale": 0.99,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.2,
+   "perks": [
+    "flex_shifts",
+    "free_meal",
+    "staff_discount"
+   ],
+   "tagline": "Sandwiches stacked to code.",
+   "chain": true,
+   "branch_names": {
+    "CBG_1276": "Oak Leaf Anvil Deli",
+    "CBG_1240": "The Crooked Sandwich Co."
+   }
+  },
+  {
+   "id": "hilltop_bakeries",
+   "name": "Hilltop Bakeries",
+   "industry": "Bakery",
+   "buildings": [
+    "CBG_1270",
+    "RRN_0134"
+   ],
+   "roles": [
+    "barista",
+    "cashier"
+   ],
+   "founded": 1949,
+   "manager": "Dex Graves",
+   "owner": "Morgan Haddad",
+   "employees": 63,
+   "pay_scale": 0.98,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.3,
+   "perks": [
+    "flex_shifts",
+    "free_meal",
+    "staff_discount"
+   ],
+   "tagline": "Ovens on at 4 AM.",
+   "chain": true,
+   "branch_names": {
+    "CBG_1270": "Brickyard Bakery",
+    "RRN_0134": "Silver Spoon Acorn Bakery"
+   }
+  },
+  {
+   "id": "red_clay_bake_shop_ham_n_045",
+   "name": "Red Clay Bake Shop",
+   "industry": "Bakery",
+   "buildings": [
+    "HAM_N_045"
+   ],
+   "roles": [
+    "barista",
+    "cashier"
+   ],
+   "founded": 1955,
+   "manager": "Silas Caldwell",
+   "owner": "Imani Kowalski",
+   "employees": 18,
+   "pay_scale": 1.11,
+   "standards": 0.05,
+   "experience_required": 8,
+   "rating": 3.2,
+   "perks": [
+    "paid_breaks"
+   ],
+   "tagline": "Independent bakery on Hamilton St."
+  },
+  {
+   "id": "wandering_bake_shop_ham_n_058",
+   "name": "Wandering Bake Shop",
+   "industry": "Bakery",
+   "buildings": [
+    "HAM_N_058"
+   ],
+   "roles": [
+    "barista",
+    "cashier"
+   ],
+   "founded": 1896,
+   "manager": "Casey Venable",
+   "owner": "Riley Mensah",
+   "employees": 30,
+   "pay_scale": 1.09,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.1,
+   "perks": [
+    "health_plan",
+    "signing_bonus",
+    "free_meal"
+   ],
+   "tagline": "Independent bakery on Hamilton St."
+  },
+  {
+   "id": "the_hilltop_bakery_ham_n_060",
+   "name": "The Hilltop Bakery",
+   "industry": "Bakery",
+   "buildings": [
+    "HAM_N_060"
+   ],
+   "roles": [
+    "barista",
+    "cashier"
+   ],
+   "founded": 1912,
+   "manager": "Riley Hartley",
+   "owner": "Odette Caldwell",
+   "employees": 11,
+   "pay_scale": 1.0,
+   "standards": 0.1,
+   "experience_required": 0,
+   "rating": 3.2,
+   "perks": [
+    "tip_pool",
+    "free_meal"
+   ],
+   "tagline": "Independent bakery on Hamilton St."
+  },
+  {
+   "id": "the_sweet_gum_bakery_ham_s_076",
+   "name": "The Sweet Gum Bakery",
+   "industry": "Bakery",
+   "buildings": [
+    "HAM_S_076"
+   ],
+   "roles": [
+    "barista",
+    "cashier"
+   ],
+   "founded": 1923,
+   "manager": "Rowan Ivanova",
+   "owner": "Nadia Okafor",
+   "employees": 24,
+   "pay_scale": 1.05,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.7,
+   "perks": [
+    "signing_bonus",
+    "health_plan"
+   ],
+   "tagline": "Independent bakery on Hamilton St."
+  },
+  {
+   "id": "twin_pines_teacup_bake_shop_ham_s_086",
+   "name": "Twin Pines Teacup Bake Shop",
+   "industry": "Bakery",
+   "buildings": [
+    "HAM_S_086"
+   ],
+   "roles": [
+    "barista",
+    "cashier"
+   ],
+   "founded": 1893,
+   "manager": "Emeka Battle",
+   "owner": "Sasha Lindqvist",
+   "employees": 24,
+   "pay_scale": 1.04,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.8,
+   "perks": [
+    "free_meal",
+    "staff_discount"
+   ],
+   "tagline": "Independent bakery on Hamilton St."
+  },
+  {
+   "id": "twin_pines_anvil_bake_shop_rrn_0106",
+   "name": "Twin Pines Anvil Bake Shop",
+   "industry": "Bakery",
+   "buildings": [
+    "RRN_0106"
+   ],
+   "roles": [
+    "barista",
+    "cashier"
+   ],
+   "founded": 1970,
+   "manager": "Riley Graves",
+   "owner": "Rowan Brooks",
+   "employees": 8,
+   "pay_scale": 1.11,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.5,
+   "perks": [
+    "flex_shifts",
+    "free_meal",
+    "health_plan"
+   ],
+   "tagline": "Independent bakery on Rosemary Row."
+  },
+  {
+   "id": "old_cistern_bakery_rrs_0160",
+   "name": "Old Cistern Bakery",
+   "industry": "Bakery",
+   "buildings": [
+    "RRS_0160"
+   ],
+   "roles": [
+    "barista",
+    "cashier"
+   ],
+   "founded": 1988,
+   "manager": "Quinn Ramos",
+   "owner": "Riley Lyle",
+   "employees": 29,
+   "pay_scale": 1.06,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 4.8,
+   "perks": [
+    "flex_shifts",
+    "free_meal"
+   ],
+   "tagline": "Independent bakery on Rosemary Row."
+  },
+  {
+   "id": "the_hilltop_bakery_cbg_1261",
+   "name": "The Hilltop Bakery (Carrburg)",
+   "industry": "Bakery",
+   "buildings": [
+    "CBG_1261"
+   ],
+   "roles": [
+    "barista",
+    "cashier"
+   ],
+   "founded": 1897,
+   "manager": "June Tatum",
+   "owner": "Elliot Brooks",
+   "employees": 20,
+   "pay_scale": 1.08,
+   "standards": 0.1,
+   "experience_required": 16,
+   "rating": 4.6,
+   "perks": [
+    "signing_bonus"
+   ],
+   "tagline": "Independent bakery on Carrburg."
+  },
+  {
+   "id": "bluebird_savings_bank_ham_n_001",
+   "name": "Bluebird Savings Bank",
+   "industry": "Banking",
+   "buildings": [
+    "HAM_N_001"
+   ],
+   "roles": [
+    "bank_teller"
+   ],
+   "founded": 1936,
+   "manager": "Ines Venable",
+   "owner": "Hank Brooks",
+   "employees": 24,
+   "pay_scale": 1.05,
+   "standards": 0.1,
+   "experience_required": 0,
+   "rating": 3.9,
+   "perks": [
+    "flex_shifts"
+   ],
+   "tagline": "Independent banking on Hamilton St."
+  },
+  {
+   "id": "the_night_owl_tavern_ham_n_020",
+   "name": "The Night Owl Tavern",
+   "industry": "Bar",
+   "buildings": [
+    "HAM_N_020"
+   ],
+   "roles": [
+    "bartender"
+   ],
+   "founded": 1959,
+   "manager": "Elliot Haddad",
+   "owner": "Odette Hartley",
+   "employees": 7,
+   "pay_scale": 1.07,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.8,
+   "perks": [
+    "flex_shifts",
+    "paid_breaks",
+    "free_meal"
+   ],
+   "tagline": "Independent bar on Hamilton St."
+  },
+  {
+   "id": "corner_fiddle_saloon_ham_n_029",
+   "name": "Corner Fiddle Saloon",
+   "industry": "Bar",
+   "buildings": [
+    "HAM_N_029"
+   ],
+   "roles": [
+    "bartender"
+   ],
+   "founded": 2010,
+   "manager": "Odette Doyle",
+   "owner": "Reggie Barnes",
+   "employees": 5,
+   "pay_scale": 0.97,
+   "standards": 0.1,
+   "experience_required": 0,
+   "rating": 4.6,
+   "perks": [
+    "paid_breaks",
+    "staff_discount",
+    "free_meal"
+   ],
+   "tagline": "Independent bar on Hamilton St."
+  },
+  {
+   "id": "summit_satchel_lounge_ham_n_063",
+   "name": "Summit Satchel Lounge",
+   "industry": "Bar",
+   "buildings": [
+    "HAM_N_063"
+   ],
+   "roles": [
+    "bartender"
+   ],
+   "founded": 1931,
+   "manager": "Riley Kowalski",
+   "owner": "Theo Brooks",
+   "employees": 30,
+   "pay_scale": 0.96,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.8,
+   "perks": [
+    "free_meal"
+   ],
+   "tagline": "Independent bar on Hamilton St."
+  },
+  {
+   "id": "the_twin_pines_fiddle_lounge_ham_s_068",
+   "name": "The Twin Pines Fiddle Lounge",
+   "industry": "Bar",
+   "buildings": [
+    "HAM_S_068"
+   ],
+   "roles": [
+    "bartender"
+   ],
+   "founded": 1931,
+   "manager": "Nadia Ellis",
+   "owner": "Marisol Brandt",
+   "employees": 13,
+   "pay_scale": 1.02,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.2,
+   "perks": [
+    "paid_breaks",
+    "free_meal"
+   ],
+   "tagline": "Independent bar on Hamilton St."
+  },
+  {
+   "id": "copper_lounge_ham_s_077",
+   "name": "Copper Lounge",
+   "industry": "Bar",
+   "buildings": [
+    "HAM_S_077"
+   ],
+   "roles": [
+    "bartender"
+   ],
+   "founded": 1988,
+   "manager": "Emeka Whitaker",
+   "owner": "Elliot Battle",
+   "employees": 11,
+   "pay_scale": 1.03,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.8,
+   "perks": [
+    "paid_breaks"
+   ],
+   "tagline": "Independent bar on Hamilton St."
+  },
+  {
+   "id": "the_wandering_kettle_tavern_ham_s_092",
+   "name": "The Wandering Kettle Tavern",
+   "industry": "Bar",
+   "buildings": [
+    "HAM_S_092"
+   ],
+   "roles": [
+    "bartender"
+   ],
+   "founded": 2019,
+   "manager": "Tobias Alvarez",
+   "owner": "Nadia Santos",
+   "employees": 11,
+   "pay_scale": 0.95,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 4.4,
+   "perks": [
+    "free_meal"
+   ],
+   "tagline": "Independent bar on Hamilton St."
+  },
+  {
+   "id": "red_clay_spoke_tavern_ham_s_093",
+   "name": "Red Clay Spoke Tavern",
+   "industry": "Bar",
+   "buildings": [
+    "HAM_S_093"
+   ],
+   "roles": [
+    "bartender"
+   ],
+   "founded": 1926,
+   "manager": "Priya Nakamura",
+   "owner": "Ruth Ellis",
+   "employees": 14,
+   "pay_scale": 1.11,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.1,
+   "perks": [
+    "health_plan",
+    "paid_breaks"
+   ],
+   "tagline": "Independent bar on Hamilton St."
+  },
+  {
+   "id": "the_twin_pines_thimble_lounge_rrn_0104",
+   "name": "The Twin Pines Thimble Lounge",
+   "industry": "Bar",
+   "buildings": [
+    "RRN_0104"
+   ],
+   "roles": [
+    "bartender"
+   ],
+   "founded": 1986,
+   "manager": "Marisol Kowalski",
+   "owner": "Sasha Ellis",
+   "employees": 25,
+   "pay_scale": 0.98,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 3.4,
+   "perks": [
+    "staff_discount",
+    "paid_breaks",
+    "free_meal"
+   ],
+   "tagline": "Independent bar on Rosemary Row."
+  },
+  {
+   "id": "the_goatfoot_lounge_rrs_0178",
+   "name": "The Goatfoot Lounge",
+   "industry": "Bar",
+   "buildings": [
+    "RRS_0178"
+   ],
+   "roles": [
+    "bartender"
+   ],
+   "founded": 1983,
+   "manager": "Wen Battle",
+   "owner": "Harper Ellis",
+   "employees": 20,
+   "pay_scale": 1.07,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 4.1,
+   "perks": [
+    "flex_shifts",
+    "signing_bonus",
+    "staff_discount",
+    "free_meal"
+   ],
+   "tagline": "Independent bar on Rosemary Row."
+  },
+  {
+   "id": "sweet_gum_ledger_saloon_rrs_0215",
+   "name": "Sweet Gum Ledger Saloon",
+   "industry": "Bar",
+   "buildings": [
+    "RRS_0215"
+   ],
+   "roles": [
+    "bartender"
+   ],
+   "founded": 1943,
+   "manager": "Elliot Venable",
+   "owner": "Dex Ferreira",
+   "employees": 10,
+   "pay_scale": 1.05,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.7,
+   "perks": [
+    "health_plan",
+    "free_meal"
+   ],
+   "tagline": "Independent bar on Rosemary Row."
+  },
+  {
+   "id": "the_corner_saloon_rrs_0229",
+   "name": "The Corner Saloon",
+   "industry": "Bar",
+   "buildings": [
+    "RRS_0229"
+   ],
+   "roles": [
+    "bartender"
+   ],
+   "founded": 1961,
+   "manager": "Ruth Collins",
+   "owner": "June Mangum",
+   "employees": 4,
+   "pay_scale": 1.06,
+   "standards": 0.1,
+   "experience_required": 0,
+   "rating": 4.7,
+   "perks": [
+    "paid_breaks",
+    "flex_shifts",
+    "health_plan"
+   ],
+   "tagline": "Independent bar on Rosemary Row."
+  },
+  {
+   "id": "goatfoot_hearth_lounge_cbg_1219",
+   "name": "Goatfoot Hearth Lounge",
+   "industry": "Bar",
+   "buildings": [
+    "CBG_1219"
+   ],
+   "roles": [
+    "bartender"
+   ],
+   "founded": 1913,
+   "manager": "Morgan Mangum",
+   "owner": "Harper Ramos",
+   "employees": 26,
+   "pay_scale": 1.06,
+   "standards": 0.1,
+   "experience_required": 0,
+   "rating": 4.1,
+   "perks": [
+    "paid_breaks",
+    "free_meal"
+   ],
+   "tagline": "Independent bar on Carrburg."
+  },
+  {
+   "id": "goatfoot_barrel_tavern_cbg_1222",
+   "name": "Goatfoot Barrel Tavern",
+   "industry": "Bar",
+   "buildings": [
+    "CBG_1222"
+   ],
+   "roles": [
+    "bartender"
+   ],
+   "founded": 1969,
+   "manager": "Marisol Tatum",
+   "owner": "Tobias Lindqvist",
+   "employees": 28,
+   "pay_scale": 1.05,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.5,
+   "perks": [
+    "health_plan",
+    "paid_breaks"
+   ],
+   "tagline": "Independent bar on Carrburg."
+  },
+  {
+   "id": "the_silver_spoon_acorn_tavern_cbg_1224",
+   "name": "The Silver Spoon Acorn Tavern",
+   "industry": "Bar",
+   "buildings": [
+    "CBG_1224"
+   ],
+   "roles": [
+    "bartender"
+   ],
+   "founded": 1979,
+   "manager": "Silas Caldwell",
+   "owner": "Avery Moreau",
+   "employees": 25,
+   "pay_scale": 0.98,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.2,
+   "perks": [
+    "flex_shifts",
+    "staff_discount",
+    "free_meal"
+   ],
+   "tagline": "Independent bar on Carrburg."
+  },
+  {
+   "id": "ridgeline_lamp_lounge_cbg_1225",
+   "name": "Ridgeline Lamp Lounge",
+   "industry": "Bar",
+   "buildings": [
+    "CBG_1225"
+   ],
+   "roles": [
+    "bartender"
+   ],
+   "founded": 1970,
+   "manager": "Wen Pettigrew",
+   "owner": "Dana Alvarez",
+   "employees": 15,
+   "pay_scale": 1.01,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 3.6,
+   "perks": [
+    "paid_breaks",
+    "health_plan"
+   ],
+   "tagline": "Independent bar on Carrburg."
+  },
+  {
+   "id": "the_hilltop_acorn_tavern_cbg_1242",
+   "name": "The Hilltop Acorn Tavern",
+   "industry": "Bar",
+   "buildings": [
+    "CBG_1242"
+   ],
+   "roles": [
+    "bartender"
+   ],
+   "founded": 1950,
+   "manager": "June Brandt",
+   "owner": "Bea Battle",
+   "employees": 28,
+   "pay_scale": 0.99,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.8,
+   "perks": [
+    "staff_discount",
+    "flex_shifts",
+    "signing_bonus"
+   ],
+   "tagline": "Independent bar on Carrburg."
+  },
+  {
+   "id": "silver_spoon_tavern_cbg_1275",
+   "name": "Silver Spoon Tavern",
+   "industry": "Bar",
+   "buildings": [
+    "CBG_1275"
+   ],
+   "roles": [
+    "bartender"
+   ],
+   "founded": 1979,
+   "manager": "Silas Mangum",
+   "owner": "Wen Tatum",
+   "employees": 23,
+   "pay_scale": 1.07,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 4.2,
+   "perks": [
+    "staff_discount",
+    "health_plan"
+   ],
+   "tagline": "Independent bar on Carrburg."
+  },
+  {
+   "id": "tarry_page_books_ham_n_006",
+   "name": "Tarry Page Books",
+   "industry": "Books",
+   "buildings": [
+    "HAM_N_006"
+   ],
+   "roles": [
+    "bookseller",
+    "cashier"
+   ],
+   "founded": 1912,
+   "manager": "Calvin Hartley",
+   "owner": "Avery Brooks",
+   "employees": 21,
+   "pay_scale": 1.05,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 3.4,
+   "perks": [
+    "flex_shifts",
+    "paid_breaks",
+    "health_plan"
+   ],
+   "tagline": "Independent books on Hamilton St."
+  },
+  {
+   "id": "pine_cone_book_nook_ham_n_024",
+   "name": "Pine Cone Book Nook",
+   "industry": "Books",
+   "buildings": [
+    "HAM_N_024"
+   ],
+   "roles": [
+    "bookseller",
+    "cashier"
+   ],
+   "founded": 1944,
+   "manager": "Jordan Okafor",
+   "owner": "Ruth Whitaker",
+   "employees": 21,
+   "pay_scale": 1.06,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.7,
+   "perks": [
+    "paid_breaks",
+    "staff_discount"
+   ],
+   "tagline": "Independent books on Hamilton St."
+  },
+  {
+   "id": "wandering_ledger_book_nook_ham_s_078",
+   "name": "Wandering Ledger Book Nook",
+   "industry": "Books",
+   "buildings": [
+    "HAM_S_078"
+   ],
+   "roles": [
+    "bookseller",
+    "cashier"
+   ],
+   "founded": 1951,
+   "manager": "Marisol Ivanova",
+   "owner": "Quinn Brooks",
+   "employees": 24,
+   "pay_scale": 1.0,
+   "standards": 0.1,
+   "experience_required": 0,
+   "rating": 3.8,
+   "perks": [
+    "flex_shifts",
+    "signing_bonus"
+   ],
+   "tagline": "Independent books on Hamilton St."
+  },
+  {
+   "id": "dogwood_ladder_books_ham_s_097",
+   "name": "Dogwood Ladder Books",
+   "industry": "Books",
+   "buildings": [
+    "HAM_S_097"
+   ],
+   "roles": [
+    "bookseller",
+    "cashier"
+   ],
+   "founded": 1911,
+   "manager": "Wen Whitaker",
+   "owner": "Hank Haddad",
+   "employees": 4,
+   "pay_scale": 1.09,
+   "standards": 0.1,
+   "experience_required": 8,
+   "rating": 3.7,
+   "perks": [
+    "paid_breaks",
+    "signing_bonus",
+    "staff_discount"
+   ],
+   "tagline": "Independent books on Hamilton St."
+  },
+  {
+   "id": "lantern_satchel_books_rrn_0065",
+   "name": "Lantern Satchel Books",
+   "industry": "Books",
+   "buildings": [
+    "RRN_0065"
+   ],
+   "roles": [
+    "bookseller",
+    "cashier"
+   ],
+   "founded": 2010,
+   "manager": "Greer Moreau",
+   "owner": "Wen Chen",
+   "employees": 30,
+   "pay_scale": 1.02,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.6,
+   "perks": [
+    "staff_discount",
+    "flex_shifts",
+    "health_plan"
+   ],
+   "tagline": "Independent books on Rosemary Row."
+  },
+  {
+   "id": "the_sweet_gum_book_nook_rrs_0161",
+   "name": "The Sweet Gum Book Nook",
+   "industry": "Books",
+   "buildings": [
+    "RRS_0161"
+   ],
+   "roles": [
+    "bookseller",
+    "cashier"
+   ],
+   "founded": 1900,
+   "manager": "Theo Mangum",
+   "owner": "Sasha Venable",
+   "employees": 12,
+   "pay_scale": 0.97,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.3,
+   "perks": [
+    "signing_bonus",
+    "staff_discount"
+   ],
+   "tagline": "Independent books on Rosemary Row."
+  },
+  {
+   "id": "ye_olde_waffle_hutch_ham_s_011",
+   "name": "Ye Olde Waffle Hutch",
+   "industry": "Diner",
+   "buildings": [
+    "HAM_S_011"
+   ],
+   "roles": [
+    "barista",
+    "cashier"
+   ],
+   "founded": 1902,
+   "manager": "Rowan Alvarez",
+   "owner": "Kofi Graves",
+   "employees": 22,
+   "pay_scale": 1.06,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.2,
+   "perks": [
+    "tip_pool",
+    "paid_breaks",
+    "free_meal"
+   ],
+   "tagline": "Independent diner on Hamilton St."
+  },
+  {
+   "id": "top_of_the_mount_ham_n_000",
+   "name": "Top of the Mount",
+   "industry": "Brewpub",
+   "buildings": [
+    "HAM_N_000"
+   ],
+   "roles": [
+    "bartender",
+    "pizza_cook"
+   ],
+   "founded": 1992,
+   "manager": "Imani Lyle",
+   "owner": "Hank Kowalski",
+   "employees": 14,
+   "pay_scale": 1.08,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.6,
+   "perks": [
+    "free_meal",
+    "paid_breaks",
+    "health_plan"
+   ],
+   "tagline": "Independent brewpub on Hamilton St."
+  },
+  {
+   "id": "pamlico_coffee_house_ham_n_004",
+   "name": "Pamlico Coffee House",
+   "industry": "Coffee",
+   "buildings": [
+    "HAM_N_004"
+   ],
+   "roles": [
+    "barista"
+   ],
+   "founded": 1917,
+   "manager": "Theo Lyle",
+   "owner": "Emeka Moreau",
+   "employees": 12,
+   "pay_scale": 1.09,
+   "standards": 0.1,
+   "experience_required": 8,
+   "rating": 4.2,
+   "perks": [
+    "flex_shifts",
+    "signing_bonus",
+    "free_meal"
+   ],
+   "tagline": "Independent coffee on Hamilton St."
+  },
+  {
+   "id": "dogwood_lantern_caf_ham_n_025",
+   "name": "Dogwood Lantern Café",
+   "industry": "Coffee",
+   "buildings": [
+    "HAM_N_025"
+   ],
+   "roles": [
+    "barista"
+   ],
+   "founded": 2021,
+   "manager": "Bea Nakamura",
+   "owner": "Morgan Chen",
+   "employees": 14,
+   "pay_scale": 1.07,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.0,
+   "perks": [
+    "flex_shifts",
+    "signing_bonus"
+   ],
+   "tagline": "Independent coffee on Hamilton St."
+  },
+  {
+   "id": "red_clay_pennant_caf_ham_s_067",
+   "name": "Red Clay Pennant Café",
+   "industry": "Coffee",
+   "buildings": [
+    "HAM_S_067"
+   ],
+   "roles": [
+    "barista"
+   ],
+   "founded": 1950,
+   "manager": "Dana Collins",
+   "owner": "Wen Brandt",
+   "employees": 7,
+   "pay_scale": 0.97,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.7,
+   "perks": [
+    "tip_pool",
+    "free_meal",
+    "staff_discount"
+   ],
+   "tagline": "Independent coffee on Hamilton St."
+  },
+  {
+   "id": "the_summit_anvil_coffee_bar_ham_s_071",
+   "name": "The Summit Anvil Coffee Bar",
+   "industry": "Coffee",
+   "buildings": [
+    "HAM_S_071"
+   ],
+   "roles": [
+    "barista"
+   ],
+   "founded": 1908,
+   "manager": "Jordan Brooks",
+   "owner": "Riley Pettigrew",
+   "employees": 12,
+   "pay_scale": 1.03,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.6,
+   "perks": [
+    "flex_shifts",
+    "tip_pool",
+    "health_plan"
+   ],
+   "tagline": "Independent coffee on Hamilton St."
+  },
+  {
+   "id": "the_old_cistern_roasters_ham_s_085",
+   "name": "The Old Cistern Roasters",
+   "industry": "Coffee",
+   "buildings": [
+    "HAM_S_085"
+   ],
+   "roles": [
+    "barista"
+   ],
+   "founded": 1923,
+   "manager": "Tobias Santos",
+   "owner": "Greer Sato",
+   "employees": 27,
+   "pay_scale": 1.05,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.3,
+   "perks": [
+    "paid_breaks",
+    "flex_shifts"
+   ],
+   "tagline": "Independent coffee on Hamilton St."
+  },
+  {
+   "id": "night_owl_roasters_rrn_0037",
+   "name": "Night Owl Roasters",
+   "industry": "Coffee",
+   "buildings": [
+    "RRN_0037"
+   ],
+   "roles": [
+    "barista"
+   ],
+   "founded": 1925,
+   "manager": "Bea Ferreira",
+   "owner": "Lorna Whitaker",
+   "employees": 20,
+   "pay_scale": 1.02,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 4.1,
+   "perks": [
+    "flex_shifts",
+    "free_meal"
+   ],
+   "tagline": "Independent coffee on Rosemary Row."
+  },
+  {
+   "id": "tin_roof_roasters_rrn_0039",
+   "name": "Tin Roof Roasters",
+   "industry": "Coffee",
+   "buildings": [
+    "RRN_0039"
+   ],
+   "roles": [
+    "barista"
+   ],
+   "founded": 1901,
+   "manager": "Quinn Santos",
+   "owner": "Dex Ferreira",
+   "employees": 27,
+   "pay_scale": 0.95,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.8,
+   "perks": [
+    "tip_pool",
+    "free_meal"
+   ],
+   "tagline": "Independent coffee on Rosemary Row."
+  },
+  {
+   "id": "brickyard_teacup_roasters_rrn_0041",
+   "name": "Brickyard Teacup Roasters",
+   "industry": "Coffee",
+   "buildings": [
+    "RRN_0041"
+   ],
+   "roles": [
+    "barista"
+   ],
+   "founded": 1910,
+   "manager": "Silas Okafor",
+   "owner": "Morgan Caldwell",
+   "employees": 9,
+   "pay_scale": 1.08,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.3,
+   "perks": [
+    "staff_discount",
+    "health_plan"
+   ],
+   "tagline": "Independent coffee on Rosemary Row."
+  },
+  {
+   "id": "old_cistern_anvil_caf_rrn_0124",
+   "name": "Old Cistern Anvil Café",
+   "industry": "Coffee",
+   "buildings": [
+    "RRN_0124"
+   ],
+   "roles": [
+    "barista"
+   ],
+   "founded": 1897,
+   "manager": "Imani Ivanova",
+   "owner": "Reggie Brandt",
+   "employees": 22,
+   "pay_scale": 0.95,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.2,
+   "perks": [
+    "tip_pool"
+   ],
+   "tagline": "Independent coffee on Rosemary Row."
+  },
+  {
+   "id": "gilded_caf_rrn_0130",
+   "name": "Gilded Café",
+   "industry": "Coffee",
+   "buildings": [
+    "RRN_0130"
+   ],
+   "roles": [
+    "barista"
+   ],
+   "founded": 1950,
+   "manager": "June Nakamura",
+   "owner": "Lorna Pike",
+   "employees": 22,
+   "pay_scale": 0.94,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 4.2,
+   "perks": [
+    "paid_breaks",
+    "tip_pool",
+    "free_meal"
+   ],
+   "tagline": "Independent coffee on Rosemary Row."
+  },
+  {
+   "id": "the_copper_roasters_rrs_0152",
+   "name": "The Copper Roasters",
+   "industry": "Coffee",
+   "buildings": [
+    "RRS_0152"
+   ],
+   "roles": [
+    "barista"
+   ],
+   "founded": 2006,
+   "manager": "Theo Ivanova",
+   "owner": "Harper Okafor",
+   "employees": 23,
+   "pay_scale": 1.05,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.7,
+   "perks": [
+    "signing_bonus",
+    "flex_shifts"
+   ],
+   "tagline": "Independent coffee on Rosemary Row."
+  },
+  {
+   "id": "old_cistern_coffee_bar_rrs_0156",
+   "name": "Old Cistern Coffee Bar",
+   "industry": "Coffee",
+   "buildings": [
+    "RRS_0156"
+   ],
+   "roles": [
+    "barista"
+   ],
+   "founded": 1976,
+   "manager": "Hank Kowalski",
+   "owner": "Bea Whitaker",
+   "employees": 29,
+   "pay_scale": 1.07,
+   "standards": 0.1,
+   "experience_required": 0,
+   "rating": 4.1,
+   "perks": [
+    "health_plan",
+    "free_meal"
+   ],
+   "tagline": "Independent coffee on Rosemary Row."
+  },
+  {
+   "id": "the_corner_pennant_coffee_bar_rrs_0159",
+   "name": "The Corner Pennant Coffee Bar",
+   "industry": "Coffee",
+   "buildings": [
+    "RRS_0159"
+   ],
+   "roles": [
+    "barista"
+   ],
+   "founded": 1910,
+   "manager": "Casey Battle",
+   "owner": "Mateo Graves",
+   "employees": 23,
+   "pay_scale": 1.02,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.6,
+   "perks": [
+    "health_plan"
+   ],
+   "tagline": "Independent coffee on Rosemary Row."
+  },
+  {
+   "id": "cardinal_teacup_roasters_rrs_0163",
+   "name": "Cardinal Teacup Roasters",
+   "industry": "Coffee",
+   "buildings": [
+    "RRS_0163"
+   ],
+   "roles": [
+    "barista"
+   ],
+   "founded": 1947,
+   "manager": "Elliot Doyle",
+   "owner": "Dex Santos",
+   "employees": 24,
+   "pay_scale": 0.99,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.0,
+   "perks": [
+    "signing_bonus",
+    "flex_shifts",
+    "free_meal"
+   ],
+   "tagline": "Independent coffee on Rosemary Row."
+  },
+  {
+   "id": "sweet_gum_acorn_caf_rrs_0172",
+   "name": "Sweet Gum Acorn Café",
+   "industry": "Coffee",
+   "buildings": [
+    "RRS_0172"
+   ],
+   "roles": [
+    "barista"
+   ],
+   "founded": 1911,
+   "manager": "Harper Okafor",
+   "owner": "Marisol Hooper",
+   "employees": 22,
+   "pay_scale": 1.08,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.9,
+   "perks": [
+    "tip_pool"
+   ],
+   "tagline": "Independent coffee on Rosemary Row."
+  },
+  {
+   "id": "the_cardinal_caf_rrs_0268",
+   "name": "The Cardinal Café",
+   "industry": "Coffee",
+   "buildings": [
+    "RRS_0268"
+   ],
+   "roles": [
+    "barista"
+   ],
+   "founded": 1927,
+   "manager": "Jordan Nakamura",
+   "owner": "Dex Okafor",
+   "employees": 29,
+   "pay_scale": 1.08,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.7,
+   "perks": [
+    "health_plan",
+    "signing_bonus"
+   ],
+   "tagline": "Independent coffee on Rosemary Row."
+  },
+  {
+   "id": "the_tin_roof_kettle_caf_rrs_0275",
+   "name": "The Tin Roof Kettle Café",
+   "industry": "Coffee",
+   "buildings": [
+    "RRS_0275"
+   ],
+   "roles": [
+    "barista"
+   ],
+   "founded": 2023,
+   "manager": "Dex Lindqvist",
+   "owner": "Quinn Ferreira",
+   "employees": 19,
+   "pay_scale": 1.07,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.6,
+   "perks": [
+    "flex_shifts",
+    "signing_bonus",
+    "free_meal"
+   ],
+   "tagline": "Independent coffee on Rosemary Row."
+  },
+  {
+   "id": "the_pine_cone_roasters_cbg_1227",
+   "name": "The Pine Cone Roasters",
+   "industry": "Coffee",
+   "buildings": [
+    "CBG_1227"
+   ],
+   "roles": [
+    "barista"
+   ],
+   "founded": 1901,
+   "manager": "Riley Ramos",
+   "owner": "Mateo Moreau",
+   "employees": 16,
+   "pay_scale": 1.1,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.8,
+   "perks": [
+    "free_meal",
+    "signing_bonus"
+   ],
+   "tagline": "Independent coffee on Carrburg."
+  },
+  {
+   "id": "the_night_owl_coffee_bar_cbg_1229",
+   "name": "The Night Owl Coffee Bar",
+   "industry": "Coffee",
+   "buildings": [
+    "CBG_1229"
+   ],
+   "roles": [
+    "barista"
+   ],
+   "founded": 1977,
+   "manager": "Drew Graves",
+   "owner": "Mateo Mensah",
+   "employees": 15,
+   "pay_scale": 0.95,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.7,
+   "perks": [
+    "free_meal",
+    "paid_breaks"
+   ],
+   "tagline": "Independent coffee on Carrburg."
+  },
+  {
+   "id": "the_corner_caf_cbg_1231",
+   "name": "The Corner Café",
+   "industry": "Coffee",
+   "buildings": [
+    "CBG_1231"
+   ],
+   "roles": [
+    "barista"
+   ],
+   "founded": 1958,
+   "manager": "Mae Hartley",
+   "owner": "Elliot Graves",
+   "employees": 7,
+   "pay_scale": 0.99,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.2,
+   "perks": [
+    "flex_shifts",
+    "paid_breaks",
+    "signing_bonus"
+   ],
+   "tagline": "Independent coffee on Carrburg."
+  },
+  {
+   "id": "old_cistern_kettle_roasters_cbg_1235",
+   "name": "Old Cistern Kettle Roasters",
+   "industry": "Coffee",
+   "buildings": [
+    "CBG_1235"
+   ],
+   "roles": [
+    "barista"
+   ],
+   "founded": 1979,
+   "manager": "Calvin Venable",
+   "owner": "Imani Venable",
+   "employees": 8,
+   "pay_scale": 1.07,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.7,
+   "perks": [
+    "paid_breaks",
+    "free_meal",
+    "flex_shifts"
+   ],
+   "tagline": "Independent coffee on Carrburg."
+  },
+  {
+   "id": "goatfoot_fiddle_roasters_cbg_1271",
+   "name": "Goatfoot Fiddle Roasters",
+   "industry": "Coffee",
+   "buildings": [
+    "CBG_1271"
+   ],
+   "roles": [
+    "barista"
+   ],
+   "founded": 1961,
+   "manager": "Greer Okafor",
+   "owner": "Lupe Santos",
+   "employees": 16,
+   "pay_scale": 1.07,
+   "standards": 0.1,
+   "experience_required": 0,
+   "rating": 3.9,
+   "perks": [
+    "paid_breaks"
+   ],
+   "tagline": "Independent coffee on Carrburg."
+  },
+  {
+   "id": "junior_varsity_cinema_ham_n_003",
+   "name": "Junior Varsity Cinema",
+   "industry": "Cinema",
+   "buildings": [
+    "HAM_N_003"
+   ],
+   "roles": [
+    "cinema_usher"
+   ],
+   "founded": 1917,
+   "manager": "Morgan Hooper",
+   "owner": "Ruth Haddad",
+   "employees": 18,
+   "pay_scale": 1.03,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.0,
+   "perks": [
+    "paid_breaks"
+   ],
+   "tagline": "Independent cinema on Hamilton St."
+  },
+  {
+   "id": "linen_lamb_ham_n_014",
+   "name": "Linen & Lamb",
+   "industry": "Clothing",
+   "buildings": [
+    "HAM_N_014"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1906,
+   "manager": "Imani Sato",
+   "owner": "Theo Ferreira",
+   "employees": 30,
+   "pay_scale": 1.1,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.7,
+   "perks": [
+    "signing_bonus",
+    "paid_breaks",
+    "flex_shifts"
+   ],
+   "tagline": "Independent clothing on Hamilton St."
+  },
+  {
+   "id": "goatfoot_outfitters_ham_n_019",
+   "name": "Goatfoot Outfitters",
+   "industry": "Clothing",
+   "buildings": [
+    "HAM_N_019"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1896,
+   "manager": "Jordan Lyle",
+   "owner": "Priya Alvarez",
+   "employees": 24,
+   "pay_scale": 1.1,
+   "standards": 0.1,
+   "experience_required": 8,
+   "rating": 3.5,
+   "perks": [
+    "flex_shifts",
+    "paid_breaks"
+   ],
+   "tagline": "Independent clothing on Hamilton St."
+  },
+  {
+   "id": "the_ridgeline_lantern_outfitters_ham_n_037",
+   "name": "The Ridgeline Lantern Outfitters",
+   "industry": "Clothing",
+   "buildings": [
+    "HAM_N_037"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 2005,
+   "manager": "Morgan Kowalski",
+   "owner": "Ines Battle",
+   "employees": 6,
+   "pay_scale": 1.06,
+   "standards": 0.1,
+   "experience_required": 0,
+   "rating": 3.9,
+   "perks": [
+    "flex_shifts",
+    "paid_breaks",
+    "staff_discount"
+   ],
+   "tagline": "Independent clothing on Hamilton St."
+  },
+  {
+   "id": "the_twin_pines_threads_ham_n_044",
+   "name": "The Twin Pines Threads",
+   "industry": "Clothing",
+   "buildings": [
+    "HAM_N_044"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1947,
+   "manager": "Emeka Tatum",
+   "owner": "Morgan Venable",
+   "employees": 17,
+   "pay_scale": 1.08,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.5,
+   "perks": [
+    "staff_discount"
+   ],
+   "tagline": "Independent clothing on Hamilton St."
+  },
+  {
+   "id": "ridgeline_outfitters_ham_n_059",
+   "name": "Ridgeline Outfitters",
+   "industry": "Clothing",
+   "buildings": [
+    "HAM_N_059"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1947,
+   "manager": "Emeka Collins",
+   "owner": "Silas Hartley",
+   "employees": 29,
+   "pay_scale": 1.06,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.9,
+   "perks": [
+    "paid_breaks",
+    "health_plan",
+    "staff_discount"
+   ],
+   "tagline": "Independent clothing on Hamilton St."
+  },
+  {
+   "id": "bluebell_lantern_outfitters_ham_s_073",
+   "name": "Bluebell Lantern Outfitters",
+   "industry": "Clothing",
+   "buildings": [
+    "HAM_S_073"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1921,
+   "manager": "Dana Ellis",
+   "owner": "Sasha Graves",
+   "employees": 14,
+   "pay_scale": 1.1,
+   "standards": 0.05,
+   "experience_required": 8,
+   "rating": 3.8,
+   "perks": [
+    "staff_discount",
+    "health_plan",
+    "signing_bonus"
+   ],
+   "tagline": "Independent clothing on Hamilton St."
+  },
+  {
+   "id": "old_cistern_compass_outfitters_ham_s_090",
+   "name": "Old Cistern Compass Outfitters",
+   "industry": "Clothing",
+   "buildings": [
+    "HAM_S_090"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1937,
+   "manager": "Reggie Moreau",
+   "owner": "Hollis Hartley",
+   "employees": 14,
+   "pay_scale": 0.95,
+   "standards": 0.1,
+   "experience_required": 0,
+   "rating": 4.8,
+   "perks": [
+    "signing_bonus",
+    "paid_breaks",
+    "staff_discount"
+   ],
+   "tagline": "Independent clothing on Hamilton St."
+  },
+  {
+   "id": "the_cardinal_lamp_outfitters_rrn_0057",
+   "name": "The Cardinal Lamp Outfitters",
+   "industry": "Clothing",
+   "buildings": [
+    "RRN_0057"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1943,
+   "manager": "Riley Chen",
+   "owner": "Harper Graves",
+   "employees": 6,
+   "pay_scale": 1.11,
+   "standards": 0.05,
+   "experience_required": 8,
+   "rating": 4.5,
+   "perks": [
+    "paid_breaks"
+   ],
+   "tagline": "Independent clothing on Rosemary Row."
+  },
+  {
+   "id": "the_lantern_lamp_outfitters_rrn_0132",
+   "name": "The Lantern Lamp Outfitters",
+   "industry": "Clothing",
+   "buildings": [
+    "RRN_0132"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1940,
+   "manager": "Marisol Sato",
+   "owner": "Greer Sato",
+   "employees": 10,
+   "pay_scale": 1.02,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.7,
+   "perks": [
+    "flex_shifts",
+    "staff_discount"
+   ],
+   "tagline": "Independent clothing on Rosemary Row."
+  },
+  {
+   "id": "crooked_saddle_threads_rrs_0157",
+   "name": "Crooked Saddle Threads",
+   "industry": "Clothing",
+   "buildings": [
+    "RRS_0157"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1913,
+   "manager": "Theo Chen",
+   "owner": "Bea Okafor",
+   "employees": 12,
+   "pay_scale": 0.98,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.0,
+   "perks": [
+    "staff_discount",
+    "signing_bonus",
+    "paid_breaks"
+   ],
+   "tagline": "Independent clothing on Rosemary Row."
+  },
+  {
+   "id": "the_hilltop_outfitters_rrs_0170",
+   "name": "The Hilltop Outfitters",
+   "industry": "Clothing",
+   "buildings": [
+    "RRS_0170"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1988,
+   "manager": "Harper Whitaker",
+   "owner": "Greer Ivanova",
+   "employees": 13,
+   "pay_scale": 0.98,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.2,
+   "perks": [
+    "staff_discount"
+   ],
+   "tagline": "Independent clothing on Rosemary Row."
+  },
+  {
+   "id": "wandering_biscuit_threads_rrs_0208",
+   "name": "Wandering Biscuit Threads",
+   "industry": "Clothing",
+   "buildings": [
+    "RRS_0208"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1894,
+   "manager": "Mae Ramos",
+   "owner": "Mae Brandt",
+   "employees": 18,
+   "pay_scale": 1.08,
+   "standards": 0.1,
+   "experience_required": 8,
+   "rating": 4.3,
+   "perks": [
+    "paid_breaks"
+   ],
+   "tagline": "Independent clothing on Rosemary Row."
+  },
+  {
+   "id": "lantern_biscuit_outfitters_rrs_0214",
+   "name": "Lantern Biscuit Outfitters",
+   "industry": "Clothing",
+   "buildings": [
+    "RRS_0214"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1907,
+   "manager": "Theo Ivanova",
+   "owner": "Dana Brandt",
+   "employees": 29,
+   "pay_scale": 1.11,
+   "standards": 0.1,
+   "experience_required": 8,
+   "rating": 3.2,
+   "perks": [
+    "flex_shifts",
+    "health_plan"
+   ],
+   "tagline": "Independent clothing on Rosemary Row."
+  },
+  {
+   "id": "the_copper_sparrow_threads_rrs_0290",
+   "name": "The Copper Sparrow Threads",
+   "industry": "Clothing",
+   "buildings": [
+    "RRS_0290"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1925,
+   "manager": "Elliot Ellis",
+   "owner": "Mae Haddad",
+   "employees": 6,
+   "pay_scale": 1.11,
+   "standards": 0.1,
+   "experience_required": 8,
+   "rating": 3.7,
+   "perks": [
+    "flex_shifts",
+    "health_plan"
+   ],
+   "tagline": "Independent clothing on Rosemary Row."
+  },
+  {
+   "id": "hilltop_lamp_threads_cbg_1180",
+   "name": "Hilltop Lamp Threads",
+   "industry": "Clothing",
+   "buildings": [
+    "CBG_1180"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 2011,
+   "manager": "Bea Nakamura",
+   "owner": "Wen Lindqvist",
+   "employees": 4,
+   "pay_scale": 0.96,
+   "standards": 0.1,
+   "experience_required": 0,
+   "rating": 3.1,
+   "perks": [
+    "staff_discount"
+   ],
+   "tagline": "Independent clothing on Carrburg."
+  },
+  {
+   "id": "the_red_clay_threads_cbg_1183",
+   "name": "The Red Clay Threads",
+   "industry": "Clothing",
+   "buildings": [
+    "CBG_1183"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 2006,
+   "manager": "Rowan Pettigrew",
+   "owner": "Riley Ivanova",
+   "employees": 26,
+   "pay_scale": 0.95,
+   "standards": 0.1,
+   "experience_required": 0,
+   "rating": 4.1,
+   "perks": [
+    "signing_bonus"
+   ],
+   "tagline": "Independent clothing on Carrburg."
+  },
+  {
+   "id": "the_old_cistern_ledger_threads_cbg_1185",
+   "name": "The Old Cistern Ledger Threads",
+   "industry": "Clothing",
+   "buildings": [
+    "CBG_1185"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1901,
+   "manager": "Priya Hooper",
+   "owner": "Emeka Pike",
+   "employees": 6,
+   "pay_scale": 1.12,
+   "standards": 0.05,
+   "experience_required": 16,
+   "rating": 3.9,
+   "perks": [
+    "flex_shifts",
+    "paid_breaks"
+   ],
+   "tagline": "Independent clothing on Carrburg."
+  },
+  {
+   "id": "the_quarry_acorn_outfitters_cbg_1217",
+   "name": "The Quarry Acorn Outfitters",
+   "industry": "Clothing",
+   "buildings": [
+    "CBG_1217"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1941,
+   "manager": "Rowan Venable",
+   "owner": "Emeka Mangum",
+   "employees": 17,
+   "pay_scale": 1.0,
+   "standards": 0.1,
+   "experience_required": 0,
+   "rating": 3.6,
+   "perks": [
+    "health_plan",
+    "flex_shifts",
+    "staff_discount"
+   ],
+   "tagline": "Independent clothing on Carrburg."
+  },
+  {
+   "id": "wandering_thimble_outfitters_cbg_1230",
+   "name": "Wandering Thimble Outfitters",
+   "industry": "Clothing",
+   "buildings": [
+    "CBG_1230"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1975,
+   "manager": "Wen Ivanova",
+   "owner": "Avery Battle",
+   "employees": 6,
+   "pay_scale": 1.01,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.2,
+   "perks": [
+    "flex_shifts",
+    "paid_breaks",
+    "signing_bonus"
+   ],
+   "tagline": "Independent clothing on Carrburg."
+  },
+  {
+   "id": "the_hilltop_biscuit_haberdashery_cbg_1234",
+   "name": "The Hilltop Biscuit Haberdashery",
+   "industry": "Clothing",
+   "buildings": [
+    "CBG_1234"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1900,
+   "manager": "Drew Moreau",
+   "owner": "June Tatum",
+   "employees": 9,
+   "pay_scale": 1.09,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.4,
+   "perks": [
+    "paid_breaks",
+    "flex_shifts",
+    "signing_bonus"
+   ],
+   "tagline": "Independent clothing on Carrburg."
+  },
+  {
+   "id": "dogwood_kettle_threads_cbg_1239",
+   "name": "Dogwood Kettle Threads",
+   "industry": "Clothing",
+   "buildings": [
+    "CBG_1239"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 2002,
+   "manager": "Wen Collins",
+   "owner": "Tobias Caldwell",
+   "employees": 4,
+   "pay_scale": 0.99,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.6,
+   "perks": [
+    "staff_discount"
+   ],
+   "tagline": "Independent clothing on Carrburg."
+  },
+  {
+   "id": "oak_leaf_threads_cbg_1269",
+   "name": "Oak Leaf Threads",
+   "industry": "Clothing",
+   "buildings": [
+    "CBG_1269"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1934,
+   "manager": "Marisol Chen",
+   "owner": "Nadia Ellis",
+   "employees": 24,
+   "pay_scale": 1.04,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 3.8,
+   "perks": [
+    "flex_shifts"
+   ],
+   "tagline": "Independent clothing on Carrburg."
+  },
+  {
+   "id": "the_cardinal_sandwich_co_ham_n_051",
+   "name": "The Cardinal Sandwich Co.",
+   "industry": "Deli",
+   "buildings": [
+    "HAM_N_051"
+   ],
+   "roles": [
+    "cashier",
+    "delivery_rider"
+   ],
+   "founded": 1958,
+   "manager": "Wen Alvarez",
+   "owner": "Lupe Brooks",
+   "employees": 25,
+   "pay_scale": 1.04,
+   "standards": 0.1,
+   "experience_required": 0,
+   "rating": 4.6,
+   "perks": [
+    "paid_breaks"
+   ],
+   "tagline": "Independent deli on Hamilton St."
+  },
+  {
+   "id": "the_wandering_satchel_sandwich_co_ham_s_083",
+   "name": "The Wandering Satchel Sandwich Co.",
+   "industry": "Deli",
+   "buildings": [
+    "HAM_S_083"
+   ],
+   "roles": [
+    "cashier",
+    "delivery_rider"
+   ],
+   "founded": 1953,
+   "manager": "Wen Ramos",
+   "owner": "Drew Doyle",
+   "employees": 12,
+   "pay_scale": 1.1,
+   "standards": 0.1,
+   "experience_required": 16,
+   "rating": 3.3,
+   "perks": [
+    "flex_shifts",
+    "paid_breaks",
+    "free_meal"
+   ],
+   "tagline": "Independent deli on Hamilton St."
+  },
+  {
+   "id": "copper_saddle_deli_ham_s_088",
+   "name": "Copper Saddle Deli",
+   "industry": "Deli",
+   "buildings": [
+    "HAM_S_088"
+   ],
+   "roles": [
+    "cashier",
+    "delivery_rider"
+   ],
+   "founded": 2006,
+   "manager": "Taylor Ramos",
+   "owner": "Hollis Pike",
+   "employees": 21,
+   "pay_scale": 1.01,
+   "standards": 0.1,
+   "experience_required": 0,
+   "rating": 3.3,
+   "perks": [
+    "paid_breaks",
+    "signing_bonus"
+   ],
+   "tagline": "Independent deli on Hamilton St."
+  },
+  {
+   "id": "goatfoot_lantern_deli_ham_s_096",
+   "name": "Goatfoot Lantern Deli",
+   "industry": "Deli",
+   "buildings": [
+    "HAM_S_096"
+   ],
+   "roles": [
+    "cashier",
+    "delivery_rider"
+   ],
+   "founded": 1971,
+   "manager": "Bea Santos",
+   "owner": "Ruth Brandt",
+   "employees": 5,
+   "pay_scale": 0.96,
+   "standards": 0.1,
+   "experience_required": 0,
+   "rating": 3.3,
+   "perks": [
+    "free_meal",
+    "paid_breaks"
+   ],
+   "tagline": "Independent deli on Hamilton St."
+  },
+  {
+   "id": "night_owl_deli_rrn_0049",
+   "name": "Night Owl Deli",
+   "industry": "Deli",
+   "buildings": [
+    "RRN_0049"
+   ],
+   "roles": [
+    "cashier",
+    "delivery_rider"
+   ],
+   "founded": 1970,
+   "manager": "Morgan Ferreira",
+   "owner": "Rowan Kowalski",
+   "employees": 20,
+   "pay_scale": 0.95,
+   "standards": 0.1,
+   "experience_required": 0,
+   "rating": 4.6,
+   "perks": [
+    "flex_shifts",
+    "staff_discount",
+    "free_meal"
+   ],
+   "tagline": "Independent deli on Rosemary Row."
+  },
+  {
+   "id": "twin_pines_spoke_sandwich_co_rrn_0085",
+   "name": "Twin Pines Spoke Sandwich Co.",
+   "industry": "Deli",
+   "buildings": [
+    "RRN_0085"
+   ],
+   "roles": [
+    "cashier",
+    "delivery_rider"
+   ],
+   "founded": 1987,
+   "manager": "Emeka Caldwell",
+   "owner": "Harper Ferreira",
+   "employees": 25,
+   "pay_scale": 1.0,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.6,
+   "perks": [
+    "health_plan",
+    "tip_pool"
+   ],
+   "tagline": "Independent deli on Rosemary Row."
+  },
+  {
+   "id": "the_cardinal_sparrow_deli_rrs_0289",
+   "name": "The Cardinal Sparrow Deli",
+   "industry": "Deli",
+   "buildings": [
+    "RRS_0289"
+   ],
+   "roles": [
+    "cashier",
+    "delivery_rider"
+   ],
+   "founded": 1942,
+   "manager": "Morgan Barnes",
+   "owner": "Silas Venable",
+   "employees": 6,
+   "pay_scale": 1.11,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.2,
+   "perks": [
+    "tip_pool",
+    "free_meal"
+   ],
+   "tagline": "Independent deli on Rosemary Row."
+  },
+  {
+   "id": "twin_pines_sandwich_co_cbg_1184",
+   "name": "Twin Pines Sandwich Co.",
+   "industry": "Deli",
+   "buildings": [
+    "CBG_1184"
+   ],
+   "roles": [
+    "cashier",
+    "delivery_rider"
+   ],
+   "founded": 1912,
+   "manager": "Dex Whitaker",
+   "owner": "Emeka Pike",
+   "employees": 13,
+   "pay_scale": 1.11,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.8,
+   "perks": [
+    "staff_discount",
+    "paid_breaks",
+    "health_plan"
+   ],
+   "tagline": "Independent deli on Carrburg."
+  },
+  {
+   "id": "silver_spoon_deli_cbg_1221",
+   "name": "Silver Spoon Deli",
+   "industry": "Deli",
+   "buildings": [
+    "CBG_1221"
+   ],
+   "roles": [
+    "cashier",
+    "delivery_rider"
+   ],
+   "founded": 2003,
+   "manager": "Rowan Ellis",
+   "owner": "Harper Hartley",
+   "employees": 26,
+   "pay_scale": 1.12,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.3,
+   "perks": [
+    "staff_discount",
+    "paid_breaks"
+   ],
+   "tagline": "Independent deli on Carrburg."
+  },
+  {
+   "id": "jolly_molar_dental_ham_n_007",
+   "name": "Jolly Molar Dental",
+   "industry": "Dental",
+   "buildings": [
+    "HAM_N_007"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1955,
+   "manager": "Ruth Pettigrew",
+   "owner": "Morgan Whitaker",
+   "employees": 18,
+   "pay_scale": 0.99,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.4,
+   "perks": [
+    "signing_bonus"
+   ],
+   "tagline": "Independent dental on Hamilton St."
+  },
+  {
+   "id": "sutter_s_pharmacy_grill_ham_s_002",
+   "name": "Sutter's Pharmacy & Grill",
+   "industry": "Diner",
+   "buildings": [
+    "HAM_S_002"
+   ],
+   "roles": [
+    "barista",
+    "cashier"
+   ],
+   "founded": 2016,
+   "manager": "Drew Okafor",
+   "owner": "Mateo Chen",
+   "employees": 8,
+   "pay_scale": 0.98,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.2,
+   "perks": [
+    "tip_pool",
+    "signing_bonus",
+    "free_meal"
+   ],
+   "tagline": "Independent diner on Hamilton St."
+  },
+  {
+   "id": "oak_leaf_biscuit_florist_ham_n_023",
+   "name": "Oak Leaf Biscuit Florist",
+   "industry": "Florist",
+   "buildings": [
+    "HAM_N_023"
+   ],
+   "roles": [
+    "cashier",
+    "delivery_rider"
+   ],
+   "founded": 1937,
+   "manager": "Drew Ellis",
+   "owner": "Reggie Venable",
+   "employees": 18,
+   "pay_scale": 1.06,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 3.6,
+   "perks": [
+    "staff_discount",
+    "flex_shifts",
+    "signing_bonus"
+   ],
+   "tagline": "Independent florist on Hamilton St."
+  },
+  {
+   "id": "the_twin_pines_florist_ham_n_043",
+   "name": "The Twin Pines Florist",
+   "industry": "Florist",
+   "buildings": [
+    "HAM_N_043"
+   ],
+   "roles": [
+    "cashier",
+    "delivery_rider"
+   ],
+   "founded": 2003,
+   "manager": "Jordan Whitaker",
+   "owner": "Nadia Hooper",
+   "employees": 9,
+   "pay_scale": 0.96,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.7,
+   "perks": [
+    "signing_bonus",
+    "paid_breaks",
+    "staff_discount"
+   ],
+   "tagline": "Independent florist on Hamilton St."
+  },
+  {
+   "id": "goatfoot_ledger_florist_ham_n_064",
+   "name": "Goatfoot Ledger Florist",
+   "industry": "Florist",
+   "buildings": [
+    "HAM_N_064"
+   ],
+   "roles": [
+    "cashier",
+    "delivery_rider"
+   ],
+   "founded": 1912,
+   "manager": "Theo Okafor",
+   "owner": "Nadia Caldwell",
+   "employees": 4,
+   "pay_scale": 0.99,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.5,
+   "perks": [
+    "paid_breaks"
+   ],
+   "tagline": "Independent florist on Hamilton St."
+  },
+  {
+   "id": "sweet_gum_thimble_florist_rrn_0033",
+   "name": "Sweet Gum Thimble Florist",
+   "industry": "Florist",
+   "buildings": [
+    "RRN_0033"
+   ],
+   "roles": [
+    "cashier",
+    "delivery_rider"
+   ],
+   "founded": 1925,
+   "manager": "Ruth Moreau",
+   "owner": "Priya Santos",
+   "employees": 15,
+   "pay_scale": 1.08,
+   "standards": 0.1,
+   "experience_required": 16,
+   "rating": 3.6,
+   "perks": [
+    "health_plan"
+   ],
+   "tagline": "Independent florist on Rosemary Row."
+  },
+  {
+   "id": "the_hilltop_florist_rrn_0102",
+   "name": "The Hilltop Florist",
+   "industry": "Florist",
+   "buildings": [
+    "RRN_0102"
+   ],
+   "roles": [
+    "cashier",
+    "delivery_rider"
+   ],
+   "founded": 2023,
+   "manager": "Mateo Caldwell",
+   "owner": "Sasha Sato",
+   "employees": 26,
+   "pay_scale": 1.11,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.4,
+   "perks": [
+    "signing_bonus",
+    "flex_shifts"
+   ],
+   "tagline": "Independent florist on Rosemary Row."
+  },
+  {
+   "id": "the_gilded_florist_rrs_0270",
+   "name": "The Gilded Florist",
+   "industry": "Florist",
+   "buildings": [
+    "RRS_0270"
+   ],
+   "roles": [
+    "cashier",
+    "delivery_rider"
+   ],
+   "founded": 1913,
+   "manager": "Priya Hartley",
+   "owner": "Mae Okafor",
+   "employees": 23,
+   "pay_scale": 1.11,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.3,
+   "perks": [
+    "paid_breaks"
+   ],
+   "tagline": "Independent florist on Rosemary Row."
+  },
+  {
+   "id": "goatfoot_satchel_florist_rrs_0291",
+   "name": "Goatfoot Satchel Florist",
+   "industry": "Florist",
+   "buildings": [
+    "RRS_0291"
+   ],
+   "roles": [
+    "cashier",
+    "delivery_rider"
+   ],
+   "founded": 1970,
+   "manager": "Rowan Mangum",
+   "owner": "Nadia Okafor",
+   "employees": 15,
+   "pay_scale": 1.03,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 3.3,
+   "perks": [
+    "health_plan",
+    "flex_shifts"
+   ],
+   "tagline": "Independent florist on Rosemary Row."
+  },
+  {
+   "id": "lantern_lamp_florist_cbg_1182",
+   "name": "Lantern Lamp Florist",
+   "industry": "Florist",
+   "buildings": [
+    "CBG_1182"
+   ],
+   "roles": [
+    "cashier",
+    "delivery_rider"
+   ],
+   "founded": 1962,
+   "manager": "Lupe Ramos",
+   "owner": "Hank Ramos",
+   "employees": 5,
+   "pay_scale": 0.97,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.9,
+   "perks": [
+    "staff_discount",
+    "health_plan"
+   ],
+   "tagline": "Independent florist on Carrburg."
+  },
+  {
+   "id": "the_crooked_ladder_florist_cbg_1209",
+   "name": "The Crooked Ladder Florist",
+   "industry": "Florist",
+   "buildings": [
+    "CBG_1209"
+   ],
+   "roles": [
+    "cashier",
+    "delivery_rider"
+   ],
+   "founded": 1997,
+   "manager": "Tobias Nakamura",
+   "owner": "Drew Venable",
+   "employees": 24,
+   "pay_scale": 1.12,
+   "standards": 0.1,
+   "experience_required": 8,
+   "rating": 4.6,
+   "perks": [
+    "paid_breaks",
+    "health_plan"
+   ],
+   "tagline": "Independent florist on Carrburg."
+  },
+  {
+   "id": "ridgeline_anvil_print_shop_ham_n_021",
+   "name": "Ridgeline Anvil Print Shop",
+   "industry": "Gallery & Print",
+   "buildings": [
+    "HAM_N_021"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1919,
+   "manager": "Ines Ferreira",
+   "owner": "Harper Nakamura",
+   "employees": 15,
+   "pay_scale": 1.05,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 4.0,
+   "perks": [
+    "staff_discount",
+    "flex_shifts",
+    "paid_breaks"
+   ],
+   "tagline": "Independent gallery & print on Hamilton St."
+  },
+  {
+   "id": "wandering_gallery_ham_n_028",
+   "name": "Wandering Gallery",
+   "industry": "Gallery & Print",
+   "buildings": [
+    "HAM_N_028"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1955,
+   "manager": "Jordan Alvarez",
+   "owner": "Harper Ellis",
+   "employees": 13,
+   "pay_scale": 0.95,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.7,
+   "perks": [
+    "signing_bonus",
+    "staff_discount",
+    "paid_breaks"
+   ],
+   "tagline": "Independent gallery & print on Hamilton St."
+  },
+  {
+   "id": "the_pine_cone_ledger_print_shop_ham_n_038",
+   "name": "The Pine Cone Ledger Print Shop",
+   "industry": "Gallery & Print",
+   "buildings": [
+    "HAM_N_038"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1894,
+   "manager": "Morgan Venable",
+   "owner": "Marisol Ferreira",
+   "employees": 24,
+   "pay_scale": 1.12,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.0,
+   "perks": [
+    "flex_shifts",
+    "health_plan",
+    "paid_breaks"
+   ],
+   "tagline": "Independent gallery & print on Hamilton St."
+  },
+  {
+   "id": "copper_gallery_ham_n_050",
+   "name": "Copper Gallery",
+   "industry": "Gallery & Print",
+   "buildings": [
+    "HAM_N_050"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1996,
+   "manager": "Wen Hooper",
+   "owner": "Morgan Kowalski",
+   "employees": 20,
+   "pay_scale": 1.05,
+   "standards": 0.1,
+   "experience_required": 0,
+   "rating": 3.2,
+   "perks": [
+    "flex_shifts",
+    "staff_discount"
+   ],
+   "tagline": "Independent gallery & print on Hamilton St."
+  },
+  {
+   "id": "the_billram_hearth_print_shop_ham_s_069",
+   "name": "The Billram Hearth Print Shop",
+   "industry": "Gallery & Print",
+   "buildings": [
+    "HAM_S_069"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1902,
+   "manager": "Marisol Brandt",
+   "owner": "Morgan Hooper",
+   "employees": 20,
+   "pay_scale": 1.04,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 4.8,
+   "perks": [
+    "staff_discount"
+   ],
+   "tagline": "Independent gallery & print on Hamilton St."
+  },
+  {
+   "id": "the_sweet_gum_lamp_print_shop_ham_s_080",
+   "name": "The Sweet Gum Lamp Print Shop",
+   "industry": "Gallery & Print",
+   "buildings": [
+    "HAM_S_080"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1921,
+   "manager": "Dana Venable",
+   "owner": "Mateo Santos",
+   "employees": 19,
+   "pay_scale": 1.05,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 3.6,
+   "perks": [
+    "signing_bonus",
+    "paid_breaks"
+   ],
+   "tagline": "Independent gallery & print on Hamilton St."
+  },
+  {
+   "id": "the_pine_cone_compass_gallery_ham_s_098",
+   "name": "The Pine Cone Compass Gallery",
+   "industry": "Gallery & Print",
+   "buildings": [
+    "HAM_S_098"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1899,
+   "manager": "Drew Hooper",
+   "owner": "Taylor Chen",
+   "employees": 8,
+   "pay_scale": 1.1,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.2,
+   "perks": [
+    "health_plan"
+   ],
+   "tagline": "Independent gallery & print on Hamilton St."
+  },
+  {
+   "id": "the_ridgeline_spoke_gallery_rrn_0110",
+   "name": "The Ridgeline Spoke Gallery",
+   "industry": "Gallery & Print",
+   "buildings": [
+    "RRN_0110"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 2004,
+   "manager": "Bea Mensah",
+   "owner": "Morgan Hooper",
+   "employees": 30,
+   "pay_scale": 0.95,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.8,
+   "perks": [
+    "health_plan",
+    "flex_shifts"
+   ],
+   "tagline": "Independent gallery & print on Rosemary Row."
+  },
+  {
+   "id": "copper_gallery_rrn_0122",
+   "name": "Copper Gallery (Rosemary St)",
+   "industry": "Gallery & Print",
+   "buildings": [
+    "RRN_0122"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1968,
+   "manager": "Taylor Mangum",
+   "owner": "Emeka Ivanova",
+   "employees": 5,
+   "pay_scale": 1.01,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.4,
+   "perks": [
+    "flex_shifts"
+   ],
+   "tagline": "Independent gallery & print on Rosemary Row."
+  },
+  {
+   "id": "cardinal_print_shop_rrs_0173",
+   "name": "Cardinal Print Shop",
+   "industry": "Gallery & Print",
+   "buildings": [
+    "RRS_0173"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1916,
+   "manager": "Avery Alvarez",
+   "owner": "Riley Haddad",
+   "employees": 24,
+   "pay_scale": 1.05,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 4.7,
+   "perks": [
+    "flex_shifts",
+    "signing_bonus"
+   ],
+   "tagline": "Independent gallery & print on Rosemary Row."
+  },
+  {
+   "id": "bluebell_quill_print_shop_rrs_0217",
+   "name": "Bluebell Quill Print Shop",
+   "industry": "Gallery & Print",
+   "buildings": [
+    "RRS_0217"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1923,
+   "manager": "Elliot Brooks",
+   "owner": "Quinn Mensah",
+   "employees": 15,
+   "pay_scale": 1.03,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 3.5,
+   "perks": [
+    "flex_shifts",
+    "paid_breaks",
+    "health_plan"
+   ],
+   "tagline": "Independent gallery & print on Rosemary Row."
+  },
+  {
+   "id": "the_quarry_print_shop_rrs_0277",
+   "name": "The Quarry Print Shop",
+   "industry": "Gallery & Print",
+   "buildings": [
+    "RRS_0277"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1992,
+   "manager": "Imani Mangum",
+   "owner": "Tobias Venable",
+   "employees": 6,
+   "pay_scale": 1.05,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.9,
+   "perks": [
+    "flex_shifts",
+    "staff_discount",
+    "health_plan"
+   ],
+   "tagline": "Independent gallery & print on Rosemary Row."
+  },
+  {
+   "id": "the_twin_pines_compass_print_shop_rrs_0278",
+   "name": "The Twin Pines Compass Print Shop",
+   "industry": "Gallery & Print",
+   "buildings": [
+    "RRS_0278"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1936,
+   "manager": "Ines Pike",
+   "owner": "Harper Pettigrew",
+   "employees": 13,
+   "pay_scale": 1.07,
+   "standards": 0.1,
+   "experience_required": 0,
+   "rating": 4.0,
+   "perks": [
+    "health_plan",
+    "signing_bonus"
+   ],
+   "tagline": "Independent gallery & print on Rosemary Row."
+  },
+  {
+   "id": "wandering_spoke_gallery_rrs_0287",
+   "name": "Wandering Spoke Gallery",
+   "industry": "Gallery & Print",
+   "buildings": [
+    "RRS_0287"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 2014,
+   "manager": "Ruth Ellis",
+   "owner": "Hank Nakamura",
+   "employees": 4,
+   "pay_scale": 1.05,
+   "standards": 0.1,
+   "experience_required": 0,
+   "rating": 3.1,
+   "perks": [
+    "flex_shifts",
+    "health_plan",
+    "signing_bonus"
+   ],
+   "tagline": "Independent gallery & print on Rosemary Row."
+  },
+  {
+   "id": "the_goatfoot_anvil_gallery_cbg_1191",
+   "name": "The Goatfoot Anvil Gallery",
+   "industry": "Gallery & Print",
+   "buildings": [
+    "CBG_1191"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1967,
+   "manager": "Emeka Lindqvist",
+   "owner": "Ines Haddad",
+   "employees": 9,
+   "pay_scale": 1.04,
+   "standards": 0.1,
+   "experience_required": 0,
+   "rating": 4.4,
+   "perks": [
+    "flex_shifts",
+    "health_plan"
+   ],
+   "tagline": "Independent gallery & print on Carrburg."
+  },
+  {
+   "id": "the_brickyard_kettle_print_shop_cbg_1228",
+   "name": "The Brickyard Kettle Print Shop",
+   "industry": "Gallery & Print",
+   "buildings": [
+    "CBG_1228"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1957,
+   "manager": "Lorna Ferreira",
+   "owner": "Hollis Moreau",
+   "employees": 19,
+   "pay_scale": 1.01,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 3.5,
+   "perks": [
+    "flex_shifts",
+    "staff_discount",
+    "health_plan"
+   ],
+   "tagline": "Independent gallery & print on Carrburg."
+  },
+  {
+   "id": "hilltop_hardware_ham_s_013",
+   "name": "Hilltop Hardware",
+   "industry": "Hardware",
+   "buildings": [
+    "HAM_S_013"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1900,
+   "manager": "Dana Collins",
+   "owner": "Imani Ferreira",
+   "employees": 29,
+   "pay_scale": 1.05,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 3.5,
+   "perks": [
+    "signing_bonus"
+   ],
+   "tagline": "Independent hardware on Hamilton St."
+  },
+  {
+   "id": "crooked_kettle_optics_ham_n_027",
+   "name": "Crooked Kettle Optics",
+   "industry": "Optician",
+   "buildings": [
+    "HAM_N_027"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 2004,
+   "manager": "June Pike",
+   "owner": "Ruth Ellis",
+   "employees": 27,
+   "pay_scale": 1.1,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.7,
+   "perks": [
+    "paid_breaks",
+    "signing_bonus",
+    "staff_discount"
+   ],
+   "tagline": "Independent optician on Hamilton St."
+  },
+  {
+   "id": "twin_pines_hearth_optics_ham_n_040",
+   "name": "Twin Pines Hearth Optics",
+   "industry": "Optician",
+   "buildings": [
+    "HAM_N_040"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1897,
+   "manager": "Casey Hartley",
+   "owner": "Odette Lindqvist",
+   "employees": 11,
+   "pay_scale": 0.98,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.3,
+   "perks": [
+    "flex_shifts"
+   ],
+   "tagline": "Independent optician on Hamilton St."
+  },
+  {
+   "id": "night_owl_fiddle_optics_ham_n_061",
+   "name": "Night Owl Fiddle Optics",
+   "industry": "Optician",
+   "buildings": [
+    "HAM_N_061"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1905,
+   "manager": "Silas Okafor",
+   "owner": "Imani Doyle",
+   "employees": 15,
+   "pay_scale": 1.07,
+   "standards": 0.1,
+   "experience_required": 0,
+   "rating": 3.1,
+   "perks": [
+    "staff_discount",
+    "flex_shifts",
+    "health_plan"
+   ],
+   "tagline": "Independent optician on Hamilton St."
+  },
+  {
+   "id": "dogwood_sparrow_optics_ham_s_091",
+   "name": "Dogwood Sparrow Optics",
+   "industry": "Optician",
+   "buildings": [
+    "HAM_S_091"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 2022,
+   "manager": "Wen Battle",
+   "owner": "Hollis Barnes",
+   "employees": 8,
+   "pay_scale": 1.09,
+   "standards": 0.1,
+   "experience_required": 16,
+   "rating": 4.1,
+   "perks": [
+    "signing_bonus",
+    "flex_shifts",
+    "staff_discount"
+   ],
+   "tagline": "Independent optician on Hamilton St."
+  },
+  {
+   "id": "the_night_owl_ladder_optics_rrn_0100",
+   "name": "The Night Owl Ladder Optics",
+   "industry": "Optician",
+   "buildings": [
+    "RRN_0100"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1949,
+   "manager": "Emeka Tatum",
+   "owner": "Emeka Mangum",
+   "employees": 5,
+   "pay_scale": 1.12,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.1,
+   "perks": [
+    "health_plan",
+    "signing_bonus"
+   ],
+   "tagline": "Independent optician on Rosemary Row."
+  },
+  {
+   "id": "twin_pines_acorn_optics_rrs_0149",
+   "name": "Twin Pines Acorn Optics",
+   "industry": "Optician",
+   "buildings": [
+    "RRS_0149"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1985,
+   "manager": "Reggie Ivanova",
+   "owner": "Mateo Ivanova",
+   "employees": 9,
+   "pay_scale": 0.98,
+   "standards": 0.1,
+   "experience_required": 0,
+   "rating": 3.7,
+   "perks": [
+    "staff_discount",
+    "health_plan",
+    "paid_breaks"
+   ],
+   "tagline": "Independent optician on Rosemary Row."
+  },
+  {
+   "id": "the_gilded_spoke_optics_rrs_0276",
+   "name": "The Gilded Spoke Optics",
+   "industry": "Optician",
+   "buildings": [
+    "RRS_0276"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1947,
+   "manager": "Nadia Hooper",
+   "owner": "June Ivanova",
+   "employees": 11,
+   "pay_scale": 1.03,
+   "standards": 0.1,
+   "experience_required": 0,
+   "rating": 4.9,
+   "perks": [
+    "paid_breaks",
+    "flex_shifts"
+   ],
+   "tagline": "Independent optician on Rosemary Row."
+  },
+  {
+   "id": "the_summit_biscuit_optics_cbg_1186",
+   "name": "The Summit Biscuit Optics",
+   "industry": "Optician",
+   "buildings": [
+    "CBG_1186"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1895,
+   "manager": "Dex Chen",
+   "owner": "Tobias Collins",
+   "employees": 28,
+   "pay_scale": 1.01,
+   "standards": 0.1,
+   "experience_required": 0,
+   "rating": 4.0,
+   "perks": [
+    "staff_discount"
+   ],
+   "tagline": "Independent optician on Carrburg."
+  },
+  {
+   "id": "goatfoot_optics_cbg_1232",
+   "name": "Goatfoot Optics",
+   "industry": "Optician",
+   "buildings": [
+    "CBG_1232"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1932,
+   "manager": "Taylor Pettigrew",
+   "owner": "Nadia Chen",
+   "employees": 18,
+   "pay_scale": 1.06,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.8,
+   "perks": [
+    "health_plan"
+   ],
+   "tagline": "Independent optician on Carrburg."
+  },
+  {
+   "id": "the_red_clay_pizza_ham_s_084",
+   "name": "The Red Clay Pizza",
+   "industry": "Pizza",
+   "buildings": [
+    "HAM_S_084"
+   ],
+   "roles": [
+    "pizza_cook",
+    "delivery_rider"
+   ],
+   "founded": 1971,
+   "manager": "Tobias Ramos",
+   "owner": "Theo Ramos",
+   "employees": 26,
+   "pay_scale": 1.07,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.3,
+   "perks": [
+    "health_plan"
+   ],
+   "tagline": "Independent pizza on Hamilton St."
+  },
+  {
+   "id": "copper_teacup_pizza_ham_s_087",
+   "name": "Copper Teacup Pizza",
+   "industry": "Pizza",
+   "buildings": [
+    "HAM_S_087"
+   ],
+   "roles": [
+    "pizza_cook",
+    "delivery_rider"
+   ],
+   "founded": 1954,
+   "manager": "Mae Haddad",
+   "owner": "Theo Alvarez",
+   "employees": 23,
+   "pay_scale": 1.04,
+   "standards": 0.1,
+   "experience_required": 0,
+   "rating": 4.1,
+   "perks": [
+    "free_meal",
+    "staff_discount"
+   ],
+   "tagline": "Independent pizza on Hamilton St."
+  },
+  {
+   "id": "the_hilltop_haberdashery_rrk_0153",
+   "name": "The Hilltop Haberdashery",
+   "industry": "Pizza",
+   "buildings": [
+    "RRK_0153"
+   ],
+   "roles": [
+    "pizza_cook",
+    "delivery_rider"
+   ],
+   "founded": 1933,
+   "manager": "Riley Ivanova",
+   "owner": "Theo Kowalski",
+   "employees": 9,
+   "pay_scale": 0.97,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 4.1,
+   "perks": [
+    "signing_bonus",
+    "free_meal"
+   ],
+   "tagline": "Independent pizza on Rosemary Row."
+  },
+  {
+   "id": "the_copper_haberdashery_rrk_0205",
+   "name": "The Copper Haberdashery",
+   "industry": "Pizza",
+   "buildings": [
+    "RRK_0205"
+   ],
+   "roles": [
+    "pizza_cook",
+    "delivery_rider"
+   ],
+   "founded": 2016,
+   "manager": "Wen Ramos",
+   "owner": "Emeka Battle",
+   "employees": 29,
+   "pay_scale": 0.95,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.3,
+   "perks": [
+    "tip_pool",
+    "free_meal"
+   ],
+   "tagline": "Independent pizza on Rosemary Row."
+  },
+  {
+   "id": "oak_leaf_fiddle_salon_rrk_0210",
+   "name": "Oak Leaf Fiddle Salon",
+   "industry": "Pizza",
+   "buildings": [
+    "RRK_0210"
+   ],
+   "roles": [
+    "pizza_cook",
+    "delivery_rider"
+   ],
+   "founded": 1974,
+   "manager": "Quinn Haddad",
+   "owner": "Greer Lindqvist",
+   "employees": 23,
+   "pay_scale": 0.94,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.2,
+   "perks": [
+    "flex_shifts",
+    "tip_pool",
+    "free_meal"
+   ],
+   "tagline": "Independent pizza on Rosemary Row."
+  },
+  {
+   "id": "crooked_hearth_threads_rrk_0211",
+   "name": "Crooked Hearth Threads",
+   "industry": "Pizza",
+   "buildings": [
+    "RRK_0211"
+   ],
+   "roles": [
+    "pizza_cook",
+    "delivery_rider"
+   ],
+   "founded": 1894,
+   "manager": "Calvin Lyle",
+   "owner": "Lorna Santos",
+   "employees": 28,
+   "pay_scale": 1.0,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.0,
+   "perks": [
+    "paid_breaks",
+    "flex_shifts",
+    "tip_pool",
+    "free_meal"
+   ],
+   "tagline": "Independent pizza on Rosemary Row."
+  },
+  {
+   "id": "the_ridgeline_haberdashery_rrk_0216",
+   "name": "The Ridgeline Haberdashery",
+   "industry": "Pizza",
+   "buildings": [
+    "RRK_0216"
+   ],
+   "roles": [
+    "pizza_cook",
+    "delivery_rider"
+   ],
+   "founded": 1915,
+   "manager": "Bea Caldwell",
+   "owner": "Odette Lyle",
+   "employees": 18,
+   "pay_scale": 1.07,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 4.2,
+   "perks": [
+    "signing_bonus",
+    "flex_shifts",
+    "staff_discount",
+    "free_meal"
+   ],
+   "tagline": "Independent pizza on Rosemary Row."
+  },
+  {
+   "id": "cardinal_saddle_slice_shop_rrs_0279",
+   "name": "Cardinal Saddle Slice Shop",
+   "industry": "Pizza",
+   "buildings": [
+    "RRS_0279"
+   ],
+   "roles": [
+    "pizza_cook",
+    "delivery_rider"
+   ],
+   "founded": 1904,
+   "manager": "Avery Hooper",
+   "owner": "Dex Pike",
+   "employees": 10,
+   "pay_scale": 0.97,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.9,
+   "perks": [
+    "health_plan",
+    "free_meal",
+    "staff_discount"
+   ],
+   "tagline": "Independent pizza on Rosemary Row."
+  },
+  {
+   "id": "hamilton_records_ham_s_012",
+   "name": "Hamilton Records",
+   "industry": "Records",
+   "buildings": [
+    "HAM_S_012"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1994,
+   "manager": "Wen Hooper",
+   "owner": "Imani Caldwell",
+   "employees": 14,
+   "pay_scale": 1.01,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.5,
+   "perks": [
+    "flex_shifts",
+    "signing_bonus",
+    "paid_breaks"
+   ],
+   "tagline": "Independent records on Hamilton St."
+  },
+  {
+   "id": "old_north_outfitters_ham_n_005",
+   "name": "Old North Outfitters",
+   "industry": "Retail",
+   "buildings": [
+    "HAM_N_005"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1927,
+   "manager": "Quinn Brandt",
+   "owner": "Harper Caldwell",
+   "employees": 19,
+   "pay_scale": 1.07,
+   "standards": 0.1,
+   "experience_required": 0,
+   "rating": 4.5,
+   "perks": [
+    "signing_bonus",
+    "health_plan"
+   ],
+   "tagline": "Independent retail on Hamilton St."
+  },
+  {
+   "id": "pine_cone_lamp_supply_ham_n_018",
+   "name": "Pine Cone Lamp Supply",
+   "industry": "Retail",
+   "buildings": [
+    "HAM_N_018"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1995,
+   "manager": "Dex Brooks",
+   "owner": "Riley Collins",
+   "employees": 7,
+   "pay_scale": 1.0,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.4,
+   "perks": [
+    "flex_shifts",
+    "signing_bonus",
+    "health_plan"
+   ],
+   "tagline": "Independent retail on Hamilton St."
+  },
+  {
+   "id": "the_cardinal_fiddle_supply_ham_n_030",
+   "name": "The Cardinal Fiddle Supply",
+   "industry": "Retail",
+   "buildings": [
+    "HAM_N_030"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1902,
+   "manager": "Bea Battle",
+   "owner": "Calvin Brandt",
+   "employees": 7,
+   "pay_scale": 1.0,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 4.4,
+   "perks": [
+    "flex_shifts"
+   ],
+   "tagline": "Independent retail on Hamilton St."
+  },
+  {
+   "id": "the_brickyard_fiddle_mercantile_ham_n_032",
+   "name": "The Brickyard Fiddle Mercantile",
+   "industry": "Retail",
+   "buildings": [
+    "HAM_N_032"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1944,
+   "manager": "Priya Haddad",
+   "owner": "June Sato",
+   "employees": 13,
+   "pay_scale": 1.08,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.7,
+   "perks": [
+    "staff_discount",
+    "signing_bonus"
+   ],
+   "tagline": "Independent retail on Hamilton St."
+  },
+  {
+   "id": "the_brickyard_supply_ham_n_033",
+   "name": "The Brickyard Supply",
+   "industry": "Retail",
+   "buildings": [
+    "HAM_N_033"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 2012,
+   "manager": "Emeka Pike",
+   "owner": "Mateo Ellis",
+   "employees": 20,
+   "pay_scale": 0.98,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.0,
+   "perks": [
+    "signing_bonus",
+    "flex_shifts"
+   ],
+   "tagline": "Independent retail on Hamilton St."
+  },
+  {
+   "id": "crooked_goods_ham_n_036",
+   "name": "Crooked Goods",
+   "industry": "Retail",
+   "buildings": [
+    "HAM_N_036"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1931,
+   "manager": "Morgan Doyle",
+   "owner": "Calvin Santos",
+   "employees": 27,
+   "pay_scale": 1.04,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.7,
+   "perks": [
+    "flex_shifts",
+    "health_plan"
+   ],
+   "tagline": "Independent retail on Hamilton St."
+  },
+  {
+   "id": "twin_pines_compass_mercantile_ham_n_039",
+   "name": "Twin Pines Compass Mercantile",
+   "industry": "Retail",
+   "buildings": [
+    "HAM_N_039"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1968,
+   "manager": "Ruth Barnes",
+   "owner": "Lupe Mangum",
+   "employees": 29,
+   "pay_scale": 0.99,
+   "standards": 0.1,
+   "experience_required": 0,
+   "rating": 3.3,
+   "perks": [
+    "signing_bonus",
+    "flex_shifts",
+    "staff_discount"
+   ],
+   "tagline": "Independent retail on Hamilton St."
+  },
+  {
+   "id": "the_goatfoot_thimble_goods_ham_n_057",
+   "name": "The Goatfoot Thimble Goods",
+   "industry": "Retail",
+   "buildings": [
+    "HAM_N_057"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1914,
+   "manager": "Odette Hooper",
+   "owner": "Elliot Brandt",
+   "employees": 6,
+   "pay_scale": 1.1,
+   "standards": 0.05,
+   "experience_required": 8,
+   "rating": 4.2,
+   "perks": [
+    "health_plan"
+   ],
+   "tagline": "Independent retail on Hamilton St."
+  },
+  {
+   "id": "the_gilded_supply_ham_s_070",
+   "name": "The Gilded Supply",
+   "industry": "Retail",
+   "buildings": [
+    "HAM_S_070"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1925,
+   "manager": "Tobias Barnes",
+   "owner": "Marisol Kowalski",
+   "employees": 11,
+   "pay_scale": 1.03,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.1,
+   "perks": [
+    "staff_discount"
+   ],
+   "tagline": "Independent retail on Hamilton St."
+  },
+  {
+   "id": "the_oak_leaf_anvil_supply_ham_s_072",
+   "name": "The Oak Leaf Anvil Supply",
+   "industry": "Retail",
+   "buildings": [
+    "HAM_S_072"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1999,
+   "manager": "Calvin Ramos",
+   "owner": "Ines Ramos",
+   "employees": 20,
+   "pay_scale": 1.0,
+   "standards": 0.1,
+   "experience_required": 0,
+   "rating": 4.0,
+   "perks": [
+    "staff_discount",
+    "health_plan",
+    "flex_shifts"
+   ],
+   "tagline": "Independent retail on Hamilton St."
+  },
+  {
+   "id": "the_dogwood_acorn_mercantile_ham_s_082",
+   "name": "The Dogwood Acorn Mercantile",
+   "industry": "Retail",
+   "buildings": [
+    "HAM_S_082"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1987,
+   "manager": "Sasha Tatum",
+   "owner": "June Hooper",
+   "employees": 16,
+   "pay_scale": 1.03,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 4.6,
+   "perks": [
+    "staff_discount",
+    "flex_shifts"
+   ],
+   "tagline": "Independent retail on Hamilton St."
+  },
+  {
+   "id": "silver_spoon_teacup_supply_ham_s_089",
+   "name": "Silver Spoon Teacup Supply",
+   "industry": "Retail",
+   "buildings": [
+    "HAM_S_089"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1894,
+   "manager": "Nadia Chen",
+   "owner": "June Haddad",
+   "employees": 26,
+   "pay_scale": 1.12,
+   "standards": 0.1,
+   "experience_required": 8,
+   "rating": 3.7,
+   "perks": [
+    "signing_bonus",
+    "staff_discount"
+   ],
+   "tagline": "Independent retail on Hamilton St."
+  },
+  {
+   "id": "the_bluebell_acorn_mercantile_ham_s_095",
+   "name": "The Bluebell Acorn Mercantile",
+   "industry": "Retail",
+   "buildings": [
+    "HAM_S_095"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1959,
+   "manager": "Bea Moreau",
+   "owner": "Wen Pettigrew",
+   "employees": 28,
+   "pay_scale": 1.07,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.5,
+   "perks": [
+    "signing_bonus"
+   ],
+   "tagline": "Independent retail on Hamilton St."
+  },
+  {
+   "id": "the_corner_quill_goods_rrn_0035",
+   "name": "The Corner Quill Goods",
+   "industry": "Retail",
+   "buildings": [
+    "RRN_0035"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 2016,
+   "manager": "Taylor Alvarez",
+   "owner": "Rowan Haddad",
+   "employees": 8,
+   "pay_scale": 1.11,
+   "standards": 0.05,
+   "experience_required": 8,
+   "rating": 3.9,
+   "perks": [
+    "staff_discount"
+   ],
+   "tagline": "Independent retail on Rosemary Row."
+  },
+  {
+   "id": "summit_barrel_goods_rrn_0043",
+   "name": "Summit Barrel Goods",
+   "industry": "Retail",
+   "buildings": [
+    "RRN_0043"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 2016,
+   "manager": "Hollis Barnes",
+   "owner": "Nadia Pike",
+   "employees": 17,
+   "pay_scale": 1.06,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 4.0,
+   "perks": [
+    "paid_breaks",
+    "staff_discount"
+   ],
+   "tagline": "Independent retail on Rosemary Row."
+  },
+  {
+   "id": "the_crooked_hearth_goods_rrn_0063",
+   "name": "The Crooked Hearth Goods",
+   "industry": "Retail",
+   "buildings": [
+    "RRN_0063"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1981,
+   "manager": "Sasha Alvarez",
+   "owner": "Calvin Kowalski",
+   "employees": 12,
+   "pay_scale": 0.95,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.9,
+   "perks": [
+    "health_plan",
+    "flex_shifts"
+   ],
+   "tagline": "Independent retail on Rosemary Row."
+  },
+  {
+   "id": "the_hilltop_barrel_goods_rrn_0075",
+   "name": "The Hilltop Barrel Goods",
+   "industry": "Retail",
+   "buildings": [
+    "RRN_0075"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1899,
+   "manager": "Taylor Collins",
+   "owner": "Rowan Santos",
+   "employees": 26,
+   "pay_scale": 1.05,
+   "standards": 0.1,
+   "experience_required": 0,
+   "rating": 3.7,
+   "perks": [
+    "signing_bonus",
+    "flex_shifts"
+   ],
+   "tagline": "Independent retail on Rosemary Row."
+  },
+  {
+   "id": "the_twin_pines_mercantile_rrn_0141",
+   "name": "The Twin Pines Mercantile",
+   "industry": "Retail",
+   "buildings": [
+    "RRN_0141"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1946,
+   "manager": "Lorna Hooper",
+   "owner": "Quinn Haddad",
+   "employees": 4,
+   "pay_scale": 1.11,
+   "standards": 0.05,
+   "experience_required": 8,
+   "rating": 3.9,
+   "perks": [
+    "paid_breaks",
+    "flex_shifts"
+   ],
+   "tagline": "Independent retail on Rosemary Row."
+  },
+  {
+   "id": "the_ridgeline_hearth_goods_rrs_0151",
+   "name": "The Ridgeline Hearth Goods",
+   "industry": "Retail",
+   "buildings": [
+    "RRS_0151"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1947,
+   "manager": "Dana Moreau",
+   "owner": "Lupe Doyle",
+   "employees": 28,
+   "pay_scale": 1.09,
+   "standards": 0.1,
+   "experience_required": 8,
+   "rating": 3.8,
+   "perks": [
+    "health_plan"
+   ],
+   "tagline": "Independent retail on Rosemary Row."
+  },
+  {
+   "id": "the_wandering_satchel_supply_rrs_0272",
+   "name": "The Wandering Satchel Supply",
+   "industry": "Retail",
+   "buildings": [
+    "RRS_0272"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1957,
+   "manager": "Silas Hooper",
+   "owner": "Priya Ramos",
+   "employees": 13,
+   "pay_scale": 0.97,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.4,
+   "perks": [
+    "health_plan",
+    "signing_bonus",
+    "flex_shifts"
+   ],
+   "tagline": "Independent retail on Rosemary Row."
+  },
+  {
+   "id": "sweet_gum_goods_cbg_1179",
+   "name": "Sweet Gum Goods",
+   "industry": "Retail",
+   "buildings": [
+    "CBG_1179"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1900,
+   "manager": "Casey Caldwell",
+   "owner": "Rowan Collins",
+   "employees": 23,
+   "pay_scale": 1.0,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 3.5,
+   "perks": [
+    "flex_shifts",
+    "paid_breaks"
+   ],
+   "tagline": "Independent retail on Carrburg."
+  },
+  {
+   "id": "corner_thimble_mercantile_cbg_1188",
+   "name": "Corner Thimble Mercantile",
+   "industry": "Retail",
+   "buildings": [
+    "CBG_1188"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 1892,
+   "manager": "Silas Haddad",
+   "owner": "Lorna Brooks",
+   "employees": 19,
+   "pay_scale": 1.01,
+   "standards": 0.1,
+   "experience_required": 0,
+   "rating": 4.8,
+   "perks": [
+    "health_plan"
+   ],
+   "tagline": "Independent retail on Carrburg."
+  },
+  {
+   "id": "night_owl_acorn_mercantile_cbg_1220",
+   "name": "Night Owl Acorn Mercantile",
+   "industry": "Retail",
+   "buildings": [
+    "CBG_1220"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 2001,
+   "manager": "Drew Barnes",
+   "owner": "Greer Hooper",
+   "employees": 21,
+   "pay_scale": 0.97,
+   "standards": 0.1,
+   "experience_required": 0,
+   "rating": 3.7,
+   "perks": [
+    "flex_shifts",
+    "paid_breaks"
+   ],
+   "tagline": "Independent retail on Carrburg."
+  },
+  {
+   "id": "the_ridgeline_supply_cbg_1233",
+   "name": "The Ridgeline Supply",
+   "industry": "Retail",
+   "buildings": [
+    "CBG_1233"
+   ],
+   "roles": [
+    "cashier"
+   ],
+   "founded": 2005,
+   "manager": "Hank Brooks",
+   "owner": "Imani Graves",
+   "employees": 14,
+   "pay_scale": 1.08,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.7,
+   "perks": [
+    "signing_bonus"
+   ],
+   "tagline": "Independent retail on Carrburg."
+  },
+  {
+   "id": "the_twin_pines_thimble_salon_ham_n_034",
+   "name": "The Twin Pines Thimble Salon",
+   "industry": "Salon",
+   "buildings": [
+    "HAM_N_034"
+   ],
+   "roles": [
+    "barber"
+   ],
+   "founded": 2022,
+   "manager": "Ruth Ellis",
+   "owner": "Calvin Hooper",
+   "employees": 24,
+   "pay_scale": 1.1,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.2,
+   "perks": [
+    "health_plan",
+    "signing_bonus"
+   ],
+   "tagline": "Independent salon on Hamilton St."
+  },
+  {
+   "id": "the_silver_spoon_salon_ham_n_047",
+   "name": "The Silver Spoon Salon",
+   "industry": "Salon",
+   "buildings": [
+    "HAM_N_047"
+   ],
+   "roles": [
+    "barber"
+   ],
+   "founded": 1941,
+   "manager": "Tobias Ellis",
+   "owner": "Avery Haddad",
+   "employees": 20,
+   "pay_scale": 0.99,
+   "standards": 0.1,
+   "experience_required": 0,
+   "rating": 3.2,
+   "perks": [
+    "staff_discount"
+   ],
+   "tagline": "Independent salon on Hamilton St."
+  },
+  {
+   "id": "sweet_gum_barber_shop_ham_n_055",
+   "name": "Sweet Gum Barber Shop",
+   "industry": "Salon",
+   "buildings": [
+    "HAM_N_055"
+   ],
+   "roles": [
+    "barber"
+   ],
+   "founded": 1922,
+   "manager": "Odette Moreau",
+   "owner": "Avery Santos",
+   "employees": 25,
+   "pay_scale": 0.94,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.1,
+   "perks": [
+    "staff_discount",
+    "signing_bonus"
+   ],
+   "tagline": "Independent salon on Hamilton St."
+  },
+  {
+   "id": "red_clay_barber_shop_ham_s_075",
+   "name": "Red Clay Barber Shop",
+   "industry": "Salon",
+   "buildings": [
+    "HAM_S_075"
+   ],
+   "roles": [
+    "barber"
+   ],
+   "founded": 1950,
+   "manager": "Avery Lindqvist",
+   "owner": "Odette Moreau",
+   "employees": 17,
+   "pay_scale": 1.1,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.2,
+   "perks": [
+    "paid_breaks",
+    "health_plan",
+    "signing_bonus"
+   ],
+   "tagline": "Independent salon on Hamilton St."
+  },
+  {
+   "id": "the_pine_cone_barrel_salon_ham_s_081",
+   "name": "The Pine Cone Barrel Salon",
+   "industry": "Salon",
+   "buildings": [
+    "HAM_S_081"
+   ],
+   "roles": [
+    "barber"
+   ],
+   "founded": 2012,
+   "manager": "June Mangum",
+   "owner": "Casey Ellis",
+   "employees": 22,
+   "pay_scale": 0.97,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.3,
+   "perks": [
+    "signing_bonus",
+    "health_plan",
+    "flex_shifts"
+   ],
+   "tagline": "Independent salon on Hamilton St."
+  },
+  {
+   "id": "hilltop_salon_ham_s_094",
+   "name": "Hilltop Salon",
+   "industry": "Salon",
+   "buildings": [
+    "HAM_S_094"
+   ],
+   "roles": [
+    "barber"
+   ],
+   "founded": 1931,
+   "manager": "Avery Graves",
+   "owner": "Reggie Lindqvist",
+   "employees": 7,
+   "pay_scale": 1.08,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.7,
+   "perks": [
+    "signing_bonus",
+    "staff_discount",
+    "health_plan"
+   ],
+   "tagline": "Independent salon on Hamilton St."
+  },
+  {
+   "id": "silver_spoon_ledger_salon_rrn_0079",
+   "name": "Silver Spoon Ledger Salon",
+   "industry": "Salon",
+   "buildings": [
+    "RRN_0079"
+   ],
+   "roles": [
+    "barber"
+   ],
+   "founded": 1918,
+   "manager": "Mateo Santos",
+   "owner": "Casey Okafor",
+   "employees": 21,
+   "pay_scale": 1.06,
+   "standards": 0.1,
+   "experience_required": 0,
+   "rating": 4.2,
+   "perks": [
+    "flex_shifts",
+    "paid_breaks",
+    "health_plan"
+   ],
+   "tagline": "Independent salon on Rosemary Row."
+  },
+  {
+   "id": "sweet_gum_saddle_salon_rrn_0081",
+   "name": "Sweet Gum Saddle Salon",
+   "industry": "Salon",
+   "buildings": [
+    "RRN_0081"
+   ],
+   "roles": [
+    "barber"
+   ],
+   "founded": 1942,
+   "manager": "Reggie Alvarez",
+   "owner": "Theo Ivanova",
+   "employees": 26,
+   "pay_scale": 0.94,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 3.6,
+   "perks": [
+    "health_plan",
+    "paid_breaks",
+    "staff_discount"
+   ],
+   "tagline": "Independent salon on Rosemary Row."
+  },
+  {
+   "id": "red_clay_salon_rrs_0230",
+   "name": "Red Clay Salon",
+   "industry": "Salon",
+   "buildings": [
+    "RRS_0230"
+   ],
+   "roles": [
+    "barber"
+   ],
+   "founded": 1922,
+   "manager": "Hollis Pettigrew",
+   "owner": "Mateo Doyle",
+   "employees": 13,
+   "pay_scale": 1.02,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.2,
+   "perks": [
+    "health_plan",
+    "signing_bonus",
+    "paid_breaks"
+   ],
+   "tagline": "Independent salon on Rosemary Row."
+  },
+  {
+   "id": "the_tin_roof_salon_cbg_1181",
+   "name": "The Tin Roof Salon",
+   "industry": "Salon",
+   "buildings": [
+    "CBG_1181"
+   ],
+   "roles": [
+    "barber"
+   ],
+   "founded": 1896,
+   "manager": "Casey Alvarez",
+   "owner": "Sasha Mangum",
+   "employees": 21,
+   "pay_scale": 0.97,
+   "standards": 0.1,
+   "experience_required": 0,
+   "rating": 3.7,
+   "perks": [
+    "staff_discount"
+   ],
+   "tagline": "Independent salon on Carrburg."
+  },
+  {
+   "id": "the_goatfoot_acorn_barber_shop_cbg_1189",
+   "name": "The Goatfoot Acorn Barber Shop",
+   "industry": "Salon",
+   "buildings": [
+    "CBG_1189"
+   ],
+   "roles": [
+    "barber"
+   ],
+   "founded": 1907,
+   "manager": "Elliot Caldwell",
+   "owner": "Dex Doyle",
+   "employees": 17,
+   "pay_scale": 0.98,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 3.8,
+   "perks": [
+    "staff_discount"
+   ],
+   "tagline": "Independent salon on Carrburg."
+  },
+  {
+   "id": "quarry_barber_shop_cbg_1223",
+   "name": "Quarry Barber Shop",
+   "industry": "Salon",
+   "buildings": [
+    "CBG_1223"
+   ],
+   "roles": [
+    "barber"
+   ],
+   "founded": 1916,
+   "manager": "Jordan Okafor",
+   "owner": "Ines Venable",
+   "employees": 30,
+   "pay_scale": 1.12,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.7,
+   "perks": [
+    "paid_breaks",
+    "health_plan"
+   ],
+   "tagline": "Independent salon on Carrburg."
+  },
+  {
+   "id": "cosmic_carnitas_ham_n_015",
+   "name": "Cosmic Carnitas",
+   "industry": "Tacos",
+   "buildings": [
+    "HAM_N_015"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 1951,
+   "manager": "Marisol Nakamura",
+   "owner": "Priya Pettigrew",
+   "employees": 5,
+   "pay_scale": 1.02,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.1,
+   "perks": [
+    "health_plan",
+    "free_meal"
+   ],
+   "tagline": "Independent tacos on Hamilton St."
+  },
+  {
+   "id": "the_summit_taco_counter_ham_n_031",
+   "name": "The Summit Taco Counter",
+   "industry": "Tacos",
+   "buildings": [
+    "HAM_N_031"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 1951,
+   "manager": "Lupe Mensah",
+   "owner": "Elliot Collins",
+   "employees": 18,
+   "pay_scale": 1.02,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.6,
+   "perks": [
+    "paid_breaks",
+    "free_meal"
+   ],
+   "tagline": "Independent tacos on Hamilton St."
+  },
+  {
+   "id": "quarry_taquer_a_ham_n_049",
+   "name": "Quarry Taquería",
+   "industry": "Tacos",
+   "buildings": [
+    "HAM_N_049"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 2000,
+   "manager": "Mae Hartley",
+   "owner": "Avery Mangum",
+   "employees": 11,
+   "pay_scale": 1.06,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.3,
+   "perks": [
+    "health_plan"
+   ],
+   "tagline": "Independent tacos on Hamilton St."
+  },
+  {
+   "id": "cardinal_thimble_taquer_a_ham_s_079",
+   "name": "Cardinal Thimble Taquería",
+   "industry": "Tacos",
+   "buildings": [
+    "HAM_S_079"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 1914,
+   "manager": "Nadia Collins",
+   "owner": "Quinn Venable",
+   "employees": 6,
+   "pay_scale": 1.03,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.5,
+   "perks": [
+    "staff_discount",
+    "flex_shifts"
+   ],
+   "tagline": "Independent tacos on Hamilton St."
+  },
+  {
+   "id": "the_brickyard_taquer_a_rrn_0145",
+   "name": "The Brickyard Taquería",
+   "industry": "Tacos",
+   "buildings": [
+    "RRN_0145"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 2016,
+   "manager": "Dex Lindqvist",
+   "owner": "Avery Nakamura",
+   "employees": 5,
+   "pay_scale": 1.1,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.2,
+   "perks": [
+    "staff_discount",
+    "signing_bonus",
+    "health_plan",
+    "free_meal"
+   ],
+   "tagline": "Independent tacos on Rosemary Row."
+  },
+  {
+   "id": "the_summit_teacup_books_rrk_0158",
+   "name": "The Summit Teacup Books",
+   "industry": "Tacos",
+   "buildings": [
+    "RRK_0158"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 1954,
+   "manager": "Drew Ramos",
+   "owner": "Jordan Barnes",
+   "employees": 28,
+   "pay_scale": 1.01,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.7,
+   "perks": [
+    "paid_breaks",
+    "health_plan",
+    "tip_pool"
+   ],
+   "tagline": "Independent tacos on Rosemary Row."
+  },
+  {
+   "id": "dogwood_barrel_taco_counter_rrs_0171",
+   "name": "Dogwood Barrel Taco Counter",
+   "industry": "Tacos",
+   "buildings": [
+    "RRS_0171"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 1908,
+   "manager": "Imani Sato",
+   "owner": "Ruth Chen",
+   "employees": 16,
+   "pay_scale": 0.96,
+   "standards": 0.1,
+   "experience_required": 0,
+   "rating": 4.6,
+   "perks": [
+    "paid_breaks",
+    "tip_pool",
+    "flex_shifts"
+   ],
+   "tagline": "Independent tacos on Rosemary Row."
+  },
+  {
+   "id": "the_ridgeline_kettle_print_shop_rrk_0207",
+   "name": "The Ridgeline Kettle Print Shop",
+   "industry": "Tacos",
+   "buildings": [
+    "RRK_0207"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 1989,
+   "manager": "Ines Hooper",
+   "owner": "Hank Ferreira",
+   "employees": 12,
+   "pay_scale": 1.05,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.7,
+   "perks": [
+    "tip_pool",
+    "free_meal"
+   ],
+   "tagline": "Independent tacos on Rosemary Row."
+  },
+  {
+   "id": "the_old_cistern_fiddle_gallery_rrk_0209",
+   "name": "The Old Cistern Fiddle Gallery",
+   "industry": "Tacos",
+   "buildings": [
+    "RRK_0209"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 1911,
+   "manager": "Drew Caldwell",
+   "owner": "Hollis Lindqvist",
+   "employees": 26,
+   "pay_scale": 1.12,
+   "standards": 0.05,
+   "experience_required": 8,
+   "rating": 4.8,
+   "perks": [
+    "flex_shifts"
+   ],
+   "tagline": "Independent tacos on Rosemary Row."
+  },
+  {
+   "id": "ridgeline_print_shop_rrk_0227",
+   "name": "Ridgeline Print Shop",
+   "industry": "Tacos",
+   "buildings": [
+    "RRK_0227"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 1981,
+   "manager": "Mae Ellis",
+   "owner": "Imani Chen",
+   "employees": 27,
+   "pay_scale": 1.03,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.7,
+   "perks": [
+    "health_plan",
+    "tip_pool",
+    "staff_discount"
+   ],
+   "tagline": "Independent tacos on Rosemary Row."
+  },
+  {
+   "id": "ridgeline_taquer_a_cbg_1187",
+   "name": "Ridgeline Taquería",
+   "industry": "Tacos",
+   "buildings": [
+    "CBG_1187"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 1935,
+   "manager": "Hollis Alvarez",
+   "owner": "Harper Pettigrew",
+   "employees": 18,
+   "pay_scale": 1.11,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.8,
+   "perks": [
+    "tip_pool",
+    "flex_shifts",
+    "free_meal"
+   ],
+   "tagline": "Independent tacos on Carrburg."
+  },
+  {
+   "id": "the_dogwood_sparrow_taquer_a_cbg_1272",
+   "name": "The Dogwood Sparrow Taquería",
+   "industry": "Tacos",
+   "buildings": [
+    "CBG_1272"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 2023,
+   "manager": "Harper Santos",
+   "owner": "Calvin Caldwell",
+   "employees": 14,
+   "pay_scale": 1.09,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.5,
+   "perks": [
+    "flex_shifts"
+   ],
+   "tagline": "Independent tacos on Carrburg."
+  },
+  {
+   "id": "cardinal_taco_counter_cbg_1274",
+   "name": "Cardinal Taco Counter",
+   "industry": "Tacos",
+   "buildings": [
+    "CBG_1274"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 1936,
+   "manager": "Harper Okafor",
+   "owner": "Marisol Ferreira",
+   "employees": 18,
+   "pay_scale": 1.06,
+   "standards": 0.1,
+   "experience_required": 0,
+   "rating": 4.7,
+   "perks": [
+    "health_plan",
+    "tip_pool",
+    "free_meal"
+   ],
+   "tagline": "Independent tacos on Carrburg."
+  },
+  {
+   "id": "late_night_lo_mein_ham_n_009",
+   "name": "Late Night Lo Mein",
+   "industry": "Takeout",
+   "buildings": [
+    "HAM_N_009"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 1943,
+   "manager": "Tobias Mensah",
+   "owner": "Rowan Hooper",
+   "employees": 10,
+   "pay_scale": 1.1,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.6,
+   "perks": [
+    "staff_discount",
+    "free_meal"
+   ],
+   "tagline": "Independent takeout on Hamilton St."
+  },
+  {
+   "id": "silver_spoon_wok_shop_ham_n_041",
+   "name": "Silver Spoon Wok Shop",
+   "industry": "Takeout",
+   "buildings": [
+    "HAM_N_041"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 2019,
+   "manager": "Lorna Moreau",
+   "owner": "June Hartley",
+   "employees": 27,
+   "pay_scale": 1.04,
+   "standards": 0.1,
+   "experience_required": 0,
+   "rating": 4.0,
+   "perks": [
+    "tip_pool",
+    "flex_shifts",
+    "health_plan"
+   ],
+   "tagline": "Independent takeout on Hamilton St."
+  },
+  {
+   "id": "the_tin_roof_noodle_bar_ham_n_042",
+   "name": "The Tin Roof Noodle Bar",
+   "industry": "Takeout",
+   "buildings": [
+    "HAM_N_042"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 1931,
+   "manager": "Jordan Barnes",
+   "owner": "Imani Battle",
+   "employees": 9,
+   "pay_scale": 1.1,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.0,
+   "perks": [
+    "flex_shifts",
+    "free_meal"
+   ],
+   "tagline": "Independent takeout on Hamilton St."
+  },
+  {
+   "id": "red_clay_noodle_bar_ham_n_054",
+   "name": "Red Clay Noodle Bar",
+   "industry": "Takeout",
+   "buildings": [
+    "HAM_N_054"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 1976,
+   "manager": "Lorna Okafor",
+   "owner": "Mateo Lyle",
+   "employees": 12,
+   "pay_scale": 1.1,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.4,
+   "perks": [
+    "signing_bonus",
+    "tip_pool",
+    "free_meal"
+   ],
+   "tagline": "Independent takeout on Hamilton St."
+  },
+  {
+   "id": "gilded_bakery_rrn_0045",
+   "name": "Gilded Bakery",
+   "industry": "Takeout",
+   "buildings": [
+    "RRN_0045"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 1920,
+   "manager": "Nadia Moreau",
+   "owner": "Elliot Brooks",
+   "employees": 19,
+   "pay_scale": 0.96,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.7,
+   "perks": [
+    "signing_bonus",
+    "paid_breaks",
+    "free_meal"
+   ],
+   "tagline": "Independent takeout on Rosemary Row."
+  },
+  {
+   "id": "the_ridgeline_ladder_barber_shop_rrn_0047",
+   "name": "The Ridgeline Ladder Barber Shop",
+   "industry": "Takeout",
+   "buildings": [
+    "RRN_0047"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 1890,
+   "manager": "Drew Collins",
+   "owner": "Ruth Pike",
+   "employees": 14,
+   "pay_scale": 1.0,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.7,
+   "perks": [
+    "paid_breaks",
+    "signing_bonus",
+    "flex_shifts"
+   ],
+   "tagline": "Independent takeout on Rosemary Row."
+  },
+  {
+   "id": "night_owl_biscuit_roasters_rrn_0067",
+   "name": "Night Owl Biscuit Roasters",
+   "industry": "Takeout",
+   "buildings": [
+    "RRN_0067"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 1961,
+   "manager": "Dex Doyle",
+   "owner": "Avery Alvarez",
+   "employees": 13,
+   "pay_scale": 1.01,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 4.2,
+   "perks": [
+    "signing_bonus",
+    "staff_discount",
+    "free_meal"
+   ],
+   "tagline": "Independent takeout on Rosemary Row."
+  },
+  {
+   "id": "old_cistern_print_shop_rrn_0069",
+   "name": "Old Cistern Print Shop",
+   "industry": "Takeout",
+   "buildings": [
+    "RRN_0069"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 1897,
+   "manager": "Jordan Pettigrew",
+   "owner": "Dex Brandt",
+   "employees": 25,
+   "pay_scale": 1.03,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 4.1,
+   "perks": [
+    "health_plan",
+    "paid_breaks",
+    "flex_shifts"
+   ],
+   "tagline": "Independent takeout on Rosemary Row."
+  },
+  {
+   "id": "quarry_ledger_haberdashery_rrn_0077",
+   "name": "Quarry Ledger Haberdashery",
+   "industry": "Takeout",
+   "buildings": [
+    "RRN_0077"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 1911,
+   "manager": "Morgan Haddad",
+   "owner": "Mateo Ellis",
+   "employees": 15,
+   "pay_scale": 0.98,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.5,
+   "perks": [
+    "tip_pool"
+   ],
+   "tagline": "Independent takeout on Rosemary Row."
+  },
+  {
+   "id": "the_sweet_gum_compass_caf_rrn_0083",
+   "name": "The Sweet Gum Compass Café",
+   "industry": "Takeout",
+   "buildings": [
+    "RRN_0083"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 2003,
+   "manager": "Taylor Sato",
+   "owner": "Wen Mensah",
+   "employees": 20,
+   "pay_scale": 1.08,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.1,
+   "perks": [
+    "flex_shifts",
+    "staff_discount"
+   ],
+   "tagline": "Independent takeout on Rosemary Row."
+  },
+  {
+   "id": "the_quarry_lantern_taquer_a_rrn_0108",
+   "name": "The Quarry Lantern Taquería",
+   "industry": "Takeout",
+   "buildings": [
+    "RRN_0108"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 1895,
+   "manager": "Odette Ferreira",
+   "owner": "Harper Moreau",
+   "employees": 12,
+   "pay_scale": 0.97,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 3.5,
+   "perks": [
+    "tip_pool",
+    "signing_bonus",
+    "staff_discount",
+    "free_meal"
+   ],
+   "tagline": "Independent takeout on Rosemary Row."
+  },
+  {
+   "id": "the_copper_satchel_barber_shop_rrn_0126",
+   "name": "The Copper Satchel Barber Shop",
+   "industry": "Takeout",
+   "buildings": [
+    "RRN_0126"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 1996,
+   "manager": "Dex Collins",
+   "owner": "Imani Mensah",
+   "employees": 14,
+   "pay_scale": 1.01,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.8,
+   "perks": [
+    "staff_discount",
+    "tip_pool",
+    "signing_bonus",
+    "free_meal"
+   ],
+   "tagline": "Independent takeout on Rosemary Row."
+  },
+  {
+   "id": "the_goatfoot_lamp_florist_rrn_0128",
+   "name": "The Goatfoot Lamp Florist",
+   "industry": "Takeout",
+   "buildings": [
+    "RRN_0128"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 1996,
+   "manager": "Odette Battle",
+   "owner": "Casey Lindqvist",
+   "employees": 28,
+   "pay_scale": 0.99,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 4.8,
+   "perks": [
+    "free_meal",
+    "signing_bonus",
+    "paid_breaks"
+   ],
+   "tagline": "Independent takeout on Rosemary Row."
+  },
+  {
+   "id": "the_twin_pines_bake_shop_rrn_0143",
+   "name": "The Twin Pines Bake Shop",
+   "industry": "Takeout",
+   "buildings": [
+    "RRN_0143"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 2010,
+   "manager": "Bea Sato",
+   "owner": "Wen Nakamura",
+   "employees": 11,
+   "pay_scale": 1.0,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 4.4,
+   "perks": [
+    "flex_shifts",
+    "health_plan",
+    "signing_bonus",
+    "free_meal"
+   ],
+   "tagline": "Independent takeout on Rosemary Row."
+  },
+  {
+   "id": "the_sweet_gum_haberdashery_rrk_0150",
+   "name": "The Sweet Gum Haberdashery",
+   "industry": "Takeout",
+   "buildings": [
+    "RRK_0150"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 1924,
+   "manager": "Marisol Hartley",
+   "owner": "Lorna Venable",
+   "employees": 6,
+   "pay_scale": 0.95,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.9,
+   "perks": [
+    "signing_bonus",
+    "free_meal"
+   ],
+   "tagline": "Independent takeout on Rosemary Row."
+  },
+  {
+   "id": "the_night_owl_ledger_coffee_bar_rrk_0155",
+   "name": "The Night Owl Ledger Coffee Bar",
+   "industry": "Takeout",
+   "buildings": [
+    "RRK_0155"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 2005,
+   "manager": "Calvin Brandt",
+   "owner": "Odette Chen",
+   "employees": 14,
+   "pay_scale": 1.01,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.3,
+   "perks": [
+    "signing_bonus",
+    "free_meal"
+   ],
+   "tagline": "Independent takeout on Rosemary Row."
+  },
+  {
+   "id": "bluebell_anvil_roasters_rrk_0162",
+   "name": "Bluebell Anvil Roasters",
+   "industry": "Takeout",
+   "buildings": [
+    "RRK_0162"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 1928,
+   "manager": "Lorna Nakamura",
+   "owner": "Harper Sato",
+   "employees": 29,
+   "pay_scale": 1.06,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.0,
+   "perks": [
+    "paid_breaks",
+    "health_plan"
+   ],
+   "tagline": "Independent takeout on Rosemary Row."
+  },
+  {
+   "id": "sweet_gum_books_rrk_0204",
+   "name": "Sweet Gum Books",
+   "industry": "Takeout",
+   "buildings": [
+    "RRK_0204"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 1960,
+   "manager": "June Tatum",
+   "owner": "Mae Pike",
+   "employees": 19,
+   "pay_scale": 1.03,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.7,
+   "perks": [
+    "signing_bonus",
+    "staff_discount"
+   ],
+   "tagline": "Independent takeout on Rosemary Row."
+  },
+  {
+   "id": "hilltop_lantern_sandwich_co_rrk_0212",
+   "name": "Hilltop Lantern Sandwich Co.",
+   "industry": "Takeout",
+   "buildings": [
+    "RRK_0212"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 1943,
+   "manager": "Marisol Ellis",
+   "owner": "Odette Battle",
+   "employees": 18,
+   "pay_scale": 1.07,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.5,
+   "perks": [
+    "free_meal",
+    "health_plan",
+    "staff_discount"
+   ],
+   "tagline": "Independent takeout on Rosemary Row."
+  },
+  {
+   "id": "the_goatfoot_wok_shop_rrs_0213",
+   "name": "The Goatfoot Wok Shop",
+   "industry": "Takeout",
+   "buildings": [
+    "RRS_0213"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 1897,
+   "manager": "Riley Santos",
+   "owner": "Marisol Doyle",
+   "employees": 5,
+   "pay_scale": 0.95,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 3.9,
+   "perks": [
+    "health_plan",
+    "flex_shifts",
+    "tip_pool"
+   ],
+   "tagline": "Independent takeout on Rosemary Row."
+  },
+  {
+   "id": "the_old_cistern_goods_rrk_0226",
+   "name": "The Old Cistern Goods",
+   "industry": "Takeout",
+   "buildings": [
+    "RRK_0226"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 1989,
+   "manager": "Mae Tatum",
+   "owner": "Drew Doyle",
+   "employees": 6,
+   "pay_scale": 0.94,
+   "standards": 0.1,
+   "experience_required": 0,
+   "rating": 3.6,
+   "perks": [
+    "health_plan",
+    "tip_pool",
+    "flex_shifts",
+    "free_meal"
+   ],
+   "tagline": "Independent takeout on Rosemary Row."
+  },
+  {
+   "id": "the_old_cistern_caf_rrk_0228",
+   "name": "The Old Cistern Café",
+   "industry": "Takeout",
+   "buildings": [
+    "RRK_0228"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 1943,
+   "manager": "Theo Graves",
+   "owner": "Morgan Lindqvist",
+   "employees": 26,
+   "pay_scale": 1.02,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 4.6,
+   "perks": [
+    "signing_bonus"
+   ],
+   "tagline": "Independent takeout on Rosemary Row."
+  },
+  {
+   "id": "the_crooked_print_shop_rrk_0235",
+   "name": "The Crooked Print Shop",
+   "industry": "Takeout",
+   "buildings": [
+    "RRK_0235"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 2009,
+   "manager": "Morgan Tatum",
+   "owner": "Emeka Nakamura",
+   "employees": 9,
+   "pay_scale": 1.04,
+   "standards": 0.1,
+   "experience_required": 0,
+   "rating": 3.4,
+   "perks": [
+    "signing_bonus",
+    "free_meal"
+   ],
+   "tagline": "Independent takeout on Rosemary Row."
+  },
+  {
+   "id": "crooked_ladder_optics_rrk_0271",
+   "name": "Crooked Ladder Optics",
+   "industry": "Takeout",
+   "buildings": [
+    "RRK_0271"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 1988,
+   "manager": "Ines Sato",
+   "owner": "Harper Pettigrew",
+   "employees": 7,
+   "pay_scale": 1.01,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.6,
+   "perks": [
+    "signing_bonus",
+    "flex_shifts",
+    "free_meal"
+   ],
+   "tagline": "Independent takeout on Rosemary Row."
+  },
+  {
+   "id": "the_copper_tavern_rrk_0273",
+   "name": "The Copper Tavern",
+   "industry": "Takeout",
+   "buildings": [
+    "RRK_0273"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 1940,
+   "manager": "Emeka Sato",
+   "owner": "Greer Whitaker",
+   "employees": 13,
+   "pay_scale": 1.09,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 3.8,
+   "perks": [
+    "paid_breaks",
+    "signing_bonus",
+    "flex_shifts"
+   ],
+   "tagline": "Independent takeout on Rosemary Row."
+  },
+  {
+   "id": "the_brickyard_lantern_caf_rrk_0274",
+   "name": "The Brickyard Lantern Café",
+   "industry": "Takeout",
+   "buildings": [
+    "RRK_0274"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 1903,
+   "manager": "Kofi Haddad",
+   "owner": "Ruth Ellis",
+   "employees": 10,
+   "pay_scale": 1.04,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.3,
+   "perks": [
+    "tip_pool",
+    "free_meal"
+   ],
+   "tagline": "Independent takeout on Rosemary Row."
+  },
+  {
+   "id": "cardinal_teacup_noodle_bar_cbg_1226",
+   "name": "Cardinal Teacup Noodle Bar",
+   "industry": "Takeout",
+   "buildings": [
+    "CBG_1226"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 1897,
+   "manager": "Tobias Whitaker",
+   "owner": "Bea Chen",
+   "employees": 18,
+   "pay_scale": 1.04,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 3.7,
+   "perks": [
+    "signing_bonus",
+    "free_meal"
+   ],
+   "tagline": "Independent takeout on Carrburg."
+  },
+  {
+   "id": "the_lantern_noodle_bar_cbg_1238",
+   "name": "The Lantern Noodle Bar",
+   "industry": "Takeout",
+   "buildings": [
+    "CBG_1238"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 1962,
+   "manager": "Ines Santos",
+   "owner": "Harper Pike",
+   "employees": 27,
+   "pay_scale": 0.99,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.8,
+   "perks": [
+    "signing_bonus",
+    "free_meal"
+   ],
+   "tagline": "Independent takeout on Carrburg."
+  },
+  {
+   "id": "the_goatfoot_wok_shop_cbg_1241",
+   "name": "The Goatfoot Wok Shop (Carrburg)",
+   "industry": "Takeout",
+   "buildings": [
+    "CBG_1241"
+   ],
+   "roles": [
+    "delivery_rider",
+    "cashier"
+   ],
+   "founded": 1904,
+   "manager": "June Chen",
+   "owner": "Emeka Mangum",
+   "employees": 17,
+   "pay_scale": 0.95,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 4.5,
+   "perks": [
+    "health_plan",
+    "free_meal"
+   ],
+   "tagline": "Independent takeout on Carrburg."
+  },
+  {
+   "id": "pitch_soles_tattoo_ham_n_017",
+   "name": "Pitch Soles Tattoo",
+   "industry": "Tattoo",
+   "buildings": [
+    "HAM_N_017"
+   ],
+   "roles": [
+    "tattoo_artist"
+   ],
+   "founded": 2003,
+   "manager": "Bea Hooper",
+   "owner": "Greer Doyle",
+   "employees": 18,
+   "pay_scale": 1.07,
+   "standards": 0.1,
+   "experience_required": 0,
+   "rating": 3.9,
+   "perks": [
+    "paid_breaks"
+   ],
+   "tagline": "Independent tattoo on Hamilton St."
+  },
+  {
+   "id": "cram_fortress_tutoring_ham_n_016",
+   "name": "Cram Fortress Tutoring",
+   "industry": "Tutoring",
+   "buildings": [
+    "HAM_N_016"
+   ],
+   "roles": [
+    "university_grader"
+   ],
+   "founded": 1900,
+   "manager": "Riley Mangum",
+   "owner": "Imani Alvarez",
+   "employees": 30,
+   "pay_scale": 0.95,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 4.1,
+   "perks": [
+    "signing_bonus",
+    "flex_shifts",
+    "staff_discount"
+   ],
+   "tagline": "Independent tutoring on Hamilton St."
+  },
+  {
+   "id": "onsu",
+   "name": "Old North State University",
+   "industry": "University",
+   "buildings": [
+    "LM05_FOUNDERS_HALL",
+    "LM07_MOORHOUSE",
+    "ONSU_0000",
+    "ONSU_0001",
+    "ONSU_0002",
+    "ONSU_0003",
+    "ONSU_0004",
+    "ONSU_0005",
+    "ONSU_0006",
+    "ONSU_0007",
+    "ONSU_0008",
+    "ONSU_0011",
+    "ONSU_0013",
+    "ONSU_0017",
+    "ONSU_0019",
+    "ONSU_0020",
+    "ONSU_0022",
+    "LM03_WILBERFORCE",
+    "LM08_ASHGROVE",
+    "LM04_DAVIES_STACKS",
+    "ONSU_0009",
+    "ONSU_0015",
+    "ONSU_0018",
+    "ONSU_0021",
+    "LM09_STUDENT_UNION",
+    "LM09_DINING_HALL",
+    "LM06_ELDER_WEST",
+    "LM06_ELDER_EAST",
+    "ONSU_0023",
+    "ONSU_0024",
+    "ONSU_0025",
+    "ONSU_0027"
+   ],
+   "roles": [
+    "university_grader",
+    "librarian",
+    "custodian",
+    "it_support"
+   ],
+   "founded": 1795,
+   "manager": "Lupe Mangum",
+   "owner": "Ruth Graves",
+   "employees": 3800,
+   "pay_scale": 1.0,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 4.2,
+   "perks": [
+    "health_plan",
+    "paid_breaks",
+    "staff_discount"
+   ],
+   "tagline": "Lux et Libertas, est. 1795.",
+   "role_buildings": {
+    "university_grader": [
+     "LM05_FOUNDERS_HALL",
+     "LM07_MOORHOUSE",
+     "ONSU_0000",
+     "ONSU_0001",
+     "ONSU_0002",
+     "ONSU_0003",
+     "ONSU_0004",
+     "ONSU_0005",
+     "ONSU_0006",
+     "ONSU_0007",
+     "ONSU_0008",
+     "ONSU_0011",
+     "ONSU_0013",
+     "ONSU_0017",
+     "ONSU_0019",
+     "ONSU_0020",
+     "ONSU_0022"
+    ],
+    "librarian": [
+     "LM03_WILBERFORCE",
+     "LM08_ASHGROVE"
+    ],
+    "custodian": [
+     "LM09_STUDENT_UNION",
+     "LM09_DINING_HALL",
+     "LM06_ELDER_WEST",
+     "LM06_ELDER_EAST",
+     "ONSU_0023",
+     "ONSU_0024",
+     "ONSU_0025",
+     "ONSU_0027"
+    ],
+    "it_support": [
+     "LM04_DAVIES_STACKS",
+     "ONSU_0009",
+     "ONSU_0015",
+     "ONSU_0018",
+     "ONSU_0021"
+    ]
+   }
+  },
+  {
+   "id": "onsu_health",
+   "name": "ONSU Health",
+   "industry": "Hospital",
+   "buildings": [
+    "LM13_MED_TOWER_A",
+    "LM13_MED_TOWER_B",
+    "LM13_MED_TOWER_C",
+    "LM13_MED_TOWER_D"
+   ],
+   "roles": [
+    "er_nurse",
+    "lab_tech",
+    "custodian"
+   ],
+   "founded": 1952,
+   "manager": "Mae Hartley",
+   "owner": "Hollis Mensah",
+   "employees": 6100,
+   "pay_scale": 1.05,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 4.0,
+   "perks": [
+    "health_plan",
+    "free_meal",
+    "signing_bonus"
+   ],
+   "tagline": "Level I trauma center for the Piedmont.",
+   "role_buildings": {
+    "er_nurse": [
+     "LM13_MED_TOWER_D"
+    ],
+    "lab_tech": [
+     "LM13_MED_TOWER_A"
+    ],
+    "custodian": [
+     "LM13_MED_TOWER_B",
+     "LM13_MED_TOWER_C"
+    ]
+   }
+  },
+  {
+   "id": "onsu_athletics",
+   "name": "ONSU Athletics",
+   "industry": "Sports & Events",
+   "buildings": [
+    "LM10_BENEFACTOR_STADIUM",
+    "LM11_COACHS_DOME"
+   ],
+   "roles": [
+    "cashier",
+    "custodian"
+   ],
+   "founded": 1888,
+   "manager": "Rowan Battle",
+   "owner": "Sasha Haddad",
+   "employees": 420,
+   "pay_scale": 0.98,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.4,
+   "perks": [
+    "staff_discount",
+    "flex_shifts"
+   ],
+   "tagline": "Go Pitch Soles.",
+   "industry_catalog": "Concessions"
+  },
+  {
+   "id": "pamlico_inn",
+   "name": "Pamlico Inn & Tavern",
+   "industry": "Hotel",
+   "buildings": [
+    "LM12_PAMLICO_INN"
+   ],
+   "roles": [
+    "inn_front_desk",
+    "bartender",
+    "custodian"
+   ],
+   "founded": 1924,
+   "manager": "Casey Collins",
+   "owner": "Imani Caldwell",
+   "employees": 85,
+   "pay_scale": 1.04,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 4.6,
+   "perks": [
+    "free_meal",
+    "tip_pool",
+    "health_plan"
+   ],
+   "tagline": "Rooms, rocking chairs and a ballroom since 1924."
+  },
+  {
+   "id": "loomhouse_coop",
+   "name": "Loomhouse Co-op Market",
+   "industry": "Grocery",
+   "buildings": [
+    "CBG_1178"
+   ],
+   "roles": [
+    "cashier",
+    "custodian"
+   ],
+   "founded": 1979,
+   "manager": "Sasha Barnes",
+   "owner": "Sasha Nakamura",
+   "employees": 60,
+   "pay_scale": 1.06,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.7,
+   "perks": [
+    "staff_discount",
+    "health_plan"
+   ],
+   "tagline": "Member-owned groceries in the old textile mill.",
+   "industry_catalog": "Grocery"
+  },
+  {
+   "id": "piedmont_analytics",
+   "name": "Piedmont Analytics",
+   "industry": "Office",
+   "buildings": [
+    "HAM_N_034_TWR"
+   ],
+   "roles": [
+    "it_support",
+    "custodian"
+   ],
+   "founded": 1957,
+   "manager": "Rowan Nakamura",
+   "owner": "Kofi Collins",
+   "employees": 75,
+   "pay_scale": 1.06,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.1,
+   "perks": [
+    "health_plan",
+    "flex_shifts"
+   ],
+   "tagline": "Data for every county in Pamlico."
+  },
+  {
+   "id": "tarheel_ledger_partners",
+   "name": "Tarheel Ledger Partners",
+   "industry": "Office",
+   "buildings": [
+    "HAM_N_047_TWR"
+   ],
+   "roles": [
+    "it_support",
+    "custodian"
+   ],
+   "founded": 2023,
+   "manager": "Morgan Haddad",
+   "owner": "Wen Ellis",
+   "employees": 153,
+   "pay_scale": 1.08,
+   "standards": 0.0,
+   "experience_required": 0,
+   "rating": 4.8,
+   "perks": [
+    "health_plan",
+    "flex_shifts"
+   ],
+   "tagline": "Accounting and payroll for Hamilton Street."
+  },
+  {
+   "id": "mount_parking",
+   "name": "Cathedral Mount Parking Authority",
+   "industry": "Parking",
+   "buildings": [
+    "RRD_0029",
+    "RRD_0030",
+    "LM13_MED_DECK_1"
+   ],
+   "roles": [
+    "cashier",
+    "custodian"
+   ],
+   "founded": 1971,
+   "manager": "Casey Lyle",
+   "owner": "Riley Mensah",
+   "employees": 35,
+   "pay_scale": 0.97,
+   "standards": 0.05,
+   "experience_required": 0,
+   "rating": 3.2,
+   "perks": [
+    "health_plan"
+   ],
+   "tagline": "Pay at the booth.",
+   "industry_catalog": "Parking"
+  }
+ ]
+}

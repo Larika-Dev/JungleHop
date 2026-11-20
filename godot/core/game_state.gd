@@ -14,6 +14,8 @@ signal action_performed(action_id: String, target: Node, actor: Node)
 signal profile_changed
 
 const SAVE_DIR := "user://saves"
+## Every new life starts with this much cash. Life systems read it from player_profile.starting_cash.
+const STARTING_CASH := 1000
 
 var player_profile: Dictionary = default_profile()
 var in_game: bool = false
@@ -27,12 +29,21 @@ func _ready() -> void:
 	register_saveable("clock", GameClock)
 
 
+static func bmi(p: Dictionary) -> float:
+	var h: float = float(p.get("height_cm", 175)) / 100.0
+	return float(p.get("weight_kg", 70.0)) / (h * h)
+
+
 static func default_profile() -> Dictionary:
 	return {
+		"starting_cash": STARTING_CASH,
 		"name": "Alex",
 		"sex": "male",          # "male" | "female"
-		"height_cm": 175,       # 155..195
-		"build": 0.5,           # 0 slim .. 1 heavy
+		"age": 20,              # 18..80
+		"height_cm": 175,       # 150..200
+		"weight_kg": 70.0,      # 40..150; BMI drives body shape (and attractiveness in Life)
+		"muscle": 4,            # 1..10 starting muscularity preset (7 = best for attractiveness)
+		"build": 0.5,           # derived 0 slim .. 1 heavy (from BMI), used by the body mesh
 		"skin": 2,              # index into Appearance.SKIN_TONES
 		"hair_style": 1,        # index into Appearance.HAIR_STYLES
 		"hair_color": 1,        # index into Appearance.HAIR_COLORS

@@ -23,7 +23,8 @@ func _ready() -> void:
 	# city
 	GameState.player_profile = GameState.default_profile()
 	var city: Node3D = load("res://world/city.tscn").instantiate()
-	get_tree().root.add_child(city)
+	get_tree().root.add_child.call_deferred(city)
+	await get_tree().process_frame
 	for i in 120:
 		await get_tree().physics_frame
 	var p: CharacterBody3D = GameState.get_player()
