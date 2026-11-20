@@ -1,0 +1,49 @@
+; Engine configuration file.
+; Shared file: other threads add ONE line each under [autoload]. See docs/INTERFACES.md.
+
+config_version=5
+
+[application]
+
+config/name="Cathedral Mount"
+config/description="A life sim in the college town of Cathedral Mount."
+config/version="0.1.0"
+run/main_scene="res://ui/title_screen.tscn"
+config/features=PackedStringArray("4.5", "Forward Plus")
+config/icon="res://icon.svg"
+
+[autoload]
+
+Settings="*res://core/settings.gd"
+GameClock="*res://core/game_clock.gd"
+GameState="*res://core/game_state.gd"
+CityData="*res://core/city_data.gd"
+UI="*res://ui/ui_root.gd"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/mode=3
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[layer_names]
+
+3d_physics/layer_1="world"
+3d_physics/layer_2="player"
+3d_physics/layer_3="interact"
+3d_physics/layer_4="npc"
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+common/physics_ticks_per_second=60
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=1
+anti_aliasing/quality/msaa_3d=1
+anti_aliasing/quality/screen_space_aa=1
+lights_and_shadows/directional_shadow/size=4096
+environment/defaults/default_clear_color=Color(0.5, 0.65, 0.8, 1)
