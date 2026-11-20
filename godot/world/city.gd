@@ -20,6 +20,8 @@ var interiors: InteriorStreamer
 var day_night: DayNight
 var map_root: Node3D
 var terrain_mat: ShaderMaterial
+var massing_mat: ShaderMaterial
+var building_tiles: BuildingTiles
 
 
 func _ready() -> void:
@@ -33,7 +35,12 @@ func _ready() -> void:
 	add_child(interiors)
 	interiors.building_loaded.connect(func(_id, _n): _update_terrain_holes())
 	interiors.building_unloaded.connect(func(_id): _update_terrain_holes.call_deferred())
+	building_tiles = BuildingTiles.new()
+	building_tiles.name = "BuildingTiles"
+	building_tiles.massing_mat = massing_mat
+	add_child(building_tiles)
 	_spawn_player()
+	building_tiles.target = player
 	add_child(load(HUD_SCENE).instantiate())
 	GameState.world = self
 	GameState.in_game = true
@@ -59,7 +66,14 @@ func _load_map() -> void:
 	terrain_mat.shader = load("res://world/terrain.gdshader")
 	for mi in map_root.find_children("*", "MeshInstance3D", true, false):
 		var m := mi as MeshInstance3D
-		if String(m.name).to_lower().begins_with("terrain"):
+		var lname0 := String(m.name).to_lower()
+		if lname0.begins_with("buildings") or lname0.begins_with("landmarks"):
+			if massing_mat == null:
+				massing_mat = ShaderMaterial.new()
+				massing_mat.shader = load("res://world/massing.gdshader")
+			for s in m.mesh.get_surface_count():
+				m.set_surface_override_material(s, massing_mat)
+		elif String(m.name).to_lower().begins_with("terrain"):
 			for s in m.mesh.get_surface_count():
 				m.set_surface_override_material(s, terrain_mat)
 		else:
