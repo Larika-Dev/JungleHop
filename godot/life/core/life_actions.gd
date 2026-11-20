@@ -216,7 +216,7 @@ func available_for(target: Variant = null, include_blocked: bool = true) -> Arra
 			continue
 		seen[id] = true
 		out.append({"id": id, "def": def, "label": str(def.name), "ok": reason == "",
-			"reason": reason, "minutes": int(def.get("minutes", 0)), "native": false})
+			"reason": reason, "minutes": int(duration_for(def)), "native": false})
 	if kind == "furniture":
 		for a in native_furniture_actions(target):
 			var aid := str(a.get("id", ""))
@@ -353,6 +353,27 @@ func _need_word(n: String) -> String:
 
 # --- Running ------------------------------------------------------------------
 
+## Game minutes until the clock next reads hour:00 (1..1440).
+func minutes_until(hour: float) -> float:
+	var diff := hour * 60.0 - float(life.clock.minute_of_day())
+	if diff <= 0.0:
+		diff += 1440.0
+	return diff
+
+
+## How long an action takes right now. Handles "until_hour" (sleep until 7 AM)
+## and "until_alarm" (sleep until the alarm in flag home.alarm_hour, else its minutes).
+func duration_for(def: Dictionary) -> float:
+	var lo := float(def.get("min_minutes", 60))
+	var hi := float(def.get("max_minutes", 720))
+	if def.get("until_alarm", false):
+		var h: Variant = life.get_flag("home.alarm_hour", null)
+		if h != null:
+			return clampf(minutes_until(float(h)), lo, hi)
+	if def.has("until_hour"):
+		return clampf(minutes_until(float(def.until_hour)), lo, hi)
+	return float(def.get("minutes", 0))
+
 func busy() -> bool:
 	return not current.is_empty()
 
@@ -388,7 +409,7 @@ func perform(id: String, target: Variant = null, opts: Dictionary = {}) -> Dicti
 		return _fail(id, target, "Can't afford it")
 	if target_kind(target) == "npc":
 		life.relationships.meet(npc_id(target))
-	var minutes := float(def.get("minutes", 0))
+	var minutes := duration_for(def)
 	action_started.emit(id, target)
 	if minutes <= 0.0:
 		_complete(id, target)
@@ -397,7 +418,7 @@ func perform(id: String, target: Variant = null, opts: Dictionary = {}) -> Dicti
 		current = {"id": id, "target": target, "started_at": life.clock.total_minutes,
 			"end_at": life.clock.total_minutes + minutes, "skipping": true}
 		life.clock.advance_minutes(minutes)
-		_complete(id, target)
+		_complete(id, target, 1.0, minutes)
 	else:
 		_hold_needs(def)
 		current = {"id": id, "target": target, "started_at": life.clock.total_minutes,
@@ -434,10 +455,13 @@ func _fail(id: String, target: Variant, reason: String) -> Dictionary:
 
 func _hold_needs(def: Dictionary) -> void:
 	var hold: Array = []
-	for n in def.get("needs", {}):
-		if float(def.needs[n]) > 0.0:
-			hold.append(n if n != "comfort" else "energy")
+	for key in ["needs", "needs_per_hour"]:
+		var nd: Dictionary = def.get(key, {})
+		for n in nd:
+			if float(nd[n]) > 0.0:
+				hold.append(n if n != "comfort" else "energy")
 	life.needs.hold(hold)
+	life.needs.decay_scale = float(def.get("decay_scale", 1.0))
 
 
 func cancel() -> void:
@@ -450,7 +474,7 @@ func cancel() -> void:
 	var span: float = max(c.end_at - c.started_at, 1.0)
 	var frac := clampf((life.clock.total_minutes - c.started_at) / span, 0.0, 1.0)
 	if frac >= 0.25:
-		_complete(c.id, c.target, frac)
+		_complete(c.id, c.target, frac, frac * span)
 	action_cancelled.emit(c.id, c.target)
 
 
@@ -459,7 +483,7 @@ func on_minute() -> void:
 		return
 	if life.clock.total_minutes + 0.001 >= current.end_at:
 		var c := current
-		_complete(c.id, c.target)
+		_complete(c.id, c.target, 1.0, c.end_at - c.started_at)
 
 
 ## Success roll for chance-based actions (mostly social).
@@ -486,7 +510,7 @@ func success_chance(def: Dictionary, target: Variant) -> float:
 	return clampf(p, 0.05, 0.97)
 
 
-func _complete(id: String, target: Variant, scale: float = 1.0) -> void:
+func _complete(id: String, target: Variant, scale: float = 1.0, minutes_done: float = -1.0) -> void:
 	current = {}
 	life.needs.release_all()
 	var def: Dictionary = defs.get(id, {})
@@ -496,6 +520,11 @@ func _complete(id: String, target: Variant, scale: float = 1.0) -> void:
 	var result := {"ok": true, "success": success, "message": "", "money": 0.0,
 		"needs": {}, "skills": {}, "rel": {}}
 	result.needs = life.needs.apply(fx.get("needs", {}), scale)
+	if success and def.has("needs_per_hour"):
+		var hrs := (minutes_done if minutes_done >= 0.0 else duration_for(def)) / 60.0
+		var extra: Dictionary = life.needs.apply(def.needs_per_hour, hrs)
+		for n in extra:
+			result.needs[n] = float(result.needs.get(n, 0.0)) + extra[n]
 	var skill_scale := scale * (1.0 if success else 0.5)
 	for s in def.get("skills", {}):
 		var amt := float(def.skills[s]) * skill_scale
@@ -571,6 +600,10 @@ func _special(kind: String, result: Dictionary) -> void:
 				result.message = "You won %s!" % m.fmt(win)
 			else:
 				result.message = "No luck this time."
+		"loan_500":
+			m.borrow(500.0, "Bank loan")
+			result.money = 500.0
+			result.message = "The bank deposits %s. You owe %s." % [m.fmt(500.0), m.fmt(m.debt)]
 		"check_balance":
 			result.message = "Cash %s, bank %s, debt %s." % [m.fmt(m.cash), m.fmt(m.bank), m.fmt(m.debt)]
 

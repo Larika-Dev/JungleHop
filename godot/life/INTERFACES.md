@@ -45,7 +45,7 @@ All optional, so the core also runs alone:
 | `Life.skills` | skills with XP and levels 0 to 10 | `level(id)`, `add_xp(id, xp)`, `xp(id)` | `skill_leveled(id, level)` |
 | `Life.money` | cash, bank, hourly pay sessions, recurring bills | `add(amount, reason)`, `spend(amount, reason) -> bool`, `can_afford(a)`, `deposit(a)`, `withdraw(a)`, `start_paid_session(...)`, `end_paid_session(id)`, `add_bill(...)` | `money_changed(cash, bank, delta, reason)`, `pay_credited(session_id, amount)`, `paid_session_ended(session_id, total, minutes)` |
 | `Life.relationships` | per-NPC friendship, romance, flags, memory | `register_npc(id, info)`, `get_rel(id)`, `change(id, friendship, romance, reason)`, `tier(id)`, `romance_tier(id)`, `add_flag(id, f)`, `has_flag(id, f)` | `relationship_changed(id, friendship, romance)`, `tier_changed(id, old, new)` |
-| `Life.actions` | action registry and runner (189 shipped) | `register(def)`, `register_many(defs)`, `set_handler(id, callable)`, `set_check(id, callable)`, `check(id, target)`, `available_for(target)`, `interactable_actions(target)`, `perform(id, target)`, `cancel()`, `busy()`, `progress()` | `action_started(id, target)`, `action_finished(id, target, result)`, `action_failed(id, target, reason)` |
+| `Life.actions` | action registry and runner (428 shipped) | `register(def)`, `register_many(defs)`, `set_handler(id, callable)`, `set_check(id, callable)`, `check(id, target)`, `available_for(target)`, `interactable_actions(target)`, `perform(id, target)`, `cancel()`, `busy()`, `progress()` | `action_started(id, target)`, `action_finished(id, target, result)`, `action_failed(id, target, reason)` |
 | `Life` | player flags, current place, save/load | `set_flag(k, v)`, `get_flag(k, default)`, `set_place(place)`, `place`, `register_save_provider(key, obj)`, `save_game(path)`, `load_game(path)` | `flag_changed(k, v)`, `place_changed(place)`, `notify(text)` |
 
 Shortcuts the jobs and education threads asked for: `Life.add_money(amount, reason)`,
@@ -128,8 +128,8 @@ stealth, writing, gaming, knowledge`. Levels 0 to 10; `add_xp(id, xp)` with
 
 ## Actions
 
-Every player action is a dictionary. 189 ship in `data/actions/*.json`
-(social 46, romance 16, self 38, place 30, furniture 59); other
+Every player action is a dictionary. 428 ship in `data/actions/*.json`
+(NPC 137, anywhere 86, place 88, furniture 117); other
 systems add theirs at runtime with `Life.actions.register(def)` or drop a JSON
 file into `res://life/data/actions/` (all files there load at start).
 
@@ -143,6 +143,11 @@ file into `res://life/data/actions/` (all files there load at start).
   "place": ["cafe", "drink"],   // target=place, or extra requirement: Life.place.category/tags must match one
   "minutes": 10,                // game minutes it takes (0 = instant)
   "time_skip": false,           // true: skip the clock instead of waiting in real time (sleep)
+  "until_hour": 7,              // duration = until the clock next reads 07:00 (clamped by min/max_minutes)
+  "until_alarm": true,          // duration = until flag home.alarm_hour if set, else "minutes"
+  "min_minutes": 60, "max_minutes": 720,
+  "needs_per_hour": {"energy": 12.5}, // scaled by the actual duration (sleep, naps)
+  "decay_scale": 0.4,           // needs decay at this rate while the action runs
   "cost": 0,                    // money spent up front
   "earn": 0,                    // money gained on success
   "needs": {"social": 12, "fun": 4},
@@ -160,6 +165,7 @@ file into `res://life/data/actions/` (all files there load at start).
   "sets_rel_flags": ["dating"], "clears_rel_flags": [],
   "sets_flags": {"has_gym_pass": true},
   "cooldown_minutes": 60,       // per target
+  "special": "",                // built-ins: deposit_all, withdraw_50, withdraw_200, repay_100, loan_500, lottery, check_balance
   "message": "You chat with {npc} about the game."
 }
 ```

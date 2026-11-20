@@ -48,6 +48,7 @@ func _run() -> void:
 	await test_relationships()
 	await test_furniture()
 	test_places()
+	await test_sleep()
 	test_runtime_registration()
 	test_save_load()
 	test_external_clock()
@@ -260,6 +261,53 @@ func test_places() -> void:
 	ok(life.money.cash == 0.0 and life.money.bank > bank0, "deposit all at the bank")
 	life.set_place({})
 	ok(life.actions.check("go_jogging") == "" or life.needs.get_value("energy") < 20, "jogging outdoors")
+
+
+func test_sleep() -> void:
+	var bed := DemoFurniture.new()
+	bed.furniture_kind = "bed"
+	bed.native = [{"id": "sleep", "label": "Sleep", "minutes": 480}]
+	root.add_child(bed)
+	await process_frame
+	life.needs.enabled = true
+	# Sleep until morning from 11 PM: wakes at 7 AM, energy full, bladder not wrecked.
+	life.clock.set_time(life.clock.day(), 23, 0)
+	life.needs.set_value("energy", 15)
+	life.needs.set_value("bladder", 80)
+	life.needs.set_value("hunger", 80)
+	var res: Dictionary = life.actions.perform("sleep_until_morning", bed)
+	ok(res.ok, "sleep until morning runs: %s" % res.reason)
+	ok(life.clock.hour() == 7 and life.clock.minute() == 0, "woke at 7:00 (%s)" % life.clock.time_string())
+	ok(life.needs.get_value("energy") >= 95.0, "energy restored (%.1f)" % life.needs.get_value("energy"))
+	ok(life.needs.get_value("bladder") > 50.0, "bladder decays slowly asleep (%.1f)" % life.needs.get_value("bladder"))
+	ok(life.needs.get_value("hunger") > 60.0, "hunger decays slowly asleep (%.1f)" % life.needs.get_value("hunger"))
+	# The furniture's own "sleep" honours the alarm.
+	life.actions.perform("set_alarm_8am")
+	life.clock.set_time(life.clock.day(), 22, 30)
+	life.needs.set_value("energy", 20)
+	life.actions.perform("sleep", bed)
+	ok(life.clock.hour() == 8 and life.clock.minute() == 0, "furniture sleep wakes at the 8 AM alarm (%s)" % life.clock.time_string())
+	ok(life.needs.get_value("energy") >= 95.0, "furniture sleep restores energy (%.1f)" % life.needs.get_value("energy"))
+	life.actions.perform("clear_alarm")
+	ok(life.get_flag("home.alarm_hour") == null, "alarm cleared")
+	life.clock.set_time(life.clock.day(), 14, 0)
+	life.needs.set_value("energy", 30)
+	life.actions.perform("sleep", bed)
+	ok(life.clock.hour() == 22, "daytime sleep without alarm lasts 8 h (%s)" % life.clock.time_string())
+	# Sleeping in a bedroom with no bed furniture loaded.
+	life.set_place({"id": "HOUSE", "room_id": "R1", "room_type": "bedroom"})
+	life.needs.set_value("energy", 10)
+	life.clock.set_time(life.clock.day(), 1, 0)
+	ok(life.actions.perform("sleep_here", life.place).ok and life.needs.get_value("energy") > 80.0, "sleep_here in a bedroom room")
+	life.set_place({})
+	# Passing out when energy hits zero.
+	var passed := [false]
+	var cb := func(): passed[0] = true
+	life.passed_out.connect(cb)
+	life.needs.set_value("energy", 0.5)
+	life.clock.advance_minutes(10)
+	ok(passed[0] and life.needs.get_value("energy") > 40.0, "pass out at 0 energy and wake partly rested")
+	life.passed_out.disconnect(cb)
 
 
 func test_runtime_registration() -> void:

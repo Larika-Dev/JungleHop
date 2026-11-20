@@ -344,10 +344,12 @@ func apply_external_action(action_id: String, target: Variant, actor: Variant) -
 		return
 	var tid := str(target.get_instance_id()) if target is Object else str(target)
 	var key := "%s|%s" % [action_id, tid]
+	# An echo of the same action arrives within moments and with the clock where
+	# the first report left it; anything else is a new use.
 	var now := Time.get_ticks_msec()
-	if now - int(_recent_external.get(key, -100000)) < 400:
+	var last: Dictionary = _recent_external.get(key, {})
+	if not last.is_empty() and now - int(last.ms) < 400 and is_equal_approx(float(last.t), clock.total_minutes):
 		return
-	_recent_external[key] = now
 	var fdef := _furniture_def(action_id, target)
 	# Held poses (sit, lie_down): effects per game hour actually held.
 	if fdef.get("perHour", false):
@@ -356,24 +358,25 @@ func apply_external_action(action_id: String, target: Variant, actor: Variant) -
 		_pose_started.erase(pk)
 		if hours > 0.0:
 			needs.apply(fdef.get("needs", {}), hours)
+		_recent_external[key] = {"ms": now, "t": clock.total_minutes}
 		return
 	var def: Dictionary = actions.get_def(action_id)
 	var own: bool = not def.is_empty() and def.get("target", "self") != "npc"
 	var fx_needs: Dictionary = def.get("needs", {}) if own else fdef.get("needs", {})
-	var minutes: float = float(def.get("minutes", fdef.get("minutes", 0))) if own else float(fdef.get("minutes", 0))
+	var minutes: float = actions.duration_for(def) if own else float(fdef.get("minutes", 0))
+	if own and minutes <= 0.0:
+		minutes = float(fdef.get("minutes", 0))
 	if def.is_empty() and fdef.is_empty():
 		return
 	# Furniture finishes at once; Life spends the action's time by skipping the clock.
 	var is_furniture: bool = target is Node and actions.target_kind(target) == "furniture"
 	if is_furniture and minutes > 0.0 and not actions.busy():
-		var hold: Array = []
-		for n in fx_needs:
-			if float(fx_needs[n]) > 0.0:
-				hold.append(n if n != "comfort" else "energy")
-		needs.hold(hold)
+		actions._hold_needs(def if own else {"needs": fx_needs})
 		clock.advance_minutes(minutes)
 		needs.release_all()
 	needs.apply(fx_needs)
+	if own and def.has("needs_per_hour"):
+		needs.apply(def.needs_per_hour, minutes / 60.0)
 	if own:
 		for s in def.get("skills", {}):
 			skills.add_xp(s, float(def.skills[s]))
@@ -382,6 +385,7 @@ func apply_external_action(action_id: String, target: Variant, actor: Variant) -
 		var msg := str(def.get("message", ""))
 		if msg != "":
 			notify.emit(msg)
+	_recent_external[key] = {"ms": Time.get_ticks_msec(), "t": clock.total_minutes}
 	actions.action_finished.emit(action_id, target, {"ok": true, "success": true, "message": "",
 		"external": true})
 

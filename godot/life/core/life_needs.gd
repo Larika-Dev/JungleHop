@@ -10,6 +10,8 @@ var defs: Dictionary = {}
 var critical_below: float = 10.0
 ## Needs that do not decay right now (while an action restores them).
 var held: Dictionary = {}
+## Multiplier on decay while an action runs (sleep slows hunger and bladder).
+var decay_scale: float = 1.0
 
 var _critical_sent: Dictionary = {}
 
@@ -82,7 +84,7 @@ func tick_minute() -> void:
 	for id in defs:
 		if held.has(id):
 			continue
-		var rate := float(defs[id].get("decay_per_hour", 3.0)) / 60.0
+		var rate := float(defs[id].get("decay_per_hour", 3.0)) / 60.0 * decay_scale
 		set_value(id, values[id] - rate)
 
 
@@ -93,6 +95,7 @@ func hold(ids_to_hold: Array) -> void:
 
 func release_all() -> void:
 	held.clear()
+	decay_scale = 1.0
 
 
 ## Weighted average of all needs, 0 to 100.
