@@ -1,0 +1,784 @@
+{
+ "note": "needs: change per use, or per game hour when perHour",
+ "actions": {
+  "sit": {
+   "label": "Sit",
+   "minutes": 0,
+   "perHour": true,
+   "needs": {
+    "comfort": 10,
+    "energy": 2
+   }
+  },
+  "lie_down": {
+   "label": "Lie down",
+   "minutes": 0,
+   "perHour": true,
+   "needs": {
+    "comfort": 15,
+    "energy": 5
+   }
+  },
+  "sleep": {
+   "label": "Sleep",
+   "minutes": 480,
+   "needs": {
+    "energy": 100,
+    "comfort": 20,
+    "hunger": -15,
+    "hygiene": -10
+   }
+  },
+  "nap": {
+   "label": "Nap",
+   "minutes": 30,
+   "needs": {
+    "energy": 15,
+    "comfort": 5
+   }
+  },
+  "rock": {
+   "label": "Rock gently",
+   "minutes": 15,
+   "needs": {
+    "comfort": 10,
+    "fun": 3
+   }
+  },
+  "relax": {
+   "label": "Relax",
+   "minutes": 20,
+   "needs": {
+    "comfort": 12,
+    "fun": 4
+   }
+  },
+  "spin": {
+   "label": "Spin the chair",
+   "minutes": 1,
+   "needs": {
+    "fun": 3
+   }
+  },
+  "wait": {
+   "label": "Wait",
+   "minutes": 15,
+   "needs": {
+    "comfort": 3
+   }
+  },
+  "open": {
+   "label": "Open",
+   "minutes": 0,
+   "needs": {}
+  },
+  "close": {
+   "label": "Close",
+   "minutes": 0,
+   "needs": {}
+  },
+  "store_item": {
+   "label": "Store an item",
+   "minutes": 1,
+   "needs": {}
+  },
+  "take_item": {
+   "label": "Take an item",
+   "minutes": 1,
+   "needs": {}
+  },
+  "tidy_up": {
+   "label": "Tidy up",
+   "minutes": 15,
+   "needs": {
+    "comfort": 3,
+    "energy": -3
+   }
+  },
+  "use": {
+   "label": "Use",
+   "minutes": 5,
+   "needs": {}
+  },
+  "watch_tv": {
+   "label": "Watch TV",
+   "minutes": 30,
+   "needs": {
+    "fun": 15,
+    "comfort": 5,
+    "energy": -2
+   }
+  },
+  "play_video_games": {
+   "label": "Play video games",
+   "minutes": 45,
+   "needs": {
+    "fun": 25,
+    "energy": -5,
+    "social": 2
+   }
+  },
+  "read": {
+   "label": "Read",
+   "minutes": 30,
+   "needs": {
+    "fun": 10,
+    "comfort": 3
+   }
+  },
+  "browse_books": {
+   "label": "Browse the books",
+   "minutes": 10,
+   "needs": {
+    "fun": 4
+   }
+  },
+  "toggle_light": {
+   "label": "Switch the light",
+   "minutes": 0,
+   "needs": {}
+  },
+  "place_item": {
+   "label": "Put something down",
+   "minutes": 0,
+   "needs": {}
+  },
+  "play_board_game": {
+   "label": "Play a board game",
+   "minutes": 45,
+   "needs": {
+    "fun": 20,
+    "social": 15,
+    "energy": -3
+   }
+  },
+  "admire": {
+   "label": "Admire",
+   "minutes": 2,
+   "needs": {
+    "fun": 2
+   }
+  },
+  "chat": {
+   "label": "Chat at the table",
+   "minutes": 15,
+   "needs": {
+    "social": 15,
+    "fun": 4
+   }
+  },
+  "eat": {
+   "label": "Eat a meal",
+   "minutes": 20,
+   "needs": {
+    "hunger": 45,
+    "comfort": 4
+   }
+  },
+  "eat_snack": {
+   "label": "Eat a snack",
+   "minutes": 5,
+   "needs": {
+    "hunger": 12
+   }
+  },
+  "cook": {
+   "label": "Cook a meal",
+   "minutes": 30,
+   "needs": {
+    "hunger": 50,
+    "energy": -5,
+    "hygiene": -3
+   }
+  },
+  "prep_food": {
+   "label": "Prep food",
+   "minutes": 15,
+   "needs": {
+    "energy": -2
+   }
+  },
+  "wash_dishes": {
+   "label": "Wash the dishes",
+   "minutes": 15,
+   "needs": {
+    "energy": -3,
+    "hygiene": -2
+   }
+  },
+  "set_table": {
+   "label": "Set the table",
+   "minutes": 5,
+   "needs": {}
+  },
+  "drink_coffee": {
+   "label": "Drink a coffee",
+   "minutes": 10,
+   "needs": {
+    "energy": 10,
+    "fun": 3
+   }
+  },
+  "grab_drink": {
+   "label": "Grab a cold drink",
+   "minutes": 1,
+   "needs": {
+    "hunger": 4,
+    "fun": 2
+   }
+  },
+  "make_bed": {
+   "label": "Make the bed",
+   "minutes": 5,
+   "needs": {
+    "comfort": 3
+   }
+  },
+  "set_alarm": {
+   "label": "Set an alarm",
+   "minutes": 0,
+   "needs": {}
+  },
+  "change_clothes": {
+   "label": "Change clothes",
+   "minutes": 5,
+   "needs": {
+    "hygiene": 5,
+    "comfort": 3
+   }
+  },
+  "customize_outfit": {
+   "label": "Pick an outfit",
+   "minutes": 5,
+   "needs": {
+    "fun": 3
+   }
+  },
+  "check_appearance": {
+   "label": "Check your look",
+   "minutes": 1,
+   "needs": {
+    "fun": 1
+   }
+  },
+  "customize_appearance": {
+   "label": "Change your look",
+   "minutes": 10,
+   "needs": {
+    "fun": 5
+   }
+  },
+  "do_makeup": {
+   "label": "Do your makeup",
+   "minutes": 15,
+   "needs": {
+    "fun": 3,
+    "hygiene": 3
+   }
+  },
+  "rock_baby": {
+   "label": "Rock the cradle",
+   "minutes": 10,
+   "needs": {
+    "social": 5
+   }
+  },
+  "hang_coat": {
+   "label": "Hang up your coat",
+   "minutes": 0,
+   "needs": {}
+  },
+  "take_coat": {
+   "label": "Take your coat",
+   "minutes": 0,
+   "needs": {}
+  },
+  "change_shoes": {
+   "label": "Change shoes",
+   "minutes": 2,
+   "needs": {
+    "comfort": 2
+   }
+  },
+  "wash_hands": {
+   "label": "Wash hands",
+   "minutes": 1,
+   "needs": {
+    "hygiene": 10
+   }
+  },
+  "wash_face": {
+   "label": "Wash your face",
+   "minutes": 2,
+   "needs": {
+    "hygiene": 15,
+    "energy": 3
+   }
+  },
+  "brush_teeth": {
+   "label": "Brush teeth",
+   "minutes": 3,
+   "needs": {
+    "hygiene": 15
+   }
+  },
+  "dry_off": {
+   "label": "Grab a towel",
+   "minutes": 1,
+   "needs": {
+    "hygiene": 3,
+    "comfort": 2
+   }
+  },
+  "study": {
+   "label": "Study",
+   "minutes": 60,
+   "needs": {
+    "energy": -10,
+    "fun": -5
+   }
+  },
+  "do_homework": {
+   "label": "Do homework",
+   "minutes": 45,
+   "needs": {
+    "energy": -8,
+    "fun": -5
+   }
+  },
+  "work_at_desk": {
+   "label": "Work at the desk",
+   "minutes": 60,
+   "needs": {
+    "energy": -10,
+    "fun": -4
+   }
+  },
+  "use_computer": {
+   "label": "Use the computer",
+   "minutes": 30,
+   "needs": {
+    "fun": 5,
+    "energy": -4
+   }
+  },
+  "play_computer_game": {
+   "label": "Play a computer game",
+   "minutes": 30,
+   "needs": {
+    "fun": 20,
+    "energy": -4
+   }
+  },
+  "write_letter": {
+   "label": "Write a letter",
+   "minutes": 15,
+   "needs": {
+    "social": 8
+   }
+  },
+  "file_papers": {
+   "label": "File papers",
+   "minutes": 10,
+   "needs": {
+    "energy": -2
+   }
+  },
+  "adjust_height": {
+   "label": "Adjust desk height",
+   "minutes": 0,
+   "needs": {}
+  },
+  "grade_papers": {
+   "label": "Grade papers",
+   "minutes": 45,
+   "needs": {
+    "energy": -8
+   }
+  },
+  "hold_meeting": {
+   "label": "Hold a meeting",
+   "minutes": 60,
+   "needs": {
+    "social": 10,
+    "energy": -8
+   }
+  },
+  "work_reception": {
+   "label": "Work the front desk",
+   "minutes": 60,
+   "needs": {
+    "energy": -8,
+    "social": 6
+   }
+  },
+  "check_in": {
+   "label": "Check in",
+   "minutes": 2,
+   "needs": {
+    "social": 2
+   }
+  },
+  "draw": {
+   "label": "Draw",
+   "minutes": 30,
+   "needs": {
+    "fun": 12,
+    "energy": -3
+   }
+  },
+  "draft_plans": {
+   "label": "Draft plans",
+   "minutes": 60,
+   "needs": {
+    "energy": -8
+   }
+  },
+  "run_experiment": {
+   "label": "Run an experiment",
+   "minutes": 45,
+   "needs": {
+    "energy": -8,
+    "fun": 4
+   }
+  },
+  "write_on_board": {
+   "label": "Write on the board",
+   "minutes": 5,
+   "needs": {}
+  },
+  "erase_board": {
+   "label": "Erase the board",
+   "minutes": 1,
+   "needs": {}
+  },
+  "lecture": {
+   "label": "Give a lecture",
+   "minutes": 60,
+   "needs": {
+    "energy": -12,
+    "social": 10
+   }
+  },
+  "give_speech": {
+   "label": "Give a speech",
+   "minutes": 10,
+   "needs": {
+    "social": 8,
+    "energy": -3
+   }
+  },
+  "attend_lecture": {
+   "label": "Attend the lecture",
+   "minutes": 60,
+   "needs": {
+    "energy": -6,
+    "fun": -3
+   }
+  },
+  "attend_class": {
+   "label": "Attend class",
+   "minutes": 50,
+   "needs": {
+    "energy": -6,
+    "fun": -3
+   }
+  },
+  "take_notes": {
+   "label": "Take notes",
+   "minutes": 10,
+   "needs": {
+    "energy": -1
+   }
+  },
+  "group_study": {
+   "label": "Group study",
+   "minutes": 60,
+   "needs": {
+    "social": 12,
+    "energy": -8
+   }
+  },
+  "borrow_book": {
+   "label": "Borrow a book",
+   "minutes": 2,
+   "needs": {
+    "fun": 2
+   }
+  },
+  "return_book": {
+   "label": "Return a book",
+   "minutes": 1,
+   "needs": {}
+  },
+  "checkout_book": {
+   "label": "Check out books",
+   "minutes": 2,
+   "needs": {}
+  },
+  "reshelve_books": {
+   "label": "Reshelve books",
+   "minutes": 20,
+   "needs": {
+    "energy": -4
+   }
+  },
+  "push_cart": {
+   "label": "Push the cart",
+   "minutes": 1,
+   "needs": {}
+  },
+  "search_catalog": {
+   "label": "Search the card catalogue",
+   "minutes": 5,
+   "needs": {
+    "fun": 2
+   }
+  },
+  "look_up_word": {
+   "label": "Look up a word",
+   "minutes": 2,
+   "needs": {
+    "fun": 1
+   }
+  },
+  "read_magazine": {
+   "label": "Read a magazine",
+   "minutes": 15,
+   "needs": {
+    "fun": 8
+   }
+  },
+  "read_picture_book": {
+   "label": "Read a picture book",
+   "minutes": 10,
+   "needs": {
+    "fun": 6
+   }
+  },
+  "work_librarian": {
+   "label": "Work the circulation desk",
+   "minutes": 60,
+   "needs": {
+    "energy": -8,
+    "social": 4
+   }
+  },
+  "climb": {
+   "label": "Climb the ladder",
+   "minutes": 1,
+   "needs": {
+    "energy": -1
+   }
+  },
+  "step_up": {
+   "label": "Step up",
+   "minutes": 0,
+   "needs": {}
+  },
+  "browse": {
+   "label": "Browse",
+   "minutes": 5,
+   "needs": {
+    "fun": 4
+   }
+  },
+  "browse_clothes": {
+   "label": "Browse clothes",
+   "minutes": 10,
+   "needs": {
+    "fun": 5
+   }
+  },
+  "pick_item": {
+   "label": "Pick up an item",
+   "minutes": 1,
+   "needs": {}
+  },
+  "try_on": {
+   "label": "Try on clothes",
+   "minutes": 10,
+   "needs": {
+    "fun": 6
+   }
+  },
+  "try_on_shoes": {
+   "label": "Try on shoes",
+   "minutes": 5,
+   "needs": {
+    "fun": 4
+   }
+  },
+  "checkout": {
+   "label": "Pay at the counter",
+   "minutes": 2,
+   "needs": {}
+  },
+  "work_cashier": {
+   "label": "Work the register",
+   "minutes": 60,
+   "needs": {
+    "energy": -8,
+    "social": 5
+   }
+  },
+  "restock_shelves": {
+   "label": "Restock shelves",
+   "minutes": 30,
+   "needs": {
+    "energy": -8
+   }
+  },
+  "buy_newspaper": {
+   "label": "Buy a newspaper",
+   "minutes": 1,
+   "needs": {}
+  },
+  "greet_guests": {
+   "label": "Greet guests",
+   "minutes": 30,
+   "needs": {
+    "social": 8,
+    "energy": -4
+   }
+  },
+  "check_reservation": {
+   "label": "Check the reservations",
+   "minutes": 2,
+   "needs": {}
+  },
+  "watch_movie": {
+   "label": "Watch a movie",
+   "minutes": 120,
+   "needs": {
+    "fun": 35,
+    "comfort": 8,
+    "energy": -4
+   }
+  },
+  "pay_bills": {
+   "label": "Pay bills",
+   "minutes": 15,
+   "needs": {
+    "fun": -4
+   }
+  },
+  "bake": {
+   "label": "Bake something",
+   "minutes": 60,
+   "needs": {
+    "hunger": 25,
+    "fun": 10,
+    "energy": -6
+   }
+  },
+  "read_in_bed": {
+   "label": "Read in bed",
+   "minutes": 30,
+   "needs": {
+    "fun": 10,
+    "comfort": 8,
+    "energy": 3
+   }
+  },
+  "cuddle": {
+   "label": "Cuddle",
+   "minutes": 20,
+   "needs": {
+    "social": 25,
+    "comfort": 10,
+    "fun": 5
+   }
+  },
+  "fold_laundry": {
+   "label": "Fold laundry",
+   "minutes": 15,
+   "needs": {
+    "hygiene": 4,
+    "energy": -3
+   }
+  },
+  "shave": {
+   "label": "Shave",
+   "minutes": 5,
+   "needs": {
+    "hygiene": 10
+   }
+  },
+  "dust_shelves": {
+   "label": "Dust the shelves",
+   "minutes": 10,
+   "needs": {
+    "comfort": 2,
+    "energy": -2
+   }
+  },
+  "bag_groceries": {
+   "label": "Bag groceries",
+   "minutes": 30,
+   "needs": {
+    "energy": -6
+   }
+  },
+  "write_essay": {
+   "label": "Write an essay",
+   "minutes": 90,
+   "needs": {
+    "energy": -12,
+    "fun": -6
+   }
+  },
+  "brainstorm": {
+   "label": "Brainstorm",
+   "minutes": 20,
+   "needs": {
+    "fun": 5,
+    "social": 5
+   }
+  },
+  "browse_internet": {
+   "label": "Browse the internet",
+   "minutes": 20,
+   "needs": {
+    "fun": 10
+   }
+  },
+  "apply_for_job": {
+   "label": "Apply for a job",
+   "minutes": 20,
+   "needs": {
+    "fun": -2
+   }
+  },
+  "take_online_course": {
+   "label": "Take an online course",
+   "minutes": 60,
+   "needs": {
+    "energy": -8,
+    "fun": -3
+   }
+  },
+  "ask_for_directions": {
+   "label": "Ask for directions",
+   "minutes": 1,
+   "needs": {
+    "social": 3
+   }
+  },
+  "ask_librarian": {
+   "label": "Ask the librarian",
+   "minutes": 2,
+   "needs": {
+    "social": 3
+   }
+  },
+  "practice_speech": {
+   "label": "Practise a speech",
+   "minutes": 20,
+   "needs": {
+    "energy": -3,
+    "fun": 2
+   }
+  }
+ }
+}
