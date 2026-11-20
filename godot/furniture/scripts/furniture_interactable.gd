@@ -19,6 +19,7 @@ var occupants: Dictionary = {}
 
 func _ready() -> void:
 	add_to_group("furniture")
+	set_process(false)
 
 
 func get_actions(actor: Node) -> Array[Dictionary]:
@@ -27,7 +28,7 @@ func get_actions(actor: Node) -> Array[Dictionary]:
 		out.append({"id": "stand_up", "label": "Stand up", "minutes": 0})
 		var cur: String = occupants[actor]["action"]
 		for id in piece.def.get("actions", []):
-			if id != cur and id not in POSES and id != "sleep" and _usable_while_posed(id):
+			if id != cur and id not in POSES and (_usable_while_posed(id) or (cur in LYING and id in ["sleep", "nap"])):
 				out.append(_entry(id))
 		return out
 	var door_done := false
@@ -110,7 +111,16 @@ func _free_slot(id: String) -> int:
 	return -1
 
 
+const LYING := ["lie_down", "sleep", "nap"]
+
+
 func _take_pose(id: String, actor: Node) -> bool:
+	if occupants.has(actor):
+		# already on this piece: sleeping after lying down keeps the same spot
+		if id in LYING and FurniturePose.is_lying(actor):
+			occupants[actor]["action"] = id if id in POSES else occupants[actor]["action"]
+			return true
+		_release(actor)
 	var slot := _free_slot(id)
 	if slot < 0:
 		var ui := get_node_or_null("/root/UI") if is_inside_tree() else null
@@ -118,16 +128,48 @@ func _take_pose(id: String, actor: Node) -> bool:
 			ui.notify("No room on the %s." % furniture_kind.replace("_", " "))
 		return false
 	var xf: Transform3D = _slots_for(id)[slot]
-	occupants[actor] = {"action": id, "slot": slot}
+	occupants[actor] = {"action": id, "slot": slot, "yaw": xf.basis.get_euler().y}
 	if actor is PhysicsBody3D and piece:
 		(actor as PhysicsBody3D).add_collision_exception_with(piece)
-	if id in ["lie_down", "sleep", "nap"] and actor.has_method("lie_at"):
-		actor.lie_at(xf)
+	if id in LYING and not piece.bed_transforms().is_empty():
+		FurniturePose.lie(actor, xf)
 	elif actor.has_method("sit_at"):
 		actor.sit_at(xf)
 	elif actor is Node3D:
 		(actor as Node3D).global_transform = xf
+	# the player can also get up with the movement keys; follow that
+	if actor.has_signal("stood_up") and not actor.is_connected("stood_up", _on_actor_stood_up.bind(actor)):
+		actor.connect("stood_up", _on_actor_stood_up.bind(actor), CONNECT_ONE_SHOT)
+	set_process(true)
 	return true
+
+
+func _on_actor_stood_up(actor: Node) -> void:
+	if occupants.has(actor):
+		_release(actor, false)
+
+
+func _process(_delta: float) -> void:
+	# keep a lying body on the bed: mouse look turns the head only up/down
+	var any := false
+	for a in occupants:
+		if is_instance_valid(a) and FurniturePose.is_lying(a):
+			any = true
+			if a.get("_yaw") != null:
+				a.set("_yaw", float(occupants[a]["yaw"]))
+	if not any:
+		set_process(false)
+
+
+## Where to stand after getting out of bed or off a seat: beside a bed, else in front of the piece.
+func _stand_spot(actor: Node) -> Vector3:
+	if not piece.bed_transforms().is_empty():
+		var size: Array = piece.def.get("size_m", [1, 0.5, 2])
+		var side := 1.0
+		if actor is Node3D:
+			side = 1.0 if piece.to_local((actor as Node3D).global_position).x >= 0.0 else -1.0
+		return piece.to_global(Vector3(side * (float(size[0]) * 0.5 + 0.4), 0, 0))
+	return piece.approach_transform().origin
 
 
 func _release(actor: Node, stand := true) -> void:
@@ -135,11 +177,17 @@ func _release(actor: Node, stand := true) -> void:
 		return
 	var held: String = occupants[actor]["action"]
 	occupants.erase(actor)
+	var lying := FurniturePose.is_lying(actor)
+	var spot := _stand_spot(actor) if lying else Vector3.INF
 	if stand:
+		if actor.has_signal("stood_up") and actor.is_connected("stood_up", _on_actor_stood_up.bind(actor)):
+			actor.disconnect("stood_up", _on_actor_stood_up.bind(actor))
 		if actor.has_method("stand_up"):
 			actor.stand_up()
-		elif actor is Node3D:
+		elif actor is Node3D and not lying:
 			(actor as Node3D).global_transform = piece.approach_transform()
+	if lying or actor.has_method("get_up"):
+		FurniturePose.get_up(actor, spot if spot != Vector3.INF else _stand_spot(actor))
 	if actor is PhysicsBody3D and piece:
 		(actor as PhysicsBody3D).remove_collision_exception_with(piece)
 	if held in POSES:

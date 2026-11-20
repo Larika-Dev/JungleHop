@@ -14,7 +14,11 @@
     "lie_down",
     "nap",
     "watch_tv",
-    "watch_movie"
+    "watch_movie",
+    "channel_surf",
+    "binge_series",
+    "call_a_friend",
+    "scroll_phone"
    ],
    "size_m": [
     2.139,
@@ -54,7 +58,9 @@
    "actions": [
     "sit",
     "nap",
-    "relax"
+    "relax",
+    "scroll_phone",
+    "call_a_friend"
    ],
    "size_m": [
     1.52,
@@ -89,7 +95,8 @@
    "actions": [
     "sit",
     "read",
-    "relax"
+    "relax",
+    "knit"
    ],
    "size_m": [
     0.9,
@@ -118,7 +125,9 @@
    "kind": "coffee_table",
    "actions": [
     "place_item",
-    "play_board_game"
+    "play_board_game",
+    "play_cards",
+    "solve_puzzle"
    ],
    "size_m": [
     1.2,
@@ -165,7 +174,10 @@
     "watch_tv",
     "play_video_games",
     "open",
-    "watch_movie"
+    "watch_movie",
+    "channel_surf",
+    "sing_karaoke",
+    "play_party_game"
    ],
    "size_m": [
     1.8,
@@ -190,7 +202,9 @@
     "read",
     "browse_books",
     "store_item",
-    "dust_shelves"
+    "dust_shelves",
+    "organize_books",
+    "pick_novel"
    ],
    "size_m": [
     0.82,
@@ -236,7 +250,8 @@
    "actions": [
     "sit",
     "open",
-    "store_item"
+    "store_item",
+    "put_feet_up"
    ],
    "size_m": [
     0.61,
@@ -345,7 +360,10 @@
     "lie_down",
     "nap",
     "watch_tv",
-    "watch_movie"
+    "watch_movie",
+    "channel_surf",
+    "binge_series",
+    "host_game_night"
    ],
    "size_m": [
     2.78,
@@ -390,7 +408,8 @@
    "actions": [
     "sit",
     "rock",
-    "read"
+    "read",
+    "knit"
    ],
    "size_m": [
     0.53,
@@ -446,7 +465,11 @@
     "play_board_game",
     "do_homework",
     "chat",
-    "pay_bills"
+    "pay_bills",
+    "host_dinner_party",
+    "eat_breakfast",
+    "write_journal",
+    "budget_finances"
    ],
    "size_m": [
     1.8,
@@ -498,7 +521,10 @@
    "actions": [
     "eat",
     "chat",
-    "play_board_game"
+    "play_board_game",
+    "host_dinner_party",
+    "eat_breakfast",
+    "play_cards"
    ],
    "size_m": [
     1.07,
@@ -520,7 +546,9 @@
    "setting": "Home - Kitchen",
    "kind": "stool",
    "actions": [
-    "sit"
+    "sit",
+    "order_drink",
+    "chat_bartender"
    ],
    "size_m": [
     0.45,
@@ -552,7 +580,11 @@
     "prep_food",
     "eat_snack",
     "open",
-    "bake"
+    "bake",
+    "make_breakfast",
+    "make_sandwich",
+    "meal_prep",
+    "clean_counter"
    ],
    "size_m": [
     1.84,
@@ -659,7 +691,13 @@
     "wash_dishes",
     "prep_food",
     "open",
-    "bake"
+    "bake",
+    "make_breakfast",
+    "make_sandwich",
+    "brew_coffee",
+    "make_tea",
+    "meal_prep",
+    "clean_counter"
    ],
    "size_m": [
     0.6,
@@ -736,7 +774,9 @@
    "actions": [
     "eat",
     "drink_coffee",
-    "chat"
+    "chat",
+    "go_on_date",
+    "play_chess"
    ],
    "size_m": [
     0.6,
@@ -763,7 +803,12 @@
     "lie_down",
     "make_bed",
     "read_in_bed",
-    "cuddle"
+    "cuddle",
+    "daydream",
+    "stretch",
+    "pillow_fight",
+    "call_a_friend",
+    "scroll_phone"
    ],
    "size_m": [
     1.6,
@@ -801,7 +846,12 @@
     "lie_down",
     "make_bed",
     "read_in_bed",
-    "cuddle"
+    "cuddle",
+    "daydream",
+    "stretch",
+    "pillow_fight",
+    "call_a_friend",
+    "scroll_phone"
    ],
    "size_m": [
     1.995,
@@ -838,7 +888,9 @@
     "nap",
     "lie_down",
     "make_bed",
-    "read_in_bed"
+    "read_in_bed",
+    "daydream",
+    "scroll_phone"
    ],
    "size_m": [
     1.07,
@@ -869,7 +921,9 @@
     "sleep",
     "nap",
     "lie_down",
-    "make_bed"
+    "make_bed",
+    "daydream",
+    "pillow_fight"
    ],
    "size_m": [
     1.106,
@@ -929,7 +983,8 @@
     "change_clothes",
     "open",
     "store_item",
-    "fold_laundry"
+    "fold_laundry",
+    "organize_drawers"
    ],
    "size_m": [
     1.52,
@@ -953,7 +1008,8 @@
    "actions": [
     "change_clothes",
     "open",
-    "store_item"
+    "store_item",
+    "organize_drawers"
    ],
    "size_m": [
     0.87,
@@ -977,7 +1033,8 @@
    "actions": [
     "change_clothes",
     "customize_outfit",
-    "open"
+    "open",
+    "organize_wardrobe"
    ],
    "size_m": [
     1,
@@ -1001,7 +1058,9 @@
    "actions": [
     "check_appearance",
     "do_makeup",
-    "open"
+    "open",
+    "style_hair",
+    "apply_skincare"
    ],
    "size_m": [
     1,
@@ -1023,7 +1082,8 @@
    "setting": "Home - Bedroom",
    "kind": "crib",
    "actions": [
-    "rock_baby"
+    "rock_baby",
+    "sing_lullaby"
    ],
    "size_m": [
     1.42,
@@ -1081,7 +1141,9 @@
    "kind": "mirror",
    "actions": [
     "check_appearance",
-    "customize_appearance"
+    "customize_appearance",
+    "practice_smile",
+    "rehearse_lines"
    ],
    "size_m": [
     0.64,
@@ -1130,7 +1192,10 @@
     "brush_teeth",
     "wash_face",
     "open",
-    "shave"
+    "shave",
+    "floss",
+    "apply_skincare",
+    "style_hair"
    ],
    "size_m": [
     0.76,
@@ -1152,7 +1217,8 @@
    "setting": "Home - Bathroom",
    "kind": "towel_rack",
    "actions": [
-    "dry_off"
+    "dry_off",
+    "fold_towels"
    ],
    "size_m": [
     0.5,
@@ -1175,7 +1241,8 @@
    "kind": "bench",
    "actions": [
     "sit",
-    "change_shoes"
+    "change_shoes",
+    "tie_shoes"
    ],
    "size_m": [
     0.8,
@@ -1210,7 +1277,8 @@
    "actions": [
     "sit",
     "hang_coat",
-    "change_shoes"
+    "change_shoes",
+    "tie_shoes"
    ],
    "size_m": [
     1.02,
@@ -1246,7 +1314,10 @@
     "study",
     "work_at_desk",
     "write_letter",
-    "open"
+    "open",
+    "write_journal",
+    "budget_finances",
+    "sketch"
    ],
    "size_m": [
     1.2,
@@ -1273,7 +1344,9 @@
     "use_computer",
     "open",
     "apply_for_job",
-    "browse_internet"
+    "browse_internet",
+    "check_email",
+    "video_chat"
    ],
    "size_m": [
     1.6,
@@ -1396,7 +1469,9 @@
    "actions": [
     "browse",
     "pick_item",
-    "restock_shelves"
+    "restock_shelves",
+    "compare_prices",
+    "buy_item"
    ],
    "size_m": [
     1.25,
@@ -1420,7 +1495,9 @@
    "actions": [
     "browse",
     "pick_item",
-    "restock_shelves"
+    "restock_shelves",
+    "compare_prices",
+    "buy_item"
    ],
    "size_m": [
     1.25,
@@ -1445,7 +1522,10 @@
     "checkout",
     "work_cashier",
     "open",
-    "bag_groceries"
+    "bag_groceries",
+    "count_register",
+    "return_item",
+    "ask_for_discount"
    ],
    "size_m": [
     1.8,
@@ -1469,7 +1549,8 @@
    "actions": [
     "browse_clothes",
     "try_on",
-    "restock_shelves"
+    "restock_shelves",
+    "buy_clothes"
    ],
    "size_m": [
     1.49,
@@ -1492,7 +1573,8 @@
    "kind": "clothing_rack",
    "actions": [
     "browse_clothes",
-    "try_on"
+    "try_on",
+    "buy_clothes"
    ],
    "size_m": [
     0.935,
@@ -1563,7 +1645,8 @@
    "actions": [
     "browse",
     "pick_item",
-    "restock_shelves"
+    "restock_shelves",
+    "buy_tools"
    ],
    "size_m": [
     1.2,
@@ -1620,7 +1703,8 @@
    "kind": "rack",
    "actions": [
     "read_magazine",
-    "buy_newspaper"
+    "buy_newspaper",
+    "browse_headlines"
    ],
    "size_m": [
     0.9,
@@ -1645,7 +1729,8 @@
     "grab_drink",
     "open",
     "restock_shelves",
-    "eat_snack"
+    "eat_snack",
+    "buy_drink"
    ],
    "size_m": [
     0.6,
@@ -1700,7 +1785,8 @@
    "actions": [
     "browse",
     "pick_item",
-    "restock_shelves"
+    "restock_shelves",
+    "buy_item"
    ],
    "size_m": [
     1.2,
@@ -1724,7 +1810,10 @@
    "actions": [
     "checkout",
     "work_cashier",
-    "open"
+    "open",
+    "count_register",
+    "return_item",
+    "ask_for_discount"
    ],
    "size_m": [
     2.04,
@@ -1869,7 +1958,9 @@
    "actions": [
     "sit",
     "eat",
-    "drink_coffee"
+    "drink_coffee",
+    "go_on_date",
+    "people_watch"
    ],
    "size_m": [
     1.24,
@@ -1904,7 +1995,9 @@
    "actions": [
     "browse_books",
     "borrow_book",
-    "reshelve_books"
+    "reshelve_books",
+    "pick_novel",
+    "find_rare_book"
    ],
    "size_m": [
     2.996,
@@ -1954,7 +2047,9 @@
     "read",
     "do_homework",
     "group_study",
-    "write_essay"
+    "write_essay",
+    "cram_for_exam",
+    "research_paper"
    ],
    "size_m": [
     2.44,
@@ -1978,7 +2073,8 @@
    "actions": [
     "study",
     "read",
-    "do_homework"
+    "do_homework",
+    "cram_for_exam"
    ],
    "size_m": [
     0.91,
@@ -2002,7 +2098,9 @@
    "actions": [
     "sit",
     "attend_lecture",
-    "take_notes"
+    "take_notes",
+    "ask_question",
+    "doze_off"
    ],
    "size_m": [
     0.5,
@@ -2033,7 +2131,9 @@
     "lecture",
     "give_speech",
     "open",
-    "practice_speech"
+    "practice_speech",
+    "host_debate",
+    "read_poem"
    ],
    "size_m": [
     0.79,
@@ -2057,7 +2157,10 @@
    "actions": [
     "sit",
     "attend_class",
-    "take_notes"
+    "take_notes",
+    "pass_note",
+    "ask_question",
+    "take_exam"
    ],
    "size_m": [
     0.61,
@@ -2087,7 +2190,9 @@
    "actions": [
     "work_at_desk",
     "grade_papers",
-    "open"
+    "open",
+    "hold_office_hours",
+    "plan_lesson"
    ],
    "size_m": [
     1.5,
@@ -2113,7 +2218,9 @@
     "return_book",
     "work_librarian",
     "open",
-    "ask_librarian"
+    "ask_librarian",
+    "pay_late_fee",
+    "reserve_book"
    ],
    "size_m": [
     2.44,
@@ -2159,7 +2266,8 @@
    "kind": "catalog",
    "actions": [
     "search_catalog",
-    "open"
+    "open",
+    "find_rare_book"
    ],
    "size_m": [
     0.904,
@@ -2280,7 +2388,8 @@
    "actions": [
     "group_study",
     "study",
-    "brainstorm"
+    "brainstorm",
+    "group_project"
    ],
    "size_m": [
     1.506,
@@ -2333,7 +2442,10 @@
     "run_experiment",
     "study",
     "wash_hands",
-    "open"
+    "open",
+    "mix_chemicals",
+    "examine_samples",
+    "clean_glassware"
    ],
    "size_m": [
     1.8,
@@ -2385,7 +2497,9 @@
    "actions": [
     "draw",
     "draft_plans",
-    "study"
+    "study",
+    "sketch",
+    "paint"
    ],
    "size_m": [
     1.46,
@@ -2410,7 +2524,9 @@
     "write_on_board",
     "erase_board",
     "lecture",
-    "brainstorm"
+    "brainstorm",
+    "solve_equation",
+    "draw_doodle"
    ],
    "size_m": [
     1.96,
@@ -2473,7 +2589,13 @@
     "work_at_desk",
     "browse_internet",
     "apply_for_job",
-    "take_online_course"
+    "take_online_course",
+    "code_program",
+    "edit_video",
+    "stream_online",
+    "online_shopping",
+    "check_email",
+    "video_chat"
    ],
    "size_m": [
     1.6,
@@ -2497,7 +2619,9 @@
    "actions": [
     "open",
     "store_item",
-    "take_item"
+    "take_item",
+    "decorate_locker",
+    "grab_textbooks"
    ],
    "size_m": [
     0.915,
@@ -2520,7 +2644,8 @@
    "kind": "bookshelf",
    "actions": [
     "read_picture_book",
-    "browse_books"
+    "browse_books",
+    "read_to_kids"
    ],
    "size_m": [
     1,
@@ -2543,7 +2668,10 @@
    "kind": "conference_table",
    "actions": [
     "hold_meeting",
-    "work_at_desk"
+    "work_at_desk",
+    "give_presentation",
+    "negotiate_deal",
+    "network"
    ],
    "size_m": [
     3.6,
@@ -2568,7 +2696,9 @@
     "check_in",
     "work_reception",
     "open",
-    "ask_for_directions"
+    "ask_for_directions",
+    "make_appointment",
+    "pick_up_package"
    ],
    "size_m": [
     2,
@@ -2614,7 +2744,9 @@
    "kind": "bench",
    "actions": [
     "sit",
-    "wait"
+    "wait",
+    "people_watch",
+    "check_phone"
    ],
    "size_m": [
     1.83,

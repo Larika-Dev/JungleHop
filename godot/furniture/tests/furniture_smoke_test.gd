@@ -20,6 +20,39 @@ class Dummy extends CharacterBody3D:
 		seated_at = null
 
 
+class FakeAppearance extends Node3D:
+	var _height := 1.80
+	var pose := "stand"
+	func set_pose(p: String) -> void:
+		pose = p
+
+
+## Shaped like player.gd: sit_at / stand_up / stood_up, appearance, _head, _yaw, _pitch.
+class PlayerLike extends CharacterBody3D:
+	signal stood_up
+	var appearance := FakeAppearance.new()
+	var _head := Node3D.new()
+	var _yaw := 0.0
+	var _pitch := 0.0
+	var sitting := false
+	func _init() -> void:
+		add_child(appearance)
+		_head.position = Vector3(0, 1.65, 0)
+		add_child(_head)
+	func sit_at(xf: Transform3D) -> void:
+		sitting = true
+		global_position = xf.origin
+		_yaw = xf.basis.get_euler().y
+		rotation.y = _yaw  # player.gd applies _yaw every frame
+		appearance.set_pose("sit")
+	func stand_up() -> void:
+		if not sitting:
+			return
+		sitting = false
+		appearance.set_pose("stand")
+		stood_up.emit()
+
+
 func check(cond: bool, msg: String) -> void:
 	if not cond:
 		failures.append(msg)
@@ -80,7 +113,34 @@ func _ready() -> void:
 		piece.queue_free()
 
 	check(started.size() > 250 and finished.size() > 250, "signals: started %d finished %d" % [started.size(), finished.size()])
-	check(action_ids.size() >= 100, "only %d distinct furniture actions" % action_ids.size())
+	check(action_ids.size() >= 150, "only %d distinct furniture actions" % action_ids.size())
+
+	# lying down on a bed (player-shaped actor)
+	var pl := PlayerLike.new()
+	stage.add_child(pl)
+	for bed_id in [28, 29]:
+		var bed: FurniturePiece = mgr.spawn_piece(bed_id, Transform3D(Basis(Vector3.UP, 0.7), Vector3(-20, 0, bed_id * 4.0)), stage)
+		var bfi := bed.interactable
+		pl.global_position = bed.approach_transform().origin
+		bfi.perform("sleep", pl)
+		check(FurniturePose.is_lying(pl), "bed %d: sleep did not lie the player down" % bed_id)
+		check(not pl.appearance.transform.basis.is_equal_approx(Basis.IDENTITY), "bed %d: body not laid flat" % bed_id)
+		var head_w := pl._head.global_position
+		var bt: Transform3D = bed.bed_transforms()[0]
+		var to_head := bt.origin - bt.basis.z * 0.6  # towards the pillow
+		check(head_w.distance_to(to_head) < 0.5, "bed %d: head %s not near pillow %s" % [bed_id, head_w, to_head])
+		check(absf(head_w.y - bt.origin.y) < 0.5, "bed %d: head height %.2f vs mattress %.2f" % [bed_id, head_w.y, bt.origin.y])
+		check(bfi.get_actions(pl)[0]["id"] == "stand_up", "bed %d: stand_up not first while lying" % bed_id)
+		bfi.perform("stand_up", pl)
+		check(not FurniturePose.is_lying(pl), "bed %d: still lying after stand_up" % bed_id)
+		check(pl.appearance.transform.is_equal_approx(Transform3D.IDENTITY), "bed %d: body not restored" % bed_id)
+		check(pl._head.position.is_equal_approx(Vector3(0, 1.65, 0)), "bed %d: head not restored" % bed_id)
+		check(not bfi.occupants.has(pl), "bed %d: still occupied" % bed_id)
+		# getting up by moving (player.gd calls stand_up itself) also restores the body
+		bfi.perform("lie_down", pl)
+		pl.stand_up()
+		check(not FurniturePose.is_lying(pl) and not bfi.occupants.has(pl), "bed %d: moving off the bed did not get up" % bed_id)
+		bed.queue_free()
 
 	# streaming: stand on the first placement and let the streamer build
 	var world := Node3D.new()

@@ -18,7 +18,7 @@ describe('furniture catalogue', () => {
       expect(m.actions.length).toBeGreaterThan(0);
       for (const a of m.actions) { expect(actions[a], `${m.id} ${a}`).toBeTruthy(); used.add(a); }
     }
-    expect(used.size).toBeGreaterThanOrEqual(100);
+    expect(used.size).toBeGreaterThanOrEqual(150);
   });
   it('seating has seat points and beds have sleep points', () => {
     for (const m of catalog) {
