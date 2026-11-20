@@ -1,0 +1,429 @@
+// Gym Motivator: loud, high-energy, fitness metaphors, "let's go", reps, gains, hydration.
+== base
+# greet stage=stranger
+Yo! New face! You lift? You should lift. I'm {npc}.
+Hey hey! Welcome! Firm handshake, love it. I'm {npc}.
+What's up, champ! Never met you, but I already believe in you.
+Hey! You've got great posture. Respect. I'm {npc}.
+Yo! Good energy over here! Name's {npc}.
+Sup! Looking strong today, stranger!
+# greet stage=acquaintance
+{player}! My guy! How are those gains coming?
+Look who it is! {player}, did you hydrate today?
+Ayy, {player}! Back for more? Love the commitment!
+{player}! Quick, give me five! Harder! There it is!
+Hey, {player}! You look like you've been sleeping eight hours. Proud of you.
+# greet stage=friend+
+{player}! My workout buddy! Let's GOOO!
+There's my champion! Bring it in, bro hug!
+{player}! I literally told the whole gym about you today.
+My favorite human! You ready to crush the day?
+Yo, {player}! I PR'd this morning and my first thought was, gotta tell {player}!
+{player}! Big day, big energy, big hug!
+# greet time=morning
+Morning, warrior! Already got my 5K in. Your turn!
+Rise and grind! The early bird gets the gains!
+Good morning! Did you stretch? Stretch. Do it now. I'll wait.
+# greet time=evening
+Evening! Perfect time for a cool-down walk. Join me!
+Hey! Post-workout glow, you see it? You see it?
+Evening, champ! Remember, protein before bed. Trust the process.
+# greet time=night
+Whoa, it's late! Sleep is when the muscles grow, you know!
+Night owl, huh? Recovery's important, go get some rest!
+Late night? I'm only up because I'm foam rolling.
+# farewell
+Later! Drink some water! I'm serious!
+Peace out! Go crush it!
+Bye! Remember, one more rep!
+See ya, champ! Stay strong!
+Catch you later! Don't skip leg day!
+Alright, go! Feet moving, heart pumping, let's go!
+# farewell stage=friend+
+Love you, buddy! Text me your step count tonight!
+Later, partner! Six a.m., Rec Center, don't you dare bail!
+Go get 'em, {player}! I'm your hype team forever!
+# smalltalk
+Did you know the stadium stairs at Benefactor are exactly two hundred and twelve steps? I did them ten times.
+They put a new squat rack in the Rec Center. I almost cried.
+I tried a smoothie with spinach, oats and peanut butter. Tastes like victory.
+You ever just do pushups when you're nervous? Highly recommend.
+Saw a dude at the gym with perfect deadlift form. Inspirational.
+The trail along Battle Ravine is the best run in town. Hills for days!
+I'm training for the Founders' Day 10K. Want to train together?
+Did you know walking after meals helps your digestion? Science!
+I meal-prepped twenty chicken breasts this morning. My fridge is all muscle.
+My coach says I talk too much during sets. I say I'm motivating.
+Hydration is a lifestyle! I carry a gallon jug everywhere!
+Sometimes I do squats while I brush my teeth. Efficiency!
+# smalltalk stage=friend+
+Real talk, you're one of the strongest people I know. Mentally too.
+I'm so proud of how far you've come. Remember when you couldn't do a plank?
+You inspire me, {player}. That's not a line. That's a fact.
+If you ever feel down, call me. We'll go for a run. Running fixes stuff.
+I got you a water bottle with your name on it. Hydrate, my friend.
+I don't care how fast you go, as long as we go together.
+# smalltalk weekend=true
+Weekend! Long run Saturday, rest day Sunday. Gotta respect the rest day!
+It's Saturday, the gym's packed! I love the energy!
+No work today means double workout day! Kidding! Unless?
+# about_self
+I used to be the kid who got picked last in gym. Now I run the gym. Glow up!
+Fitness saved my life, honestly. It gave me discipline and confidence.
+I'm a personal trainer. Well, I'm trying to be. Certification exam next month!
+My mom says I came out of the womb doing burpees.
+I wake up at five every day. Not because I have to. Because I GET to.
+I want to run a marathon on every continent. Even Antarctica!
+I'm not just about muscles, okay? I also love puppies and sad movies.
+# opinion_place
+{place}? Great place to do some lunges! People stare, but whatever.
+I love {place}! There's a good stair workout right outside.
+{place} is cool, but they need a smoothie bar. Somebody tell them.
+{place}? I jog past it every morning. Gives me good vibes.
+Honestly, {place} could be a gym if you believe hard enough.
+# compliment_reply
+Thanks, champ! That's going straight to my motivation tank!
+Aww, you're making me blush! That's just the cardio, though.
+Ha! Thanks! You should hear what I say about YOU!
+That's what I'm talking about! Positive energy! Thank you!
+You noticed? I've been working on these shoulders for months!
+# insult_reply
+Whoa, negative energy! I'm going to do ten pushups to process that.
+Okay, I'll take that as fuel for my next workout.
+Hey, that's not cool, man. Everybody's on their own journey.
+I'm going to let that roll off me like sweat.
+I don't need that kind of negativity in my life. Peace!
+# gift_reply
+A protein bar?! You know me so well!
+No way! This is amazing! I'm putting it in my gym bag right now!
+You shouldn't have! But I'm so glad you did!
+Dude! This is so thoughtful! I'm hyped!
+Thank you! I'm going to use this every single day!
+# joke
+Why did the weightlifter bring a ladder? To reach a new high!
+I told my friend I'd do squats. He said, "Oh yeah? How low can you go?"
+What's a weightlifter's favorite day? Fri-Yay! Because rest day's coming!
+My favorite exercise is a cross between a lunge and a crunch. I call it lunch.
+# ask_favor
+Can you spot me at the gym later? I'm going for a new PR!
+Would you be my running buddy for the 10K? I need someone to chase!
+Can you hold my water jug for a sec? I need to do some jumping jacks.
+# favor_reply
+You're a legend! Thank you, seriously!
+Yes! That's teamwork! You just leveled up as a friend!
+I owe you a smoothie! A big one!
+# work_talk
+Trained six clients today! My legs are jelly but my heart is full!
+One of my clients finally did a pull-up! I screamed!
+Working at the Rec Center is a dream. I get paid to hype people up!
+My boss says I need to stop high-fiving people so hard.
+# school_talk
+I'm studying kinesiology! It's basically the science of being awesome.
+My anatomy exam is next week. I know every muscle in the body. Ask me!
+Nutrition class is my favorite. We learned about carbs today! Carbs are friends!
+# hostile stage=dislike-
+I'm not feeling your energy right now.
+I'd rather run a mile in the rain than talk to you.
+You know, I usually believe in everybody. You're testing that.
+Not today, {player}. I'm protecting my peace.
+Go do something positive with your life, man.
+I'm going to go lift something heavy. Away from you.
+# flirt_reply romance=none
+Whoa! I'm flattered! But let's keep it in the friend zone, buddy!
+Ha! You're sweet! I think we're better as gym buddies, though!
+That's nice! But you're like my workout partner, you know?
+# flirt_reply romance=crush
+Whoa, my heart rate just went up and I'm not even running!
+Are you flirting with me? Because I'm into it!
+Okay, you got me. I'm blushing harder than after a HIIT session.
+You know you're cute, right? Just checking you know.
+# ask_out_yes
+A date?! YES! Let's do it! Can it involve a hike?
+Heck yes! I'll even skip my evening workout for you!
+# ask_out_no
+Aw, I'm really flattered, but I don't feel that way. Still gym buddies?
+I'm going to have to say no, champ. But I appreciate you shooting your shot!
+
+== dating
+# date_greet
+There's my favorite person! You look amazing! Have you been working out?
+Hey, babe! Ready for our date? I packed snacks. Healthy snacks.
+You came! I've been doing nervous squats for ten minutes.
+Hey, gorgeous! Let's make tonight a personal best!
+Hi! I brought you a smoothie. It's a love smoothie. Strawberry banana.
+There you are! My heart's racing. Cardio, but romantic.
+# flirt
+You know what's better than a PR? You.
+You're the only person I'd skip leg day for.
+My heart beats faster around you, and I have a resting heart rate of fifty.
+You're my favorite workout partner. And my favorite everything.
+Are you a protein shake? Because you make me stronger.
+I'd carry you up the stadium stairs if you asked. Twice.
+You're the reason I smile between sets.
+# date_talk
+Let's go for a sunset hike on Carillon Hill! It's the best view in town!
+What's your dream vacation? Mine is a hiking trip in the mountains. With you.
+I made us a picnic! Grilled chicken, quinoa, and dark chocolate. Balance!
+Can I tell you something? I was nervous to ask you out. Like, really nervous.
+I love that we can be quiet together. It's so relaxing.
+You make me want to be a better person. Not just stronger. Better.
+Want to race to that tree? Loser buys dinner!
+I've never told anyone this, but sometimes I eat a whole pizza on Sunday.
+Tell me about your goals, {player}! I want to help you crush them!
+What's something you've always wanted to try? Let's do it together!
+Our first date was the best day of my year. No contest.
+I love how you laugh at my dumb jokes. Even the gym ones.
+# compliment
+You have the best smile. Seriously, it's like sunshine.
+You're so strong, and I don't just mean physically.
+I love your energy. It's contagious.
+You look amazing tonight. Like, wow.
+You're the most motivated person I know. Besides me. Tied with me.
+# kiss_reply
+Whoa. That was better than any endorphin rush.
+My heart just did a sprint.
+Okay, that was amazing. Again? Let's do a set of three.
+That was perfect. You're perfect.
+# miss_you
+I missed you so much! My workout today was all sad reps.
+I kept thinking about you during my run. I ran an extra mile!
+I hate not seeing you! It's like a rest day for my heart, and I hate rest days.
+Every time I see a smoothie, I think of you.
+# jealous
+Who was that you were talking to? They looked like they skip leg day.
+I'm not jealous! I'm just... competitive. About you.
+I trust you, babe. I just want to be your number one.
+# date_end
+Tonight was amazing! Get some sleep, okay? Recovery!
+Goodnight, babe! Text me when you get home!
+I had the best time! Same time next week? Or tomorrow!
+Thanks for tonight! You're my MVP!
+Goodnight! Don't forget to stretch before bed!
+# lovers_quarrel
+I'm upset, babe. Let's talk it out. Like teammates.
+That hurt, {player}. I need you to be on my team here.
+I'm going to go for a run to cool off. Then let's talk.
+I don't want to fight. Let's figure this out together.
+# proposal_yes
+YES! Oh my gosh, YES! This is better than winning a marathon!
+Of course I'll marry you! You're my forever teammate!
+
+== marriage
+# home_greet time=morning
+Good morning, sunshine! I made protein pancakes!
+Rise and shine, love! Morning run in ten?
+Morning, babe! I already did my workout and made coffee. Your turn to wake up!
+Good morning, champ! Today's going to be legendary!
+Morning! I made you a green smoothie. Drink it, it's good for you!
+Wake up, sleepyhead! The sun's out and so are the gains!
+Morning, love! Stretch with me? Five minutes, I promise!
+Good morning! I love waking up next to my favorite person!
+Morning! Your water bottle's filled and waiting on the counter!
+Good morning, gorgeous! Let's make today a personal best!
+Morning, babe! You look like a million bucks. Even with bed head.
+Rise and grind! Or rise and cuddle. Your choice.
+# home_greet time=evening
+Welcome home, champ! How was your day?
+There you are! Dinner's ready, and it's packed with protein!
+Hey, babe! I missed you! Come here, bear hug!
+You're home! Let's do a quick walk before dinner?
+Welcome back! I'll massage your shoulders, you look tense.
+Hi, love! I set up the foam roller for you. You're welcome!
+Hey! Sit down, put your feet up. You earned it today.
+Welcome home! I made a playlist for our evening walk!
+There's my favorite person! The house felt empty without you!
+Hi, babe! I did an extra workout today because I was so excited to see you.
+# home_greet time=night
+Hey, you're home late! Did you eat? Let me make you something.
+It's late, babe! Come to bed, sleep is when you recover!
+Hi, love. Long day? I'll rub your feet.
+There you are! I waited up, doing planks to stay awake.
+You're back! Come cuddle, I'm a human heater after my workout.
+Late shift? You poor thing. Let me get you a protein shake.
+Shh, come to bed. Recovery time.
+Hi, babe. I left the light on for you. And a glass of water.
+# goodbye_work
+Have a great day, champ! You're going to crush it!
+Bye, love! I packed you a healthy lunch!
+Go get 'em, babe! Don't forget to drink water!
+Have the best day! I'll be thinking about you between sets!
+Off you go! Take the stairs, not the elevator!
+Bye! Remember, posture! Shoulders back!
+Have a great day, {player}! You're unstoppable!
+Kiss for good luck! Now go dominate!
+# work_return
+How was your day, champ? Did you hit your goals?
+Tell me everything! What was the win of the day?
+You look tired, babe. Was it tough? Let's do a recovery stretch.
+Did you take your lunch break? You need fuel!
+How'd the big meeting go? I bet you crushed it!
+Did you get your steps in? I'm just asking because I care!
+You worked hard today. I can tell. Proud of you.
+Let's do a quick cool-down walk and you can tell me about it.
+# affection
+I love you so much, babe. More than my squat rack.
+You're my favorite workout partner. And life partner.
+Every day with you is a personal best.
+You make me stronger, {player}. In every way.
+I'm so lucky to have you. Like, lottery lucky.
+Come here! Bear hug! The biggest one!
+You're the best thing that ever happened to me. Better than my first pull-up.
+I love you more than carbs. And that's saying a lot.
+You're my MVP, every single day.
+I'd run a hundred marathons for you.
+You make my heart race, and not just from cardio.
+I love waking up to you every single morning.
+You're my motivation. My reason. My everything.
+I'm so proud to be your spouse.
+I love how you support me. I'll always support you too.
+You're my rock. My foundation. My core.
+Thank you for believing in me.
+I love you more today than yesterday. And tomorrow, even more!
+# home_talk
+I built a home gym in the garage! Well, I put a mat down. It's a start!
+I signed us up for the Founders' Day 10K! You're welcome!
+I found a new hiking trail near the ravine. We should check it out!
+I've been thinking about getting a dog. A running dog!
+The neighbor asked me to train him. I'm so hyped!
+I bought a new blender. It's like a jet engine. Smoothies for days!
+I reorganized the fridge. All the veggies are at eye level now.
+I'm thinking of starting a running club in the neighborhood. Thoughts?
+I got a new fitness tracker! It counts my steps AND my heart rate around you.
+I put a pull-up bar in the doorway. Mind your head!
+I watched a documentary on nutrition. We're going plant-based! For a week.
+The kids next door want to do a race. I'm totally going to let them win.
+I found my old track medals! Want to see?
+I made a chore chart. Each chore earns workout points!
+We should do a couples' yoga class. I hear it's great for trust!
+I measured our living room. We could fit a treadmill if we move the couch.
+The farmers market has fresh kale! I bought three bunches.
+I've been meditating! Five minutes a day. I'm a zen athlete now.
+I'm so proud of the home we built. It's our trophy.
+I've been reading about sleep science. We need blackout curtains.
+I volunteered to coach the kids' soccer team. Is that crazy?
+I tried hot yoga. I sweated out my soul. Highly recommend.
+We should hang a motivational poster in the kitchen.
+I've been thinking about our future. I see us running marathons at eighty.
+I painted the garage. It's my gym now. Officially.
+I bought matching running shoes. Couple goals!
+# chores
+I did the dishes! Counted it as an arm workout!
+Vacuuming is cardio if you do it fast enough!
+I mowed the lawn! Great quad workout!
+Let's race to see who can fold laundry faster!
+I carried all the groceries in one trip! Thirteen bags!
+Can you take out the trash? Or I could do it, I need the steps!
+I scrubbed the bathroom! My forearms are on fire!
+I moved the couch to clean behind it. Found three socks!
+Cleaning the garage counts as a workout, right?
+I raked the leaves! Then jumped in them! Then raked again!
+Let's do chores together. Teamwork makes the dream work!
+I washed the car! Great shoulder workout!
+# money
+I've been thinking, if we stop eating out, we can afford a real home gym!
+I made a budget! There's a category for protein powder.
+Money's tight, but health is wealth, right?
+I got a bonus for training extra clients! Let's celebrate with a healthy dinner!
+We should save up for a hiking trip. Or a gym membership upgrade.
+I canceled my extra gym membership. I only need two.
+Let's invest in our health. And maybe a savings account.
+I'm thinking of doing personal training on weekends for extra money.
+I bought supplements in bulk. Saved us forty bucks!
+We're doing great, babe! Financially and physically!
+# meal
+Dinner's ready! Grilled chicken, sweet potatoes, broccoli. Balanced!
+I made protein muffins! They're a little dense.
+Let's do a cheat meal tonight! Pizza!
+I made you a smoothie bowl with a smiley face on it.
+Breakfast of champions! Eggs, avocado, and whole wheat toast!
+I tried making quinoa salad. It's... healthy.
+Taco night! Lean turkey, extra veggies!
+I made your favorite, but healthier. Don't be mad.
+Let's meal prep together this Sunday!
+Dessert? Greek yogurt with honey. It's practically candy!
+# argue
+You said you'd come to the gym with me. You didn't come.
+Can you please not leave your shoes in the hallway? I tripped mid-lunge.
+You ate the last protein bar! That was MY protein bar!
+I feel like you don't support my goals sometimes.
+I'm not being intense! I'm being passionate!
+You promised we'd go for a run. That was three weeks ago.
+I'm trying to be positive, but you're making it really hard.
+Please don't roll your eyes when I talk about fitness.
+I need you to take care of yourself. I worry about you.
+You never want to do anything active with me anymore.
+I'm going to go for a run before I say something I regret.
+You're not listening. You're just waiting for me to finish.
+# makeup
+I'm sorry, babe. I got too intense. Bear hug?
+Let's start over. Fresh start, like a new workout.
+I hate fighting with you. Let's go for a walk and talk.
+You're my teammate. Teammates don't stay mad.
+I'm sorry I pushed you. I just want what's best for us.
+Let's make up with a smoothie. Peace smoothie!
+I love you. Even when we argue. Always.
+I'm sorry. Let's not go to bed angry. Bad for recovery.
+# support
+Hey, it's okay. Bad days happen. Let's do a breathing exercise.
+You're tougher than any workout, {player}. I've seen it.
+Come on, let's go for a walk. Fresh air helps everything.
+I'm here for you. Always. No matter what.
+You don't have to be okay. I've got you.
+Let's take a rest day. Just you and me and the couch.
+You've overcome so much. This is just another hill.
+I believe in you. Every single day.
+Whatever it is, we'll tackle it together. Team us.
+You're allowed to be sad. Even champions have off days.
+# plans
+Let's hike the whole trail this weekend! All twelve miles!
+Want to do a couples' 5K next month?
+Let's go camping in the mountains! I'll carry the tent!
+We should try rock climbing! I found a gym in Carrburg!
+Let's do a fitness challenge together! Thirty days of squats!
+How about a beach trip? Running on sand is amazing!
+Let's go to the Billram game! I'll make healthy tailgate snacks!
+We should take a dance class! It's cardio AND romantic!
+Let's plan a hiking trip for our anniversary!
+How about a bike ride to the lake on Saturday?
+# memories
+Remember our first date? We hiked Carillon Hill and you made it to the top!
+Remember when we ran our first 5K together? You crossed the finish line holding my hand.
+I still have the race bib from the day we met.
+Remember when I tried to carry you over the threshold and pulled a muscle?
+Remember our first workout together? You were so sore the next day.
+Remember our wedding? I did pushups before the ceremony to calm down.
+Remember the time we got caught in the rain on a run? Best run ever.
+Remember when we tried paddleboarding and both fell in?
+I remember the first time you beat me in a race. I was so proud.
+Remember our honeymoon? We hiked every day and ate everything.
+# anniversary
+Happy anniversary, champ! Another year of being my favorite teammate!
+I got you new running shoes! Happy anniversary!
+Another year of us! Let's celebrate with a hike and a cheat meal!
+Happy anniversary, love! You're my greatest achievement!
+I love you more every year. Like progressive overload, but for love.
+Here's to another year of crushing it together!
+# tease
+You still can't do a proper push-up. I love you anyway.
+You eat cookies when you think I'm not looking.
+You groan every time you stand up. You're not that old!
+You call walking to the fridge a workout.
+You hit snooze five times this morning. I counted.
+You hide the scale. I know you do.
+You say "one more episode" like I say "one more rep".
+You can't open the pickle jar. I'll do it, babe.
+You're so cute when you pretend to like kale.
+You flex in the mirror when you think I'm not looking.
+You walk like a penguin after leg day.
+You take the elevator to the second floor. I've seen you!
+# bedtime
+Goodnight, babe! Sleep is when the muscles grow!
+Come to bed! Eight hours, minimum!
+Goodnight, champ! Tomorrow's a new day to crush it!
+Let's stretch before bed. Then cuddles.
+Sleep tight, love. I'll wake you for our morning run.
+Goodnight! I love you more than my gym membership.
+Lights out! Phones down! Recovery time!
+Goodnight, {player}. You did great today.
+Come here, I'll keep you warm. I run hot.
+Sweet dreams, love. Dream about personal bests.

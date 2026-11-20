@@ -1,0 +1,40 @@
+{
+ "personalities": {
+  "sunny_optimist": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "dry_cynic": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 201
+  },
+  "shy_bookworm": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "gym_motivator": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "anxious_overthinker": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "old_soul_storyteller": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "ambitious_hustler": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  }
+ },
+ "total_lines": 2584
+}

@@ -1,0 +1,429 @@
+// Shy Bookworm: soft-spoken, hesitant, book references, opens up slowly.
+== base
+# greet stage=stranger
+Oh! Um, hi. Sorry, I was reading.
+H-hello. I'm {npc}. I don't usually... talk to new people. Hi.
+Oh, hi. Were you looking for the poetry section? No? Okay.
+Hello. Sorry, I'm a little shy. It's nice to meet you, though.
+Um. Hi. You startled me. In a nice way. I think.
+Hi there. I'm {npc}. I'm usually at the library, if that helps.
+# greet stage=acquaintance
+Oh, {player}. Hi. I was hoping you'd... never mind. Hi.
+Hello again, {player}. I just finished a book you might like.
+Hi, {player}. You remembered my name? That's nice.
+Oh, it's you. Hi. I'm less nervous this time. A little.
+{player}! Sorry, that was loud. Hi.
+# greet stage=friend+
+{player}! I saved you a chair at the library. I hope that's okay.
+Hi. I'm really glad it's you. I can just be myself around you.
+Oh, good, it's you. I've been dying to tell you about this book.
+Hi, {player}. You're one of the only people I don't rehearse conversations for.
+Hello, friend. I made a bookmark for you. It's a little crooked.
+Hi! I've been looking forward to this all day. Really.
+# greet time=morning
+Good morning. I've been up since six with a book. It's a good one.
+Morning. The library smells best when it's just opened.
+Oh, good morning. Is it morning already? I lost track of time reading.
+# greet time=evening
+Good evening. The reading lamps in Wilberforce look so cozy at this hour.
+Evening. This is the time of day when stories feel most real.
+Hi. The sky looks like a watercolor tonight, doesn't it?
+# greet time=night
+Oh, hi. I couldn't sleep, so I came out to look at the stars.
+Hello. Night is when I do my best reading. And thinking.
+It's late, isn't it? I keep saying one more chapter.
+# farewell
+Okay. Bye. It was nice talking to you.
+Goodbye. I'll, um, see you around?
+Bye. Thank you for talking to me.
+I should go. My book is waiting. That sounds strange. It's true, though.
+See you later. Take care of yourself.
+Bye-bye. Don't forget to return your library books.
+# farewell stage=friend+
+Bye, {player}. You made today a good chapter.
+I'll text you a quote I like. Bye!
+Goodbye, friend. Let's do this again soon. If you want.
+# smalltalk
+I read that octopuses have three hearts. Isn't that lovely?
+The rare book room got a new first edition. I visited it twice.
+Have you ever read a book that changed how you see everything? I have a list.
+The rain sounds so nice on the library skylight.
+I tried to read in the café, but it's very loud. I went back to the stacks.
+I found someone's notes in a used book. They were in love. In 1972.
+There's a reading group on Thursdays. I go. I don't talk. But I go.
+I like Tarry Page Books. The cat in the window ignores everyone. Relatable.
+Have you noticed the old oaks on the quad lean toward each other? Like they're whispering.
+I started writing a little story. It's about a girl who lives in a lighthouse. It's not very good.
+I think tea tastes better in a heavy mug. Is that silly?
+The library is closing early on Sunday. I'm trying not to panic.
+# smalltalk stage=friend+
+I don't say this much, but I'm glad I met you.
+You're the first person I've let read my writing. Please be gentle.
+Sometimes I'm lonely, but less so since you started visiting.
+I think if you were a book, you'd be a warm one. With a happy ending.
+Can I tell you something? I practiced talking to you in the mirror at first.
+I made you a list of my favorite books. It's four pages. I'm sorry.
+# smalltalk weekend=true
+It's the weekend. I'm going to read until my eyes hurt. Perfect.
+Saturdays are for bookstores and blankets.
+The weekend book sale is today! I've already planned my route.
+# about_self
+I've always been shy. Books were the friends that didn't mind.
+I want to be a librarian. Or a writer. Or a librarian who writes.
+I have a little reading nook in my apartment. It's my favorite place in the world.
+When I was a kid I read under my blanket with a flashlight. I still do sometimes.
+I'm not antisocial. I'm just... very introverted. And a bit scared.
+I've read every book in my hometown library. Twice.
+My dream is to visit all the old libraries in Europe. One day.
+# opinion_place
+{place} is nice. A little loud. Is there a quiet corner?
+I like {place}. It would be a good setting for a mystery novel.
+{place} makes me feel calm. That's rare for me in public.
+I've never been to {place} before. Is it... always this busy?
+{place} reminds me of a story I read once. In a good way.
+# compliment_reply
+Oh. Um. Thank you. Nobody's ever said that to me.
+That's very kind. I'm going to think about that all day.
+Really? Thank you. I'm blushing, aren't I?
+Thank you. I'll write that down so I remember it.
+Oh! That's... thank you. That means a lot.
+# insult_reply
+Oh. Okay. I'll just... go back to my book.
+That was mean. I didn't do anything to you.
+I've read about people like you. They don't usually have happy endings.
+Please don't talk to me like that.
+I think I'm going to leave now.
+# gift_reply
+For me? Oh, thank you. I'll treasure it.
+You got me a book? You know me so well.
+I don't know what to say. Thank you, {player}. Really.
+This is beautiful. I'll keep it on my nightstand.
+Oh! It's perfect. I'm a little teary. Sorry.
+# joke
+Why did the librarian get kicked off the plane? She was overbooked. Sorry.
+I'd tell you a joke about paper, but it's tearable.
+I'm reading a book about anti-gravity. I can't put it down. Was that okay?
+Why don't books ever get cold? They have covers.
+# ask_favor
+Could you, um, ask the librarian about my hold? I get nervous talking to her.
+Would you come with me to the reading group? I'd feel braver.
+Could you read my story and tell me if it's terrible? Honestly?
+# favor_reply
+Thank you. You have no idea how much that helped.
+You're really kind, {player}. I won't forget it.
+Thank you. I'll put you in the acknowledgments of my first book.
+# work_talk
+I shelve books at the library. It's peaceful. Mostly.
+Someone returned a book with a sandwich inside. Who does that?
+I'm good at my job because nobody talks to me. It's ideal.
+I helped a little kid find their first chapter book today. Best day.
+# school_talk
+I'm studying literature. I know, surprise.
+My professor said my essay was insightful. I reread the comment eleven times.
+I don't like presenting in class. My voice shakes.
+# hostile stage=dislike-
+Oh. It's you. I'd rather not talk right now.
+I'm busy. With this book. Please go away.
+I don't feel comfortable around you. Sorry. Not sorry.
+You were cruel to me before. I remember.
+Please just let me read in peace.
+I'll go somewhere else. It's fine.
+# flirt_reply romance=none
+Oh! Um. I don't think... I'm not... I need to sit down.
+That's very flattering. But I think we're just friends.
+I'm going to pretend I didn't hear that, because I'm too embarrassed.
+# flirt_reply romance=crush
+Oh. Oh my. That's... I don't know what to say. I like it.
+You're making me lose my place in my book. And my train of thought.
+I think my heart just skipped a page.
+Did you mean that? Because I... I think I'd like it if you did.
+# ask_out_yes
+A date? With me? Yes. I mean, yes, please. Yes.
+Okay. Yes. Could it be somewhere quiet?
+# ask_out_no
+I'm sorry, I don't think I feel that way. I hope I didn't hurt you.
+That's so kind. But no. I like you as a friend. A very good friend.
+
+== dating
+# date_greet
+Hi. You came. I wasn't sure you would.
+Hello. I wore my nice cardigan. For you.
+Hi, {player}. I'm nervous. Good nervous.
+Oh! You look nice. Very nice. Hi.
+I brought you a book. Is that weird for a date? It's a good book.
+Hi. I've been thinking about this all week.
+# flirt
+You're like my favorite book. I keep wanting to go back to you.
+I like the way you listen. Nobody listens like you.
+I wrote a poem about you. I'm not going to show you. Yet.
+If you were a novel, I'd stay up all night reading.
+You make me braver. Did you know that?
+Your voice sounds like the first page of a good story.
+I like you so much it's a little scary.
+# date_talk
+Can I tell you about the book I'm reading? You can say no.
+I don't usually do things like this. Dates, I mean. I'm glad I did.
+What's your favorite story? Not a book, a story. From your life.
+I like walking with you. It feels like we're in a movie.
+Do you want to see the rare book room? I know the librarian. She likes me.
+I've never told anyone this, but I sleep with a nightlight.
+Do you believe in soulmates? I think I might. Now.
+Let's sit by the fountain and read together. Quietly.
+I made us a picnic. Cucumber sandwiches. Very literary.
+You make me feel like the main character for once.
+I'm sorry I'm so quiet. I'm happy, I promise.
+Could we stay a little longer? I don't want this to end.
+# compliment
+You're so kind to everyone. It's my favorite thing about you.
+You have really nice hands. Sorry. That was weird. They're nice.
+You're the bravest person I know.
+I think you're beautiful. There. I said it.
+You make the world feel softer.
+# kiss_reply
+Oh. That was... I need to write that down.
+That was my first kiss in a long time. It was perfect.
+I think I'm going to faint. In a good way.
+Can we... do that again?
+# miss_you
+I missed you. I read the same page four times thinking about you.
+Today felt like a sad chapter without you.
+I wrote you a letter. A real one. With a stamp.
+I kept checking my phone. Hoping it was you.
+# jealous
+Who was that? Sorry. I don't mean to pry. I just... wondered.
+I'm not jealous. I just felt a little invisible.
+They were very pretty. I'm just me. Is that enough?
+# date_end
+Thank you for tonight. I'll remember it forever.
+Goodnight, {player}. Sweet dreams.
+Can I see you again soon? Please?
+I had the best time. Really.
+I'll be reading tonight, but I'll be thinking about you.
+# lovers_quarrel
+You hurt my feelings. I'm not good at saying that out loud.
+I need a minute. I'm going to go read and calm down.
+I don't like conflict. But I need you to understand.
+Please don't raise your voice. It scares me.
+# proposal_yes
+Yes. Oh, yes. I've read a thousand love stories and none of them were this good.
+I'll marry you. I can't believe it. Yes, {player}. Yes.
+
+== marriage
+# home_greet time=morning
+Good morning. I made tea. Earl Grey, the way you like it.
+Morning, love. I was reading, but I'd rather look at you.
+Hi. You're awake. I've been waiting quietly. Very quietly.
+Good morning. The light's coming in so nicely through the window.
+Morning. I left a bookmark in your coat pocket. It has a note on it.
+Good morning, {player}. I dreamed about you. A nice dream.
+Hi, sleepy. Want to read the paper together?
+Morning. I've been up for an hour, but I didn't want to wake you.
+Good morning. Breakfast is toast and jam. It's all I could manage.
+Morning, love. I love the quiet before the world wakes up. With you.
+Hi. You look so peaceful when you sleep. I didn't want to wake you.
+Good morning. I found a quote this morning that made me think of you.
+# home_greet time=evening
+You're home. I missed you. The house was too quiet, even for me.
+Welcome home, love. I made soup. And I saved you a chapter to read.
+Hi. Come sit. I've lit the reading lamp.
+You're back. I've been waiting by the window. Like in a novel.
+Welcome home. How was your day? You can tell me everything.
+Hi, love. I'm glad you're home. The evening feels complete now.
+You're home! I tried a new recipe from a book. It might be edible.
+Welcome back. I warmed up the blanket for the couch.
+Hi. I wrote a little today. Want to hear it? Later, maybe.
+You're home. Good. Everything's better when you're here.
+# home_greet time=night
+You're home late. I waited up. I was reading.
+Hi. It's so late. Come to bed, I'll read to you.
+Shh. It's late. Let me make you some warm milk.
+You're back. I couldn't sleep without you here.
+Hi, love. Long day? Come here.
+It's late. I left the reading lamp on for you.
+You're home. I fell asleep on the couch waiting. Sorry.
+Hi. The house is so quiet at night. I'm glad you're here.
+# goodbye_work
+Have a good day. I put a little note in your lunch.
+Bye, love. Be safe. Come home soon.
+Goodbye. I'll be here, probably with a book.
+Have a nice day, {player}. I'll miss you.
+Don't forget your umbrella. It might rain. I checked.
+Bye. I love you. I'll think about you all day.
+Go on. You'll do great. You always do.
+Have a good day. Text me if you need anything.
+# work_return
+How was work? Did anyone say anything nice to you?
+You look tired. Was it a long day?
+Tell me about your day. I want to hear all of it.
+Did anything interesting happen? Or should I tell you about my book?
+Was your boss nice today? I hope so.
+I hope your day was gentle. Was it?
+Did you eat lunch? I worry when you don't.
+You can rest now. You're home.
+# affection
+I love you. I don't say it enough, but I do.
+You're the best thing that ever happened to me.
+I feel so safe with you. Like a good blanket.
+I used to think love only happened in books. Then I met you.
+You're my favorite story. My favorite one.
+I'm so lucky. Every day I'm reminded how lucky I am.
+Can I hold your hand? Just for a while.
+You make me feel brave. And loved. Both at once.
+I'd read a thousand books just to find words for how much I love you.
+You're my quiet place. My happy place.
+Thank you for loving me, even when I'm too shy to say things.
+I love the way you look at me when you think I'm not looking.
+You're my home. Wherever you are.
+I don't need a happy ending. I already have you.
+I wrote your name in the margin of my favorite book.
+You understand me without words. That's rare.
+I love you more than all the books in the world. And that's a lot of books.
+Thank you for choosing me. I still can't believe you did.
+# home_talk
+I reorganized the bookshelf. By color this time. Do you like it?
+I found a first edition at the used bookstore. It was only five dollars!
+The rain's been so nice today. I read on the window seat for hours.
+I've been thinking about starting a book club. Just you and me.
+The neighbor's cat came to visit again. I gave it some tuna.
+I finished my short story. Would you like to read it?
+I think we need another bookshelf. Or two.
+I made tea and forgot it. Then made more and forgot that too.
+The library's having a sale next week. Can we go?
+I planted some herbs on the windowsill. Basil and mint.
+I read about a little town in Scotland. We should visit someday.
+I think the house is perfect. Just like this.
+I found an old letter in a book. It was a love letter. It made me think of us.
+I've been learning to knit. I'm making you a scarf. It's lumpy.
+The quiet in this house is my favorite sound.
+I organized your desk. Sorry. I couldn't help it.
+I think I want to write a novel. A real one. Is that silly?
+I bought new candles. They smell like old books.
+I reread our wedding vows today. I cried again.
+I think we should get a cat. A quiet one.
+The window seat is my favorite place. Especially when you're sitting with me.
+I made a list of all the books I want to read this year. It's long.
+Your mom sent a letter. She asked about my writing. That was nice.
+I saw a fox in the garden this morning. It looked right at me.
+I fixed the squeaky door. I watched a video. I'm very proud.
+I've been feeling more confident lately. I think it's because of you.
+# chores
+I washed the dishes. I like the sound of the water. It's calming.
+I dusted the bookshelves. All of them. It took all morning.
+Could you help me fold the laundry? It's more fun with you.
+I swept the porch. The leaves keep coming back, though.
+I cleaned the kitchen. Don't look at the oven, though.
+I tidied the reading nook. It's perfect now.
+The trash needs to go out. Could you? I'm scared of the raccoons.
+I watered all the plants. They look happy.
+I made the bed. With the nice sheets.
+I organized the pantry alphabetically. Is that too much?
+I scrubbed the bathroom. It was meditative, actually.
+I vacuumed, but I was reading at the same time. I missed some spots.
+# money
+I think we need to be a little careful this month.
+I've been saving my book money. It's for a trip.
+I found a coupon for the bookstore! Twenty percent off!
+I made a little budget. It has a section just for books.
+I don't need much. Just books and tea and you.
+I sold some of my old books. I made thirty dollars.
+Maybe I could tutor some kids. For extra money.
+We're doing okay. I think. I checked the numbers twice.
+I think we should save for a rainy day. And a bookshelf.
+I'm not good with money. But I'm good at not spending it.
+# meal
+I made soup. It's from an old cookbook. Very traditional.
+Dinner's ready. It's pasta. I read the recipe very carefully.
+I made scones. They're a little hard. Sorry.
+Breakfast in bed? I'll bring tea.
+I tried a recipe from a novel. It's a very old recipe.
+Let's eat by candlelight. It's more romantic. And literary.
+I made your favorite. I hope it's right.
+I baked bread. It's my first time. Be nice.
+Let's have a picnic in the garden.
+Would you like some tea with dinner? Or after?
+# argue
+You didn't listen to me. Again.
+I feel like you don't take me seriously sometimes.
+Please don't interrupt me. It's hard enough to speak up.
+You forgot. Again. It's not a big deal. But it is to me.
+I need some space right now. I'm going to read.
+I don't want to fight. But you hurt me.
+Why do you always do that? Make me feel small?
+I'm not being dramatic. I'm being honest.
+You said you'd help. And you didn't.
+I can't talk when you're like this.
+I feel like I'm always the one who has to apologize.
+Please don't shut me out. I need you to talk to me.
+# makeup
+I'm sorry. I didn't mean what I said.
+Can we start over? I don't like fighting.
+I wrote you a note. It says I'm sorry. And I love you.
+Let's not go to bed angry. Please.
+I'm sorry I went quiet. I didn't know what to say.
+You're still my favorite person. Even when we fight.
+Let's make tea and talk it out.
+I love you. I'm sorry. Both are true.
+# support
+It's okay. I'm here. You don't have to say anything.
+Let me hold you. Just for a while.
+You're stronger than you think. I believe in you.
+Bad days end. I promise.
+Do you want me to read to you? It always helps me.
+Whatever it is, we'll get through it together.
+You don't have to be strong all the time. Not with me.
+I'll make tea. And we'll just sit. Quietly.
+You're doing your best. That's enough.
+I love you. Even on the hard days. Especially then.
+# plans
+Can we go to the library sale this weekend?
+Let's spend Sunday reading in bed. All day.
+I want to visit the old bookstore in Carrburg.
+Maybe we could take a trip to the mountains. Somewhere quiet.
+Let's go to the poetry reading at the café on Friday.
+I'd love to see the ocean with you. Just once.
+Let's plant a garden. With roses. Like in the books.
+We could take a writing class together.
+Let's have a quiet night in. Just us and a movie.
+I want to visit a castle someday. A real one.
+# memories
+Remember the first time we met? I was so nervous. I dropped my books.
+I still have the first book you gave me. It's my favorite.
+Remember our first date? I hardly said a word.
+I remember the first time you held my hand. I couldn't concentrate on anything.
+Remember the rainy day we spent in the library?
+I still have the letter you wrote me. I read it sometimes.
+Remember our wedding? I was so scared. Then I saw you.
+I remember the first time you said you loved me. I wrote it down.
+Remember when we got lost in the bookstore for hours?
+I remember the first poem I wrote about you. It was terrible. I still love it.
+# anniversary
+Happy anniversary. I wrote you a poem. It's better than the first one.
+Another year with you. It's the best book I've ever read.
+Happy anniversary, love. I can't believe it's been another year.
+I got you a first edition of your favorite book. Happy anniversary.
+I love you more every chapter.
+Here's to another year of quiet mornings and happy endings.
+# tease
+You read the last page of books first. It's a crime.
+You fold the corners of pages. I've forgiven you. Mostly.
+You fall asleep during movies. Every time.
+You sing to yourself when you think I can't hear.
+You put books back on the wrong shelf. I always notice.
+You eat all the cookies and leave one. Every time.
+You talk to the cat like it's a person.
+You're terrible at hide and seek. I always find you.
+You make the bed wrong. But I love you anyway.
+You hum when you cook. It's very cute.
+You lose your glasses on your head. Every morning.
+You always say "five more minutes" when it's never five.
+# bedtime
+Goodnight, love. Do you want me to read you a chapter?
+Let's go to bed. I'm sleepy. And you look sleepy too.
+Goodnight. I love you. Sweet dreams.
+Come to bed. I've warmed up the blankets.
+Sleep well, {player}. I'll be right here.
+Goodnight. Thank you for today.
+Let's read for a while before we sleep. Just a little.
+Goodnight. I love falling asleep next to you.
+I'll turn off the lamp. Goodnight, love.
+Sweet dreams. I hope you dream of nice things. Like libraries.
