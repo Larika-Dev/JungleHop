@@ -8,11 +8,13 @@ criminal record. One autoload:
 Law="*res://crime/law.gd"
 ```
 
-Put the line after `Life=` so Law finds the life core when it hooks up (it also hooks up deferred,
-so the order is forgiving). Godot 4.5, GDScript, no addons. Tests run headless:
+The line is already in `godot/project.godot` on this branch. Law hooks up deferred, so it finds
+`Life` whatever the autoload order. Time comes from `Life.clock` when Life exists, otherwise from
+`GameClock.minute_passed`. Godot 4.5, GDScript, no addons. Tests run headless:
 
 ```
-godot --headless --path godot --script res://crime/tests/run_tests.gd
+godot --headless --path godot --script res://crime/tests/run_tests.gd   # logic, with a mock Life
+godot --headless --path godot res://crime/tests/city_test.tscn          # in the real city on GameClock
 ```
 
 ## The 39 crimes
