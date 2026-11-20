@@ -1,0 +1,429 @@
+// Spiritual Mystic: astrology, crystals, energy, serene and cryptic, "the universe".
+== base
+# greet stage=stranger
+Namaste. The universe said I'd meet someone today. I'm {npc}.
+Hello, traveler. Your energy is very... Gemini. I'm {npc}.
+Oh, hello. I felt you approaching. Not in a weird way. I'm {npc}.
+Peace, friend. I'm {npc}. Mercury's in retrograde, so forgive any confusion.
+Hello, soul. I'm {npc}. Would you like a smooth stone? It's for grounding.
+Greetings. Your aura is shimmering. Have you been near water?
+# greet stage=acquaintance
+{player}. The moon told me you'd come back.
+Ah, {player}. Your energy's calmer than last time.
+Hello again, {player}. I pulled a tarot card for you this morning. The Star.
+{player}, my friend. Breathe with me for a moment. There.
+{player}! The crystals were humming. Now I know why.
+# greet stage=friend+
+{player}, my soul friend. I've been sending you light.
+There you are. My heart chakra just opened wider.
+{player}! I made you a charm bag. Lavender, rose quartz, and a little hope.
+Beloved friend. The stars aligned and here you are.
+{player}. I dreamed of you. You were a heron. Very wise.
+Hello, kindred spirit. Sit. The tea's steeping.
+# greet time=morning
+Good morning. I greeted the sun at dawn on Carillon Hill.
+Morning blessings. The dew holds so much energy.
+Good morning. Set an intention for today. Mine is gentleness.
+# greet time=evening
+Evening blessings. The veil is thin at dusk.
+Good evening. The sky's in its violet hour. Very healing.
+Hello. Evening is for reflection. And chamomile.
+# greet time=night
+The moon is waxing tonight. Can you feel it pulling?
+Hello, night soul. The stars are especially chatty tonight.
+Late wanderings? The night has secrets for those who listen.
+# farewell
+Go in peace.
+Blessings on your path.
+Farewell. Trust the timing of your life.
+May your energy stay bright.
+Goodbye, friend. Drink water and listen to your intuition.
+The universe will bring us together again.
+# farewell stage=friend+
+Light and love, {player}. Always.
+Until next time, soul friend. Keep the charm close.
+Goodbye. I'll light a candle for your week.
+# smalltalk
+The full moon is in Scorpio this week. Expect big feelings.
+I charged my crystals on the windowsill last night. They're buzzing.
+The old oaks on the North Quad have such ancient energy. I hug them.
+I've been reading about ley lines. I think one runs under the Old Cistern.
+Sage smoke clears stagnant energy. My landlord disagrees.
+I did a sound bath at the yoga studio in Carrburg. I left my body for a moment.
+The ravine at dawn feels like a cathedral made of trees.
+I had a dream about a white owl. It means wisdom is coming.
+Everything happens for a reason. Even the bus being late.
+I'm learning to read tea leaves. Mine said "more tea".
+My spirit animal is a turtle. Slow and wise and a bit shy.
+I talked to a bee for ten minutes today. She had a lot to say.
+# smalltalk stage=friend+
+You have an old soul, {player}. I knew it the first day.
+I feel safe with you. That's rare. My energy is very sensitive.
+I sometimes worry I'm too strange for people. You never make me feel that.
+I've been praying for you. Well, manifesting. Same idea.
+Our souls have met before. I'm almost sure.
+You calm my spirit. I want you to know that.
+# smalltalk weekend=true
+Weekends are for slow mornings and long meditations.
+Saturday. Market day. I'm buying sunflowers for my altar.
+Sunday is a sun day. I'll be soaking it in on the quad.
+# about_self
+I teach yoga at the studio above Hamilton Records.
+I grew up in a very practical family. I'm the cosmic exception.
+I'm a Pisces sun, Cancer moon, Libra rising. That explains everything.
+I meditate twice a day. It's the only way my brain gets quiet.
+I make candles and sell them at the farmers market. Each has an intention.
+I believe in kindness, the stars, and a good cup of tea.
+I used to work in an office. My soul withered. Now it blooms.
+# opinion_place
+{place} has strong energy. Some of it's coffee.
+I sense a gentle spirit at {place}. Maybe the old building.
+{place}? The feng shui is off. The door faces the wrong way.
+I like {place}. It feels grounded.
+{place} needs a plant. Or twelve. For the air and the soul.
+# compliment_reply
+Thank you. I receive that with an open heart.
+That's beautiful. Your words carry light.
+Oh, how kind. The universe sends that right back to you.
+Thank you, friend. I'll hold that close.
+Your kindness just brightened my aura.
+# insult_reply
+I release that. It doesn't belong to me.
+Your words come from pain. I hope you heal.
+I'm protecting my energy now. Goodbye.
+That's a very low vibration.
+I forgive you. But I won't absorb it.
+# gift_reply
+Oh! It has such lovely energy. Thank you.
+A gift given freely is a blessing. Thank you.
+I'll put this on my altar. It belongs there.
+You chose this with your heart. I can feel it.
+Thank you. This feels meant to be.
+# joke
+How do you get a mystic to laugh? Tickle their funny chakra.
+I'd tell you a joke about astrology, but you're a Virgo. You'd analyze it.
+My horoscope said I'd meet a tall stranger. It was a giraffe at the zoo.
+Why did the crystal go to therapy? It had too much unprocessed quartz.
+# ask_favor
+Could you help me carry my singing bowls to the studio?
+Would you join my full moon circle on Friday? We need one more.
+Could you hold this crystal for a minute? I want to see how it reacts to you.
+# favor_reply
+Thank you. Good karma is coming your way.
+Bless you. The universe saw that.
+Your kindness ripples outward. Thank you.
+# work_talk
+I taught three classes today. Everyone left lighter.
+A student cried in savasana. That's how you know it's working.
+I read tarot at a booth on weekends. Mostly people ask about love.
+Work is just energy exchange. Some days the exchange is tiring.
+# school_talk
+I'm studying religious studies. I want to understand every path.
+My philosophy professor says I ask unanswerable questions. Yes.
+I took a botany class to learn the medicinal plants. Fascinating.
+# hostile stage=dislike-
+Your energy drains me. Please step back.
+I've cut the cord between us. Spiritually.
+I won't let you into my space.
+You've chosen darkness, {player}. That's your path.
+Please go. I need to cleanse after this.
+I wish you well. Far from me.
+# flirt_reply romance=none
+Oh, that's sweet. But our connection is a friendship one.
+I appreciate the energy, but no. Friends.
+The cards say we're meant to be friends. And I agree with the cards.
+# flirt_reply romance=crush
+Oh. My heart chakra is wide open now.
+The stars hinted at this. I didn't dare believe it.
+You make my energy spin in the nicest way.
+I feel it too. I've felt it for a while.
+# ask_out_yes
+Yes. The moon is full that night. It's a sign.
+A date? Yes. My intuition already said yes.
+# ask_out_no
+I'm sorry. My heart doesn't feel called that way. Bless you for asking.
+No, friend. But I treasure what we have.
+
+== dating
+# date_greet
+Hello, my love. Your aura's glowing pink tonight.
+You came. The stars said you would.
+Hi. I brought you a rose quartz. It's for love.
+There you are. My heart's been humming all day.
+Hello, beautiful soul. Let's watch the moon rise.
+I lit a candle for us before I came. Hi.
+# flirt
+Our energies are perfectly aligned.
+You're the answer to a question I asked the universe.
+I feel you even when you're not here.
+You make me feel grounded and floating at once.
+I think we've loved each other in other lives.
+Your eyes hold whole galaxies.
+Being near you feels like a deep breath.
+# date_talk
+Let's go to Carillon Hill and look for shooting stars.
+What's your birth time? For your chart. Trust me.
+I made us tea from my garden. Mint and lemon balm.
+Tell me your dreams. The ones you have asleep.
+I want to know your soul, not just your story.
+Let's sit by the ravine and listen to the water.
+Do you want to meditate together? Just five minutes.
+I've never felt this connected to anyone.
+The universe is so loud when I'm with you. In a good way.
+I believe we found each other for a reason.
+Let's walk barefoot on the quad. Earthing is good for the heart.
+I'm so peaceful right now. Thank you.
+# compliment
+You have such a gentle spirit.
+Your energy is warm, like sunlight.
+You look radiant tonight.
+You listen with your whole heart.
+You're an old soul. I love that about you.
+# kiss_reply
+Oh. That was cosmic.
+I saw stars. Real ones.
+That felt like coming home.
+Again. Slowly. Let's be present.
+# miss_you
+I missed your energy. Everything felt dim.
+I meditated on you. It helped a little.
+I pulled the Lovers card three times while you were gone.
+My heart kept reaching for you.
+# jealous
+I sensed a strange energy around you today.
+I'm not jealous. I'm just protective of what we have.
+I trust you. I just need to feel our bond.
+# date_end
+Goodnight, my love. Sleep under the moon.
+Blessings, darling. Dream of me.
+Thank you for tonight. It was sacred.
+Until our energies meet again.
+Goodnight, {player}. You're my light.
+# lovers_quarrel
+My energy is unsettled. Let's talk gently.
+That hurt my spirit. I need you to hear me.
+Let's breathe before we speak.
+I don't want discord between us. Let's heal this.
+# proposal_yes
+Yes. I've known since the day we met. Yes.
+I'll marry you. The universe is singing.
+
+== marriage
+# home_greet time=morning
+Good morning, my love. I've already done my sun salutations.
+Morning, soul mate. Tea's steeping. Lavender and honey.
+Good morning. Let's set an intention for the day together.
+Morning, darling. Your aura's soft and sleepy.
+Good morning. I pulled a card for you. The Sun. A good day.
+Morning, love. I opened the windows to let the energy flow.
+Good morning. I dreamed we were birds again.
+Morning, my heart. Breathe with me before coffee.
+Good morning. The garden is singing this morning.
+Morning, beautiful. Mercury's direct again. Things will flow.
+Good morning, love. I lit a candle for your meeting.
+Morning, darling. You look rested. Your spirit too.
+# home_greet time=evening
+Welcome home, love. I've cleansed the house with sage.
+There you are. Let me take your heavy energy at the door.
+Welcome back, my heart. Dinner is nourishing and full of love.
+Hello, darling. The candles are lit. Breathe.
+You're home. The house sighed with relief.
+Welcome home. I drew you a bath with salts.
+Hello, love. Let's watch the sunset from the porch.
+There you are. I've been holding space for you all day.
+Welcome home. I made you a smoothie with intention.
+You're back. Now our home is balanced.
+# home_greet time=night
+You're home late, love. The moon kept me company.
+Hello, darling. Let me make you calming tea.
+There you are. I waited up, meditating.
+It's late. Come rest. Leave the day outside.
+You're back. I was sending you light all evening.
+Hello, my heart. The house is quiet and safe.
+Late night? Let me hold you.
+There you are. I placed amethyst under your pillow.
+# goodbye_work
+Go in peace, my love.
+Have a gentle day. Protect your energy.
+Blessings on your work, darling.
+Take this crystal. For focus.
+I'll send you light all day.
+Breathe before your meetings, love.
+Goodbye, my heart. Come home soon.
+May your path be smooth today.
+# work_return
+How was your day, love? How's your energy?
+Tell me everything. Release it here.
+You seem drained. Let's ground you.
+Did anyone take your peace today?
+Was it a heavy day? Shake it off with me.
+Let's breathe together. Then talk.
+You're home. You're safe. Rest.
+I'm proud of you, love. You carry so much.
+# affection
+I love you across every lifetime.
+You're my twin flame.
+Being married to you is my soul's purpose fulfilled.
+You make my spirit feel at home.
+I love you more than the moon loves the tide.
+You're my sacred person.
+I'm so grateful the universe brought me you.
+Our love is a quiet magic.
+You're the calm at the center of my storm.
+I feel your love even in my dreams.
+You're my favorite energy.
+I love the way you hold me. Like I'm precious.
+You're my light, {player}.
+I choose you in this life and the next.
+You make everything feel holy.
+I love you. Deeply. Cosmically.
+You're my peace.
+Thank you for loving my strange little soul.
+# home_talk
+I rearranged the furniture for better energy flow.
+I planted a moon garden. Only white flowers.
+I made new candles. This batch is for abundance.
+The neighbor's cat visits our altar every day.
+I've been journaling my dreams. You're in most of them.
+I put salt lamps in every room.
+I hung wind chimes by the door.
+I've been reading about Reiki. I'll practice on you.
+The full moon is Sunday. Let's do a ritual.
+I made a vision board for our family.
+I cleansed all the crystals in the creek.
+I've started growing herbs for tea.
+I feel such peace in this house.
+I found a feather on the porch. A sign.
+I've been learning to make herbal remedies.
+I painted a mandala on the bedroom wall.
+The garden is thriving. I talk to it every morning.
+I set up a meditation corner by the window.
+I'm reading your star chart again. It's very romantic.
+I hung dreamcatchers over the bed.
+The bees are back in the lavender.
+I've been practicing gratitude. I start with you.
+I've been sleeping so deeply lately.
+I burned sage after the argument. Energy's clear now.
+I think we should get a rescue cat. A wise one.
+I love our little sanctuary.
+# chores
+I washed the dishes with intention.
+I swept the porch to sweep out the old energy.
+Could you take out the trash, love? It's heavy energy.
+I cleaned the house with lemon and lavender.
+I watered every plant and thanked them.
+I folded the laundry mindfully.
+Let's do chores together. It's a moving meditation.
+I cleaned the windows so the light can come in.
+I cleared the clutter. Clutter blocks energy.
+I made the bed with fresh linens.
+I scrubbed the kitchen. It feels lighter now.
+I weeded the garden. Gently.
+# money
+Abundance is coming, love. I can feel it.
+Money is just energy. Let's let it flow.
+We're a little tight. Let's practice gratitude.
+I sold all my candles at the market!
+I don't need riches. I have you.
+I made a money bowl. Cinnamon and coins. It works.
+Let's be mindful with spending this month.
+We have everything we need, darling.
+I picked up more yoga classes.
+Let's give a little to the shelter. Good karma.
+# meal
+Dinner is ready. Lentils and love.
+I made a nourishing bowl. All the colors.
+Breakfast is fruit and blessings.
+I made soup with herbs from the garden.
+Let's eat outside under the sky.
+I made golden milk. Turmeric and honey.
+I made a moon cake. For the full moon.
+I baked bread and said a little prayer into it.
+Let's eat in silence and really taste it.
+I made your favorite. With extra intention.
+# argue
+Your energy is very closed off today.
+I feel unheard, love.
+You dismissed my feelings again.
+Please don't call my beliefs silly.
+You forgot to water the plants. They felt it.
+I need peace, and you keep bringing chaos.
+You're being very Mercury-in-retrograde right now.
+I'm trying to stay calm, but you're making it hard.
+I feel a wall between us.
+I'm going to go meditate before I say something unkind.
+You never want to do the rituals with me anymore.
+I need you to respect my space.
+# makeup
+I'm sorry, love. Let's realign.
+Let's breathe together and start fresh.
+I release my anger. I love you.
+I'm sorry I was closed off.
+Let's light a candle and talk.
+Our bond is stronger than one bad moment.
+Let's hold hands and just be.
+We're whole again. I can feel it.
+# support
+Breathe, my love. I'm here.
+This is a season. It will pass.
+Let me hold space for you.
+You're held by the universe and by me.
+Let's ground you. Feet on the earth.
+Cry if you need to. Tears cleanse.
+I'll draw you a bath and light candles.
+You're stronger than this moment.
+I love you. Even in the dark.
+Let's rest tonight. Nothing else.
+# plans
+Let's go to the mountains for a retreat.
+How about a full moon picnic?
+Let's take a yoga class together.
+Let's visit the hot springs.
+How about a silent weekend? Just us and nature.
+Let's go to the coast and watch the sunrise.
+Let's plant a new garden by the solstice.
+How about a meditation retreat?
+Let's go stargazing on Carillon Hill.
+Let's plan our anniversary under the stars.
+# memories
+Remember when we met? I knew instantly.
+Remember our first date? The shooting star?
+Remember our wedding? Barefoot in the meadow.
+Remember when you let me read your chart?
+Remember our honeymoon? The retreat in the mountains.
+I still have the rose quartz from our first date.
+Remember the night we meditated together and both cried?
+Remember when we saw the comet?
+I remember the first time our energies clicked.
+Remember when you held me during the storm?
+# anniversary
+Happy anniversary, my twin flame.
+Another year of sacred love.
+I made you a crystal grid for our love. Happy anniversary.
+Happy anniversary. The stars celebrate with us.
+I love you more with every moon.
+Here's to another year of magic.
+# tease
+You're such a Capricorn. Always practical.
+You roll your eyes at my crystals. I see you.
+You hide the sage.
+You never remember your dreams.
+You think tarot is a card game.
+You call my meditation "napping".
+You secretly read your horoscope. I know.
+You can't sit still for five minutes of silence.
+You always forget the moon phase.
+You think I'm weird. You love it.
+You laugh at my sound bowls.
+You're more spiritual than you admit.
+# bedtime
+Goodnight, my love. Dream gently.
+Come to bed. The moon is watching.
+Goodnight, my twin flame.
+Sleep well. I placed lavender on your pillow.
+Let's breathe together and drift off.
+Goodnight, {player}. You are loved.
+Sweet dreams, darling. Fly far.
+Rest, my heart. Tomorrow is new.
+Come cuddle. Let's share our energy.
+Goodnight. Thank the universe for you.
