@@ -5,6 +5,10 @@ extends Node
 
 signal line_spoken(npc_id: String, context: String, text: String, line_id: String)
 signal personality_assigned(npc_id: String, personality_id: String)
+## Fired whenever a conversation's state changes (start, after a choice, when a
+## yes/no answer arrives from Life, at the end). state: see start_conversation().
+signal conversation_updated(npc_id: String, state: Dictionary)
+signal conversation_ended(npc_id: String)
 
 const DATA_DIR := "res://dialogue/data/"
 const FRIEND_TIERS := ["enemy", "dislike", "stranger", "acquaintance", "friend", "close_friend", "best_friend"]
@@ -46,10 +50,17 @@ var _overrides := {}        # npc_id -> personality id set explicitly (saved)
 var _names := {}            # npc_id -> display name
 var _recent := {}           # npc_id -> Array of recent line ids
 var _rng := RandomNumberGenerator.new()
+var _convo_def := {}        # data/conversation.json
+var _convos := {}           # npc_id -> {npc, extra, options, awaiting}
 
 
 func _ready() -> void:
 	_rng.randomize()
+	var cf := FileAccess.open(DATA_DIR + "conversation.json", FileAccess.READ)
+	if cf:
+		var cd = JSON.parse_string(cf.get_as_text())
+		if cd is Dictionary:
+			_convo_def = cd
 	var f := FileAccess.open(DATA_DIR + "personalities.json", FileAccess.READ)
 	if f == null:
 		push_error("Dialogue: missing personalities.json")
@@ -345,14 +356,259 @@ func _place_tags() -> Array:
 	return []
 
 func _on_action_finished(action_id: String, target, result) -> void:
-	if not action_contexts.has(action_id) or target == null:
-		return
-	if not (target is String or (target is Object and "npc_id" in target)):
+	if target == null or not (target is String or (target is Object and "npc_id" in target)):
 		return
 	var ok := true
 	if result is Dictionary:
 		ok = bool(result.get("success", result.get("ok", true)))
-	say(target, action_contexts[action_id][0 if ok else 1])
+	var npc_id := _npc_id(target)
+	if _convos.has(npc_id):
+		# Inside a conversation the conversation speaks; only resolve a pending yes/no.
+		var c: Dictionary = _convos[npc_id]
+		if not c.awaiting.is_empty() and c.awaiting.get("action", "") == action_id:
+			_answer_question(npc_id, c.awaiting, ok)
+		return
+	if action_contexts.has(action_id):
+		say(target, action_contexts[action_id][0 if ok else 1])
+
+
+# ---------------------------------------------------------------- conversations
+# Talking is choice based: every turn the player picks one of 4 to 6 options
+# (yes/no prompts have exactly 2) and the NPC answers in its personality's voice.
+#
+# state = {
+#   "npc_id", "npc_line", "line_id", "context",
+#   "npc_followup": "",          # e.g. the NPC asking a favor after its answer
+#   "options": [{"id", "label", "kind"}],   # empty when ended or pending
+#   "pending": false,            # waiting on Life for a yes/no answer
+#   "ended": false,
+# }
+
+## Opens a conversation: the NPC greets the player and the first options are offered.
+## extra: same keys as get_line_info, plus "has_gift" / "anniversary" (unlock options)
+## and "npc_adult" (default true; NPC nodes with an `age` property are checked too).
+func start_conversation(npc, extra: Dictionary = {}) -> Dictionary:
+	var npc_id := _npc_id(npc)
+	_convos[npc_id] = {"npc": npc, "extra": extra.duplicate(), "options": [], "awaiting": {}}
+	var stage: String = extra.get("stage", _stage(npc_id))
+	var ctx := "hostile" if stage in _convo_def.get("opening", {}).get("hostile_stages", []) else greeting_context(npc)
+	var info := _speak(npc, ctx, extra)
+	return _emit_state(npc_id, info, _offer_options(npc_id), false)
+
+## Player picks option_id (one of the ids in the last state's options).
+func choose(npc, option_id: String) -> Dictionary:
+	var npc_id := _npc_id(npc)
+	if not _convos.has(npc_id):
+		return {}
+	var c: Dictionary = _convos[npc_id]
+	var opt := {}
+	for o in c.options:
+		if o.id == option_id:
+			opt = o
+			break
+	if opt.is_empty():
+		push_warning("Dialogue: option %s not offered" % option_id)
+		return {}
+	var kind: String = opt.get("kind", "talk")
+	if kind == "question":
+		return _ask_question(npc_id, opt)
+	_run_life_action(c.npc, opt.get("action", ""))
+	var info := _speak(c.npc, opt.reply, c.extra)
+	if kind == "end" or opt.id == "favor_no":
+		return _finish(npc_id, info)
+	# Now and then the NPC asks the player a favor: a yes/no prompt, 2 options.
+	var stage: String = c.extra.get("stage", _stage(npc_id))
+	var fav: Dictionary = _convo_def.get("favor", {})
+	if not fav.is_empty() and not opt.id.begins_with("favor") and not (stage in ["enemy", "dislike"]) \
+			and _rng.randf() < float(_convo_def.get("npc_asks_favor_chance", 0.0)):
+		var ask := get_line_info(c.npc, fav.ask_context, c.extra)
+		if not ask.is_empty():
+			var fav_opts: Array = []
+			for o in fav.options:
+				fav_opts.append(_option_view(o))
+			c.options = fav.options
+			return _emit_state(npc_id, info, fav_opts, false, ask.text)
+	return _emit_state(npc_id, info, _offer_options(npc_id), false)
+
+func end_conversation(npc) -> void:
+	var npc_id := _npc_id(npc)
+	if _convos.erase(npc_id):
+		conversation_ended.emit(npc_id)
+
+func in_conversation(npc) -> bool:
+	return _convos.has(_npc_id(npc))
+
+## Opens the built-in conversation panel (res://dialogue/ui/conversation_panel.gd).
+func open_conversation(npc, extra: Dictionary = {}) -> Control:
+	var panel: Control = load("res://dialogue/ui/conversation_panel.gd").new()
+	var ui := get_node_or_null("/root/UI")
+	if ui and ui.has_method("open_panel"):
+		ui.open_panel(panel)
+	else:
+		var layer := CanvasLayer.new()
+		layer.layer = 50
+		get_tree().root.add_child(layer)
+		layer.add_child(panel)
+		panel.tree_exited.connect(layer.queue_free)
+	panel.begin(npc, extra)
+	return panel
+
+## Every option that fits the current relationship and time (for tools and tests).
+func available_options(npc, extra: Dictionary = {}) -> Array:
+	var st := _conv_state(npc, extra)
+	var out: Array = []
+	for o in _convo_def.get("options", []):
+		if _option_ok(o, st, extra, npc):
+			out.append(o)
+	return out
+
+func _conv_state(npc, extra: Dictionary) -> Dictionary:
+	var npc_id := _npc_id(npc)
+	return {
+		"stage": extra.get("stage", _stage(npc_id)),
+		"romance": extra.get("romance", _romance(npc_id, extra)),
+		"time": extra.get("time", time_of_day(extra.get("hour", _hour()))),
+	}
+
+func _option_ok(o: Dictionary, st: Dictionary, extra: Dictionary, npc) -> bool:
+	var w: Dictionary = o.get("when", {})
+	if w.has("romance") and not (st.romance in w.romance):
+		return false
+	if w.has("not_romance") and st.romance in w.not_romance:
+		return false
+	if w.has("stage") and not (st.stage in w.stage):
+		return false
+	if w.has("time") and not (st.time in w.time):
+		return false
+	if w.has("flag_extra") and not extra.get(w.flag_extra, false):
+		return false
+	if w.get("adult", false):
+		if not extra.get("npc_adult", true):
+			return false
+		if npc is Object and "age" in npc and int(npc.age) < 18:
+			return false
+	return true
+
+func _offer_options(npc_id: String) -> Array:
+	var c: Dictionary = _convos[npc_id]
+	var all := available_options(c.npc, c.extra)
+	var ends: Array = all.filter(func(o): return o.get("kind", "talk") == "end")
+	var special: Array = all.filter(func(o): return o.get("kind", "talk") != "end" and o.get("when", {}).has("romance"))
+	var general: Array = all.filter(func(o): return o.get("kind", "talk") != "end" and not o.get("when", {}).has("romance"))
+	_shuffle(special)
+	_shuffle(general)
+	var max_n := int(_convo_def.get("max_options", 6))
+	var min_n := int(_convo_def.get("min_options", 4))
+	var picked: Array = []
+	for o in special + general:
+		if picked.size() >= max_n - 1:
+			break
+		picked.append(o)
+	if not ends.is_empty():
+		picked.append(ends[_rng.randi() % ends.size()])
+	# Never fewer than min_options: borrow any remaining option.
+	for o in all:
+		if picked.size() >= min_n:
+			break
+		if not (o in picked):
+			picked.append(o)
+	c.options = picked
+	var views: Array = []
+	for o in picked:
+		views.append(_option_view(o))
+	return views
+
+func _option_view(o: Dictionary) -> Dictionary:
+	var labels: Array = o.get("labels", [o.id])
+	return {"id": o.id, "label": labels[_rng.randi() % labels.size()], "kind": o.get("kind", "talk")}
+
+func _shuffle(a: Array) -> void:
+	for i in range(a.size() - 1, 0, -1):
+		var j := _rng.randi_range(0, i)
+		var t = a[i]
+		a[i] = a[j]
+		a[j] = t
+
+func _ask_question(npc_id: String, opt: Dictionary) -> Dictionary:
+	var c: Dictionary = _convos[npc_id]
+	var action: String = opt.get("action", "")
+	var life := _life()
+	if action != "" and _life_action_available(c.npc, action):
+		var res = life.actions.perform(action, c.npc)
+		if res is Dictionary and res.get("ok", false):
+			c.awaiting = opt
+			c.options = []
+			return _emit_state(npc_id, {"text": "...", "id": "", "context": ""}, [], true)
+	# No Life action: decide from romance (or extra.accept / extra.romance_value).
+	var accept: bool
+	if c.extra.has("accept"):
+		accept = bool(c.extra.accept)
+	elif life == null:
+		accept = _rng.randf() < 0.5
+	else:
+		accept = _romance_value(npc_id, c.extra) >= float(opt.get("accept_min_romance", 20))
+	return _answer_question(npc_id, opt, accept)
+
+func _answer_question(npc_id: String, opt: Dictionary, accepted: bool) -> Dictionary:
+	var c: Dictionary = _convos[npc_id]
+	c.awaiting = {}
+	var ctx: String = opt.reply if accepted else opt.get("reply_no", "hostile")
+	var info := _speak(c.npc, ctx, c.extra)
+	if not accepted:
+		return _finish(npc_id, info)
+	# Accepted: the relationship moved on (Life sets the flags), offer the new options.
+	c.extra.erase("romance")
+	return _emit_state(npc_id, info, _offer_options(npc_id), false)
+
+func _finish(npc_id: String, info: Dictionary) -> Dictionary:
+	var state := _emit_state(npc_id, info, [], false)
+	state.ended = true
+	conversation_updated.emit(npc_id, state)
+	_convos.erase(npc_id)
+	conversation_ended.emit(npc_id)
+	return state
+
+func _emit_state(npc_id: String, info: Dictionary, options: Array, pending: bool, followup: String = "") -> Dictionary:
+	var state := {
+		"npc_id": npc_id, "npc_line": info.get("text", ""), "line_id": info.get("id", ""),
+		"context": info.get("context", ""), "npc_followup": followup,
+		"options": options, "pending": pending, "ended": false,
+	}
+	if options.size() > 0 or pending:
+		conversation_updated.emit(npc_id, state)
+	return state
+
+func _speak(npc, ctx: String, extra: Dictionary) -> Dictionary:
+	var info := get_line_info(npc, ctx, extra)
+	if not info.is_empty():
+		line_spoken.emit(_npc_id(npc), info.context, info.text, info.id)
+	return info
+
+func _run_life_action(npc, action: String) -> void:
+	if action != "" and _life_action_available(npc, action):
+		_life().actions.perform(action, npc)
+
+func _life_action_available(npc, action: String) -> bool:
+	var life := _life()
+	if life == null or not ("actions" in life) or life.actions == null or not life.actions.has_method("available_for"):
+		return false
+	if life.actions.has_method("busy") and life.actions.busy():
+		return false
+	for entry in life.actions.available_for(npc):
+		var d = entry.get("def", {})
+		if d is Dictionary and d.get("id", "") == action:
+			return bool(entry.get("ok", false))
+	return false
+
+func _romance_value(npc_id: String, extra: Dictionary) -> float:
+	if extra.has("romance_value"):
+		return float(extra.romance_value)
+	var life := _life()
+	if life and life.relationships and life.relationships.has_method("get_rel"):
+		var r = life.relationships.get_rel(npc_id)
+		if r is Dictionary:
+			return float(r.get("romance", 0))
+	return 0.0
 
 # Life save provider
 func to_save() -> Dictionary:

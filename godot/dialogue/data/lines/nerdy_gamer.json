@@ -3987,7 +3987,7 @@
   {
    "tier": "marriage",
    "context": "bedtime",
-   "text": "Goodnight! Save your progress!",
+   "text": "Goodnight! Autosave complete. Shutting down for eight hours.",
    "cond": {
     "romance": [
      "married"
@@ -4053,7 +4053,7 @@
   {
    "tier": "marriage",
    "context": "bedtime",
-   "text": "Come cuddle. I'm warm.",
+   "text": "Come cuddle. My body heat is basically a passive buff.",
    "cond": {
     "romance": [
      "married"

@@ -1,0 +1,429 @@
+// Earnest Activist: passionate about causes, petitions, community gardens, idealistic and warm, a bit preachy.
+== base
+# greet stage=stranger
+Hi! I'm {npc}. Do you have a minute for the planet? Kidding. Mostly.
+Hello! Are you registered to vote in Cathedral Mount? Sorry, habit. I'm {npc}.
+Hey there! I'm {npc}. We're always looking for new faces at the community garden.
+Hi! Love your reusable bag. Or I would, if you had one. I'm {npc}!
+Hello, neighbor! New here? You should come to the town hall on Tuesday.
+Hey! I'm {npc}. I organize things. Lots of things.
+# greet stage=acquaintance
+{player}! Did you sign the petition about the bike lanes on Columbia?
+Hey, {player}! Good to see a familiar face in the movement.
+{player}! I was hoping you'd come by the food drive.
+Oh, hi, {player}! You still have my flyer, right?
+Hey, {player}! Every conversation is a chance to make change. Hi!
+# greet stage=friend+
+{player}! My comrade in kindness!
+Hey, friend! You're the reason I still believe people care.
+{player}! I saved you a seat at the meeting. Front row, of course.
+There you are! I need your help painting protest signs. Well, rally signs. Positive ones.
+{player}! You inspire me more than you know.
+Hi, partner in change! What are we fixing today?
+# greet time=morning
+Good morning! Already picked up trash on my walk. Twelve bottles!
+Morning! The community garden needs watering, want to come?
+Good morning! Fair-trade coffee in hand, ready to save the world.
+# greet time=evening
+Evening! Just got back from the council meeting. We won a small one!
+Hey! The vigil on the quad starts at eight, if you want to come.
+Good evening! Nothing like a sunset to remind you what we're protecting.
+# greet time=night
+Hey! Still up? Me too. Writing letters to the editor.
+Late night! Making signs for tomorrow's march.
+Night! The stars are so bright here. Less light pollution than the city. Let's keep it that way.
+# farewell
+Bye! Stay hopeful!
+See you! Remember, small actions add up!
+Take care! And recycle that cup, please!
+Bye for now! Change starts with us!
+See you at the next meeting!
+Goodbye! Keep fighting the good fight!
+# farewell stage=friend+
+Bye, {player}! Thanks for always showing up.
+Later, friend! Text me if you hear about anything we can help with.
+Bye! You're one of the good ones. Seriously.
+# smalltalk
+Did you know the oaks on the North Quad are older than the state? We need to protect them.
+The town wants to pave the old meadow in Carrburg for a parking lot. Not on my watch.
+I'm organizing a clothing swap on Saturday. Fast fashion is a crisis.
+The bus system needs more routes. I wrote a fifteen-page proposal.
+I went to the farmers market and only bought local. It felt amazing.
+We got thirty volunteers for the river cleanup! Thirty!
+Have you thought about composting? I can show you how.
+The food bank is low on canned goods. I'm doing a drive.
+I learned to fix bikes so I could start a free repair clinic.
+The student union finally switched to compostable cups. Three years of campaigning!
+I'm going vegan for a month. Well, vegetarian. Pescatarian. I'm trying.
+Somebody keyed the bike lane sign on Hamilton. I replaced it with a hand-painted one.
+# smalltalk stage=friend+
+Sometimes it feels like nothing changes. Then I see people like you and keep going.
+I get burnt out, honestly. You help me remember why I do this.
+I want to do something that matters with my life. You get that.
+You're the first person who's asked how I'm doing instead of what I'm doing.
+I'd chain myself to a tree with you. Metaphorically. Maybe literally.
+I'm glad we're friends. You make the world feel less heavy.
+# smalltalk weekend=true
+Weekend! Community garden workday at nine. Bring gloves!
+Saturday! There's a march downtown. Peaceful, positive, with snacks.
+It's the weekend, which means more time to volunteer!
+# about_self
+I started my first petition when I was nine. To save the school's hamster.
+I'm studying public policy. I want to run for town council someday.
+I grew up near a factory that polluted our river. That's why I care.
+People say I'm too idealistic. I say someone has to be.
+I volunteer at three different organizations. I sleep sometimes.
+I believe in community. Neighbors helping neighbors. That's how we change things.
+I know I can be a lot. But I'd rather care too much than not at all.
+# opinion_place
+{place}? Do they use sustainable practices? I'm asking for a friend. The friend is the earth.
+I like {place}! They donate to the food bank.
+{place} could really use a recycling bin. I'll bring it up with the owner.
+{place} is great. Locally owned, fair wages. My kind of place.
+{place}? I organized a sit-in there once. Long story. It worked out.
+# compliment_reply
+Thank you! But really, it's the community that deserves the credit.
+Aw, thanks! That means a lot coming from you.
+That's so kind! I'm going to use that energy at the next rally.
+Thank you! Now, have you thought about volunteering?
+Wow, thanks. I needed that today.
+# insult_reply
+That's okay. I've heard worse at town hall meetings.
+I'm going to choose compassion over anger right now.
+Wow. I hope you find some peace.
+Hurt people hurt people. I hope you're okay.
+I'm not going to let that discourage me. Or the cause.
+# gift_reply
+Oh, thank you! Is it ethically sourced? Never mind, I love it!
+This is so thoughtful! I'm going to use it at the garden.
+Thank you! I'll donate one of mine in your honor.
+You remembered I love sunflowers! Thank you!
+This is perfect! You're the best.
+# joke
+How do you make a tissue dance? Put a little boogie in it. Recycle the tissue after.
+Why did the solar panel go to therapy? It had too many issues with the grid.
+I'm reading a book about recycling. It's really been reused.
+What did the tree say to the activist? Thanks for leaving me alone.
+# ask_favor
+Could you sign this petition? It's for more crosswalks near the elementary school.
+Would you volunteer at the food bank on Saturday? Just two hours.
+Can you help me carry these donations to the shelter?
+# favor_reply
+Thank you so much! You're making a real difference.
+You're amazing! The community thanks you!
+I knew I could count on you! Thank you!
+# work_talk
+I work at a nonprofit. The pay's terrible but the purpose is amazing.
+We got a grant for the community garden today! Huge win!
+My boss and I are planning a voter registration drive.
+Some days feel like we're moving mountains with a spoon. But we're moving them.
+# school_talk
+I'm writing my thesis on urban sustainability.
+My professor said my policy proposal was the best in the class!
+I started a student club for environmental justice. Twenty members!
+# hostile stage=dislike-
+I don't think we share the same values.
+I'm trying to be compassionate, but you're making it really hard.
+I'd rather talk to a brick wall. At least it's recyclable.
+Please leave me alone. I have work to do.
+You're part of the problem, {player}.
+I'm not going to waste my energy on you.
+# flirt_reply romance=none
+Oh! That's sweet. But I'm married to the cause right now.
+Ha! Thank you, but let's keep it friendly. Comrades!
+I'm flattered! But I don't think of you that way. Want to join a protest?
+# flirt_reply romance=crush
+Oh! Wow. I didn't expect that. I really like it.
+Are you flirting with me? Because it's working. Revolutionary.
+You make my heart race faster than a rally chant.
+I've been hoping you'd say something like that.
+# ask_out_yes
+Yes! Can we go somewhere with plant-based options?
+A date? I'd love to! I'll even take a night off from organizing!
+# ask_out_no
+I'm sorry, I don't feel that way. But I value our friendship so much.
+That's so kind, but no. Can we still work on the garden together?
+
+== dating
+# date_greet
+Hi! I biked here! Carbon-neutral date!
+You came! I made us reusable picnic bags!
+Hey! You look amazing. Very sustainable. I mean, gorgeous.
+Hi! I took the whole night off for you. That's huge for me.
+There you are! I'm so happy to see you.
+Hey, you! I brought you a flower from the community garden.
+# flirt
+You're the best cause I've ever believed in.
+You make me want to change the world. And also just hold your hand.
+I'd march for you. Anywhere.
+You're more beautiful than a protected wetland.
+I care about a lot of things. You're at the top of the list.
+You make my heart feel renewable.
+You're my favorite reason to take a night off.
+# date_talk
+Let's go to the farmers market and cook dinner together.
+What do you care about most? I really want to know.
+I love that you listen when I talk about issues. Most people glaze over.
+Can we walk by the river? We cleaned it up last month.
+Tell me what kind of world you want to live in.
+I never thought I'd find someone who shares my values. Then I met you.
+I'm sorry, I'll stop talking about policy. Okay, one more thing.
+Want to volunteer together next weekend? It could be our thing.
+You make me feel like the world isn't so bad.
+Let's go stargazing. No light pollution on Carillon Hill.
+I think we'd make a great team. In activism and in love.
+I'm really happy right now. Just being here with you.
+# compliment
+You're so kind to everyone. It's inspiring.
+You've got a big heart. I love that.
+You look really nice tonight. Like, really nice.
+You're the most genuine person I know. No greenwashing.
+You care about people. That's rare.
+# kiss_reply
+Wow. That was revolutionary.
+Mmm. I feel like I could change the world right now.
+That was perfect. Sustainably perfect.
+I think I just forgot every cause I've ever had. For a second.
+# miss_you
+I missed you! The meeting was so boring without you.
+I kept thinking about you during the rally.
+I wrote you a letter. On recycled paper.
+I missed you so much. Every day without you feels like a setback.
+# jealous
+Who was that? I'm not jealous. Jealousy is a construct. I'm a little jealous.
+I trust you. I just get insecure sometimes.
+I want to be the one you share your passions with.
+# date_end
+Tonight was amazing. Thank you.
+Goodnight! Bike home safe!
+I had the best time. Let's do this again soon.
+Goodnight, {player}. You give me hope.
+Thanks for tonight. I needed it.
+# lovers_quarrel
+I'm upset, and I need you to hear me.
+Let's talk about this. Calmly. Like adults.
+I don't want to fight. I want to understand.
+You hurt me. But I believe we can fix this.
+# proposal_yes
+Yes! Yes! Let's build a better world together!
+I'll marry you! Our wedding will be zero-waste!
+
+== marriage
+# home_greet time=morning
+Good morning, love! I made fair-trade coffee!
+Morning! I already watered the garden. The tomatoes are thriving!
+Good morning! Ready to change the world today?
+Morning, love! I made oat milk lattes. Homemade oat milk!
+Good morning! I read the news. There's so much to do. But first, breakfast.
+Hey, sleepyhead! The compost bin is full. Big win!
+Good morning! I biked to the bakery for fresh bread!
+Morning, love! Let's make today count.
+Good morning! I wrote three letters to the council before you woke up.
+Morning! The bees are back in the garden! So exciting!
+Good morning! I love waking up next to my favorite activist.
+Morning, love! Let's plan our week of volunteering!
+# home_greet time=evening
+Welcome home, love! Dinner's ready. All local ingredients!
+You're home! I just got back from a meeting. We won!
+Hey, love! I made lentil soup. Want some?
+Welcome back! The garden looks amazing tonight.
+Hey! I've been making signs for the march tomorrow. Want to help?
+You're home! Let's take a walk around the neighborhood.
+Welcome home! I lit the beeswax candles.
+Hey, love! How was your day? Did you make a difference?
+You're back! I missed you. The house felt empty.
+Welcome home! I started a new petition. You're my first signature.
+# home_greet time=night
+You're home late. I waited up. Writing letters.
+Hey, love. Long day? Come rest.
+It's late. Come to bed. The revolution can wait until morning.
+You're back. I made chamomile tea from the garden.
+Hey. I fell asleep reading a policy report.
+Late night? Let's get some sleep.
+There you are. I kept the porch light off. Light pollution.
+Hey, love. Let's just cuddle. No talking about issues.
+# goodbye_work
+Have a great day, love! Go change the world!
+Bye! I packed you a zero-waste lunch!
+Have a good day! Bike safe!
+Go make a difference!
+Bye, love! I'll be at the food bank this afternoon!
+Have a great day! Remember to use your reusable cup!
+Bye! I love you! Stay hopeful!
+Go get 'em, love! You're amazing!
+# work_return
+How was work? Did you make a difference?
+Tell me about your day! I want to hear everything!
+You look tired, love. Was it hard?
+Did your boss listen to your idea? They should.
+How'd it go? Any wins?
+Rough day? Let's take a walk in the garden.
+You're home now. Rest.
+I'm proud of you. You work so hard.
+# affection
+I love you more than I love the planet. Don't tell the planet.
+You're my favorite cause.
+Being married to you makes everything feel possible.
+You're my partner in change. And in life.
+I'm so lucky to have someone who shares my values.
+You make me believe in a better world.
+I love you so much it's revolutionary.
+You're my home, love. My little ecosystem.
+I'd march to the ends of the earth for you.
+You keep me going when I'm burnt out.
+I love how much you care about people.
+You're the best thing that ever happened to me. And the planet's lucky too.
+You make me want to be a better person.
+I love you more than our garden. And I love our garden.
+You're my hope, love.
+I'm so proud to be married to someone who shows up.
+You're my favorite person to change the world with.
+I love you. More than anything.
+# home_talk
+I started a neighborhood composting program!
+The council approved the bike lanes! We did it!
+I planted a pollinator garden in the backyard!
+I've been thinking about installing solar panels.
+I organized a block party! For community building!
+I've been learning to make my own soap!
+The neighbors joined the composting program! All of them!
+I've been writing a newsletter for the neighborhood!
+I made a rain barrel! For the garden!
+I started a little free library on our street!
+I've been volunteering at the animal shelter!
+I've been thinking about running for council. Seriously.
+I made a list of local businesses to support!
+I fixed the leaky faucet! Water conservation!
+I started a community fridge downtown!
+I've been learning about permaculture!
+The kids next door asked me to help with their school project. On recycling!
+I've been reading about tiny houses. Should we downsize?
+I made a mural for the community center!
+I've been trying to take more breaks. Self-care is activism too.
+I organized a clothing drive at work!
+I hung up our protest signs in the garage. Memories!
+I've been thinking about adopting a rescue dog!
+The garden produced so many zucchini! I'm giving them to the neighbors!
+I signed us up for a climate workshop!
+I'm so proud of our little home. It's sustainable!
+# chores
+I did the dishes! With eco-friendly soap!
+I took out the compost! It's so full!
+Could you sort the recycling? I'm making signs.
+I washed the cloth napkins! No paper towels in this house!
+I swept the porch! With a broom made from recycled materials!
+I hung the laundry on the line! Solar-powered drying!
+I cleaned the kitchen with vinegar! Non-toxic!
+Let's do chores together! Teamwork!
+I weeded the garden! The tomatoes can breathe!
+I fixed the bike! Ready for the week!
+I organized the pantry! Bulk bins only!
+I cleaned out the gutters! Rain barrel's ready!
+# money
+We're a little tight this month. But we're rich in community!
+I made a budget! There's a line for donations!
+We should save for solar panels!
+I got a grant for my project! Some of it's for us!
+Let's not buy anything new this month. Secondhand only!
+I found a great thrift store! Saved us so much!
+Money's tight, but our values aren't for sale.
+I'm thinking about selling our extra veggies at the market!
+We're doing okay. Simple living!
+Let's give a little more this month. Someone needs it more.
+# meal
+Dinner's ready! Lentil curry! All plant-based!
+I made bread from scratch! Local flour!
+Let's have a garden salad! Everything's from the backyard!
+I made veggie burgers! They're delicious, I promise!
+Breakfast is oatmeal with local honey!
+I made soup from the garden zucchini!
+Let's have a potluck with the neighbors!
+I made tacos! With beans and fresh salsa!
+I baked muffins! With zucchini! Again!
+Dinner's on the porch tonight!
+# argue
+You didn't recycle that! Again!
+I feel like you don't care about the things I care about.
+I'm not being preachy! I'm being passionate!
+You said you'd come to the rally. You didn't come.
+I know I'm busy. But it's for a good cause.
+Can you please not buy plastic water bottles?
+I feel like I'm always the one who has to care.
+I'm burnt out, and I need you to understand that.
+You never want to talk about the issues with me.
+I need you to support me. Not question me.
+I'm going to take a walk and cool off.
+I'm not trying to change you. I just want you to care.
+# makeup
+I'm sorry, love. I got too intense.
+Let's make up. In the garden.
+I love you. I'm sorry I lectured you.
+I hate fighting with you. Let's talk.
+I'm sorry I was so busy. You're my priority.
+You're my partner. We'll figure this out.
+Let's have a cup of tea and talk.
+We're a team. Always.
+# support
+Hey, it's okay. Let's just rest.
+You're doing great, love. Really.
+I'm here. Always.
+Whatever it is, we'll organize our way through it together.
+You don't have to save the world today.
+Let's take a walk in the garden. It helps.
+You're stronger than you think.
+I've got you. No matter what.
+Let me make you some tea. From the garden.
+You're my hero, love.
+# plans
+Let's go to the climate march this weekend!
+How about a camping trip? Leave no trace!
+Let's volunteer at the food bank on Saturday!
+Let's go to the farmers market and cook together!
+How about a trip to the national park?
+Let's plant a tree together! For our anniversary!
+Let's go to the town hall meeting! Date night!
+How about a bike ride to the lake?
+Let's start a community project together!
+Let's take a weekend off. No activism. Just us.
+# memories
+Remember our first date? We picked up trash by the river.
+Remember when we chained ourselves to the old oak? We saved it!
+Remember our wedding? Zero waste!
+Remember when we met? At the town hall meeting!
+Remember our first protest together?
+I still have the sign from our first march.
+Remember when we planted our first garden?
+Remember our honeymoon? We volunteered at a turtle sanctuary!
+Remember when the council approved our proposal? We cried!
+I remember the first time you said you believed in my petition. And me.
+# anniversary
+Happy anniversary, love! Another year of changing the world!
+I planted a tree for us! Happy anniversary!
+Happy anniversary! You're my favorite cause!
+Another year! Our love is sustainable!
+I got you something. It's ethically sourced!
+Here's to another year of hope!
+# tease
+You still can't sort the recycling correctly.
+You bought a plastic bottle. I saw you.
+You fall asleep during documentaries.
+You put the compost in the trash. Twice.
+You hide your fast food wrappers.
+You call my signs "art projects".
+You're secretly a big softie about the bees.
+You sing protest songs in the shower.
+You always forget your reusable bag.
+You're more passionate than me sometimes. Don't deny it.
+You talk to the plants. They're thriving, so keep it up.
+You say "one more petition" like I say "one more chapter".
+# bedtime
+Goodnight, love! Tomorrow we change the world!
+Come to bed. The revolution can wait.
+Goodnight! I love you more than the planet!
+Sleep well, love. Rest is resistance.
+Goodnight, {player}. Tomorrow we try again, together.
+Let's go to bed. Lights off, save energy!
+Goodnight. Dream of a better world.
+Come cuddle. I'm cold. We turned the heat down.
+Goodnight, love. Thank you for today.
+Sleep tight. I love you.

@@ -49,7 +49,17 @@
    "base": 117,
    "dating": 52,
    "marriage": 200
+  },
+  "earnest_activist": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "hopeless_romantic": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
   }
  },
- "total_lines": 3691
+ "total_lines": 4429
 }

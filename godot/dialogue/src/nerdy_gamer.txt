@@ -419,11 +419,11 @@ You still think it's a cutscene when it's gameplay.
 # bedtime
 Goodnight, love. Logging off.
 Come to bed, player two.
-Goodnight! Save your progress!
+Goodnight! Autosave complete. Shutting down for eight hours.
 Let's sleep. Tomorrow's a new level.
 Goodnight, love. I'll see you at the respawn point.
 Sleep well, {player}. Recharge your HP.
 Goodnight. I love you. More than games.
 Lights out. Game over. Until tomorrow.
-Come cuddle. I'm warm.
+Come cuddle. My body heat is basically a passive buff.
 Goodnight. Dream of dragons.
