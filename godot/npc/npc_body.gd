@@ -34,6 +34,7 @@ var _t := 0.0
 var _speed := 0.0
 var _shape_idx := {}
 var _build := {}
+var _race := {}
 var _height_m := 1.75
 var _flee_until := 0.0
 var _barefoot := false
@@ -44,11 +45,27 @@ static var _meshes := {}
 static var _shader: Shader
 
 
+## true when the MakeHuman-based body data is present (npc/models); the old
+## procedural body is the fallback.
+static var use_mh: bool = NpcMhMesh.available()
+var _arm_down := [Quaternion.IDENTITY, Quaternion.IDENTITY]
+var _forearm_axis := [Vector3.RIGHT, Vector3.RIGHT]
+var _finger_axes := []
+
+
 static func mesh_for(p_sex: String, p_lod: int) -> ArrayMesh:
-	var key := "%s%d" % [p_sex, p_lod]
+	var key := "%s%d" % [p_sex, 0 if use_mh else p_lod]
 	if not _meshes.has(key):
-		_meshes[key] = NpcBodyMesh.get_mesh(p_sex, p_lod)
+		_meshes[key] = NpcMhMesh.get_mesh(p_sex) if use_mh else NpcBodyMesh.get_mesh(p_sex, p_lod)
 	return _meshes[key]
+
+
+static func ref_height(p_sex: String) -> float:
+	return NpcMhMesh.height(p_sex) if use_mh else NpcBodyMesh.REF_HEIGHT[p_sex]
+
+
+static func shape_names() -> Array:
+	return NpcMhMesh.SHAPES if use_mh else NpcBodyMesh.SHAPES
 
 
 func _init() -> void:
@@ -87,7 +104,7 @@ func _init() -> void:
 
 func _setup_skeleton(p_sex: String) -> void:
 	skeleton.clear_bones()
-	var model: Array = NpcBodyMesh.bone_rest_positions(p_sex)
+	var model: Array = NpcMhMesh.rest_positions(p_sex) if use_mh else NpcBodyMesh.bone_rest_positions(p_sex)
 	for i in NpcBodyMesh.BONES.size():
 		skeleton.add_bone(NpcBodyMesh.BONES[i])
 	for i in NpcBodyMesh.BONES.size():
@@ -97,6 +114,25 @@ func _setup_skeleton(p_sex: String) -> void:
 		var local: Vector3 = model[i] - (model[parent] if parent >= 0 else Vector3.ZERO)
 		skeleton.set_bone_rest(i, Transform3D(Basis.IDENTITY, local))
 	skeleton.reset_bone_poses()
+	_finger_axes.clear()
+	if use_mh:
+		# The MakeHuman rest pose is an A-pose: hang the arms down by the sides.
+		for side in 2:
+			var o := side * 3
+			var sd := -1.0 if side == 0 else 1.0
+			var d: Vector3 = (model[NpcBodyMesh.B_FOREARM_L + o] - model[NpcBodyMesh.B_UPPERARM_L + o]).normalized()
+			_arm_down[side] = Quaternion(d, Vector3(sd * 0.1, -1.0, 0.03).normalized())
+			_forearm_axis[side] = _arm_down[side].inverse() * Vector3.RIGHT
+			# Curl axis per finger: across the finger, so the tip moves toward the palm.
+			var w: Vector3 = model[NpcBodyMesh.B_HAND_L + o]
+			var bi0 := NpcBodyMesh.B_FINGER0 + side * 10
+			var palm: Vector3 = (model[bi0 + 2] - w).cross(model[bi0 + 8] - w).normalized()
+			if palm.y > 0.0:
+				palm = -palm
+			for fi in 5:
+				var fd: Vector3 = (model[bi0 + fi * 2 + 1] - model[bi0 + fi * 2]).normalized()
+				var pn: Vector3 = palm
+				_finger_axes.append(fd.cross(pn).normalized())
 	if not _skins.has(p_sex):
 		_skins[p_sex] = skeleton.create_skin_from_rest_transforms()
 	mesh_instance.skin = _skins[p_sex]
@@ -122,7 +158,7 @@ func apply_record(rec: Dictionary) -> void:
 		lod = -1
 	var p := NpcAppearance.body_params(rec)
 	_height_m = rec.height_cm / 100.0
-	var s: float = _height_m / NpcBodyMesh.REF_HEIGHT[sex]
+	var s: float = _height_m / ref_height(sex)
 	scale = Vector3(s, s, s)
 	_build = p.shape
 	_material.set_shader_parameter("skin_color", p.skin)
@@ -137,6 +173,16 @@ func apply_record(rec: Dictionary) -> void:
 	var hair: Array = {"buzz": [0.962, 0.945, 0.9, 0.55], "short": [0.966, 0.946, 0.9, 1.0], "medium": [0.968, 0.94, 0.88, 1.0],
 		"long": [0.969, 0.925, 0.862, 1.0], "bun": [0.97, 0.94, 0.89, 1.0], "ponytail": [0.97, 0.935, 0.875, 1.0],
 		"curly": [0.964, 0.944, 0.89, 1.0], "bald": [1.1, 0.95, 0.915, 0.35]}.get(hs, [0.966, 0.946, 0.9, 1.0])
+	if use_mh:
+		var hl: Dictionary = NpcMhMesh.meta(sex).landmarks.hair
+		hair = [hl.front + hair[0] - 0.966, hl.side + hair[1] - 0.946, hl.back + hair[2] - 0.9, hair[3]]
+		var eth: String = rec.get("ethnicity", "white")
+		var mix: Array = {"white": [1, 0, 0], "black": [0, 1, 0], "asian": [0, 0, 1], "hispanic": [0.6, 0.2, 0.2],
+			"multiracial": [0.5, 0.5, 0], "american_indian": [0.4, 0.1, 0.5], "international": [0.2, 0.2, 0.6]}.get(eth, [0.34, 0.33, 0.33])
+		var r := float(absi(hash(npc_id)) % 1000) / 1000.0
+		_race["caucasian"] = clampf(mix[0] * 1.5 - 0.5 + 0.3 * r, -0.5, 1.0)
+		_race["african"] = clampf(mix[1] * 1.5 - 0.5 + 0.3 * (1.0 - r), -0.5, 1.0)
+		_race["asian"] = clampf(mix[2] * 1.5 - 0.5, -0.5, 1.0)
 	_material.set_shader_parameter("hair_front", hair[0])
 	record["_hair_front"] = hair[0]
 	_material.set_shader_parameter("stubble", 0.0)
@@ -178,10 +224,11 @@ func set_lod(l: int) -> void:
 	lod = l
 	mesh_instance.mesh = mesh_for(sex, l)
 	_shape_idx.clear()
-	for i in NpcBodyMesh.SHAPES.size():
-		_shape_idx[NpcBodyMesh.SHAPES[i]] = mesh_instance.find_blend_shape_by_name(NpcBodyMesh.SHAPES[i])
+	for n in shape_names():
+		_shape_idx[n] = mesh_instance.find_blend_shape_by_name(n)
 	_material.set_shader_parameter("detail", 1.0 if l == 0 else (0.4 if l == 1 else 0.0))
-	_material.set_shader_parameter("painted_eyes", 1.0 if l == 2 else 0.0)
+	_material.set_shader_parameter("painted_eyes", 1.0 if l == 2 and not use_mh else 0.0)
+	_material.set_shader_parameter("use_regions", 1.0 if use_mh else 0.0)
 	mesh_instance.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_ON if l < 2 else GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
 	_apply_build_shapes()
 
@@ -189,6 +236,8 @@ func set_lod(l: int) -> void:
 func _apply_build_shapes() -> void:
 	for k in ["fat", "slim", "muscle"]:
 		_set_shape(k, _build.get(k, 0.0))
+	for k in _race:
+		_set_shape(k, _race[k])
 	_set_shape("barefoot", 1.0 if _barefoot else 0.0)
 
 
@@ -205,6 +254,15 @@ func set_barefoot(on: bool) -> void:
 
 ## Curls each finger toward the palm: knuckle and middle joint per finger.
 func _pose_fingers(curl: float) -> void:
+	if use_mh:
+		for k in _finger_axes.size():
+			var fi := k % 5
+			var bi := NpcBodyMesh.B_FINGER0 + k * 2
+			var a1 := deg_to_rad(lerpf(10.0, 70.0, curl) + fi * 3.0) * (0.4 if fi == 0 else 1.0)
+			var a2 := deg_to_rad(lerpf(15.0, 95.0, curl) + fi * 4.0) * (0.6 if fi == 0 else 1.0)
+			skeleton.set_bone_pose_rotation(bi, Quaternion(_finger_axes[k], a1))
+			skeleton.set_bone_pose_rotation(bi + 1, Quaternion(_finger_axes[k], a2))
+		return
 	var specs: Array = NpcBodyMesh.finger_specs(sex)
 	for side in [-1, 1]:
 		for fi in 5:
@@ -248,8 +306,8 @@ func animate(delta: float, speed: float) -> void:
 		# Arms swing with the opposite leg.
 		var arm := -14.0 * cos(TAU * p) * walk + 2.0 * sin(_t * 1.3 + side) * (1.0 - walk)
 		var arm_out := deg_to_rad(4.0) * (1.0 if side == 1 else -1.0)
-		skeleton.set_bone_pose_rotation(NpcBodyMesh.B_UPPERARM_L + o, Quaternion(Vector3.RIGHT, deg_to_rad(arm)) * Quaternion(Vector3.BACK, arm_out * 0.0))
-		skeleton.set_bone_pose_rotation(NpcBodyMesh.B_FOREARM_L + o, Quaternion(Vector3.RIGHT, deg_to_rad(12.0 + 10.0 * walk * maxf(0.0, -cos(TAU * p)))))
+		skeleton.set_bone_pose_rotation(NpcBodyMesh.B_UPPERARM_L + o, Quaternion(Vector3.RIGHT, deg_to_rad(arm)) * _arm_down[side])
+		skeleton.set_bone_pose_rotation(NpcBodyMesh.B_FOREARM_L + o, Quaternion(_forearm_axis[side], deg_to_rad(12.0 + 10.0 * walk * maxf(0.0, -cos(TAU * p)))))
 		if flex:
 			var nm := "L" if side == 0 else "R"
 			# Gastrocnemius and soleus fire from midstance to push-off.

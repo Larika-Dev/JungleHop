@@ -20,9 +20,15 @@ uniform float hair_amount = 1.0;    // 0 = bald, 0.5 = buzz cut
 uniform float barefoot = 0.0;
 uniform float painted_eyes = 0.0;  // far LOD has no eyeballs
 uniform float stubble = 0.0;       // 0 clean shaven .. 1 full beard (grooming)
-uniform float detail = 1.0;         // 1 close up, 0 far: fades 1 mm pore/weave detail
+uniform float detail = 1.0;
+uniform float use_regions = 0.0;   // MakeHuman body: COLOR = lips, brows, nails, beard zone
 
 varying vec3 rest_info;
+varying flat float vpart;   // flat: no blending between parts across a triangle
+
+void vertex() {
+	vpart = UV.x;
+}
 
 float hash(vec2 p) { return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453); }
 float vnoise(vec2 p) {
@@ -32,7 +38,7 @@ float vnoise(vec2 p) {
 }
 
 void fragment() {
-	int part = int(floor(UV.x + 0.01));
+	int part = int(floor(vpart + 0.01));
 	float yn = UV.y;
 	float th = UV2.x * 360.0;
 	float df = abs(th - 270.0);          // degrees away from facing forward
@@ -47,7 +53,14 @@ void fragment() {
 	} else if (part == 2) {               // arm
 		mat = yn > sleeve_cut ? 1 : 0;
 	} else if (part == 4) {               // foot
-		mat = barefoot > 0.5 ? 0 : 3;
+		mat = barefoot > 0.5 ? (use_regions > 0.5 && COLOR.b > 0.5 ? 7 : 0) : 3;
+	} else if (part == 10) {              // eyelashes
+		mat = 8;
+	} else if (part == 11) {              // hair shell
+		float line = df < 40.0 ? mix(hair_front, hair_side, smoothstep(20.0, 40.0, df))
+			: (df < 110.0 ? mix(hair_side, hair_back, smoothstep(70.0, 110.0, df)) : hair_back);
+		if (hair_amount < 0.7 || yn < line) discard;
+		mat = 4;
 	} else if (part == 9) {               // toe: nail on top near the tip
 		float a = min(th, 360.0 - th);
 		mat = (a < 45.0 && UV2.y > 0.62 && UV2.y < 0.97) ? 7 : 0;
@@ -58,7 +71,17 @@ void fragment() {
 		if (e > 0.06 && e < 0.08) col *= 0.6;   // limbal ring
 	} else if (part == 7) {               // finger: nail on the back near the tip
 		float a = min(th, 360.0 - th);    // 0 = back of the finger
-		if (a < 42.0 && UV2.y > 0.74 && UV2.y < 0.97) mat = 7;
+		if (use_regions > 0.5 ? COLOR.b > 0.5 : (a < 42.0 && UV2.y > 0.74 && UV2.y < 0.97)) mat = 7;
+	} else if (part == 3 && use_regions > 0.5) {   // MakeHuman head
+		float line = df < 40.0 ? mix(hair_front, hair_side, smoothstep(20.0, 40.0, df))
+			: (df < 110.0 ? mix(hair_side, hair_back, smoothstep(70.0, 110.0, df)) : hair_back);
+		if (hair_amount > 0.01 && yn > line - 0.004) mat = 4;
+		if (stubble > 0.01 && COLOR.a > 0.01) {
+			float dots = step(1.0 - stubble * 0.9, vnoise(vec2(UV2.x * 2400.0, yn * 8000.0)));
+			col = mix(col, hair_color * 0.8, COLOR.a * mix(dots * 0.6, 0.9, smoothstep(0.6, 1.0, stubble)));
+		}
+		if (COLOR.r > 0.5) mat = 6;
+		if (COLOR.g > 0.35) mat = 9;
 	} else if (part == 3) {               // head
 		float line = df < 40.0 ? mix(hair_front, hair_side, smoothstep(20.0, 40.0, df))
 			: (df < 110.0 ? mix(hair_side, hair_back, smoothstep(70.0, 110.0, df)) : hair_back);
@@ -102,8 +125,8 @@ void fragment() {
 		float strands = vnoise(vec2(UV2.x * 900.0, yn * 160.0));
 		col = hair_color * (0.75 + 0.5 * strands * detail);
 		if (hair_amount < 0.75) col = mix(skin_color, col, hair_amount * 1.2);
-		rough = 0.45;
-		spec = 0.5;
+		rough = 0.62;
+		spec = 0.25;
 	} else if (mat == 5) {
 		rough = 0.08;
 		spec = 0.6;
@@ -111,6 +134,10 @@ void fragment() {
 		col = mix(skin_color, vec3(0.93, 0.82, 0.8), 0.55);
 		rough = 0.18;
 		spec = 0.6;
+	} else if (mat == 8 || mat == 9) {    // lashes, brows
+		col = hair_color * (mat == 8 ? 0.45 : 0.8 + 0.4 * n1 * detail);
+		rough = 0.6;
+		spec = 0.3;
 	} else if (mat == 6) {
 		col = mix(skin_color, vec3(0.62, 0.32, 0.32), 0.35) * 0.92;
 		rough = 0.35;
