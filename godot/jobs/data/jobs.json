@@ -1,0 +1,1102 @@
+{
+ "version": 1,
+ "max_concurrent_jobs": 2,
+ "strikes_to_fire": 3,
+ "jobs": [
+  {
+   "id": "barista",
+   "name": "Barista",
+   "building": "HAM_N_004",
+   "place": "Pamlico Coffee House",
+   "minigame": "barista_bar",
+   "blurb": "Grab the right cup and walk it through the espresso machine, steamer and syrup pumps exactly as the ticket says.",
+   "tips": 0.6,
+   "shifts": [
+    {
+     "name": "Morning",
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "start": 6,
+     "end": 14
+    },
+    {
+     "name": "Afternoon",
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "start": 12,
+     "end": 20
+    }
+   ],
+   "ranks": [
+    {
+     "title": "Barista Trainee",
+     "wage": 12.5,
+     "min_hours": 0,
+     "min_performance": 0.0
+    },
+    {
+     "title": "Barista",
+     "wage": 14.5,
+     "min_hours": 16,
+     "min_performance": 0.6
+    },
+    {
+     "title": "Shift Lead",
+     "wage": 17.5,
+     "min_hours": 50,
+     "min_performance": 0.7,
+     "education_any": [
+      "cert_barista"
+     ]
+    },
+    {
+     "title": "Cafe Manager",
+     "wage": 22.0,
+     "min_hours": 120,
+     "min_performance": 0.75,
+     "education_any": [
+      "cert_food_safety"
+     ]
+    }
+   ],
+   "kind": "physical",
+   "check": "basic"
+  },
+  {
+   "id": "bartender",
+   "name": "Bartender",
+   "building": "HAM_N_000",
+   "place": "Top of the Mount",
+   "minigame": "bartender_pour",
+   "adult": true,
+   "blurb": "Lift each bottle over the glass to pour, stop at the line, then slide the drink to the customer.",
+   "tips": 1.2,
+   "shifts": [
+    {
+     "name": "Evening",
+     "days": [
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "start": 18,
+     "end": 26
+    },
+    {
+     "name": "Happy hour",
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "start": 16,
+     "end": 22
+    }
+   ],
+   "ranks": [
+    {
+     "title": "Barback",
+     "wage": 11.0,
+     "min_hours": 0,
+     "min_performance": 0.0
+    },
+    {
+     "title": "Bartender",
+     "wage": 13.0,
+     "min_hours": 20,
+     "min_performance": 0.6
+    },
+    {
+     "title": "Head Bartender",
+     "wage": 18.0,
+     "min_hours": 80,
+     "min_performance": 0.75,
+     "education_any": [
+      "cert_food_safety"
+     ]
+    }
+   ],
+   "kind": "physical",
+   "check": "basic"
+  },
+  {
+   "id": "pizza_cook",
+   "name": "Pizza Cook",
+   "building": "HAM_S_010",
+   "place": "Mount Pizza Co.",
+   "minigame": "pizza_oven",
+   "blurb": "Slide raw pies into the deck oven with the peel and pull each one out golden, before it burns.",
+   "shifts": [
+    {
+     "name": "Lunch",
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "start": 10,
+     "end": 16
+    },
+    {
+     "name": "Dinner",
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "start": 16,
+     "end": 23
+    }
+   ],
+   "ranks": [
+    {
+     "title": "Prep Cook",
+     "wage": 13.0,
+     "min_hours": 0,
+     "min_performance": 0.0
+    },
+    {
+     "title": "Line Cook",
+     "wage": 15.5,
+     "min_hours": 24,
+     "min_performance": 0.6,
+     "education_any": [
+      "cert_food_safety"
+     ]
+    },
+    {
+     "title": "Kitchen Manager",
+     "wage": 20.0,
+     "min_hours": 90,
+     "min_performance": 0.75,
+     "education_any": [
+      "cert_food_safety"
+     ],
+     "skills": {
+      "cooking": 3
+     }
+    }
+   ],
+   "kind": "physical",
+   "check": "basic"
+  },
+  {
+   "id": "hardware_cashier",
+   "name": "Hardware Cashier",
+   "building": "HAM_S_013",
+   "place": "Hilltop Hardware",
+   "minigame": "pos_register",
+   "blurb": "Key in each item's SKU on the register, then type the exact change due.",
+   "shifts": [
+    {
+     "name": "Day",
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "start": 8,
+     "end": 16
+    },
+    {
+     "name": "Late",
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "start": 13,
+     "end": 21
+    }
+   ],
+   "ranks": [
+    {
+     "title": "Cashier",
+     "wage": 12.75,
+     "min_hours": 0,
+     "min_performance": 0.0
+    },
+    {
+     "title": "Senior Cashier",
+     "wage": 14.25,
+     "min_hours": 24,
+     "min_performance": 0.65
+    },
+    {
+     "title": "Assistant Manager",
+     "wage": 19.0,
+     "min_hours": 80,
+     "min_performance": 0.7,
+     "education_any": [
+      "cert_bookkeeping"
+     ]
+    },
+    {
+     "title": "Store Manager",
+     "wage": 24.0,
+     "min_hours": 160,
+     "min_performance": 0.75,
+     "education_any": [
+      "ba_business",
+      "mba"
+     ]
+    }
+   ],
+   "kind": "pc",
+   "check": "basic"
+  },
+  {
+   "id": "bookstore_clerk",
+   "name": "Bookstore Clerk",
+   "building": "HAM_N_006",
+   "place": "Tarry Page Books",
+   "minigame": "shelf_sort",
+   "blurb": "Carry each book off the cart and set it on the right section of the shelf.",
+   "shifts": [
+    {
+     "name": "Day",
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "start": 9,
+     "end": 17
+    },
+    {
+     "name": "Close",
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "start": 14,
+     "end": 21
+    }
+   ],
+   "ranks": [
+    {
+     "title": "Stock Clerk",
+     "wage": 12.25,
+     "min_hours": 0,
+     "min_performance": 0.0
+    },
+    {
+     "title": "Bookseller",
+     "wage": 14.0,
+     "min_hours": 20,
+     "min_performance": 0.6
+    },
+    {
+     "title": "Head Buyer",
+     "wage": 18.0,
+     "min_hours": 90,
+     "min_performance": 0.75,
+     "education_any": [
+      "ba_english",
+      "ba_history"
+     ]
+    }
+   ],
+   "kind": "physical",
+   "check": "basic"
+  },
+  {
+   "id": "bank_teller",
+   "name": "Bank Teller",
+   "building": "HAM_N_001",
+   "place": "Bluebird Savings Bank",
+   "minigame": "bank_terminal",
+   "blurb": "Type each check's account number and amount into the teller system, then approve it or flag it as fraud.",
+   "shifts": [
+    {
+     "name": "Banking hours",
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "start": 9,
+     "end": 17
+    }
+   ],
+   "ranks": [
+    {
+     "title": "Teller",
+     "wage": 16.0,
+     "min_hours": 0,
+     "min_performance": 0.0
+    },
+    {
+     "title": "Senior Teller",
+     "wage": 18.5,
+     "min_hours": 30,
+     "min_performance": 0.7,
+     "education_any": [
+      "cert_bookkeeping"
+     ]
+    },
+    {
+     "title": "Personal Banker",
+     "wage": 24.0,
+     "min_hours": 100,
+     "min_performance": 0.75,
+     "education_any": [
+      "ba_business",
+      "mba"
+     ]
+    },
+    {
+     "title": "Branch Manager",
+     "wage": 34.0,
+     "min_hours": 220,
+     "min_performance": 0.8,
+     "education_any": [
+      "mba"
+     ]
+    }
+   ],
+   "kind": "pc",
+   "check": "trusted"
+  },
+  {
+   "id": "er_nurse",
+   "name": "Emergency Department",
+   "building": "LM13_MED_TOWER_D",
+   "place": "Medical Tower D (ER)",
+   "minigame": "triage_chart",
+   "blurb": "Chart each arrival's vitals from the monitor into the EHR and enter the right triage level.",
+   "shifts": [
+    {
+     "name": "Day",
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "start": 7,
+     "end": 19
+    },
+    {
+     "name": "Night",
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "start": 19,
+     "end": 31
+    }
+   ],
+   "ranks": [
+    {
+     "title": "Patient Transporter",
+     "wage": 14.0,
+     "min_hours": 0,
+     "min_performance": 0.0
+    },
+    {
+     "title": "Nursing Assistant",
+     "wage": 17.0,
+     "min_hours": 20,
+     "min_performance": 0.6,
+     "education_any": [
+      "cert_cpr"
+     ]
+    },
+    {
+     "title": "Registered Nurse",
+     "wage": 36.0,
+     "min_hours": 60,
+     "min_performance": 0.7,
+     "education_any": [
+      "bs_nursing"
+     ]
+    },
+    {
+     "title": "Charge Nurse",
+     "wage": 44.0,
+     "min_hours": 200,
+     "min_performance": 0.8,
+     "education_any": [
+      "bs_nursing"
+     ]
+    }
+   ],
+   "kind": "pc",
+   "check": "trusted"
+  },
+  {
+   "id": "lab_tech",
+   "name": "Hospital Lab",
+   "building": "LM13_MED_TOWER_A",
+   "place": "Medical Tower A",
+   "minigame": "centrifuge_load",
+   "blurb": "Load sample tubes into the centrifuge rotor so it is perfectly balanced, then spin.",
+   "shifts": [
+    {
+     "name": "Day",
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "start": 7,
+     "end": 15
+    },
+    {
+     "name": "Evening",
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "start": 15,
+     "end": 23
+    }
+   ],
+   "ranks": [
+    {
+     "title": "Lab Aide",
+     "wage": 15.0,
+     "min_hours": 0,
+     "min_performance": 0.0
+    },
+    {
+     "title": "Phlebotomist",
+     "wage": 19.5,
+     "min_hours": 20,
+     "min_performance": 0.65,
+     "education_any": [
+      "cert_phlebotomy"
+     ]
+    },
+    {
+     "title": "Lab Technologist",
+     "wage": 30.0,
+     "min_hours": 80,
+     "min_performance": 0.7,
+     "education_any": [
+      "bs_biology",
+      "bs_chemistry"
+     ]
+    },
+    {
+     "title": "Lab Supervisor",
+     "wage": 38.0,
+     "min_hours": 200,
+     "min_performance": 0.8,
+     "education_any": [
+      "bs_biology",
+      "bs_chemistry"
+     ]
+    }
+   ],
+   "kind": "physical",
+   "check": "trusted"
+  },
+  {
+   "id": "librarian",
+   "name": "Library Staff",
+   "building": "LM03_WILBERFORCE",
+   "place": "Wilberforce Library",
+   "minigame": "library_checkin",
+   "blurb": "Scan returns by typing the barcode, then key in the stack location from the call number.",
+   "shifts": [
+    {
+     "name": "Day",
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "start": 8,
+     "end": 16
+    },
+    {
+     "name": "Late",
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      6
+     ],
+     "start": 16,
+     "end": 24
+    }
+   ],
+   "ranks": [
+    {
+     "title": "Library Page",
+     "wage": 11.5,
+     "min_hours": 0,
+     "min_performance": 0.0
+    },
+    {
+     "title": "Library Assistant",
+     "wage": 15.0,
+     "min_hours": 24,
+     "min_performance": 0.65
+    },
+    {
+     "title": "Librarian",
+     "wage": 26.0,
+     "min_hours": 80,
+     "min_performance": 0.7,
+     "education_tags": [
+      "degree:bachelor"
+     ]
+    },
+    {
+     "title": "Head Librarian",
+     "wage": 33.0,
+     "min_hours": 200,
+     "min_performance": 0.8,
+     "education_tags": [
+      "degree:master"
+     ]
+    }
+   ],
+   "kind": "pc",
+   "check": "standard"
+  },
+  {
+   "id": "custodian",
+   "name": "Custodian",
+   "building": "LM09_STUDENT_UNION",
+   "place": "Student Union",
+   "minigame": "spill_cleanup",
+   "blurb": "Push the mop over spills across the Union floor before they spread.",
+   "shifts": [
+    {
+     "name": "Day",
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "start": 6,
+     "end": 14
+    },
+    {
+     "name": "Night",
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "start": 22,
+     "end": 30
+    }
+   ],
+   "ranks": [
+    {
+     "title": "Custodian",
+     "wage": 13.5,
+     "min_hours": 0,
+     "min_performance": 0.0
+    },
+    {
+     "title": "Lead Custodian",
+     "wage": 15.5,
+     "min_hours": 30,
+     "min_performance": 0.6
+    },
+    {
+     "title": "Facilities Supervisor",
+     "wage": 21.0,
+     "min_hours": 120,
+     "min_performance": 0.7,
+     "education_any": [
+      "aa_general"
+     ]
+    }
+   ],
+   "kind": "physical",
+   "check": "standard"
+  },
+  {
+   "id": "cinema_usher",
+   "name": "Cinema Staff",
+   "building": "HAM_N_003",
+   "place": "Junior Varsity Cinema",
+   "minigame": "box_office",
+   "blurb": "Type the film code, showtime, ticket count and total into the box office terminal.",
+   "shifts": [
+    {
+     "name": "Matinee",
+     "days": [
+      4,
+      5,
+      6
+     ],
+     "start": 12,
+     "end": 18
+    },
+    {
+     "name": "Evening",
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "start": 17,
+     "end": 24
+    }
+   ],
+   "ranks": [
+    {
+     "title": "Usher",
+     "wage": 11.25,
+     "min_hours": 0,
+     "min_performance": 0.0
+    },
+    {
+     "title": "Projectionist",
+     "wage": 14.5,
+     "min_hours": 24,
+     "min_performance": 0.65
+    },
+    {
+     "title": "Theater Manager",
+     "wage": 19.0,
+     "min_hours": 100,
+     "min_performance": 0.75
+    }
+   ],
+   "kind": "pc",
+   "check": "basic"
+  },
+  {
+   "id": "tattoo_artist",
+   "name": "Tattoo Studio",
+   "building": "HAM_N_017",
+   "place": "Pitch Soles Tattoo",
+   "minigame": "tattoo_trace",
+   "adult": true,
+   "tips": 0.9,
+   "blurb": "Guide the needle along the stencil line. Stray from it and the client notices.",
+   "shifts": [
+    {
+     "name": "Studio hours",
+     "days": [
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "start": 12,
+     "end": 22
+    }
+   ],
+   "ranks": [
+    {
+     "title": "Shop Apprentice",
+     "wage": 10.0,
+     "min_hours": 0,
+     "min_performance": 0.0
+    },
+    {
+     "title": "Tattoo Artist",
+     "wage": 22.0,
+     "min_hours": 40,
+     "min_performance": 0.7,
+     "skills": {
+      "creativity": 3
+     }
+    },
+    {
+     "title": "Lead Artist",
+     "wage": 32.0,
+     "min_hours": 150,
+     "min_performance": 0.8,
+     "skills": {
+      "creativity": 6
+     }
+    }
+   ],
+   "kind": "physical",
+   "check": "none"
+  },
+  {
+   "id": "barber",
+   "name": "Barber",
+   "building": "HAM_N_055",
+   "place": "Sweet Gum Barber Shop",
+   "minigame": "barber_clip",
+   "tips": 0.8,
+   "blurb": "Run the clippers over the sides and back for a clean fade, and keep them off the top.",
+   "shifts": [
+    {
+     "name": "Shop hours",
+     "days": [
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "start": 9,
+     "end": 18
+    }
+   ],
+   "ranks": [
+    {
+     "title": "Shampoo Assistant",
+     "wage": 11.0,
+     "min_hours": 0,
+     "min_performance": 0.0
+    },
+    {
+     "title": "Barber",
+     "wage": 17.0,
+     "min_hours": 30,
+     "min_performance": 0.65
+    },
+    {
+     "title": "Master Barber",
+     "wage": 24.0,
+     "min_hours": 120,
+     "min_performance": 0.8
+    }
+   ],
+   "kind": "physical",
+   "check": "basic"
+  },
+  {
+   "id": "inn_front_desk",
+   "name": "Front Desk",
+   "building": "LM12_PAMLICO_INN",
+   "place": "Pamlico Inn",
+   "minigame": "inn_booking",
+   "blurb": "Book each guest into a vacant room that fits their request and type the stay total.",
+   "shifts": [
+    {
+     "name": "Day",
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "start": 7,
+     "end": 15
+    },
+    {
+     "name": "Evening",
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "start": 15,
+     "end": 23
+    },
+    {
+     "name": "Night audit",
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "start": 23,
+     "end": 31
+    }
+   ],
+   "ranks": [
+    {
+     "title": "Front Desk Agent",
+     "wage": 14.0,
+     "min_hours": 0,
+     "min_performance": 0.0
+    },
+    {
+     "title": "Night Auditor",
+     "wage": 16.5,
+     "min_hours": 24,
+     "min_performance": 0.65,
+     "education_any": [
+      "cert_bookkeeping"
+     ]
+    },
+    {
+     "title": "Front Office Manager",
+     "wage": 23.0,
+     "min_hours": 100,
+     "min_performance": 0.75,
+     "education_any": [
+      "ba_business",
+      "mba"
+     ]
+    }
+   ],
+   "kind": "pc",
+   "check": "standard"
+  },
+  {
+   "id": "university_grader",
+   "name": "ONSU Teaching",
+   "building": "LM05_FOUNDERS_HALL",
+   "place": "Founders' Hall",
+   "minigame": "gradebook",
+   "blurb": "Compare each student's answers to the key and type the score and letter grade.",
+   "shifts": [
+    {
+     "name": "Office hours",
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "start": 9,
+     "end": 15
+    },
+    {
+     "name": "Evening",
+     "days": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "start": 15,
+     "end": 21
+    }
+   ],
+   "ranks": [
+    {
+     "title": "Grader",
+     "wage": 13.0,
+     "min_hours": 0,
+     "min_performance": 0.0
+    },
+    {
+     "title": "Teaching Assistant",
+     "wage": 18.0,
+     "min_hours": 20,
+     "min_performance": 0.7,
+     "education_tags": [
+      "degree:bachelor"
+     ]
+    },
+    {
+     "title": "Lecturer",
+     "wage": 32.0,
+     "min_hours": 100,
+     "min_performance": 0.8,
+     "education_tags": [
+      "degree:master"
+     ]
+    }
+   ],
+   "kind": "pc",
+   "check": "trusted"
+  },
+  {
+   "id": "delivery_rider",
+   "name": "Delivery",
+   "building": "HAM_N_009",
+   "place": "Late Night Lo Mein",
+   "minigame": "delivery_ride",
+   "tips": 1.0,
+   "blurb": "Ride the scooter through the blocks and hit every drop-off before the food gets cold.",
+   "shifts": [
+    {
+     "name": "Dinner",
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "start": 17,
+     "end": 23
+    },
+    {
+     "name": "Late night",
+     "days": [
+      3,
+      4,
+      5
+     ],
+     "start": 21,
+     "end": 27
+    }
+   ],
+   "ranks": [
+    {
+     "title": "Delivery Rider",
+     "wage": 12.0,
+     "min_hours": 0,
+     "min_performance": 0.0
+    },
+    {
+     "title": "Dispatcher",
+     "wage": 15.5,
+     "min_hours": 30,
+     "min_performance": 0.65
+    },
+    {
+     "title": "Shift Manager",
+     "wage": 18.5,
+     "min_hours": 100,
+     "min_performance": 0.75
+    }
+   ],
+   "kind": "physical",
+   "check": "basic"
+  },
+  {
+   "id": "it_support",
+   "name": "ONSU IT",
+   "building": "LM04_DAVIES_STACKS",
+   "place": "Davies Stacks",
+   "minigame": "helpdesk_cli",
+   "blurb": "Read each ticket and type the right command from the runbook into the admin console.",
+   "shifts": [
+    {
+     "name": "Day",
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "start": 8,
+     "end": 16
+    },
+    {
+     "name": "Swing",
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "start": 12,
+     "end": 20
+    }
+   ],
+   "ranks": [
+    {
+     "title": "Help Desk Tech",
+     "wage": 17.0,
+     "min_hours": 0,
+     "min_performance": 0.0,
+     "education_any": [
+      "cert_it_support"
+     ]
+    },
+    {
+     "title": "Systems Administrator",
+     "wage": 28.0,
+     "min_hours": 60,
+     "min_performance": 0.7,
+     "education_any": [
+      "bs_computer_science"
+     ]
+    },
+    {
+     "title": "IT Manager",
+     "wage": 40.0,
+     "min_hours": 200,
+     "min_performance": 0.8,
+     "education_any": [
+      "ms_computer_science"
+     ]
+    }
+   ],
+   "kind": "pc",
+   "check": "standard"
+  }
+ ]
+}
