@@ -34,7 +34,22 @@
    "base": 117,
    "dating": 52,
    "marriage": 200
+  },
+  "laid_back_drifter": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "party_animal": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "nerdy_gamer": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
   }
  },
- "total_lines": 2584
+ "total_lines": 3691
 }

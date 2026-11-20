@@ -1,0 +1,429 @@
+// Laid-back Drifter: mellow, slow, "dude", "no worries", hammocks, guitar, avoids stress.
+== base
+# greet stage=stranger
+Heyyy. I'm {npc}. No rush, just saying hi.
+Oh, hey. Didn't see you there. I was watching a cloud.
+Sup. You seem chill. I'm {npc}.
+Hey, friend. Want half a granola bar? It's a little squished.
+Yo. New around here? Don't worry, it's a good town to wander.
+Hey there. Name's {npc}. I'm just kinda... here.
+# greet stage=acquaintance
+{player}, my dude. What's good?
+Oh hey, {player}. You still owe me nothing. That's how I like it.
+Heyyy, {player}. Perfect timing, I was doing absolutely nothing.
+{player}! Want to sit? The bench is warm from the sun.
+Hey, it's {player}. Cool. Cool cool cool.
+# greet stage=friend+
+{player}! My favorite human to do nothing with.
+Ayy, {player}. I strung up the hammock on the quad. There's room for two.
+Hey, buddy. I wrote a song about you. It's three chords. All of them about you.
+There's my person. Come chill. No agenda.
+{player}! I saved you a spot in the shade.
+Duuude. You're here. Now the day's complete.
+# greet time=morning
+Oh, is it morning? Wow. Okay. Hey.
+Morning, man. I'm up early. Didn't mean to be. The birds were loud.
+Hey. Breakfast burrito? I got two by accident.
+# greet time=evening
+Evening, man. Sunset's doing its thing. Let's watch.
+Hey. The air gets so soft this time of day.
+Yo. Perfect frisbee light right now.
+# greet time=night
+Late night vibes. You feel it?
+Hey. Can't sleep either? Want to just lie on the grass and look up?
+Night, dude. The crickets are jamming.
+# farewell
+Later, dude. Take it easy.
+Peace. No worries.
+Catch you on the flip side.
+Alright, be cool. Literally, it's hot out.
+See ya. Or not. It's all good.
+Bye, friend. Go with the flow.
+# farewell stage=friend+
+Later, {player}. You're the best kind of company. The quiet kind.
+See ya, buddy. Hammock's always open.
+Love you, man. In a totally chill way.
+# smalltalk
+I took a nap under the oaks on the quad. Woke up with a leaf on my face. Perfect.
+The guy at Cosmic Carnitas gave me free chips. Universe provides.
+You ever just lie on the grass and let the world spin?
+I learned a new song on guitar. Well, half a song.
+Somebody left a perfectly good couch on Rosemary. I'm considering it.
+I tried to get up early. My body said no.
+Frisbee golf tournament in Carrburg next week. I'm going. Probably.
+I found a quarter on the sidewalk. Today's a good day.
+Rain's coming. Good napping weather.
+The ravine trail has this one rock that's perfect for sitting. I go there to think. Or not think.
+Did you ever notice clouds look like animals? That one's a turtle. Chill turtle.
+Smoothie place is open late now. Big win.
+# smalltalk stage=friend+
+You know, you're one of the only people who doesn't tell me to get my life together.
+I'm not as lazy as people think. I just don't see the point in rushing.
+I think I'm happy, man. Like, actually happy. You're part of that.
+If you ever stress out, just come find me. I'm a professional at not stressing.
+I'd share my last snack with you. And I don't say that lightly.
+You're like a hammock, man. Comfortable to be around.
+# smalltalk weekend=true
+Weekend, dude. Not that my weekdays are much different.
+Saturday's for lake days. Want to come?
+No plans this weekend. Best plans.
+# about_self
+I used to be stressed in high school. Then I just... stopped. Worked out okay.
+I work part-time at the record store. Mostly I just vibe.
+I play guitar on the steps of the student union. Sometimes people give me money.
+I don't really have a five-year plan. I have a five-minute plan. Nap.
+I grew up near the beach. That kind of explains everything.
+My parents want me to be a lawyer. I want to be a guy with a hammock.
+I've hitchhiked across three states. Met some interesting people. Mostly nice.
+# opinion_place
+{place}? Chill spot. Good vibes.
+{place} is cool. Not too loud, not too quiet.
+I like {place}. You can sit there forever and nobody bugs you.
+{place}? Haven't been. Is there a good couch?
+{place} is alright. A little hectic. Need more plants.
+# compliment_reply
+Aw, thanks, man. That's nice.
+Cool. Thanks. You too, though.
+Whoa. That's really sweet. I'm gonna hold onto that.
+Thanks, dude. Good vibes received.
+Heh. Thanks. Appreciate it.
+# insult_reply
+Okay, man. Whatever you say.
+That's a lot of negative energy. I'll pass on it.
+Chill, dude. No need for that.
+I'm not gonna let that ruin my day.
+Wow. Okay. You need a nap, buddy.
+# gift_reply
+Whoa, for me? That's so rad.
+Dude. You didn't have to. Thanks.
+This is awesome. You're awesome.
+Nice. I'm totally gonna use this. Eventually.
+Thanks, man. This made my day.
+# joke
+What do you call a lazy kangaroo? A pouch potato.
+I'm not lazy. I'm on energy-saving mode.
+Why did the hammock break up with the tree? It needed some space.
+I was going to do something today, but I didn't.
+# ask_favor
+Can you wake me up in like an hour? I'm gonna nap here.
+Could you grab me a smoothie? I'll pay you back. Someday.
+Hey, could you help me carry my couch? It's on Rosemary. Long story.
+# favor_reply
+Thanks, man. You're the best.
+Dude, that was so helpful. I owe you.
+Rad. Thanks. Seriously.
+# work_talk
+Work was chill. I sold three records and took a long lunch.
+My boss says I need more hustle. I said I'd think about it.
+Work's fine. It's just a way to fund my snack habit.
+I got a job at the frozen yogurt place. Free samples, man.
+# school_talk
+I'm taking a pottery class. It's very zen.
+I missed class today. I'll get the notes. Or not.
+I'm technically still enrolled. Technically.
+# hostile stage=dislike-
+I don't want any drama, man.
+You're killing my vibe.
+I'm just gonna walk away. Peace.
+You've got some bad energy, {player}.
+Nah. Not today.
+I'm too chill to fight with you. Bye.
+# flirt_reply romance=none
+Ha, thanks, man. But let's just keep it friendly.
+Whoa. That's sweet. I'm not really looking for anything right now.
+I appreciate it, dude. But I'm good.
+# flirt_reply romance=crush
+Whoa. Okay. That's... really nice. I'm into it.
+You're making me kinda nervous. And I don't get nervous.
+Heh. You're cute. Like, really cute.
+I've been hoping you'd say something like that, man.
+# ask_out_yes
+Yeah, totally. Let's do something chill.
+A date? Rad. I know a great spot by the lake.
+# ask_out_no
+Aw, man. I like you, but not like that. Still friends?
+I'm gonna pass, dude. But I'm flattered.
+
+== dating
+# date_greet
+Hey, you. I brought a blanket and some snacks. Picnic time.
+There you are. You look really good.
+Hi. I'm so happy to see you, man.
+Hey. I put on a clean shirt. For you.
+You made it. Let's just hang out. No pressure.
+Hey, cutie. Wanna lie on the grass and look at clouds?
+# flirt
+You're my favorite chill spot.
+I could just stare at you all day. Seriously.
+You make me want to put effort into things. Weird, right?
+You're like a sunset, man. Gets me every time.
+I'd get up early for you. That's huge for me.
+You smell like summer.
+Being around you is like a perfect nap. Total relaxation.
+# date_talk
+Let's go to the lake and skip rocks.
+I wrote you a song. It's called "You." It's really short.
+Tell me something you love. Anything.
+I like how we don't have to talk all the time.
+Want to share this milkshake? Two straws, man.
+You're the first person I've wanted to make plans with.
+I don't usually do dates. But this doesn't feel like a date. It feels right.
+Let's go to the record store. I'll play you my favorite album.
+Want to go stargazing on Carillon Hill?
+You're so easy to be with. Like, effortless.
+I think you might be the best thing that's happened to me this year.
+Let's just walk. No destination.
+# compliment
+You've got a great laugh, man.
+You're so chill. I love that.
+You're really pretty. Like, sunset pretty.
+You're kind to everyone. That's rad.
+You make everything feel easy.
+# kiss_reply
+Whoa. That was rad.
+Mmm. Okay, that was perfect.
+Dude. I'm gonna be thinking about that all week.
+Wow. Let's do that again. Slowly.
+# miss_you
+Missed you, man. The hammock felt empty.
+I kept thinking about you all day. In a chill way.
+I wrote another song about you. It's even shorter.
+Couldn't nap without you. Weird.
+# jealous
+Who was that? Not that I care. I care a little.
+I'm not jealous. I just... wanna be the one you hang with.
+It's cool. I trust you. Just checking in.
+# date_end
+That was chill. Really chill. Thanks.
+Goodnight, cutie. Sleep well.
+Let's do this again. Whenever. No rush.
+I had a really good time, man.
+Later, you. I'll be thinking about you.
+# lovers_quarrel
+I don't like fighting, man. Let's just talk.
+I'm upset. That doesn't happen often. Let's fix it.
+Can we take a breath? I don't wanna lose this.
+I need a minute, dude. Then let's figure it out.
+# proposal_yes
+Whoa. Yeah. Yes. Let's do it, man. Forever.
+Marry you? Totally. That's the chillest decision I've ever made.
+
+== marriage
+# home_greet time=morning
+Mornin', love. Coffee's on. Took me twenty minutes, but it's on.
+Hey, you're up. Wanna stay in bed a little longer?
+Morning, babe. I made pancakes. They're kinda burnt. Still good.
+Mornin'. The sun's coming in so nice through the window.
+Hey. I just woke up too. We're on the same schedule. Nice.
+Good morning, love. Let's take it slow today.
+Mornin'. I fed the cat. Well, I opened the bag. She did the rest.
+Hey, sunshine. No rush. We've got all day.
+Morning. I'm gonna play guitar on the porch. Join me?
+Hey, babe. You look so peaceful when you sleep.
+Mornin'. Breakfast burritos? I got stuff for burritos.
+Good morning. I didn't set an alarm. Living the dream.
+# home_greet time=evening
+Hey, you're home. Kick your shoes off, love.
+Welcome back, babe. I set up the hammock in the backyard.
+Hey. Long day? Come chill on the couch.
+You're home. Cool. I made a playlist for tonight.
+Hey, love. I ordered pizza. Couldn't decide what to cook.
+Welcome home. Let's just relax. No plans.
+Hey, babe. I've been waiting to see you all day.
+You're back. Wanna watch the sunset on the porch?
+Hey. Dinner's whenever. No pressure.
+Welcome home, love. I lit some candles. Very zen.
+# home_greet time=night
+Hey, late night. Come lie down with me.
+You're home. I was just about to fall asleep on the couch.
+It's late, babe. Come to bed. No stress.
+Hey. Long day, huh? Let's just cuddle.
+Late shift? I saved you some pizza.
+You're back. The stars are out. Wanna look?
+Hey, love. I kept the porch light on for you.
+There you are. Come chill. You've earned it.
+# goodbye_work
+Have a good day, love. Don't stress too much.
+Bye, babe. Go with the flow.
+Take it easy out there. I'll be here.
+See ya later, love. Have a chill day.
+Bye. Remember, it's just work. Not life.
+Have fun out there. Or at least, try not to stress.
+Later, babe. I'll be in the hammock if you need me.
+Bye, love. Text me if you need a pep talk. A chill one.
+# work_return
+How was work, babe? Stressful? Let it go.
+You look tired. Come lie down.
+Tell me about it. Or don't. Either's fine.
+Was it a long day? I'm sorry, love.
+Did your boss bug you? Forget about him. You're home.
+You're home now. Nothing else matters.
+Let's not talk about work. Let's talk about tacos.
+Proud of you for going in, babe. That's half the battle.
+# affection
+I love you, man. Like, so much.
+You're my favorite person to do nothing with.
+Being with you is the most relaxing thing in the world.
+You make my life feel so easy, love.
+I'm so lucky, babe. Really.
+You're my sunshine. My hammock. My everything.
+I love just being next to you.
+You make me want to be a better person. A slightly more productive person.
+I'd do anything for you. Even wake up early.
+You're my home, love.
+I love how we can just chill together.
+You're the best thing that ever happened to me, man.
+I love you more than naps. And I really love naps.
+I don't need anything else. Just you.
+You make every day feel like a Sunday.
+I love you. Like, a lot a lot.
+You're my person. Forever.
+I'm so happy, babe. Like, actually happy.
+# home_talk
+I fixed the hammock. It doesn't sag anymore. Much.
+I've been playing guitar on the porch. The neighbors clapped.
+I planted some tomatoes. Or weeds. We'll see.
+The cat found a sunny spot on the rug. She's been there all day.
+I think we should get a dog. A chill dog.
+I found a perfect couch on the curb. Want me to bring it in?
+I made a fire pit in the backyard. Well, a hole with some rocks.
+I've been thinking about building a treehouse. For adults.
+The lake was perfect today. Totally still.
+I tried meditation. Fell asleep. Still counts.
+The neighbors had a barbecue. They invited us. I said maybe.
+I painted the porch. It's kinda uneven. Has character.
+I've been learning to make kombucha. It's... interesting.
+The rain on the roof last night was so nice.
+I found a new trail by the ravine. Super peaceful.
+I'm thinking of starting a little garden. Herbs and stuff.
+I've been sleeping so well lately. Must be you.
+I think the house is perfect, man. Just like this. Don't change a thing.
+I got a new record. Wanna listen tonight?
+I made a little reading nook. Mostly for naps.
+The sunset was amazing tonight. I took a picture for you.
+I think we should just stay home this weekend.
+The neighbor's kid asked me to teach him guitar.
+I found a bird's nest in the gutter. Left it there.
+I think I'm finally getting good at grilling.
+We should get a porch swing. For more relaxing.
+# chores
+I did the dishes. Took a while. I took breaks.
+I swept the porch. Then sat on it.
+Could you help me fold laundry? It's more fun with you.
+I took out the trash. Big win.
+I mowed half the lawn. I'll do the other half tomorrow.
+I vacuumed the living room. The cat was not happy.
+I cleaned the kitchen. Mostly.
+Let's just do the chores together. Less work.
+I watered the plants. They look happy.
+I tidied up a bit. Don't look in the closet.
+I washed the car. Then it rained. Classic.
+I made the bed. Kinda.
+# money
+Money's kinda tight, but we'll figure it out.
+I sold some records. Got a little cash.
+We don't need much, babe. Just each other.
+I found a twenty in my old jeans. Score.
+Let's not stress about money. It'll work out.
+I busked on the quad today. Made thirty bucks.
+We should save a little. Maybe. For a trip.
+I'm not really a money person. But I'm trying.
+I picked up some extra shifts. For us.
+Rent's paid. We're good. That's all that matters.
+# meal
+Dinner's ready. It's tacos. Again.
+I made breakfast burritos. Big ones.
+Let's grill out tonight. I'll handle the burgers.
+I made a smoothie. Banana and peanut butter.
+Let's order Chinese. I don't feel like cooking.
+I made pasta. It's kinda simple. But it's good.
+Let's have a picnic in the backyard.
+I made grilled cheese. Your favorite.
+Dinner's whenever you're hungry, love.
+I made a big pot of chili. It'll last all week.
+# argue
+I don't wanna fight, babe. But this is bugging me.
+You're stressing me out, love. And that's hard to do.
+I need you to slow down. We don't have to do everything right now.
+You never relax. It's kinda worrying.
+I'm trying, okay? I'm just not a planner.
+I know I'm not super ambitious. But I'm here.
+Can we not yell? It's not my thing.
+I feel like you want me to be someone else.
+I forgot. I'm sorry. I'm not perfect.
+You're right. I should have done the dishes. I'm sorry.
+I just need some space to think. I'll be in the hammock.
+Let's not fight about this. It's not worth it.
+# makeup
+I'm sorry, babe. Let's just chill and talk.
+I love you. That's what matters.
+Come here. Let's hug it out.
+I don't like fighting with you. It's the worst.
+Let's start over. No stress.
+I'm sorry I was being lazy. I'll do better.
+Let's go for a walk and clear our heads.
+We're good, love. We're always good.
+# support
+Hey, it's okay. Just breathe.
+Come lie down with me. Let's just be.
+You don't have to fix everything today.
+I'm here, love. No matter what.
+It'll all work out. It always does.
+Let's go to the lake. Nature helps.
+You're doing great. Even when it doesn't feel like it.
+Let me make you some tea. Chamomile.
+Don't stress, babe. I've got you.
+Want me to play you a song? Might help.
+# plans
+Let's go to the lake this weekend. Just us.
+How about a road trip? No destination.
+Let's go camping. I'll bring the hammock.
+Let's go to the beach. I miss the ocean.
+Let's spend the whole weekend in bed. Movies and snacks.
+How about a frisbee golf tournament? Low stakes.
+Let's go to the farmers market. Get some fresh stuff.
+Let's go stargazing on Carillon Hill.
+How about a picnic on the quad? Like old times.
+Let's just see where the weekend takes us.
+# memories
+Remember our first date? We lay on the grass for hours.
+Remember when we got caught in the rain and just laughed?
+I still have the guitar pick you gave me.
+Remember our wedding? So chill. Barefoot in the park.
+Remember when we drove to the beach on a whim?
+Remember our first apartment? The couch was from the curb.
+I remember the first time you laughed at my joke. I was hooked.
+Remember when we stayed up all night talking about nothing?
+Remember the camping trip where the tent collapsed?
+Remember when you taught me to make coffee? I still do it wrong.
+# anniversary
+Happy anniversary, love. Best years of my life.
+Another year with you. So chill. So perfect.
+I got you something. It's a mixtape. Old school.
+Happy anniversary, babe. Let's celebrate by doing nothing.
+I love you more every year. That's the vibe.
+Here's to us, love. Many more chill years.
+# tease
+You're the only person who can make me get up early.
+You alphabetize the records. That's wild, man.
+You always know where the remote is. It's a superpower.
+You stress about things that haven't happened yet.
+You make a list for everything. Even for lists.
+You can't sit still for five minutes. I've timed it.
+You put pineapple on pizza. I love you anyway.
+You snore a little. It's cute.
+You always say we should go to bed early. We never do.
+You hum when you cook. Off-key.
+You're way too organized for me. And I love it.
+You get so excited about grocery shopping. It's adorable.
+# bedtime
+Goodnight, love. Sleep good.
+Come to bed, babe. Let's get cozy.
+Night, love. Tomorrow we'll take it easy.
+Let's just fall asleep listening to the rain.
+Goodnight. I love you, man.
+Sleep tight, babe. No alarms tomorrow.
+Night, {player}. You're the best.
+Come cuddle. I'm warm.
+Goodnight. Dream about the beach.
+Lights out, love. Peace.

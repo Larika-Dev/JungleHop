@@ -3393,7 +3393,7 @@
   {
    "tier": "marriage",
    "context": "makeup",
-   "text": "Thank you for being patient with me. I know I'm a lot.",
+   "text": "Thank you for sitting through my spiral. I know that wasn't fun.",
    "cond": {
     "romance": [
      "married"

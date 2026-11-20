@@ -1,0 +1,429 @@
+// Nerdy Gamer: enthusiastic, gamer slang (GG, nerf, buff, side quest, respawn), tabletop, lore, a bit awkward.
+== base
+# greet stage=stranger
+Oh, hey! New player has entered the game. I'm {npc}.
+Hi! Sorry, I was mentally min-maxing my character build. I'm {npc}.
+Greetings, traveler! Heh. Sorry. I'm {npc}.
+Oh! A wild human appeared! Hi! I'm {npc}.
+Hey. Do you play anything? Video games, board games, the ukulele? I'm {npc}.
+Hi! You have strong main-character energy. I'm {npc}, a humble NPC.
+# greet stage=acquaintance
+{player}! You've unlocked recurring-character status.
+Hey, {player}! Did you ever try that game I mentioned?
+Oh, it's {player}! My daily login bonus.
+{player}! Perfect, I need a second opinion on a dungeon map.
+Hey, {player}. Friendship meter is filling up nicely.
+# greet stage=friend+
+{player}! Party member acquired! Let's go adventuring.
+My co-op partner! I saved you a controller.
+{player}! I finally beat the boss we were stuck on! I waited to tell you first.
+Hey, best friend! Ready for game night? I brought the good dice.
+{player}! You're my player two. In life. That came out weird. You know what I mean.
+There's my raid buddy! What's the quest today?
+# greet time=morning
+Morning! I stayed up until three. Worth it. Mostly.
+Hey. It's early. My brain's still loading.
+Good morning! Daily quests reset. Let's grind.
+# greet time=evening
+Evening! Prime gaming hours are approaching.
+Hey! Board game café has a new expansion. Just saying.
+Good evening! The sunset looks like a really good skybox tonight.
+# greet time=night
+Hey, night owl! This is when the servers are least laggy.
+Late night? I'm in the middle of a speedrun attempt.
+Night time is the best time. No distractions. Just pixels.
+# farewell
+Later! GG!
+Bye! Respawn soon!
+See ya! Logging off!
+Peace! May your rolls be natural twenties!
+Bye! Save your progress!
+Later! Don't forget to hydrate. HP matters.
+# farewell stage=friend+
+Bye, {player}! Game night Thursday, don't forget!
+Later, player two! I'll leave the lobby open.
+See you, buddy! I'll send you the patch notes!
+# smalltalk
+Did you know the bell tower has a hidden room? Totally a secret level.
+The new update nerfed my favorite character. I'm in mourning.
+Hamilton Records has a retro game shelf now. My wallet is crying.
+I painted forty miniatures this week. My hand is cramping.
+The library has VR now. I spent two hours fighting robots.
+I've been running a campaign for my friends. They keep trying to seduce the dragon.
+Do you think the Billram mascot would be a tank class or a healer?
+I made a spreadsheet of all the ramen places in town. Ranked.
+Someone at the café was playing on max brightness. Respect.
+My cat walked across my keyboard and sent a message to my whole guild.
+I built my own computer. It glows. It's beautiful.
+The tabletop store in Carrburg has a free demo night on Wednesdays.
+# smalltalk stage=friend+
+You're the only person who doesn't make fun of my hobbies. Thanks.
+I made you a character in my campaign. They're a hero. Obviously.
+I was kind of lonely before we met. Now I have a real-life party.
+If this were a game, you'd be the companion everyone romances. I mean, picks. Picks first.
+I'd give you my rarest card. Well, my second rarest.
+I think you'd be a great dungeon master. You're good with people.
+# smalltalk weekend=true
+Weekend! Forty-eight hours of uninterrupted gaming. Minus sleep. Some sleep.
+Saturday! The board game café is doing a tournament!
+It's the weekend. My plan is to finish a game I started three years ago.
+# about_self
+I've been gaming since I was four. My first console was a hand-me-down.
+I want to make my own indie game someday. About a frog detective.
+I'm a computer science major. Shocking, I know.
+I get really into lore. Like, read-the-wiki-for-six-hours into lore.
+People think gamers are antisocial. I'm just social on a headset.
+I have a collection of three hundred dice. I know what each one has done.
+I'm not great at sports, but I'm a god at strategy games.
+# opinion_place
+{place}? It's like a hub area. Lots of NPCs. No offense.
+I like {place}. Good spawn point.
+{place} would make a great level. Lots of verticality.
+{place} has decent Wi-Fi. Five stars.
+{place}? Haven't explored it fully. Probably some secrets.
+# compliment_reply
+Oh! Thanks! Charisma check passed!
+Really? Wow. My confidence stat just went up.
+Thanks! That's a critical hit to my heart.
+Aw, thanks. I'm going to save that to my memory card.
+Heh. Thanks, {player}. You're pretty great too.
+# insult_reply
+Wow. That's a debuff.
+Okay, that did emotional damage.
+I've been insulted by twelve-year-olds online. You'll have to try harder.
+Rude. Reported. Blocked.
+Toxic behavior detected. Leaving lobby.
+# gift_reply
+Whoa! Rare loot!
+Oh my gosh, this is amazing! Legendary drop!
+For me? You've gained plus fifty friendship points!
+This is so cool! I'm putting it on my shelf of honor!
+You remembered! You actually remembered! Thank you!
+# joke
+Why don't gamers ever get lost? They always follow the quest marker.
+I'd tell you a UDP joke, but you might not get it.
+My life is like a video game. I keep dying and respawning at the worst checkpoints.
+There are ten types of people. Those who understand binary and those who don't.
+# ask_favor
+Can you help me carry my gaming setup to the dorm? It's heavy. Like, really heavy.
+Would you join our tabletop group? We need a fourth player.
+Could you play-test my game? It's buggy. Very buggy.
+# favor_reply
+You're a legend! Quest complete!
+Thanks! Achievement unlocked: Best Friend!
+You've earned a gold star. And my eternal gratitude.
+# work_talk
+I work IT at the hospital. I mostly tell people to restart their computers.
+I fixed the network at work today. They didn't even notice. Story of my life.
+I work at the game store. Employee discount is dangerous.
+My boss caught me playing on break. It was my break!
+# school_talk
+I aced my algorithms exam! Big brain energy!
+My group project partner hasn't responded in a week. Classic.
+I'm taking a game design class. Best class ever.
+# hostile stage=dislike-
+I'm muting you.
+You're the final boss of being annoying.
+I don't want to talk to you. Logging off.
+You're like a bad patch. Nobody wants you.
+Go away. I'm busy. And by busy I mean avoiding you.
+I'd rather fight a level-one slime for eternity.
+# flirt_reply romance=none
+Oh! Um. Error. Does not compute. Let's stay friends?
+Ha! That's nice, but I'm not looking for a player two right now.
+Uh. Wow. I'm going to need a minute to process. And the answer is friends.
+# flirt_reply romance=crush
+Wait. Was that flirting? Critical hit!
+Oh no. My face is buffering. I like you too.
+You just broke my brain. In a good way.
+I've been trying to figure out the dialogue options for this moment for weeks.
+# ask_out_yes
+Yes! I mean, yes. That's a quest I'll accept.
+A date? With me? Yes! Can we go to the arcade?
+# ask_out_no
+Sorry, I don't think I feel that way. But you're still in my party.
+I'm flattered. Really. But I think we're better as co-op partners.
+
+== dating
+# date_greet
+Hey! You're here! Date mode activated!
+Hi! I wore my least wrinkled shirt. For you.
+You look amazing. Like a legendary skin.
+Hey, player two. Ready for our adventure?
+I've been looking forward to this all week. I even turned off my notifications.
+Hi! I planned this date like a raid. There's a backup strategy.
+# flirt
+You're my favorite side quest. Main quest, actually.
+If you were a game, I'd play you forever. That sounded bad. You know what I mean.
+You're the rarest drop in the game.
+I'd give you my last health potion.
+You make my heart lag. In the best way.
+You've got max stats in everything.
+I'd rather spend time with you than finish the game. That's huge.
+# date_talk
+Want to go to the arcade? I'll win you a prize.
+Tell me your favorite game. This is very important.
+I never thought I'd find someone who gets me. Then you showed up.
+Let's play a co-op game together! Teamwork!
+I made us a playlist of video game music. Is that weird? It's romantic.
+You're the first person I've told about my frog detective game.
+Want to watch a movie? Something with dragons.
+I'm not great at dates. But I'm great at this one.
+I like that you're patient with me when I go on about lore.
+Let's build a blanket fort and play board games.
+You're my favorite person to explore with.
+I think I'm falling for you. Like, fall damage.
+# compliment
+You're really smart. Like, puzzle-solving smart.
+You're so kind. Paladin-level kind.
+You look really nice. Like, really really nice.
+You make me feel normal. That's hard.
+You have the best laugh. It's my favorite sound effect.
+# kiss_reply
+Whoa. Achievement unlocked.
+That was... wow. Save point. Saving that.
+I think my heart just leveled up.
+Can we replay that cutscene?
+# miss_you
+I missed you so much. Gaming alone is boring now.
+I kept checking to see if you were online.
+I saved you a spot in our guild. Obviously.
+The day felt like a loading screen without you.
+# jealous
+Who was that? Are they in your party now?
+I'm not jealous. Just... wondering if I'm still your player two.
+I trust you. I just get insecure. Gamer brain.
+# date_end
+That was the best date ever. GG.
+Goodnight! Save your progress!
+Same time next week? I'll prepare a better strategy.
+I had so much fun. Like, real fun.
+Goodnight, {player}. Respawn tomorrow?
+# lovers_quarrel
+Hey, I don't want this to be a boss fight. Let's talk.
+You hurt my feelings. That's real damage.
+I need to pause for a minute. Then let's figure this out.
+I don't want to lose you. You're my player two.
+# proposal_yes
+YES! Achievement unlocked: Forever co-op partner!
+Of course I'll marry you! This is the best ending!
+
+== marriage
+# home_greet time=morning
+Good morning, player two! Coffee's ready.
+Morning, love! I made breakfast. Eggs. Only slightly burned.
+Hey, you're up! I've been playing for an hour. Quietly.
+Good morning! Daily login bonus: a kiss.
+Morning! I fixed the Wi-Fi. You're welcome.
+Hey, sleepyhead! The sun's rendering beautifully today.
+Good morning! Ready for today's quest?
+Morning, love! I made you a breakfast sandwich. Extra cheese buff.
+Hey! I already did my daily quests. Now I'm all yours.
+Good morning! I dreamed we were in a fantasy game together.
+Morning! Let's play a quick round before work?
+Good morning, love! I love you more than speedrunning.
+# home_greet time=evening
+Welcome home, player two!
+Hey, love! Dinner's ready. And the controllers are charged.
+You're home! I set up a new game for us!
+Hey! I've been waiting for you to start the next level.
+Welcome back! I ordered pizza. Game night?
+Hey, love! I painted a new miniature. It's you. As a hero.
+You're home! Let's veg out and play something chill.
+Hey! The house feels complete now. Full party.
+Welcome home! I made a blanket fort.
+Hey, love! Want to watch a movie? Something with spaceships.
+# home_greet time=night
+Hey, you're home late. I kept the lobby open.
+It's late, love. Come to bed. Or one more game?
+Hey. I fell asleep with the controller in my hand again.
+You're back! I was just finishing a raid.
+Hey, love. Long day? Let's just cuddle and watch something.
+Late night? I saved your game for you.
+There you are. I was getting worried. And bored.
+Hey. It's late. Let's log off together.
+# goodbye_work
+Have a good day, love! GG!
+Bye! Go crush those quests!
+Have a great day! Don't forget to save your progress!
+Bye, love! I'll be here leveling up.
+Go get 'em! You're max level at your job!
+Have a good one! I'll miss you. Like, a lot.
+Bye! Text me if anything funny happens!
+See you later, player two!
+# work_return
+How was work? Any boss fights?
+Tell me about your day! Full patch notes.
+You look tired, love. Want to play something relaxing?
+Did your boss nerf your workload? Or buff it?
+How'd it go? Did you level up?
+Rough day? Let's play a game where we smash things.
+You're home now. Safe zone.
+I'm proud of you, love. Seriously.
+# affection
+I love you more than video games. And that's saying a lot.
+You're my favorite player two.
+Being married to you is like the best game ever.
+You're my legendary drop.
+I'm so lucky. Like, one-in-a-million lucky.
+You're my favorite co-op partner. Forever.
+I love you more than my rarest card.
+You're the main quest of my life.
+I'd give you my last life. Every time.
+You're my home base.
+I love how you get me. All the nerdy parts.
+You're the best thing that ever happened to me. Ever.
+I love you. Like, max affection.
+You make my life feel like the best ending.
+I'm so happy we're married. Like, so happy.
+You're my favorite person to explore life with.
+I'd pause any game for you. Even online.
+I love you more than a perfect speedrun.
+# home_talk
+I upgraded our computer! It runs everything now!
+I built a new shelf for my miniatures!
+I've been working on my frog detective game! It's almost playable!
+I found a rare game at the thrift store!
+I set up a game room in the basement! It's amazing!
+I've been painting miniatures of us! As adventurers!
+I organized all our board games by complexity!
+I joined a local tabletop group! They're really nice!
+I fixed the TV! It was a firmware issue!
+I've been reading the lore for a new game. It's so deep.
+I think we need a bigger TV. For gaming. And movies.
+I made a spreadsheet of all our games!
+The cat knocked over my dice tower. Again.
+I've been teaching the neighbor's kid how to code!
+I'm thinking about streaming! Just for fun!
+I bought a VR headset! We can fight robots together!
+I've been playing less lately. I'd rather hang out with you.
+I set up smart lights! They change color with the game!
+I've been thinking about building a gaming PC for you!
+I made a game night calendar! Every Thursday!
+I found my old childhood console! It still works!
+I think the house needs a name. Like a guild hall.
+I've been learning to cook! Recipes from video games!
+I hung up a poster of our favorite game!
+I fixed the Wi-Fi dead zone in the bedroom!
+I made us matching gamer tags!
+# chores
+I did the dishes! Speedrun!
+I vacuumed! Found three dice under the couch!
+Could you take out the trash? I'm in the middle of a boss.
+I cleaned the game room! Everything's organized!
+I folded laundry while watching a let's play!
+Let's do chores together! It's a co-op mission!
+I scrubbed the bathroom! Achievement unlocked!
+I mowed the lawn! It was like a farming sim!
+I organized the pantry! It's like inventory management!
+I cleaned the kitchen! Plus ten hygiene points!
+I made a chore chart with experience points!
+I dusted my figurine shelf! All two hundred of them!
+# money
+I spent too much on games this month. Sorry.
+I made a budget! There's a category for games.
+We should save up for a new console.
+I sold some old games! Made a hundred bucks!
+Money's tight. I'll stop buying games for a while.
+I got a bonus at work! New game? Or savings?
+I'm thinking about selling my rare cards. For us.
+We're doing okay! I checked our finances.
+Let's not buy any new games until next month.
+I found a game sale! Saved us forty bucks!
+# meal
+Dinner's ready! I made a recipe from a video game!
+I made ramen! The good kind!
+Let's order pizza! Game night fuel!
+I made breakfast! It's a power-up!
+I tried a new recipe! It's an adventure!
+Let's have a picnic in the game room!
+I made grilled cheese! Classic!
+Let's eat in front of the TV! Movie night!
+I made tacos! Taco Tuesday!
+I baked cookies! Shaped like dice!
+# argue
+You said you'd play with me! You didn't!
+I feel like you don't take my hobbies seriously.
+I'm not addicted! I just really like games!
+Can you please not interrupt me during a boss fight?
+You spent how much on what?
+I feel like we never do anything together anymore.
+I know I play a lot. I'm trying to cut back.
+You never want to try my games.
+I need you to listen to me. Not just nod.
+I'm going to log off and cool down.
+I feel like you think I'm childish.
+I just want us to have fun together.
+# makeup
+I'm sorry, love. Let's hit reset.
+I hate fighting with you. It's like losing a save file.
+Let's make up with a co-op game.
+I love you. I'm sorry. Restart?
+I'm sorry I got upset. I'll do better.
+You're my player two. Always.
+Let's take a break and talk.
+We're good. We're always good.
+# support
+Hey, it's okay. Let's just play something relaxing.
+You're stronger than any boss.
+I'm here, love. Always.
+Whatever it is, we'll beat it together.
+Let's take a break from everything. Just us.
+You don't have to win today. Just play.
+I've got your back. Like a tank.
+You're doing great. Even if it doesn't feel like it.
+Let me make you some tea and we'll watch something cozy.
+You're my hero, love. Always.
+# plans
+Let's go to the gaming convention this weekend!
+How about a board game marathon?
+Let's go to the arcade! I'll win you everything!
+Let's take a trip to that game museum!
+How about a weekend of co-op games?
+Let's go to the tabletop café on Saturday!
+Let's build a blanket fort and watch movies!
+How about a road trip? We can play games in the car!
+Let's go to the Founders' Day festival! There's a game tent!
+Let's go on a real-life quest. Hiking!
+# memories
+Remember our first date? The arcade!
+Remember when we beat that impossible boss together?
+I still have the prize I won you on our first date.
+Remember our wedding? We had a game-themed cake!
+Remember when we stayed up all night playing that game?
+Remember our first game night? You won. I was so proud.
+Remember when we met? You laughed at my gamer joke.
+Remember our honeymoon? We played board games every night!
+Remember when we built our first blanket fort?
+I remember the first time you called me player two.
+# anniversary
+Happy anniversary, player two!
+Another year! Level up!
+I got you a rare game! Happy anniversary!
+Happy anniversary, love! Best co-op partner ever!
+Here's to another year of adventures!
+I love you more every year. Like XP.
+# tease
+You button-mash. Every time.
+You always pick the healer. Every game.
+You can't beat me at chess. Never have.
+You read the ending of books first. That's cheating.
+You still can't do the combo.
+You always forget to save.
+You sing the game music in the shower.
+You named the cat after a video game character.
+You're secretly better at games than me. Don't tell anyone.
+You yell at the screen when you lose.
+You always say "one more game".
+You still think it's a cutscene when it's gameplay.
+# bedtime
+Goodnight, love. Logging off.
+Come to bed, player two.
+Goodnight! Save your progress!
+Let's sleep. Tomorrow's a new level.
+Goodnight, love. I'll see you at the respawn point.
+Sleep well, {player}. Recharge your HP.
+Goodnight. I love you. More than games.
+Lights out. Game over. Until tomorrow.
+Come cuddle. I'm warm.
+Goodnight. Dream of dragons.

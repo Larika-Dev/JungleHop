@@ -1,0 +1,4076 @@
+{
+ "id": "nerdy_gamer",
+ "lines": [
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh, hey! New player has entered the game. I'm {npc}.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "nerdy_gamer.base.001"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi! Sorry, I was mentally min-maxing my character build. I'm {npc}.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "nerdy_gamer.base.002"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Greetings, traveler! Heh. Sorry. I'm {npc}.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "nerdy_gamer.base.003"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh! A wild human appeared! Hi! I'm {npc}.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "nerdy_gamer.base.004"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey. Do you play anything? Video games, board games, the ukulele? I'm {npc}.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "nerdy_gamer.base.005"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi! You have strong main-character energy. I'm {npc}, a humble NPC.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "nerdy_gamer.base.006"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! You've unlocked recurring-character status.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "nerdy_gamer.base.007"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey, {player}! Did you ever try that game I mentioned?",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "nerdy_gamer.base.008"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh, it's {player}! My daily login bonus.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "nerdy_gamer.base.009"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! Perfect, I need a second opinion on a dungeon map.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "nerdy_gamer.base.010"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey, {player}. Friendship meter is filling up nicely.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "nerdy_gamer.base.011"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! Party member acquired! Let's go adventuring.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "nerdy_gamer.base.012"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "My co-op partner! I saved you a controller.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "nerdy_gamer.base.013"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! I finally beat the boss we were stuck on! I waited to tell you first.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "nerdy_gamer.base.014"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey, best friend! Ready for game night? I brought the good dice.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "nerdy_gamer.base.015"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! You're my player two. In life. That came out weird. You know what I mean.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "nerdy_gamer.base.016"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "There's my raid buddy! What's the quest today?",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "nerdy_gamer.base.017"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Morning! I stayed up until three. Worth it. Mostly.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "nerdy_gamer.base.018"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey. It's early. My brain's still loading.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "nerdy_gamer.base.019"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good morning! Daily quests reset. Let's grind.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "nerdy_gamer.base.020"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Evening! Prime gaming hours are approaching.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "nerdy_gamer.base.021"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey! Board game café has a new expansion. Just saying.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "nerdy_gamer.base.022"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good evening! The sunset looks like a really good skybox tonight.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "nerdy_gamer.base.023"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey, night owl! This is when the servers are least laggy.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "nerdy_gamer.base.024"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Late night? I'm in the middle of a speedrun attempt.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "nerdy_gamer.base.025"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Night time is the best time. No distractions. Just pixels.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "nerdy_gamer.base.026"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Later! GG!",
+   "cond": {},
+   "id": "nerdy_gamer.base.027"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye! Respawn soon!",
+   "cond": {},
+   "id": "nerdy_gamer.base.028"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "See ya! Logging off!",
+   "cond": {},
+   "id": "nerdy_gamer.base.029"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Peace! May your rolls be natural twenties!",
+   "cond": {},
+   "id": "nerdy_gamer.base.030"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye! Save your progress!",
+   "cond": {},
+   "id": "nerdy_gamer.base.031"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Later! Don't forget to hydrate. HP matters.",
+   "cond": {},
+   "id": "nerdy_gamer.base.032"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye, {player}! Game night Thursday, don't forget!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "nerdy_gamer.base.033"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Later, player two! I'll leave the lobby open.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "nerdy_gamer.base.034"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "See you, buddy! I'll send you the patch notes!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "nerdy_gamer.base.035"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Did you know the bell tower has a hidden room? Totally a secret level.",
+   "cond": {},
+   "id": "nerdy_gamer.base.036"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The new update nerfed my favorite character. I'm in mourning.",
+   "cond": {},
+   "id": "nerdy_gamer.base.037"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Hamilton Records has a retro game shelf now. My wallet is crying.",
+   "cond": {},
+   "id": "nerdy_gamer.base.038"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I painted forty miniatures this week. My hand is cramping.",
+   "cond": {},
+   "id": "nerdy_gamer.base.039"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The library has VR now. I spent two hours fighting robots.",
+   "cond": {},
+   "id": "nerdy_gamer.base.040"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I've been running a campaign for my friends. They keep trying to seduce the dragon.",
+   "cond": {},
+   "id": "nerdy_gamer.base.041"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Do you think the Billram mascot would be a tank class or a healer?",
+   "cond": {},
+   "id": "nerdy_gamer.base.042"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I made a spreadsheet of all the ramen places in town. Ranked.",
+   "cond": {},
+   "id": "nerdy_gamer.base.043"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Someone at the café was playing on max brightness. Respect.",
+   "cond": {},
+   "id": "nerdy_gamer.base.044"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "My cat walked across my keyboard and sent a message to my whole guild.",
+   "cond": {},
+   "id": "nerdy_gamer.base.045"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I built my own computer. It glows. It's beautiful.",
+   "cond": {},
+   "id": "nerdy_gamer.base.046"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The tabletop store in Carrburg has a free demo night on Wednesdays.",
+   "cond": {},
+   "id": "nerdy_gamer.base.047"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You're the only person who doesn't make fun of my hobbies. Thanks.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "nerdy_gamer.base.048"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I made you a character in my campaign. They're a hero. Obviously.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "nerdy_gamer.base.049"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I was kind of lonely before we met. Now I have a real-life party.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "nerdy_gamer.base.050"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "If this were a game, you'd be the companion everyone romances. I mean, picks. Picks first.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "nerdy_gamer.base.051"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I'd give you my rarest card. Well, my second rarest.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "nerdy_gamer.base.052"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I think you'd be a great dungeon master. You're good with people.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "nerdy_gamer.base.053"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Weekend! Forty-eight hours of uninterrupted gaming. Minus sleep. Some sleep.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "nerdy_gamer.base.054"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Saturday! The board game café is doing a tournament!",
+   "cond": {
+    "weekend": true
+   },
+   "id": "nerdy_gamer.base.055"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "It's the weekend. My plan is to finish a game I started three years ago.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "nerdy_gamer.base.056"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I've been gaming since I was four. My first console was a hand-me-down.",
+   "cond": {},
+   "id": "nerdy_gamer.base.057"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I want to make my own indie game someday. About a frog detective.",
+   "cond": {},
+   "id": "nerdy_gamer.base.058"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I'm a computer science major. Shocking, I know.",
+   "cond": {},
+   "id": "nerdy_gamer.base.059"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I get really into lore. Like, read-the-wiki-for-six-hours into lore.",
+   "cond": {},
+   "id": "nerdy_gamer.base.060"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "People think gamers are antisocial. I'm just social on a headset.",
+   "cond": {},
+   "id": "nerdy_gamer.base.061"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I have a collection of three hundred dice. I know what each one has done.",
+   "cond": {},
+   "id": "nerdy_gamer.base.062"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I'm not great at sports, but I'm a god at strategy games.",
+   "cond": {},
+   "id": "nerdy_gamer.base.063"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? It's like a hub area. Lots of NPCs. No offense.",
+   "cond": {},
+   "id": "nerdy_gamer.base.064"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "I like {place}. Good spawn point.",
+   "cond": {},
+   "id": "nerdy_gamer.base.065"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place} would make a great level. Lots of verticality.",
+   "cond": {},
+   "id": "nerdy_gamer.base.066"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place} has decent Wi-Fi. Five stars.",
+   "cond": {},
+   "id": "nerdy_gamer.base.067"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? Haven't explored it fully. Probably some secrets.",
+   "cond": {},
+   "id": "nerdy_gamer.base.068"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Oh! Thanks! Charisma check passed!",
+   "cond": {},
+   "id": "nerdy_gamer.base.069"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Really? Wow. My confidence stat just went up.",
+   "cond": {},
+   "id": "nerdy_gamer.base.070"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Thanks! That's a critical hit to my heart.",
+   "cond": {},
+   "id": "nerdy_gamer.base.071"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Aw, thanks. I'm going to save that to my memory card.",
+   "cond": {},
+   "id": "nerdy_gamer.base.072"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Heh. Thanks, {player}. You're pretty great too.",
+   "cond": {},
+   "id": "nerdy_gamer.base.073"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Wow. That's a debuff.",
+   "cond": {},
+   "id": "nerdy_gamer.base.074"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Okay, that did emotional damage.",
+   "cond": {},
+   "id": "nerdy_gamer.base.075"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "I've been insulted by twelve-year-olds online. You'll have to try harder.",
+   "cond": {},
+   "id": "nerdy_gamer.base.076"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Rude. Reported. Blocked.",
+   "cond": {},
+   "id": "nerdy_gamer.base.077"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Toxic behavior detected. Leaving lobby.",
+   "cond": {},
+   "id": "nerdy_gamer.base.078"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Whoa! Rare loot!",
+   "cond": {},
+   "id": "nerdy_gamer.base.079"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Oh my gosh, this is amazing! Legendary drop!",
+   "cond": {},
+   "id": "nerdy_gamer.base.080"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "For me? You've gained plus fifty friendship points!",
+   "cond": {},
+   "id": "nerdy_gamer.base.081"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "This is so cool! I'm putting it on my shelf of honor!",
+   "cond": {},
+   "id": "nerdy_gamer.base.082"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "You remembered! You actually remembered! Thank you!",
+   "cond": {},
+   "id": "nerdy_gamer.base.083"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "Why don't gamers ever get lost? They always follow the quest marker.",
+   "cond": {},
+   "id": "nerdy_gamer.base.084"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "I'd tell you a UDP joke, but you might not get it.",
+   "cond": {},
+   "id": "nerdy_gamer.base.085"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "My life is like a video game. I keep dying and respawning at the worst checkpoints.",
+   "cond": {},
+   "id": "nerdy_gamer.base.086"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "There are ten types of people. Those who understand binary and those who don't.",
+   "cond": {},
+   "id": "nerdy_gamer.base.087"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Can you help me carry my gaming setup to the dorm? It's heavy. Like, really heavy.",
+   "cond": {},
+   "id": "nerdy_gamer.base.088"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Would you join our tabletop group? We need a fourth player.",
+   "cond": {},
+   "id": "nerdy_gamer.base.089"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Could you play-test my game? It's buggy. Very buggy.",
+   "cond": {},
+   "id": "nerdy_gamer.base.090"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "You're a legend! Quest complete!",
+   "cond": {},
+   "id": "nerdy_gamer.base.091"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Thanks! Achievement unlocked: Best Friend!",
+   "cond": {},
+   "id": "nerdy_gamer.base.092"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "You've earned a gold star. And my eternal gratitude.",
+   "cond": {},
+   "id": "nerdy_gamer.base.093"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I work IT at the hospital. I mostly tell people to restart their computers.",
+   "cond": {},
+   "id": "nerdy_gamer.base.094"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I fixed the network at work today. They didn't even notice. Story of my life.",
+   "cond": {},
+   "id": "nerdy_gamer.base.095"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I work at the game store. Employee discount is dangerous.",
+   "cond": {},
+   "id": "nerdy_gamer.base.096"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "My boss caught me playing on break. It was my break!",
+   "cond": {},
+   "id": "nerdy_gamer.base.097"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "I aced my algorithms exam! Big brain energy!",
+   "cond": {},
+   "id": "nerdy_gamer.base.098"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "My group project partner hasn't responded in a week. Classic.",
+   "cond": {},
+   "id": "nerdy_gamer.base.099"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "I'm taking a game design class. Best class ever.",
+   "cond": {},
+   "id": "nerdy_gamer.base.100"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I'm muting you.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "nerdy_gamer.base.101"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "You're the final boss of being annoying.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "nerdy_gamer.base.102"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I don't want to talk to you. Logging off.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "nerdy_gamer.base.103"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "You're like a bad patch. Nobody wants you.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "nerdy_gamer.base.104"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Go away. I'm busy. And by busy I mean avoiding you.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "nerdy_gamer.base.105"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I'd rather fight a level-one slime for eternity.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "nerdy_gamer.base.106"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Oh! Um. Error. Does not compute. Let's stay friends?",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "nerdy_gamer.base.107"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Ha! That's nice, but I'm not looking for a player two right now.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "nerdy_gamer.base.108"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Uh. Wow. I'm going to need a minute to process. And the answer is friends.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "nerdy_gamer.base.109"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Wait. Was that flirting? Critical hit!",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "nerdy_gamer.base.110"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Oh no. My face is buffering. I like you too.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "nerdy_gamer.base.111"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "You just broke my brain. In a good way.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "nerdy_gamer.base.112"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "I've been trying to figure out the dialogue options for this moment for weeks.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "nerdy_gamer.base.113"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "Yes! I mean, yes. That's a quest I'll accept.",
+   "cond": {},
+   "id": "nerdy_gamer.base.114"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "A date? With me? Yes! Can we go to the arcade?",
+   "cond": {},
+   "id": "nerdy_gamer.base.115"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "Sorry, I don't think I feel that way. But you're still in my party.",
+   "cond": {},
+   "id": "nerdy_gamer.base.116"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "I'm flattered. Really. But I think we're better as co-op partners.",
+   "cond": {},
+   "id": "nerdy_gamer.base.117"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hey! You're here! Date mode activated!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.001"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hi! I wore my least wrinkled shirt. For you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.002"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "You look amazing. Like a legendary skin.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.003"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hey, player two. Ready for our adventure?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.004"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "I've been looking forward to this all week. I even turned off my notifications.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.005"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hi! I planned this date like a raid. There's a backup strategy.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.006"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're my favorite side quest. Main quest, actually.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.007"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "If you were a game, I'd play you forever. That sounded bad. You know what I mean.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.008"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're the rarest drop in the game.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.009"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I'd give you my last health potion.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.010"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You make my heart lag. In the best way.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.011"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You've got max stats in everything.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.012"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I'd rather spend time with you than finish the game. That's huge.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.013"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Want to go to the arcade? I'll win you a prize.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.014"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Tell me your favorite game. This is very important.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.015"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I never thought I'd find someone who gets me. Then you showed up.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.016"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's play a co-op game together! Teamwork!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.017"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I made us a playlist of video game music. Is that weird? It's romantic.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.018"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "You're the first person I've told about my frog detective game.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.019"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Want to watch a movie? Something with dragons.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.020"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I'm not great at dates. But I'm great at this one.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.021"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I like that you're patient with me when I go on about lore.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.022"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's build a blanket fort and play board games.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.023"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "You're my favorite person to explore with.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.024"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I think I'm falling for you. Like, fall damage.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.025"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're really smart. Like, puzzle-solving smart.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.026"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're so kind. Paladin-level kind.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.027"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You look really nice. Like, really really nice.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.028"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You make me feel normal. That's hard.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.029"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You have the best laugh. It's my favorite sound effect.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.030"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Whoa. Achievement unlocked.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.031"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "That was... wow. Save point. Saving that.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.032"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "I think my heart just leveled up.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.033"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Can we replay that cutscene?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.034"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I missed you so much. Gaming alone is boring now.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.035"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I kept checking to see if you were online.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.036"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I saved you a spot in our guild. Obviously.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.037"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "The day felt like a loading screen without you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.038"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "Who was that? Are they in your party now?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.039"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I'm not jealous. Just... wondering if I'm still your player two.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.040"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I trust you. I just get insecure. Gamer brain.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.041"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "That was the best date ever. GG.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.042"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight! Save your progress!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.043"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Same time next week? I'll prepare a better strategy.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.044"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "I had so much fun. Like, real fun.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.045"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight, {player}. Respawn tomorrow?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.046"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "Hey, I don't want this to be a boss fight. Let's talk.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.047"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "You hurt my feelings. That's real damage.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.048"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I need to pause for a minute. Then let's figure this out.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.049"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I don't want to lose you. You're my player two.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.050"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "YES! Achievement unlocked: Forever co-op partner!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.051"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "Of course I'll marry you! This is the best ending!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.dating.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, player two! Coffee's ready.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.001"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, love! I made breakfast. Eggs. Only slightly burned.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.002"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, you're up! I've been playing for an hour. Quietly.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.003"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! Daily login bonus: a kiss.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.004"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning! I fixed the Wi-Fi. You're welcome.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.005"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, sleepyhead! The sun's rendering beautifully today.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.006"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! Ready for today's quest?",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.007"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, love! I made you a breakfast sandwich. Extra cheese buff.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.008"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey! I already did my daily quests. Now I'm all yours.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.009"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! I dreamed we were in a fantasy game together.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.010"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning! Let's play a quick round before work?",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.011"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, love! I love you more than speedrunning.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.012"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home, player two!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.013"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, love! Dinner's ready. And the controllers are charged.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.014"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home! I set up a new game for us!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.015"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey! I've been waiting for you to start the next level.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.016"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome back! I ordered pizza. Game night?",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.017"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, love! I painted a new miniature. It's you. As a hero.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.018"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home! Let's veg out and play something chill.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.019"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey! The house feels complete now. Full party.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.020"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home! I made a blanket fort.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.021"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, love! Want to watch a movie? Something with spaceships.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.022"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, you're home late. I kept the lobby open.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.023"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "It's late, love. Come to bed. Or one more game?",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.024"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey. I fell asleep with the controller in my hand again.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.025"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're back! I was just finishing a raid.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.026"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, love. Long day? Let's just cuddle and watch something.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.027"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Late night? I saved your game for you.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.028"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are. I was getting worried. And bored.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.029"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey. It's late. Let's log off together.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.030"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a good day, love! GG!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.031"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye! Go crush those quests!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.032"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a great day! Don't forget to save your progress!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.033"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye, love! I'll be here leveling up.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.034"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Go get 'em! You're max level at your job!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.035"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a good one! I'll miss you. Like, a lot.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.036"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye! Text me if anything funny happens!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.037"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "See you later, player two!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.038"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "How was work? Any boss fights?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.039"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Tell me about your day! Full patch notes.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.040"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You look tired, love. Want to play something relaxing?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.041"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Did your boss nerf your workload? Or buff it?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.042"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "How'd it go? Did you level up?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.043"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Rough day? Let's play a game where we smash things.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.044"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You're home now. Safe zone.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.045"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "I'm proud of you, love. Seriously.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.046"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you more than video games. And that's saying a lot.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.047"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my favorite player two.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.048"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Being married to you is like the best game ever.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.049"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my legendary drop.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.050"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'm so lucky. Like, one-in-a-million lucky.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.051"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my favorite co-op partner. Forever.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you more than my rarest card.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.053"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're the main quest of my life.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.054"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'd give you my last life. Every time.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.055"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my home base.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.056"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love how you get me. All the nerdy parts.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.057"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're the best thing that ever happened to me. Ever.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.058"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you. Like, max affection.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.059"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make my life feel like the best ending.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.060"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'm so happy we're married. Like, so happy.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.061"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my favorite person to explore life with.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.062"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'd pause any game for you. Even online.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.063"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you more than a perfect speedrun.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.064"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I upgraded our computer! It runs everything now!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.065"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I built a new shelf for my miniatures!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.066"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been working on my frog detective game! It's almost playable!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.067"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I found a rare game at the thrift store!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.068"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I set up a game room in the basement! It's amazing!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.069"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been painting miniatures of us! As adventurers!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.070"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I organized all our board games by complexity!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.071"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I joined a local tabletop group! They're really nice!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.072"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I fixed the TV! It was a firmware issue!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.073"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been reading the lore for a new game. It's so deep.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.074"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I think we need a bigger TV. For gaming. And movies.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.075"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a spreadsheet of all our games!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.076"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The cat knocked over my dice tower. Again.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.077"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been teaching the neighbor's kid how to code!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.078"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I'm thinking about streaming! Just for fun!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.079"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I bought a VR headset! We can fight robots together!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.080"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been playing less lately. I'd rather hang out with you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.081"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I set up smart lights! They change color with the game!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.082"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been thinking about building a gaming PC for you!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.083"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a game night calendar! Every Thursday!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.084"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I found my old childhood console! It still works!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.085"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I think the house needs a name. Like a guild hall.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.086"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been learning to cook! Recipes from video games!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.087"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I hung up a poster of our favorite game!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.088"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I fixed the Wi-Fi dead zone in the bedroom!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.089"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made us matching gamer tags!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.090"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I did the dishes! Speedrun!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.091"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I vacuumed! Found three dice under the couch!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.092"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Could you take out the trash? I'm in the middle of a boss.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.093"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I cleaned the game room! Everything's organized!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.094"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I folded laundry while watching a let's play!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.095"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Let's do chores together! It's a co-op mission!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.096"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I scrubbed the bathroom! Achievement unlocked!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.097"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I mowed the lawn! It was like a farming sim!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.098"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I organized the pantry! It's like inventory management!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.099"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I cleaned the kitchen! Plus ten hygiene points!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.100"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I made a chore chart with experience points!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.101"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I dusted my figurine shelf! All two hundred of them!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.102"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I spent too much on games this month. Sorry.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.103"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I made a budget! There's a category for games.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.104"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We should save up for a new console.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.105"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I sold some old games! Made a hundred bucks!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.106"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Money's tight. I'll stop buying games for a while.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.107"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I got a bonus at work! New game? Or savings?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.108"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I'm thinking about selling my rare cards. For us.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.109"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We're doing okay! I checked our finances.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.110"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Let's not buy any new games until next month.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.111"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I found a game sale! Saved us forty bucks!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.112"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Dinner's ready! I made a recipe from a video game!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.113"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made ramen! The good kind!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.114"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's order pizza! Game night fuel!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.115"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made breakfast! It's a power-up!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.116"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I tried a new recipe! It's an adventure!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.117"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's have a picnic in the game room!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.118"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made grilled cheese! Classic!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.119"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's eat in front of the TV! Movie night!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.120"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made tacos! Taco Tuesday!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.121"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I baked cookies! Shaped like dice!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.122"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You said you'd play with me! You didn't!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.123"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I feel like you don't take my hobbies seriously.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.124"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm not addicted! I just really like games!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.125"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Can you please not interrupt me during a boss fight?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.126"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You spent how much on what?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.127"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I feel like we never do anything together anymore.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.128"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I know I play a lot. I'm trying to cut back.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.129"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You never want to try my games.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.130"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I need you to listen to me. Not just nod.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.131"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm going to log off and cool down.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.132"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I feel like you think I'm childish.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.133"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I just want us to have fun together.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.134"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry, love. Let's hit reset.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.135"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I hate fighting with you. It's like losing a save file.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.136"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's make up with a co-op game.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.137"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I love you. I'm sorry. Restart?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.138"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry I got upset. I'll do better.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.139"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "You're my player two. Always.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.140"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's take a break and talk.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.141"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "We're good. We're always good.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.142"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Hey, it's okay. Let's just play something relaxing.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.143"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You're stronger than any boss.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.144"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I'm here, love. Always.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.145"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Whatever it is, we'll beat it together.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.146"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let's take a break from everything. Just us.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.147"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You don't have to win today. Just play.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.148"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I've got your back. Like a tank.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.149"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You're doing great. Even if it doesn't feel like it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.150"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let me make you some tea and we'll watch something cozy.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.151"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You're my hero, love. Always.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.152"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the gaming convention this weekend!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.153"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a board game marathon?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.154"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the arcade! I'll win you everything!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.155"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's take a trip to that game museum!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.156"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a weekend of co-op games?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.157"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the tabletop café on Saturday!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.158"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's build a blanket fort and watch movies!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.159"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a road trip? We can play games in the car!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.160"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the Founders' Day festival! There's a game tent!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.161"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go on a real-life quest. Hiking!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.162"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our first date? The arcade!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.163"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we beat that impossible boss together?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.164"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I still have the prize I won you on our first date.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.165"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our wedding? We had a game-themed cake!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.166"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we stayed up all night playing that game?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.167"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our first game night? You won. I was so proud.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.168"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we met? You laughed at my gamer joke.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.169"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our honeymoon? We played board games every night!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.170"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we built our first blanket fort?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.171"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I remember the first time you called me player two.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.172"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary, player two!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.173"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Another year! Level up!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.174"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I got you a rare game! Happy anniversary!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.175"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary, love! Best co-op partner ever!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.176"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Here's to another year of adventures!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.177"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I love you more every year. Like XP.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.178"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You button-mash. Every time.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.179"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You always pick the healer. Every game.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.180"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You can't beat me at chess. Never have.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.181"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You read the ending of books first. That's cheating.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.182"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You still can't do the combo.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.183"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You always forget to save.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.184"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You sing the game music in the shower.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.185"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You named the cat after a video game character.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.186"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You're secretly better at games than me. Don't tell anyone.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.187"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You yell at the screen when you lose.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.188"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You always say \"one more game\".",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.189"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You still think it's a cutscene when it's gameplay.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.190"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, love. Logging off.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.191"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come to bed, player two.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.192"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight! Save your progress!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.193"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Let's sleep. Tomorrow's a new level.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.194"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, love. I'll see you at the respawn point.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.195"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sleep well, {player}. Recharge your HP.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.196"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight. I love you. More than games.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.197"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Lights out. Game over. Until tomorrow.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.198"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come cuddle. I'm warm.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.199"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight. Dream of dragons.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "nerdy_gamer.marriage.200"
+  }
+ ]
+}
