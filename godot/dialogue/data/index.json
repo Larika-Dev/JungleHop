@@ -89,7 +89,17 @@
    "base": 117,
    "dating": 52,
    "marriage": 200
+  },
+  "gentle_caretaker": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "know_it_all_academic": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
   }
  },
- "total_lines": 6643
+ "total_lines": 7381
 }

@@ -1,0 +1,4076 @@
+{
+ "id": "gentle_caretaker",
+ "lines": [
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello, dear. You look like you could use a cookie. I'm {npc}.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "gentle_caretaker.base.001"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh, hello there! Are you eating enough? You look a bit peaky. I'm {npc}.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "gentle_caretaker.base.002"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi, sweetie. New in town? If you need anything at all, you come find me.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "gentle_caretaker.base.003"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Well, hello! I'm {npc}. Mind that step, it's uneven.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "gentle_caretaker.base.004"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello, dear. Have you got a coat? It's chilly out today.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "gentle_caretaker.base.005"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh, a new face! Welcome, sweetheart. I'm {npc}.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "gentle_caretaker.base.006"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}, dear! Did you get home safe last time?",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "gentle_caretaker.base.007"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh, hello, {player}! I was just thinking about you. Have you eaten?",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "gentle_caretaker.base.008"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! There you are. I made extra muffins this morning.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "gentle_caretaker.base.009"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello, sweetie. You look tired. Are you sleeping?",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "gentle_caretaker.base.010"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! Come here, let me fix your collar.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "gentle_caretaker.base.011"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}, my dear! Come in, come in, the kettle's on.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "gentle_caretaker.base.012"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh, there's my favorite! I knitted you something. Don't laugh at the sleeves.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "gentle_caretaker.base.013"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}, sweetheart! I saved you a plate.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "gentle_caretaker.base.014"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "My dear {player}! Sit down and tell me everything.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "gentle_caretaker.base.015"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "There you are! I worry when I don't see you for a few days.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "gentle_caretaker.base.016"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! I've got soup on the stove and a blanket on the couch.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "gentle_caretaker.base.017"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good morning, dear! Did you have breakfast? A real breakfast?",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "gentle_caretaker.base.018"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Morning, sweetie. The garden's all dewy and lovely.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "gentle_caretaker.base.019"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good morning! I've got oatmeal on, if you'd like some.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "gentle_caretaker.base.020"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good evening, dear. Have you had your supper?",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "gentle_caretaker.base.021"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Evening, sweetheart. It's getting cold, wrap up warm.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "gentle_caretaker.base.022"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello, dear. The evening's so peaceful, isn't it?",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "gentle_caretaker.base.023"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh, you're out late, dear! Is everything alright?",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "gentle_caretaker.base.024"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Goodness, it's late. You should be in bed, sweetie.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "gentle_caretaker.base.025"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello, dear. Can't sleep? I'll make you warm milk.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "gentle_caretaker.base.026"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye, dear! Take care of yourself!",
+   "cond": {},
+   "id": "gentle_caretaker.base.027"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Goodbye, sweetie. Wear your scarf!",
+   "cond": {},
+   "id": "gentle_caretaker.base.028"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Off you go, dear. Text me when you get home.",
+   "cond": {},
+   "id": "gentle_caretaker.base.029"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye now! Don't forget to eat something green.",
+   "cond": {},
+   "id": "gentle_caretaker.base.030"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Take care, sweetheart. Drive slowly.",
+   "cond": {},
+   "id": "gentle_caretaker.base.031"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Goodbye, dear. Come back soon, I'll have cake.",
+   "cond": {},
+   "id": "gentle_caretaker.base.032"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye, my dear. You know where I am if you need me.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "gentle_caretaker.base.033"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Goodbye, sweetheart. Here, take some leftovers.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "gentle_caretaker.base.034"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye, {player}. I'll be thinking of you.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "gentle_caretaker.base.035"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The tomatoes in the garden are finally ripening. I'll bring you some.",
+   "cond": {},
+   "id": "gentle_caretaker.base.036"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Mrs. Chen down the road has a cold. I made her soup.",
+   "cond": {},
+   "id": "gentle_caretaker.base.037"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I'm knitting hats for the children's hospital. I've done forty so far.",
+   "cond": {},
+   "id": "gentle_caretaker.base.038"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The church needs volunteers for the soup kitchen. It's such good work.",
+   "cond": {},
+   "id": "gentle_caretaker.base.039"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I found the most wonderful recipe for lemon bars. You must try them.",
+   "cond": {},
+   "id": "gentle_caretaker.base.040"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The roses are blooming early this year. Isn't that lovely?",
+   "cond": {},
+   "id": "gentle_caretaker.base.041"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I worry about those students on Rosemary, out so late.",
+   "cond": {},
+   "id": "gentle_caretaker.base.042"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I've been teaching the neighbor girl to bake. She's a natural.",
+   "cond": {},
+   "id": "gentle_caretaker.base.043"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "It's flu season, dear. Wash your hands.",
+   "cond": {},
+   "id": "gentle_caretaker.base.044"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The farmers market had the sweetest peaches. I made a cobbler.",
+   "cond": {},
+   "id": "gentle_caretaker.base.045"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I brought cookies to the fire station. Those boys work so hard.",
+   "cond": {},
+   "id": "gentle_caretaker.base.046"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The library's having a book sale. I bought you a cookbook.",
+   "cond": {},
+   "id": "gentle_caretaker.base.047"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You know, you're like family to me now.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "gentle_caretaker.base.048"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I worry about you, dear. In the best way.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "gentle_caretaker.base.049"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "If you ever need a place to stay, my door is always open.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "gentle_caretaker.base.050"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You remind me of my own child when they were your age.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "gentle_caretaker.base.051"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I'm so proud of you, sweetie. I don't say it enough.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "gentle_caretaker.base.052"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Promise me you'll call if anything's wrong. Anything.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "gentle_caretaker.base.053"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Weekend! I'm baking for the church bake sale.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "gentle_caretaker.base.054"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Saturday, dear! Perfect day for gardening.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "gentle_caretaker.base.055"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Sunday dinner at my place. You're invited. You're always invited.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "gentle_caretaker.base.056"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I raised four children and three grandchildren. My heart's always full.",
+   "cond": {},
+   "id": "gentle_caretaker.base.057"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I was a nurse for thirty years. Old habits, I take care of people.",
+   "cond": {},
+   "id": "gentle_caretaker.base.058"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I love my garden. Roses, tomatoes, and too much zucchini.",
+   "cond": {},
+   "id": "gentle_caretaker.base.059"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "My mother taught me that food is love. I believe it.",
+   "cond": {},
+   "id": "gentle_caretaker.base.060"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I knit when I'm worried. I've knitted a lot of scarves.",
+   "cond": {},
+   "id": "gentle_caretaker.base.061"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I've lived on this street for forty years. I know every family.",
+   "cond": {},
+   "id": "gentle_caretaker.base.062"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "Nothing makes me happier than seeing someone eat a good meal.",
+   "cond": {},
+   "id": "gentle_caretaker.base.063"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? It's lovely, but it's a bit drafty. Keep your coat on.",
+   "cond": {},
+   "id": "gentle_caretaker.base.064"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "I like {place}. The people are kind.",
+   "cond": {},
+   "id": "gentle_caretaker.base.065"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place} could use a few flower boxes. I'll suggest it.",
+   "cond": {},
+   "id": "gentle_caretaker.base.066"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? Oh, I love it. They always remember my name.",
+   "cond": {},
+   "id": "gentle_caretaker.base.067"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place} is nice, dear. Do they serve anything healthy?",
+   "cond": {},
+   "id": "gentle_caretaker.base.068"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Oh, you're sweet. Thank you, dear.",
+   "cond": {},
+   "id": "gentle_caretaker.base.069"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Aren't you a dear! Thank you.",
+   "cond": {},
+   "id": "gentle_caretaker.base.070"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Oh, stop it. You're making me blush.",
+   "cond": {},
+   "id": "gentle_caretaker.base.071"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Thank you, sweetie. That warms my heart.",
+   "cond": {},
+   "id": "gentle_caretaker.base.072"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "You're too kind, dear. Here, have a cookie.",
+   "cond": {},
+   "id": "gentle_caretaker.base.073"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Oh, dear. That wasn't very nice.",
+   "cond": {},
+   "id": "gentle_caretaker.base.074"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "I'm sure you don't mean that, sweetie.",
+   "cond": {},
+   "id": "gentle_caretaker.base.075"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Goodness. I hope you're alright. People who are hurting sometimes lash out.",
+   "cond": {},
+   "id": "gentle_caretaker.base.076"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "I'll forgive you. But that hurt.",
+   "cond": {},
+   "id": "gentle_caretaker.base.077"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Oh, sweetheart. Someone needs a nap.",
+   "cond": {},
+   "id": "gentle_caretaker.base.078"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Oh, you shouldn't have! But thank you, dear!",
+   "cond": {},
+   "id": "gentle_caretaker.base.079"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "How thoughtful! I'll treasure it, sweetie.",
+   "cond": {},
+   "id": "gentle_caretaker.base.080"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Oh, it's lovely! You're so kind.",
+   "cond": {},
+   "id": "gentle_caretaker.base.081"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "For me? Oh, my. Thank you, dear.",
+   "cond": {},
+   "id": "gentle_caretaker.base.082"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "You remembered! You're a gem.",
+   "cond": {},
+   "id": "gentle_caretaker.base.083"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "What did the teapot say to the kettle? You're so hot!",
+   "cond": {},
+   "id": "gentle_caretaker.base.084"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "Why did the cookie go to the doctor? It felt crummy.",
+   "cond": {},
+   "id": "gentle_caretaker.base.085"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "What do you call a sleeping bull? A bulldozer! My grandson told me that one.",
+   "cond": {},
+   "id": "gentle_caretaker.base.086"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "Why did the tomato blush? It saw the salad dressing!",
+   "cond": {},
+   "id": "gentle_caretaker.base.087"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Could you carry these casseroles to the church, dear? My arms aren't what they were.",
+   "cond": {},
+   "id": "gentle_caretaker.base.088"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Would you check on Mr. Peters next door? He's been quiet.",
+   "cond": {},
+   "id": "gentle_caretaker.base.089"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Could you help me reach the top shelf? I'll pay you in pie.",
+   "cond": {},
+   "id": "gentle_caretaker.base.090"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Thank you, dear! You're an angel.",
+   "cond": {},
+   "id": "gentle_caretaker.base.091"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Oh, bless you, sweetie. Thank you.",
+   "cond": {},
+   "id": "gentle_caretaker.base.092"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "You're such a good soul. Thank you.",
+   "cond": {},
+   "id": "gentle_caretaker.base.093"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I volunteer at the hospital now. I hold the babies in the nursery.",
+   "cond": {},
+   "id": "gentle_caretaker.base.094"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I'm retired, dear. But I keep busy.",
+   "cond": {},
+   "id": "gentle_caretaker.base.095"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I help out at the daycare on Wednesdays. Those little ones!",
+   "cond": {},
+   "id": "gentle_caretaker.base.096"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "Work is important, but so is rest. Are you resting?",
+   "cond": {},
+   "id": "gentle_caretaker.base.097"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "Are you studying hard, dear? Not too hard?",
+   "cond": {},
+   "id": "gentle_caretaker.base.098"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "Don't stay up too late studying. Sleep helps you learn.",
+   "cond": {},
+   "id": "gentle_caretaker.base.099"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "I took a pottery class at the community center. I made a very wobbly bowl.",
+   "cond": {},
+   "id": "gentle_caretaker.base.100"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I'd rather not talk right now, dear.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "gentle_caretaker.base.101"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "You've hurt me, and I'm still upset.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "gentle_caretaker.base.102"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I'm trying to be kind, but you make it hard.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "gentle_caretaker.base.103"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Please leave me be.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "gentle_caretaker.base.104"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I don't think we should talk anymore.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "gentle_caretaker.base.105"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I'll pray for you. From a distance.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "gentle_caretaker.base.106"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Oh, sweetie! You're very kind. But no.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "gentle_caretaker.base.107"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Goodness! That's sweet, dear, but let's stay friends.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "gentle_caretaker.base.108"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Oh, my. I'm flattered, but no, sweetie.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "gentle_caretaker.base.109"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Oh! Oh, dear. My heart's all aflutter.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "gentle_caretaker.base.110"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Goodness. You're making me blush like a schoolgirl.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "gentle_caretaker.base.111"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "That's very sweet. I think I like you too.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "gentle_caretaker.base.112"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Oh, my. Say that again, slowly.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "gentle_caretaker.base.113"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "Oh, yes, dear! I'd love to. I'll bake something.",
+   "cond": {},
+   "id": "gentle_caretaker.base.114"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "A date? Oh, my. Yes. Yes, I'd like that.",
+   "cond": {},
+   "id": "gentle_caretaker.base.115"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "Oh, sweetie, I'm so flattered. But I don't feel that way. You understand?",
+   "cond": {},
+   "id": "gentle_caretaker.base.116"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "I'm sorry, dear. No. But you'll always have a seat at my table.",
+   "cond": {},
+   "id": "gentle_caretaker.base.117"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hello, dear! I brought you a scarf. It's cold out.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.001"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "There you are, sweetheart! You look so handsome. Or lovely. Both!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.002"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Oh, I'm so happy to see you! Did you eat? I brought sandwiches.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.003"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hello, darling. I've been looking forward to this all day.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.004"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "You came! I made a picnic. Everything's homemade.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.005"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hello, sweetie. You look tired. Let's sit for a while.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.006"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're the sweetest thing in my life. Sweeter than my pie.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.007"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I'd knit you a hundred scarves.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.008"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You make my heart warm. Like a good cup of tea.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.009"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I love taking care of you. I hope that's alright.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.010"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're so handsome. Or beautiful. Both, really.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.011"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You make me feel young again.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.012"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I'd bake for you every day.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.013"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's walk in the garden. The roses are out.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.014"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Tell me about your family, dear. I want to know everyone.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.015"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I made us a picnic. Chicken salad, deviled eggs, and lemon bars.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.016"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Do you like gardening? I'll teach you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.017"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I love that you let me fuss over you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.018"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I haven't felt this way in a long time.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.019"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's sit on the porch and watch the sunset.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.020"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Are you warm enough? Here, take my sweater.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.021"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I baked you a cake. It's chocolate. Your favorite, right?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.022"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "You're such a good person, dear. I can tell.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.023"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I want to take care of you. If you'll let me.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.024"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I'm so happy, sweetheart. Truly.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.025"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You have such a kind heart.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.026"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're so handsome tonight. Or lovely. You know what I mean.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.027"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're so good to people. I notice.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.028"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You have beautiful eyes, dear.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.029"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're the sweetest person I know.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.030"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Oh, my! That was lovely.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.031"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Goodness. My heart's racing.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.032"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Oh, sweetheart. Again?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.033"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "That was wonderful, dear.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.034"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I missed you, dear. I baked three batches of cookies waiting.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.035"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "The house felt so empty without you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.036"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I knitted you a sweater while you were gone.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.037"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I worried about you. Are you alright?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.038"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "Who was that, dear? Not that I mind. I mind a little.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.039"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I'm not jealous. I just want to be the one taking care of you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.040"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I trust you, sweetheart. I just worry.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.041"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight, dear. Drive safely.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.042"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Text me when you get home, sweetheart.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.043"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "I had such a lovely time. Thank you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.044"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Here, take some leftovers for tomorrow.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.045"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight, {player}. Sleep well.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.046"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "Oh, dear. I'm upset. Let's talk about it.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.047"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "That hurt my feelings, sweetheart.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.048"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "Let's not fight. Let's have some tea and talk.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.049"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I love you, but I need you to listen.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.050"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "Oh, yes! Yes, dear! Of course I'll marry you!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.051"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "Oh, my goodness! Yes! I'm crying! Happy tears!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.dating.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, dear! Breakfast is ready. Eggs, toast, and fresh orange juice.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.001"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, sweetheart! Did you sleep well? You were tossing.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.002"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, love! I've packed your lunch. And a little treat.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.003"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, dear! Wear a jacket today, it's chilly.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.004"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! I made oatmeal with berries. It's good for your heart.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.005"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, sweetie! Your vitamins are next to your coffee.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.006"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, dear! The garden's so lovely this morning.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.007"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, love! I ironed your shirt.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.008"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! I made muffins. Blueberry.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.009"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, sweetheart! Did you remember your appointment today?",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.010"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, dear! You look rested. Good.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.011"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, love! I made your favorite. Pancakes.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.012"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home, dear! Dinner's on the table.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.013"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are, sweetheart! Sit down, put your feet up.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.014"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home, love! I made pot roast.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.015"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hello, dear! How was your day? You look tired.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.016"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home! I've got a warm bath running for you.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.017"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome back, sweetie! I made your favorite pie.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.018"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hello, love! Come sit, I'll make you some tea.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.019"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home! I was starting to worry.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.020"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home, dear! The fire's going.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.021"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are! I've been waiting with dinner.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.022"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home late, dear! Did you eat? I kept a plate warm.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.023"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Oh, sweetheart, it's so late! Come to bed.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.024"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are, love. I was worried sick.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.025"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hello, dear. Let me make you some warm milk.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.026"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home. Thank goodness. Come here.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.027"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Late night, sweetie? Let me rub your shoulders.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.028"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are. I waited up. I was knitting.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.029"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're back, dear. Now I can sleep.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.030"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a good day, dear! Don't forget your lunch!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.031"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye, sweetheart! Drive carefully!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.032"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a lovely day, love! Wear your scarf!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.033"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Goodbye, dear! Call me if you need anything!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.034"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a good day! Remember to eat something healthy!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.035"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye, sweetie! I'll have dinner ready!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.036"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a wonderful day, dear! Don't work too hard!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.037"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye, love! I put a note in your pocket!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.038"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "How was your day, dear? Did you eat lunch?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.039"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You look tired, sweetheart. Sit down.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.040"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Tell me all about it, love.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.041"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Did they treat you well today?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.042"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Was it a hard day, dear? Let me make you tea.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.043"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Did you take your breaks? You need your breaks.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.044"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You're home now, dear. Slippers on, feet up, rest.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.045"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "I'm so proud of you, dear. You work so hard.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.046"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you, dear. More than all the roses in the garden.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.047"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my whole heart, sweetheart.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.048"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Taking care of you is my favorite thing in the world.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.049"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'm so lucky to have you, love. Every single day I count my blessings.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.050"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make our home so warm.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.051"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you more every day, dear.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're the sweetest person I've ever known.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.053"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'd do anything for you, sweetheart.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.054"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make me so happy, love.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.055"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my everything, dear.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.056"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love the life we've built together.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.057"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my best friend and my love.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.058"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you to the moon and back, sweetie.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.059"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're the reason I bake.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.060"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I thank God for you every day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.061"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my home, dear.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.062"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love how you let me take care of you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.063"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you, sweetheart. Always.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.064"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The tomatoes are coming in nicely. I'll make sauce.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.065"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I knitted you a new sweater. Try it on!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.066"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Mrs. Chen's feeling better. My soup worked.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.067"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I planted new roses by the porch.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.068"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a quilt for the guest room.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.069"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The grandkids are coming this weekend!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.070"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been teaching the neighbor's kids to bake.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.071"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I cleaned out the pantry. We need more flour.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.072"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been volunteering at the hospital again.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.073"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I found my mother's old recipe book.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.074"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The church is having a potluck. I'm making my casserole.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.075"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been making jam. Strawberry and peach.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.076"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The birds are back at the feeder.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.077"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made curtains for the kitchen.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.078"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been thinking about getting a little dog.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.079"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The garden's never looked better.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.080"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I baked bread today. The house smells wonderful.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.081"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been knitting blankets for the shelter.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.082"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I called your mother. She sends her love.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.083"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I found a lovely new tea at the market.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.084"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The neighbors' baby is so sweet. I held her today.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.085"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been organizing the linen closet.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.086"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I put fresh flowers in every room.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.087"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been taking a watercolor class.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.088"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a scrapbook of our family.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.089"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I love our little home, dear.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.090"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I did the laundry, dear. Your shirts are ironed.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.091"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I cleaned the kitchen. It's sparkling.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.092"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Could you take out the trash, sweetheart?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.093"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I vacuumed the whole house.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.094"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I changed the sheets. Fresh and clean.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.095"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I dusted the bookshelves.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.096"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I washed the windows. Look how they shine!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.097"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Let's do the dishes together, love.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.098"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I scrubbed the bathroom.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.099"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I weeded the garden.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.100"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I mopped the floors.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.101"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I folded all the towels.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.102"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We're doing alright, dear. I keep a careful budget.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.103"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I clipped some coupons. Saved us ten dollars!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.104"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Money's a little tight. But we'll manage.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.105"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I don't need much. Just you and my garden.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.106"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I've been saving a little each week.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.107"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We should put some money aside for the grandkids.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.108"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I made a budget. We're doing fine.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.109"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I sold some jam at the market!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.110"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Let's not spend too much this month, dear.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.111"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We're rich in love, sweetheart.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.112"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Dinner's ready, dear! Pot roast with all the fixings.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.113"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made chicken soup. Good for your health.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.114"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Breakfast in bed, sweetheart!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.115"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I baked a pie. Apple, your favorite.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.116"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made lasagna. It'll last all week.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.117"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's have a picnic in the garden, dear. I'll bring the good tablecloth.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.118"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made meatloaf. Just like my mother's.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.119"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made a big salad. With vegetables from the garden.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.120"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I baked cookies. Chocolate chip.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.121"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's have tea and scones this afternoon.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.122"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You didn't eat the lunch I packed. Again.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.123"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I worry about you, and you don't listen.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.124"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You work too hard, dear. You need to rest.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.125"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You forgot to call. I was worried sick.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.126"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Please let me help you. You never let me help.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.127"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I feel like you take me for granted sometimes.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.128"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You didn't wear your coat. You'll catch cold.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.129"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm not nagging. I'm caring.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.130"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You never tell me when something's wrong.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.131"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm going to go knit. To calm down.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.132"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I just want you to take care of yourself.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.133"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You're as stubborn as a mule, sweetheart.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.134"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry, dear. I fuss too much.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.135"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's have some tea and make up.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.136"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I love you. I'm sorry I nagged.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.137"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Come here, sweetheart. Let's hug.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.138"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry I worried so much. I just love you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.139"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's not fight. Life's too short.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.140"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'll make your favorite pie to say sorry.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.141"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "We're alright, dear. We always are.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.142"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Oh, sweetheart. Come here. Let me hold you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.143"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "It's alright, dear. I'm here.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.144"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let me make you some soup. It'll help.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.145"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You're stronger than you know, love.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.146"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Whatever it is, dear, we'll get through it. With soup.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.147"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Cry if you need to, dear. I've got tissues.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.148"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let me take care of everything tonight.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.149"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You don't have to be strong all the time.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.150"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I love you, sweetheart. Now, have you had any water today?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.151"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let's sit in the garden. It always helps.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.152"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's visit the grandkids this weekend.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.153"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a trip to the botanical gardens?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.154"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the church picnic on Sunday.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.155"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's take a drive to the mountains. See the leaves.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.156"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a quiet weekend at home? Just us.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.157"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the farmers market on Saturday.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.158"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's plan a family dinner. Invite everyone.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.159"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a trip to the beach? I'll pack a lunch.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.160"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's take a pottery class together.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.161"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's plant a new garden bed this spring.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.162"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our first date? I made you a picnic.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.163"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our wedding? It was so beautiful.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.164"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when the kids were little?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.165"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our first house? The kitchen was so small.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.166"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when you brought me flowers every Sunday?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.167"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we danced in the kitchen?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.168"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I remember the first time I saw you. You were so kind.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.169"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our honeymoon? By the sea.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.170"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we planted our first garden together?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.171"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when you nursed me back to health that winter?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.172"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary, dear! I made a cake.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.173"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Another year, sweetheart. I love you more than ever.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.174"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary, love! I knitted you something.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.175"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I love you more every year, dear.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.176"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Here's to many more years together.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.177"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary! Let's have a quiet dinner.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.178"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You never wear the scarves I knit.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.179"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You sneak cookies before dinner.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.180"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You leave your socks everywhere, dear.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.181"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You fall asleep in your chair every evening.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.182"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You never let me help you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.183"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You always say you're not hungry, then eat everything.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.184"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You can't tell a weed from a flower.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.185"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You hum when you're happy.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.186"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You're terrible at hiding presents.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.187"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You still can't make a bed properly.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.188"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You always forget your umbrella.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.189"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You're such a softie. Don't deny it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.190"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, dear. Sleep tight.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.191"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come to bed, sweetheart. I've warmed it up.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.192"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, love. I'll see you in the morning.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.193"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sweet dreams, dear.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.194"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Let me tuck you in, sweetheart.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.195"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, {player}. I love you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.196"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sleep well, dear. Tomorrow's a new day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.197"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight. Did you take your vitamins?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.198"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come here, love. Let's cuddle.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.199"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, sweetheart. God bless.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gentle_caretaker.marriage.200"
+  }
+ ]
+}
