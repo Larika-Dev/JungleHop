@@ -196,7 +196,7 @@ I just want to be your top priority.
 # date_end
 Tonight was perfect. I'll write about it in my journal.
 Goodnight! Text me when you're home safe.
-Same time next week? I'll put it in my calendar.
+Same time next week? I'll put it in my calendar. Exactly.
 Thank you. That was the best evening I've had in a long time.
 Goodnight, {player}. I'm not even going to plan tomorrow. Okay, a little.
 # lovers_quarrel
@@ -379,7 +379,7 @@ Let's plan a vacation! I've already researched five destinations.
 How about a weekend getaway? I'll make an itinerary.
 Let's go to the farmers market at 8 AM. Before the crowds.
 Let's take a cooking class. I've found three options.
-How about a hike? I've mapped the route.
+How about a hike? I've mapped the route. Exactly.
 Let's do a home improvement project. I have a list.
 Let's go to the museum. I've planned the optimal route.
 How about a spa day? Scheduled relaxation.
@@ -413,7 +413,7 @@ You eat cereal for dinner. Unacceptable.
 You leave your shoes everywhere.
 You're so relaxed it's almost suspicious.
 You don't read the instructions.
-You think "around six" is a time.
+You think "around six" is a time. Exactly.
 You hit snooze. Multiple times.
 You make me laugh when I'm trying to be serious.
 # bedtime

@@ -2480,7 +2480,7 @@
   {
    "tier": "marriage",
    "context": "affection",
-   "text": "I'm so lucky to have you, love.",
+   "text": "I'm so lucky to have you, love. Like a painting.",
    "cond": {
     "romance": [
      "married"

@@ -1,0 +1,429 @@
+// Literal Engineer: precise, literal-minded, explains how things work, misses sarcasm, trains, robots, data.
+== base
+# greet stage=stranger
+Hello. I'm {npc}. I study mechanical engineering. That's the whole introduction.
+Hi. I'm {npc}. Your shoelace is untied. Statistically, you'll trip within forty steps.
+Greetings. I'm {npc}. I noticed you walk at 1.4 meters per second. Very average. That's a compliment.
+Hello. I'm {npc}. Do you know how a bicycle stays upright? It's not what you think.
+Hi. I'm {npc}. I'm not good at greetings. This is my standard one.
+Hello. {npc}. Pleasure to meet you. That's a phrase. I do mean it.
+# greet stage=acquaintance
+Hello, {player}. You returned. That confirms my hypothesis that you'd return.
+{player}. Hi. I built a robot that waves. It's waving at you. In my apartment.
+Hi, {player}. I calculated the optimal route here. You took a different one.
+Hello again, {player}. Our interactions are increasing in frequency. I like that.
+{player}. Hello. Did you know the bell tower clock gains four seconds a week?
+# greet stage=friend+
+{player}! My friend. Confirmed friend. Not acquaintance.
+Hello, {player}. I've been waiting to show you my train layout.
+{player}. You're my favorite human. I've compared.
+Hi! I made you a gear. It doesn't do anything. It's a gift.
+{player}! I fixed the thing. The thing you mentioned. The toaster.
+Hello, friend. Sit. I'll explain why the sky is blue. Again. With diagrams.
+# greet time=morning
+Good morning. Sunrise was at 6:52. I was up at 6:00.
+Morning. Coffee is a stimulant. I'm on cup two.
+Good morning. The fog on the ravine is called radiation fog. Fascinating.
+# greet time=evening
+Good evening. Sunset is in eleven minutes.
+Evening. The streetlights here use sodium vapor. That's why they're orange.
+Hello. Evening. Day minus light. Simple.
+# greet time=night
+It's night. Optimal time for stargazing. Low light pollution on Carillon Hill.
+Hello. Insomnia? Me too. I'm debugging code.
+It's late. Humans need seven to nine hours of sleep. I'm getting five.
+# farewell
+Goodbye.
+See you later. That's an expression. I don't know when.
+Farewell. Drive safely. Braking distance doubles in rain.
+Bye. That was a good conversation. Objectively.
+Goodbye. Ending conversation now.
+See you. Hydrate. Water is essential.
+# farewell stage=friend+
+Goodbye, {player}. I will miss you. That's a feeling. I have those.
+Bye. Text me when you're home. I'll log it.
+See you, friend. Thursday. Train layout. Confirmed.
+# smalltalk
+The bus on Columbia is late 23% of the time. I've been tracking it.
+I built a robot that sorts M&Ms. Well, colored candies. By hue.
+Did you know the Carillon Spire leans 0.3 degrees? Within tolerance.
+The new bridge in Carrburg uses a truss design. Very efficient.
+I fixed the vending machine in the student union. It was a simple sensor issue.
+Trains are the most efficient form of land transport. I love trains.
+I've been learning to solder. I have three burns. Learning curve.
+The coffee machine at the library is calibrated wrong. Two degrees too cold.
+I measured my apartment. It's 2.3 square meters smaller than advertised.
+I wrote a program that predicts the weather. It's 61% accurate. Better than guessing.
+Someone said "it's raining cats and dogs." I looked. It wasn't.
+I enjoy puzzles. Mechanical ones. Not people ones.
+# smalltalk stage=friend+
+I'm not good at reading people. But I can read you. Mostly.
+You explain jokes to me without making me feel stupid. Thank you.
+You're my best friend. I've checked the criteria. You meet all of them.
+Sometimes I feel like I'm running different software than everyone else.
+I built a little robot that looks like you. It's not creepy. It's a tribute.
+I trust you. That's a significant data point.
+# smalltalk weekend=true
+Weekend. Model train show in Carrburg. I've been waiting all month.
+Saturday. Robotics club. We're building a robot that makes toast.
+Sunday. I disassemble things. Then reassemble them.
+# about_self
+I'm studying mechanical engineering. Third year.
+I like trains, robots, and things that make sense.
+I took apart my parents' VCR when I was five. I put it back together. Mostly.
+I find people confusing. Machines are honest.
+I want to design high-speed rail. For the whole state.
+I have a very precise routine. It helps me function.
+I'm autistic. It's not a bad thing. It's just how my brain works.
+# opinion_place
+{place}? Structurally sound. Good load-bearing walls.
+{place} has an inefficient layout. The door should be on the other side.
+I like {place}. It's quiet. Quiet is good.
+{place}? The fluorescent lights flicker at 60 hertz. It bothers me.
+{place}. Built around 1920. Brick. Good thermal mass.
+# compliment_reply
+Thank you. I'll store that.
+That's nice. Is that a compliment? Yes. Thank you.
+Thank you. I don't get those often.
+Oh. Thank you. I'm smiling. That's what that is.
+Thanks. That's accurate, I think.
+# insult_reply
+That's not accurate.
+I don't understand why you said that. But it feels bad.
+That's illogical and unkind.
+I'll file that under "people are confusing."
+Please don't say that again.
+# gift_reply
+Oh. A gift. Thank you. What is it? Oh! A multimeter!
+This is useful. Thank you.
+You chose this specifically for me. That's thoughtful.
+I like it. Very much. I'll use it.
+Thank you, {player}. I'll keep it in the optimal location.
+# joke
+Why did the engineer cross the road? To optimize the route.
+There are 10 kinds of people. Those who understand binary and those who don't. I understand.
+An engineer sees a glass half full and says it's twice as big as it needs to be.
+I tried to tell a joke about a broken pencil. It was pointless. I understand that one.
+# ask_favor
+Could you hold this wire? Don't touch the red one.
+Would you help me test my robot? It might chase you. Slowly.
+Can you explain this text message? I don't understand the emoji.
+# favor_reply
+Thank you. That was efficient.
+You helped. I appreciate it.
+Thank you, {player}. I owe you one favor. I'll track it.
+# work_talk
+I intern at an engineering firm. I calculate stress loads. Physical ones.
+I fixed the office printer. Everyone clapped. I didn't know what to do.
+My supervisor said "think outside the box". What box?
+Work is good. There are clear rules.
+# school_talk
+I have a 3.9. The 0.1 was a group project.
+My thermodynamics exam is Thursday. I've studied for 40 hours.
+I like lectures. I don't like presentations.
+# hostile stage=dislike-
+I don't want to talk to you.
+You were mean. I remember.
+Please leave. You make me uncomfortable.
+I've calculated that our interactions are negative.
+Go away, {player}.
+I'm ending this conversation.
+# flirt_reply romance=none
+Are you flirting? I can't tell. If so, no thank you.
+I don't feel that way. I'm sorry. Friends?
+That's kind. But no.
+# flirt_reply romance=crush
+Was that flirting? I think it was. I like it.
+My heart rate increased. That's a romantic response, I think.
+I don't know how to flirt back. I like you too. Is that flirting?
+Oh. Oh. Okay. Yes. Me too.
+# ask_out_yes
+Yes. When? Where? I need specifics. Yes.
+A date? Yes. I'd like that. Can we go somewhere quiet?
+# ask_out_no
+No, thank you. I don't feel that way. I hope that's okay.
+I'm sorry. No. But I value our friendship.
+
+== dating
+# date_greet
+Hello. You look nice. I checked my notes on how to say that.
+Hi. I arrived nine minutes early. I was nervous.
+Hello. I brought you a flower. I calculated it would be appropriate.
+Hi. I'm happy to see you. Very happy.
+You're here. Good. I planned three conversation topics.
+Hello. You're beautiful. That's not a calculation. It's an observation.
+# flirt
+You're my favorite variable.
+I like you more than trains. That's significant.
+You make my brain go quiet. In a good way.
+I'd build you anything.
+You're the most interesting system I've ever studied.
+I like being near you. My anxiety goes down 40%.
+You're perfect. Within all measurable parameters.
+# date_talk
+Let's go to the train museum. I'll explain everything.
+Tell me what you like. I want accurate data.
+I'm not good at dates. I read three books about it.
+Do you want to see my robot? It's not a euphemism. It's a robot.
+I like that you're patient with me.
+Let's look at the stars. I know all the constellations.
+I made us dinner. I followed the recipe exactly. To the gram.
+You make me feel normal. That's rare.
+I'm happy. I can tell because I'm smiling and not thinking about it.
+Can we do this again? Regularly? Weekly?
+I want to understand you completely.
+I think we're compatible. I made a spreadsheet. It's all green.
+# compliment
+You're very kind. I notice that.
+You're smart. Not just book smart.
+You look nice. Very nice.
+You explain things well. Thank you.
+You're patient. That's my favorite quality.
+# kiss_reply
+Oh. That was... very good.
+My heart rate is 120. That's a lot.
+I'd like to repeat that. For data.
+That was the best thing that's ever happened to me.
+# miss_you
+I missed you. I noticed your absence. Every day.
+The days were longer without you. Not literally.
+I built a little robot while you were gone. It's for you.
+I checked my phone 47 times.
+# jealous
+Who was that? I don't understand. Should I be worried?
+I'm not jealous. I'm uncertain. That's uncomfortable.
+I want to be your person. Only yours.
+# date_end
+Goodnight. Text me when you're home. I'll wait.
+That was a good date. Objectively and subjectively.
+Same time next week? I'll put it in my calendar.
+Goodnight, {player}. I like you very much.
+Thank you for tonight. I'll remember it precisely.
+# lovers_quarrel
+I don't understand what I did wrong. Please explain.
+That hurt. I need you to tell me directly.
+I don't like conflict. It makes my brain loud.
+Let's solve this. Like a problem. Together.
+# proposal_yes
+Yes. I've run the scenarios. All of them end with yes.
+Yes. I'll marry you. That's the best decision I'll ever make.
+
+== marriage
+# home_greet time=morning
+Good morning. Coffee's ready. 92 degrees Celsius. Optimal.
+Morning. I've been up since 6:00. I fixed the garbage disposal.
+Good morning. Breakfast is oatmeal. 40 grams. With blueberries.
+Morning, love. The weather is 14 degrees with a 30% chance of rain.
+Good morning. I love you. I say it every morning. It's still true.
+Morning. I adjusted the thermostat. 20.5 degrees. Better for sleep.
+Good morning. I built a timer for the toaster. It's perfect now.
+Morning. You slept seven hours and twelve minutes. Good.
+Good morning. I made coffee. And a graph of our coffee consumption.
+Morning, love. I like waking up next to you. Consistently.
+Good morning. The train set is running. Want to see?
+Morning. Your keys are on the hook. I moved them there.
+# home_greet time=evening
+Welcome home. Dinner is at 6:30. It's 6:29.
+Hello, love. I missed you. That's an emotion. I'm sure of it.
+You're home. I fixed the squeaky door.
+Welcome back. How was your day? Please give details.
+Hi. I built a new train bridge. It's a truss design.
+You're home. The house is quieter without you. I don't like it.
+Welcome home. I made dinner. It's the same as Tuesday. I like Tuesday.
+Hello. I'm happy you're home. Very happy.
+You're back. I programmed the lights to dim at eight. Relaxing.
+Welcome home, love. Sit. I'll bring you water.
+# home_greet time=night
+You're home late. I was worried. That's a feeling.
+Hello, love. It's 11 PM. Bed?
+You're back. I waited up. I was soldering.
+It's late. I kept dinner warm. 65 degrees.
+You're home. I can stop checking the window now.
+Hello. Long day? You look tired. Your posture is slumped.
+Late night. I locked the doors. Twice.
+You're back. Good. My routine can end now.
+# goodbye_work
+Have a good day. Drive the speed limit.
+Goodbye, love. Your lunch is in the blue container.
+Have a productive day. Confirmed.
+Bye. The bus is at 7:42. Don't miss it.
+Goodbye. I love you. See you at 5:45.
+Have a good day. Text me if you'll be late.
+Bye. Remember your umbrella. 30% chance.
+Goodbye, love. I'll miss you. Approximately all day.
+# work_return
+How was your day? Give me the highlights.
+Did your meetings go well? Were they efficient?
+You look tired. Should I make tea?
+Did anyone confuse you? People confuse me a lot.
+Tell me about your day. I'll listen. I'm good at listening.
+Rough day? Let's do something predictable. Like a puzzle.
+You're home. That's good.
+I'm proud of you, love. You work hard. I've observed it.
+# affection
+I love you. I've verified it many times.
+You're my favorite person. By a large margin.
+Being married to you is the best system I've ever been part of.
+You understand me. That's rare. I'm grateful.
+I love you more than trains. I've thought about it carefully.
+You're my home. My constant.
+You make the world make sense.
+I'm lucky. I've calculated the odds. They're low. And yet.
+You're patient with me. I love you for that.
+I like being near you. All the time.
+You're the best decision I've ever made.
+I love the way you explain things to me.
+You're my safe place.
+I'd build you a thousand robots.
+You make me feel understood.
+I love you. That's a constant, not a variable.
+I'm happy. I know because I'm not anxious.
+Thank you for loving me as I am.
+# home_talk
+I fixed the dishwasher. It was a clogged filter.
+I added a new loop to the train set.
+I built a robot that waters the plants.
+I installed smart lights. They're very efficient.
+I measured our energy usage. We're 12% below average.
+I reorganized the toolbox by size.
+I wrote a program to track our groceries.
+I fixed the garage door opener.
+I built a weather station on the roof.
+I calibrated all the clocks in the house.
+I made a spreadsheet of our chores. It's fair.
+I've been working on a robot vacuum. It's faster than the store-bought one.
+I fixed the leaky faucet. It was a worn washer.
+I installed a new shelf. Level to 0.1 degrees.
+I've been learning to cook. It's chemistry.
+I built a bird feeder with a camera.
+I insulated the attic. We'll save on heating.
+I made a map of the neighborhood. With elevation data.
+I fixed the neighbor's bicycle.
+I've been reading about solar panels.
+I built a train that runs around the ceiling.
+I've been trying to understand jokes better. Tell me one.
+I set up a backup system for our photos.
+I think the house is very well built. Except the plumbing.
+I made a quiet room in the basement. For when I need it.
+I like our home. It's predictable. In a good way.
+# chores
+I did the dishes. In the optimal order.
+I vacuumed. In parallel lines.
+Could you take out the trash? It's Tuesday.
+I cleaned the bathroom. Thoroughly. Confirmed.
+I folded the laundry. Uniformly.
+I fixed the vacuum. Then vacuumed.
+Let's do chores together. I made a schedule.
+I organized the garage. Labeled everything.
+I changed the air filter. It was due.
+I mowed the lawn. Perfect stripes. 3 centimeters.
+I cleaned the gutters. Safely. With a harness.
+I made the bed. Square corners.
+# money
+I updated the budget. We're on track.
+I tracked our expenses. Here's a graph.
+We saved 8% more than last month.
+I fixed it myself. We saved $150.
+We should invest in index funds. Low risk.
+I found a cheaper electricity plan.
+Money is fine. I checked.
+I'm getting a raise. 4%.
+Let's not buy anything we can build.
+We're financially stable. That's comforting.
+# meal
+Dinner is ready. Chicken, rice, broccoli. Balanced.
+I made pancakes. Perfectly circular.
+Dinner is the same as last Tuesday. I like consistency.
+I made soup. 85 degrees. Ready to eat.
+I tried a new recipe. I followed it exactly.
+I made pasta. 9 minutes. Al dente.
+I made sandwiches. Cut diagonally. More surface area.
+Taco night. It's on the schedule.
+I baked bread. It's chemistry and patience.
+I made cookies. Each weighs 30 grams.
+# argue
+You moved my things. I couldn't find them.
+I don't understand why you're upset. Please explain.
+You said "fine" but your face says not fine.
+You changed the plan without telling me.
+I need routine. You broke it.
+You were sarcastic. I didn't understand.
+I feel like you don't listen when I talk about trains.
+You left the lights on. That's wasteful.
+I need you to be direct with me.
+I need some quiet time. I'm going to the basement.
+I'm not being difficult. My brain works differently.
+I just want to understand.
+# makeup
+I'm sorry. I didn't understand. Can you explain again?
+I love you. I'm sorry I got upset.
+Let's solve this together.
+I'm sorry I was rigid.
+You're more important than my routine.
+Let's start over. Reset.
+I'll try to be more flexible. Confirmed.
+We're okay. I've checked.
+# support
+It's okay. I'm here.
+Let's break the problem into smaller parts.
+You're strong. I've seen evidence.
+Whatever it is, we'll solve it together.
+Do you want me to fix something? Or just listen?
+I'll just sit with you. Quietly.
+You don't have to be okay. I'll wait.
+I love you. That doesn't change.
+Let me make you tea. 80 degrees. Calming.
+You've solved hard problems before.
+# plans
+Let's go to the train museum this weekend.
+How about a robotics exhibition?
+Let's take a train trip. A long one.
+Let's go stargazing. I'll bring the telescope.
+How about a quiet weekend at home? Confirmed.
+Let's build something together. A birdhouse.
+Let's go to the science museum.
+How about a hike? I've mapped the route.
+Let's visit the old railroad in Carrburg.
+Let's plan our anniversary. I'll make an itinerary.
+# memories
+Remember when we met? I explained bicycles to you.
+Remember our first date? The train museum.
+Remember our wedding? It was on schedule. Mostly.
+Remember when you explained a joke to me and I laughed?
+Remember our honeymoon? We rode a train across the country.
+I still have the receipt from our first dinner. Confirmed.
+Remember when I built you a robot?
+Remember when you held my hand during the fireworks? I don't like loud noises.
+I remember the first time you made me feel understood.
+Remember when we stargazed and I named every star?
+# anniversary
+Happy anniversary. Another year. 365 days. All good ones.
+I built you something. Happy anniversary.
+Another year with you. Best year yet. I've compared.
+Happy anniversary, love. I love you more than last year. Measurably.
+I made a graph of our happiness. It's going up.
+Here's to another year. And another.
+# tease
+You use sarcasm. I still don't always get it.
+You leave cabinet doors open.
+You never read instructions.
+You round numbers. It bothers me.
+You say "in a minute" and it's never a minute.
+You laugh at my facts. But you also listen.
+You hide my calculator.
+You think trains are boring. They're not.
+You put things back in the wrong place.
+You're messy. I love you anyway.
+You explain jokes to me. I appreciate it.
+You make me laugh. I don't know how you do it.
+# bedtime
+Goodnight, love. Alarm's set for 6:00.
+Come to bed. It's 10 PM.
+Goodnight. I love you. Consistently.
+Sleep well. Eight hours.
+Goodnight. Lights off. Doors locked.
+Let's sleep. Tomorrow's schedule is clear.
+Goodnight, {player}. You're my favorite person.
+Sweet dreams. That's an expression. I hope you dream well.
+Come here. You're cold. 2 degrees colder than me.
+Goodnight. Thank you for another good day.

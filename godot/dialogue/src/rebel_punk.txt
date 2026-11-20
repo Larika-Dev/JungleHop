@@ -269,14 +269,14 @@ I'd fight the whole world for you.
 You're the only rule I follow.
 I love you more than my bass. And I love my bass.
 You get me. Nobody gets me.
-You're my home. My safe place.
+You're my home. My safe place. Whatever.
 I'm lucky. Don't tell anyone I said lucky.
 You're my favorite song.
 I love how you don't try to change me.
 You're the realest thing in my life.
 I'd stage dive into anything for you.
 You make me softer. Ugh.
-I'm proud to be yours.
+I'm proud to be yours. Whatever.
 You're my anchor in all the noise.
 Thanks for loving me loud.
 # home_talk
@@ -318,10 +318,10 @@ I swept the porch. The leaves can stay where they want, honestly.
 I washed the dishes. All of them. Even the gross pan.
 I cleaned out the garage. Found my old skateboard.
 I fixed the leaky roof. No contractor.
-I made the bed. Kinda.
+I made the bed. Kinda. Whatever.
 # money
 Money's tight. Capitalism's a scam.
-We'll get by. We always do.
+We'll get by. We always do. Whatever.
 I sold some merch at the show. Forty bucks.
 I'm picking up extra shifts at the shop.
 We don't need much. Records and each other.
@@ -356,18 +356,18 @@ Don't shut me out.
 I just want you to get it.
 # makeup
 Okay. I'm sorry. I was being a jerk.
-Come here. Let's not fight.
+Come here. Let's not fight. Whatever.
 I love you. That's not changing.
 Sorry I yelled. You didn't deserve it.
 Let's put on our song and just sit.
 We're crew. Crew makes up.
 I'll do better. I mean it.
-We're good. We're always good.
+We're good. We're always good. Whatever.
 # support
 Hey. Whoever did this, I'll handle it.
 It's okay. Let it out.
 I'm here. Not going anywhere.
-You're tougher than you think.
+You're tougher than you think. Whatever.
 Let's put on something loud and scream.
 The world's broken. You're not.
 I'll take care of everything tonight.
@@ -425,5 +425,5 @@ Night. I love you. Shut up.
 Lights out. Tomorrow we fight again.
 Goodnight, {player}. You're my crew.
 Sleep tight.
-Come here. You're cold.
+Come here. You're cold. Whatever.
 Night. Thanks for being real.

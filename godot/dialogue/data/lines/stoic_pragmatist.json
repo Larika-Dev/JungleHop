@@ -302,7 +302,7 @@
   {
    "tier": "base",
    "context": "farewell",
-   "text": "Later.",
+   "text": "Later. That's that.",
    "cond": {},
    "id": "stoic_pragmatist.base.027"
   },
@@ -506,7 +506,7 @@
   {
    "tier": "base",
    "context": "smalltalk",
-   "text": "I trust you. That's rare for me.",
+   "text": "I trust you. That's rare for me. That's that.",
    "cond": {
     "stage": [
      "friend",
@@ -691,7 +691,7 @@
   {
    "tier": "base",
    "context": "insult_reply",
-   "text": "Noted.",
+   "text": "Noted. That's that.",
    "cond": {},
    "id": "stoic_pragmatist.base.074"
   },
@@ -952,7 +952,7 @@
   {
    "tier": "base",
    "context": "flirt_reply",
-   "text": "No.",
+   "text": "No. That's that.",
    "cond": {
     "romance": [
      "none"
@@ -2436,7 +2436,7 @@
   {
    "tier": "marriage",
    "context": "affection",
-   "text": "You make this house a home.",
+   "text": "You make this house a home. That's that.",
    "cond": {
     "romance": [
      "married"
@@ -3283,7 +3283,7 @@
   {
    "tier": "marriage",
    "context": "argue",
-   "text": "Don't shut me out.",
+   "text": "Don't shut me out. That's that.",
    "cond": {
     "romance": [
      "married"
@@ -3393,7 +3393,7 @@
   {
    "tier": "marriage",
    "context": "makeup",
-   "text": "I love you. That doesn't change.",
+   "text": "I love you. That doesn't change. That's that.",
    "cond": {
     "romance": [
      "married"
@@ -3602,7 +3602,7 @@
   {
    "tier": "marriage",
    "context": "plans",
-   "text": "Let's go to the county fair.",
+   "text": "Let's go to the county fair. That's that.",
    "cond": {
     "romance": [
      "married"

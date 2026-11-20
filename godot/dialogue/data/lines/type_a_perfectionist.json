@@ -1659,7 +1659,7 @@
   {
    "tier": "dating",
    "context": "date_end",
-   "text": "Same time next week? I'll put it in my calendar.",
+   "text": "Same time next week? I'll put it in my calendar. Exactly.",
    "cond": {
     "romance": [
      "dating",
@@ -3591,7 +3591,7 @@
   {
    "tier": "marriage",
    "context": "plans",
-   "text": "How about a hike? I've mapped the route.",
+   "text": "How about a hike? I've mapped the route. Exactly.",
    "cond": {
     "romance": [
      "married"
@@ -3932,7 +3932,7 @@
   {
    "tier": "marriage",
    "context": "tease",
-   "text": "You think \"around six\" is a time.",
+   "text": "You think \"around six\" is a time. Exactly.",
    "cond": {
     "romance": [
      "married"

@@ -1,0 +1,4076 @@
+{
+ "id": "dramatic_diva",
+ "lines": [
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Darling! A new face! I'm {npc}. You may have seen me in the spring musical.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "dramatic_diva.base.001"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello! I'm {npc}. Yes, the {npc}. No? You will.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "dramatic_diva.base.002"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh! You startled me! I nearly fainted! I'm {npc}.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "dramatic_diva.base.003"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Greetings, mortal! I'm {npc}. Pardon the cape. It's a lifestyle.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "dramatic_diva.base.004"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Well, hello! I'm {npc}. Stand to my left, it's my better side.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "dramatic_diva.base.005"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Darling, hi! I'm {npc}. You have the face of a supporting character. I mean that kindly.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "dramatic_diva.base.006"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! My favorite audience member returns!",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "dramatic_diva.base.007"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh, {player}! You will NOT believe the tragedy that befell me this morning.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "dramatic_diva.base.008"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}, darling! Did you see my performance? Tell me it moved you.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "dramatic_diva.base.009"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello again, {player}! You're glowing! Not as much as me, but glowing!",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "dramatic_diva.base.010"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! Thank goodness! I need someone to witness my monologue.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "dramatic_diva.base.011"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! My co-star! My understudy in life!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "dramatic_diva.base.012"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Darling! You're here! The universe has blessed me!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "dramatic_diva.base.013"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! I've been waiting all day! Days! Centuries!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "dramatic_diva.base.014"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "My dearest {player}! Come, let us make an entrance together!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "dramatic_diva.base.015"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! You're the only one who truly understands my art!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "dramatic_diva.base.016"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Darling! I saved you front row seats. And my heart.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "dramatic_diva.base.017"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Morning? Already? The horror. Coffee, darling, before I perish.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "dramatic_diva.base.018"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good morning! I've already done my vocal warmups. Mi mi mi mi!",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "dramatic_diva.base.019"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Morning, darling. The sun rose just for me. And you, I suppose.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "dramatic_diva.base.020"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good evening! Curtain up in an hour! Break a leg to me!",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "dramatic_diva.base.021"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Evening, darling! The golden hour lights me beautifully.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "dramatic_diva.base.022"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello! Evening is when stars come out. I'm one of them.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "dramatic_diva.base.023"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "The night is my stage, darling!",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "dramatic_diva.base.024"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello, creature of the night! Let's be dramatic together!",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "dramatic_diva.base.025"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "It's late! The best entrances happen after midnight.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "dramatic_diva.base.026"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Farewell, darling! Until our next scene!",
+   "cond": {},
+   "id": "dramatic_diva.base.027"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Adieu! Adieu! Parting is such sweet sorrow!",
+   "cond": {},
+   "id": "dramatic_diva.base.028"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Goodbye! Don't forget me! As if you could!",
+   "cond": {},
+   "id": "dramatic_diva.base.029"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Exit, stage left!",
+   "cond": {},
+   "id": "dramatic_diva.base.030"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Ciao, darling! Kisses!",
+   "cond": {},
+   "id": "dramatic_diva.base.031"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "I must go! My public awaits!",
+   "cond": {},
+   "id": "dramatic_diva.base.032"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Goodbye, my darling {player}! I'll miss you terribly!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "dramatic_diva.base.033"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Farewell! Text me the moment you get home or I'll assume the worst!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "dramatic_diva.base.034"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye, love! Come to my show Friday! I'll be magnificent!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "dramatic_diva.base.035"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The Junior Varsity Cinema is showing old musicals all week. I wept through every one.",
+   "cond": {},
+   "id": "dramatic_diva.base.036"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The lighting in the student union is a crime against faces.",
+   "cond": {},
+   "id": "dramatic_diva.base.037"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I auditioned for the lead in the fall play. I was born for it.",
+   "cond": {},
+   "id": "dramatic_diva.base.038"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "My nemesis got cast as the lead. I'm fine. I'm FINE.",
+   "cond": {},
+   "id": "dramatic_diva.base.039"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I sang in the shower this morning and a bird joined in. Fairy-tale level.",
+   "cond": {},
+   "id": "dramatic_diva.base.040"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The Pamlico Inn ballroom has perfect acoustics. I tested them. Loudly.",
+   "cond": {},
+   "id": "dramatic_diva.base.041"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I wore sequins to the grocery store. Life is a stage.",
+   "cond": {},
+   "id": "dramatic_diva.base.042"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The rain today matched my mood. Tragic and beautiful.",
+   "cond": {},
+   "id": "dramatic_diva.base.043"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I've decided to only speak in song on Wednesdays.",
+   "cond": {},
+   "id": "dramatic_diva.base.044"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I got recognized at the coffee shop! Well, the barista remembered my order.",
+   "cond": {},
+   "id": "dramatic_diva.base.045"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Someone sneezed during my monologue. I'll never recover.",
+   "cond": {},
+   "id": "dramatic_diva.base.046"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I've been rehearsing my award acceptance speech. Just in case.",
+   "cond": {},
+   "id": "dramatic_diva.base.047"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Between us, darling? Sometimes the drama is to hide how scared I am.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "dramatic_diva.base.048"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You're the only one who sees me without the spotlight.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "dramatic_diva.base.049"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I'd give up my solo for you. Not the big one. The little one.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "dramatic_diva.base.050"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You're my best friend. That's not a performance. I swear.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "dramatic_diva.base.051"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I get lonely after the curtain falls. You make it better.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "dramatic_diva.base.052"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You clap the loudest. I always know it's you.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "dramatic_diva.base.053"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Weekend! Matinee and evening show! Double the glory!",
+   "cond": {
+    "weekend": true
+   },
+   "id": "dramatic_diva.base.054"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Saturday! Brunch with the cast! The gossip, darling!",
+   "cond": {
+    "weekend": true
+   },
+   "id": "dramatic_diva.base.055"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Sunday! A day of rest. And dramatic napping.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "dramatic_diva.base.056"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I've been performing since I was four. I was a tree. A very expressive tree.",
+   "cond": {},
+   "id": "dramatic_diva.base.057"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I'm a theater major. And a theater minor. And a theater lifestyle.",
+   "cond": {},
+   "id": "dramatic_diva.base.058"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "My mother says I was born screaming for an encore.",
+   "cond": {},
+   "id": "dramatic_diva.base.059"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I want to be on Broadway. Or any way. Any stage at all.",
+   "cond": {},
+   "id": "dramatic_diva.base.060"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I cry at commercials. And at sunsets. And at sandwiches, sometimes.",
+   "cond": {},
+   "id": "dramatic_diva.base.061"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I'm not dramatic. I'm passionate. There's a difference, darling.",
+   "cond": {},
+   "id": "dramatic_diva.base.062"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "Underneath it all, I just want people to love me.",
+   "cond": {},
+   "id": "dramatic_diva.base.063"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? The lighting is divine! Look at me!",
+   "cond": {},
+   "id": "dramatic_diva.base.064"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place} is so dull! It needs a chandelier! And a fog machine!",
+   "cond": {},
+   "id": "dramatic_diva.base.065"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "I once did an impromptu performance at {place}. They asked me to leave. Iconic.",
+   "cond": {},
+   "id": "dramatic_diva.base.066"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? Darling, it's giving community theater.",
+   "cond": {},
+   "id": "dramatic_diva.base.067"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "I adore {place}. It has such drama in its bones.",
+   "cond": {},
+   "id": "dramatic_diva.base.068"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Oh, darling! Stop! No, go on! More!",
+   "cond": {},
+   "id": "dramatic_diva.base.069"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "You're too kind! But also, correct!",
+   "cond": {},
+   "id": "dramatic_diva.base.070"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "I'm blushing! It's not makeup! Well, some of it is!",
+   "cond": {},
+   "id": "dramatic_diva.base.071"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Thank you! I'll treasure those words forever! Or until tomorrow!",
+   "cond": {},
+   "id": "dramatic_diva.base.072"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Darling! You've made my entire year!",
+   "cond": {},
+   "id": "dramatic_diva.base.073"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "How DARE you!",
+   "cond": {},
+   "id": "dramatic_diva.base.074"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "I've never been so insulted in my life! Well, there was that one review.",
+   "cond": {},
+   "id": "dramatic_diva.base.075"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "I'll have you know I'm a star!",
+   "cond": {},
+   "id": "dramatic_diva.base.076"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "That's it. You're cut from the cast of my life.",
+   "cond": {},
+   "id": "dramatic_diva.base.077"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "I'm going to cry dramatically. Over there. Watch me.",
+   "cond": {},
+   "id": "dramatic_diva.base.078"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "For ME? Oh, darling! I'm overwhelmed!",
+   "cond": {},
+   "id": "dramatic_diva.base.079"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "It's gorgeous! It's perfect! It's ME!",
+   "cond": {},
+   "id": "dramatic_diva.base.080"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "You shouldn't have! But you did! And I love you for it!",
+   "cond": {},
+   "id": "dramatic_diva.base.081"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "A gift! I'm speechless! Okay, not speechless. Thank you!",
+   "cond": {},
+   "id": "dramatic_diva.base.082"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "This is the best thing that's ever happened to me! This week!",
+   "cond": {},
+   "id": "dramatic_diva.base.083"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "Why did the actor fall through the floor? It was just a stage he was going through.",
+   "cond": {},
+   "id": "dramatic_diva.base.084"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "I'm not saying I'm dramatic, but I gave a eulogy for my houseplant.",
+   "cond": {},
+   "id": "dramatic_diva.base.085"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "How many divas does it take to change a lightbulb? One. She holds it, and the world revolves around her.",
+   "cond": {},
+   "id": "dramatic_diva.base.086"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "I'd tell you a joke about theater, but the timing would be off.",
+   "cond": {},
+   "id": "dramatic_diva.base.087"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Could you run lines with me? You'll play everyone else.",
+   "cond": {},
+   "id": "dramatic_diva.base.088"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Would you come to my show? I need someone to throw roses.",
+   "cond": {},
+   "id": "dramatic_diva.base.089"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Can you film my audition tape? Lighting is everything.",
+   "cond": {},
+   "id": "dramatic_diva.base.090"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Thank you, darling! You're my hero!",
+   "cond": {},
+   "id": "dramatic_diva.base.091"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "You're a star! A supporting star, but a star!",
+   "cond": {},
+   "id": "dramatic_diva.base.092"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "I'll thank you in my acceptance speech!",
+   "cond": {},
+   "id": "dramatic_diva.base.093"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I work at the cinema concession stand. I perform for every customer.",
+   "cond": {},
+   "id": "dramatic_diva.base.094"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I'm a singing telegram. Yesterday I sang to a dentist. He cried.",
+   "cond": {},
+   "id": "dramatic_diva.base.095"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "My boss says I'm too much. I say the world is too little.",
+   "cond": {},
+   "id": "dramatic_diva.base.096"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I teach drama to kids on Saturdays. They're my little stars.",
+   "cond": {},
+   "id": "dramatic_diva.base.097"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "I'm in five productions this semester. Sleep is for understudies.",
+   "cond": {},
+   "id": "dramatic_diva.base.098"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "My voice teacher says I have range. Emotional and vocal.",
+   "cond": {},
+   "id": "dramatic_diva.base.099"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "My acting professor said I'm \"a lot.\" Thank you!",
+   "cond": {},
+   "id": "dramatic_diva.base.100"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Ugh. YOU.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "dramatic_diva.base.101"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "You're the villain of my story, {player}.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "dramatic_diva.base.102"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I refuse to share a stage with you.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "dramatic_diva.base.103"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "You're dead to me. Dramatically.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "dramatic_diva.base.104"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I'm not speaking to you. That's my whole performance.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "dramatic_diva.base.105"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Exit. Now. Stage anywhere.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "dramatic_diva.base.106"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Oh, darling! How flattering! But no. We're platonic co-stars.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "dramatic_diva.base.107"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Ha! You're adorable! But my heart belongs to the stage.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "dramatic_diva.base.108"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "I'm flattered beyond words! But no, sweetie.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "dramatic_diva.base.109"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Oh! Be still my beating heart!",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "dramatic_diva.base.110"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Darling! Are you confessing? Is this our big scene?",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "dramatic_diva.base.111"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "I'm swooning! Catch me!",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "dramatic_diva.base.112"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "I've waited my whole life for this moment! I like you too!",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "dramatic_diva.base.113"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "Yes! A thousand times yes! Cue the orchestra!",
+   "cond": {},
+   "id": "dramatic_diva.base.114"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "A date? With me? Yes! I'll wear my most fabulous outfit!",
+   "cond": {},
+   "id": "dramatic_diva.base.115"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "Oh, darling, I'm heartbroken to say no! But no. Still friends?",
+   "cond": {},
+   "id": "dramatic_diva.base.116"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "I'm so flattered! But my heart says no. Dramatically.",
+   "cond": {},
+   "id": "dramatic_diva.base.117"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Darling! You're here! The night can begin!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.001"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "You look stunning! I look stunning! We're stunning!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.002"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "I've been getting ready for three hours! Was it worth it? Yes!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.003"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "My love! Our date is the event of the season!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.004"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "I wore sequins! For you! And for the general public!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.005"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Darling! I nearly fainted when I saw you!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.006"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're my leading role.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.007"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You make my heart sing louder than any solo.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.008"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "Every moment with you is a standing ovation.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.009"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're more breathtaking than opening night.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.010"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I'd give up the spotlight for you. Briefly.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.011"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're the love story I've been rehearsing for.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.012"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "Darling, you're a masterpiece.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.013"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's go to the theater! Then dinner! Then dancing!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.014"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Tell me everything about you! Every scene!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.015"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I've never felt this way! Not even on stage!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.016"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Shall I sing you something? I'll sing you something.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.017"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's take a carriage ride! Is there a carriage? Let's find a carriage!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.018"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I've written our love story. It's a musical.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.019"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "You're the only person who doesn't need me to perform.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.020"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's dance under the streetlights on Hamilton!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.021"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I think we're destined. Like star-crossed lovers. But happier.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.022"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I'm so happy I could burst into song. I will. Right now.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.023"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I want this night to last forever!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.024"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "You make me feel seen. Truly seen.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.025"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're absolutely gorgeous, darling!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.026"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You have the most beautiful smile! Camera-ready!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.027"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're so kind! Like a saint! A fabulous saint!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.028"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're the most fascinating person I've ever met!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.029"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You light up every room! Even more than I do!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.030"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Oh! That was a showstopper!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.031"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "I'm swooning! Again! Encore!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.032"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "That was the most romantic moment of my life!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.033"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Darling! The violins! Did you hear the violins?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.034"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I missed you! I nearly perished!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.035"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "Every day without you was a tragedy in three acts!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.036"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I wrote you a sonnet! And a song! And a monologue!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.037"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "The stage felt empty without you in the audience!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.038"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "Who was THAT? Are they prettier than me? Impossible!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.039"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I'm not jealous! I'm devastated! There's a difference!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.040"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "You're MY co-star! Don't forget it!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.041"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight, my love! What a performance!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.042"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Darling, tonight was magical!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.043"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Until our next scene! Goodnight!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.044"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "I'll dream of you! In technicolor!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.045"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight, {player}! You're my star!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.046"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "How could you?! I'm wounded!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.047"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "This is a tragedy! A tragedy!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.048"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I'm upset, darling! And I'm going to show it!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.049"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "Let's talk! Then let's make up dramatically!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.050"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "YES! Oh, darling, YES! Cue the confetti!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.051"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "I'll marry you! This is the greatest finale of all time!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.dating.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, darling! I've already sung to the birds!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.001"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, my love! Breakfast is served! With flair!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.002"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Darling! You're awake! The day may now begin!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.003"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! I made coffee! And a dramatic entrance!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.004"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, love! The sunlight's perfect on you!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.005"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! I dreamed I won an award! You were there, clapping!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.006"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Darling! Wake up! I've planned an entire day!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.007"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning! I did my vocal warmups in the shower! Did you hear?",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.008"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, my star! Eggs, toast, and applause!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.009"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, love! Today is going to be fabulous!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.010"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, darling! You look divine! Even with bed head!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.011"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning! I've chosen your outfit! It's bold!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.012"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home! Darling! The house was a tragedy without you!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.013"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home, my love! Dinner is served! Act one!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.014"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Darling! Finally! Tell me everything! Every detail!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.015"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome back, my star! I lit every candle in the house!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.016"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home! I've been rehearsing a welcome song!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.017"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Darling! I missed you like the stage misses a lead!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.018"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home! I made dinner! It's dramatic! It's flambéed!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.019"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hello, my love! Sit! Let me perform for you!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.020"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Darling! You're here! Now the scene is complete!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.021"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome back! The house was so quiet! I sang to the cat!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.022"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home late! I was imagining the worst! Tragedies!",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.023"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Darling! It's so late! Come, let me hold you!",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.024"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Oh, thank heavens! You're home! I was writing a eulogy!",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.025"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're back! I fell asleep on the chaise longue! Very glamorous!",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.026"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Darling! Long night? Let me rub your feet! Dramatically!",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.027"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Late night, my love? The moon kept me company. She's a fan.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.028"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are! I left a candle burning in the window! Like a ballad!",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.029"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Darling, come to bed! The night has been endless!",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.030"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Go, darling! Dazzle them!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.031"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye, my love! Break a leg!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.032"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a fabulous day! Be the star!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.033"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Farewell, my darling! Come back to me!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.034"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Go! Conquer! Return victorious!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.035"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye, love! Wear the scarf! It's dramatic!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.036"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a great day! I'll be here, pining!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.037"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Goodbye, darling! Every hour apart is an eternity!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.038"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "How was work, darling? Was it a comedy or a tragedy?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.039"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Tell me everything! Every scene! Every villain!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.040"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You look exhausted! Was it a disaster? Tell me!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.041"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Did your boss appreciate you? He'd better!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.042"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Darling! Was there drama? Please say there was drama!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.043"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Rough day? Let me sing to you!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.044"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You're home! The second act begins!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.045"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "I'm so proud of you, my star!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.046"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you more than the stage, darling!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.047"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my leading role forever!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.048"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Being married to you is a never-ending love story!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.049"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my standing ovation every day!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.050"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'm the luckiest diva in the world!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.051"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my muse, my love, my everything!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you more than applause! And I really love applause!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.053"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make my life a musical!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.054"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my favorite scene partner!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.055"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'd give up every spotlight for you!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.056"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my heart's greatest performance!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.057"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love how you clap for me! Every time!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.058"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my home! My dressing room! My sanctuary!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.059"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you, darling! Dramatically and truly!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.060"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make every day opening night!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.061"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'm so proud to be your spouse!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.062"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my happily ever after!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.063"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Thank you for loving me! All of me! The loud parts too!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.064"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I hung a chandelier in the bathroom! Darling, it's divine!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.065"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been rehearsing a one-person show! In the living room!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.066"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I bought a velvet chaise! For fainting!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.067"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The neighbors asked me to sing at their party! Of course!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.068"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've turned the garage into a stage!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.069"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been writing my memoir! It's called \"Me: A Triumph\"!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.070"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I put a spotlight in the hallway! For entrances!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.071"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The cat is my understudy now!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.072"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been taking tap dance lessons!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.073"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I hung my headshots in the dining room!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.074"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I found a costume trunk at the thrift store!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.075"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been organizing a community theater production!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.076"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I redecorated the bedroom! Very old Hollywood!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.077"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been teaching the neighbor's kids to sing!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.078"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I bought a karaoke machine! Fully professional!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.079"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been practicing my accents! Want to hear my Scottish?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.080"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I hung velvet curtains in every room!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.081"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been watching old musicals all day! I cried six times!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.082"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I'm thinking about starring in the town's holiday pageant!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.083"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a mood board for our anniversary!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.084"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been journaling! Every entry is a soliloquy!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.085"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I painted the front door gold!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.086"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been trying to be less dramatic! It's the hardest role of my life!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.087"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I think we should host a murder mystery party!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.088"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been sleeping in an eye mask! Very glamorous!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.089"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I love our home, darling! It's our stage!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.090"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I did the dishes! Singing all the while!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.091"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I vacuumed! It was a dance number!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.092"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Could you take out the trash, darling? It's beneath me! Kidding! But could you?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.093"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I cleaned the bathroom! A tragedy in one act!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.094"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I folded the laundry! Dramatically!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.095"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I swept the porch! Like Cinderella!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.096"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Let's do chores together! I'll provide the soundtrack!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.097"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I made the bed! With all twelve pillows!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.098"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I dusted! The chandelier sparkles again!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.099"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I washed the windows! The light is perfect!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.100"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I organized the closet! By color and drama level!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.101"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I mopped! Then slid across the floor! Like a film!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.102"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We're a little tight, darling! A financial tragedy!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.103"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I made a budget! It has a costume line!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.104"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I got paid for a gig! We're rich! For a day!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.105"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Let's save for a trip to the big city! The shows!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.106"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I bought a few things. Okay, many things. They were on sale!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.107"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Money's tight! Let's have a glamorous night in!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.108"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I'm doing extra singing telegrams! For us!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.109"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We should be more careful! Starting tomorrow!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.110"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I found a twenty in my costume! Fate!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.111"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We're rich in love, darling! And sequins!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.112"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Dinner is served, darling! With candles and drama!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.113"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made breakfast in bed! With a rose!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.114"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made a fondue! Very continental!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.115"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's dine by candlelight! Every night!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.116"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made soufflé! It fell! A tragedy! Still delicious!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.117"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made pasta! With a song!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.118"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's have a picnic on the lawn! In costume!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.119"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I baked a cake! It's shaped like a star! Like me!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.120"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Dinner theater tonight! I'm the dinner and the theater!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.121"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made your favorite! Presented with a flourish!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.122"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You didn't come to my show! I'm devastated!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.123"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "How could you say that? I'm wounded!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.124"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You never appreciate my art!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.125"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm not being dramatic! I'm being HONEST!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.126"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You forgot our special day! A tragedy!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.127"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You turned off my musical! Mid-song!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.128"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I feel invisible! Unseen! Ignored!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.129"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You never compliment me anymore!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.130"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I need you to hear me! Really hear me!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.131"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm going to go cry! Elegantly! In the bath!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.132"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You're upstaging me! In our own marriage!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.133"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I just want you to love me loudly!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.134"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry, darling! I was being a diva!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.135"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's make up! Dramatically!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.136"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I love you! I'm sorry! Hug me!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.137"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I overreacted! It's my curse!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.138"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "You're my leading role! Even when we fight!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.139"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's start over! Take two! Darling!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.140"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'll tone it down! Slightly!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.141"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "We're perfect, darling! Our love story continues!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.142"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Oh, darling! Come here! Let it all out!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.143"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "It's okay! Even stars have bad nights!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.144"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I'm here, my love! Your biggest fan!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.145"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Whatever it is, we'll get through it! Together!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.146"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let me sing you something soothing!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.147"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You don't have to perform today, darling! Just rest!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.148"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I'll take care of everything! Leave it to me!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.149"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You're stronger than any tragedy!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.150"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I love you! In every act!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.151"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let's watch a musical and cry together!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.152"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the big city! See a show!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.153"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a weekend at the Pamlico Inn? Very glamorous!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.154"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's host a cast party!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.155"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the opera! Dress up!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.156"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about karaoke night? I'll be magnificent!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.157"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's take a dance class! Ballroom!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.158"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the film festival!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.159"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a costume party? I have ideas!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.160"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the beach! I'll wear a giant hat!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.161"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's plan our anniversary! A gala!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.162"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we met? I was in costume!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.163"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our first date? The theater! I cried!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.164"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our wedding? I sang down the aisle!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.165"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when you threw roses at my show?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.166"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our honeymoon? I wore a different hat every day!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.167"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I still have the program from our first date!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.168"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when I fainted at the proposal?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.169"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we danced in the rain?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.170"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I remember the first time you said I was wonderful!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.171"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember opening night? You were in the front row!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.172"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary, darling! The greatest love story ever told!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.173"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Another year! Cue the confetti!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.174"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I wrote you a song! Happy anniversary!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.175"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary, my star!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.176"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I love you more every year! Like a sequel that's better!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.177"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Here's to another year of drama and love!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.178"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You still can't carry a tune!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.179"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You fall asleep in musicals!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.180"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You hide my sequins!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.181"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You roll your eyes at my entrances!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.182"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You call my chaise \"the fainting couch\"! It is!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.183"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You don't know any show tunes!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.184"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You laugh at my accents!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.185"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You think I'm too much! I am! You love it!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.186"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You never cry at sad movies! Heartless!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.187"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You secretly love my performances!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.188"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You clap the loudest! Don't deny it!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.189"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You're more dramatic than me sometimes!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.190"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, darling! Curtain call!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.191"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come to bed! The show is over!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.192"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, my star!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.193"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sleep well, my love! Dream of applause!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.194"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight! I love you more than the spotlight!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.195"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Lights out! Exit, stage bed!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.196"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, {player}! You're my leading role!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.197"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sweet dreams, darling!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.198"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come cuddle! I'll sing you a lullaby!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.199"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight! Thank you for another fabulous day!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dramatic_diva.marriage.200"
+  }
+ ]
+}

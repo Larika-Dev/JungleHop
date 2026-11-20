@@ -195,7 +195,7 @@ I'm not jealous. I just felt a little invisible.
 They were very pretty. I'm just me. Is that enough?
 # date_end
 Thank you for tonight. I'll remember it forever.
-Goodnight, {player}. Sweet dreams.
+Goodnight, {player}. Sweet dreams. ...um, yes.
 Can I see you again soon? Please?
 I had the best time. Really.
 I'll be reading tonight, but I'll be thinking about you.
@@ -262,7 +262,7 @@ Did you eat lunch? I worry when you don't.
 You can rest now. You're home.
 # affection
 I love you. I don't say it enough, but I do.
-You're the best thing that ever happened to me.
+You're the best thing that ever happened to me. ...um, yes.
 I feel so safe with you. Like a good blanket.
 I used to think love only happened in books. Then I met you.
 You're my favorite story. My favorite one.

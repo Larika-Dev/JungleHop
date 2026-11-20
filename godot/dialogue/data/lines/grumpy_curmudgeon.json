@@ -3844,7 +3844,7 @@
   {
    "tier": "marriage",
    "context": "tease",
-   "text": "You put ketchup on everything.",
+   "text": "You put ketchup on everything. Hmph.",
    "cond": {
     "romance": [
      "married"

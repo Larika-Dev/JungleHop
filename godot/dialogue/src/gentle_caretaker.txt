@@ -198,7 +198,7 @@ Goodnight, dear. Drive safely.
 Text me when you get home, sweetheart.
 I had such a lovely time. Thank you.
 Here, take some leftovers for tomorrow.
-Goodnight, {player}. Sleep well.
+Goodnight, {player}. Sleep well. Okay, dear?
 # lovers_quarrel
 Oh, dear. I'm upset. Let's talk about it.
 That hurt my feelings, sweetheart.
@@ -286,7 +286,7 @@ Mrs. Chen's feeling better. My soup worked.
 I planted new roses by the porch.
 I made a quilt for the guest room.
 The grandkids are coming this weekend!
-I've been teaching the neighbor's kids to bake.
+I've been teaching the neighbor's kids to bake. Okay, dear?
 I cleaned out the pantry. We need more flour.
 I've been volunteering at the hospital again.
 I found my mother's old recipe book.
@@ -365,7 +365,7 @@ I'll make your favorite pie to say sorry.
 We're alright, dear. We always are.
 # support
 Oh, sweetheart. Come here. Let me hold you.
-It's alright, dear. I'm here.
+It's alright, dear. I'm here. Okay, dear?
 Let me make you some soup. It'll help.
 You're stronger than you know, love.
 Whatever it is, dear, we'll get through it. With soup.

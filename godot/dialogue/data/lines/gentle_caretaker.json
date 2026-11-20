@@ -1687,7 +1687,7 @@
   {
    "tier": "dating",
    "context": "date_end",
-   "text": "Goodnight, {player}. Sleep well.",
+   "text": "Goodnight, {player}. Sleep well. Okay, dear?",
    "cond": {
     "romance": [
      "dating",
@@ -2645,7 +2645,7 @@
   {
    "tier": "marriage",
    "context": "home_talk",
-   "text": "I've been teaching the neighbor's kids to bake.",
+   "text": "I've been teaching the neighbor's kids to bake. Okay, dear?",
    "cond": {
     "romance": [
      "married"
@@ -3448,7 +3448,7 @@
   {
    "tier": "marriage",
    "context": "support",
-   "text": "It's alright, dear. I'm here.",
+   "text": "It's alright, dear. I'm here. Okay, dear?",
    "cond": {
     "romance": [
      "married"

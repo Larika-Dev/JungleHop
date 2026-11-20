@@ -266,13 +266,13 @@ You're my favorite teammate.
 Being married to you is a championship every day.
 You make me want to be better.
 I'd lose every game for you. Mostly.
-You're my greatest victory.
+You're my greatest victory. Point to me.
 I love you more than winning. That's a big deal.
 You're my MVP.
 You challenge me. I love that.
 You're the only one I want on my team.
 I'm so lucky. Luckier than anyone.
-You're the best thing I've ever won.
+You're the best thing I've ever won. Point to me.
 I love how you never let me win.
 You're my home team.
 I'd fight anyone for you.
@@ -365,7 +365,7 @@ Let's start over. New game.
 We're good. We're a team.
 # support
 Hey. You're a champion. This is just a setback.
-I've got your back. Always.
+I've got your back. Always. Point to me.
 You're tougher than this.
 Whatever it is, we'll beat it together.
 I'm here, love. Let's rest. Then fight.

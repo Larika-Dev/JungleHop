@@ -99,7 +99,57 @@
    "base": 117,
    "dating": 52,
    "marriage": 200
+  },
+  "thrill_seeker": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "spiritual_mystic": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "by_the_book": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "rebel_punk": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "foodie": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "competitive_rival": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "dramatic_diva": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "literal_engineer": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "polite_traditionalist": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "mysterious_loner": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
   }
  },
- "total_lines": 7381
+ "total_lines": 11071
 }

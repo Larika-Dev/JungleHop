@@ -3470,7 +3470,7 @@
   {
    "tier": "marriage",
    "context": "support",
-   "text": "Whatever it is, we'll beat it together.",
+   "text": "Whatever it is, we'll beat it together. Achievement unlocked.",
    "cond": {
     "romance": [
      "married"

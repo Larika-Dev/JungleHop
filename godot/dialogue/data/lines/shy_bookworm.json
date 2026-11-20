@@ -1645,7 +1645,7 @@
   {
    "tier": "dating",
    "context": "date_end",
-   "text": "Goodnight, {player}. Sweet dreams.",
+   "text": "Goodnight, {player}. Sweet dreams. ...um, yes.",
    "cond": {
     "romance": [
      "dating",
@@ -2392,7 +2392,7 @@
   {
    "tier": "marriage",
    "context": "affection",
-   "text": "You're the best thing that ever happened to me.",
+   "text": "You're the best thing that ever happened to me. ...um, yes.",
    "cond": {
     "romance": [
      "married"

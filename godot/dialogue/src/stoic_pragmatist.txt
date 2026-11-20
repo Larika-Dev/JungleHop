@@ -33,7 +33,7 @@ Late. Everything alright?
 You're out late. Be careful.
 Night. Roads are slick after nine.
 # farewell
-Later.
+Later. That's that.
 Take care.
 See you.
 Drive safe.
@@ -60,7 +60,7 @@ Built a bookshelf. Holds four hundred pounds.
 You're alright, {player}. I don't say that much.
 Not a talker. But I'm glad you're around.
 If your car breaks down, call me. Not a tow truck.
-I trust you. That's rare for me.
+I trust you. That's rare for me. That's that.
 I'd help you move. That's friendship.
 I made you a key to the shop. In case.
 # smalltalk weekend=true
@@ -88,7 +88,7 @@ Hm. Kind of you.
 Thank you. Means something.
 Okay. Thanks.
 # insult_reply
-Noted.
+Noted. That's that.
 That right.
 You done?
 Not worth my time.
@@ -129,7 +129,7 @@ Keep walking.
 We're done talking.
 Stay off my property.
 # flirt_reply romance=none
-No.
+No. That's that.
 Not interested. No offense.
 Hm. I'll pass.
 # flirt_reply romance=crush
@@ -266,7 +266,7 @@ You're the best thing in my life.
 Don't say it much. Mean it every day.
 I'd do anything for you.
 Glad I married you.
-You make this house a home.
+You make this house a home. That's that.
 You're my person.
 Every day, I'm grateful.
 Come here.
@@ -348,7 +348,7 @@ I don't like how you said that.
 I need you to listen.
 We talked about this.
 That was money we needed.
-Don't shut me out.
+Don't shut me out. That's that.
 I'm not mad. I'm frustrated.
 You're not hearing me.
 Going for a walk. Need to think.
@@ -359,7 +359,7 @@ Sorry.
 I was wrong.
 Come here. It's fine.
 Let's not do that again.
-I love you. That doesn't change.
+I love you. That doesn't change. That's that.
 I'll do better.
 We're alright.
 Shouldn't have said that.
@@ -380,7 +380,7 @@ Want to drive to the mountains?
 Thought we'd fix up the porch together.
 Camping next month.
 Lake this weekend.
-Let's go to the county fair.
+Let's go to the county fair. That's that.
 Could build a garden bed. Spring.
 Drive to the coast. Just us.
 Want to see the old train station in Carrburg?

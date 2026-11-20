@@ -1018,7 +1018,7 @@
   {
    "tier": "base",
    "context": "flirt_reply",
-   "text": "I've been hoping you'd say something like that.",
+   "text": "I've been hoping you'd say something like that. It matters.",
    "cond": {
     "romance": [
      "crush"

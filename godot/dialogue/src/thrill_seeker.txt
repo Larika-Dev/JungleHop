@@ -203,7 +203,7 @@ Goodnight, {player}! Dream about adventures!
 I'm upset, and that's scarier than any cliff.
 Let's talk. I don't want to run away from this.
 That hurt. I don't get hurt easily.
-I don't want to fight. I want to fix this.
+I don't want to fight. I want to fix this. Rush!
 # proposal_yes
 YES! This is the biggest leap I've ever taken!
 I'll marry you! Let's do it at the top of a mountain!
@@ -256,7 +256,7 @@ How was work? Anything exciting?
 Tell me about your day! Was it an adventure?
 You look tired, babe. Let's go for a quick hike to recharge.
 Did your boss stress you out? Let's go punch a bag.
-How'd it go? Any wins?
+How'd it go? Any wins? Rush!
 Rough day? Let's go ride bikes and forget about it.
 You're home now! Let's have some fun!
 I'm proud of you, love. You're brave every day.
@@ -268,7 +268,7 @@ You make my heart race every day.
 I'm so lucky to have you, babe.
 You're my partner in every adventure.
 I'd climb any mountain for you.
-You're the bravest person I know.
+You're the bravest person I know. Rush!
 I love you more than skydiving. And I really love skydiving.
 You keep me grounded. Literally.
 You're my safe place. My base camp.
@@ -276,7 +276,7 @@ I love how you keep up with me.
 You're the best thing that ever happened to me. Better than any jump.
 I love you, babe. More than adrenaline.
 You make me want to come home.
-I'm so proud to be your spouse.
+I'm so proud to be your spouse. Rush!
 You're my anchor, love.
 I love you more every day. Like a summit that keeps getting higher.
 # home_talk
@@ -359,21 +359,21 @@ I'm sorry, babe. I'll be more careful.
 I hate fighting with you. It's worse than any fall.
 Let's make up. With a hike!
 I love you. I'm sorry I scared you.
-You're my favorite person. Even when we fight.
+You're my favorite person. Even when we fight. Rush!
 Let's start over. New trail.
 I'll wear the helmet. For you.
 We're good, love. We always land on our feet.
 # support
 Hey, it's okay. Let's go for a walk. Fresh air.
 You're stronger than any mountain, babe.
-I'm here, love. Always.
+I'm here, love. Always. Rush!
 Whatever it is, we'll climb over it together.
 Let's take a break from everything.
 You don't have to be brave today. I'll be brave for both of us.
 Let's sit by the fire and just be.
-I love you. Even on the hard days.
-You're my hero, love.
-Let me take care of you tonight.
+I love you. Even on the hard days. Rush!
+You're my hero, love. Rush!
+Let me take care of you tonight. Rush!
 # plans
 Let's go cliff jumping this weekend!
 How about a road trip to the mountains?
@@ -402,7 +402,7 @@ Another year! Let's climb a new mountain!
 I got you new climbing shoes! Happy anniversary!
 Happy anniversary, love! You're still my favorite adventure!
 I love you more every year! Like altitude!
-Here's to another year of adventures!
+Here's to another year of adventures! Rush!
 # tease
 You still scream on roller coasters.
 You won't jump off the high dive.

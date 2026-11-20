@@ -2524,7 +2524,7 @@
   {
    "tier": "marriage",
    "context": "affection",
-   "text": "I'm so proud to be your spouse.",
+   "text": "I'm so proud to be your spouse. Let's go!",
    "cond": {
     "romance": [
      "married"
