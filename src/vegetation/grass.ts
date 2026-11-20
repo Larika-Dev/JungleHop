@@ -60,7 +60,7 @@ const VERT_BODY = /* glsl */ `
     float wind = sin(uTime * 1.6 + wp.x * 0.37 + wp.y * 0.29) * 0.5 + sin(uTime * 2.7 + wp.x * 0.9) * 0.18;
     vec2 off = fdir * (lean * t * t) + vec2(0.7, 0.45) * wind * 0.09 * hgt * t * t;
     transformed = vec3(wp.x + side.x * wid + off.x, dat.r + t * hgt * (1.0 - 0.18 * t), wp.y + side.y * wid + off.y);
-    float shade = mix(0.6, 1.05, t);
+    float shade = mix(0.85, 1.45, t); // matches the lawn texture between blades: darker roots, sunlit tips
     vGrass = vec3(worn, gh(cell, 8.0), shade);
   }
 `;
