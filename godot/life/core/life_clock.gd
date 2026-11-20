@@ -99,6 +99,8 @@ func advance_minutes(m: float) -> void:
 
 
 func set_time(day: int, hour: int, minute: int = 0) -> void:
+	if external and external.has_method("set_time"):
+		external.set_time(day, hour, minute)
 	total_minutes = float((day - 1) * 1440 + hour * 60 + minute)
 	_last_whole = int(floor(total_minutes))
 
