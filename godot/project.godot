@@ -23,6 +23,7 @@ Life="*res://life/life.gd"
 Furniture="*res://furniture/furniture_manager.gd"
 JobSystem="*res://jobs/job_system.gd"
 Education="*res://education/education.gd"
+Law="*res://crime/law.gd"
 
 [display]
 
