@@ -1,0 +1,2608 @@
+{
+ "generatedFrom": [
+  "data/buildings.json",
+  "data/rooms.json"
+ ],
+ "seed": 1795,
+ "count": 54,
+ "places": [
+  {
+   "id": "LM01_OLD_CISTERN",
+   "name": "The Old Cistern",
+   "typology": "library",
+   "district": "north_quad",
+   "tile": "T_10_8",
+   "position": {
+    "x": 185.3,
+    "y": -4.51,
+    "z": 295.3,
+    "rotY": 0
+   },
+   "floors": 1,
+   "role": "study",
+   "services": [
+    "study (grade boost)",
+    "quiet meetups"
+   ],
+   "jobs": [
+    {
+     "role": "library desk",
+     "wage": 12,
+     "shift": "any",
+     "needs": "enrolled"
+    }
+   ],
+   "hours": [
+    8,
+    26
+   ],
+   "rooms": {
+    "total": 1,
+    "byType": {
+     "court": 1
+    }
+   },
+   "classrooms": 0,
+   "dormRooms": 0
+  },
+  {
+   "id": "LM02_CARILLON_SPIRE",
+   "name": "The Carillon Spire",
+   "typology": "historic_academic",
+   "district": "carillon_south",
+   "tile": "T_10_10",
+   "position": {
+    "x": 267,
+    "y": -9.47,
+    "z": 665,
+    "rotY": 0
+   },
+   "floors": 10,
+   "role": "school",
+   "services": [
+    "attend class",
+    "office hours"
+   ],
+   "jobs": [
+    {
+     "role": "research assistant",
+     "wage": 15,
+     "shift": "day",
+     "needs": "enrolled, B average"
+    },
+    {
+     "role": "custodian",
+     "wage": 14,
+     "shift": "night"
+    }
+   ],
+   "hours": [
+    7,
+    22
+   ],
+   "rooms": {
+    "total": 10,
+    "byType": {
+     "lobby": 1,
+     "stair": 7,
+     "ringing_room": 1,
+     "bell_chamber": 1
+    }
+   },
+   "classrooms": 0,
+   "dormRooms": 0
+  },
+  {
+   "id": "LM03_WILBERFORCE",
+   "name": "Wilberforce Library",
+   "typology": "library",
+   "district": "north_quad",
+   "tile": "T_10_7",
+   "position": {
+    "x": 252,
+    "y": -1.22,
+    "z": 168,
+    "rotY": 1.570796
+   },
+   "floors": 3,
+   "role": "study",
+   "services": [
+    "study (grade boost)",
+    "quiet meetups"
+   ],
+   "jobs": [
+    {
+     "role": "library desk",
+     "wage": 12,
+     "shift": "any",
+     "needs": "enrolled"
+    }
+   ],
+   "hours": [
+    8,
+    26
+   ],
+   "rooms": {
+    "total": 32,
+    "byType": {
+     "vault": 1,
+     "storage": 3,
+     "mechanical": 1,
+     "stair": 8,
+     "hall": 4,
+     "stacks": 6,
+     "lobby": 1,
+     "reading_room": 1,
+     "office": 3,
+     "gallery": 4
+    }
+   },
+   "classrooms": 0,
+   "dormRooms": 0
+  },
+  {
+   "id": "LM04_DAVIES_STACKS",
+   "name": "Davies Stacks",
+   "typology": "library",
+   "district": "quarry",
+   "tile": "T_9_9",
+   "position": {
+    "x": 47,
+    "y": -6.61,
+    "z": 446,
+    "rotY": -1.570796
+   },
+   "floors": 8,
+   "role": "study",
+   "services": [
+    "study (grade boost)",
+    "quiet meetups"
+   ],
+   "jobs": [
+    {
+     "role": "library desk",
+     "wage": 12,
+     "shift": "any",
+     "needs": "enrolled"
+    }
+   ],
+   "hours": [
+    8,
+    26
+   ],
+   "rooms": {
+    "total": 40,
+    "byType": {
+     "lobby": 1,
+     "reading_room": 3,
+     "court": 1,
+     "stacks": 14,
+     "study": 14,
+     "gallery": 7
+    }
+   },
+   "classrooms": 0,
+   "dormRooms": 0
+  },
+  {
+   "id": "LM05_FOUNDERS_HALL",
+   "name": "Founders' Hall",
+   "typology": "historic_academic",
+   "district": "founders_quad",
+   "tile": "T_10_8",
+   "position": {
+    "x": 216,
+    "y": -4.87,
+    "z": 357,
+    "rotY": 3.141593
+   },
+   "floors": 3,
+   "role": "school",
+   "services": [
+    "attend class",
+    "office hours"
+   ],
+   "jobs": [
+    {
+     "role": "research assistant",
+     "wage": 15,
+     "shift": "day",
+     "needs": "enrolled, B average"
+    },
+    {
+     "role": "custodian",
+     "wage": 14,
+     "shift": "night"
+    }
+   ],
+   "hours": [
+    7,
+    22
+   ],
+   "rooms": {
+    "total": 85,
+    "byType": {
+     "mechanical": 9,
+     "stair": 10,
+     "corridor": 8,
+     "storage": 4,
+     "hall": 3,
+     "office": 20,
+     "study": 10,
+     "restroom": 6,
+     "attic": 15
+    }
+   },
+   "classrooms": 0,
+   "dormRooms": 0
+  },
+  {
+   "id": "LM06_ELDER_WEST",
+   "name": "Elder West",
+   "typology": "residence_historic",
+   "district": "north_quad",
+   "tile": "T_10_8",
+   "position": {
+    "x": 119,
+    "y": -2.97,
+    "z": 240,
+    "rotY": -1.570796
+   },
+   "floors": 4,
+   "role": "housing",
+   "services": [
+    "dorm room",
+    "RA"
+   ],
+   "jobs": [
+    {
+     "role": "resident advisor",
+     "wage": 0,
+     "shift": "any",
+     "needs": "sophomore+; pays free room"
+    }
+   ],
+   "hours": [
+    0,
+    24
+   ],
+   "rooms": {
+    "total": 213,
+    "byType": {
+     "stair": 12,
+     "corridor": 5,
+     "mechanical": 11,
+     "storage": 19,
+     "restroom": 9,
+     "elevator_lobby": 5,
+     "dorm_double": 102,
+     "dorm_single": 16,
+     "lobby": 1,
+     "attic": 33
+    }
+   },
+   "classrooms": 0,
+   "dormRooms": 118
+  },
+  {
+   "id": "LM06_ELDER_EAST",
+   "name": "Elder East",
+   "typology": "residence_historic",
+   "district": "north_quad",
+   "tile": "T_10_8",
+   "position": {
+    "x": 261,
+    "y": -2.69,
+    "z": 300,
+    "rotY": 1.570796
+   },
+   "floors": 4,
+   "role": "housing",
+   "services": [
+    "dorm room",
+    "RA"
+   ],
+   "jobs": [
+    {
+     "role": "resident advisor",
+     "wage": 0,
+     "shift": "any",
+     "needs": "sophomore+; pays free room"
+    }
+   ],
+   "hours": [
+    0,
+    24
+   ],
+   "rooms": {
+    "total": 213,
+    "byType": {
+     "stair": 12,
+     "corridor": 5,
+     "mechanical": 11,
+     "storage": 19,
+     "restroom": 9,
+     "elevator_lobby": 5,
+     "dorm_double": 102,
+     "dorm_single": 16,
+     "lobby": 1,
+     "attic": 33
+    }
+   },
+   "classrooms": 0,
+   "dormRooms": 118
+  },
+  {
+   "id": "LM07_MOORHOUSE",
+   "name": "Moorhouse Observatory",
+   "typology": "historic_academic",
+   "district": "hamilton_strip",
+   "tile": "T_11_7",
+   "position": {
+    "x": 406,
+    "y": 0.66,
+    "z": 34,
+    "rotY": 0
+   },
+   "floors": 2,
+   "role": "school",
+   "services": [
+    "attend class",
+    "office hours"
+   ],
+   "jobs": [
+    {
+     "role": "research assistant",
+     "wage": 15,
+     "shift": "day",
+     "needs": "enrolled, B average"
+    },
+    {
+     "role": "custodian",
+     "wage": 14,
+     "shift": "night"
+    }
+   ],
+   "hours": [
+    7,
+    22
+   ],
+   "rooms": {
+    "total": 15,
+    "byType": {
+     "lobby": 1,
+     "theater": 1,
+     "office": 6,
+     "gallery": 2,
+     "deck": 5
+    }
+   },
+   "classrooms": 0,
+   "dormRooms": 0
+  },
+  {
+   "id": "LM08_ASHGROVE",
+   "name": "Ashgrove Library",
+   "typology": "library",
+   "district": "founders_quad",
+   "tile": "T_10_10",
+   "position": {
+    "x": 162,
+    "y": -7.42,
+    "z": 588,
+    "rotY": 0
+   },
+   "floors": 2,
+   "role": "study",
+   "services": [
+    "study (grade boost)",
+    "quiet meetups"
+   ],
+   "jobs": [
+    {
+     "role": "library desk",
+     "wage": 12,
+     "shift": "any",
+     "needs": "enrolled"
+    }
+   ],
+   "hours": [
+    8,
+    26
+   ],
+   "rooms": {
+    "total": 24,
+    "byType": {
+     "vault": 1,
+     "storage": 3,
+     "mechanical": 1,
+     "stair": 6,
+     "hall": 3,
+     "stacks": 4,
+     "lobby": 1,
+     "reading_room": 1,
+     "office": 2,
+     "gallery": 2
+    }
+   },
+   "classrooms": 0,
+   "dormRooms": 0
+  },
+  {
+   "id": "LM09_STUDENT_UNION",
+   "name": "Student Union",
+   "typology": "modern_academic",
+   "district": "quarry",
+   "tile": "T_9_10",
+   "position": {
+    "x": 51,
+    "y": -7.14,
+    "z": 527,
+    "rotY": 0
+   },
+   "floors": 4,
+   "role": "school",
+   "services": [
+    "attend class",
+    "campus services"
+   ],
+   "jobs": [
+    {
+     "role": "student worker",
+     "wage": 12,
+     "shift": "any",
+     "needs": "enrolled"
+    }
+   ],
+   "hours": [
+    7,
+    24
+   ],
+   "rooms": {
+    "total": 36,
+    "byType": {
+     "food_court": 1,
+     "dining": 1,
+     "office": 6,
+     "stair": 8,
+     "elevator_lobby": 4,
+     "restroom": 8,
+     "classroom": 6,
+     "ballroom": 2
+    }
+   },
+   "classrooms": 6,
+   "dormRooms": 0
+  },
+  {
+   "id": "LM09_DINING_HALL",
+   "name": "Dining Hall",
+   "typology": "modern_academic",
+   "district": "quarry",
+   "tile": "T_9_9",
+   "position": {
+    "x": 99,
+    "y": -6.19,
+    "z": 441,
+    "rotY": 3.141593
+   },
+   "floors": 2,
+   "role": "school",
+   "services": [
+    "attend class",
+    "campus services"
+   ],
+   "jobs": [
+    {
+     "role": "student worker",
+     "wage": 12,
+     "shift": "any",
+     "needs": "enrolled"
+    }
+   ],
+   "hours": [
+    7,
+    24
+   ],
+   "rooms": {
+    "total": 18,
+    "byType": {
+     "dining": 1,
+     "kitchen": 1,
+     "office": 4,
+     "stair": 4,
+     "elevator_lobby": 2,
+     "restroom": 4,
+     "classroom": 2
+    }
+   },
+   "classrooms": 2,
+   "dormRooms": 0
+  },
+  {
+   "id": "LM10_BENEFACTOR_STADIUM",
+   "name": "Benefactor Memorial Stadium",
+   "typology": "arena",
+   "district": "carillon_south",
+   "tile": "T_11_11",
+   "position": {
+    "x": 245,
+    "y": -27.95,
+    "z": 712,
+    "rotY": 0
+   },
+   "floors": 8,
+   "role": "events",
+   "services": [
+    "game day",
+    "concerts",
+    "tailgates"
+   ],
+   "jobs": [
+    {
+     "role": "concessions",
+     "wage": 12,
+     "shift": "evening"
+    },
+    {
+     "role": "event security",
+     "wage": 15,
+     "shift": "evening"
+    }
+   ],
+   "hours": [
+    10,
+    24
+   ],
+   "rooms": {
+    "total": 54,
+    "byType": {
+     "stair": 16,
+     "elevator_lobby": 8,
+     "court": 1,
+     "corridor": 7,
+     "hall": 1,
+     "locker": 2,
+     "storage": 1,
+     "concourse": 6,
+     "food_court": 1,
+     "restroom": 1,
+     "suite": 6,
+     "press_box": 4
+    }
+   },
+   "classrooms": 0,
+   "dormRooms": 0
+  },
+  {
+   "id": "LM11_COACHS_DOME",
+   "name": "The Coach's Dome",
+   "typology": "arena",
+   "district": "carillon_south",
+   "tile": "T_9_11",
+   "position": {
+    "x": -60,
+    "y": -18.5,
+    "z": 810,
+    "rotY": 0
+   },
+   "floors": 3,
+   "role": "events",
+   "services": [
+    "game day",
+    "concerts",
+    "tailgates"
+   ],
+   "jobs": [
+    {
+     "role": "concessions",
+     "wage": 12,
+     "shift": "evening"
+    },
+    {
+     "role": "event security",
+     "wage": 15,
+     "shift": "evening"
+    }
+   ],
+   "hours": [
+    10,
+    24
+   ],
+   "rooms": {
+    "total": 23,
+    "byType": {
+     "stair": 6,
+     "corridor": 4,
+     "court": 1,
+     "locker": 2,
+     "gym": 1,
+     "concourse": 6,
+     "food_court": 2,
+     "office": 1
+    }
+   },
+   "classrooms": 0,
+   "dormRooms": 0
+  },
+  {
+   "id": "LM12_PAMLICO_INN",
+   "name": "Pamlico Inn",
+   "typology": "inn",
+   "district": "cameron_heights",
+   "tile": "T_9_9",
+   "position": {
+    "x": -43,
+    "y": -5.58,
+    "z": 343,
+    "rotY": -1.570796
+   },
+   "floors": 4,
+   "role": "hotel",
+   "services": [
+    "rent a night",
+    "restaurant",
+    "ballroom events"
+   ],
+   "jobs": [
+    {
+     "role": "front desk",
+     "wage": 14,
+     "shift": "any"
+    },
+    {
+     "role": "housekeeping",
+     "wage": 13,
+     "shift": "day"
+    },
+    {
+     "role": "server",
+     "wage": 12,
+     "shift": "evening"
+    }
+   ],
+   "hours": [
+    0,
+    24
+   ],
+   "rooms": {
+    "total": 257,
+    "byType": {
+     "stair": 10,
+     "corridor": 5,
+     "laundry": 1,
+     "mechanical": 1,
+     "lobby": 1,
+     "dining": 1,
+     "office": 1,
+     "ballroom": 1,
+     "kitchen": 1,
+     "restroom": 1,
+     "guest_room": 156,
+     "guest_bath": 78
+    }
+   },
+   "classrooms": 0,
+   "dormRooms": 0
+  },
+  {
+   "id": "LM13_MED_TOWER_A",
+   "name": "Medical Tower A",
+   "typology": "hospital",
+   "district": "medical",
+   "tile": "T_7_10",
+   "position": {
+    "x": -432,
+    "y": -8.23,
+    "z": 602,
+    "rotY": 0
+   },
+   "floors": 8,
+   "role": "health",
+   "services": [
+    "treatment",
+    "respawn after knockout",
+    "medical bills"
+   ],
+   "jobs": [
+    {
+     "role": "orderly",
+     "wage": 15,
+     "shift": "any"
+    },
+    {
+     "role": "nurse",
+     "wage": 32,
+     "shift": "any",
+     "needs": "nursing degree"
+    },
+    {
+     "role": "doctor",
+     "wage": 70,
+     "shift": "any",
+     "needs": "medical degree"
+    }
+   ],
+   "hours": [
+    0,
+    24
+   ],
+   "rooms": {
+    "total": 215,
+    "byType": {
+     "stair": 18,
+     "corridor": 9,
+     "mechanical": 7,
+     "storage": 11,
+     "restroom": 17,
+     "elevator_lobby": 9,
+     "exam": 6,
+     "office": 11,
+     "lobby": 1,
+     "or": 5,
+     "ward": 121
+    }
+   },
+   "classrooms": 0,
+   "dormRooms": 0
+  },
+  {
+   "id": "LM13_MED_TOWER_B",
+   "name": "Medical Tower B",
+   "typology": "hospital",
+   "district": "medical",
+   "tile": "T_7_10",
+   "position": {
+    "x": -346,
+    "y": -7.99,
+    "z": 602,
+    "rotY": 0
+   },
+   "floors": 9,
+   "role": "health",
+   "services": [
+    "treatment",
+    "respawn after knockout",
+    "medical bills"
+   ],
+   "jobs": [
+    {
+     "role": "orderly",
+     "wage": 15,
+     "shift": "any"
+    },
+    {
+     "role": "nurse",
+     "wage": 32,
+     "shift": "any",
+     "needs": "nursing degree"
+    },
+    {
+     "role": "doctor",
+     "wage": 70,
+     "shift": "any",
+     "needs": "medical degree"
+    }
+   ],
+   "hours": [
+    0,
+    24
+   ],
+   "rooms": {
+    "total": 239,
+    "byType": {
+     "stair": 20,
+     "corridor": 10,
+     "mechanical": 7,
+     "storage": 11,
+     "restroom": 19,
+     "elevator_lobby": 10,
+     "exam": 6,
+     "office": 11,
+     "lobby": 1,
+     "or": 5,
+     "ward": 139
+    }
+   },
+   "classrooms": 0,
+   "dormRooms": 0
+  },
+  {
+   "id": "LM13_MED_TOWER_C",
+   "name": "Medical Tower C",
+   "typology": "hospital",
+   "district": "medical",
+   "tile": "T_7_10",
+   "position": {
+    "x": -432,
+    "y": -9.05,
+    "z": 690,
+    "rotY": 0
+   },
+   "floors": 10,
+   "role": "health",
+   "services": [
+    "treatment",
+    "respawn after knockout",
+    "medical bills"
+   ],
+   "jobs": [
+    {
+     "role": "orderly",
+     "wage": 15,
+     "shift": "any"
+    },
+    {
+     "role": "nurse",
+     "wage": 32,
+     "shift": "any",
+     "needs": "nursing degree"
+    },
+    {
+     "role": "doctor",
+     "wage": 70,
+     "shift": "any",
+     "needs": "medical degree"
+    }
+   ],
+   "hours": [
+    0,
+    24
+   ],
+   "rooms": {
+    "total": 263,
+    "byType": {
+     "stair": 22,
+     "corridor": 11,
+     "mechanical": 7,
+     "storage": 11,
+     "restroom": 21,
+     "elevator_lobby": 11,
+     "exam": 6,
+     "office": 11,
+     "lobby": 1,
+     "or": 5,
+     "ward": 157
+    }
+   },
+   "classrooms": 0,
+   "dormRooms": 0
+  },
+  {
+   "id": "LM13_MED_TOWER_D",
+   "name": "Medical Tower D (ER, helipad)",
+   "typology": "hospital",
+   "district": "medical",
+   "tile": "T_7_10",
+   "position": {
+    "x": -346,
+    "y": -8.44,
+    "z": 690,
+    "rotY": 0
+   },
+   "floors": 12,
+   "role": "health",
+   "services": [
+    "treatment",
+    "respawn after knockout",
+    "medical bills"
+   ],
+   "jobs": [
+    {
+     "role": "orderly",
+     "wage": 15,
+     "shift": "any"
+    },
+    {
+     "role": "nurse",
+     "wage": 32,
+     "shift": "any",
+     "needs": "nursing degree"
+    },
+    {
+     "role": "doctor",
+     "wage": 70,
+     "shift": "any",
+     "needs": "medical degree"
+    }
+   ],
+   "hours": [
+    0,
+    24
+   ],
+   "rooms": {
+    "total": 311,
+    "byType": {
+     "stair": 26,
+     "corridor": 13,
+     "mechanical": 7,
+     "storage": 11,
+     "restroom": 25,
+     "elevator_lobby": 13,
+     "exam": 6,
+     "office": 11,
+     "lobby": 1,
+     "or": 5,
+     "ward": 193
+    }
+   },
+   "classrooms": 0,
+   "dormRooms": 0
+  },
+  {
+   "id": "LM13_MED_DECK_1",
+   "name": "Medical Deck 1",
+   "typology": "parking",
+   "district": "medical",
+   "tile": "T_7_11",
+   "position": {
+    "x": -440,
+    "y": -10.26,
+    "z": 818,
+    "rotY": 0
+   },
+   "floors": 5,
+   "role": "parking",
+   "services": [
+    "park car",
+    "rent space"
+   ],
+   "jobs": [
+    {
+     "role": "parking attendant",
+     "wage": 12,
+     "shift": "any"
+    }
+   ],
+   "hours": [
+    0,
+    24
+   ],
+   "rooms": {
+    "total": 36,
+    "byType": {
+     "stair": 12,
+     "elevator_lobby": 6,
+     "parking": 18
+    }
+   },
+   "classrooms": 0,
+   "dormRooms": 0
+  },
+  {
+   "id": "LM13_MED_DECK_2",
+   "name": "Medical Deck 2",
+   "typology": "parking",
+   "district": "medical",
+   "tile": "T_8_11",
+   "position": {
+    "x": -330,
+    "y": -11.02,
+    "z": 818,
+    "rotY": 0
+   },
+   "floors": 5,
+   "role": "parking",
+   "services": [
+    "park car",
+    "rent space"
+   ],
+   "jobs": [
+    {
+     "role": "parking attendant",
+     "wage": 12,
+     "shift": "any"
+    }
+   ],
+   "hours": [
+    0,
+    24
+   ],
+   "rooms": {
+    "total": 36,
+    "byType": {
+     "stair": 12,
+     "elevator_lobby": 6,
+     "parking": 18
+    }
+   },
+   "classrooms": 0,
+   "dormRooms": 0
+  },
+  {
+   "id": "LM14_GHOULGRAVE_KEEP",
+   "name": "Ghoulgrave Keep",
+   "typology": "historic_academic",
+   "district": "toadstool",
+   "tile": "T_12_8",
+   "position": {
+    "x": 629,
+    "y": 1.41,
+    "z": 186.5,
+    "rotY": 0
+   },
+   "floors": 4,
+   "role": "school",
+   "services": [
+    "attend class",
+    "office hours"
+   ],
+   "jobs": [
+    {
+     "role": "research assistant",
+     "wage": 15,
+     "shift": "day",
+     "needs": "enrolled, B average"
+    },
+    {
+     "role": "custodian",
+     "wage": 14,
+     "shift": "night"
+    }
+   ],
+   "hours": [
+    7,
+    22
+   ],
+   "rooms": {
+    "total": 8,
+    "byType": {
+     "cellar": 2,
+     "hall": 1,
+     "great_hall": 1,
+     "study": 2,
+     "gallery": 1,
+     "deck": 1
+    }
+   },
+   "classrooms": 0,
+   "dormRooms": 0
+  },
+  {
+   "id": "HAM_N_034_TWR",
+   "name": "The Twin Pines Thimble Salon Residences",
+   "typology": "office_lab",
+   "district": "hamilton_strip",
+   "tile": "T_8_7",
+   "position": {
+    "x": -182.18,
+    "y": 11.24,
+    "z": -17.19,
+    "rotY": 3.141593
+   },
+   "floors": 6,
+   "role": "school",
+   "services": [
+    "attend lab",
+    "research"
+   ],
+   "jobs": [
+    {
+     "role": "lab assistant",
+     "wage": 16,
+     "shift": "day",
+     "needs": "enrolled in science"
+    }
+   ],
+   "hours": [
+    7,
+    22
+   ],
+   "rooms": {
+    "total": 42,
+    "byType": {
+     "lobby": 1,
+     "office": 11,
+     "stair": 12,
+     "elevator_lobby": 6,
+     "restroom": 12
+    }
+   },
+   "classrooms": 0,
+   "dormRooms": 0
+  },
+  {
+   "id": "HAM_N_047_TWR",
+   "name": "The Silver Spoon Salon Residences",
+   "typology": "office_lab",
+   "district": "hamilton_strip",
+   "tile": "T_10_7",
+   "position": {
+    "x": 180.56,
+    "y": 11.24,
+    "z": -17.19,
+    "rotY": 3.141593
+   },
+   "floors": 3,
+   "role": "school",
+   "services": [
+    "attend lab",
+    "research"
+   ],
+   "jobs": [
+    {
+     "role": "lab assistant",
+     "wage": 16,
+     "shift": "day",
+     "needs": "enrolled in science"
+    }
+   ],
+   "hours": [
+    7,
+    22
+   ],
+   "rooms": {
+    "total": 21,
+    "byType": {
+     "lobby": 1,
+     "office": 5,
+     "stair": 6,
+     "elevator_lobby": 3,
+     "restroom": 6
+    }
+   },
+   "classrooms": 0,
+   "dormRooms": 0
+  },
+  {
+   "id": "ONSU_0000",
+   "name": "Pettigrew Hall",
+   "typology": "historic_academic",
+   "district": "north_quad",
+   "tile": "T_9_7",
+   "position": {
+    "x": 73,
+    "y": -0.8,
+    "z": 55,
+    "rotY": -1.570796
+   },
+   "floors": 3,
+   "role": "school",
+   "services": [
+    "attend class",
+    "office hours"
+   ],
+   "jobs": [
+    {
+     "role": "research assistant",
+     "wage": 15,
+     "shift": "day",
+     "needs": "enrolled, B average"
+    },
+    {
+     "role": "custodian",
+     "wage": 14,
+     "shift": "night"
+    }
+   ],
+   "hours": [
+    7,
+    22
+   ],
+   "rooms": {
+    "total": 87,
+    "byType": {
+     "stair": 10,
+     "corridor": 4,
+     "mechanical": 4,
+     "storage": 8,
+     "restroom": 7,
+     "elevator_lobby": 4,
+     "classroom": 20,
+     "lecture": 5,
+     "lobby": 1,
+     "office": 9,
+     "attic": 15
+    }
+   },
+   "classrooms": 25,
+   "dormRooms": 0
+  },
+  {
+   "id": "ONSU_0001",
+   "name": "Caldwell Annex",
+   "typology": "historic_academic",
+   "district": "north_quad",
+   "tile": "T_9_8",
+   "position": {
+    "x": 73,
+    "y": -1.26,
+    "z": 151,
+    "rotY": -1.570796
+   },
+   "floors": 3,
+   "role": "school",
+   "services": [
+    "attend class",
+    "office hours"
+   ],
+   "jobs": [
+    {
+     "role": "research assistant",
+     "wage": 15,
+     "shift": "day",
+     "needs": "enrolled, B average"
+    },
+    {
+     "role": "custodian",
+     "wage": 14,
+     "shift": "night"
+    }
+   ],
+   "hours": [
+    7,
+    22
+   ],
+   "rooms": {
+    "total": 79,
+    "byType": {
+     "stair": 8,
+     "corridor": 4,
+     "mechanical": 5,
+     "storage": 9,
+     "restroom": 7,
+     "elevator_lobby": 4,
+     "classroom": 24,
+     "lecture": 6,
+     "lobby": 1,
+     "office": 11
+    }
+   },
+   "classrooms": 30,
+   "dormRooms": 0
+  },
+  {
+   "id": "ONSU_0002",
+   "name": "Hooper Hall",
+   "typology": "historic_academic",
+   "district": "north_quad",
+   "tile": "T_10_7",
+   "position": {
+    "x": 267,
+    "y": -0.17,
+    "z": 92,
+    "rotY": 1.570796
+   },
+   "floors": 3,
+   "role": "school",
+   "services": [
+    "attend class",
+    "office hours"
+   ],
+   "jobs": [
+    {
+     "role": "research assistant",
+     "wage": 15,
+     "shift": "day",
+     "needs": "enrolled, B average"
+    },
+    {
+     "role": "custodian",
+     "wage": 14,
+     "shift": "night"
+    }
+   ],
+   "hours": [
+    7,
+    22
+   ],
+   "rooms": {
+    "total": 87,
+    "byType": {
+     "stair": 10,
+     "corridor": 4,
+     "mechanical": 4,
+     "storage": 8,
+     "restroom": 7,
+     "elevator_lobby": 4,
+     "classroom": 20,
+     "lecture": 5,
+     "lobby": 1,
+     "office": 9,
+     "attic": 15
+    }
+   },
+   "classrooms": 25,
+   "dormRooms": 0
+  },
+  {
+   "id": "ONSU_0003",
+   "name": "Mangum Hall",
+   "typology": "historic_academic",
+   "district": "north_quad",
+   "tile": "T_10_9",
+   "position": {
+    "x": 124.5,
+    "y": -5.35,
+    "z": 385,
+    "rotY": -1.570796
+   },
+   "floors": 4,
+   "role": "school",
+   "services": [
+    "attend class",
+    "office hours"
+   ],
+   "jobs": [
+    {
+     "role": "research assistant",
+     "wage": 15,
+     "shift": "day",
+     "needs": "enrolled, B average"
+    },
+    {
+     "role": "custodian",
+     "wage": 14,
+     "shift": "night"
+    }
+   ],
+   "hours": [
+    7,
+    22
+   ],
+   "rooms": {
+    "total": 99,
+    "byType": {
+     "stair": 10,
+     "corridor": 5,
+     "mechanical": 5,
+     "storage": 9,
+     "restroom": 9,
+     "elevator_lobby": 5,
+     "classroom": 32,
+     "lecture": 8,
+     "lobby": 1,
+     "office": 15
+    }
+   },
+   "classrooms": 40,
+   "dormRooms": 0
+  },
+  {
+   "id": "ONSU_0004",
+   "name": "Gerrard Hall",
+   "typology": "historic_academic",
+   "district": "north_quad",
+   "tile": "T_10_9",
+   "position": {
+    "x": 257.5,
+    "y": -5.65,
+    "z": 439,
+    "rotY": 1.570796
+   },
+   "floors": 3,
+   "role": "school",
+   "services": [
+    "attend class",
+    "office hours"
+   ],
+   "jobs": [
+    {
+     "role": "research assistant",
+     "wage": 15,
+     "shift": "day",
+     "needs": "enrolled, B average"
+    },
+    {
+     "role": "custodian",
+     "wage": 14,
+     "shift": "night"
+    }
+   ],
+   "hours": [
+    7,
+    22
+   ],
+   "rooms": {
+    "total": 79,
+    "byType": {
+     "stair": 8,
+     "corridor": 4,
+     "mechanical": 5,
+     "storage": 9,
+     "restroom": 7,
+     "elevator_lobby": 4,
+     "classroom": 24,
+     "lecture": 6,
+     "lobby": 1,
+     "office": 11
+    }
+   },
+   "classrooms": 30,
+   "dormRooms": 0
+  },
+  {
+   "id": "ONSU_0005",
+   "name": "Battle-Vance Hall",
+   "typology": "historic_academic",
+   "district": "north_quad",
+   "tile": "T_10_9",
+   "position": {
+    "x": 124.5,
+    "y": -5.91,
+    "z": 448,
+    "rotY": -1.570796
+   },
+   "floors": 4,
+   "role": "school",
+   "services": [
+    "attend class",
+    "office hours"
+   ],
+   "jobs": [
+    {
+     "role": "research assistant",
+     "wage": 15,
+     "shift": "day",
+     "needs": "enrolled, B average"
+    },
+    {
+     "role": "custodian",
+     "wage": 14,
+     "shift": "night"
+    }
+   ],
+   "hours": [
+    7,
+    22
+   ],
+   "rooms": {
+    "total": 99,
+    "byType": {
+     "stair": 10,
+     "corridor": 5,
+     "mechanical": 5,
+     "storage": 9,
+     "restroom": 9,
+     "elevator_lobby": 5,
+     "classroom": 32,
+     "lecture": 8,
+     "lobby": 1,
+     "office": 15
+    }
+   },
+   "classrooms": 40,
+   "dormRooms": 0
+  },
+  {
+   "id": "ONSU_0006",
+   "name": "Murphey Annex",
+   "typology": "historic_academic",
+   "district": "north_quad",
+   "tile": "T_10_9",
+   "position": {
+    "x": 257.5,
+    "y": -6.05,
+    "z": 502,
+    "rotY": 1.570796
+   },
+   "floors": 4,
+   "role": "school",
+   "services": [
+    "attend class",
+    "office hours"
+   ],
+   "jobs": [
+    {
+     "role": "research assistant",
+     "wage": 15,
+     "shift": "day",
+     "needs": "enrolled, B average"
+    },
+    {
+     "role": "custodian",
+     "wage": 14,
+     "shift": "night"
+    }
+   ],
+   "hours": [
+    7,
+    22
+   ],
+   "rooms": {
+    "total": 99,
+    "byType": {
+     "stair": 10,
+     "corridor": 5,
+     "mechanical": 5,
+     "storage": 9,
+     "restroom": 9,
+     "elevator_lobby": 5,
+     "classroom": 32,
+     "lecture": 8,
+     "lobby": 1,
+     "office": 15
+    }
+   },
+   "classrooms": 40,
+   "dormRooms": 0
+  },
+  {
+   "id": "ONSU_0007",
+   "name": "Saunders Hall",
+   "typology": "historic_academic",
+   "district": "north_quad",
+   "tile": "T_10_9",
+   "position": {
+    "x": 124.5,
+    "y": -6.57,
+    "z": 511,
+    "rotY": -1.570796
+   },
+   "floors": 3,
+   "role": "school",
+   "services": [
+    "attend class",
+    "office hours"
+   ],
+   "jobs": [
+    {
+     "role": "research assistant",
+     "wage": 15,
+     "shift": "day",
+     "needs": "enrolled, B average"
+    },
+    {
+     "role": "custodian",
+     "wage": 14,
+     "shift": "night"
+    }
+   ],
+   "hours": [
+    7,
+    22
+   ],
+   "rooms": {
+    "total": 79,
+    "byType": {
+     "stair": 8,
+     "corridor": 4,
+     "mechanical": 5,
+     "storage": 9,
+     "restroom": 7,
+     "elevator_lobby": 4,
+     "classroom": 24,
+     "lecture": 6,
+     "lobby": 1,
+     "office": 11
+    }
+   },
+   "classrooms": 30,
+   "dormRooms": 0
+  },
+  {
+   "id": "ONSU_0008",
+   "name": "Bynum Hall",
+   "typology": "historic_academic",
+   "district": "north_quad",
+   "tile": "T_10_9",
+   "position": {
+    "x": 257.5,
+    "y": -6.52,
+    "z": 565,
+    "rotY": 1.570796
+   },
+   "floors": 3,
+   "role": "school",
+   "services": [
+    "attend class",
+    "office hours"
+   ],
+   "jobs": [
+    {
+     "role": "research assistant",
+     "wage": 15,
+     "shift": "day",
+     "needs": "enrolled, B average"
+    },
+    {
+     "role": "custodian",
+     "wage": 14,
+     "shift": "night"
+    }
+   ],
+   "hours": [
+    7,
+    22
+   ],
+   "rooms": {
+    "total": 79,
+    "byType": {
+     "stair": 8,
+     "corridor": 4,
+     "mechanical": 5,
+     "storage": 9,
+     "restroom": 7,
+     "elevator_lobby": 4,
+     "classroom": 24,
+     "lecture": 6,
+     "lobby": 1,
+     "office": 11
+    }
+   },
+   "classrooms": 30,
+   "dormRooms": 0
+  },
+  {
+   "id": "ONSU_0009",
+   "name": "Physics Building",
+   "typology": "office_lab",
+   "district": "campus_generic",
+   "tile": "T_11_8",
+   "position": {
+    "x": 342,
+    "y": -1.28,
+    "z": 129,
+    "rotY": -1.570796
+   },
+   "floors": 5,
+   "role": "school",
+   "services": [
+    "attend lab",
+    "research"
+   ],
+   "jobs": [
+    {
+     "role": "lab assistant",
+     "wage": 16,
+     "shift": "day",
+     "needs": "enrolled in science"
+    }
+   ],
+   "hours": [
+    7,
+    22
+   ],
+   "rooms": {
+    "total": 45,
+    "byType": {
+     "lobby": 1,
+     "office": 19,
+     "stair": 10,
+     "elevator_lobby": 5,
+     "restroom": 10
+    }
+   },
+   "classrooms": 0,
+   "dormRooms": 0
+  },
+  {
+   "id": "ONSU_0011",
+   "name": "Swain Hall",
+   "typology": "historic_academic",
+   "district": "campus_generic",
+   "tile": "T_11_8",
+   "position": {
+    "x": 338,
+    "y": -2.16,
+    "z": 197,
+    "rotY": -1.570796
+   },
+   "floors": 3,
+   "role": "school",
+   "services": [
+    "attend class",
+    "office hours"
+   ],
+   "jobs": [
+    {
+     "role": "research assistant",
+     "wage": 15,
+     "shift": "day",
+     "needs": "enrolled, B average"
+    },
+    {
+     "role": "custodian",
+     "wage": 14,
+     "shift": "night"
+    }
+   ],
+   "hours": [
+    7,
+    22
+   ],
+   "rooms": {
+    "total": 69,
+    "byType": {
+     "stair": 8,
+     "corridor": 4,
+     "mechanical": 4,
+     "storage": 8,
+     "restroom": 7,
+     "elevator_lobby": 4,
+     "classroom": 20,
+     "lecture": 5,
+     "lobby": 1,
+     "office": 8
+    }
+   },
+   "classrooms": 25,
+   "dormRooms": 0
+  },
+  {
+   "id": "ONSU_0013",
+   "name": "Carroll Hall",
+   "typology": "historic_academic",
+   "district": "campus_generic",
+   "tile": "T_11_8",
+   "position": {
+    "x": 338,
+    "y": -3.52,
+    "z": 267,
+    "rotY": -1.570796
+   },
+   "floors": 3,
+   "role": "school",
+   "services": [
+    "attend class",
+    "office hours"
+   ],
+   "jobs": [
+    {
+     "role": "research assistant",
+     "wage": 15,
+     "shift": "day",
+     "needs": "enrolled, B average"
+    },
+    {
+     "role": "custodian",
+     "wage": 14,
+     "shift": "night"
+    }
+   ],
+   "hours": [
+    7,
+    22
+   ],
+   "rooms": {
+    "total": 69,
+    "byType": {
+     "stair": 8,
+     "corridor": 4,
+     "mechanical": 4,
+     "storage": 8,
+     "restroom": 7,
+     "elevator_lobby": 4,
+     "classroom": 20,
+     "lecture": 5,
+     "lobby": 1,
+     "office": 8
+    }
+   },
+   "classrooms": 25,
+   "dormRooms": 0
+  },
+  {
+   "id": "ONSU_0015",
+   "name": "Data Science Building",
+   "typology": "office_lab",
+   "district": "campus_generic",
+   "tile": "T_11_9",
+   "position": {
+    "x": 342,
+    "y": -5.49,
+    "z": 339,
+    "rotY": -1.570796
+   },
+   "floors": 3,
+   "role": "school",
+   "services": [
+    "attend lab",
+    "research"
+   ],
+   "jobs": [
+    {
+     "role": "lab assistant",
+     "wage": 16,
+     "shift": "day",
+     "needs": "enrolled in science"
+    }
+   ],
+   "hours": [
+    7,
+    22
+   ],
+   "rooms": {
+    "total": 27,
+    "byType": {
+     "lobby": 1,
+     "office": 11,
+     "stair": 6,
+     "elevator_lobby": 3,
+     "restroom": 6
+    }
+   },
+   "classrooms": 0,
+   "dormRooms": 0
+  },
+  {
+   "id": "ONSU_0017",
+   "name": "Swain Hall",
+   "typology": "historic_academic",
+   "district": "campus_generic",
+   "tile": "T_11_9",
+   "position": {
+    "x": 338,
+    "y": -5.64,
+    "z": 407,
+    "rotY": -1.570796
+   },
+   "floors": 3,
+   "role": "school",
+   "services": [
+    "attend class",
+    "office hours"
+   ],
+   "jobs": [
+    {
+     "role": "research assistant",
+     "wage": 15,
+     "shift": "day",
+     "needs": "enrolled, B average"
+    },
+    {
+     "role": "custodian",
+     "wage": 14,
+     "shift": "night"
+    }
+   ],
+   "hours": [
+    7,
+    22
+   ],
+   "rooms": {
+    "total": 69,
+    "byType": {
+     "stair": 8,
+     "corridor": 4,
+     "mechanical": 4,
+     "storage": 8,
+     "restroom": 7,
+     "elevator_lobby": 4,
+     "classroom": 20,
+     "lecture": 5,
+     "lobby": 1,
+     "office": 8
+    }
+   },
+   "classrooms": 25,
+   "dormRooms": 0
+  },
+  {
+   "id": "ONSU_0018",
+   "name": "Chemistry Building",
+   "typology": "office_lab",
+   "district": "campus_generic",
+   "tile": "T_11_9",
+   "position": {
+    "x": 383,
+    "y": -5.74,
+    "z": 451,
+    "rotY": 1.570796
+   },
+   "floors": 5,
+   "role": "school",
+   "services": [
+    "attend lab",
+    "research"
+   ],
+   "jobs": [
+    {
+     "role": "lab assistant",
+     "wage": 16,
+     "shift": "day",
+     "needs": "enrolled in science"
+    }
+   ],
+   "hours": [
+    7,
+    22
+   ],
+   "rooms": {
+    "total": 45,
+    "byType": {
+     "lobby": 1,
+     "office": 19,
+     "stair": 10,
+     "elevator_lobby": 5,
+     "restroom": 10
+    }
+   },
+   "classrooms": 0,
+   "dormRooms": 0
+  },
+  {
+   "id": "ONSU_0019",
+   "name": "Carroll Hall",
+   "typology": "historic_academic",
+   "district": "campus_generic",
+   "tile": "T_11_9",
+   "position": {
+    "x": 338,
+    "y": -5.97,
+    "z": 477,
+    "rotY": -1.570796
+   },
+   "floors": 3,
+   "role": "school",
+   "services": [
+    "attend class",
+    "office hours"
+   ],
+   "jobs": [
+    {
+     "role": "research assistant",
+     "wage": 15,
+     "shift": "day",
+     "needs": "enrolled, B average"
+    },
+    {
+     "role": "custodian",
+     "wage": 14,
+     "shift": "night"
+    }
+   ],
+   "hours": [
+    7,
+    22
+   ],
+   "rooms": {
+    "total": 69,
+    "byType": {
+     "stair": 8,
+     "corridor": 4,
+     "mechanical": 4,
+     "storage": 8,
+     "restroom": 7,
+     "elevator_lobby": 4,
+     "classroom": 20,
+     "lecture": 5,
+     "lobby": 1,
+     "office": 8
+    }
+   },
+   "classrooms": 25,
+   "dormRooms": 0
+  },
+  {
+   "id": "ONSU_0020",
+   "name": "Venable Hall",
+   "typology": "historic_academic",
+   "district": "campus_generic",
+   "tile": "T_11_9",
+   "position": {
+    "x": 387,
+    "y": -6.51,
+    "z": 523,
+    "rotY": 1.570796
+   },
+   "floors": 3,
+   "role": "school",
+   "services": [
+    "attend class",
+    "office hours"
+   ],
+   "jobs": [
+    {
+     "role": "research assistant",
+     "wage": 15,
+     "shift": "day",
+     "needs": "enrolled, B average"
+    },
+    {
+     "role": "custodian",
+     "wage": 14,
+     "shift": "night"
+    }
+   ],
+   "hours": [
+    7,
+    22
+   ],
+   "rooms": {
+    "total": 69,
+    "byType": {
+     "stair": 8,
+     "corridor": 4,
+     "mechanical": 4,
+     "storage": 8,
+     "restroom": 7,
+     "elevator_lobby": 4,
+     "classroom": 20,
+     "lecture": 5,
+     "lobby": 1,
+     "office": 8
+    }
+   },
+   "classrooms": 25,
+   "dormRooms": 0
+  },
+  {
+   "id": "ONSU_0021",
+   "name": "Marine Lab Building",
+   "typology": "office_lab",
+   "district": "campus_generic",
+   "tile": "T_11_10",
+   "position": {
+    "x": 342,
+    "y": -7.66,
+    "z": 549,
+    "rotY": -1.570796
+   },
+   "floors": 4,
+   "role": "school",
+   "services": [
+    "attend lab",
+    "research"
+   ],
+   "jobs": [
+    {
+     "role": "lab assistant",
+     "wage": 16,
+     "shift": "day",
+     "needs": "enrolled in science"
+    }
+   ],
+   "hours": [
+    7,
+    22
+   ],
+   "rooms": {
+    "total": 36,
+    "byType": {
+     "lobby": 1,
+     "office": 15,
+     "stair": 8,
+     "elevator_lobby": 4,
+     "restroom": 8
+    }
+   },
+   "classrooms": 0,
+   "dormRooms": 0
+  },
+  {
+   "id": "ONSU_0022",
+   "name": "Peabody Hall",
+   "typology": "historic_academic",
+   "district": "campus_generic",
+   "tile": "T_11_10",
+   "position": {
+    "x": 387,
+    "y": -7.53,
+    "z": 593,
+    "rotY": 1.570796
+   },
+   "floors": 3,
+   "role": "school",
+   "services": [
+    "attend class",
+    "office hours"
+   ],
+   "jobs": [
+    {
+     "role": "research assistant",
+     "wage": 15,
+     "shift": "day",
+     "needs": "enrolled, B average"
+    },
+    {
+     "role": "custodian",
+     "wage": 14,
+     "shift": "night"
+    }
+   ],
+   "hours": [
+    7,
+    22
+   ],
+   "rooms": {
+    "total": 69,
+    "byType": {
+     "stair": 8,
+     "corridor": 4,
+     "mechanical": 4,
+     "storage": 8,
+     "restroom": 7,
+     "elevator_lobby": 4,
+     "classroom": 20,
+     "lecture": 5,
+     "lobby": 1,
+     "office": 8
+    }
+   },
+   "classrooms": 25,
+   "dormRooms": 0
+  },
+  {
+   "id": "ONSU_0023",
+   "name": "Hinson Tower",
+   "typology": "residence_highrise",
+   "district": "carillon_south",
+   "tile": "T_10_11",
+   "position": {
+    "x": 113.5,
+    "y": -13.07,
+    "z": 904,
+    "rotY": 1.570796
+   },
+   "floors": 9,
+   "role": "housing",
+   "services": [
+    "dorm room",
+    "RA"
+   ],
+   "jobs": [
+    {
+     "role": "resident advisor",
+     "wage": 0,
+     "shift": "any",
+     "needs": "sophomore+; pays free room"
+    }
+   ],
+   "hours": [
+    0,
+    24
+   ],
+   "rooms": {
+    "total": 341,
+    "byType": {
+     "stair": 18,
+     "corridor": 9,
+     "dorm_double": 251,
+     "dorm_single": 36,
+     "lobby": 1,
+     "elevator_lobby": 9,
+     "restroom": 17
+    }
+   },
+   "classrooms": 0,
+   "dormRooms": 287
+  },
+  {
+   "id": "ONSU_0024",
+   "name": "Ehring Tower",
+   "typology": "residence_highrise",
+   "district": "carillon_south",
+   "tile": "T_10_11",
+   "position": {
+    "x": 139.5,
+    "y": -13.89,
+    "z": 904,
+    "rotY": 1.570796
+   },
+   "floors": 10,
+   "role": "housing",
+   "services": [
+    "dorm room",
+    "RA"
+   ],
+   "jobs": [
+    {
+     "role": "resident advisor",
+     "wage": 0,
+     "shift": "any",
+     "needs": "sophomore+; pays free room"
+    }
+   ],
+   "hours": [
+    0,
+    24
+   ],
+   "rooms": {
+    "total": 379,
+    "byType": {
+     "stair": 20,
+     "corridor": 10,
+     "dorm_double": 279,
+     "dorm_single": 40,
+     "lobby": 1,
+     "elevator_lobby": 10,
+     "restroom": 19
+    }
+   },
+   "classrooms": 0,
+   "dormRooms": 319
+  },
+  {
+   "id": "ONSU_0025",
+   "name": "Craigmoor Tower",
+   "typology": "residence_highrise",
+   "district": "carillon_south",
+   "tile": "T_10_11",
+   "position": {
+    "x": 165.5,
+    "y": -13.95,
+    "z": 904,
+    "rotY": 1.570796
+   },
+   "floors": 11,
+   "role": "housing",
+   "services": [
+    "dorm room",
+    "RA"
+   ],
+   "jobs": [
+    {
+     "role": "resident advisor",
+     "wage": 0,
+     "shift": "any",
+     "needs": "sophomore+; pays free room"
+    }
+   ],
+   "hours": [
+    0,
+    24
+   ],
+   "rooms": {
+    "total": 417,
+    "byType": {
+     "stair": 22,
+     "corridor": 11,
+     "dorm_double": 307,
+     "dorm_single": 44,
+     "lobby": 1,
+     "elevator_lobby": 11,
+     "restroom": 21
+    }
+   },
+   "classrooms": 0,
+   "dormRooms": 351
+  },
+  {
+   "id": "ONSU_0027",
+   "name": "Recreation Center",
+   "typology": "modern_academic",
+   "district": "carillon_south",
+   "tile": "T_9_11",
+   "position": {
+    "x": -123,
+    "y": -11.24,
+    "z": 901,
+    "rotY": 1.570796
+   },
+   "floors": 2,
+   "role": "school",
+   "services": [
+    "attend class",
+    "campus services"
+   ],
+   "jobs": [
+    {
+     "role": "student worker",
+     "wage": 12,
+     "shift": "any",
+     "needs": "enrolled"
+    }
+   ],
+   "hours": [
+    7,
+    24
+   ],
+   "rooms": {
+    "total": 18,
+    "byType": {
+     "lobby": 1,
+     "dining": 1,
+     "office": 4,
+     "stair": 4,
+     "elevator_lobby": 2,
+     "restroom": 4,
+     "classroom": 2
+    }
+   },
+   "classrooms": 2,
+   "dormRooms": 0
+  },
+  {
+   "id": "ONSU_0028",
+   "name": "South Campus Deck",
+   "typology": "parking",
+   "district": "carillon_south",
+   "tile": "T_9_11",
+   "position": {
+    "x": 67,
+    "y": -13.15,
+    "z": 943,
+    "rotY": 1.570796
+   },
+   "floors": 4,
+   "role": "parking",
+   "services": [
+    "park car",
+    "rent space"
+   ],
+   "jobs": [
+    {
+     "role": "parking attendant",
+     "wage": 12,
+     "shift": "any"
+    }
+   ],
+   "hours": [
+    0,
+    24
+   ],
+   "rooms": {
+    "total": 24,
+    "byType": {
+     "stair": 8,
+     "elevator_lobby": 4,
+     "parking": 12
+    }
+   },
+   "classrooms": 0,
+   "dormRooms": 0
+  },
+  {
+   "id": "RRD_0029",
+   "name": "Rosemary Deck West",
+   "typology": "parking",
+   "district": "rosemary_row",
+   "tile": "T_8_6",
+   "position": {
+    "x": -135,
+    "y": -0.89,
+    "z": -66,
+    "rotY": 3.141593
+   },
+   "floors": 5,
+   "role": "parking",
+   "services": [
+    "park car",
+    "rent space"
+   ],
+   "jobs": [
+    {
+     "role": "parking attendant",
+     "wage": 12,
+     "shift": "any"
+    }
+   ],
+   "hours": [
+    0,
+    24
+   ],
+   "rooms": {
+    "total": 30,
+    "byType": {
+     "stair": 10,
+     "elevator_lobby": 5,
+     "parking": 15
+    }
+   },
+   "classrooms": 0,
+   "dormRooms": 0
+  },
+  {
+   "id": "RRD_0030",
+   "name": "Rosemary Deck East",
+   "typology": "parking",
+   "district": "rosemary_row",
+   "tile": "T_10_6",
+   "position": {
+    "x": 145,
+    "y": -1.52,
+    "z": -66,
+    "rotY": 3.141593
+   },
+   "floors": 5,
+   "role": "parking",
+   "services": [
+    "park car",
+    "rent space"
+   ],
+   "jobs": [
+    {
+     "role": "parking attendant",
+     "wage": 12,
+     "shift": "any"
+    }
+   ],
+   "hours": [
+    0,
+    24
+   ],
+   "rooms": {
+    "total": 30,
+    "byType": {
+     "stair": 10,
+     "elevator_lobby": 5,
+     "parking": 15
+    }
+   },
+   "classrooms": 0,
+   "dormRooms": 0
+  },
+  {
+   "id": "CHU_0950",
+   "name": "First Pamlico Chapel",
+   "typology": "historic_academic",
+   "district": "cameron_heights",
+   "tile": "T_7_7",
+   "position": {
+    "x": -344,
+    "y": -3.46,
+    "z": 163.25,
+    "rotY": 3.141593
+   },
+   "floors": 1,
+   "role": "community",
+   "services": [
+    "services",
+    "weddings",
+    "community events"
+   ],
+   "jobs": [],
+   "hours": [
+    8,
+    20
+   ],
+   "rooms": {
+    "total": 7,
+    "byType": {
+     "lobby": 1,
+     "dining": 1,
+     "stair": 2,
+     "elevator_lobby": 1,
+     "restroom": 2
+    }
+   },
+   "classrooms": 0,
+   "dormRooms": 0
+  },
+  {
+   "id": "CHU_0952",
+   "name": "First Pamlico Chapel",
+   "typology": "historic_academic",
+   "district": "cameron_heights",
+   "tile": "T_7_7",
+   "position": {
+    "x": -325,
+    "y": -3.32,
+    "z": 163.25,
+    "rotY": 3.141593
+   },
+   "floors": 1,
+   "role": "community",
+   "services": [
+    "services",
+    "weddings",
+    "community events"
+   ],
+   "jobs": [],
+   "hours": [
+    8,
+    20
+   ],
+   "rooms": {
+    "total": 7,
+    "byType": {
+     "lobby": 1,
+     "dining": 1,
+     "stair": 2,
+     "elevator_lobby": 1,
+     "restroom": 2
+    }
+   },
+   "classrooms": 0,
+   "dormRooms": 0
+  },
+  {
+   "id": "CHU_0953",
+   "name": "Glebe Street Meeting House",
+   "typology": "historic_academic",
+   "district": "cameron_heights",
+   "tile": "T_8_7",
+   "position": {
+    "x": -134,
+    "y": -2.52,
+    "z": 163.25,
+    "rotY": 3.141593
+   },
+   "floors": 1,
+   "role": "community",
+   "services": [
+    "services",
+    "weddings",
+    "community events"
+   ],
+   "jobs": [],
+   "hours": [
+    8,
+    20
+   ],
+   "rooms": {
+    "total": 7,
+    "byType": {
+     "lobby": 1,
+     "dining": 1,
+     "stair": 2,
+     "elevator_lobby": 1,
+     "restroom": 2
+    }
+   },
+   "classrooms": 0,
+   "dormRooms": 0
+  },
+  {
+   "id": "CHU_0955",
+   "name": "Glebe Street Meeting House",
+   "typology": "historic_academic",
+   "district": "cameron_heights",
+   "tile": "T_8_7",
+   "position": {
+    "x": -115,
+    "y": -2.35,
+    "z": 163.25,
+    "rotY": 3.141593
+   },
+   "floors": 1,
+   "role": "community",
+   "services": [
+    "services",
+    "weddings",
+    "community events"
+   ],
+   "jobs": [],
+   "hours": [
+    8,
+    20
+   ],
+   "rooms": {
+    "total": 7,
+    "byType": {
+     "lobby": 1,
+     "dining": 1,
+     "stair": 2,
+     "elevator_lobby": 1,
+     "restroom": 2
+    }
+   },
+   "classrooms": 0,
+   "dormRooms": 0
+  },
+  {
+   "id": "CBG_1178",
+   "name": "Loomhouse Mill (Co-op Market)",
+   "typology": "mill",
+   "district": "carrburg",
+   "tile": "T_6_7",
+   "position": {
+    "x": -665,
+    "y": -9.79,
+    "z": -90,
+    "rotY": -1.570796
+   },
+   "floors": 3,
+   "role": "market",
+   "services": [
+    "buy groceries",
+    "farmers market"
+   ],
+   "jobs": [
+    {
+     "role": "co-op clerk",
+     "wage": 13,
+     "shift": "day"
+    }
+   ],
+   "hours": [
+    8,
+    21
+   ],
+   "rooms": {
+    "total": 27,
+    "byType": {
+     "retail_floor": 1,
+     "stockroom": 1,
+     "office": 10,
+     "stair": 6,
+     "elevator_lobby": 3,
+     "restroom": 6
+    }
+   },
+   "classrooms": 0,
+   "dormRooms": 0
+  }
+ ]
+}

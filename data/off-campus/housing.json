@@ -1,0 +1,9215 @@
+{
+ "generatedFrom": [
+  "data/buildings.json",
+  "data/rooms.json"
+ ],
+ "seed": 1795,
+ "count": 575,
+ "housing": [
+  {
+   "id": "LM06_ELDER_WEST",
+   "kind": "dorm",
+   "building": "Elder West",
+   "district": "north_quad",
+   "position": {
+    "x": 119,
+    "y": -2.97,
+    "z": 240,
+    "rotY": -1.570796
+   },
+   "units": 118,
+   "rentPerMonth": 0,
+   "buyPrice": null,
+   "rooms": 213,
+   "note": "covered by housing fee when enrolled"
+  },
+  {
+   "id": "LM06_ELDER_EAST",
+   "kind": "dorm",
+   "building": "Elder East",
+   "district": "north_quad",
+   "position": {
+    "x": 261,
+    "y": -2.69,
+    "z": 300,
+    "rotY": 1.570796
+   },
+   "units": 118,
+   "rentPerMonth": 0,
+   "buyPrice": null,
+   "rooms": 213,
+   "note": "covered by housing fee when enrolled"
+  },
+  {
+   "id": "LM15_GROVE_AMPHITHEATRE",
+   "kind": "house",
+   "building": "Grove Amphitheatre (backstage)",
+   "district": "battle_ravine",
+   "position": {
+    "x": 492.5,
+    "y": -3.04,
+    "z": 298,
+    "rotY": 1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1450,
+   "buyPrice": 261000,
+   "rooms": 3
+  },
+  {
+   "id": "HAM_S_002",
+   "kind": "apartments",
+   "building": "Sutter's Pharmacy & Grill",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -26,
+    "y": 0.14,
+    "z": 11.19,
+    "rotY": 0
+   },
+   "units": 2,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 25
+  },
+  {
+   "id": "HAM_N_004",
+   "kind": "apartments",
+   "building": "Pamlico Coffee House",
+   "district": "hamilton_strip",
+   "position": {
+    "x": 57,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 2,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 25
+  },
+  {
+   "id": "HAM_N_005",
+   "kind": "apartments",
+   "building": "Old North Outfitters",
+   "district": "hamilton_strip",
+   "position": {
+    "x": 66,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 2,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 22
+  },
+  {
+   "id": "HAM_N_006",
+   "kind": "apartments",
+   "building": "Tarry Page Books",
+   "district": "hamilton_strip",
+   "position": {
+    "x": 80,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 2,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 22
+  },
+  {
+   "id": "HAM_N_009",
+   "kind": "apartments",
+   "building": "Late Night Lo Mein",
+   "district": "hamilton_strip",
+   "position": {
+    "x": 116,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 1,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "HAM_S_010",
+   "kind": "apartments",
+   "building": "Mount Pizza Co.",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -40,
+    "y": 0.14,
+    "z": 11.19,
+    "rotY": 0
+   },
+   "units": 2,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 22
+  },
+  {
+   "id": "HAM_S_011",
+   "kind": "apartments",
+   "building": "Ye Olde Waffle Hutch",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -52,
+    "y": 0.14,
+    "z": 11.19,
+    "rotY": 0
+   },
+   "units": 2,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 25
+  },
+  {
+   "id": "HAM_S_012",
+   "kind": "apartments",
+   "building": "Hamilton Records",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -65,
+    "y": 0.14,
+    "z": 11.19,
+    "rotY": 0
+   },
+   "units": 2,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 22
+  },
+  {
+   "id": "HAM_S_013",
+   "kind": "apartments",
+   "building": "Hilltop Hardware",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -77,
+    "y": 0.14,
+    "z": 11.19,
+    "rotY": 0
+   },
+   "units": 2,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 25
+  },
+  {
+   "id": "HAM_N_014",
+   "kind": "apartments",
+   "building": "Linen & Lamb",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -30,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 1,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 15
+  },
+  {
+   "id": "HAM_N_015",
+   "kind": "apartments",
+   "building": "Cosmic Carnitas",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -41,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 1,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "HAM_N_017",
+   "kind": "apartments",
+   "building": "Pitch Soles Tattoo",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -67,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 2,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 22
+  },
+  {
+   "id": "HAM_N_018",
+   "kind": "apartments",
+   "building": "Pine Cone Lamp Supply",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -410,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 2,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 22
+  },
+  {
+   "id": "HAM_N_019",
+   "kind": "apartments",
+   "building": "Goatfoot Outfitters",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -396.48,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 3,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 33
+  },
+  {
+   "id": "HAM_N_020",
+   "kind": "apartments",
+   "building": "The Night Owl Tavern",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -387.96,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 2,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 26
+  },
+  {
+   "id": "HAM_N_021",
+   "kind": "apartments",
+   "building": "Ridgeline Anvil Print Shop",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -378.44,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 1,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "HAM_N_022",
+   "kind": "apartments",
+   "building": "Sweet Gum Taco Counter",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -366.92,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 1,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 15
+  },
+  {
+   "id": "HAM_N_023",
+   "kind": "apartments",
+   "building": "Oak Leaf Biscuit Florist",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -354.4,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 3,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 30
+  },
+  {
+   "id": "HAM_N_024",
+   "kind": "apartments",
+   "building": "Pine Cone Book Nook",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -339.88,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 1,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "HAM_N_025",
+   "kind": "apartments",
+   "building": "Dogwood Lantern Café",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -326.36,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 2,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 25
+  },
+  {
+   "id": "HAM_N_026",
+   "kind": "apartments",
+   "building": "Hilltop Lamp Coffee Bar",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -317.84,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 2,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 22
+  },
+  {
+   "id": "HAM_N_027",
+   "kind": "apartments",
+   "building": "Crooked Kettle Optics",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -283.82,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 1,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 15
+  },
+  {
+   "id": "HAM_N_028",
+   "kind": "apartments",
+   "building": "Wandering Gallery",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -271.3,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 2,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 22
+  },
+  {
+   "id": "HAM_N_029",
+   "kind": "apartments",
+   "building": "Corner Fiddle Saloon",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -259.78,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 1,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 22
+  },
+  {
+   "id": "HAM_N_030",
+   "kind": "apartments",
+   "building": "The Cardinal Fiddle Supply",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -245.26,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 1,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "HAM_N_031",
+   "kind": "apartments",
+   "building": "The Summit Taco Counter",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -235.74,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 3,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 33
+  },
+  {
+   "id": "HAM_N_032",
+   "kind": "apartments",
+   "building": "The Brickyard Fiddle Mercantile",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -214.22,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 1,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "HAM_N_033",
+   "kind": "apartments",
+   "building": "The Brickyard Supply",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -199.7,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 1,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "HAM_N_034",
+   "kind": "apartments",
+   "building": "The Twin Pines Thimble Salon",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -182.18,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 2,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 25
+  },
+  {
+   "id": "HAM_N_036",
+   "kind": "apartments",
+   "building": "Crooked Goods",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -170.66,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 3,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 33
+  },
+  {
+   "id": "HAM_N_037",
+   "kind": "apartments",
+   "building": "The Ridgeline Lantern Outfitters",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -160.14,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 2,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 22
+  },
+  {
+   "id": "HAM_N_038",
+   "kind": "apartments",
+   "building": "The Pine Cone Ledger Print Shop",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -151.62,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 2,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 19
+  },
+  {
+   "id": "HAM_N_039",
+   "kind": "apartments",
+   "building": "Twin Pines Compass Mercantile",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -142.1,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 2,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 25
+  },
+  {
+   "id": "HAM_N_040",
+   "kind": "apartments",
+   "building": "Twin Pines Hearth Optics",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -127.58,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 1,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 15
+  },
+  {
+   "id": "HAM_N_041",
+   "kind": "apartments",
+   "building": "Silver Spoon Wok Shop",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -114.06,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 3,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 33
+  },
+  {
+   "id": "HAM_N_042",
+   "kind": "apartments",
+   "building": "The Tin Roof Noodle Bar",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -95.04,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 2,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 25
+  },
+  {
+   "id": "HAM_N_043",
+   "kind": "apartments",
+   "building": "The Twin Pines Florist",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -80.52,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 2,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 22
+  },
+  {
+   "id": "HAM_N_044",
+   "kind": "apartments",
+   "building": "The Twin Pines Threads",
+   "district": "hamilton_strip",
+   "position": {
+    "x": 127.5,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 2,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 22
+  },
+  {
+   "id": "HAM_N_045",
+   "kind": "apartments",
+   "building": "Red Clay Bake Shop",
+   "district": "hamilton_strip",
+   "position": {
+    "x": 141.02,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 2,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 22
+  },
+  {
+   "id": "HAM_N_046",
+   "kind": "apartments",
+   "building": "The Goatfoot Pennant Threads",
+   "district": "hamilton_strip",
+   "position": {
+    "x": 155.54,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 2,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 25
+  },
+  {
+   "id": "HAM_N_047",
+   "kind": "apartments",
+   "building": "The Silver Spoon Salon",
+   "district": "hamilton_strip",
+   "position": {
+    "x": 180.56,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 2,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 28
+  },
+  {
+   "id": "HAM_N_049",
+   "kind": "apartments",
+   "building": "Quarry Taquería",
+   "district": "hamilton_strip",
+   "position": {
+    "x": 191.08,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 2,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 22
+  },
+  {
+   "id": "HAM_N_050",
+   "kind": "apartments",
+   "building": "Copper Gallery",
+   "district": "hamilton_strip",
+   "position": {
+    "x": 202.6,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 1,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "HAM_N_051",
+   "kind": "apartments",
+   "building": "The Cardinal Sandwich Co.",
+   "district": "hamilton_strip",
+   "position": {
+    "x": 214.12,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 1,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "HAM_N_052",
+   "kind": "apartments",
+   "building": "Twin Pines Compass Salon",
+   "district": "hamilton_strip",
+   "position": {
+    "x": 222.64,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 3,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 29
+  },
+  {
+   "id": "HAM_N_054",
+   "kind": "apartments",
+   "building": "Red Clay Noodle Bar",
+   "district": "hamilton_strip",
+   "position": {
+    "x": 241.68,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 2,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 22
+  },
+  {
+   "id": "HAM_N_055",
+   "kind": "apartments",
+   "building": "Sweet Gum Barber Shop",
+   "district": "hamilton_strip",
+   "position": {
+    "x": 250.2,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 1,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "HAM_N_056",
+   "kind": "apartments",
+   "building": "Sweet Gum Haberdashery",
+   "district": "hamilton_strip",
+   "position": {
+    "x": 262.72,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 1,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 15
+  },
+  {
+   "id": "HAM_N_057",
+   "kind": "apartments",
+   "building": "The Goatfoot Thimble Goods",
+   "district": "hamilton_strip",
+   "position": {
+    "x": 273.24,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 2,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 22
+  },
+  {
+   "id": "HAM_N_058",
+   "kind": "apartments",
+   "building": "Wandering Bake Shop",
+   "district": "hamilton_strip",
+   "position": {
+    "x": 282.76,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 1,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 15
+  },
+  {
+   "id": "HAM_N_059",
+   "kind": "apartments",
+   "building": "Ridgeline Outfitters",
+   "district": "hamilton_strip",
+   "position": {
+    "x": 321.78,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 1,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 15
+  },
+  {
+   "id": "HAM_N_060",
+   "kind": "apartments",
+   "building": "The Hilltop Bakery",
+   "district": "hamilton_strip",
+   "position": {
+    "x": 335.3,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 3,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 33
+  },
+  {
+   "id": "HAM_N_061",
+   "kind": "apartments",
+   "building": "Night Owl Fiddle Optics",
+   "district": "hamilton_strip",
+   "position": {
+    "x": 348.82,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 2,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 22
+  },
+  {
+   "id": "HAM_N_062",
+   "kind": "apartments",
+   "building": "Cardinal Wok Shop",
+   "district": "hamilton_strip",
+   "position": {
+    "x": 361.34,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 2,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 22
+  },
+  {
+   "id": "HAM_N_064",
+   "kind": "apartments",
+   "building": "Goatfoot Ledger Florist",
+   "district": "hamilton_strip",
+   "position": {
+    "x": 385.38,
+    "y": 0.14,
+    "z": -11.19,
+    "rotY": 3.141593
+   },
+   "units": 1,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "HAM_S_065",
+   "kind": "apartments",
+   "building": "The Wandering Café",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -420,
+    "y": 0.14,
+    "z": 11.19,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 15
+  },
+  {
+   "id": "HAM_S_066",
+   "kind": "apartments",
+   "building": "The Quarry Pennant Roasters",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -409.48,
+    "y": 0.14,
+    "z": 11.19,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 15
+  },
+  {
+   "id": "HAM_S_067",
+   "kind": "apartments",
+   "building": "Red Clay Pennant Café",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -399.96,
+    "y": 0.14,
+    "z": 11.19,
+    "rotY": 0
+   },
+   "units": 2,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 25
+  },
+  {
+   "id": "HAM_S_069",
+   "kind": "apartments",
+   "building": "The Billram Hearth Print Shop",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -378.92,
+    "y": 0.14,
+    "z": 11.19,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "HAM_S_070",
+   "kind": "apartments",
+   "building": "The Gilded Supply",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -366.4,
+    "y": 0.14,
+    "z": 11.19,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "HAM_S_071",
+   "kind": "apartments",
+   "building": "The Summit Anvil Coffee Bar",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -353.88,
+    "y": 0.14,
+    "z": 11.19,
+    "rotY": 0
+   },
+   "units": 2,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 22
+  },
+  {
+   "id": "HAM_S_072",
+   "kind": "apartments",
+   "building": "The Oak Leaf Anvil Supply",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -345.36,
+    "y": 0.14,
+    "z": 11.19,
+    "rotY": 0
+   },
+   "units": 3,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 30
+  },
+  {
+   "id": "HAM_S_073",
+   "kind": "apartments",
+   "building": "Bluebell Lantern Outfitters",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -332.84,
+    "y": 0.14,
+    "z": 11.19,
+    "rotY": 0
+   },
+   "units": 2,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 22
+  },
+  {
+   "id": "HAM_S_074",
+   "kind": "apartments",
+   "building": "Silver Spoon Saloon",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -322.32,
+    "y": 0.14,
+    "z": 11.19,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 25
+  },
+  {
+   "id": "HAM_S_075",
+   "kind": "apartments",
+   "building": "Red Clay Barber Shop",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -290.3,
+    "y": 0.14,
+    "z": 11.19,
+    "rotY": 0
+   },
+   "units": 2,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 25
+  },
+  {
+   "id": "HAM_S_076",
+   "kind": "apartments",
+   "building": "The Sweet Gum Bakery",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -278.78,
+    "y": 0.14,
+    "z": 11.19,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "HAM_S_077",
+   "kind": "apartments",
+   "building": "Copper Lounge",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -264.26,
+    "y": 0.14,
+    "z": 11.19,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 22
+  },
+  {
+   "id": "HAM_S_078",
+   "kind": "apartments",
+   "building": "Wandering Ledger Book Nook",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -253.74,
+    "y": 0.14,
+    "z": 11.19,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "HAM_S_079",
+   "kind": "apartments",
+   "building": "Cardinal Thimble Taquería",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -241.22,
+    "y": 0.14,
+    "z": 11.19,
+    "rotY": 0
+   },
+   "units": 3,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 30
+  },
+  {
+   "id": "HAM_S_080",
+   "kind": "apartments",
+   "building": "The Sweet Gum Lamp Print Shop",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -228.7,
+    "y": 0.14,
+    "z": 11.19,
+    "rotY": 0
+   },
+   "units": 2,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 22
+  },
+  {
+   "id": "HAM_S_081",
+   "kind": "apartments",
+   "building": "The Pine Cone Barrel Salon",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -214.18,
+    "y": 0.14,
+    "z": 11.19,
+    "rotY": 0
+   },
+   "units": 2,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 22
+  },
+  {
+   "id": "HAM_S_082",
+   "kind": "apartments",
+   "building": "The Dogwood Acorn Mercantile",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -201.66,
+    "y": 0.14,
+    "z": 11.19,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 15
+  },
+  {
+   "id": "HAM_S_083",
+   "kind": "apartments",
+   "building": "The Wandering Satchel Sandwich Co.",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -190.14,
+    "y": 0.14,
+    "z": 11.19,
+    "rotY": 0
+   },
+   "units": 3,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 30
+  },
+  {
+   "id": "HAM_S_084",
+   "kind": "apartments",
+   "building": "The Red Clay Pizza",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -178.62,
+    "y": 0.14,
+    "z": 11.19,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "HAM_S_085",
+   "kind": "apartments",
+   "building": "The Old Cistern Roasters",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -156.6,
+    "y": 0.14,
+    "z": 11.19,
+    "rotY": 0
+   },
+   "units": 3,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 33
+  },
+  {
+   "id": "HAM_S_086",
+   "kind": "apartments",
+   "building": "Twin Pines Teacup Bake Shop",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -143.08,
+    "y": 0.14,
+    "z": 11.19,
+    "rotY": 0
+   },
+   "units": 2,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 22
+  },
+  {
+   "id": "HAM_S_087",
+   "kind": "apartments",
+   "building": "Copper Teacup Pizza",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -131.56,
+    "y": 0.14,
+    "z": 11.19,
+    "rotY": 0
+   },
+   "units": 2,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 22
+  },
+  {
+   "id": "HAM_S_088",
+   "kind": "apartments",
+   "building": "Copper Saddle Deli",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -118.04,
+    "y": 0.14,
+    "z": 11.19,
+    "rotY": 0
+   },
+   "units": 2,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 22
+  },
+  {
+   "id": "HAM_S_089",
+   "kind": "apartments",
+   "building": "Silver Spoon Teacup Supply",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -107.52,
+    "y": 0.14,
+    "z": 11.19,
+    "rotY": 0
+   },
+   "units": 2,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 22
+  },
+  {
+   "id": "HAM_S_090",
+   "kind": "apartments",
+   "building": "Old Cistern Compass Outfitters",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -99,
+    "y": 0.14,
+    "z": 11.19,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "HAM_S_091",
+   "kind": "apartments",
+   "building": "Dogwood Sparrow Optics",
+   "district": "hamilton_strip",
+   "position": {
+    "x": -84.48,
+    "y": 0.14,
+    "z": 11.19,
+    "rotY": 0
+   },
+   "units": 3,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 29
+  },
+  {
+   "id": "HAM_S_092",
+   "kind": "apartments",
+   "building": "The Wandering Kettle Tavern",
+   "district": "hamilton_strip",
+   "position": {
+    "x": 300,
+    "y": 0.14,
+    "z": 11.19,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 25
+  },
+  {
+   "id": "HAM_S_093",
+   "kind": "apartments",
+   "building": "Red Clay Spoke Tavern",
+   "district": "hamilton_strip",
+   "position": {
+    "x": 312.52,
+    "y": 0.14,
+    "z": 11.19,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 19
+  },
+  {
+   "id": "HAM_S_094",
+   "kind": "apartments",
+   "building": "Hilltop Salon",
+   "district": "hamilton_strip",
+   "position": {
+    "x": 321.04,
+    "y": 0.14,
+    "z": 11.19,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "HAM_S_095",
+   "kind": "apartments",
+   "building": "The Bluebell Acorn Mercantile",
+   "district": "hamilton_strip",
+   "position": {
+    "x": 332.56,
+    "y": 0.14,
+    "z": 11.19,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "HAM_S_096",
+   "kind": "apartments",
+   "building": "Goatfoot Lantern Deli",
+   "district": "hamilton_strip",
+   "position": {
+    "x": 346.08,
+    "y": 0.14,
+    "z": 11.19,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "HAM_S_097",
+   "kind": "apartments",
+   "building": "Dogwood Ladder Books",
+   "district": "hamilton_strip",
+   "position": {
+    "x": 359.6,
+    "y": 0.14,
+    "z": 11.19,
+    "rotY": 0
+   },
+   "units": 3,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 30
+  },
+  {
+   "id": "HAM_S_098",
+   "kind": "apartments",
+   "building": "The Pine Cone Compass Gallery",
+   "district": "hamilton_strip",
+   "position": {
+    "x": 372.12,
+    "y": 0.14,
+    "z": 11.19,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 1350,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "ONSU_0023",
+   "kind": "dorm",
+   "building": "Hinson Tower",
+   "district": "carillon_south",
+   "position": {
+    "x": 113.5,
+    "y": -13.07,
+    "z": 904,
+    "rotY": 1.570796
+   },
+   "units": 287,
+   "rentPerMonth": 0,
+   "buyPrice": null,
+   "rooms": 341,
+   "note": "covered by housing fee when enrolled"
+  },
+  {
+   "id": "ONSU_0024",
+   "kind": "dorm",
+   "building": "Ehring Tower",
+   "district": "carillon_south",
+   "position": {
+    "x": 139.5,
+    "y": -13.89,
+    "z": 904,
+    "rotY": 1.570796
+   },
+   "units": 319,
+   "rentPerMonth": 0,
+   "buyPrice": null,
+   "rooms": 379,
+   "note": "covered by housing fee when enrolled"
+  },
+  {
+   "id": "ONSU_0025",
+   "kind": "dorm",
+   "building": "Craigmoor Tower",
+   "district": "carillon_south",
+   "position": {
+    "x": 165.5,
+    "y": -13.95,
+    "z": 904,
+    "rotY": 1.570796
+   },
+   "units": 351,
+   "rentPerMonth": 0,
+   "buyPrice": null,
+   "rooms": 417,
+   "note": "covered by housing fee when enrolled"
+  },
+  {
+   "id": "RRN_0033",
+   "kind": "apartments",
+   "building": "Sweet Gum Thimble Florist",
+   "district": "rosemary_row",
+   "position": {
+    "x": -456,
+    "y": -4.29,
+    "z": -113.8,
+    "rotY": 3.141593
+   },
+   "units": 4,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 38
+  },
+  {
+   "id": "RRN_0035",
+   "kind": "apartments",
+   "building": "The Corner Quill Goods",
+   "district": "rosemary_row",
+   "position": {
+    "x": -433.98,
+    "y": -3.93,
+    "z": -113.8,
+    "rotY": 3.141593
+   },
+   "units": 3,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 30
+  },
+  {
+   "id": "RRN_0037",
+   "kind": "apartments",
+   "building": "Night Owl Roasters",
+   "district": "rosemary_row",
+   "position": {
+    "x": -417.96,
+    "y": -3.62,
+    "z": -113.8,
+    "rotY": 3.141593
+   },
+   "units": 3,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 30
+  },
+  {
+   "id": "RRN_0039",
+   "kind": "apartments",
+   "building": "Tin Roof Roasters",
+   "district": "rosemary_row",
+   "position": {
+    "x": -400.94,
+    "y": -3.46,
+    "z": -113.8,
+    "rotY": 3.141593
+   },
+   "units": 4,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 38
+  },
+  {
+   "id": "RRN_0041",
+   "kind": "apartments",
+   "building": "Brickyard Teacup Roasters",
+   "district": "rosemary_row",
+   "position": {
+    "x": -384.92,
+    "y": -3.4,
+    "z": -113.8,
+    "rotY": 3.141593
+   },
+   "units": 3,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 30
+  },
+  {
+   "id": "RRN_0043",
+   "kind": "apartments",
+   "building": "Summit Barrel Goods",
+   "district": "rosemary_row",
+   "position": {
+    "x": -362.9,
+    "y": -3.37,
+    "z": -113.8,
+    "rotY": 3.141593
+   },
+   "units": 4,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 38
+  },
+  {
+   "id": "RRN_0045",
+   "kind": "apartments",
+   "building": "Gilded Bakery",
+   "district": "rosemary_row",
+   "position": {
+    "x": -346.88,
+    "y": -3.28,
+    "z": -113.8,
+    "rotY": 3.141593
+   },
+   "units": 4,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 38
+  },
+  {
+   "id": "RRN_0047",
+   "kind": "apartments",
+   "building": "The Ridgeline Ladder Barber Shop",
+   "district": "rosemary_row",
+   "position": {
+    "x": -328.86,
+    "y": -3.13,
+    "z": -113.8,
+    "rotY": 3.141593
+   },
+   "units": 4,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 38
+  },
+  {
+   "id": "RRN_0049",
+   "kind": "apartments",
+   "building": "Night Owl Deli",
+   "district": "rosemary_row",
+   "position": {
+    "x": -312.84,
+    "y": -2.95,
+    "z": -113.8,
+    "rotY": 3.141593
+   },
+   "units": 3,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 30
+  },
+  {
+   "id": "RRN_0057",
+   "kind": "apartments",
+   "building": "The Cardinal Lamp Outfitters",
+   "district": "rosemary_row",
+   "position": {
+    "x": -273.82,
+    "y": -2.71,
+    "z": -113.8,
+    "rotY": 3.141593
+   },
+   "units": 4,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 38
+  },
+  {
+   "id": "RRN_0059",
+   "kind": "apartments",
+   "building": "Quarry Fiddle Saloon",
+   "district": "rosemary_row",
+   "position": {
+    "x": -250.8,
+    "y": -2.69,
+    "z": -113.8,
+    "rotY": 3.141593
+   },
+   "units": 3,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 30
+  },
+  {
+   "id": "RRN_0061",
+   "kind": "apartments",
+   "building": "The Silver Spoon Outfitters",
+   "district": "rosemary_row",
+   "position": {
+    "x": -230.78,
+    "y": -2.71,
+    "z": -113.8,
+    "rotY": 3.141593
+   },
+   "units": 4,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 38
+  },
+  {
+   "id": "RRN_0063",
+   "kind": "apartments",
+   "building": "The Crooked Hearth Goods",
+   "district": "rosemary_row",
+   "position": {
+    "x": -212.76,
+    "y": -2.72,
+    "z": -113.8,
+    "rotY": 3.141593
+   },
+   "units": 3,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 30
+  },
+  {
+   "id": "RRN_0065",
+   "kind": "apartments",
+   "building": "Lantern Satchel Books",
+   "district": "rosemary_row",
+   "position": {
+    "x": -197.74,
+    "y": -2.69,
+    "z": -113.8,
+    "rotY": 3.141593
+   },
+   "units": 4,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 38
+  },
+  {
+   "id": "RRN_0067",
+   "kind": "apartments",
+   "building": "Night Owl Biscuit Roasters",
+   "district": "rosemary_row",
+   "position": {
+    "x": -180.72,
+    "y": -2.62,
+    "z": -113.8,
+    "rotY": 3.141593
+   },
+   "units": 4,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 38
+  },
+  {
+   "id": "RRN_0069",
+   "kind": "apartments",
+   "building": "Old Cistern Print Shop",
+   "district": "rosemary_row",
+   "position": {
+    "x": -157.7,
+    "y": -2.44,
+    "z": -113.8,
+    "rotY": 3.141593
+   },
+   "units": 4,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 38
+  },
+  {
+   "id": "RRN_0075",
+   "kind": "apartments",
+   "building": "The Hilltop Barrel Goods",
+   "district": "rosemary_row",
+   "position": {
+    "x": -129.68,
+    "y": -2.09,
+    "z": -113.8,
+    "rotY": 3.141593
+   },
+   "units": 3,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 30
+  },
+  {
+   "id": "RRN_0077",
+   "kind": "apartments",
+   "building": "Quarry Ledger Haberdashery",
+   "district": "rosemary_row",
+   "position": {
+    "x": -111.66,
+    "y": -1.95,
+    "z": -113.8,
+    "rotY": 3.141593
+   },
+   "units": 4,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 38
+  },
+  {
+   "id": "RRN_0079",
+   "kind": "apartments",
+   "building": "Silver Spoon Ledger Salon",
+   "district": "rosemary_row",
+   "position": {
+    "x": -89.64,
+    "y": -1.86,
+    "z": -113.8,
+    "rotY": 3.141593
+   },
+   "units": 4,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 38
+  },
+  {
+   "id": "RRN_0081",
+   "kind": "apartments",
+   "building": "Sweet Gum Saddle Salon",
+   "district": "rosemary_row",
+   "position": {
+    "x": -71.62,
+    "y": -1.81,
+    "z": -113.8,
+    "rotY": 3.141593
+   },
+   "units": 4,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 38
+  },
+  {
+   "id": "RRN_0083",
+   "kind": "apartments",
+   "building": "The Sweet Gum Compass Café",
+   "district": "rosemary_row",
+   "position": {
+    "x": -49.6,
+    "y": -1.7,
+    "z": -113.8,
+    "rotY": 3.141593
+   },
+   "units": 4,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 38
+  },
+  {
+   "id": "RRN_0085",
+   "kind": "apartments",
+   "building": "Twin Pines Spoke Sandwich Co.",
+   "district": "rosemary_row",
+   "position": {
+    "x": -31.58,
+    "y": -1.55,
+    "z": -113.8,
+    "rotY": 3.141593
+   },
+   "units": 4,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 38
+  },
+  {
+   "id": "RRN_0100",
+   "kind": "apartments",
+   "building": "The Night Owl Ladder Optics",
+   "district": "rosemary_row",
+   "position": {
+    "x": 26.44,
+    "y": -1.45,
+    "z": -113.8,
+    "rotY": 3.141593
+   },
+   "units": 4,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 38
+  },
+  {
+   "id": "RRN_0102",
+   "kind": "apartments",
+   "building": "The Hilltop Florist",
+   "district": "rosemary_row",
+   "position": {
+    "x": 46.46,
+    "y": -1.57,
+    "z": -113.8,
+    "rotY": 3.141593
+   },
+   "units": 3,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 30
+  },
+  {
+   "id": "RRN_0104",
+   "kind": "apartments",
+   "building": "The Twin Pines Thimble Lounge",
+   "district": "rosemary_row",
+   "position": {
+    "x": 61.48,
+    "y": -1.7,
+    "z": -113.8,
+    "rotY": 3.141593
+   },
+   "units": 3,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 38
+  },
+  {
+   "id": "RRN_0106",
+   "kind": "apartments",
+   "building": "Twin Pines Anvil Bake Shop",
+   "district": "rosemary_row",
+   "position": {
+    "x": 80.5,
+    "y": -1.84,
+    "z": -113.8,
+    "rotY": 3.141593
+   },
+   "units": 4,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 38
+  },
+  {
+   "id": "RRN_0108",
+   "kind": "apartments",
+   "building": "The Quarry Lantern Taquería",
+   "district": "rosemary_row",
+   "position": {
+    "x": 99.52,
+    "y": -2.01,
+    "z": -113.8,
+    "rotY": 3.141593
+   },
+   "units": 3,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 30
+  },
+  {
+   "id": "RRN_0110",
+   "kind": "apartments",
+   "building": "The Ridgeline Spoke Gallery",
+   "district": "rosemary_row",
+   "position": {
+    "x": 114.54,
+    "y": -2.15,
+    "z": -113.8,
+    "rotY": 3.141593
+   },
+   "units": 4,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 38
+  },
+  {
+   "id": "RRN_0112",
+   "kind": "apartments",
+   "building": "Quarry Compass Wok Shop",
+   "district": "rosemary_row",
+   "position": {
+    "x": 131.56,
+    "y": -2.24,
+    "z": -113.8,
+    "rotY": 3.141593
+   },
+   "units": 3,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 30
+  },
+  {
+   "id": "RRN_0122",
+   "kind": "apartments",
+   "building": "Copper Gallery",
+   "district": "rosemary_row",
+   "position": {
+    "x": 177.58,
+    "y": -2.1,
+    "z": -113.8,
+    "rotY": 3.141593
+   },
+   "units": 3,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 30
+  },
+  {
+   "id": "RRN_0124",
+   "kind": "apartments",
+   "building": "Old Cistern Anvil Café",
+   "district": "rosemary_row",
+   "position": {
+    "x": 194.6,
+    "y": -1.92,
+    "z": -113.8,
+    "rotY": 3.141593
+   },
+   "units": 4,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 38
+  },
+  {
+   "id": "RRN_0126",
+   "kind": "apartments",
+   "building": "The Copper Satchel Barber Shop",
+   "district": "rosemary_row",
+   "position": {
+    "x": 211.62,
+    "y": -1.76,
+    "z": -113.8,
+    "rotY": 3.141593
+   },
+   "units": 4,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 38
+  },
+  {
+   "id": "RRN_0128",
+   "kind": "apartments",
+   "building": "The Goatfoot Lamp Florist",
+   "district": "rosemary_row",
+   "position": {
+    "x": 233.64,
+    "y": -1.6,
+    "z": -113.8,
+    "rotY": 3.141593
+   },
+   "units": 3,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 30
+  },
+  {
+   "id": "RRN_0130",
+   "kind": "apartments",
+   "building": "Gilded Café",
+   "district": "rosemary_row",
+   "position": {
+    "x": 250.66,
+    "y": -1.47,
+    "z": -113.8,
+    "rotY": 3.141593
+   },
+   "units": 3,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 30
+  },
+  {
+   "id": "RRN_0132",
+   "kind": "apartments",
+   "building": "The Lantern Lamp Outfitters",
+   "district": "rosemary_row",
+   "position": {
+    "x": 270.68,
+    "y": -1.35,
+    "z": -113.8,
+    "rotY": 3.141593
+   },
+   "units": 3,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 30
+  },
+  {
+   "id": "RRN_0134",
+   "kind": "apartments",
+   "building": "Silver Spoon Acorn Bakery",
+   "district": "rosemary_row",
+   "position": {
+    "x": 289.7,
+    "y": -1.26,
+    "z": -113.8,
+    "rotY": 3.141593
+   },
+   "units": 4,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 38
+  },
+  {
+   "id": "RRN_0141",
+   "kind": "apartments",
+   "building": "The Twin Pines Mercantile",
+   "district": "rosemary_row",
+   "position": {
+    "x": 323.72,
+    "y": -1.22,
+    "z": -113.8,
+    "rotY": 3.141593
+   },
+   "units": 3,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 30
+  },
+  {
+   "id": "RRN_0143",
+   "kind": "apartments",
+   "building": "The Twin Pines Bake Shop",
+   "district": "rosemary_row",
+   "position": {
+    "x": 343.74,
+    "y": -1.27,
+    "z": -113.8,
+    "rotY": 3.141593
+   },
+   "units": 3,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 30
+  },
+  {
+   "id": "RRN_0145",
+   "kind": "apartments",
+   "building": "The Brickyard Taquería",
+   "district": "rosemary_row",
+   "position": {
+    "x": 360.76,
+    "y": -1.31,
+    "z": -113.8,
+    "rotY": 3.141593
+   },
+   "units": 4,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 38
+  },
+  {
+   "id": "RRS_0149",
+   "kind": "apartments",
+   "building": "Twin Pines Acorn Optics",
+   "district": "rosemary_row",
+   "position": {
+    "x": -470,
+    "y": -4.29,
+    "z": -102.2,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "RRS_0151",
+   "kind": "apartments",
+   "building": "The Ridgeline Hearth Goods",
+   "district": "rosemary_row",
+   "position": {
+    "x": -449,
+    "y": -3.94,
+    "z": -102.2,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "RRS_0152",
+   "kind": "apartments",
+   "building": "The Copper Roasters",
+   "district": "rosemary_row",
+   "position": {
+    "x": -437.5,
+    "y": -3.72,
+    "z": -102.2,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "RRS_0154",
+   "kind": "apartments",
+   "building": "Red Clay Saddle Coffee Bar",
+   "district": "rosemary_row",
+   "position": {
+    "x": -418.5,
+    "y": -3.49,
+    "z": -102.2,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "RRS_0156",
+   "kind": "apartments",
+   "building": "Old Cistern Coffee Bar",
+   "district": "rosemary_row",
+   "position": {
+    "x": -398.5,
+    "y": -3.4,
+    "z": -102.2,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "RRS_0157",
+   "kind": "apartments",
+   "building": "Crooked Saddle Threads",
+   "district": "rosemary_row",
+   "position": {
+    "x": -385,
+    "y": -3.39,
+    "z": -102.2,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "RRS_0159",
+   "kind": "apartments",
+   "building": "The Corner Pennant Coffee Bar",
+   "district": "rosemary_row",
+   "position": {
+    "x": -367,
+    "y": -3.34,
+    "z": -102.2,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "RRS_0160",
+   "kind": "apartments",
+   "building": "Old Cistern Bakery",
+   "district": "rosemary_row",
+   "position": {
+    "x": -355.5,
+    "y": -3.26,
+    "z": -102.2,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "RRS_0161",
+   "kind": "apartments",
+   "building": "The Sweet Gum Book Nook",
+   "district": "rosemary_row",
+   "position": {
+    "x": -343,
+    "y": -3.13,
+    "z": -102.2,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "RRS_0163",
+   "kind": "apartments",
+   "building": "Cardinal Teacup Roasters",
+   "district": "rosemary_row",
+   "position": {
+    "x": -324,
+    "y": -2.93,
+    "z": -102.2,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "RRS_0170",
+   "kind": "apartments",
+   "building": "The Hilltop Outfitters",
+   "district": "rosemary_row",
+   "position": {
+    "x": -292.5,
+    "y": -2.72,
+    "z": -102.2,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "RRS_0171",
+   "kind": "apartments",
+   "building": "Dogwood Barrel Taco Counter",
+   "district": "rosemary_row",
+   "position": {
+    "x": -279,
+    "y": -2.69,
+    "z": -102.2,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "RRS_0172",
+   "kind": "apartments",
+   "building": "Sweet Gum Acorn Café",
+   "district": "rosemary_row",
+   "position": {
+    "x": -263.5,
+    "y": -2.69,
+    "z": -102.2,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "RRS_0173",
+   "kind": "apartments",
+   "building": "Cardinal Print Shop",
+   "district": "rosemary_row",
+   "position": {
+    "x": -249,
+    "y": -2.7,
+    "z": -102.2,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "RRS_0206",
+   "kind": "apartments",
+   "building": "The Cardinal Satchel Pizza",
+   "district": "rosemary_row",
+   "position": {
+    "x": -123,
+    "y": -1.94,
+    "z": -102.2,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "RRS_0208",
+   "kind": "apartments",
+   "building": "Wandering Biscuit Threads",
+   "district": "rosemary_row",
+   "position": {
+    "x": -107,
+    "y": -1.87,
+    "z": -102.2,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "RRS_0213",
+   "kind": "apartments",
+   "building": "The Goatfoot Wok Shop",
+   "district": "rosemary_row",
+   "position": {
+    "x": -73.5,
+    "y": -1.75,
+    "z": -102.2,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "RRS_0214",
+   "kind": "apartments",
+   "building": "Lantern Biscuit Outfitters",
+   "district": "rosemary_row",
+   "position": {
+    "x": -58,
+    "y": -1.65,
+    "z": -102.2,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "RRS_0217",
+   "kind": "apartments",
+   "building": "Bluebell Quill Print Shop",
+   "district": "rosemary_row",
+   "position": {
+    "x": -27.5,
+    "y": -1.44,
+    "z": -102.2,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "RRS_0230",
+   "kind": "apartments",
+   "building": "Red Clay Salon",
+   "district": "rosemary_row",
+   "position": {
+    "x": 40,
+    "y": -1.62,
+    "z": -102.2,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "RRS_0268",
+   "kind": "apartments",
+   "building": "The Cardinal Café",
+   "district": "rosemary_row",
+   "position": {
+    "x": 166,
+    "y": -2.07,
+    "z": -102.2,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "RRS_0270",
+   "kind": "apartments",
+   "building": "The Gilded Florist",
+   "district": "rosemary_row",
+   "position": {
+    "x": 186,
+    "y": -1.88,
+    "z": -102.2,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "RRS_0272",
+   "kind": "apartments",
+   "building": "The Wandering Satchel Supply",
+   "district": "rosemary_row",
+   "position": {
+    "x": 205,
+    "y": -1.71,
+    "z": -102.2,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "RRS_0275",
+   "kind": "apartments",
+   "building": "The Tin Roof Kettle Café",
+   "district": "rosemary_row",
+   "position": {
+    "x": 227.5,
+    "y": -1.55,
+    "z": -102.2,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "RRS_0276",
+   "kind": "apartments",
+   "building": "The Gilded Spoke Optics",
+   "district": "rosemary_row",
+   "position": {
+    "x": 238,
+    "y": -1.47,
+    "z": -102.2,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "RRS_0277",
+   "kind": "apartments",
+   "building": "The Quarry Print Shop",
+   "district": "rosemary_row",
+   "position": {
+    "x": 248.5,
+    "y": -1.4,
+    "z": -102.2,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "RRS_0278",
+   "kind": "apartments",
+   "building": "The Twin Pines Compass Print Shop",
+   "district": "rosemary_row",
+   "position": {
+    "x": 263,
+    "y": -1.31,
+    "z": -102.2,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "RRS_0279",
+   "kind": "apartments",
+   "building": "Cardinal Saddle Slice Shop",
+   "district": "rosemary_row",
+   "position": {
+    "x": 277.5,
+    "y": -1.25,
+    "z": -102.2,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "RRS_0286",
+   "kind": "apartments",
+   "building": "The Gilded Biscuit Noodle Bar",
+   "district": "rosemary_row",
+   "position": {
+    "x": 308,
+    "y": -1.22,
+    "z": -102.2,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "RRS_0287",
+   "kind": "apartments",
+   "building": "Wandering Spoke Gallery",
+   "district": "rosemary_row",
+   "position": {
+    "x": 323.5,
+    "y": -1.24,
+    "z": -102.2,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "RRS_0289",
+   "kind": "apartments",
+   "building": "The Cardinal Sparrow Deli",
+   "district": "rosemary_row",
+   "position": {
+    "x": 339.5,
+    "y": -1.3,
+    "z": -102.2,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "RRS_0290",
+   "kind": "apartments",
+   "building": "The Copper Sparrow Threads",
+   "district": "rosemary_row",
+   "position": {
+    "x": 351,
+    "y": -1.31,
+    "z": -102.2,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "RRS_0291",
+   "kind": "apartments",
+   "building": "Goatfoot Satchel Florist",
+   "district": "rosemary_row",
+   "position": {
+    "x": 361.5,
+    "y": -1.31,
+    "z": -102.2,
+    "rotY": 0
+   },
+   "units": 1,
+   "rentPerMonth": 950,
+   "buyPrice": null,
+   "rooms": 12
+  },
+  {
+   "id": "RES_0292",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -470,
+    "y": -5.2,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0293",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -454,
+    "y": -4.82,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0294",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -435,
+    "y": -4.88,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 16
+  },
+  {
+   "id": "RES_0295",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -417,
+    "y": -4.92,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 16
+  },
+  {
+   "id": "RES_0296",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -400,
+    "y": -4.64,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0297",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -384,
+    "y": -4.36,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0298",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -366,
+    "y": -4.17,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0299",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -349,
+    "y": -3.97,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 11
+  },
+  {
+   "id": "RES_0300",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -333,
+    "y": -3.73,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0308",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -293,
+    "y": -3.65,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0309",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -274,
+    "y": -3.76,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0310",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -257,
+    "y": -3.9,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0311",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -239,
+    "y": -3.92,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0312",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -220,
+    "y": -3.93,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0313",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -203,
+    "y": -3.79,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0314",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -186,
+    "y": -3.45,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0315",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -170,
+    "y": -3.22,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0319",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -144,
+    "y": -3.31,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0320",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -128,
+    "y": -3.32,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0321",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -112,
+    "y": -2.84,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0322",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -95,
+    "y": -2.43,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0323",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -79,
+    "y": -2.3,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0324",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -61,
+    "y": -2.04,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0325",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -43,
+    "y": -2.06,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 16
+  },
+  {
+   "id": "RES_0326",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -24,
+    "y": -2.35,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0332",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 8,
+    "y": -2.4,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0333",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 27,
+    "y": -2.67,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 11
+  },
+  {
+   "id": "RES_0334",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 45,
+    "y": -2.86,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0335",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 62,
+    "y": -2.98,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0336",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 79,
+    "y": -3.07,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0337",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 96,
+    "y": -3.35,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0338",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 114,
+    "y": -3.6,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0347",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 157,
+    "y": -3.87,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0348",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 176,
+    "y": -3.87,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0349",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 193,
+    "y": -3.78,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0350",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 212,
+    "y": -3.57,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0351",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 231,
+    "y": -3.34,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0352",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 250,
+    "y": -3.15,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0353",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 266,
+    "y": -2.74,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0361",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 306,
+    "y": -2.51,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0362",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 322,
+    "y": -2.38,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0363",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 340,
+    "y": -2.47,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0364",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 358,
+    "y": -2.64,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0365",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 374,
+    "y": -2.63,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0366",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 391,
+    "y": -2.55,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0367",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 407,
+    "y": -2.41,
+    "z": -219.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0368",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -459,
+    "y": -5.87,
+    "z": -242.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 16
+  },
+  {
+   "id": "RES_0369",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -439,
+    "y": -5.76,
+    "z": -242.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0370",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -421,
+    "y": -5.39,
+    "z": -242.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0371",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -403,
+    "y": -4.98,
+    "z": -242.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0372",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -384,
+    "y": -4.63,
+    "z": -242.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0373",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -364,
+    "y": -4.25,
+    "z": -242.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 11
+  },
+  {
+   "id": "RES_0374",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -344,
+    "y": -4.15,
+    "z": -242.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0375",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -323,
+    "y": -4.25,
+    "z": -242.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0384",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -281,
+    "y": -4.14,
+    "z": -242.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0385",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -262,
+    "y": -4.06,
+    "z": -242.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0386",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -244,
+    "y": -3.92,
+    "z": -242.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0387",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -223,
+    "y": -3.83,
+    "z": -242.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0388",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -204,
+    "y": -4.07,
+    "z": -242.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0389",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -184,
+    "y": -3.99,
+    "z": -242.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0390",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -164,
+    "y": -3.91,
+    "z": -242.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0396",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -130,
+    "y": -3.7,
+    "z": -242.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0397",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -110,
+    "y": -3.48,
+    "z": -242.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0398",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -91,
+    "y": -3.19,
+    "z": -242.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0399",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -73,
+    "y": -3.01,
+    "z": -242.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 16
+  },
+  {
+   "id": "RES_0400",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -52,
+    "y": -3.12,
+    "z": -242.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 16
+  },
+  {
+   "id": "RES_0401",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -32,
+    "y": -3.24,
+    "z": -242.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 11
+  },
+  {
+   "id": "RES_0402",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -12,
+    "y": -3.26,
+    "z": -242.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0408",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 21,
+    "y": -3.24,
+    "z": -242.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0409",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 39,
+    "y": -3.13,
+    "z": -242.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 16
+  },
+  {
+   "id": "RES_0410",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 59,
+    "y": -3.07,
+    "z": -242.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0411",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 79,
+    "y": -3.05,
+    "z": -242.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0412",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 100,
+    "y": -3.28,
+    "z": -242.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0413",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 118,
+    "y": -3.71,
+    "z": -242.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0414",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 136,
+    "y": -3.85,
+    "z": -242.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0420",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 170,
+    "y": -3.74,
+    "z": -242.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 11
+  },
+  {
+   "id": "RES_0421",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 191,
+    "y": -3.81,
+    "z": -242.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0422",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 210,
+    "y": -3.75,
+    "z": -242.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0423",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 230,
+    "y": -3.71,
+    "z": -242.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0424",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 251,
+    "y": -3.63,
+    "z": -242.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0425",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 271,
+    "y": -3.38,
+    "z": -242.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0426",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 289,
+    "y": -3.25,
+    "z": -242.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0431",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 320,
+    "y": -3.45,
+    "z": -242.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0432",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 339,
+    "y": -3.35,
+    "z": -242.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0433",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 359,
+    "y": -3.07,
+    "z": -242.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0434",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 377,
+    "y": -2.92,
+    "z": -242.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0435",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 398,
+    "y": -2.66,
+    "z": -242.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0436",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 418,
+    "y": -2.66,
+    "z": -242.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0437",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -470,
+    "y": -5.47,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0438",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -451,
+    "y": -5.99,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0439",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -433,
+    "y": -6.17,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 11
+  },
+  {
+   "id": "RES_0440",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -417,
+    "y": -6.15,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0441",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -398,
+    "y": -5.89,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0442",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -380,
+    "y": -5.18,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0443",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -364,
+    "y": -4.94,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0444",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -345,
+    "y": -5.06,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0445",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -329,
+    "y": -5.08,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0453",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -292,
+    "y": -4.32,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0454",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -274,
+    "y": -4.38,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0455",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -256,
+    "y": -4.51,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0456",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -237,
+    "y": -4.52,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0457",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -219,
+    "y": -4.38,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0458",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -200,
+    "y": -4.3,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 16
+  },
+  {
+   "id": "RES_0459",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -182,
+    "y": -4.16,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 11
+  },
+  {
+   "id": "RES_0467",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -142,
+    "y": -4.44,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0468",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -124,
+    "y": -4.8,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0469",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -107,
+    "y": -4.62,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0470",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -90,
+    "y": -4.49,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0471",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -74,
+    "y": -4.43,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0472",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -55,
+    "y": -4.5,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0473",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -36,
+    "y": -4.74,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0483",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 9,
+    "y": -5.01,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0484",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 28,
+    "y": -5.03,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0485",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 47,
+    "y": -4.41,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0486",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 64,
+    "y": -3.89,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0487",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 81,
+    "y": -3.76,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 16
+  },
+  {
+   "id": "RES_0488",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 97,
+    "y": -4,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0489",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 114,
+    "y": -4.19,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 11
+  },
+  {
+   "id": "RES_0490",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 131,
+    "y": -3.89,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 11
+  },
+  {
+   "id": "RES_0494",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 156,
+    "y": -3.43,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 11
+  },
+  {
+   "id": "RES_0495",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 172,
+    "y": -3.53,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0496",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 189,
+    "y": -3.91,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0497",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 205,
+    "y": -3.9,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0498",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 223,
+    "y": -3.7,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0499",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 241,
+    "y": -3.83,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0500",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 258,
+    "y": -3.88,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 11
+  },
+  {
+   "id": "RES_0501",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 277,
+    "y": -4.08,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 16
+  },
+  {
+   "id": "RES_0506",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 307,
+    "y": -4.65,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0507",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 325,
+    "y": -5.08,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0508",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 341,
+    "y": -5.14,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0509",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 360,
+    "y": -5.18,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0510",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 376,
+    "y": -5.25,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0511",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 395,
+    "y": -5.29,
+    "z": -319.25,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0512",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -456,
+    "y": -5.82,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0513",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -439,
+    "y": -6.04,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0514",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -420,
+    "y": -6.09,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0515",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -400,
+    "y": -6.16,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0516",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -381,
+    "y": -6,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0517",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -362,
+    "y": -5.68,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0518",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -345,
+    "y": -5.48,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0519",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -328,
+    "y": -5.42,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 16
+  },
+  {
+   "id": "RES_0520",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -311,
+    "y": -5.28,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0525",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -282,
+    "y": -4.7,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0526",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -262,
+    "y": -4.52,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0527",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -245,
+    "y": -4.27,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0528",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -227,
+    "y": -4.13,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0529",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -209,
+    "y": -4.08,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0530",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -190,
+    "y": -4.11,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0531",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -173,
+    "y": -4.26,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0540",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -129,
+    "y": -4.62,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0541",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -112,
+    "y": -4.96,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0542",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -93,
+    "y": -5.08,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0543",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -75,
+    "y": -5.23,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0544",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -56,
+    "y": -5.34,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0545",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -37,
+    "y": -5.46,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0546",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -18,
+    "y": -5.59,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0554",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 20,
+    "y": -5.77,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0555",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 39,
+    "y": -5.61,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 16
+  },
+  {
+   "id": "RES_0556",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 57,
+    "y": -5.36,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0557",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 76,
+    "y": -5.06,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0558",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 96,
+    "y": -4.72,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0559",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 113,
+    "y": -4.52,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0560",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 132,
+    "y": -4.38,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 16
+  },
+  {
+   "id": "RES_0567",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 167,
+    "y": -4.16,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 16
+  },
+  {
+   "id": "RES_0568",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 187,
+    "y": -4,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0569",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 205,
+    "y": -3.82,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0570",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 224,
+    "y": -3.91,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0571",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 243,
+    "y": -4,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0572",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 260,
+    "y": -4.28,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0573",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 277,
+    "y": -4.59,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0574",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 294,
+    "y": -5.01,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0577",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 318,
+    "y": -5.3,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 11
+  },
+  {
+   "id": "RES_0578",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 337,
+    "y": -5.62,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0579",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 355,
+    "y": -5.95,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0580",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 374,
+    "y": -6.13,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0581",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 391,
+    "y": -6.17,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 16
+  },
+  {
+   "id": "RES_0582",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 408,
+    "y": -6.19,
+    "z": -341.75,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0583",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -160.75,
+    "y": -4.76,
+    "z": -440,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0584",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -160.75,
+    "y": -4.72,
+    "z": -420,
+    "rotY": -1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0585",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -160.75,
+    "y": -4.68,
+    "z": -400,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0586",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -160.75,
+    "y": -4.57,
+    "z": -381,
+    "rotY": -1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0587",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -160.75,
+    "y": -4.42,
+    "z": -361,
+    "rotY": -1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0600",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -160.75,
+    "y": -3.96,
+    "z": -305,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0601",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -160.75,
+    "y": -3.89,
+    "z": -285,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 16
+  },
+  {
+   "id": "RES_0617",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -137.25,
+    "y": -5.26,
+    "z": -429,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0618",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -137.25,
+    "y": -5.16,
+    "z": -409,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 16
+  },
+  {
+   "id": "RES_0619",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -137.25,
+    "y": -4.98,
+    "z": -389,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0620",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -137.25,
+    "y": -4.91,
+    "z": -368,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0639",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -137.25,
+    "y": -4.33,
+    "z": -293,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0640",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -137.25,
+    "y": -4.18,
+    "z": -274,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0657",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 136.25,
+    "y": -5.43,
+    "z": -440,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0658",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 136.25,
+    "y": -5.33,
+    "z": -419,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0659",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 136.25,
+    "y": -5.16,
+    "z": -399,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 16
+  },
+  {
+   "id": "RES_0660",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 136.25,
+    "y": -4.94,
+    "z": -380,
+    "rotY": -1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0678",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 136.25,
+    "y": -3.79,
+    "z": -309,
+    "rotY": -1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0679",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 136.25,
+    "y": -3.5,
+    "z": -290,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0680",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 136.25,
+    "y": -3.53,
+    "z": -269,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0691",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 160.75,
+    "y": -5.12,
+    "z": -428,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0692",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 160.75,
+    "y": -4.9,
+    "z": -410,
+    "rotY": 1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0693",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 160.75,
+    "y": -4.75,
+    "z": -392,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0694",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 160.75,
+    "y": -4.84,
+    "z": -376,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0695",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 160.75,
+    "y": -4.72,
+    "z": -358,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0711",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 160.75,
+    "y": -3.41,
+    "z": -297,
+    "rotY": 1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0712",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 160.75,
+    "y": -3.47,
+    "z": -280,
+    "rotY": 1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0713",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 160.75,
+    "y": -3.64,
+    "z": -264,
+    "rotY": 1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 11
+  },
+  {
+   "id": "RES_0727",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -312.75,
+    "y": -5.68,
+    "z": -440,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0728",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -312.75,
+    "y": -5.71,
+    "z": -422,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0729",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -312.75,
+    "y": -5.72,
+    "z": -405,
+    "rotY": -1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0730",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -312.75,
+    "y": -5.65,
+    "z": -387,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0731",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -312.75,
+    "y": -5.61,
+    "z": -369,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0747",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -312.75,
+    "y": -4.6,
+    "z": -308,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0748",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -312.75,
+    "y": -4.2,
+    "z": -290,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0749",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -312.75,
+    "y": -4.19,
+    "z": -272,
+    "rotY": -1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0751",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -312.75,
+    "y": -4.29,
+    "z": -253,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 16
+  },
+  {
+   "id": "RES_0757",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -288.25,
+    "y": -5.82,
+    "z": -427,
+    "rotY": 1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0758",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -288.25,
+    "y": -5.49,
+    "z": -410,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0759",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -288.25,
+    "y": -5.17,
+    "z": -392,
+    "rotY": 1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0760",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -288.25,
+    "y": -5.07,
+    "z": -374,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0761",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -288.25,
+    "y": -4.91,
+    "z": -355,
+    "rotY": 1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0776",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -288.25,
+    "y": -4.06,
+    "z": -296,
+    "rotY": 1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0777",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -288.25,
+    "y": -3.98,
+    "z": -279,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0778",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -288.25,
+    "y": -3.96,
+    "z": -261,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0791",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 288.25,
+    "y": -6.15,
+    "z": -440,
+    "rotY": -1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0792",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 288.25,
+    "y": -6.18,
+    "z": -422,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0793",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 288.25,
+    "y": -5.88,
+    "z": -403,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0794",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 288.25,
+    "y": -5.98,
+    "z": -384,
+    "rotY": -1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0814",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 288.25,
+    "y": -4.02,
+    "z": -308,
+    "rotY": -1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0815",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 288.25,
+    "y": -4.06,
+    "z": -288,
+    "rotY": -1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0816",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 288.25,
+    "y": -3.68,
+    "z": -270,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0827",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 311.75,
+    "y": -6.71,
+    "z": -427,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0828",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 311.75,
+    "y": -6.58,
+    "z": -409,
+    "rotY": 1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 11
+  },
+  {
+   "id": "RES_0829",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 311.75,
+    "y": -6.36,
+    "z": -389,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0830",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 311.75,
+    "y": -6.02,
+    "z": -371,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0850",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 311.75,
+    "y": -4.46,
+    "z": -295,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 16
+  },
+  {
+   "id": "RES_0851",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 311.75,
+    "y": -4.17,
+    "z": -276,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 16
+  },
+  {
+   "id": "RES_0852",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 311.75,
+    "y": -3.87,
+    "z": -256,
+    "rotY": 1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0863",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -13.95,
+    "y": -7.07,
+    "z": -450,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0864",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -13.95,
+    "y": -7.14,
+    "z": -432,
+    "rotY": -1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0865",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -13.95,
+    "y": -7.31,
+    "z": -414,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0866",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -13.95,
+    "y": -7.18,
+    "z": -396,
+    "rotY": -1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0867",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -13.95,
+    "y": -6.61,
+    "z": -378,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 16
+  },
+  {
+   "id": "RES_0885",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -13.95,
+    "y": -4.77,
+    "z": -309,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0886",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -13.95,
+    "y": -4.41,
+    "z": -291,
+    "rotY": -1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0887",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -13.95,
+    "y": -3.97,
+    "z": -273,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0898",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 13.95,
+    "y": -7.24,
+    "z": -438,
+    "rotY": 1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0899",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 13.95,
+    "y": -7.35,
+    "z": -420,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0900",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 13.95,
+    "y": -7.34,
+    "z": -402,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0901",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 13.95,
+    "y": -7.04,
+    "z": -384,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0902",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 13.95,
+    "y": -6.38,
+    "z": -366,
+    "rotY": 1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0921",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 13.95,
+    "y": -4.48,
+    "z": -294,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0922",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 13.95,
+    "y": -3.93,
+    "z": -276,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0923",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": 13.95,
+    "y": -3.68,
+    "z": -258,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0933",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -493.95,
+    "y": -7.31,
+    "z": -450,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0934",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -493.95,
+    "y": -7.12,
+    "z": -432,
+    "rotY": -1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0935",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -493.95,
+    "y": -6.86,
+    "z": -414,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 16
+  },
+  {
+   "id": "RES_0936",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -493.95,
+    "y": -6.69,
+    "z": -396,
+    "rotY": -1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0937",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -493.95,
+    "y": -6.47,
+    "z": -378,
+    "rotY": -1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0938",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -493.95,
+    "y": -5.98,
+    "z": -360,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0939",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -493.95,
+    "y": -5.52,
+    "z": -342,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0940",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -493.95,
+    "y": -5.41,
+    "z": -324,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0941",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -493.95,
+    "y": -5.43,
+    "z": -306,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_0942",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -493.95,
+    "y": -5.78,
+    "z": -288,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0943",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -493.95,
+    "y": -5.93,
+    "z": -270,
+    "rotY": -1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0944",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -493.95,
+    "y": -5.98,
+    "z": -252,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0945",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -493.95,
+    "y": -5.78,
+    "z": -234,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 16
+  },
+  {
+   "id": "RES_0946",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -493.95,
+    "y": -5.28,
+    "z": -216,
+    "rotY": -1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_0947",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -493.95,
+    "y": -5.32,
+    "z": -198,
+    "rotY": -1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_0948",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -493.95,
+    "y": -5.44,
+    "z": -180,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2250,
+   "buyPrice": 405000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_0949",
+   "kind": "house",
+   "building": null,
+   "district": "residential_north",
+   "position": {
+    "x": -493.95,
+    "y": -5.33,
+    "z": -162,
+    "rotY": -1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1550,
+   "buyPrice": 279000,
+   "rooms": 5
+  },
+  {
+   "id": "CAM_0956",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -470,
+    "y": -4.47,
+    "z": 185.75,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 13
+  },
+  {
+   "id": "CAM_0957",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -450,
+    "y": -4.27,
+    "z": 185.75,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 5
+  },
+  {
+   "id": "CAM_0958",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -429,
+    "y": -4.13,
+    "z": 185.75,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 5
+  },
+  {
+   "id": "CAM_0959",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -409,
+    "y": -4.04,
+    "z": 185.75,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 8
+  },
+  {
+   "id": "CAM_0960",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -390,
+    "y": -3.98,
+    "z": 185.75,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 13
+  },
+  {
+   "id": "CAM_0961",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -369,
+    "y": -3.97,
+    "z": 185.75,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 10
+  },
+  {
+   "id": "CAM_0962",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -349,
+    "y": -3.9,
+    "z": 185.75,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 13
+  },
+  {
+   "id": "CAM_0963",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -330,
+    "y": -3.86,
+    "z": 185.75,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 5
+  },
+  {
+   "id": "CAM_0970",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -293,
+    "y": -3.52,
+    "z": 185.75,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 10
+  },
+  {
+   "id": "CAM_0971",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -274,
+    "y": -3.41,
+    "z": 185.75,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 13
+  },
+  {
+   "id": "CAM_0972",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -254,
+    "y": -3.32,
+    "z": 185.75,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 13
+  },
+  {
+   "id": "CAM_0973",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -233,
+    "y": -3.42,
+    "z": 185.75,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 5
+  },
+  {
+   "id": "CAM_0974",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -212,
+    "y": -3.61,
+    "z": 185.75,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 13
+  },
+  {
+   "id": "CAM_0975",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -191,
+    "y": -3.53,
+    "z": 185.75,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 8
+  },
+  {
+   "id": "CAM_0976",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -171,
+    "y": -3.34,
+    "z": 185.75,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 16
+  },
+  {
+   "id": "CAM_0977",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -151,
+    "y": -3.16,
+    "z": 185.75,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 10
+  },
+  {
+   "id": "CAM_0978",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -130,
+    "y": -2.93,
+    "z": 185.75,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 10
+  },
+  {
+   "id": "CAM_0979",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -110,
+    "y": -2.78,
+    "z": 185.75,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 5
+  },
+  {
+   "id": "CAM_0980",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -90,
+    "y": -2.69,
+    "z": 185.75,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 10
+  },
+  {
+   "id": "CAM_0981",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -70,
+    "y": -2.69,
+    "z": 185.75,
+    "rotY": 0
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 11
+  },
+  {
+   "id": "CAM_0982",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -51,
+    "y": -2.76,
+    "z": 185.75,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 13
+  },
+  {
+   "id": "CAM_0983",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -30,
+    "y": -2.79,
+    "z": 185.75,
+    "rotY": 0
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 10
+  },
+  {
+   "id": "CAM_0984",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -456,
+    "y": -4.23,
+    "z": 164.25,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 13
+  },
+  {
+   "id": "CAM_0985",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -438,
+    "y": -4.18,
+    "z": 164.25,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 5
+  },
+  {
+   "id": "CAM_0986",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -420,
+    "y": -4.06,
+    "z": 164.25,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 13
+  },
+  {
+   "id": "CAM_0987",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -402,
+    "y": -4,
+    "z": 164.25,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 8
+  },
+  {
+   "id": "CAM_0988",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -385,
+    "y": -3.96,
+    "z": 164.25,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 16
+  },
+  {
+   "id": "CAM_0989",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -367,
+    "y": -3.97,
+    "z": 164.25,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 8
+  },
+  {
+   "id": "CAM_1003",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -311,
+    "y": -3.75,
+    "z": 164.25,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 16
+  },
+  {
+   "id": "CAM_1008",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -280,
+    "y": -3.33,
+    "z": 164.25,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 13
+  },
+  {
+   "id": "CAM_1009",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -261,
+    "y": -3.45,
+    "z": 164.25,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 5
+  },
+  {
+   "id": "CAM_1010",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -242,
+    "y": -3.5,
+    "z": 164.25,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 10
+  },
+  {
+   "id": "CAM_1011",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -225,
+    "y": -3.56,
+    "z": 164.25,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 13
+  },
+  {
+   "id": "CAM_1012",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -208,
+    "y": -3.64,
+    "z": 164.25,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 10
+  },
+  {
+   "id": "CAM_1013",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -190,
+    "y": -3.65,
+    "z": 164.25,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 8
+  },
+  {
+   "id": "CAM_1014",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -173,
+    "y": -3.54,
+    "z": 164.25,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 10
+  },
+  {
+   "id": "CAM_1015",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -156,
+    "y": -3.41,
+    "z": 164.25,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 10
+  },
+  {
+   "id": "CAM_1029",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -98,
+    "y": -2.32,
+    "z": 164.25,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 8
+  },
+  {
+   "id": "CAM_1030",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -79,
+    "y": -2.19,
+    "z": 164.25,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 11
+  },
+  {
+   "id": "CAM_1031",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -60,
+    "y": -2.14,
+    "z": 164.25,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 13
+  },
+  {
+   "id": "CAM_1032",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -42,
+    "y": -2.08,
+    "z": 164.25,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 5
+  },
+  {
+   "id": "CAM_1033",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -24,
+    "y": -2.03,
+    "z": 164.25,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 16
+  },
+  {
+   "id": "CAM_1034",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -458,
+    "y": -5.77,
+    "z": 313.45,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 13
+  },
+  {
+   "id": "CAM_1035",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -441,
+    "y": -6.01,
+    "z": 313.45,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 13
+  },
+  {
+   "id": "CAM_1036",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -423,
+    "y": -6.14,
+    "z": 313.45,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 5
+  },
+  {
+   "id": "CAM_1037",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -405,
+    "y": -6.19,
+    "z": 313.45,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 13
+  },
+  {
+   "id": "CAM_1038",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -386,
+    "y": -6.13,
+    "z": 313.45,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 10
+  },
+  {
+   "id": "CAM_1039",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -369,
+    "y": -5.87,
+    "z": 313.45,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 8
+  },
+  {
+   "id": "CAM_1040",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -351,
+    "y": -5.7,
+    "z": 313.45,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 10
+  },
+  {
+   "id": "CAM_1041",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -334,
+    "y": -5.56,
+    "z": 313.45,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 13
+  },
+  {
+   "id": "CAM_1042",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -316,
+    "y": -5.41,
+    "z": 313.45,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 8
+  },
+  {
+   "id": "CAM_1049",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -281,
+    "y": -5.18,
+    "z": 313.45,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 13
+  },
+  {
+   "id": "CAM_1050",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -263,
+    "y": -4.92,
+    "z": 313.45,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 13
+  },
+  {
+   "id": "CAM_1051",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -244,
+    "y": -4.7,
+    "z": 313.45,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 13
+  },
+  {
+   "id": "CAM_1052",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -227,
+    "y": -4.63,
+    "z": 313.45,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 10
+  },
+  {
+   "id": "CAM_1053",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -210,
+    "y": -4.58,
+    "z": 313.45,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 13
+  },
+  {
+   "id": "CAM_1054",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -191,
+    "y": -4.64,
+    "z": 313.45,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 8
+  },
+  {
+   "id": "CAM_1055",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -172,
+    "y": -4.66,
+    "z": 313.45,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 8
+  },
+  {
+   "id": "CAM_1056",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -154,
+    "y": -4.87,
+    "z": 313.45,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 5
+  },
+  {
+   "id": "CAM_1057",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -136,
+    "y": -4.9,
+    "z": 313.45,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 13
+  },
+  {
+   "id": "CAM_1058",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -118,
+    "y": -5.21,
+    "z": 313.45,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 8
+  },
+  {
+   "id": "CAM_1059",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -100,
+    "y": -5.35,
+    "z": 313.45,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 16
+  },
+  {
+   "id": "CAM_1060",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -81,
+    "y": -5.47,
+    "z": 313.45,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 13
+  },
+  {
+   "id": "CAM_1061",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -62,
+    "y": -5.43,
+    "z": 313.45,
+    "rotY": 3.141593
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 8
+  },
+  {
+   "id": "CAM_1062",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -44,
+    "y": -5.38,
+    "z": 313.45,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 10
+  },
+  {
+   "id": "CAM_1063",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -25,
+    "y": -5.35,
+    "z": 313.45,
+    "rotY": 3.141593
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 13
+  },
+  {
+   "id": "CAM_1075",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -311.75,
+    "y": -1.44,
+    "z": -87,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 13
+  },
+  {
+   "id": "CAM_1076",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -311.75,
+    "y": -0.39,
+    "z": -70,
+    "rotY": -1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 8
+  },
+  {
+   "id": "CAM_1077",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -311.75,
+    "y": 0.45,
+    "z": -53,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 13
+  },
+  {
+   "id": "CAM_1103",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -311.75,
+    "y": -0.53,
+    "z": 39,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 10
+  },
+  {
+   "id": "CAM_1104",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -311.75,
+    "y": -0.98,
+    "z": 56,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 13
+  },
+  {
+   "id": "CAM_1105",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -311.75,
+    "y": -1.53,
+    "z": 73,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 13
+  },
+  {
+   "id": "CAM_1106",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -311.75,
+    "y": -2.08,
+    "z": 90,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 10
+  },
+  {
+   "id": "CAM_1107",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -311.75,
+    "y": -2.5,
+    "z": 107,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 13
+  },
+  {
+   "id": "CAM_1108",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -311.75,
+    "y": -2.95,
+    "z": 124,
+    "rotY": -1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 8
+  },
+  {
+   "id": "CAM_1109",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -311.75,
+    "y": -3.36,
+    "z": 141,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 10
+  },
+  {
+   "id": "CAM_1132",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -288.25,
+    "y": -0.75,
+    "z": -75,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 16
+  },
+  {
+   "id": "CAM_1133",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -288.25,
+    "y": -0.52,
+    "z": -58,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 16
+  },
+  {
+   "id": "CAM_1134",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -288.25,
+    "y": -0.15,
+    "z": -41,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 13
+  },
+  {
+   "id": "CAM_1160",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -288.25,
+    "y": -0.5,
+    "z": 51,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 10
+  },
+  {
+   "id": "CAM_1161",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -288.25,
+    "y": -0.94,
+    "z": 68,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 13
+  },
+  {
+   "id": "CAM_1162",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -288.25,
+    "y": -1.11,
+    "z": 85,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 16
+  },
+  {
+   "id": "CAM_1163",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -288.25,
+    "y": -1.61,
+    "z": 102,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 13
+  },
+  {
+   "id": "CAM_1164",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -288.25,
+    "y": -2.15,
+    "z": 119,
+    "rotY": 1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 5
+  },
+  {
+   "id": "CAM_1165",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -288.25,
+    "y": -2.57,
+    "z": 136,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 16
+  },
+  {
+   "id": "CAM_1166",
+   "kind": "house",
+   "building": null,
+   "district": "cameron_heights",
+   "position": {
+    "x": -288.25,
+    "y": -3.12,
+    "z": 153,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 2550,
+   "buyPrice": 459000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_1277",
+   "kind": "house",
+   "building": null,
+   "district": "carrburg",
+   "position": {
+    "x": -651.75,
+    "y": -8.62,
+    "z": -100,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 16
+  },
+  {
+   "id": "RES_1278",
+   "kind": "house",
+   "building": null,
+   "district": "carrburg",
+   "position": {
+    "x": -651.75,
+    "y": -8.94,
+    "z": -81,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_1279",
+   "kind": "house",
+   "building": null,
+   "district": "carrburg",
+   "position": {
+    "x": -651.75,
+    "y": -9.32,
+    "z": -64,
+    "rotY": -1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1150,
+   "buyPrice": 207000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_1280",
+   "kind": "house",
+   "building": null,
+   "district": "carrburg",
+   "position": {
+    "x": -651.75,
+    "y": -9.69,
+    "z": -47,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 16
+  },
+  {
+   "id": "RES_1281",
+   "kind": "house",
+   "building": null,
+   "district": "carrburg",
+   "position": {
+    "x": -651.75,
+    "y": -9.84,
+    "z": -30,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_1300",
+   "kind": "house",
+   "building": null,
+   "district": "carrburg",
+   "position": {
+    "x": -651.75,
+    "y": -9.04,
+    "z": 41,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_1301",
+   "kind": "house",
+   "building": null,
+   "district": "carrburg",
+   "position": {
+    "x": -651.75,
+    "y": -8.91,
+    "z": 60,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_1302",
+   "kind": "house",
+   "building": null,
+   "district": "carrburg",
+   "position": {
+    "x": -651.75,
+    "y": -8.8,
+    "z": 77,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_1303",
+   "kind": "house",
+   "building": null,
+   "district": "carrburg",
+   "position": {
+    "x": -651.75,
+    "y": -8.67,
+    "z": 94,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_1304",
+   "kind": "house",
+   "building": null,
+   "district": "carrburg",
+   "position": {
+    "x": -651.75,
+    "y": -8.62,
+    "z": 112,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 16
+  },
+  {
+   "id": "RES_1305",
+   "kind": "house",
+   "building": null,
+   "district": "carrburg",
+   "position": {
+    "x": -651.75,
+    "y": -8.63,
+    "z": 130,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 16
+  },
+  {
+   "id": "RES_1306",
+   "kind": "house",
+   "building": null,
+   "district": "carrburg",
+   "position": {
+    "x": -651.75,
+    "y": -8.82,
+    "z": 149,
+    "rotY": -1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1150,
+   "buyPrice": 207000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_1307",
+   "kind": "house",
+   "building": null,
+   "district": "carrburg",
+   "position": {
+    "x": -651.75,
+    "y": -9.27,
+    "z": 166,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_1308",
+   "kind": "house",
+   "building": null,
+   "district": "carrburg",
+   "position": {
+    "x": -651.75,
+    "y": -9.76,
+    "z": 185,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_1309",
+   "kind": "house",
+   "building": null,
+   "district": "carrburg",
+   "position": {
+    "x": -651.75,
+    "y": -10.26,
+    "z": 202,
+    "rotY": -1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1150,
+   "buyPrice": 207000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_1310",
+   "kind": "house",
+   "building": null,
+   "district": "carrburg",
+   "position": {
+    "x": -651.75,
+    "y": -10.65,
+    "z": 220,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_1311",
+   "kind": "house",
+   "building": null,
+   "district": "carrburg",
+   "position": {
+    "x": -651.75,
+    "y": -10.83,
+    "z": 239,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_1312",
+   "kind": "house",
+   "building": null,
+   "district": "carrburg",
+   "position": {
+    "x": -651.75,
+    "y": -10.87,
+    "z": 256,
+    "rotY": -1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1150,
+   "buyPrice": 207000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_1313",
+   "kind": "house",
+   "building": null,
+   "district": "carrburg",
+   "position": {
+    "x": -651.75,
+    "y": -10.65,
+    "z": 274,
+    "rotY": -1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1150,
+   "buyPrice": 207000,
+   "rooms": 11
+  },
+  {
+   "id": "RES_1314",
+   "kind": "house",
+   "building": null,
+   "district": "carrburg",
+   "position": {
+    "x": -628.25,
+    "y": -8.16,
+    "z": -88,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_1315",
+   "kind": "house",
+   "building": null,
+   "district": "carrburg",
+   "position": {
+    "x": -628.25,
+    "y": -8.34,
+    "z": -69,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_1316",
+   "kind": "house",
+   "building": null,
+   "district": "carrburg",
+   "position": {
+    "x": -628.25,
+    "y": -8.46,
+    "z": -51,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 16
+  },
+  {
+   "id": "RES_1317",
+   "kind": "house",
+   "building": null,
+   "district": "carrburg",
+   "position": {
+    "x": -628.25,
+    "y": -8.63,
+    "z": -32,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_1339",
+   "kind": "house",
+   "building": null,
+   "district": "carrburg",
+   "position": {
+    "x": -628.25,
+    "y": -7.69,
+    "z": 48,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 16
+  },
+  {
+   "id": "RES_1340",
+   "kind": "house",
+   "building": null,
+   "district": "carrburg",
+   "position": {
+    "x": -628.25,
+    "y": -7.8,
+    "z": 67,
+    "rotY": 1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1150,
+   "buyPrice": 207000,
+   "rooms": 8
+  },
+  {
+   "id": "RES_1341",
+   "kind": "house",
+   "building": null,
+   "district": "carrburg",
+   "position": {
+    "x": -628.25,
+    "y": -8.07,
+    "z": 84,
+    "rotY": 1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1150,
+   "buyPrice": 207000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_1342",
+   "kind": "house",
+   "building": null,
+   "district": "carrburg",
+   "position": {
+    "x": -628.25,
+    "y": -7.99,
+    "z": 103,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_1343",
+   "kind": "house",
+   "building": null,
+   "district": "carrburg",
+   "position": {
+    "x": -628.25,
+    "y": -8.13,
+    "z": 120,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 16
+  },
+  {
+   "id": "RES_1344",
+   "kind": "house",
+   "building": null,
+   "district": "carrburg",
+   "position": {
+    "x": -628.25,
+    "y": -8.08,
+    "z": 138,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_1345",
+   "kind": "house",
+   "building": null,
+   "district": "carrburg",
+   "position": {
+    "x": -628.25,
+    "y": -8.17,
+    "z": 155,
+    "rotY": 1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1150,
+   "buyPrice": 207000,
+   "rooms": 5
+  },
+  {
+   "id": "RES_1346",
+   "kind": "house",
+   "building": null,
+   "district": "carrburg",
+   "position": {
+    "x": -628.25,
+    "y": -8.25,
+    "z": 174,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_1347",
+   "kind": "house",
+   "building": null,
+   "district": "carrburg",
+   "position": {
+    "x": -628.25,
+    "y": -8.87,
+    "z": 193,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 16
+  },
+  {
+   "id": "RES_1348",
+   "kind": "house",
+   "building": null,
+   "district": "carrburg",
+   "position": {
+    "x": -628.25,
+    "y": -9.36,
+    "z": 211,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_1349",
+   "kind": "house",
+   "building": null,
+   "district": "carrburg",
+   "position": {
+    "x": -628.25,
+    "y": -9.5,
+    "z": 228,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_1350",
+   "kind": "house",
+   "building": null,
+   "district": "carrburg",
+   "position": {
+    "x": -628.25,
+    "y": -9.68,
+    "z": 247,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 16
+  },
+  {
+   "id": "RES_1351",
+   "kind": "house",
+   "building": null,
+   "district": "carrburg",
+   "position": {
+    "x": -628.25,
+    "y": -9.74,
+    "z": 264,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 10
+  },
+  {
+   "id": "RES_1352",
+   "kind": "house",
+   "building": null,
+   "district": "carrburg",
+   "position": {
+    "x": -628.25,
+    "y": -9.53,
+    "z": 281,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 1850,
+   "buyPrice": 333000,
+   "rooms": 13
+  },
+  {
+   "id": "RES_1353",
+   "kind": "house",
+   "building": null,
+   "district": "carrburg",
+   "position": {
+    "x": -628.25,
+    "y": -9.23,
+    "z": 298,
+    "rotY": 1.570796
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 1150,
+   "buyPrice": 207000,
+   "rooms": 5
+  },
+  {
+   "id": "TDH_1355",
+   "kind": "house",
+   "building": null,
+   "district": "toadstool",
+   "position": {
+    "x": 521.177,
+    "y": 1.17,
+    "z": 12.428,
+    "rotY": -1.249046
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 3650,
+   "buyPrice": 657000,
+   "rooms": 13
+  },
+  {
+   "id": "TDH_1356",
+   "kind": "house",
+   "building": null,
+   "district": "toadstool",
+   "position": {
+    "x": 528.767,
+    "y": 1.6,
+    "z": 35.196,
+    "rotY": -1.249046
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 3650,
+   "buyPrice": 657000,
+   "rooms": 16
+  },
+  {
+   "id": "TDH_1357",
+   "kind": "house",
+   "building": null,
+   "district": "toadstool",
+   "position": {
+    "x": 548.263,
+    "y": 1.51,
+    "z": 60.883,
+    "rotY": -0.507099
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 3650,
+   "buyPrice": 657000,
+   "rooms": 16
+  },
+  {
+   "id": "TDH_1358",
+   "kind": "house",
+   "building": null,
+   "district": "toadstool",
+   "position": {
+    "x": 568.368,
+    "y": -1.66,
+    "z": 72.053,
+    "rotY": -0.507099
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 3650,
+   "buyPrice": 657000,
+   "rooms": 13
+  },
+  {
+   "id": "TDH_1359",
+   "kind": "house",
+   "building": null,
+   "district": "toadstool",
+   "position": {
+    "x": 584.448,
+    "y": -5.45,
+    "z": 82.551,
+    "rotY": -0.876058
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 3650,
+   "buyPrice": 657000,
+   "rooms": 16
+  },
+  {
+   "id": "TDH_1360",
+   "kind": "house",
+   "building": null,
+   "district": "toadstool",
+   "position": {
+    "x": 599.172,
+    "y": -7.91,
+    "z": 100.22,
+    "rotY": -0.876058
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 3650,
+   "buyPrice": 657000,
+   "rooms": 10
+  },
+  {
+   "id": "TDH_1361",
+   "kind": "house",
+   "building": null,
+   "district": "toadstool",
+   "position": {
+    "x": 615.177,
+    "y": -2.95,
+    "z": 119.426,
+    "rotY": -0.876058
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 3650,
+   "buyPrice": 657000,
+   "rooms": 13
+  },
+  {
+   "id": "TDH_1364",
+   "kind": "house",
+   "building": null,
+   "district": "toadstool",
+   "position": {
+    "x": 627.7,
+    "y": -0.78,
+    "z": 136.985,
+    "rotY": -1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 3650,
+   "buyPrice": 657000,
+   "rooms": 13
+  },
+  {
+   "id": "TDH_1370",
+   "kind": "house",
+   "building": null,
+   "district": "toadstool",
+   "position": {
+    "x": 551.156,
+    "y": 1.27,
+    "z": 27.733,
+    "rotY": 1.892547
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 3650,
+   "buyPrice": 657000,
+   "rooms": 13
+  },
+  {
+   "id": "TDH_1374",
+   "kind": "house",
+   "building": null,
+   "district": "toadstool",
+   "position": {
+    "x": 564.969,
+    "y": 1.5,
+    "z": 43.167,
+    "rotY": 2.634494
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 2950,
+   "buyPrice": 531000,
+   "rooms": 8
+  },
+  {
+   "id": "TDH_1375",
+   "kind": "house",
+   "building": null,
+   "district": "toadstool",
+   "position": {
+    "x": 582.452,
+    "y": 1.7,
+    "z": 52.88,
+    "rotY": 2.634494
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 2950,
+   "buyPrice": 531000,
+   "rooms": 5
+  },
+  {
+   "id": "TDH_1376",
+   "kind": "house",
+   "building": null,
+   "district": "toadstool",
+   "position": {
+    "x": 599.935,
+    "y": 1.49,
+    "z": 62.593,
+    "rotY": 2.634494
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 2950,
+   "buyPrice": 531000,
+   "rooms": 8
+  },
+  {
+   "id": "TDH_1377",
+   "kind": "house",
+   "building": null,
+   "district": "toadstool",
+   "position": {
+    "x": 615.382,
+    "y": 0.03,
+    "z": 82.807,
+    "rotY": 2.265535
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 2950,
+   "buyPrice": 531000,
+   "rooms": 8
+  },
+  {
+   "id": "TDH_1378",
+   "kind": "house",
+   "building": null,
+   "district": "toadstool",
+   "position": {
+    "x": 630.106,
+    "y": -0.02,
+    "z": 100.476,
+    "rotY": 2.265535
+   },
+   "bedrooms": 1,
+   "rentPerMonth": 2950,
+   "buyPrice": 531000,
+   "rooms": 5
+  },
+  {
+   "id": "TDH_1379",
+   "kind": "house",
+   "building": null,
+   "district": "toadstool",
+   "position": {
+    "x": 642.91,
+    "y": 1.53,
+    "z": 115.841,
+    "rotY": 2.265535
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 3650,
+   "buyPrice": 657000,
+   "rooms": 13
+  },
+  {
+   "id": "TDH_1380",
+   "kind": "house",
+   "building": null,
+   "district": "toadstool",
+   "position": {
+    "x": 651.3,
+    "y": 2.58,
+    "z": 141.985,
+    "rotY": 1.570796
+   },
+   "bedrooms": 3,
+   "rentPerMonth": 3650,
+   "buyPrice": 657000,
+   "rooms": 10
+  }
+ ]
+}
