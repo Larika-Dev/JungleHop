@@ -77,7 +77,10 @@ func _process(_d: float) -> void:
 	_date.text = GameClock.date_string()
 	var life := get_node_or_null("/root/Life")
 	if life and "money" in life:
-		_money.text = "$%s" % _commas(life.money)
+		var m = life.money
+		if m is Object and "cash" in m:
+			m = m.cash
+		_money.text = "$%s" % _commas(m) if (m is int or m is float) else str(m)
 	else:
 		_money.text = ""
 	if _player == null:
