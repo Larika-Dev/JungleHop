@@ -3,9 +3,9 @@ extends SceneTree
 
 func _initialize() -> void:
 	DirAccess.make_dir_recursive_absolute("user://shots")
-	var data: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://jobs/data/jobs.json"))
+	var data: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://jobs/data/roles.json"))
 	root.size = Vector2i(1600, 900)
-	for j in data.jobs:
+	for j in data.roles:
 		var mg: Node = load("res://jobs/scenes/%s.tscn" % j.minigame).instantiate()
 		root.add_child(mg)
 		mg.begin(null, "", 0.5, 7)

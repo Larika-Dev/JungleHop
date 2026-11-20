@@ -108,6 +108,8 @@ func _rich(parent: Control, ratio: float) -> RichTextLabel:
 
 
 func _new_round() -> void:
+	if app_label:
+		app_label.text = _app_name()
 	task = _make_task()
 	field_index = 0
 	field_scores.clear()

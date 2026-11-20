@@ -2,7 +2,7 @@ extends RefCounted
 ## Places a clock-in terminal in the main ground-floor room of every
 ## employer building once the city is ready (GameState.world_ready).
 
-const SKIP := ["stair", "elevator_lobby", "restroom", "corridor", "hall", "kitchen", "mechanical", "storage", "stockroom", "parking"]
+const SKIP := ["stair", "elevator_lobby", "restroom", "corridor", "hall", "kitchen", "mechanical", "storage", "stockroom", "parking", "court", "field", "pool"]
 
 
 static func spawn_all(jobs: Node, world: Node3D) -> Node3D:
@@ -85,9 +85,7 @@ static func make_terminal(jobs: Node, building_id: String, pos: Vector3) -> Node
 	var site = load("res://jobs/world/job_site.gd").new()
 	site.building_id = building_id
 	site.jobs = jobs
-	var names := []
-	for id in jobs.jobs_at_building(building_id):
-		names.append(jobs.get_job(id).place)
-	site.display_name = "Staff terminal  -  " + (names[0] if not names.is_empty() else building_id)
+	var ids: Array = jobs.jobs_at_building(building_id)
+	site.display_name = "Staff terminal  -  " + (jobs.place_name(ids[0], building_id) if not ids.is_empty() else building_id)
 	body.add_child(site)
 	return body

@@ -5,7 +5,7 @@ const GUESTS := ["Hale", "Okafor", "Lindqvist", "Brandt", "Nakamura", "Ferreira"
 
 
 func _app_name() -> String:
-	return "Pamlico Inn  ·  Reservations"
+	return "%s  ·  Reservations" % company_name("Pamlico Inn")
 
 
 func _make_task() -> Dictionary:

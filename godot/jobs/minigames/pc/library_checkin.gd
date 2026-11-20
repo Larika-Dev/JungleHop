@@ -7,7 +7,7 @@ const TITLES := ["A Field Guide to Pamlico Birds", "Brick by Brick", "The Carill
 
 
 func _app_name() -> String:
-	return "Wilberforce Library  ·  Circulation"
+	return "%s  ·  Circulation" % company_name("Wilberforce Library")
 
 
 func _make_task() -> Dictionary:

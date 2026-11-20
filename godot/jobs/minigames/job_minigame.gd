@@ -61,9 +61,15 @@ func begin(job_system: Node, p_job_id: String, p_difficulty: float, seed: int) -
 
 func _title_text() -> String:
 	if jobs and job_id != "" and jobs.has_method("get_job"):
-		var j: Dictionary = jobs.get_job(job_id)
-		return "%s  ·  %s" % [jobs.title_of(job_id), j.get("place", "")]
+		return "%s  ·  %s" % [jobs.title_of(job_id), jobs.place_name(job_id)]
 	return name
+
+
+## The employer's name, for screens and labels.
+func company_name(fallback := "") -> String:
+	if jobs and job_id != "" and jobs.has_method("get_job"):
+		return String(jobs.get_job(job_id).get("place", fallback))
+	return fallback
 
 
 func _build_frame() -> void:

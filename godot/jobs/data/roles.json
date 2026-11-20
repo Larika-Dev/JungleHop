@@ -1,13 +1,11 @@
 {
- "version": 1,
+ "version": 2,
  "max_concurrent_jobs": 2,
  "strikes_to_fire": 3,
- "jobs": [
+ "roles": [
   {
    "id": "barista",
    "name": "Barista",
-   "building": "HAM_N_004",
-   "place": "Pamlico Coffee House",
    "minigame": "barista_bar",
    "blurb": "Grab the right cup and walk it through the espresso machine, steamer and syrup pumps exactly as the ticket says.",
    "tips": 0.6,
@@ -78,8 +76,6 @@
   {
    "id": "bartender",
    "name": "Bartender",
-   "building": "HAM_N_000",
-   "place": "Top of the Mount",
    "minigame": "bartender_pour",
    "adult": true,
    "blurb": "Lift each bottle over the glass to pour, stop at the line, then slide the drink to the customer.",
@@ -139,8 +135,6 @@
   {
    "id": "pizza_cook",
    "name": "Pizza Cook",
-   "building": "HAM_S_010",
-   "place": "Mount Pizza Co.",
    "minigame": "pizza_oven",
    "blurb": "Slide raw pies into the deck oven with the peel and pull each one out golden, before it burns.",
    "shifts": [
@@ -206,12 +200,10 @@
    "check": "basic"
   },
   {
-   "id": "hardware_cashier",
-   "name": "Hardware Cashier",
-   "building": "HAM_S_013",
-   "place": "Hilltop Hardware",
+   "id": "cashier",
+   "name": "Cashier",
    "minigame": "pos_register",
-   "blurb": "Key in each item's SKU on the register, then type the exact change due.",
+   "blurb": "Key in each item's code on the register, then type the exact change due.",
    "shifts": [
     {
      "name": "Day",
@@ -277,10 +269,8 @@
    "check": "basic"
   },
   {
-   "id": "bookstore_clerk",
-   "name": "Bookstore Clerk",
-   "building": "HAM_N_006",
-   "place": "Tarry Page Books",
+   "id": "bookseller",
+   "name": "Bookseller",
    "minigame": "shelf_sort",
    "blurb": "Carry each book off the cart and set it on the right section of the shelf.",
    "shifts": [
@@ -343,8 +333,6 @@
   {
    "id": "bank_teller",
    "name": "Bank Teller",
-   "building": "HAM_N_001",
-   "place": "Bluebird Savings Bank",
    "minigame": "bank_terminal",
    "blurb": "Type each check's account number and amount into the teller system, then approve it or flag it as fraud.",
    "shifts": [
@@ -402,9 +390,7 @@
   },
   {
    "id": "er_nurse",
-   "name": "Emergency Department",
-   "building": "LM13_MED_TOWER_D",
-   "place": "Medical Tower D (ER)",
+   "name": "Emergency Nursing",
    "minigame": "triage_chart",
    "blurb": "Chart each arrival's vitals from the monitor into the EHR and enter the right triage level.",
    "shifts": [
@@ -477,9 +463,7 @@
   },
   {
    "id": "lab_tech",
-   "name": "Hospital Lab",
-   "building": "LM13_MED_TOWER_A",
-   "place": "Medical Tower A",
+   "name": "Lab Technician",
    "minigame": "centrifuge_load",
    "blurb": "Load sample tubes into the centrifuge rotor so it is perfectly balanced, then spin.",
    "shifts": [
@@ -553,8 +537,6 @@
   {
    "id": "librarian",
    "name": "Library Staff",
-   "building": "LM03_WILBERFORCE",
-   "place": "Wilberforce Library",
    "minigame": "library_checkin",
    "blurb": "Scan returns by typing the barcode, then key in the stack location from the call number.",
    "shifts": [
@@ -623,8 +605,6 @@
   {
    "id": "custodian",
    "name": "Custodian",
-   "building": "LM09_STUDENT_UNION",
-   "place": "Student Union",
    "minigame": "spill_cleanup",
    "blurb": "Push the mop over spills across the Union floor before they spread.",
    "shifts": [
@@ -683,9 +663,7 @@
   },
   {
    "id": "cinema_usher",
-   "name": "Cinema Staff",
-   "building": "HAM_N_003",
-   "place": "Junior Varsity Cinema",
+   "name": "Cinema Crew",
    "minigame": "box_office",
    "blurb": "Type the film code, showtime, ticket count and total into the box office terminal.",
    "shifts": [
@@ -739,9 +717,7 @@
   },
   {
    "id": "tattoo_artist",
-   "name": "Tattoo Studio",
-   "building": "HAM_N_017",
-   "place": "Pitch Soles Tattoo",
+   "name": "Tattoo Artist",
    "minigame": "tattoo_trace",
    "adult": true,
    "tips": 0.9,
@@ -791,9 +767,7 @@
   },
   {
    "id": "barber",
-   "name": "Barber",
-   "building": "HAM_N_055",
-   "place": "Sweet Gum Barber Shop",
+   "name": "Hair Stylist",
    "minigame": "barber_clip",
    "tips": 0.8,
    "blurb": "Run the clippers over the sides and back for a clean fade, and keep them off the top.",
@@ -819,13 +793,13 @@
      "min_performance": 0.0
     },
     {
-     "title": "Barber",
+     "title": "Stylist",
      "wage": 17.0,
      "min_hours": 30,
      "min_performance": 0.65
     },
     {
-     "title": "Master Barber",
+     "title": "Master Stylist",
      "wage": 24.0,
      "min_hours": 120,
      "min_performance": 0.8
@@ -837,8 +811,6 @@
   {
    "id": "inn_front_desk",
    "name": "Front Desk",
-   "building": "LM12_PAMLICO_INN",
-   "place": "Pamlico Inn",
    "minigame": "inn_booking",
    "blurb": "Book each guest into a vacant room that fits their request and type the stay total.",
    "shifts": [
@@ -917,9 +889,7 @@
   },
   {
    "id": "university_grader",
-   "name": "ONSU Teaching",
-   "building": "LM05_FOUNDERS_HALL",
-   "place": "Founders' Hall",
+   "name": "Teaching",
    "minigame": "gradebook",
    "blurb": "Compare each student's answers to the key and type the score and letter grade.",
    "shifts": [
@@ -978,9 +948,7 @@
   },
   {
    "id": "delivery_rider",
-   "name": "Delivery",
-   "building": "HAM_N_009",
-   "place": "Late Night Lo Mein",
+   "name": "Delivery Rider",
    "minigame": "delivery_ride",
    "tips": 1.0,
    "blurb": "Ride the scooter through the blocks and hit every drop-off before the food gets cold.",
@@ -1035,9 +1003,7 @@
   },
   {
    "id": "it_support",
-   "name": "ONSU IT",
-   "building": "LM04_DAVIES_STACKS",
-   "place": "Davies Stacks",
+   "name": "IT Support",
    "minigame": "helpdesk_cli",
    "blurb": "Read each ticket and type the right command from the runbook into the admin console.",
    "shifts": [

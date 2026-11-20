@@ -17,7 +17,7 @@ func get_actions(_actor: Node) -> Array[Dictionary]:
 				out.append({"id": "end|" + id, "label": "Clock out"})
 				continue
 			var why: String = jobs.can_start_shift(id)
-			out.append({"id": "start|" + id, "label": "Clock in: %s ($%.2f/hr)%s" % [jobs.title_of(id), jobs.wage_of(id),
+			out.append({"id": "start|" + id, "label": "Clock in: %s, %s ($%.2f/hr)%s" % [jobs.title_of(id), j.place, jobs.wage_of(id),
 				"" if why == "" else "  - " + why], "enabled": why == ""})
 			var gap: String = jobs.promotion_gap(id)
 			out.append({"id": "promo|" + id, "label": "Ask for a promotion" + ("" if gap == "" else "  - " + gap), "minutes": 15})
@@ -30,9 +30,9 @@ func get_actions(_actor: Node) -> Array[Dictionary]:
 		else:
 			var why2: String = jobs.can_apply(id)
 			var r0: Dictionary = j.ranks[0]
-			out.append({"id": "apply|" + id, "label": "Apply: %s ($%.2f/hr)%s" % [r0.title, r0.wage, "" if why2 == "" else "  - " + why2],
+			out.append({"id": "apply|" + id, "label": "Apply: %s at %s ($%.2f/hr)%s" % [r0.title, j.place, r0.wage, "" if why2 == "" else "  - " + why2],
 				"minutes": 20, "enabled": why2 == ""})
-	out.append({"id": "info|", "label": "Job info"})
+	out.append({"id": "info|", "label": "Company info and openings"})
 	return out
 
 

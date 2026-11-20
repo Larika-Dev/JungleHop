@@ -5,7 +5,7 @@ const STUDENTS := ["A. Ramos", "B. Kowalski", "C. Mensah", "D. Park", "E. Lauren
 
 
 func _app_name() -> String:
-	return "ONSU Gradebook  ·  MATH 110"
+	return "%s  ·  MATH 110" % company_name("ONSU")
 
 
 func _make_task() -> Dictionary:

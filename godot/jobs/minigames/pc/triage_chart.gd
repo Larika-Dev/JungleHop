@@ -11,7 +11,7 @@ const CASES := [
 
 
 func _app_name() -> String:
-	return "ONSU Medical  ·  ED Track Board"
+	return "%s  ·  ED Track Board" % company_name("ONSU Health")
 
 
 func _make_task() -> Dictionary:

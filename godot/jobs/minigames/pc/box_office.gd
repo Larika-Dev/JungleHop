@@ -8,7 +8,7 @@ const MATINEE_OFF := 3.0
 
 
 func _app_name() -> String:
-	return "JV Cinema  ·  Box Office"
+	return "%s  ·  Box Office" % company_name("JV Cinema")
 
 
 func _make_task() -> Dictionary:

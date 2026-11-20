@@ -6,7 +6,7 @@ const HOSTS := ["davies-lab-12", "union-kiosk-3", "founders-print", "wilb-cat-02
 
 
 func _app_name() -> String:
-	return "ONSU IT  ·  admin@davies-stacks:~$"
+	return "%s  ·  admin@davies-stacks:~$" % company_name("ONSU IT")
 
 
 func _make_task() -> Dictionary:

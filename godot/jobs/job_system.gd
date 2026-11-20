@@ -22,7 +22,8 @@ signal round_scored(job_id: String, score: float)
 signal strike_added(job_id: String, strikes: int)
 signal notice(text: String)
 
-const DATA_PATH := "res://jobs/data/jobs.json"
+const ROLES_PATH := "res://jobs/data/roles.json"
+const COMPANIES_PATH := "res://jobs/data/companies.json"
 const MINIGAME_DIR := "res://jobs/scenes/"
 const CLOCK_IN_EARLY_MIN := 30
 const LATE_GRACE_MIN := 10
@@ -33,8 +34,18 @@ const RAISE_STEP := 0.05
 const RAISE_CAP := 0.20
 const PERF_EMA := 0.25
 
-var jobs: Dictionary = {}          # id -> definition
+## Postings: "<company_id>:<role_id>" -> role template merged with the company
+## (place, buildings, scaled wages, perks...). Most calls take a posting id ("job_id").
+var jobs: Dictionary = {}
 var job_order: Array = []
+var roles: Dictionary = {}         # role id -> template from roles.json
+var companies: Dictionary = {}     # company id -> companies.json entry
+var company_order: Array = []
+## Hours worked per role across every employer, and the review average per role.
+## A barista who moves to another cafe keeps both.
+var experience: Dictionary = {}
+var role_rating: Dictionary = {}
+var _flagged_postings: Array = []
 var max_concurrent_jobs := 2
 var strikes_to_fire := 3
 
@@ -61,23 +72,75 @@ var _hiring_checks: Array[Callable] = []
 
 
 func _ready() -> void:
-	load_definitions(DATA_PATH)
+	load_definitions(ROLES_PATH, COMPANIES_PATH)
 	call_deferred("_connect_services")
 
 
-func load_definitions(path: String) -> void:
-	var f := FileAccess.open(path, FileAccess.READ)
-	if f == null:
-		push_error("JobSystem: cannot read %s" % path)
+func load_definitions(roles_path: String, companies_path: String) -> void:
+	var rd = JSON.parse_string(FileAccess.get_file_as_string(roles_path))
+	var cd = JSON.parse_string(FileAccess.get_file_as_string(companies_path))
+	if not (rd is Dictionary and cd is Dictionary):
+		push_error("JobSystem: cannot read %s / %s" % [roles_path, companies_path])
 		return
-	var d: Dictionary = JSON.parse_string(f.get_as_text())
-	max_concurrent_jobs = int(d.get("max_concurrent_jobs", 2))
-	strikes_to_fire = int(d.get("strikes_to_fire", 3))
+	max_concurrent_jobs = int(rd.get("max_concurrent_jobs", 2))
+	strikes_to_fire = int(rd.get("strikes_to_fire", 3))
+	roles.clear()
+	for r in rd.roles:
+		roles[r.id] = r
+	companies.clear()
+	company_order.clear()
 	jobs.clear()
 	job_order.clear()
-	for j in d.get("jobs", []):
-		jobs[j.id] = j
-		job_order.append(j.id)
+	for c in cd.companies:
+		companies[c.id] = c
+		company_order.append(c.id)
+		for role_id in c.roles:
+			if roles.has(role_id):
+				var p := make_posting(c, roles[role_id])
+				jobs[p.id] = p
+				job_order.append(p.id)
+
+
+## A company's version of a role: its name, buildings, pay scale, standards and perks.
+func make_posting(c: Dictionary, role: Dictionary) -> Dictionary:
+	var p: Dictionary = role.duplicate(true)
+	p.role = role.id
+	p.id = "%s:%s" % [c.id, role.id]
+	p.company = c.id
+	p.place = c.name
+	p.industry = c.industry
+	p.catalog = c.get("industry_catalog", c.industry)
+	var bl: Array = c.get("role_buildings", {}).get(role.id, c.buildings)
+	p.buildings = bl if not bl.is_empty() else c.buildings
+	p.building = p.buildings[0]
+	p.perks = c.get("perks", [])
+	p.experience_required = float(c.get("experience_required", 0))
+	var scale := float(c.get("pay_scale", 1.0))
+	for r in p.ranks:
+		r.wage = snappedf(float(r.wage) * scale, 0.25)
+		if float(r.min_hours) > 0:
+			r.min_performance = minf(0.95, float(r.min_performance) + float(c.get("standards", 0.0)))
+	return p
+
+
+func get_company(company_id: String) -> Dictionary:
+	return companies.get(company_id, {})
+
+
+## Storefront name of a branch, e.g. "Dogwood Lantern Café" for a Red Clay Roasters shop.
+func place_name(job_id: String, building_id := "") -> String:
+	var c: Dictionary = companies.get(jobs[job_id].company, {})
+	var b := building_id if building_id != "" else String(jobs[job_id].building)
+	var branch: String = c.get("branch_names", {}).get(b, "")
+	return "%s (%s)" % [branch, c.name] if branch != "" and branch != c.name else String(c.get("name", ""))
+
+
+func has_perk(job_id: String, perk: String) -> bool:
+	return jobs.has(job_id) and jobs[job_id].perks.has(perk)
+
+
+func postings_for_role(role_id: String) -> Array:
+	return job_order.filter(func(id): return jobs[id].role == role_id)
 
 
 # ---------------------------------------------------------------- services
@@ -108,6 +171,8 @@ func _connect_services() -> void:
 	var law := _svc("Law")
 	if law and law.has_signal("convicted"):
 		law.convicted.connect(_on_convicted)
+	if gs and gs.has_signal("action_performed"):
+		gs.action_performed.connect(_on_world_action)
 	if gs and gs.has_signal("world_ready"):
 		gs.world_ready.connect(func(w): load("res://jobs/world/job_sites.gd").spawn_all(self, w))
 	var edu := _svc("Education")
@@ -189,16 +254,19 @@ func wage_of(job_id: String) -> float:
 func jobs_at_building(building_id: String) -> Array:
 	var out := []
 	for id in job_order:
-		if jobs[id].building == building_id:
+		if jobs[id].buildings.has(building_id):
 			out.append(id)
 	return out
 
 
 func employer_buildings() -> Array:
+	var seen := {}
 	var out := []
 	for id in job_order:
-		if not out.has(jobs[id].building):
-			out.append(jobs[id].building)
+		for b in jobs[id].buildings:
+			if not seen.has(b):
+				seen[b] = true
+				out.append(b)
 	return out
 
 
@@ -220,7 +288,8 @@ func current_window(job_id: String) -> Dictionary:
 		var w := shift_window(job_id, d)
 		if w.is_empty():
 			continue
-		if now >= w.start - CLOCK_IN_EARLY_MIN and now < w.end - 30:
+		var early := CLOCK_IN_EARLY_MIN * (2 if has_perk(job_id, "flex_shifts") else 1)
+		if now >= w.start - early and now < w.end - 30:
 			return w
 	return {}
 
@@ -307,7 +376,10 @@ func entry_rank_for(job_id: String) -> int:
 		# except a rank that only needs credentials, which a qualified hire can start at.
 		var r: Dictionary = ranks[i]
 		var needs_exp := float(r.min_hours) > 0 and not (r.has("education_any") or r.has("education_tags"))
-		if i > 0 and needs_exp:
+		# Experience from other employers counts at half rate toward a starting rank.
+		var role_id: String = jobs[job_id].role
+		if i > 0 and needs_exp and (float(experience.get(role_id, 0.0)) * 0.5 < float(r.min_hours) \
+				or float(role_rating.get(role_id, 0.0)) < float(r.min_performance)):
 			break
 		if rank_requirement_gap(job_id, i, false) == "":
 			best = i
@@ -324,6 +396,12 @@ func can_apply(job_id: String) -> String:
 	if employment.size() >= max_concurrent_jobs:
 		return "You can hold at most %d jobs" % max_concurrent_jobs
 	var j: Dictionary = jobs[job_id]
+	if j.get("adult", false) and _player_age() < 18:
+		return "Must be 18 or older"
+	var need := float(j.get("experience_required", 0.0))
+	if float(experience.get(j.role, 0.0)) < need:
+		return "%s wants %d h of %s experience (you have %d)" % [j.place, int(need), String(roles[j.role].name).to_lower(),
+			int(experience.get(j.role, 0.0))]
 	var bg := background_check(job_id)
 	if bg != "":
 		return bg
@@ -334,6 +412,13 @@ func can_apply(job_id: String) -> String:
 		if why != "":
 			return why
 	return ""
+
+
+func _player_age() -> int:
+	var gs := _svc("GameState")
+	if gs and gs.get("player_profile") is Dictionary:
+		return int(gs.player_profile.get("age", 21))
+	return 21
 
 
 ## Background check tier per job: "none", "basic", "standard", "trusted" (see crime/INTERFACES.md).
@@ -372,6 +457,9 @@ func apply(job_id: String, shift_idx := 0) -> Dictionary:
 	_set_flags()
 	var title: String = jobs[job_id].ranks[rank].title
 	_say("Hired at %s as %s ($%.2f/hr). Next shift: %s" % [jobs[job_id].place, title, wage_of(job_id), next_shift_text(job_id)])
+	if has_perk(job_id, "signing_bonus") and not history.any(func(h): return h.get("company", "") == jobs[job_id].company):
+		_credit(150.0, "Signing bonus (%s)" % jobs[job_id].place)
+		_say("Signing bonus: $150.")
 	hired.emit(job_id, rank)
 	return {"ok": true, "rank": rank, "title": title}
 
@@ -398,7 +486,8 @@ func fire(job_id: String, reason: String) -> void:
 
 
 func _leave(job_id: String, reason: String) -> void:
-	history.append({"job_id": job_id, "title": title_of(job_id), "left_day": day_index(), "reason": reason})
+	history.append({"job_id": job_id, "company": jobs[job_id].company, "role": jobs[job_id].role,
+		"title": title_of(job_id), "place": jobs[job_id].place, "left_day": day_index(), "reason": reason})
 	employment.erase(job_id)
 	_set_flags()
 
@@ -434,7 +523,7 @@ func start_shift(job_id: String, open_minigame := true) -> Dictionary:
 	var now := now_minutes()
 	active_job = job_id
 	_shift = {
-		"start_min": now, "window": w, "scores": [], "late_min": maxf(0.0, now - w.start - LATE_GRACE_MIN),
+		"start_min": now, "window": w, "scores": [], "late_min": maxf(0.0, now - w.start - LATE_GRACE_MIN * (2 if has_perk(job_id, "flex_shifts") else 1)),
 		"earned": 0.0, "tips": 0.0, "session_id": "job:%s@%s" % [job_id, jobs[job_id].building],
 		"minigame": null, "last_hour_min": now, "fallback_accrued": 0.0,
 	}
@@ -497,7 +586,7 @@ func report_round(score: float) -> void:
 	_shift.scores.append(s)
 	var tip_rate := float(jobs[active_job].get("tips", 0.0))
 	if tip_rate > 0.0 and s > 0.4:
-		var tip := snappedf(tip_rate * (0.5 + s) * (1.0 + 0.25 * rank_of(active_job)), 0.01)
+		var tip := snappedf(tip_rate * (0.5 + s) * (1.0 + 0.25 * rank_of(active_job)) * (1.3 if has_perk(active_job, "tip_pool") else 1.0), 0.01)
 		_shift.tips += tip
 		_credit(tip, "Tips (%s)" % jobs[active_job].place)
 	if life and life.get("skills") != null:
@@ -509,12 +598,12 @@ func report_round(score: float) -> void:
 
 func _job_skill(job_id: String) -> String:
 	return String(jobs[job_id].get("skill", {
-		"barista": "cooking", "pizza_cook": "cooking", "bartender": "charm", "hardware_cashier": "logic",
+		"barista": "cooking", "pizza_cook": "cooking", "bartender": "charm", "cashier": "logic",
 		"bank_teller": "logic", "er_nurse": "knowledge", "lab_tech": "knowledge", "librarian": "knowledge",
 		"tattoo_artist": "creativity", "barber": "creativity", "inn_front_desk": "charm",
 		"university_grader": "logic", "delivery_rider": "fitness", "it_support": "mechanics",
-		"custodian": "fitness", "cinema_usher": "charm", "bookstore_clerk": "writing",
-	}.get(job_id, "")))
+		"custodian": "fitness", "cinema_usher": "charm", "bookseller": "writing",
+	}.get(jobs[job_id].role, "")))
 
 
 func shift_performance() -> float:
@@ -565,10 +654,17 @@ func end_shift() -> Dictionary:
 		e.shifts_worked = int(e.shifts_worked) + 1
 	e.hours_total = float(e.hours_total) + hours
 	e.hours_rank = float(e.hours_rank) + hours
+	var role_id: String = jobs[job_id].role
+	experience[role_id] = float(experience.get(role_id, 0.0)) + hours
+	role_rating[role_id] = e.perf
 	if life:
 		if life.has_method("apply_need_delta"):
 			life.apply_need_delta("energy", -4.0 * hours)
 			life.apply_need_delta("fun", -1.5 * hours)
+			if has_perk(job_id, "free_meal") and hours >= 3.0:
+				life.apply_need_delta("hunger", 35.0)
+			if has_perk(job_id, "paid_breaks"):
+				life.apply_need_delta("energy", 1.0 * hours)
 		if life.has_method("set_flag"):
 			life.set_flag("job.on_shift", false)
 			life.set_flag("job.on_shift_id", "")
@@ -741,8 +837,20 @@ func _set_flags() -> void:
 	life.set_flag("job.employed", not ids.is_empty())
 	life.set_flag("job.ids", ",".join(PackedStringArray(ids)))
 	life.set_flag("job.primary", ids[0] if not ids.is_empty() else "")
-	for id in job_order:
-		life.set_flag("job." + id, employment.has(id))
+	life.set_flag("job.companies", ",".join(PackedStringArray(ids.map(func(i): return jobs[i].company))))
+	var health := false
+	for id in _flagged_postings:
+		if not employment.has(id):
+			life.set_flag("job." + id, false)
+	for id in ids:
+		life.set_flag("job." + id, true)
+		life.set_flag("job.role." + String(jobs[id].role), true)
+		if has_perk(id, "health_plan"):
+			health = true
+		if has_perk(id, "staff_discount"):
+			life.set_flag("job.discount." + String(jobs[id].company), true)
+	_flagged_postings = ids.duplicate()
+	life.set_flag("job.health_plan", health)
 
 
 func _say(text: String) -> void:
@@ -752,6 +860,49 @@ func _say(text: String) -> void:
 		ui.notify(text)
 	elif not _test_mode:
 		print("[Jobs] ", text)
+
+
+# ---------------------------------------------------------------- furniture hooks
+
+## Furniture actions (furniture/data/furniture_actions.json) that start the job flow:
+## a job-board furniture opens the listings for its building, and work stations
+## (register, library desk, reception, shelves) clock you in if you work there.
+const FURNITURE_WORK := ["work_cashier", "work_librarian", "work_reception", "restock_shelves", "checkout"]
+
+
+func _on_world_action(action_id: String, target: Node, actor: Node) -> void:
+	if actor != null and not actor.is_in_group("player"):
+		return
+	if action_id != "apply_for_job" and not FURNITURE_WORK.has(action_id):
+		return
+	var b := _building_of(target)
+	if action_id == "apply_for_job":
+		var ui := _svc("UI")
+		if ui and ui.has_method("open_panel"):
+			ui.open_panel(load("res://jobs/ui/job_board.gd").new().with_building(b))
+		return
+	if active_job != "":
+		return
+	for id in jobs_at_building(b):
+		if is_employed(id):
+			var r := start_shift(id)
+			if not r.ok:
+				_say(r.reason)
+			return
+	if action_id != "checkout":
+		_say("You don't work here. Ask at the staff terminal.")
+
+
+func _building_of(n: Node) -> String:
+	var city := _svc("CityData")
+	if n is Node3D and city and city.has_method("room_at"):
+		var r: Dictionary = city.room_at((n as Node3D).global_position + Vector3(0, 0.2, 0))
+		if not r.is_empty():
+			return String(r.buildingId)
+	var life := _life()
+	if life and life.get("place") is Dictionary:
+		return String(life.place.get("id", ""))
+	return ""
 
 
 # ---------------------------------------------------------------- Life actions
@@ -830,11 +981,8 @@ func _register_life_actions() -> void:
 		var ui := _svc("UI")
 		if ui and ui.has_method("open_panel"):
 			ui.open_panel(load("res://jobs/ui/job_board.gd").new())
-		var lines := []
-		for id in job_order:
-			var why := can_apply(id)
-			lines.append("%s - %s, $%.2f/hr%s" % [jobs[id].place, jobs[id].ranks[0].title, jobs[id].ranks[0].wage, "" if why == "" else " (" + why + ")"])
-		res.message = "\n".join(PackedStringArray(lines))
+		var open := job_order.filter(func(id): return can_apply(id) == "")
+		res.message = "%d of %d openings at %d companies are open to you." % [open.size(), job_order.size(), companies.size()]
 		return res)
 
 
@@ -855,7 +1003,8 @@ func _place_building(target) -> String:
 # ---------------------------------------------------------------- save / load
 
 func to_save() -> Dictionary:
-	return {"employment": employment.duplicate(true), "history": history.duplicate(true), "cash": fallback_cash, "own_min": _own_minutes}
+	return {"employment": employment.duplicate(true), "history": history.duplicate(true), "cash": fallback_cash,
+		"own_min": _own_minutes, "experience": experience.duplicate(), "role_rating": role_rating.duplicate()}
 
 
 func from_save(d: Dictionary) -> void:
@@ -872,6 +1021,8 @@ func from_save(d: Dictionary) -> void:
 		if not e.has("checked"):
 			e.checked = {}
 	history = d.get("history", []).duplicate(true)
+	experience = d.get("experience", {}).duplicate()
+	role_rating = d.get("role_rating", {}).duplicate()
 	fallback_cash = float(d.get("cash", 0.0))
 	_own_minutes = float(d.get("own_min", _own_minutes))
 	_set_flags()

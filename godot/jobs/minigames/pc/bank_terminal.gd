@@ -8,7 +8,7 @@ const TENS := ["", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy",
 
 
 func _app_name() -> String:
-	return "Bluebird Savings  ·  TellerLink 4"
+	return "%s  ·  TellerLink 4" % company_name("Bluebird Savings")
 
 
 func words(n: int) -> String:
