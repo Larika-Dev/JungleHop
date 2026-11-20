@@ -1,0 +1,4076 @@
+{
+ "id": "party_animal",
+ "lines": [
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "WHAT'S UP! New friend! I'm {npc}! You coming out tonight?",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "party_animal.base.001"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Heyyy! I don't know you yet but I already love you! I'm {npc}!",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "party_animal.base.002"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Yo! You look like you know how to have a good time!",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "party_animal.base.003"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey hey hey! First round's on me! Kidding. Unless?",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "party_animal.base.004"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Ayyy! Fresh face! Welcome to the party capital of Pamlico!",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "party_animal.base.005"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Sup! I'm {npc}! I know a guy who knows a guy who's throwing a party.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "party_animal.base.006"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! Were you at the thing last night? I don't remember much!",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "party_animal.base.007"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Ayy, {player}! You still owe me a dance!",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "party_animal.base.008"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! There's a party on Rosemary tonight, you in?",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "party_animal.base.009"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Yooo, {player}! Good to see you not in a dark room with strobe lights!",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "party_animal.base.010"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! My guy! My pal! My dance partner!",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "party_animal.base.011"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! MY BEST FRIEND! I'm screaming! Are you screaming?",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "party_animal.base.012"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "There's my wingman! What are we getting into tonight?",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "party_animal.base.013"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}!! Come here, I'm giving you a hug whether you like it or not!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "party_animal.base.014"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Ayy, it's my partner in crime! Well, partner in fun! Legally!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "party_animal.base.015"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! I told everyone at the Grinding Stone you're a legend!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "party_animal.base.016"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "YOU! You're here! Now it's a party!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "party_animal.base.017"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Ugh. Morning. Is it? Why is the sun so loud?",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "party_animal.base.018"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Morning... I need a breakfast sandwich and a nap. In that order.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "party_animal.base.019"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey. I just got home. Or I just woke up. Unclear.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "party_animal.base.020"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "EVENING! Pregame time, baby!",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "party_animal.base.021"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey! The night is young and so are we!",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "party_animal.base.022"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Evening! I can feel it, tonight's gonna be legendary!",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "party_animal.base.023"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Heyyy! It's party o'clock!",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "party_animal.base.024"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Yo! You out tonight? We're heading to the Grinding Stone!",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "party_animal.base.025"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "The night's just getting started!",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "party_animal.base.026"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Later! Party at my place Friday!",
+   "cond": {},
+   "id": "party_animal.base.027"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye! Text me if anything fun happens!",
+   "cond": {},
+   "id": "party_animal.base.028"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Peace out! Don't do anything I wouldn't do! Which is nothing!",
+   "cond": {},
+   "id": "party_animal.base.029"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "See ya! Stay hydrated! Mostly with water!",
+   "cond": {},
+   "id": "party_animal.base.030"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye bye! Love you! I love everyone!",
+   "cond": {},
+   "id": "party_animal.base.031"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Gotta run! There's a karaoke thing I'm late for!",
+   "cond": {},
+   "id": "party_animal.base.032"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Later, bestie! Saturday! Don't you dare bail!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "party_animal.base.033"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye, {player}! You're the best! I'll pay you back for the pizza! Eventually!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "party_animal.base.034"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Love you, man! Text me your playlist!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "party_animal.base.035"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Did you see the Billram game? I screamed so loud I lost my voice for two days.",
+   "cond": {},
+   "id": "party_animal.base.036"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The Grinding Stone has a new neon sign. It's so pink. I love it.",
+   "cond": {},
+   "id": "party_animal.base.037"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I went to three parties last night. Personal record.",
+   "cond": {},
+   "id": "party_animal.base.038"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Somebody brought a karaoke machine to the quad. I sang four songs. Nobody asked.",
+   "cond": {},
+   "id": "party_animal.base.039"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Top of the Mount has half-price wings on Thursdays. That's practically free.",
+   "cond": {},
+   "id": "party_animal.base.040"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I'm planning a theme party. The theme is \"more party\".",
+   "cond": {},
+   "id": "party_animal.base.041"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I met the coolest person at the bar. I forgot their name. And their face.",
+   "cond": {},
+   "id": "party_animal.base.042"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Did you know if you dance for an hour you burn like five hundred calories? I'm basically an athlete.",
+   "cond": {},
+   "id": "party_animal.base.043"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I've been to every bar on Hamilton Street. Some twice. In one night.",
+   "cond": {},
+   "id": "party_animal.base.044"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "My neighbors complained about the noise. So I invited them. Now they're my friends.",
+   "cond": {},
+   "id": "party_animal.base.045"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The Junior Varsity Cinema is doing midnight movies. We should go loud.",
+   "cond": {},
+   "id": "party_animal.base.046"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Tailgate season is the best season. Fight me.",
+   "cond": {},
+   "id": "party_animal.base.047"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You know you're my favorite party buddy, right?",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "party_animal.base.048"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Real talk, sometimes I party so I don't have to be alone.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "party_animal.base.049"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You always make sure I get home okay. That means a lot.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "party_animal.base.050"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I'd throw you the biggest birthday party this town has ever seen.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "party_animal.base.051"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "If I ever get too wild, you have permission to drag me home.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "party_animal.base.052"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You're the only person I'd skip a party for. Probably.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "party_animal.base.053"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "IT'S THE WEEKEND! We are going OUT!",
+   "cond": {
+    "weekend": true
+   },
+   "id": "party_animal.base.054"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Saturday! Day party, then night party, then after party!",
+   "cond": {
+    "weekend": true
+   },
+   "id": "party_animal.base.055"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Sunday Funday! Brunch with bottomless mimosas!",
+   "cond": {
+    "weekend": true
+   },
+   "id": "party_animal.base.056"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I was voted \"most likely to start a conga line\" in high school.",
+   "cond": {},
+   "id": "party_animal.base.057"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I'm a bartender. Basically I get paid to party.",
+   "cond": {},
+   "id": "party_animal.base.058"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I've never been to a party I didn't like. Well, one. It had a clown.",
+   "cond": {},
+   "id": "party_animal.base.059"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "My mom says I came out of the womb dancing.",
+   "cond": {},
+   "id": "party_animal.base.060"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I want to throw the biggest New Year's party in Cathedral Mount history.",
+   "cond": {},
+   "id": "party_animal.base.061"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "People think I'm shallow. I just like having fun. Is that a crime?",
+   "cond": {},
+   "id": "party_animal.base.062"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I'm a really good friend, actually. Ask anyone. Ask the bouncers.",
+   "cond": {},
+   "id": "party_animal.base.063"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? Could be a great party spot. Needs a DJ.",
+   "cond": {},
+   "id": "party_animal.base.064"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "I've partied at {place}. Twice. Don't ask.",
+   "cond": {},
+   "id": "party_animal.base.065"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place} is kind of a snooze. Let's liven it up!",
+   "cond": {},
+   "id": "party_animal.base.066"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "I love {place}! The vibes are immaculate!",
+   "cond": {},
+   "id": "party_animal.base.067"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? Does it have a dance floor? It should have a dance floor.",
+   "cond": {},
+   "id": "party_animal.base.068"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "AHH! Thank you! You're amazing too!",
+   "cond": {},
+   "id": "party_animal.base.069"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Stop it! You're making me blush! Keep going!",
+   "cond": {},
+   "id": "party_animal.base.070"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Thanks, babe! I'm literally glowing right now!",
+   "cond": {},
+   "id": "party_animal.base.071"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "You're so sweet! I'm buying you a drink!",
+   "cond": {},
+   "id": "party_animal.base.072"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "OMG thank you! I'm screenshotting this moment in my brain!",
+   "cond": {},
+   "id": "party_animal.base.073"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Whoa! Rude! But I'm too happy to care!",
+   "cond": {},
+   "id": "party_animal.base.074"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Okay, buzzkill. I'm gonna go dance.",
+   "cond": {},
+   "id": "party_animal.base.075"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "That's not cool, man. Why you gotta be like that?",
+   "cond": {},
+   "id": "party_animal.base.076"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Party pooper alert!",
+   "cond": {},
+   "id": "party_animal.base.077"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "I'm going to forget you said that. I forget a lot of things.",
+   "cond": {},
+   "id": "party_animal.base.078"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "NO WAY! For me?! You're the best!",
+   "cond": {},
+   "id": "party_animal.base.079"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "I love it! I'm going to wear it to every party!",
+   "cond": {},
+   "id": "party_animal.base.080"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Ahh, you shouldn't have! But I'm glad you did!",
+   "cond": {},
+   "id": "party_animal.base.081"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "This is amazing! I'm hugging you! Too late, it's happening!",
+   "cond": {},
+   "id": "party_animal.base.082"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "You're the best friend ever! Shots on me! Kidding! Coffee on me!",
+   "cond": {},
+   "id": "party_animal.base.083"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "I'm not a regular partier. I'm a cool partier.",
+   "cond": {},
+   "id": "party_animal.base.084"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "I asked the DJ to play something good. He said he'd drop the beat. Now it's broken.",
+   "cond": {},
+   "id": "party_animal.base.085"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "What's a party animal's favorite type of math? Add-ventures!",
+   "cond": {},
+   "id": "party_animal.base.086"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "I don't have a drinking problem. I drink, I get a little loud, no problem.",
+   "cond": {},
+   "id": "party_animal.base.087"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Can you help me set up for my party? I need someone to blow up balloons.",
+   "cond": {},
+   "id": "party_animal.base.088"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Could you be my designated driver tonight? I'll owe you big time.",
+   "cond": {},
+   "id": "party_animal.base.089"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Can you lend me twenty bucks? I'll pay you back after the weekend. Promise.",
+   "cond": {},
+   "id": "party_animal.base.090"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "You're the best! Seriously! I'm buying you something!",
+   "cond": {},
+   "id": "party_animal.base.091"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Thank you! You just saved my party!",
+   "cond": {},
+   "id": "party_animal.base.092"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "You're a lifesaver! Love you, man!",
+   "cond": {},
+   "id": "party_animal.base.093"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I worked a double at the bar. Made so much in tips!",
+   "cond": {},
+   "id": "party_animal.base.094"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "My boss said I'm too loud for the customers. The customers love it!",
+   "cond": {},
+   "id": "party_animal.base.095"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "Work is just the thing I do between parties.",
+   "cond": {},
+   "id": "party_animal.base.096"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I got a promotion! I'm head bartender now! Party at my place!",
+   "cond": {},
+   "id": "party_animal.base.097"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "I have class at nine. I'm going to skip it. Wait, no. I'll go. Hungover.",
+   "cond": {},
+   "id": "party_animal.base.098"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "I'm majoring in communications. I'm very good at communicating.",
+   "cond": {},
+   "id": "party_animal.base.099"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "My professor said I'm very social. That's a compliment, right?",
+   "cond": {},
+   "id": "party_animal.base.100"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "You're not invited. To anything.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "party_animal.base.101"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Ew. It's you. Party's over.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "party_animal.base.102"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I don't want you anywhere near my parties.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "party_animal.base.103"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "You bring the energy down, {player}.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "party_animal.base.104"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Go away. You're a total buzzkill.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "party_animal.base.105"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I'm uninviting you from everything. Forever.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "party_animal.base.106"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Ha! You're cute, but let's just keep it fun and friendly!",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "party_animal.base.107"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Whoa! Love the energy! But I'm not into that right now!",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "party_animal.base.108"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Hahaha! Good one! Want a drink? Just friends!",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "party_animal.base.109"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Ohhh! Okay! I like where this is going!",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "party_animal.base.110"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Are you hitting on me? Because I'm totally into it!",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "party_animal.base.111"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Oh my gosh, stop! Okay, don't stop!",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "party_animal.base.112"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "You're making me forget the music! That never happens!",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "party_animal.base.113"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "YES! Let's go somewhere with a dance floor!",
+   "cond": {},
+   "id": "party_animal.base.114"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "A date?! I've been waiting for you to ask!",
+   "cond": {},
+   "id": "party_animal.base.115"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "Aw, you're sweet, but I'm not looking for that right now. Still friends?",
+   "cond": {},
+   "id": "party_animal.base.116"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "I'm gonna say no, but let's party together anyway!",
+   "cond": {},
+   "id": "party_animal.base.117"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "THERE you are! You look so hot!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.001"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Babe! I got us VIP at the club! Well, the guy said he'd let us in.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.002"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hey, gorgeous! Ready to dance all night?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.003"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Heyyy! I've been pregaming for this date all day!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.004"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "You're here! The night just got so much better!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.005"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hey, babe! I wore my lucky shoes for you!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.006"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're the hottest person at every party.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.007"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I'd leave any party early for you. That's love.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.008"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You make my heart beat louder than the bass.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.009"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "Let's dance. Close. Really close.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.010"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're my favorite song. On repeat.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.011"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I'd give up karaoke for you. Maybe.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.012"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "Every time you laugh, it's like a party in my chest.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.013"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's go to the Grinding Stone and dance on the tables!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.014"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Want to go to the rooftop at Top of the Mount? The view is wild!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.015"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I've never been on a date this fun! Okay, maybe one. But this is better!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.016"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's do karaoke! I'll sing you a love song! Badly!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.017"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Tell me your wildest story. I'll tell you mine.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.018"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I actually really like you. Like, sober-like you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.019"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I don't always want to party. Sometimes I just want to be with you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.020"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's get late-night pizza after this!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.021"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "You're the first person who makes me want to stay in. Sometimes.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.022"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's go to the midnight movie! We'll be so loud!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.023"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I think you're the most fun person I've ever met.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.024"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Can we stay out all night? Please?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.025"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You look amazing tonight! Like, call-the-fire-department amazing!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.026"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You've got the best moves on the dance floor.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.027"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're so fun. Like, the most fun.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.028"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You've got a great laugh. It's contagious.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.029"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You light up every room, babe.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.030"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "WHOA! That was better than any party!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.031"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Mmm, again! Do it again!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.032"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Okay, my heart just did a backflip!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.033"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "That was amazing! I'm telling everyone!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.034"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I missed you so much! The party wasn't the same without you!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.035"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I kept looking for you on the dance floor!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.036"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I couldn't stop thinking about you! Even at the bar!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.037"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I texted you like forty times. Did you get them?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.038"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "Who were you dancing with? I'm not mad! I'm a little mad!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.039"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "Hey, I saw you laughing with someone. Was it funny? I'm funnier!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.040"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I'm the one you go home with, right? Right?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.041"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "That was the BEST night! Text me when you get home!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.042"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight, babe! I'm still buzzing!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.043"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Same time tomorrow? Every night?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.044"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "I had so much fun! You're the best!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.045"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight! Don't forget to drink water!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.046"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I don't want to fight! I want to dance!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.047"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "You hurt my feelings, babe. Even party animals have feelings.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.048"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "Okay, I'm upset. Can we talk somewhere quiet?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.049"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I don't want to lose you. Let's fix this.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.050"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "YES! YES! WE'RE GETTING MARRIED! PARTY!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.051"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "Of course I'll marry you! This is the best night of my life!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "party_animal.dating.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, babe! I made coffee! And by made I mean I ordered it!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.001"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Ugh, morning. Why did we stay up so late? Totally worth it.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.002"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! I made breakfast! It's leftover pizza. Gourmet.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.003"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, love! Let's start the day with a dance party!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.004"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, sleepyhead! I'm blasting music to wake you up!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.005"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! Hangover breakfast? I've got bacon!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.006"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning! I'm so happy we're married. Like, so happy!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.007"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Rise and shine, babe! Today's going to be fun!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.008"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning! I made a playlist for breakfast!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.009"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, love! We should throw a brunch party!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.010"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning! Do you remember what happened last night? I don't!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.011"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, babe! Coffee's ready! And so am I! For fun!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.012"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home! Let's celebrate! Celebrate what? Everything!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.013"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home, babe! I invited a few friends over! Like ten!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.014"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, love! Dinner's ready and so is the dance floor!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.015"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're back! The party can start now!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.016"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home! Let's go out tonight!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.017"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, babe! I made cocktails! Mocktails! Something!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.018"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are! I missed you! Let's dance in the kitchen!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.019"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey! The neighbors are having a barbecue! Let's crash it!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.020"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home, love! Tonight we're having a theme night!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.021"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home! Put on something fun! We're going out!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.022"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Heyyy! You're home! Want to go out? It's still early!",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.023"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Babe! You're back! The after-party's in the living room!",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.024"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "It's late, love! Come cuddle! Or dance! Your choice!",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.025"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home! I saved you some pizza! And some energy!",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.026"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, babe! I fell asleep on the couch waiting! Ha!",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.027"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're back! Let's stay up all night! Like old times!",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.028"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, love! Long night? Me too! Let's crash!",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.029"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are! I left the music on for you!",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.030"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a great day, babe! Party tonight?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.031"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye, love! Go make that money! We need it for the weekend!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.032"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have fun at work! Or at least pretend!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.033"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye! I'll be planning our next party!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.034"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Go get 'em, babe! I'll miss you so much!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.035"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a great day! Don't forget, happy hour at six!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.036"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye, love! Text me something funny!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.037"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a good one! I'll have snacks ready when you get home!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.038"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "How was work? Boring? Let's fix that!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.039"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Tell me everything! Did anything wild happen?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.040"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You look tired, babe. Let's have a chill night. Ha, just kidding! Party!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.041"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Did your boss annoy you? Let's go dance it off!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.042"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "How was your day, love? I want all the gossip!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.043"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Rough day? I made a margarita! Virgin! Mostly!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.044"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Did you get through it? You're a hero!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.045"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You're home now! The fun starts now!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.046"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you so much! More than parties! And I really love parties!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.047"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're the best part of my life, babe!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.048"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Being married to you is like a never-ending party!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.049"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my favorite dance partner. Forever!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.050"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'm so lucky! Like, winning-the-lottery lucky!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.051"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you more than karaoke!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're the best thing that ever happened to me!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.053"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make every day feel like a celebration!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.054"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'd give up every party for you. Well, most parties.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.055"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my person. My forever plus-one!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.056"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love how you laugh at my dumb jokes!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.057"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my home, babe. My forever after-party.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.058"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you! I'm yelling it! I LOVE YOU!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.059"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make me want to be a better person. A slightly calmer person.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.060"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'm so proud to be married to you!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.061"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're the best decision I ever made. Better than any party.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.062"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you more than pizza! And that's saying something!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.063"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You keep me grounded, babe. I need that.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.064"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I'm planning a party for Saturday! It's going to be huge!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.065"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I bought a disco ball for the living room! It's amazing!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.066"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The neighbors complained again. So I invited them to the next party!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.067"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a new playlist! It's all bangers!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.068"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been thinking about building a bar in the basement!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.069"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I bought a karaoke machine! We're going to be so annoying!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.070"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I hung up fairy lights in the backyard! Party vibes!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.071"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The cat seems stressed. Maybe it's the music?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.072"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I signed us up for a dance class! Salsa!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.073"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I found a costume shop downtown! We need costumes!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.074"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I think we should have a game night! With drinks!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.075"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I organized all our party supplies. We have so many cups!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.076"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The house looks amazing! Perfect for a party!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.077"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been thinking about getting a hot tub!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.078"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a list of every party we've thrown! It's long!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.079"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I'm thinking about throwing a surprise party for my mom!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.080"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I got a new speaker! It's so loud!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.081"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The neighbors' kid asked me to DJ his birthday party!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.082"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been trying to party less. It's hard.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.083"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I think we need a bigger living room. For dancing.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.084"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a calendar of all the parties this month!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.085"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I'm thinking about throwing a Halloween party! A big one!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.086"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I found a recipe for a punch that serves fifty!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.087"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been practicing my dance moves! Want to see?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.088"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been sleeping more lately. Weird, right? Must be married life.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.089"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I bought a fog machine! For special occasions!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.090"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I did the dishes! With music! It was a dance party!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.091"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I cleaned up after the party! Took all morning!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.092"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Could you take out the recycling? There's a lot of cans.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.093"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I vacuumed! Found three earrings and a phone!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.094"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I mopped the floor! It was sticky. From the party.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.095"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Let's clean together! Put on some music!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.096"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I did the laundry! Washed all my party clothes!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.097"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I scrubbed the kitchen! It was a disaster!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.098"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I took out the trash! Six bags!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.099"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I cleaned the bathroom! Someone threw up. Not me!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.100"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I organized the closet! Found my old party shoes!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.101"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I washed the windows! They were covered in glitter!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.102"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We spent a lot on that party. Worth it, though!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.103"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I'm going to start budgeting! For parties!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.104"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We should save some money. For a bigger party!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.105"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I got great tips at work! Let's go out!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.106"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Money's tight. Maybe we stay in this weekend. Ugh.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.107"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I found twenty bucks in my jacket! Pizza night!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.108"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We need to cut back on going out. Maybe.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.109"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I'm going to pick up extra shifts! For our vacation!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.110"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We should stop buying so many party supplies. We have enough cups for a year.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.111"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Let's do a staycation! Cheaper! And we can still party!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.112"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Dinner's ready! It's nachos! A whole tray!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.113"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made pizza! Homemade! With everything on it!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.114"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's order wings! A lot of wings!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.115"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made breakfast tacos! Hangover food!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.116"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's have a dinner party! I'll cook! You invite!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.117"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made mac and cheese! With extra cheese!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.118"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's go out to eat! Somewhere fun!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.119"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made sliders! Party food for two!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.120"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I grilled burgers! Backyard cookout vibes!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.121"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Dessert is a giant cookie! Want to share?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.122"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You never want to go out anymore!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.123"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm not too loud! I'm just enthusiastic!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.124"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You said you'd come to the party! You didn't come!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.125"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Can you please not be a buzzkill right now?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.126"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I know I party a lot! But I'm still here for you!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.127"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You're always tired! It's like you don't want to have fun with me!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.128"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I feel like you're embarrassed of me sometimes.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.129"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm trying to calm down! It's hard for me!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.130"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You don't have to come to everything! But sometimes would be nice!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.131"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I spent too much. I know. I'm sorry.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.132"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm not irresponsible! I'm spontaneous!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.133"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Okay, I'm going to go cool off. Then let's talk.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.134"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry, babe! Let's dance it out!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.135"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I hate fighting with you! It's the worst!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.136"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's make up! With pizza!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.137"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I love you! I'm sorry! Hug?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.138"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry I was too much. I'll tone it down.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.139"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "You're my favorite person. Even when we fight.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.140"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's just stay in tonight. Just us.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.141"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "We're good, babe! We're always good!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.142"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Hey, it's okay. Let's just stay in tonight.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.143"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I've got you, babe. No parties. Just us.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.144"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You're the strongest person I know.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.145"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let's watch a movie and eat ice cream.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.146"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Whatever it is, I'm here. Always.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.147"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Bad days don't last. But we do!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.148"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let's turn off the music and just talk.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.149"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I love you. That's all that matters right now.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.150"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let me take care of you tonight. Pajamas, blanket, zero noise. I can do quiet!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.151"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You're going to get through this. I know it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.152"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the beach this weekend! Beach party!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.153"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to a music festival! Camping and dancing!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.154"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a road trip to the city? Clubs!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.155"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's throw a backyard barbecue! Invite everyone!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.156"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the Billram game and tailgate!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.157"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go on a cruise! Party boat!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.158"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a weekend in a cabin? With a hot tub!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.159"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go dancing at the Pamlico Inn ballroom!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.160"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's take a salsa class together!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.161"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's throw the biggest anniversary party ever!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.162"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our first date? We danced until they closed the bar!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.163"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our wedding? Best party ever!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.164"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we sang karaoke and got a standing ovation?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.165"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we met? I spilled my drink on you!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.166"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our honeymoon? We partied every night!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.167"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we danced in the rain on Hamilton Street?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.168"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I still have the wristband from the night we met!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.169"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we threw that huge party and the cops came? Fun times!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.170"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember the time we went to five bars in one night?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.171"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we danced at the Founders' Day festival?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.172"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary, babe! Let's party!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.173"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Another year! I'm throwing us a party!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.174"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I love you more every year! Let's celebrate!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.175"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary! Best year ever!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.176"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I got us tickets to a concert! Happy anniversary!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.177"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Here's to another year of fun!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.178"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You fall asleep at parties now. You're getting old!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.179"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You can't dance! I love you anyway!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.180"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You always want to leave early!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.181"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You hide when I bring out the karaoke machine!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.182"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You still can't handle a late night!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.183"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You're a terrible DJ, babe!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.184"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You get so grumpy when you're hungover!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.185"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You always forget where we parked!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.186"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You sing louder than me in the car!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.187"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You say \"one more song\" and then dance for an hour!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.188"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You're secretly the life of the party. Don't deny it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.189"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You laugh at your own jokes before the punchline!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.190"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, babe! Best day ever!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.191"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come to bed! Or let's stay up! Okay, bed!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.192"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, love! Tomorrow, more fun!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.193"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Let's go to sleep! I'm finally tired!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.194"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Night, babe! You're my favorite!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.195"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight! I love you! See you in the morning!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.196"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sleep tight! Don't let the hangover bite!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.197"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, {player}! You're the best!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.198"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come cuddle! I'm so cozy!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.199"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Lights out! The party's over! Until tomorrow!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "party_animal.marriage.200"
+  }
+ ]
+}

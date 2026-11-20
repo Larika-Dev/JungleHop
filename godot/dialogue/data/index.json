@@ -1,0 +1,155 @@
+{
+ "personalities": {
+  "sunny_optimist": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "dry_cynic": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 201
+  },
+  "shy_bookworm": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "gym_motivator": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "anxious_overthinker": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "old_soul_storyteller": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "ambitious_hustler": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "laid_back_drifter": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "party_animal": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "nerdy_gamer": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "earnest_activist": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "hopeless_romantic": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "stoic_pragmatist": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "social_gossip": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "grumpy_curmudgeon": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "free_spirit_artist": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "type_a_perfectionist": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "class_clown": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "gentle_caretaker": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "know_it_all_academic": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "thrill_seeker": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "spiritual_mystic": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "by_the_book": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "rebel_punk": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "foodie": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "competitive_rival": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "dramatic_diva": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "literal_engineer": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "polite_traditionalist": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "mysterious_loner": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  }
+ },
+ "total_lines": 11071
+}

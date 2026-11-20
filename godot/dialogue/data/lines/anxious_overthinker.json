@@ -1,0 +1,4076 @@
+{
+ "id": "anxious_overthinker",
+ "lines": [
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh! Hi. Sorry, was I in your way? I'm {npc}. Sorry.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "anxious_overthinker.base.001"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello! Um, do I know you? I feel like I should know you. I'm {npc}.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "anxious_overthinker.base.002"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi, sorry, I'm a little frazzled today. Every day, actually. I'm {npc}.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "anxious_overthinker.base.003"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh gosh, hi. Did I wave too much? I wave too much.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "anxious_overthinker.base.004"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi! You seem nice. I hope I seem nice. I'm trying.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "anxious_overthinker.base.005"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello! Sorry. I always say sorry. I'm {npc}.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "anxious_overthinker.base.006"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh, {player}! Hi! I was worried you were mad at me. Are you mad at me?",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "anxious_overthinker.base.007"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! Phew, a friendly face. Today's been a lot.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "anxious_overthinker.base.008"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi, {player}. I rehearsed saying hi to you. That went well, right?",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "anxious_overthinker.base.009"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh, hey! I was hoping I'd see you. Not in a weird way.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "anxious_overthinker.base.010"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}, hi! Did I leave my stove on? Sorry, wrong question. Hi!",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "anxious_overthinker.base.011"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! Oh, thank goodness. I need to talk to someone who won't judge me.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "anxious_overthinker.base.012"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi! You're the only person whose texts don't make my heart race. In a bad way, I mean.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "anxious_overthinker.base.013"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh, {player}, you're here. My shoulders just dropped two inches.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "anxious_overthinker.base.014"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi, friend! I made a list of things to tell you so I wouldn't forget.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "anxious_overthinker.base.015"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! I brought you a snack in case you were hungry. Or not. It's fine either way.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "anxious_overthinker.base.016"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "There you are! I was starting to think you'd forgotten. You didn't, right?",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "anxious_overthinker.base.017"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good morning! I've been up since four worrying about a dream I had.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "anxious_overthinker.base.018"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Morning! I've had two coffees and three anxieties.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "anxious_overthinker.base.019"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi! It's morning. Mornings are hopeful. I'm told.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "anxious_overthinker.base.020"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good evening! I survived the day! Barely, but I did!",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "anxious_overthinker.base.021"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Evening. Is it too late to start being productive? Probably.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "anxious_overthinker.base.022"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi! Evenings are good. Fewer emails.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "anxious_overthinker.base.023"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh, you're up too? I can't sleep. Brain won't turn off.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "anxious_overthinker.base.024"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi. It's late. Is everything okay? Are you okay?",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "anxious_overthinker.base.025"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Night time is when all my thoughts come out to party.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "anxious_overthinker.base.026"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Okay, bye! Sorry if I talked too much!",
+   "cond": {},
+   "id": "anxious_overthinker.base.027"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye! Text me when you get home? Just so I know you're safe.",
+   "cond": {},
+   "id": "anxious_overthinker.base.028"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "See you! I hope I didn't say anything weird.",
+   "cond": {},
+   "id": "anxious_overthinker.base.029"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye-bye! Wear a jacket, it might get cold.",
+   "cond": {},
+   "id": "anxious_overthinker.base.030"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Okay, I should go. Did I say goodbye already? Goodbye!",
+   "cond": {},
+   "id": "anxious_overthinker.base.031"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "See you later! Sorry. I don't know why I said sorry.",
+   "cond": {},
+   "id": "anxious_overthinker.base.032"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye, {player}! Thanks for listening. You always listen.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "anxious_overthinker.base.033"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Love you! Is that okay to say? Friend love! Bye!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "anxious_overthinker.base.034"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Let me know you got home safe, okay? I'll worry otherwise.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "anxious_overthinker.base.035"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I read that you're supposed to drink eight glasses of water. I've had two. Am I dying?",
+   "cond": {},
+   "id": "anxious_overthinker.base.036"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I sent an email to my professor and I've reread it forty times. There's a typo.",
+   "cond": {},
+   "id": "anxious_overthinker.base.037"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Did you hear the siren earlier? I hope everyone's okay.",
+   "cond": {},
+   "id": "anxious_overthinker.base.038"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I tried meditation. I spent the whole time worrying I was doing it wrong.",
+   "cond": {},
+   "id": "anxious_overthinker.base.039"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "There's a new crosswalk signal on Hamilton. I don't trust it yet.",
+   "cond": {},
+   "id": "anxious_overthinker.base.040"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I bought a planner. Now I'm anxious about not using the planner.",
+   "cond": {},
+   "id": "anxious_overthinker.base.041"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "My cat sneezed twice today. Is that normal? I googled it. Don't google things.",
+   "cond": {},
+   "id": "anxious_overthinker.base.042"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Did you see the weather? There's a ten percent chance of thunderstorms. Ten!",
+   "cond": {},
+   "id": "anxious_overthinker.base.043"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I heard a podcast about productivity and now I feel behind on everything.",
+   "cond": {},
+   "id": "anxious_overthinker.base.044"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I apologized to a lamp post yesterday. I walked into it. It was my fault.",
+   "cond": {},
+   "id": "anxious_overthinker.base.045"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I made a pro and con list about getting a haircut. Cons are winning.",
+   "cond": {},
+   "id": "anxious_overthinker.base.046"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The barista smiled at me today. Was it pity? It felt like pity.",
+   "cond": {},
+   "id": "anxious_overthinker.base.047"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Can I tell you something? You make me feel less like a mess.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "anxious_overthinker.base.048"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I really appreciate that you never rush me when I'm explaining things.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "anxious_overthinker.base.049"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I worry about you sometimes. In a caring way. Are you sleeping enough?",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "anxious_overthinker.base.050"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I think you're the first friend I've had who doesn't find me exhausting.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "anxious_overthinker.base.051"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I saved a voicemail from you. When I'm anxious I listen to it.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "anxious_overthinker.base.052"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You're really good at calming me down. Has anyone told you that?",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "anxious_overthinker.base.053"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "It's the weekend! I have so many plans. I'll probably cancel all of them.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "anxious_overthinker.base.054"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Saturday! Free time! Which I will spend worrying about Monday.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "anxious_overthinker.base.055"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Weekends are great. Except Sunday night. Sunday night is a villain.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "anxious_overthinker.base.056"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I've always been a worrier. My mom says I worried in the womb.",
+   "cond": {},
+   "id": "anxious_overthinker.base.057"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I keep a notebook of things that went okay, to prove to myself they do.",
+   "cond": {},
+   "id": "anxious_overthinker.base.058"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I'm really good in emergencies, weirdly. It's the normal stuff that gets me.",
+   "cond": {},
+   "id": "anxious_overthinker.base.059"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I'm studying to be a nurse. I want to take care of people. Even though I'm scared of germs.",
+   "cond": {},
+   "id": "anxious_overthinker.base.060"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I talk a lot when I'm nervous. I'm nervous a lot. So I talk a lot.",
+   "cond": {},
+   "id": "anxious_overthinker.base.061"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I have three cats. They're my emotional support team.",
+   "cond": {},
+   "id": "anxious_overthinker.base.062"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I'm trying therapy. It's helping. Slowly. Like, glacier slowly.",
+   "cond": {},
+   "id": "anxious_overthinker.base.063"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place} is nice, I think. Is it safe? It looks safe.",
+   "cond": {},
+   "id": "anxious_overthinker.base.064"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "I like {place}, but I never know where to stand.",
+   "cond": {},
+   "id": "anxious_overthinker.base.065"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place} always has a long line. I panic and order the first thing I see.",
+   "cond": {},
+   "id": "anxious_overthinker.base.066"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "I came to {place} once and tripped on the step. I think about it every time.",
+   "cond": {},
+   "id": "anxious_overthinker.base.067"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place} is cozy! It makes me feel less anxious. A little less.",
+   "cond": {},
+   "id": "anxious_overthinker.base.068"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Oh! Really? You mean that? You're not just being nice?",
+   "cond": {},
+   "id": "anxious_overthinker.base.069"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Thank you! I'm going to think about this for days. In a good way!",
+   "cond": {},
+   "id": "anxious_overthinker.base.070"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Oh gosh, thank you. I don't know what to do with my hands now.",
+   "cond": {},
+   "id": "anxious_overthinker.base.071"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "That's so kind. I'm going to write that in my okay notebook.",
+   "cond": {},
+   "id": "anxious_overthinker.base.072"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Thank you! Sorry. Thank you! I mean, thank you!",
+   "cond": {},
+   "id": "anxious_overthinker.base.073"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Oh. Okay. Was it something I did? I'll fix it. I can fix it.",
+   "cond": {},
+   "id": "anxious_overthinker.base.074"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "That's going to replay in my head at three in the morning, you know.",
+   "cond": {},
+   "id": "anxious_overthinker.base.075"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Wow. Okay. I'm going to go spiral quietly now.",
+   "cond": {},
+   "id": "anxious_overthinker.base.076"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "I'm sorry you feel that way. Wait, why am I apologizing?",
+   "cond": {},
+   "id": "anxious_overthinker.base.077"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "That hurt. I'm going to take some deep breaths. Far away from you.",
+   "cond": {},
+   "id": "anxious_overthinker.base.078"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "For me? Oh no, I didn't get you anything! I'm a terrible person!",
+   "cond": {},
+   "id": "anxious_overthinker.base.079"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Thank you so much! You didn't have to! Now I owe you! I'm happy though!",
+   "cond": {},
+   "id": "anxious_overthinker.base.080"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Oh, I love it! Did it cost a lot? Don't tell me. Thank you!",
+   "cond": {},
+   "id": "anxious_overthinker.base.081"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "This is so thoughtful. I might cry. I cry easily. It's fine.",
+   "cond": {},
+   "id": "anxious_overthinker.base.082"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "You remembered I liked these? That means so much.",
+   "cond": {},
+   "id": "anxious_overthinker.base.083"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "I'd tell you a joke about anxiety, but I'm worried you won't laugh.",
+   "cond": {},
+   "id": "anxious_overthinker.base.084"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "Why did the overthinker cross the road? They're still deciding.",
+   "cond": {},
+   "id": "anxious_overthinker.base.085"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "I tried to relax once. It was very stressful.",
+   "cond": {},
+   "id": "anxious_overthinker.base.086"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "My therapist told me to write letters to people I'm mad at and burn them. Now I don't know what to do with all the letters.",
+   "cond": {},
+   "id": "anxious_overthinker.base.087"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Could you call the pharmacy for me? Phone calls make me sweat.",
+   "cond": {},
+   "id": "anxious_overthinker.base.088"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Would you check my essay? I think the third paragraph is a disaster.",
+   "cond": {},
+   "id": "anxious_overthinker.base.089"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Could you come with me to the dentist? I'll buy you lunch.",
+   "cond": {},
+   "id": "anxious_overthinker.base.090"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Thank you, thank you! You have no idea how much I was dreading that.",
+   "cond": {},
+   "id": "anxious_overthinker.base.091"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "You're a lifesaver. Literally, I think my heart rate just dropped.",
+   "cond": {},
+   "id": "anxious_overthinker.base.092"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "I owe you so much. I'm keeping a list. You're at the top.",
+   "cond": {},
+   "id": "anxious_overthinker.base.093"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "My boss said \"can we talk later\" and I've been panicking for six hours.",
+   "cond": {},
+   "id": "anxious_overthinker.base.094"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "Work was okay! I only cried once. In the good bathroom.",
+   "cond": {},
+   "id": "anxious_overthinker.base.095"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I did really well on my shift! I think. Nobody yelled.",
+   "cond": {},
+   "id": "anxious_overthinker.base.096"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I'm scared of the printer at work. It knows things.",
+   "cond": {},
+   "id": "anxious_overthinker.base.097"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "I studied for twelve hours and I still think I'll fail.",
+   "cond": {},
+   "id": "anxious_overthinker.base.098"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "I asked a question in class! My voice cracked, but I asked it!",
+   "cond": {},
+   "id": "anxious_overthinker.base.099"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "Group projects terrify me. What if I'm the bad member?",
+   "cond": {},
+   "id": "anxious_overthinker.base.100"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I don't think I can talk to you right now. My chest is tight.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "anxious_overthinker.base.101"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Please don't. I already feel bad enough.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "anxious_overthinker.base.102"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I'm going to go. You make me really nervous.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "anxious_overthinker.base.103"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I keep replaying what you said. I don't want new things to replay.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "anxious_overthinker.base.104"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I don't know what I did wrong, but I'm done trying to fix it.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "anxious_overthinker.base.105"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I think it's healthier for me to stay away from you.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "anxious_overthinker.base.106"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Oh! Um! I don't... I'm so flattered, but I think I'll have a panic attack.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "anxious_overthinker.base.107"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "That's sweet, but I like you as a friend. Is that okay? Please say it's okay.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "anxious_overthinker.base.108"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Oh gosh. I'm going to pretend I didn't hear that so I can breathe.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "anxious_overthinker.base.109"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Wait, are you flirting with me? Me? Are you sure?",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "anxious_overthinker.base.110"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Oh no, my face is so red. I can feel it. Don't look.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "anxious_overthinker.base.111"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "I've been overthinking every conversation we've had and this is... good. This is really good.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "anxious_overthinker.base.112"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "I like you too. Oh gosh, I said it. I said it out loud.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "anxious_overthinker.base.113"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "Yes! Wait, really? Yes! I'll need to plan an outfit. And a conversation list.",
+   "cond": {},
+   "id": "anxious_overthinker.base.114"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "Okay! Yes! I'm going to be so nervous. Yes!",
+   "cond": {},
+   "id": "anxious_overthinker.base.115"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "I'm really sorry, but I don't think I feel that way. Please don't hate me.",
+   "cond": {},
+   "id": "anxious_overthinker.base.116"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "Oh, you're so sweet. But no. I'm sorry. Are we still friends? We're still friends, right?",
+   "cond": {},
+   "id": "anxious_overthinker.base.117"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hi! I'm so sorry, I'm early. I've been here for forty minutes.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.001"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "You came! I was worried you'd change your mind.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.002"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hi! I wore this, is this okay? I changed four times.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.003"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hey, you. My heart is doing that thing, but the nice version.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.004"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hi, {player}! I made a list of conversation topics. Just in case.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.005"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Oh, you look amazing. I look... present. Hi!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.006"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You make my brain quiet. Nobody's ever done that.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.007"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I'm not nervous around you anymore. Well, only cute nervous.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.008"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I like you so much it gives me butterflies. Regular butterflies, not anxiety butterflies.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.009"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "Your hand is really warm. Can I hold it? Is that okay?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.010"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're the only thing I think about that doesn't stress me out.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.011"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I overthink everything except how much I like you. That I'm sure about.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.012"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're kind of perfect. Sorry. Was that too much?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.013"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I planned three backup plans in case this one didn't work. This one's working!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.014"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Is it weird that I'm having so much fun? I usually spend dates worried.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.015"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Do you think the waiter likes us? I think he likes us.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.016"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I read that couples who try new things together are happier. Want to try karaoke?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.017"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Can I tell you something embarrassing? I practiced this date in the mirror.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.018"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I feel like I can tell you anything. That's new for me.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.019"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "What do you worry about? Everyone has something. Mine's everything.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.020"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Thank you for being patient with me. I know I'm a lot.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.021"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's walk by the ravine. The water sounds calming.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.022"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I think about you right before I fall asleep. It helps.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.023"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Do you want to share a dessert? We can split it exactly in half.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.024"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "You haven't checked your phone once. That means you like me, right?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.025"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're so calm. I wish I could be like you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.026"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You have the kindest eyes. They make me feel safe.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.027"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're really good at making people feel welcome.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.028"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You smell nice. Sorry, is that weird? You do though.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.029"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're braver than anyone I know.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.030"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Oh. Oh wow. I didn't overthink that at all. That's a first.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.031"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "That was really nice. Can we do it again? I want to make sure it wasn't a fluke.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.032"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "My heart is pounding. In the best possible way.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.033"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Okay. Okay. I'm going to remember that forever.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.034"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I missed you. I reread our texts like three times.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.035"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I was worried something happened to you. I'm glad you're okay.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.036"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "The day felt so long without you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.037"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I made a list of things I wanted to tell you. It's very long.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.038"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "Who was that? Never mind. Sorry. It's none of my business. Who was that?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.039"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I'm not jealous! I'm just worried you'll realize you could do better.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.040"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I trust you. It's my brain I don't trust.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.041"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "I had the best time. Text me when you get home, okay?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.042"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Thank you for tonight. I didn't panic once!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.043"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight! Sorry if I talked too much. Did I talk too much?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.044"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "I don't want to leave. But I will. Goodnight!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.045"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "That was perfect. I'll be thinking about this for weeks.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.046"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "Are you mad at me? You seem mad. Please tell me.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.047"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I'm upset, but I'm scared to say it. I'm upset, {player}.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.048"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I need you to reassure me. I know that's a lot. But I need it.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.049"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I don't want to lose you over something stupid.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.050"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "Yes! Yes, oh my gosh, yes! I didn't even overthink it!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.051"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "You want to marry me? Me? Yes! A thousand times yes!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.dating.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! Did you sleep okay? You were tossing a lot.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.001"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, love! I made coffee. I hope I made it right.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.002"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi! I woke up and you were here and my anxiety took the morning off.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.003"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! I already checked the weather. Bring an umbrella. Probably.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.004"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning! I made you breakfast. If it's bad, please lie to me.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.005"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, sweetheart. I had a nightmare but then I saw you and it went away.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.006"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! I packed your lunch and labeled everything.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.007"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning! I've been up since five, but in a calm way. Mostly.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.008"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, love. Before you ask, yes, I took my medication.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.009"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! I love you. Did you remember the dentist is at two?",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.010"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning! I laid out three outfit options for you. In case.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.011"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi! I made a list of today's tasks. Don't worry, I made one for me too.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.012"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home! I was getting worried! I'm not worried! I was a bit worried.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.013"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home, love! How was your day? Was it okay? Tell me it was okay.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.014"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi! I made dinner. I followed the recipe exactly. It's still a surprise.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.015"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are! I missed you so much. The house was too quiet.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.016"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, love! I saved you a seat on the couch. And a snack.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.017"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home! I lit a candle. A safe one. Unscented.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.018"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home! I didn't text you too much today, right?",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.019"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi! I did three things on my list today! That's a lot for me!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.020"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome back. I feel calmer now that you're here.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.021"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, honey. I've been waiting by the window. Is that clingy?",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.022"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home late. I texted you four times. Sorry.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.023"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, love. Are you okay? I was so worried.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.024"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Oh, thank goodness. I was imagining the worst.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.025"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "It's late, come to bed. I can't sleep without you.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.026"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi. I left the light on and checked the locks twice.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.027"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home. Now I can finally relax.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.028"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Late night? Let me make you some chamomile tea.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.029"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi. I was awake anyway. My brain wouldn't stop.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.030"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a good day! Text me when you get there!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.031"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye, love! Drive safe! Don't speed! I love you!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.032"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Did you remember your keys? Wallet? Phone? Okay, go!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.033"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a great day! I believe in you! Don't forget lunch!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.034"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye! If anything goes wrong, call me. I'll come right away.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.035"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a good day, {player}! I'll be here worrying, but lovingly.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.036"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Go! You'll be great! Don't forget your umbrella!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.037"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye, sweetheart! I'll miss you! Is that too much? I'll miss you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.038"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "How was work? Did your boss say anything? Anything bad?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.039"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Did your meeting go okay? I was thinking about it all day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.040"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You look tired. Was it a hard day? Sit down, I'll get you something.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.041"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Tell me everything. Unless you don't want to. Then don't.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.042"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Did you eat lunch? You always forget to eat.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.043"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "I hope nobody was mean to you. If they were, tell me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.044"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Was it a good day? Please say it was a good day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.045"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You're home. You're safe. That's what matters.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.046"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you. I don't worry about that. Ever.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.047"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make me feel safe. Like, really safe.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.048"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'm so lucky. Every day I think, how did I get so lucky?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.049"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're the calm in my storm.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.050"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Thank you for loving all of me. Even the anxious parts.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.051"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you so much it's a little scary. But mostly wonderful.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Can I hold your hand? It helps.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.053"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my favorite person in the whole world.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.054"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I never thought I'd find someone who understood me. Then I found you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.055"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make my brain quiet. That's the best gift anyone's ever given me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.056"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I trust you completely. That's a big deal for me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.057"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love how patient you are with me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.058"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I don't have to pretend with you. Thank you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.059"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my home. My safe place.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.060"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you more than I could ever say. And I say a lot.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.061"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Just being near you makes everything okay.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.062"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'm so proud to be married to you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.063"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my favorite worry-free zone.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.064"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I reorganized the medicine cabinet by expiration date. Just in case.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.065"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I checked the smoke detectors. All of them. Twice.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.066"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The neighbor waved at me. I waved back too late. Now it's weird.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.067"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I bought a fire extinguisher for every room. Is that excessive?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.068"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a list of all our emergency contacts. It's on the fridge.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.069"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Do you think the house is too quiet? I hear every creak.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.070"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I tried a new relaxation app. It told me to relax. I didn't.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.071"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made the bed with hospital corners. It's very calming.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.072"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The cat threw up on the rug. I cleaned it. I'm fine. I'm fine.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.073"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I signed us up for a couples' yoga class. I'm already nervous.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.074"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Did you hear that noise? It was probably nothing. Probably.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.075"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been journaling every night. It helps sort my thoughts.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.076"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I bought a weighted blanket. It's like a hug that never ends.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.077"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a backup of our photos. And a backup of the backup.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.078"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I found a recipe for calming tea. I'm going to make a big batch.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.079"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I think the faucet's leaking. Or I'm imagining it. Can you check?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.080"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I organized the junk drawer. It's not junk anymore. It's categorized.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.081"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been doing better lately. I think it's because I'm happy.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.082"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The plants are doing great! I water them on a schedule.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.083"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I'm proud of our little home. It feels safe.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.084"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I bought a new lock for the back door. Just to be sure.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.085"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been trying to worry less. I'm worrying about whether it's working.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.086"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The kids next door were so loud today. I was worried they'd get hurt.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.087"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I set up a reading corner. It's my calm zone.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.088"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I rearranged the furniture so I can see the door from the couch.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.089"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I think we should get a dog. For protection. And cuddles.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.090"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I did the dishes. Then I redid them because I wasn't sure.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.091"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I cleaned the kitchen. It's sparkling. I'm calmer now.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.092"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Could you take out the trash? I'm scared of the raccoons.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.093"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I vacuumed! It's so satisfying. Very calming.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.094"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I folded the laundry. In neat little piles. Color coded.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.095"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I scrubbed the bathroom. Every tile. Every one.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.096"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I made a chore chart. It's laminated.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.097"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I dusted everything. Even the ceiling fan.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.098"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I organized the pantry. All the labels face forward.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.099"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I watered the plants. Not too much. I measured.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.100"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Could you help me with the laundry? It's piling up and it's stressing me out.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.101"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I cleaned out the fridge. We had yogurt from March.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.102"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I checked our bank account. Three times. We're okay. I think.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.103"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I made a budget spreadsheet. It has twelve tabs.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.104"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Money makes me nervous. Can we look at it together?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.105"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We need an emergency fund. For emergencies. And for my peace of mind.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.106"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I found a cheaper insurance plan. Same coverage. I read all the fine print.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.107"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I'm worried about the electricity bill. I keep turning lights off.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.108"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I saved twenty dollars this week by not buying coffee. I'm so proud.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.109"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Should we be saving more? I feel like we should be saving more.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.110"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I made a list of all our bills. With due dates. In red.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.111"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We're doing okay. I just need to keep reminding myself.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.112"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Dinner's ready! I hope it's okay. I tasted it four times.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.113"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made soup. It's good for when you're stressed. Or always.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.114"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made breakfast! Eggs, toast, and a smiley face with ketchup.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.115"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Is the chicken cooked through? I'm going to cut it open. Just to check.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.116"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made your favorite. I hope I remembered it right.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.117"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's have a quiet dinner tonight. Just us.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.118"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I tried a new recipe. It might be terrible. Please be honest.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.119"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made chamomile tea to go with dinner. For relaxation.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.120"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I baked cookies. Stress baking. I made four dozen.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.121"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made a picnic for the backyard. It's safe out there.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.122"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You said you'd text and you didn't. I thought something happened.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.123"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I feel like you're annoyed with me. Are you annoyed with me?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.124"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Please don't sigh like that. It makes me spiral.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.125"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm not overreacting. I'm reacting appropriately to my brain.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.126"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You didn't tell me you'd be late. I called hospitals.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.127"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I need you to talk to me, not shut me out.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.128"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You always say \"it's fine\" but it's never fine.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.129"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm trying my best. I really am.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.130"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Could you please not leave the door unlocked? It scares me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.131"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I feel like I'm the only one who cares about the little things.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.132"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm sorry, I can't calm down right now. Give me a minute.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.133"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You forgot. I know it's small. It's not small to me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.134"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry. I got anxious and took it out on you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.135"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Can we hug? I feel better when we hug.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.136"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I don't like fighting. It makes my stomach hurt.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.137"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I love you. I'm sorry. Are we okay? Please say we're okay.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.138"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Thank you for sitting through my spiral. I know that wasn't fun.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.139"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's make tea and talk calmly.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.140"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry I overreacted. My brain got loud.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.141"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "We're a team. Teams fight sometimes. Then they make up.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.142"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "It's okay. I know what it feels like. I'm here.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.143"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Breathe with me. In for four. Hold for four. Out for four.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.144"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You're not alone. I'm right here.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.145"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Whatever it is, we'll figure it out together.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.146"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "It's okay to not be okay. I'm not okay a lot. And I'm still here.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.147"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let me take care of you tonight.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.148"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You've helped me through so many bad days. Let me help you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.149"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You don't have to talk. I'll just sit with you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.150"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I'm proud of you. For everything. Even the little things.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.151"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Do you want me to make you something warm?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.152"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's stay in this weekend. It's safer. And cozier.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.153"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Maybe we could go to the beach? I'll pack sunscreen. And a first aid kit.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.154"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's plan a trip! I'll make a detailed itinerary!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.155"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a quiet picnic on the quad?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.156"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's take a cooking class together. I'll be nervous but it'll be fun.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.157"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "I'd like to visit my mom next month. Will you come?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.158"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go see a movie. Not a scary one.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.159"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "We could go to the farmers market on Saturday. Early, before the crowds.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.160"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's take a long walk this weekend. Just us.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.161"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's plan our anniversary. I want it to be perfect.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.162"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our first date? I was so nervous I spilled water on you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.163"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when you held my hand during my first panic attack? I knew then.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.164"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I still have the note you left on my car. It said \"you're doing great.\"",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.165"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our wedding? I didn't panic once. Because you were there.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.166"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we got lost in the city and you made it fun?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.167"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I remember the first time you said \"it's going to be okay\" and I believed you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.168"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our first apartment? I checked the locks fifteen times every night.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.169"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when you surprised me with a picnic? I cried.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.170"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I remember thinking, this person is safe. And I was right.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.171"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember the time we stayed up all night talking? I wasn't anxious at all.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.172"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary! I planned everything. Down to the minute.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.173"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Another year! I can't believe you're still here. I'm so happy you're still here.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.174"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary, love. Thank you for another year of patience.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.175"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I got you something. I hope you like it. I agonized over it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.176"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I love you more every year. That's the one thing I'm never anxious about.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.177"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Here's to another year of us. My favorite thing.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.178"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You leave the cabinet doors open. It gives me heart palpitations.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.179"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You never check the weather. How do you live like that?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.180"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You're so calm it's almost suspicious.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.181"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You put the milk back with like a drop left. Every time.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.182"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You fall asleep in thirty seconds. I'm so jealous.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.183"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You don't double-check the locks. I do it for both of us.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.184"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You ate my anxiety snacks. Those were for emergencies.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.185"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You never read the instructions. Somehow it always works.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.186"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You say \"it'll be fine\" about literally everything.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.187"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You hum when you're happy. It's my favorite sound.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.188"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You laugh at me when I overthink. In a nice way. Mostly.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.189"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You never worry. Teach me your ways.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.190"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight! Did you lock the door? I'll check.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.191"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come to bed. I can't sleep without you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.192"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, love. Thank you for today. It was a good one.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.193"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sweet dreams. I'll try not to wake you up with my worrying.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.194"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Can we cuddle until I fall asleep? It helps.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.195"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight. I love you. I checked the stove.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.196"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sleep well, {player}. You're safe. We're safe.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.197"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Let's turn off our phones tonight. For peace of mind.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.198"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight. I'm going to sleep so well with you here.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.199"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "I love you. Goodnight. Did I say I love you? I love you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "anxious_overthinker.marriage.200"
+  }
+ ]
+}

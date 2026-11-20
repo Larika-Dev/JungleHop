@@ -1,0 +1,4076 @@
+{
+ "id": "sunny_optimist",
+ "lines": [
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh hi! I don't think we've met. I'm {npc}!",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "sunny_optimist.base.001"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey there! Isn't it just a gorgeous day to bump into someone new?",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "sunny_optimist.base.002"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi! You look like someone with a good story. I'm {npc}.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "sunny_optimist.base.003"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Well hello, new face! Welcome to the best little town in Pamlico.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "sunny_optimist.base.004"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi hi! Sorry, I wave at everybody. It's a habit. A good one, I think!",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "sunny_optimist.base.005"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello! You've got kind eyes. I'm {npc}, nice to meet you!",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "sunny_optimist.base.006"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! Hey! I was hoping I'd run into you.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "sunny_optimist.base.007"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh, it's {player}! You just made my day a little brighter.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "sunny_optimist.base.008"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey, {player}! How's life treating you? Wait, don't answer, I bet it's great.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "sunny_optimist.base.009"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Look who it is! {player}, you're a sight for sore eyes.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "sunny_optimist.base.010"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi again, {player}! Twice in one week, the universe likes us.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "sunny_optimist.base.011"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! Get over here, I need a hug.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "sunny_optimist.base.012"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "My favorite person on Hamilton Street! Hi, {player}!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "sunny_optimist.base.013"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "There's my sunshine! What are we doing today, {player}?",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "sunny_optimist.base.014"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Ahh, {player}! I was literally just thinking about you.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "sunny_optimist.base.015"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey bestie! You look amazing, by the way. Always.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "sunny_optimist.base.016"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! Okay, my day is officially perfect now.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "sunny_optimist.base.017"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good morning! Fresh coffee, fresh start, fresh chances!",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "sunny_optimist.base.018"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Morning! The light on the quad this early is just magic.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "sunny_optimist.base.019"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Rise and shine! Well, you've already risen. Now shine!",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "sunny_optimist.base.020"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Evening! Did you catch that sunset over the Carillon? Unreal.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "sunny_optimist.base.021"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey! Evenings in this town are the coziest, aren't they?",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "sunny_optimist.base.022"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good evening! I hope today was kind to you.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "sunny_optimist.base.023"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh hey, night owl! Couldn't sleep either? Let's make the most of it.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "sunny_optimist.base.024"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi! The stars are out, so it still counts as a good night.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "sunny_optimist.base.025"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Late night, huh? I hope it's the fun kind of late.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "sunny_optimist.base.026"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye! Go be awesome!",
+   "cond": {},
+   "id": "sunny_optimist.base.027"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "See you soon! Drink some water, okay?",
+   "cond": {},
+   "id": "sunny_optimist.base.028"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Take care, {player}! Today's going to be a good one, I can tell.",
+   "cond": {},
+   "id": "sunny_optimist.base.029"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Okay, bye-bye! Sending you good vibes the whole way home.",
+   "cond": {},
+   "id": "sunny_optimist.base.030"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Catch you later! Keep smiling, it suits you.",
+   "cond": {},
+   "id": "sunny_optimist.base.031"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye for now! The next time I see you, I want a good news update.",
+   "cond": {},
+   "id": "sunny_optimist.base.032"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Love you, mean it! Text me when you get home!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "sunny_optimist.base.033"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye, sunshine! Same time tomorrow?",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "sunny_optimist.base.034"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Go get 'em, {player}! I'm your number one fan.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "sunny_optimist.base.035"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Have you tried the honey lavender latte at Pamlico Coffee House? Life-changing!",
+   "cond": {},
+   "id": "sunny_optimist.base.036"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I saw a dog wearing a little rain jacket today. Best thing ever.",
+   "cond": {},
+   "id": "sunny_optimist.base.037"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Somebody chalked hearts all over the sidewalk on Rosemary. This town, I swear.",
+   "cond": {},
+   "id": "sunny_optimist.base.038"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The oaks are turning gold. I want to wrap myself in that color.",
+   "cond": {},
+   "id": "sunny_optimist.base.039"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I've decided this is going to be a great week. It's already working.",
+   "cond": {},
+   "id": "sunny_optimist.base.040"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Did you know the farmers market has peach butter now? Peach butter!",
+   "cond": {},
+   "id": "sunny_optimist.base.041"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I tried yoga in the park this morning. Fell over twice. Still counts!",
+   "cond": {},
+   "id": "sunny_optimist.base.042"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I love how everyone waves here. Even the bus drivers.",
+   "cond": {},
+   "id": "sunny_optimist.base.043"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Have you ever noticed the bell tower plays a little extra on Fridays? It's like it's happy too.",
+   "cond": {},
+   "id": "sunny_optimist.base.044"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I'm learning ukulele. I know three chords and a lot of enthusiasm.",
+   "cond": {},
+   "id": "sunny_optimist.base.045"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The sky's doing that cotton candy thing again. Look up!",
+   "cond": {},
+   "id": "sunny_optimist.base.046"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I gave a stranger a compliment and they gave me a muffin. Karma works fast here.",
+   "cond": {},
+   "id": "sunny_optimist.base.047"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Okay, real talk, you've been looking so much happier lately and I love it.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "sunny_optimist.base.048"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I'm making a scrapbook of this year and you're in like half the pages.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "sunny_optimist.base.049"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Remember when we got caught in the rain and just danced? Top ten day.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "sunny_optimist.base.050"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I told my mom about you. She says you sound like a keeper of a friend.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "sunny_optimist.base.051"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "If you ever need someone to hype you up, I am on call twenty-four seven.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "sunny_optimist.base.052"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I think the two of us could make anything fun. Even taxes. Maybe.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "sunny_optimist.base.053"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "It's the weekend! Picnic on the Founders' Quad, who's in?",
+   "cond": {
+    "weekend": true
+   },
+   "id": "sunny_optimist.base.054"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Saturday energy! I want pancakes and an adventure, in that order.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "sunny_optimist.base.055"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "No alarms this morning. Pure bliss. What are you getting up to?",
+   "cond": {
+    "weekend": true
+   },
+   "id": "sunny_optimist.base.056"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I grew up in a tiny house with a big porch, and the porch was always full of people.",
+   "cond": {},
+   "id": "sunny_optimist.base.057"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I keep a jar of good things that happened. It's on its third jar!",
+   "cond": {},
+   "id": "sunny_optimist.base.058"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "People think I'm always happy. I'm not, I just choose to look for the good stuff.",
+   "cond": {},
+   "id": "sunny_optimist.base.059"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I want to open a little bakery someday where everything comes with a free compliment.",
+   "cond": {},
+   "id": "sunny_optimist.base.060"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "My grandma taught me that a smile is free and pays you back double.",
+   "cond": {},
+   "id": "sunny_optimist.base.061"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I cried at a dog food commercial yesterday. Happy tears, mostly.",
+   "cond": {},
+   "id": "sunny_optimist.base.062"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I volunteer at the animal shelter on Thursdays. The puppies are my therapists.",
+   "cond": {},
+   "id": "sunny_optimist.base.063"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "I love {place}! It always feels like something nice is about to happen here.",
+   "cond": {},
+   "id": "sunny_optimist.base.064"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? Oh, it's one of my happy places. The light is so good.",
+   "cond": {},
+   "id": "sunny_optimist.base.065"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "Every time I come to {place}, I meet somebody wonderful. Like you!",
+   "cond": {},
+   "id": "sunny_optimist.base.066"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "Honestly, {place} could use some flowers out front, but it's still a gem.",
+   "cond": {},
+   "id": "sunny_optimist.base.067"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place} is great. Everywhere is a little great if you look for it.",
+   "cond": {},
+   "id": "sunny_optimist.base.068"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Aww, stop! No, don't stop. Thank you!",
+   "cond": {},
+   "id": "sunny_optimist.base.069"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "That's so sweet, {player}! You just made my whole week.",
+   "cond": {},
+   "id": "sunny_optimist.base.070"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Oh my gosh, I'm going to put that in my good-things jar.",
+   "cond": {},
+   "id": "sunny_optimist.base.071"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "You're too kind! And you're right, obviously. Kidding! Thank you!",
+   "cond": {},
+   "id": "sunny_optimist.base.072"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Thank you! I needed that more than you know.",
+   "cond": {},
+   "id": "sunny_optimist.base.073"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Oof. Okay. I'm going to assume you're having a rough day.",
+   "cond": {},
+   "id": "sunny_optimist.base.074"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Wow, that stung a little. I hope whatever's bugging you gets better.",
+   "cond": {},
+   "id": "sunny_optimist.base.075"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Hey, that wasn't very nice. But I still think you're better than that.",
+   "cond": {},
+   "id": "sunny_optimist.base.076"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "I'm going to let that one bounce right off me. Boing!",
+   "cond": {},
+   "id": "sunny_optimist.base.077"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Hmm. I'll choose not to take that personally. You should get some sunshine.",
+   "cond": {},
+   "id": "sunny_optimist.base.078"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "For me? You shouldn't have! But I'm so glad you did!",
+   "cond": {},
+   "id": "sunny_optimist.base.079"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Oh, I love it! I'm going to think of you every time I see it.",
+   "cond": {},
+   "id": "sunny_optimist.base.080"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "{player}, this is perfect! How did you know?",
+   "cond": {},
+   "id": "sunny_optimist.base.081"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "A present! On a {weekday}! This is the best surprise.",
+   "cond": {},
+   "id": "sunny_optimist.base.082"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "You are the sweetest. Come here, you're getting a hug.",
+   "cond": {},
+   "id": "sunny_optimist.base.083"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "Why did the sun go to school? To get brighter! Okay, I'll see myself out.",
+   "cond": {},
+   "id": "sunny_optimist.base.084"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "What do you call a happy cowboy? A jolly rancher! Ha!",
+   "cond": {},
+   "id": "sunny_optimist.base.085"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "What did the big flower say to the little flower? Hey there, bud!",
+   "cond": {},
+   "id": "sunny_optimist.base.086"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "I tried to be sad once but I got distracted by a butterfly.",
+   "cond": {},
+   "id": "sunny_optimist.base.087"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Could you help me carry some cupcakes to the shelter? I made way too many.",
+   "cond": {},
+   "id": "sunny_optimist.base.088"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Would you sign the card for Ms. Patel's retirement? Everyone's writing something nice.",
+   "cond": {},
+   "id": "sunny_optimist.base.089"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Can you water my plants this weekend? They're very needy, but in a cute way.",
+   "cond": {},
+   "id": "sunny_optimist.base.090"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "You're an angel, {player}! Seriously, thank you!",
+   "cond": {},
+   "id": "sunny_optimist.base.091"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "I knew I could count on you! You're the best.",
+   "cond": {},
+   "id": "sunny_optimist.base.092"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Thank you thank you thank you! I owe you a giant cookie.",
+   "cond": {},
+   "id": "sunny_optimist.base.093"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "Work was busy but my coworkers are sweethearts, so it's all good.",
+   "cond": {},
+   "id": "sunny_optimist.base.094"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I got a little gold star from my manager today. Literally. I put it on my water bottle.",
+   "cond": {},
+   "id": "sunny_optimist.base.095"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "Every job's a good job if you're learning something, right?",
+   "cond": {},
+   "id": "sunny_optimist.base.096"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "Mondays are just Fridays that need a little encouragement!",
+   "cond": {},
+   "id": "sunny_optimist.base.097"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "I'm taking a class on child psychology. Kids are so wise!",
+   "cond": {},
+   "id": "sunny_optimist.base.098"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "Finals week is coming but I've got a study playlist and snacks. We'll survive!",
+   "cond": {},
+   "id": "sunny_optimist.base.099"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "Professor Lang called my essay delightful. I'm framing it.",
+   "cond": {},
+   "id": "sunny_optimist.base.100"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I'm trying really hard to stay positive around you right now.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "sunny_optimist.base.101"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I don't know what I did, but I'm not going to let it ruin my day.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "sunny_optimist.base.102"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "You know, I wish we could start over. But not today, I guess.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "sunny_optimist.base.103"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I'm going to go be happy somewhere else. No offense.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "sunny_optimist.base.104"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Even sunshine needs a break from the clouds sometimes, {player}.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "sunny_optimist.base.105"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I still hope you have a nice day. I just don't want to be part of it.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "sunny_optimist.base.106"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Ha! Oh, you're sweet. Let's stay friends for now, okay?",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "sunny_optimist.base.107"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Aww, flattery! I'm blushing, but just as a friend.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "sunny_optimist.base.108"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "You're fun! But I think we make a better team as pals.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "sunny_optimist.base.109"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Oh! Um. Wow, my face is so red right now, isn't it?",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "sunny_optimist.base.110"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Are you flirting with me? Because it's working. A lot.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "sunny_optimist.base.111"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "You can't just say things like that and expect me to think straight, {player}.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "sunny_optimist.base.112"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "I've been hoping you'd say something like that. Is that weird?",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "sunny_optimist.base.113"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "Yes! Yes, absolutely, a hundred percent yes!",
+   "cond": {},
+   "id": "sunny_optimist.base.114"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "A date? With you? I'm going to need to pick the perfect outfit. Yes!",
+   "cond": {},
+   "id": "sunny_optimist.base.115"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "Oh, that's so flattering, but I don't feel that way. I hope we can still be friends!",
+   "cond": {},
+   "id": "sunny_optimist.base.116"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "You're wonderful, really, but I have to say no. Can we still get coffee as friends?",
+   "cond": {},
+   "id": "sunny_optimist.base.117"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "There you are! I've been counting down the minutes.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.001"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hi, cutie! You look like a whole sunrise.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.002"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "{player}! I got here early just to watch you walk up.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.003"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hey you! I've been smiling at my phone all day because of you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.004"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Ahh, you came! I'm so happy I could cartwheel.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.005"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hi! I packed snacks, I made a playlist, I'm over-prepared and proud of it.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.006"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You know you're the best part of my day, right? Every day.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.007"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "If I had a good-things jar just for you, it'd be overflowing.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.008"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "Has anyone told you your laugh is basically sunshine? Because it is.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.009"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I'd hold your hand, but I'd never let go, so be warned.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.010"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You make my heart do a little happy dance.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.011"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I think you're secretly made of glitter.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.012"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "Stop being so cute, I can't concentrate.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.013"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's do something new tonight. Mini golf? A pottery class? Both?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.014"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I want to know everything about you. Starting with your favorite cereal.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.015"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Do you want to see the fireflies down by the ravine? It's like the trees are winking.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.016"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I told my friends about you and they made the squealy noise.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.017"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "You're so easy to be around. It's like breathing.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.018"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's make a bucket list together. Item one: this date. Check!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.019"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I think about our first date way too often. In a good way.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.020"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Want to split dessert? I mean, I'll eat most of it, but we can split it.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.021"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "You make the boring stuff fun. Even grocery shopping.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.022"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "What's one thing that made you happy today? Besides me, obviously.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.023"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's take a picture! I want to remember this exact moment.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.024"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Is it too soon to say you're my favorite? Because you are.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.025"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You look so good tonight it's honestly unfair.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.026"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "I love how you're always kind to waiters. It says so much.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.027"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're the most fun person I know. I mean it.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.028"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "Your smile should be on a billboard on Hamilton Street.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.029"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You have the best heart, {player}. I can tell.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.030"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Mmm. Okay, now my day is perfect.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.031"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "That was... wow. Can we do that again?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.032"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "I think I just saw fireworks. Did you see fireworks?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.033"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Best. Kiss. Ever.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.034"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I missed you so much today! Like, a silly amount.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.035"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "Every time I saw something cute today I wanted to show you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.036"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "Don't go so long without seeing me! My heart gets grumpy.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.037"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I wrote your name in my notebook like a teenager. No regrets.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.038"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "Who was that you were laughing with? Not that I mind! I just... want to be the one making you laugh.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.039"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I'm not jealous! Okay, maybe a tiny bit. A sprinkle.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.040"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I trust you, I do. I just got a little wobbly seeing that. Hold my hand?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.041"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Tonight was perfect. Text me the second you get home!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.042"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "I don't want this to end. Five more minutes?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.043"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight, sweetheart. Dream about me, okay?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.044"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Thank you for tonight. I'm going to be smiling until tomorrow.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.045"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Same time next week? Or tomorrow. Tomorrow works too.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.046"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I'm upset, but I still like you. I just need you to hear me.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.047"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "That hurt my feelings, {player}. Can we talk about it instead of pretending it's fine?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.048"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I don't like fighting with you. It feels like a cloudy day.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.049"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "Okay, I'm taking a breath. Let's figure this out together.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.050"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "Yes! Oh my gosh, yes! I'm crying, you're crying, everyone's crying!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.051"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "Of course I'll marry you! You're my favorite person in the whole wide world!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.dating.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, my love! I made pancakes shaped like hearts. Some are more like blobs.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.001"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, sleepyhead! The coffee's ready and so am I.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.002"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Rise and shine, spouse of mine! Ha, that rhymes.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.003"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning! I already opened the curtains, look at that sunlight!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.004"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! I love that the first thing I see every day is you.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.005"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, gorgeous. You've got pillow lines on your face and it's adorable.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.006"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, honey! I put a little note in your coat pocket. Don't peek yet.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.007"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! Today feels like a lucky day, I can just tell.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.008"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, my sunshine. Did you sleep okay? You were snoring like a happy kitten.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.009"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Rise and grind! I mean rise and cuddle, the grind can wait five minutes.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.010"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning! The birds have been singing for an hour. They're excited for you too.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.011"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, love! What's one thing you're looking forward to today?",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.012"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home! I missed you all day!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.013"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are! Shoes off, feet up, I'll bring you something warm.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.014"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Honey, you're home! Come tell me everything.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.015"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, love! I lit the good candle because you deserve it.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.016"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome back! The house is so much brighter with you in it.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.017"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home! I made your favorite. Well, I tried. It's in the shape of your favorite.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.018"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey you! I saved you the comfy end of the couch.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.019"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, darling! How was your day, on a scale from great to amazing?",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.020"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Yay, you're back! The dog and I were just talking about you. Well, I was talking.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.021"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Come here, you. A welcome-home hug is the law in this house.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.022"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, night owl. Come to bed, I warmed up your side.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.023"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're up late! Want some warm milk and company?",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.024"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, love. I waited up. Couldn't sleep without saying goodnight.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.025"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Oh, you're home! Late night? Let me get you a blanket.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.026"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, it's late, but I'm still so happy to see you.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.027"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Shh, come sit. The house is so quiet and cozy right now.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.028"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Late shift? You poor thing. I'll make tea.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.029"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are. The stars were keeping me company until you got back.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.030"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have the best day! Go show them how awesome you are!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.031"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye, love! I packed you a lunch with a little surprise inside.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.032"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Go get 'em, champ! I'll be cheering for you from here.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.033"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Don't forget your keys! And your smile! Okay, now you're ready.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.034"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a great day, sweetheart! Text me something good that happens.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.035"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Kiss for the road! Okay, two. Okay, three. Go, you'll be late!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.036"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye, honey! Remember, you're amazing at what you do.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.037"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Off you go! I'll miss you every minute. Well, most minutes.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.038"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "How was work? Tell me one good thing first, then the rest.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.039"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Did anyone appreciate you today? Because they should have.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.040"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You look tired, love. Was today a hard one? Sit down, I've got you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.041"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Tell me about your day! Every detail, I want the director's cut.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.042"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Did your boss like your idea? I knew they would!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.043"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Was it a pancake day or a burnt-toast day? Either way, you're home now.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.044"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "I bet you were the best one there today.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.045"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Okay, work is over. You're officially off the clock and on the couch.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.046"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you. I just wanted to say it out loud.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.047"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Have I told you today that you're my favorite human?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.048"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Being married to you is like having summer every day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.049"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Sometimes I look at you and I can't believe I get to keep you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.050"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Come here, I need a hug. No reason. Just love.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.051"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my home, you know that? Wherever you are.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love your laugh. I'd marry you all over again for it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.053"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Thank you for being you. Seriously, thank you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.054"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'm so proud of you. I don't say it enough.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.055"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're the sunshine in my sunshine. That's a lot of sunshine.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.056"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Every day with you is a good-things jar day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.057"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Hold my hand for a second? Okay, now I'm fully recharged.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.058"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You still give me butterflies. After all this time!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.059"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love waking up next to you. Even when you steal the blankets.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.060"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'd choose you every single time, {player}.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.061"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make this little house feel like a palace.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.062"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I just like being near you. That's all.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.063"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my favorite chapter of my life.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.064"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I rearranged the living room! Do you love it? Be honest. But love it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.065"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I think we should paint the kitchen yellow. Like a lemon. A happy lemon.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.066"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The neighbors' kids drew a chalk picture of us on the sidewalk. We have stick-figure fame!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.067"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Do you think we should get another plant? Or seven?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.068"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I found our wedding playlist and I've been dancing around the house all afternoon.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.069"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The mail carrier said our porch is the prettiest on the street. I'm glowing.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.070"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Should we have a little dinner party? I want to show off our home. And you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.071"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I saw a rainbow over the house today. I'm choosing to believe it was for us.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.072"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I started a gratitude list on the fridge. You're number one, obviously.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.073"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Want to build a pillow fort tonight? Adults can have pillow forts.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.074"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been thinking about getting a bird feeder. We could name all the birds!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.075"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I called your mom today, just to say hi. She's the sweetest.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.076"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Do you ever think about how lucky we are? I think about it all the time.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.077"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I learned a new recipe. It's called surprise casserole. The surprise is I don't know what's in it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.078"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I set up a little reading nook by the window. Come try it with me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.079"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The house smells like cinnamon because I'm testing candles. All of them. At once.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.080"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Want to take a walk around the block after dinner? The sunset's going to be lovely.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.081"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I put fairy lights on the porch. Now it's officially the happiest house on the street.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.082"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I hung up the photo from our honeymoon. Look how tan we were!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.083"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Let's make Sundays pancake day forever. It's a family tradition now.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.084"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The dog learned to high-five! Well, he slapped my hand. Close enough.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.085"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I think the house needs a name. Something cheerful. Sunny Side? Too much?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.086"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I signed us up for the neighborhood block party. We're bringing lemonade.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.087"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I love our little life. Like, really love it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.088"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "You know what this place needs? More music. Let's dance in the kitchen.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.089"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I hung a wind chime by the door. Now every breeze says hi.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.090"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I did the dishes and sang the whole time. They're extra clean now, from the joy.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.091"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Want to make cleaning a race? Winner picks the movie!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.092"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I folded all your socks into little smiley bundles.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.093"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "The laundry's done! Well, washed. The folding part is a team sport.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.094"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Could you take the trash out, love? I'll reward you with a kiss.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.095"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I vacuumed! The carpet looks so happy now.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.096"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Let's clean the garage together. With music. It'll be a garage party!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.097"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I scrubbed the bathroom and found the earring I lost in spring! Cleaning pays!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.098"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Your turn for dishes, babe! I believe in you!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.099"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Chores are just love you can see, right? That's what I tell myself.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.100"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I made a chore chart with stickers. You get a gold star for the week!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.101"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "The windows are so clean now you can see all the way to tomorrow.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.102"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We're a little tight this month, but we'll figure it out. We always do.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.103"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I made a budget with little doodles on it. Budgets can be cute!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.104"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Let's start a vacation jar! Every coin is a step closer to the beach.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.105"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I found a coupon for our favorite pizza! Victory!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.106"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I don't need fancy things. I just need you and maybe new socks.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.107"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We paid off the credit card! Let's celebrate. Cheaply!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.108"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "If we save a little each week, we could take a trip to the coast next summer!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.109"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I sold some cupcakes at the market and made forty dollars! Look at me, a businessperson!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.110"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Money's just paper. Love is the real treasure. But paper is nice too.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.111"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Let's make a deal: one splurge a month, and it has to be something fun.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.112"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Dinner's ready! I made spaghetti and only burned it a little.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.113"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Breakfast in bed? Breakfast in bed. Don't argue, it's happening.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.114"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made soup! It's mostly vegetables and love.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.115"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's have a picnic in the backyard tonight!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.116"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Taste this! Is it amazing? It's amazing, isn't it?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.117"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I tried a new cookie recipe. You're my official taste tester.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.118"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Want to cook together? You chop, I'll dance around and supervise.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.119"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Pizza night! Extra cheese, extra happiness.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.120"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I saved you the last slice of pie. That's how you know it's true love.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.121"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Dinner by candlelight tonight. Even if it's just grilled cheese.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.122"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm not mad! I'm just... disappointed in a really loving way.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.123"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Can you please not leave your shoes in the hallway? I tripped. Twice.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.124"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I feel like you weren't really listening to me just now.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.125"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You forgot our plans again, {player}. That hurt a little.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.126"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I don't want to fight, but I need you to meet me halfway here.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.127"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Okay, I'm frustrated. I'm going to take a deep breath. And another.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.128"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You know I hate it when you shut down like that.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.129"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm trying to stay positive, but you're making it really hard tonight.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.130"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I need you to show up for me sometimes too.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.131"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "It's not about the dishes. It's about feeling like a team.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.132"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I know you're stressed, but please don't take it out on me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.133"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Can we please just talk about this instead of being grumpy at each other?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.134"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry, love. Can we hug it out?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.135"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I hate fighting with you. Let's never go to bed angry.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.136"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "You're still my favorite, even when we disagree.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.137"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Okay, truce? I'll make cocoa. Peace cocoa.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.138"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry I snapped. You deserve better than grumpy me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.139"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's start over. Hi, I'm your spouse and I love you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.140"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Thank you for talking it out with me. We're good. We're always good.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.141"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Forgive me? I'll throw in a back rub.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.142"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Hey, it's okay. Tomorrow's a brand-new day, and I'll be right here.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.143"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You're stronger than you think, {player}. I've seen it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.144"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Come here. You don't have to be okay right now. I've got you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.145"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Whatever happens, we'll figure it out together.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.146"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Bad days don't last. But we do.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.147"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I'm so proud of you for trying. That's the bravest part.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.148"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let's just be cozy tonight. No pressure, no plans. Just us.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.149"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You're allowed to be sad. I'll hold the sunshine for both of us for a while.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.150"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Want me to make your favorite? Comfort food fixes at least half of everything.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.151"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I believe in you. I'll keep saying it until you believe it too.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.152"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "This weekend, let's go apple picking! Then pie! Then more pie!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.153"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's take the train to the coast someday. Just us and the ocean.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.154"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "What if we redid the garden? Sunflowers everywhere!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.155"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's have a movie marathon Saturday. Blankets, popcorn, the works.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.156"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "I want to go stargazing on Carillon Hill. Bring the big blanket!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.157"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a road trip to the mountains this fall? The leaves will be glowing!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.158"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "We should take a dance class together. I'll step on your toes, it'll be romantic.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.159"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the Founders' Day festival! I want cotton candy.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.160"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "What if we volunteered at the shelter together? Puppies and you, my two loves.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.161"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's plan a little anniversary trip. Somewhere with a hammock.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.162"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our first date? You were so nervous you knocked over the water. I loved it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.163"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when it poured at our wedding and we danced in it anyway?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.164"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I still have the napkin you drew a heart on at the diner.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.165"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Do you remember the first time you said you loved me? I do. Every word.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.166"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our first apartment? The ceiling leaked and we called it our indoor waterfall.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.167"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we got lost driving to the beach and found that peach stand?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.168"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I think about the day you proposed all the time. Best day ever. Tied with every day after.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.169"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we tried to assemble the bookshelf and it took six hours?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.170"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember that night we stayed up talking until the birds started singing?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.171"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I remember the first time I saw you laugh. I thought, uh oh, I'm in trouble.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.172"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary, love! Another year of sunshine with you!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.173"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I made a scrapbook of our year. Every page is my favorite.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.174"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Can you believe it's been another year? It feels like a day and forever at the same time.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.175"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary! I'd marry you a thousand more times.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.176"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Here's to us, the cutest couple in Cathedral Mount!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.177"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I love you more than last year, and less than next year.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.178"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You hum when you cook. Did you know that? It's adorable.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.179"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You hog the blankets like a little burrito thief.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.180"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "I saw you dancing in the kitchen when you thought I wasn't looking!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.181"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You've worn that shirt three days in a row. I'm not judging. I'm a little judging.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.182"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You're cute when you pretend you're not ticklish.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.183"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "Who ate the last cookie? I have a suspect. It's you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.184"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You sing in the shower so loud the neighbors know all the words now.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.185"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "I love that you still can't fold a fitted sheet. Nobody can, but still.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.186"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You're a terrible liar, {player}. Your ears turn pink.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.187"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You get so grumpy when you're hungry. Here, have a snack, grumpy.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.188"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You talk in your sleep, you know. Last night you ordered a pizza.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.189"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "I think the plant likes you more than me. Traitor plant.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.190"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, my love. Thank you for another beautiful day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.191"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come to bed! I'm cold and you're my personal heater.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.192"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sweet dreams. I'll be right here when you wake up.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.193"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Night night! Tell me three good things from today first.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.194"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "I love falling asleep next to you. Best part of the day. Tied with waking up.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.195"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, sunshine. Tomorrow's going to be even better.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.196"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Lights out! Wait, one more kiss. Okay, now lights out.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.197"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sleep tight, love. Don't let the bedbugs bite. We don't have bedbugs. I checked.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.198"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight. I love you to the moon and back. And then some.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.199"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Let's cuddle until we fall asleep. Doctor's orders. I'm the doctor.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "sunny_optimist.marriage.200"
+  }
+ ]
+}

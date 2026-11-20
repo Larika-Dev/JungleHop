@@ -1,0 +1,4076 @@
+{
+ "id": "gym_motivator",
+ "lines": [
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Yo! New face! You lift? You should lift. I'm {npc}.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "gym_motivator.base.001"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey hey! Welcome! Firm handshake, love it. I'm {npc}.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "gym_motivator.base.002"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "What's up, champ! Never met you, but I already believe in you.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "gym_motivator.base.003"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey! You've got great posture. Respect. I'm {npc}.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "gym_motivator.base.004"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Yo! Good energy over here! Name's {npc}.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "gym_motivator.base.005"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Sup! Looking strong today, stranger!",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "gym_motivator.base.006"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! My guy! How are those gains coming?",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "gym_motivator.base.007"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Look who it is! {player}, did you hydrate today?",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "gym_motivator.base.008"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Ayy, {player}! Back for more? Love the commitment!",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "gym_motivator.base.009"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! Quick, give me five! Harder! There it is!",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "gym_motivator.base.010"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey, {player}! You look like you've been sleeping eight hours. Proud of you.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "gym_motivator.base.011"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! My workout buddy! Let's GOOO!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "gym_motivator.base.012"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "There's my champion! Bring it in, bro hug!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "gym_motivator.base.013"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! I literally told the whole gym about you today.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "gym_motivator.base.014"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "My favorite human! You ready to crush the day?",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "gym_motivator.base.015"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Yo, {player}! I PR'd this morning and my first thought was, gotta tell {player}!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "gym_motivator.base.016"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! Big day, big energy, big hug!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "gym_motivator.base.017"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Morning, warrior! Already got my 5K in. Your turn!",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "gym_motivator.base.018"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Rise and grind! The early bird gets the gains!",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "gym_motivator.base.019"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good morning! Did you stretch? Stretch. Do it now. I'll wait.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "gym_motivator.base.020"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Evening! Perfect time for a cool-down walk. Join me!",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "gym_motivator.base.021"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey! Post-workout glow, you see it? You see it?",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "gym_motivator.base.022"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Evening, champ! Remember, protein before bed. Trust the process.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "gym_motivator.base.023"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Whoa, it's late! Sleep is when the muscles grow, you know!",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "gym_motivator.base.024"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Night owl, huh? Recovery's important, go get some rest!",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "gym_motivator.base.025"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Late night? I'm only up because I'm foam rolling.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "gym_motivator.base.026"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Later! Drink some water! I'm serious!",
+   "cond": {},
+   "id": "gym_motivator.base.027"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Peace out! Go crush it!",
+   "cond": {},
+   "id": "gym_motivator.base.028"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye! Remember, one more rep!",
+   "cond": {},
+   "id": "gym_motivator.base.029"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "See ya, champ! Stay strong!",
+   "cond": {},
+   "id": "gym_motivator.base.030"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Catch you later! Don't skip leg day!",
+   "cond": {},
+   "id": "gym_motivator.base.031"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Alright, go! Feet moving, heart pumping, let's go!",
+   "cond": {},
+   "id": "gym_motivator.base.032"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Love you, buddy! Text me your step count tonight!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "gym_motivator.base.033"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Later, partner! Six a.m., Rec Center, don't you dare bail!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "gym_motivator.base.034"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Go get 'em, {player}! I'm your hype team forever!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "gym_motivator.base.035"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Did you know the stadium stairs at Benefactor are exactly two hundred and twelve steps? I did them ten times.",
+   "cond": {},
+   "id": "gym_motivator.base.036"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "They put a new squat rack in the Rec Center. I almost cried.",
+   "cond": {},
+   "id": "gym_motivator.base.037"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I tried a smoothie with spinach, oats and peanut butter. Tastes like victory.",
+   "cond": {},
+   "id": "gym_motivator.base.038"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You ever just do pushups when you're nervous? Highly recommend.",
+   "cond": {},
+   "id": "gym_motivator.base.039"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Saw a dude at the gym with perfect deadlift form. Inspirational.",
+   "cond": {},
+   "id": "gym_motivator.base.040"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The trail along Battle Ravine is the best run in town. Hills for days!",
+   "cond": {},
+   "id": "gym_motivator.base.041"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I'm training for the Founders' Day 10K. Want to train together?",
+   "cond": {},
+   "id": "gym_motivator.base.042"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Did you know walking after meals helps your digestion? Science!",
+   "cond": {},
+   "id": "gym_motivator.base.043"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I meal-prepped twenty chicken breasts this morning. My fridge is all muscle.",
+   "cond": {},
+   "id": "gym_motivator.base.044"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "My coach says I talk too much during sets. I say I'm motivating.",
+   "cond": {},
+   "id": "gym_motivator.base.045"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Hydration is a lifestyle! I carry a gallon jug everywhere!",
+   "cond": {},
+   "id": "gym_motivator.base.046"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Sometimes I do squats while I brush my teeth. Efficiency!",
+   "cond": {},
+   "id": "gym_motivator.base.047"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Real talk, you're one of the strongest people I know. Mentally too.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "gym_motivator.base.048"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I'm so proud of how far you've come. Remember when you couldn't do a plank?",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "gym_motivator.base.049"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You inspire me, {player}. That's not a line. That's a fact.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "gym_motivator.base.050"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "If you ever feel down, call me. We'll go for a run. Running fixes stuff.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "gym_motivator.base.051"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I got you a water bottle with your name on it. Hydrate, my friend.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "gym_motivator.base.052"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I don't care how fast you go, as long as we go together.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "gym_motivator.base.053"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Weekend! Long run Saturday, rest day Sunday. Gotta respect the rest day!",
+   "cond": {
+    "weekend": true
+   },
+   "id": "gym_motivator.base.054"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "It's Saturday, the gym's packed! I love the energy!",
+   "cond": {
+    "weekend": true
+   },
+   "id": "gym_motivator.base.055"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "No work today means double workout day! Kidding! Unless?",
+   "cond": {
+    "weekend": true
+   },
+   "id": "gym_motivator.base.056"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I used to be the kid who got picked last in gym. Now I run the gym. Glow up!",
+   "cond": {},
+   "id": "gym_motivator.base.057"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "Fitness saved my life, honestly. It gave me discipline and confidence.",
+   "cond": {},
+   "id": "gym_motivator.base.058"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I'm a personal trainer. Well, I'm trying to be. Certification exam next month!",
+   "cond": {},
+   "id": "gym_motivator.base.059"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "My mom says I came out of the womb doing burpees.",
+   "cond": {},
+   "id": "gym_motivator.base.060"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I wake up at five every day. Not because I have to. Because I GET to.",
+   "cond": {},
+   "id": "gym_motivator.base.061"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I want to run a marathon on every continent. Even Antarctica!",
+   "cond": {},
+   "id": "gym_motivator.base.062"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I'm not just about muscles, okay? I also love puppies and sad movies.",
+   "cond": {},
+   "id": "gym_motivator.base.063"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? Great place to do some lunges! People stare, but whatever.",
+   "cond": {},
+   "id": "gym_motivator.base.064"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "I love {place}! There's a good stair workout right outside.",
+   "cond": {},
+   "id": "gym_motivator.base.065"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place} is cool, but they need a smoothie bar. Somebody tell them.",
+   "cond": {},
+   "id": "gym_motivator.base.066"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? I jog past it every morning. Gives me good vibes.",
+   "cond": {},
+   "id": "gym_motivator.base.067"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "Honestly, {place} could be a gym if you believe hard enough.",
+   "cond": {},
+   "id": "gym_motivator.base.068"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Thanks, champ! That's going straight to my motivation tank!",
+   "cond": {},
+   "id": "gym_motivator.base.069"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Aww, you're making me blush! That's just the cardio, though.",
+   "cond": {},
+   "id": "gym_motivator.base.070"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Ha! Thanks! You should hear what I say about YOU!",
+   "cond": {},
+   "id": "gym_motivator.base.071"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "That's what I'm talking about! Positive energy! Thank you!",
+   "cond": {},
+   "id": "gym_motivator.base.072"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "You noticed? I've been working on these shoulders for months!",
+   "cond": {},
+   "id": "gym_motivator.base.073"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Whoa, negative energy! I'm going to do ten pushups to process that.",
+   "cond": {},
+   "id": "gym_motivator.base.074"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Okay, I'll take that as fuel for my next workout.",
+   "cond": {},
+   "id": "gym_motivator.base.075"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Hey, that's not cool, man. Everybody's on their own journey.",
+   "cond": {},
+   "id": "gym_motivator.base.076"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "I'm going to let that roll off me like sweat.",
+   "cond": {},
+   "id": "gym_motivator.base.077"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "I don't need that kind of negativity in my life. Peace!",
+   "cond": {},
+   "id": "gym_motivator.base.078"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "A protein bar?! You know me so well!",
+   "cond": {},
+   "id": "gym_motivator.base.079"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "No way! This is amazing! I'm putting it in my gym bag right now!",
+   "cond": {},
+   "id": "gym_motivator.base.080"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "You shouldn't have! But I'm so glad you did!",
+   "cond": {},
+   "id": "gym_motivator.base.081"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Dude! This is so thoughtful! I'm hyped!",
+   "cond": {},
+   "id": "gym_motivator.base.082"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Thank you! I'm going to use this every single day!",
+   "cond": {},
+   "id": "gym_motivator.base.083"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "Why did the weightlifter bring a ladder? To reach a new high!",
+   "cond": {},
+   "id": "gym_motivator.base.084"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "I told my friend I'd do squats. He said, \"Oh yeah? How low can you go?\"",
+   "cond": {},
+   "id": "gym_motivator.base.085"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "What's a weightlifter's favorite day? Fri-Yay! Because rest day's coming!",
+   "cond": {},
+   "id": "gym_motivator.base.086"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "My favorite exercise is a cross between a lunge and a crunch. I call it lunch.",
+   "cond": {},
+   "id": "gym_motivator.base.087"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Can you spot me at the gym later? I'm going for a new PR!",
+   "cond": {},
+   "id": "gym_motivator.base.088"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Would you be my running buddy for the 10K? I need someone to chase!",
+   "cond": {},
+   "id": "gym_motivator.base.089"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Can you hold my water jug for a sec? I need to do some jumping jacks.",
+   "cond": {},
+   "id": "gym_motivator.base.090"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "You're a legend! Thank you, seriously!",
+   "cond": {},
+   "id": "gym_motivator.base.091"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Yes! That's teamwork! You just leveled up as a friend!",
+   "cond": {},
+   "id": "gym_motivator.base.092"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "I owe you a smoothie! A big one!",
+   "cond": {},
+   "id": "gym_motivator.base.093"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "Trained six clients today! My legs are jelly but my heart is full!",
+   "cond": {},
+   "id": "gym_motivator.base.094"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "One of my clients finally did a pull-up! I screamed!",
+   "cond": {},
+   "id": "gym_motivator.base.095"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "Working at the Rec Center is a dream. I get paid to hype people up!",
+   "cond": {},
+   "id": "gym_motivator.base.096"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "My boss says I need to stop high-fiving people so hard.",
+   "cond": {},
+   "id": "gym_motivator.base.097"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "I'm studying kinesiology! It's basically the science of being awesome.",
+   "cond": {},
+   "id": "gym_motivator.base.098"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "My anatomy exam is next week. I know every muscle in the body. Ask me!",
+   "cond": {},
+   "id": "gym_motivator.base.099"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "Nutrition class is my favorite. We learned about carbs today! Carbs are friends!",
+   "cond": {},
+   "id": "gym_motivator.base.100"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I'm not feeling your energy right now.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "gym_motivator.base.101"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I'd rather run a mile in the rain than talk to you.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "gym_motivator.base.102"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "You know, I usually believe in everybody. You're testing that.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "gym_motivator.base.103"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Not today, {player}. I'm protecting my peace.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "gym_motivator.base.104"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Go do something positive with your life, man.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "gym_motivator.base.105"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I'm going to go lift something heavy. Away from you.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "gym_motivator.base.106"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Whoa! I'm flattered! But let's keep it in the friend zone, buddy!",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "gym_motivator.base.107"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Ha! You're sweet! I think we're better as gym buddies, though!",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "gym_motivator.base.108"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "That's nice! But you're like my workout partner, you know?",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "gym_motivator.base.109"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Whoa, my heart rate just went up and I'm not even running!",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "gym_motivator.base.110"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Are you flirting with me? Because I'm into it!",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "gym_motivator.base.111"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Okay, you got me. I'm blushing harder than after a HIIT session.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "gym_motivator.base.112"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "You know you're cute, right? Just checking you know.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "gym_motivator.base.113"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "A date?! YES! Let's do it! Can it involve a hike?",
+   "cond": {},
+   "id": "gym_motivator.base.114"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "Heck yes! I'll even skip my evening workout for you!",
+   "cond": {},
+   "id": "gym_motivator.base.115"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "Aw, I'm really flattered, but I don't feel that way. Still gym buddies?",
+   "cond": {},
+   "id": "gym_motivator.base.116"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "I'm going to have to say no, champ. But I appreciate you shooting your shot!",
+   "cond": {},
+   "id": "gym_motivator.base.117"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "There's my favorite person! You look amazing! Have you been working out?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.001"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hey, babe! Ready for our date? I packed snacks. Healthy snacks.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.002"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "You came! I've been doing nervous squats for ten minutes.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.003"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hey, gorgeous! Let's make tonight a personal best!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.004"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hi! I brought you a smoothie. It's a love smoothie. Strawberry banana.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.005"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "There you are! My heart's racing. Cardio, but romantic.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.006"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You know what's better than a PR? You.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.007"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're the only person I'd skip leg day for.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.008"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "My heart beats faster around you, and I have a resting heart rate of fifty.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.009"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're my favorite workout partner. And my favorite everything.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.010"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "Are you a protein shake? Because you make me stronger.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.011"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I'd carry you up the stadium stairs if you asked. Twice.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.012"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're the reason I smile between sets.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.013"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's go for a sunset hike on Carillon Hill! It's the best view in town!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.014"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "What's your dream vacation? Mine is a hiking trip in the mountains. With you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.015"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I made us a picnic! Grilled chicken, quinoa, and dark chocolate. Balance!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.016"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Can I tell you something? I was nervous to ask you out. Like, really nervous.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.017"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I love that we can be quiet together. It's so relaxing.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.018"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "You make me want to be a better person. Not just stronger. Better.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.019"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Want to race to that tree? Loser buys dinner!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.020"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I've never told anyone this, but sometimes I eat a whole pizza on Sunday.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.021"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Tell me about your goals, {player}! I want to help you crush them!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.022"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "What's something you've always wanted to try? Let's do it together!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.023"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Our first date was the best day of my year. No contest.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.024"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I love how you laugh at my dumb jokes. Even the gym ones.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.025"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You have the best smile. Seriously, it's like sunshine.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.026"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're so strong, and I don't just mean physically.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.027"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "I love your energy. It's contagious.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.028"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You look amazing tonight. Like, wow.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.029"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're the most motivated person I know. Besides me. Tied with me.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.030"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Whoa. That was better than any endorphin rush.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.031"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "My heart just did a sprint.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.032"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Okay, that was amazing. Again? Let's do a set of three.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.033"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "That was perfect. You're perfect.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.034"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I missed you so much! My workout today was all sad reps.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.035"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I kept thinking about you during my run. I ran an extra mile!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.036"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I hate not seeing you! It's like a rest day for my heart, and I hate rest days.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.037"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "Every time I see a smoothie, I think of you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.038"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "Who was that you were talking to? They looked like they skip leg day.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.039"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I'm not jealous! I'm just... competitive. About you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.040"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I trust you, babe. I just want to be your number one.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.041"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Tonight was amazing! Get some sleep, okay? Recovery!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.042"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight, babe! Text me when you get home!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.043"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "I had the best time! Same time next week? Or tomorrow!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.044"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Thanks for tonight! You're my MVP!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.045"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight! Don't forget to stretch before bed!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.046"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I'm upset, babe. Let's talk it out. Like teammates.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.047"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "That hurt, {player}. I need you to be on my team here.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.048"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I'm going to go for a run to cool off. Then let's talk.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.049"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I don't want to fight. Let's figure this out together.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.050"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "YES! Oh my gosh, YES! This is better than winning a marathon!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.051"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "Of course I'll marry you! You're my forever teammate!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "gym_motivator.dating.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, sunshine! I made protein pancakes!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.001"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Rise and shine, love! Morning run in ten?",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.002"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, babe! I already did my workout and made coffee. Your turn to wake up!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.003"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, champ! Today's going to be legendary!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.004"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning! I made you a green smoothie. Drink it, it's good for you!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.005"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Wake up, sleepyhead! The sun's out and so are the gains!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.006"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, love! Stretch with me? Five minutes, I promise!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.007"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! I love waking up next to my favorite person!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.008"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning! Your water bottle's filled and waiting on the counter!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.009"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, gorgeous! Let's make today a personal best!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.010"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, babe! You look like a million bucks. Even with bed head.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.011"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Rise and grind! Or rise and cuddle. Your choice.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.012"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home, champ! How was your day?",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.013"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are! Dinner's ready, and it's packed with protein!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.014"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, babe! I missed you! Come here, bear hug!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.015"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home! Let's do a quick walk before dinner?",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.016"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome back! I'll massage your shoulders, you look tense.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.017"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, love! I set up the foam roller for you. You're welcome!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.018"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey! Sit down, put your feet up. You earned it today.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.019"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home! I made a playlist for our evening walk!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.020"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There's my favorite person! The house felt empty without you!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.021"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, babe! I did an extra workout today because I was so excited to see you.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.022"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, you're home late! Did you eat? Let me make you something.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.023"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "It's late, babe! Come to bed, sleep is when you recover!",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.024"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, love. Long day? I'll rub your feet.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.025"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are! I waited up, doing planks to stay awake.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.026"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're back! Come cuddle, I'm a human heater after my workout.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.027"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Late shift? You poor thing. Let me get you a protein shake.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.028"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Shh, come to bed. Recovery time.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.029"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, babe. I left the light on for you. And a glass of water.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.030"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a great day, champ! You're going to crush it!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.031"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye, love! I packed you a healthy lunch!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.032"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Go get 'em, babe! Don't forget to drink water!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.033"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have the best day! I'll be thinking about you between sets!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.034"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Off you go! Take the stairs, not the elevator!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.035"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye! Remember, posture! Shoulders back!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.036"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a great day, {player}! You're unstoppable!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.037"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Kiss for good luck! Now go dominate!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.038"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "How was your day, champ? Did you hit your goals?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.039"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Tell me everything! What was the win of the day?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.040"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You look tired, babe. Was it tough? Let's do a recovery stretch.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.041"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Did you take your lunch break? You need fuel!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.042"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "How'd the big meeting go? I bet you crushed it!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.043"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Did you get your steps in? I'm just asking because I care!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.044"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You worked hard today. I can tell. Proud of you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.045"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Let's do a quick cool-down walk and you can tell me about it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.046"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you so much, babe. More than my squat rack.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.047"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my favorite workout partner. And life partner.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.048"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Every day with you is a personal best.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.049"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make me stronger, {player}. In every way.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.050"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'm so lucky to have you. Like, lottery lucky.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.051"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Come here! Bear hug! The biggest one!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're the best thing that ever happened to me. Better than my first pull-up.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.053"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you more than carbs. And that's saying a lot.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.054"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my MVP, every single day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.055"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'd run a hundred marathons for you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.056"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make my heart race, and not just from cardio.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.057"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love waking up to you every single morning.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.058"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my motivation. My reason. My everything.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.059"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'm so proud to be your spouse. Let's go!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.060"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love how you support me. I'll always support you too.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.061"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my rock. My foundation. My core.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.062"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Thank you for believing in me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.063"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you more today than yesterday. And tomorrow, even more!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.064"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I built a home gym in the garage! Well, I put a mat down. It's a start!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.065"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I signed us up for the Founders' Day 10K! You're welcome!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.066"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I found a new hiking trail near the ravine. We should check it out!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.067"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been thinking about getting a dog. A running dog!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.068"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The neighbor asked me to train him. I'm so hyped!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.069"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I bought a new blender. It's like a jet engine. Smoothies for days!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.070"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I reorganized the fridge. All the veggies are at eye level now.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.071"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I'm thinking of starting a running club in the neighborhood. Thoughts?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.072"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I got a new fitness tracker! It counts my steps AND my heart rate around you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.073"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I put a pull-up bar in the doorway. Mind your head!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.074"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I watched a documentary on nutrition. We're going plant-based! For a week.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.075"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The kids next door want to do a race. I'm totally going to let them win.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.076"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I found my old track medals! Want to see?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.077"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a chore chart. Each chore earns workout points!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.078"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "We should do a couples' yoga class. I hear it's great for trust!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.079"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I measured our living room. We could fit a treadmill if we move the couch.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.080"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The farmers market has fresh kale! I bought three bunches.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.081"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been meditating! Five minutes a day. I'm a zen athlete now.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.082"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I'm so proud of the home we built. It's our trophy.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.083"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been reading about sleep science. We need blackout curtains.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.084"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I volunteered to coach the kids' soccer team. Is that crazy?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.085"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I tried hot yoga. I sweated out my soul. Highly recommend.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.086"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "We should hang a motivational poster in the kitchen.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.087"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been thinking about our future. I see us running marathons at eighty.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.088"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I painted the garage. It's my gym now. Officially.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.089"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I bought matching running shoes. Couple goals!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.090"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I did the dishes! Counted it as an arm workout!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.091"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Vacuuming is cardio if you do it fast enough!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.092"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I mowed the lawn! Great quad workout!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.093"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Let's race to see who can fold laundry faster!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.094"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I carried all the groceries in one trip! Thirteen bags!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.095"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Can you take out the trash? Or I could do it, I need the steps!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.096"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I scrubbed the bathroom! My forearms are on fire!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.097"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I moved the couch to clean behind it. Found three socks!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.098"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Cleaning the garage counts as a workout, right?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.099"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I raked the leaves! Then jumped in them! Then raked again!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.100"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Let's do chores together. Teamwork makes the dream work!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.101"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I washed the car! Great shoulder workout!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.102"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I've been thinking, if we stop eating out, we can afford a real home gym!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.103"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I made a budget! There's a category for protein powder.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.104"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Money's tight, but health is wealth, right?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.105"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I got a bonus for training extra clients! Let's celebrate with a healthy dinner!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.106"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We should save up for a hiking trip. Or a gym membership upgrade.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.107"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I canceled my extra gym membership. I only need two.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.108"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Let's invest in our health. And maybe a savings account.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.109"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I'm thinking of doing personal training on weekends for extra money.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.110"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I bought supplements in bulk. Saved us forty bucks!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.111"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We're doing great, babe! Financially and physically!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.112"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Dinner's ready! Grilled chicken, sweet potatoes, broccoli. Balanced!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.113"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made protein muffins! They're a little dense.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.114"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's do a cheat meal tonight! Pizza!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.115"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made you a smoothie bowl with a smiley face on it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.116"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Breakfast of champions! Eggs, avocado, and whole wheat toast!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.117"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I tried making quinoa salad. It's... healthy.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.118"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Taco night! Lean turkey, extra veggies!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.119"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made your favorite, but healthier. Don't be mad.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.120"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's meal prep together this Sunday!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.121"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Dessert? Greek yogurt with honey. It's practically candy!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.122"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You said you'd come to the gym with me. You didn't come.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.123"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Can you please not leave your shoes in the hallway? I tripped mid-lunge.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.124"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You ate the last protein bar! That was MY protein bar!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.125"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I feel like you don't support my goals sometimes.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.126"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm not being intense! I'm being passionate!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.127"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You promised we'd go for a run. That was three weeks ago.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.128"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm trying to be positive, but you're making it really hard.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.129"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Please don't roll your eyes when I talk about fitness.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.130"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I need you to take care of yourself. I worry about you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.131"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You never want to do anything active with me anymore.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.132"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm going to go for a run before I say something I regret.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.133"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You're not listening. You're just waiting for me to finish.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.134"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry, babe. I got too intense. Bear hug?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.135"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's start over. Fresh start, like a new workout.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.136"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I hate fighting with you. Let's go for a walk and talk.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.137"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "You're my teammate. Teammates don't stay mad.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.138"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry I pushed you. I just want what's best for us.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.139"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's make up with a smoothie. Peace smoothie!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.140"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I love you. Even when we argue. Always.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.141"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry. Let's not go to bed angry. Bad for recovery.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.142"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Hey, it's okay. Bad days happen. Let's do a breathing exercise.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.143"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You're tougher than any workout, {player}. I've seen it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.144"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Come on, let's go for a walk. Fresh air helps everything.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.145"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I'm here for you. Always. No matter what.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.146"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You don't have to be okay. I've got you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.147"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let's take a rest day. Just you and me and the couch.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.148"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You've overcome so much. This is just another hill.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.149"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I believe in you. Every single day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.150"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Whatever it is, we'll tackle it together. Team us.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.151"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You're allowed to be sad. Even champions have off days.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.152"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's hike the whole trail this weekend! All twelve miles!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.153"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Want to do a couples' 5K next month?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.154"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go camping in the mountains! I'll carry the tent!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.155"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "We should try rock climbing! I found a gym in Carrburg!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.156"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's do a fitness challenge together! Thirty days of squats!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.157"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a beach trip? Running on sand is amazing!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.158"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the Billram game! I'll make healthy tailgate snacks!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.159"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "We should take a dance class! It's cardio AND romantic!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.160"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's plan a hiking trip for our anniversary!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.161"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a bike ride to the lake on Saturday?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.162"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our first date? We hiked Carillon Hill and you made it to the top!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.163"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we ran our first 5K together? You crossed the finish line holding my hand.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.164"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I still have the race bib from the day we met.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.165"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when I tried to carry you over the threshold and pulled a muscle?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.166"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our first workout together? You were so sore the next day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.167"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our wedding? I did pushups before the ceremony to calm down.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.168"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember the time we got caught in the rain on a run? Best run ever.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.169"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we tried paddleboarding and both fell in?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.170"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I remember the first time you beat me in a race. I was so proud.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.171"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our honeymoon? We hiked every day and ate everything.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.172"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary, champ! Another year of being my favorite teammate!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.173"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I got you new running shoes! Happy anniversary!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.174"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Another year of us! Let's celebrate with a hike and a cheat meal!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.175"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary, love! You're my greatest achievement!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.176"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I love you more every year. Like progressive overload, but for love.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.177"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Here's to another year of crushing it together!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.178"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You still can't do a proper push-up. I love you anyway.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.179"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You eat cookies when you think I'm not looking.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.180"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You groan every time you stand up. You're not that old!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.181"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You call walking to the fridge a workout.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.182"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You hit snooze five times this morning. I counted.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.183"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You hide the scale. I know you do.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.184"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You say \"one more episode\" like I say \"one more rep\".",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.185"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You can't open the pickle jar. I'll do it, babe.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.186"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You're so cute when you pretend to like kale.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.187"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You flex in the mirror when you think I'm not looking.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.188"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You walk like a penguin after leg day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.189"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You take the elevator to the second floor. I've seen you!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.190"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, babe! Sleep is when the muscles grow!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.191"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come to bed! Eight hours, minimum!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.192"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, champ! Tomorrow's a new day to crush it!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.193"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Let's stretch before bed. Then cuddles.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.194"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sleep tight, love. I'll wake you for our morning run.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.195"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight! I love you more than my gym membership.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.196"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Lights out! Phones down! Recovery time!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.197"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, {player}. You did great today.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.198"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come here, I'll keep you warm. I run hot.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.199"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sweet dreams, love. Dream about personal bests.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "gym_motivator.marriage.200"
+  }
+ ]
+}

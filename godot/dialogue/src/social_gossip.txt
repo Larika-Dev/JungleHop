@@ -1,0 +1,429 @@
+// Social Gossip: chatty, "girl/honey/babe", knows everyone's business, loves drama but means well.
+== base
+# greet stage=stranger
+Oh, hello! You're new. I know everyone, so you're definitely new. I'm {npc}.
+Hi, honey! I'm {npc}. Who are you, where are you from, and are you single? Kidding! Mostly.
+Well, hello there! I haven't seen you at brunch. I'm {npc}.
+Hiii! You must be the one who moved into the yellow house. Am I right? I'm always right.
+Hey, new face! Let me guess, you're a grad student. No? A barista? Tell me everything.
+Hello! I'm {npc}. If you need to know anything about anyone, I'm your girl. Or your guy. Your person.
+# greet stage=acquaintance
+{player}! Oh good, you're just the person I wanted to see.
+Hey, {player}! You will not believe what I heard this morning.
+{player}, honey! Sit down. I have tea. Not literal tea. Gossip tea.
+Oh my gosh, {player}! Did you hear about the bookstore guy?
+Hi, {player}! You look great. Who are you seeing? I'll find out anyway.
+# greet stage=friend+
+{player}! My bestie! Okay, drop everything, I have news.
+Babe! Get over here! Brunch, now, my treat, I have so much to tell you.
+{player}! You're the only person I tell the real stuff to.
+There's my favorite! Did you get my eleven texts?
+{player}, darling! Okay, you didn't hear this from me, but...
+Hi, love! I saved you a seat and a scandal.
+# greet time=morning
+Morning, sunshine! Coffee and gossip, the breakfast of champions.
+Good morning! I've already been to three coffee shops and heard four rumors.
+Morning! Did you see who was doing the walk of shame on Rosemary? I'm not saying. I'm saying.
+# greet time=evening
+Evening! Happy hour at Top of the Mount, everybody's there.
+Hey! The evening crowd at the Inn is so interesting tonight.
+Good evening, honey! Wine and stories, that's my evening plan.
+# greet time=night
+Oh, you're out late! What are you up to? Who are you up to?
+Hey, night owl! The best stories happen after ten.
+Late night! I just left the most dramatic party.
+# farewell
+Bye, honey! Call me!
+Toodles! Don't do anything I wouldn't tell everyone about!
+Kiss kiss! I'll text you!
+Bye! And remember, you didn't hear it from me!
+Okay, go! But text me the second something happens!
+Ciao, darling! Stay fabulous!
+# farewell stage=friend+
+Bye, bestie! I'll call you tonight, I have a part two.
+Love you! Brunch Sunday, it's non-negotiable!
+Bye, babe! Your secrets are safe with me. Mostly. Totally. Mostly.
+# smalltalk
+So, the guy who owns the waffle place? He's dating the pharmacist at Sutter's. I know!
+Did you hear the mayor's dog bit the mailman? Third time this year.
+Somebody's been leaving anonymous love notes on the North Quad oaks. I have a theory.
+The two professors who share an office? Not speaking. Over a stapler. A stapler!
+I heard the old cinema might reopen. My cousin's friend's landlord said so.
+The new couple at the end of Rosemary? Married six weeks, already arguing about curtains.
+Did you know the barista at Pamlico Coffee is secretly a famous poet? Well, famous online.
+The book club is in shambles. Someone picked a self-help book.
+I saw the Billram mascot without the head on. I can't unsee it.
+Everyone's talking about the new bakery. I'll tell you if it's worth the hype.
+My neighbor's son dropped out to start a band. His mother is devastated. I brought her a casserole.
+I heard the Inn is hosting a celebrity wedding. Don't ask me who. I'm sworn to secrecy. It's not really a celebrity.
+# smalltalk stage=friend+
+Okay, real talk? I know I gossip, but I'd never spill anything about you.
+Sometimes I talk so much because I don't want anyone to notice I'm lonely.
+You're my favorite person in this town, and I know every person in this town.
+I trust you with my secrets. And I have a lot of other people's secrets.
+If anyone ever says anything bad about you, I'll handle it. Socially.
+You're the only one who listens when I'm not gossiping.
+# smalltalk weekend=true
+It's Saturday! Brunch, shopping, and catching up on everyone's drama.
+Weekend! The farmers market is where all the real news happens.
+Sunday! Church, then brunch, then reviewing the week's events.
+# about_self
+I host a podcast. It's about the town. Mostly about people in the town.
+I've lived here my whole life. I know where all the bodies are buried. Figuratively!
+I'm a hairdresser. People tell their hairdresser everything.
+I love people! I just love knowing what they're up to.
+I organize the neighborhood newsletter. It's very popular. And very juicy.
+My mom was the gossip of Toadstool Hill. It's in my blood.
+I'm actually great at keeping secrets. When they're mine.
+# opinion_place
+{place}? Oh, the owner's having an affair. I'm joking! Or am I?
+I love {place}! Best people-watching in Cathedral Mount.
+{place}? Everyone comes here after a breakup. I've seen things.
+{place} is where I heard my best rumor of the year.
+{place} is fine, but the regulars are so dramatic. I love it.
+# compliment_reply
+Oh, stop! No, keep going! You're so sweet!
+Thank you, honey! I'm telling everyone you said that.
+Aww, you're a doll! This is going on my socials.
+You're too kind! And so right!
+That just made my week! Tell me more nice things!
+# insult_reply
+Excuse me? I'll be telling everyone about this.
+Oh, honey. That's going straight into the newsletter.
+Wow. Okay. I know things about you too, you know.
+Rude! I'll pray for you. Loudly. In public.
+That's going to come back to you. Karma and I have a group chat.
+# gift_reply
+For me? You shouldn't have! What is it? Oh, I love it!
+Ohhh, it's gorgeous! I'm telling everyone you got me this!
+You remembered! You're my favorite. Don't tell my other favorites.
+Thank you, darling! I'm wearing this to brunch!
+This is so thoughtful! Where did you get it? I need to know everything.
+# joke
+I'm not a gossip. I'm a news anchor without a station.
+Why did the gossip cross the road? Because she heard there was drama on the other side.
+I never repeat gossip, so listen carefully the first time.
+I'm on a diet. A juice cleanse. Only the juicy stories.
+# ask_favor
+Could you find out if the new guy at the gym is single? For a friend. The friend is me.
+Can you help me set up for my garden party? It's going to be the event of the season.
+Would you come to brunch with me? I need a buffer from my ex-sister-in-law.
+# favor_reply
+You're the best! I owe you a mimosa!
+Thank you, honey! You're a real one!
+I knew I could count on you! You're getting a shout-out in the newsletter!
+# work_talk
+I did seven haircuts today and heard seven life stories.
+My client is getting divorced. I can't say who. It's the dentist.
+Work was great! The salon is basically a confessional with blow dryers.
+My boss is dating the tattoo artist. Nobody knows. Except me. And now you.
+# school_talk
+I'm taking a communications class. I'm a natural.
+My professor is dating a student. Allegedly! Allegedly.
+The sorority drama this semester is unreal.
+# hostile stage=dislike-
+Oh, it's you. I've heard things about you.
+Don't talk to me. I'm still telling everyone about last time.
+You're not welcome at brunch.
+I'd tell you what everyone's saying about you, but it's not nice.
+I'm unfollowing you. In real life.
+Bye, {player}. And I mean that in the meanest possible way.
+# flirt_reply romance=none
+Oh, honey! Flattered, but we're friends! Friends who gossip!
+Ha! You're cute, but I'm not dating anyone I might want to talk about.
+Aww! No, sweetie. But I know someone who might be interested!
+# flirt_reply romance=crush
+Wait, are you flirting with me? Oh my gosh. I'm not telling anyone. Yet.
+Oh! Well! This is the best news I've heard all week!
+I've been waiting for you to say something like that!
+You're making me blush! And I never blush!
+# ask_out_yes
+Yes! Oh, I can't wait to tell everyone! I mean, nobody! Yes!
+A date? Yes! I know the perfect place, the owner owes me a secret.
+# ask_out_no
+Oh, honey, I'm so flattered! But I don't feel that way. We're still besties, right?
+That's sweet, but no. Don't worry, I won't tell anyone. Probably.
+
+== dating
+# date_greet
+There you are! You look stunning! Everyone's going to see us together!
+Hi, babe! I told the hostess we're a couple. She was jealous.
+You came! I've already told three people we're on a date.
+Hey, gorgeous! I picked the table by the window. So people can see us.
+Hiii! I wore my best outfit. Do you love it? You love it.
+Hello, darling! I've been looking forward to this all week!
+# flirt
+You're the juiciest thing in my life right now.
+I don't even want to talk about anyone else when I'm with you. That's huge.
+You're my favorite topic of conversation.
+Everyone's going to be so jealous of me.
+You're my best-kept secret. Not for long, though.
+I'd give up all the town gossip for you. Well, most of it.
+You make my heart race like breaking news.
+# date_talk
+Okay, tell me everything about you. Every detail.
+So, who were you dating before me? I need to know.
+I've told my mom about you. She already loves you.
+Let's go to the Inn's rooftop. Everyone important goes there.
+I want to know all your secrets. I promise I'll keep them.
+I can't stop smiling. People are going to ask why.
+Do you want to go to the gala next month? I'll introduce you to everyone.
+I love that you actually listen to my stories.
+Let's make a pact to tell each other everything.
+I think we're the town's new it couple.
+You're so different from everyone else here. In the best way.
+I feel like I can be real with you. That's rare for me.
+# compliment
+You have the best taste. In everything. Especially in partners.
+You're so charming. Everyone loves you.
+You look amazing tonight. Everyone's staring.
+You're the most interesting person in town.
+You're a great listener. That's my favorite thing about you.
+# kiss_reply
+Ooh! That's going in my diary!
+Oh my gosh. Okay. That was perfect.
+Everyone saw that! I'm so happy!
+Again! And this time slower!
+# miss_you
+I missed you! I had so much to tell you!
+I saved up all the gossip for you!
+I texted you a hundred times. Did you see them?
+The day was so boring without you!
+# jealous
+Who was that? I need a full report.
+I saw you talking to them. I know about them. Be careful.
+I'm not jealous! I'm informed! There's a difference!
+# date_end
+Tonight was perfect! Text me the second you get home!
+Goodnight, babe! I'll call you tomorrow with the recap!
+I had the best time! Everyone's going to hear about it!
+Goodnight, {player}! Dream about me!
+Same time next week? I'll book the good table!
+# lovers_quarrel
+I can't believe you said that! In public!
+I'm upset, babe. And everyone's going to know it.
+Let's talk about this. Privately. For once.
+I don't want to fight. I want us to be the couple everyone envies.
+# proposal_yes
+YES! Oh my gosh, YES! I have to call everyone!
+I'll marry you! This is the biggest news of the year!
+
+== marriage
+# home_greet time=morning
+Good morning, honey! I already know what everyone's doing today!
+Morning, babe! Coffee's ready, and I have news.
+Good morning! You'll never guess who I saw jogging past our window!
+Morning, love! I was up early reading the neighborhood group chat.
+Good morning, darling! Breakfast and gossip on the patio?
+Hi, sleepyhead! The Hendersons are fighting again. I could hear it.
+Good morning! I made pancakes. And a list of things to tell you.
+Morning, honey! Mrs. Kowalski's daughter is engaged! To a drummer!
+Good morning! You look adorable when you just wake up.
+Morning, babe! I've got brunch reservations at eleven.
+Good morning! I've decided we're hosting a dinner party this weekend.
+Hi, love! I already called my mom and my sister. They say hi.
+# home_greet time=evening
+You're home! Sit down, I have so much to tell you!
+Welcome home, honey! You will not believe the day I had!
+Hi, babe! Dinner's ready, and so is the tea. The gossip kind.
+There you are! I've been dying to talk to you!
+Welcome back, darling! The neighbors got a new car. Lease, I bet.
+Hi, love! I ran into your old boss at the market. She's had work done.
+You're home! Okay, first things first, how was your day? Then mine.
+Welcome home! I invited the Garcias for dinner Friday. You're welcome.
+Hey, babe! I missed you! The house was so quiet. I hated it.
+You're back! Good. I need someone to talk to who isn't the cat.
+# home_greet time=night
+You're home late, honey! Where were you? Who were you with?
+Hi, babe. Long day? I waited up. I have a story.
+It's late! Come to bed, and I'll tell you what happened at book club.
+You're back! I was starting to worry. And imagine scenarios.
+Hi, love. I fell asleep on the couch reading the neighborhood forum.
+There you are! The street was so quiet tonight. Suspiciously quiet.
+Hey, honey. Let me make you some tea. Then I'll tell you everything.
+You're home! I couldn't sleep without debriefing you.
+# goodbye_work
+Have a great day, honey! Bring back stories!
+Bye, babe! Find out if your coworker's still dating that guy!
+Have a good day, darling! Text me if anything juicy happens!
+Bye, love! I'll be at the salon, hearing everything!
+Have fun at work! Don't let anyone talk about you! Unless it's nice!
+Bye, honey! I'll have dinner ready and gossip prepared!
+Have a great day! Wear the blue shirt, people notice!
+Off you go! I love you! Call me at lunch!
+# work_return
+How was work? Tell me everything! Every detail!
+Who said what to who? I need names.
+Did your boss mention the promotion? I have a feeling.
+Is that coworker still being weird? I want the whole saga.
+Was it a good day? You look stressed. Who stressed you?
+Did anything dramatic happen? Please say yes.
+You're home! Okay, spill.
+I'm so proud of you, honey. Even if your office is boring.
+# affection
+I love you more than gossip. And you know how much I love gossip.
+You're my favorite person in the whole town. And I know the whole town.
+Being married to you is the best story I've ever told.
+You're my best secret and my best headline.
+I'm so lucky! Everyone says so. I make sure they say so.
+You're my everything, honey.
+I love how you listen to me ramble.
+You're the only person I never want to gossip about.
+I'd tell the whole world how much I love you. I already have.
+You're my home, babe. My safe place.
+I love you, darling. Truly, madly, publicly.
+You're the best thing that ever happened to me. Front-page news.
+I love waking up next to you. And telling you about my dreams.
+You make me want to be a better person. A slightly more discreet person.
+I'm so proud to be your spouse. I tell everyone.
+You're my favorite topic.
+I love you more than brunch.
+You're my forever plus-one.
+# home_talk
+The neighbors are getting divorced. I'm not supposed to know. I know.
+I organized a block party. Everyone's coming. Even the grumpy guy.
+I heard the house across the street is selling. Overpriced.
+The Hendersons got a new puppy. It's adorable. And loud.
+I joined a new book club. Mostly for the people.
+I've been redecorating. Don't look at the receipts.
+Your mom called. We talked for two hours. About you.
+I started a neighborhood watch. It's mostly a gossip group.
+The mailman told me about the people on Elm. Shocking.
+I'm thinking about hosting a holiday party. A big one.
+I saw the new couple on our street. They look miserable.
+I've been writing a memoir. It's about the town. It's mostly about the town.
+The kids next door are so cute. Their parents, less so.
+I painted the front door red. Everyone's talking about it.
+I reorganized the closet. Found your high school yearbook. Interesting photos.
+The salon's getting a new stylist. She's from the city. Very glamorous.
+I'm planning a surprise party for my sister. Don't tell anyone.
+I've been reading about feng shui. We need to move the couch.
+The book club drama is unbelievable. I'll tell you later. Now. I'll tell you now.
+The neighbor's tree is over our fence. I'll handle it. Diplomatically.
+I bought new throw pillows. Twelve of them.
+I think we should renew our vows. A big ceremony. Everyone invited.
+The church bake sale was a disaster. Someone used salt instead of sugar.
+I heard the old mill is getting turned into condos.
+I've been trying to gossip less. It's not going well.
+I'm so happy with our life, honey. Everyone's jealous.
+# chores
+I did the dishes while on the phone with my sister!
+I vacuumed! And listened to my favorite podcast. The gossip one.
+Could you take out the trash? I'm in the middle of a call.
+I cleaned the whole house! Guests are coming!
+I folded the laundry! While watching my reality show!
+I dusted everything! Found a note from the previous owners!
+Let's clean together! I'll tell you stories!
+I organized the pantry! Very chic now.
+I scrubbed the kitchen! Mrs. Lee says her kitchen isn't this clean!
+I made the bed with the fancy pillows!
+I swept the porch and chatted with three neighbors!
+I washed the windows! Now I can see the street better!
+# money
+We spent a lot on that party. But everyone loved it!
+I made a budget! There's a line for brunch!
+Money's tight. Let's not tell anyone.
+I got a big tip from a client! She's getting divorced!
+We should save for a vacation! Somewhere fancy!
+I found a great sale! I bought everything!
+Let's cut back on eating out. Maybe. Starting next month.
+The neighbors bought a boat. We don't need a boat. Do we?
+We're doing well! Better than the Joneses!
+Let's put some money aside for the holiday party.
+# meal
+Dinner's ready! I made a recipe from my book club!
+I made brunch! Mimosas and eggs benedict!
+Let's go out to eat! Somewhere everyone goes!
+I made a casserole! The one everyone raves about!
+Dinner party Friday! I'm making my famous lasagna!
+I made salad! Very healthy. I'm doing a cleanse.
+Let's have a picnic! In the park, where everyone can see!
+I made cookies! For the neighbors! And us!
+Dinner's on the patio tonight!
+I ordered from the new place! I need to review it!
+# argue
+You told my sister what I said? That was private!
+I feel like you don't listen when I talk!
+I'm not a gossip! I'm a communicator!
+You embarrassed me in front of the neighbors!
+I need you to take my side! Publicly!
+You never want to go to parties with me!
+Please don't tell anyone about this fight!
+I feel like you're keeping secrets from me!
+You don't care about my friends!
+I'm going to call my sister. And vent.
+You know how much I hate being the last to know!
+I just want you to tell me things!
+# makeup
+I'm sorry, honey! Let's make up!
+I didn't mean it! Let's not let the neighbors hear!
+I love you! I'm sorry! Hug it out before the neighbors notice?
+I'm sorry I told everyone. I'll stop. Mostly.
+You're my favorite person, honey. Even when we fight. Especially then, it's dramatic.
+Let's go to brunch and make up!
+I'm sorry. Let's start over. And keep this between us.
+We're good, babe! Officially. I'm updating our status.
+# support
+It's okay, honey. I'm here.
+Tell me everything. I'll listen. I won't tell anyone.
+Whoever hurt you, I'll handle them. Socially.
+You're the strongest person I know, and I know everyone.
+Let's have a quiet night. No gossip. Just us.
+I love you, darling. That's the only headline that matters.
+Whatever it is, we'll get through it together, babe.
+Let me make you some tea and we'll talk.
+You don't have to be okay, honey. I've got you, and I'm not telling a soul.
+I'm proud of you, honey. Always.
+# plans
+Let's go to the gala this weekend! Everyone's going!
+Let's take a trip to the city! Shopping!
+How about a cruise? I hear it's very social!
+Let's host a barbecue! Invite the whole street!
+Let's go to the Founders' Day festival! Everyone's there!
+Let's go to that new restaurant! I need to review it!
+How about a weekend at the Inn? Very romantic!
+Let's take a dance class! Couples only!
+Let's go to my high school reunion! I want to show you off!
+Let's throw the biggest anniversary party!
+# memories
+Remember when we met? I already knew everything about you!
+Remember our first date? Everyone was talking about it!
+Remember our wedding? The whole town came!
+Remember when you proposed? I called everyone in an hour!
+Remember our honeymoon? I sent postcards to everyone!
+I still have the newsletter where I announced our engagement!
+Remember our first dinner party? The Hendersons fought!
+Remember when we danced at the Inn? Everyone watched!
+Remember when I told you all my secrets? You still keep them!
+Remember when we moved in? The neighbors brought cookies! I brought more!
+# anniversary
+Happy anniversary, honey! I told everyone!
+Another year! Let's throw a party!
+I got you something! It's from that boutique everyone loves!
+Happy anniversary, babe! We're still the town's favorite couple!
+I love you more every year! And I tell more people every year!
+Here's to another year of us!
+# tease
+You can't keep a secret. Wait, that's me.
+You never know who anyone is. I have to tell you.
+You fall asleep during my stories.
+You forget everyone's name. I remember for both of us.
+You're so quiet at parties! I love it.
+You never read the group chat!
+You still don't know who the Hendersons are. They live next door!
+You hide when I get on the phone.
+You're secretly a gossip too. I've heard you.
+You always say "I don't care" and then ask for details.
+You wear the same shirt to every party.
+You laugh at my stories. Even the ones you've heard.
+# bedtime
+Goodnight, honey! I'll tell you the rest tomorrow!
+Come to bed! I have one more story!
+Goodnight, babe! You're my favorite!
+Sleep well, darling!
+Goodnight, love! Big day tomorrow! Brunch!
+Goodnight, {player}! I love you!
+Lights out! Phones down! Okay, one more text!
+Sweet dreams, honey!
+Come cuddle! I'll whisper the gossip!
+Goodnight! Don't tell anyone how much I love you! Actually, tell everyone!

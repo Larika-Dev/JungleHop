@@ -1,0 +1,429 @@
+// Ambitious Hustler: entrepreneur, networking, pitches, "synergy", always selling, secretly wants approval.
+== base
+# greet stage=stranger
+Hey! {npc}, founder, CEO, visionary. Here's my card.
+What's up! You look like someone who appreciates opportunity. I'm {npc}.
+Hi! Quick question: have you ever thought about passive income?
+Hey there! I'm {npc}. I'm in the space. Every space, really.
+Nice to meet you! Firm handshake, good eye contact. I like you already.
+Hello! You don't know me yet, but you will. I'm {npc}.
+# greet stage=acquaintance
+{player}! My favorite contact! How's business?
+Hey, {player}! Did you get a chance to look at my deck?
+{player}, buddy! I was just pitching someone and thought of you.
+Yo, {player}! Let's grab coffee. I'll expense it.
+{player}! Perfect timing, I've got a new idea. Ten minutes, tops.
+# greet stage=friend+
+{player}! My right hand! My co-founder in spirit!
+Hey, partner! You're the only one in this town who gets the vision.
+{player}! I just closed a deal and you're the first person I wanted to tell.
+My guy! My business bestie! What's the move today?
+{player}! I put you on my vision board. Next to the yacht.
+There's my number one investor! Emotionally, anyway.
+# greet time=morning
+Morning! I've already answered forty emails and drunk two cold brews.
+Rise and grind! Five a.m. club, baby!
+Good morning! Early bird gets the equity!
+# greet time=evening
+Evening! Just finished a networking mixer at the Inn. Fourteen new contacts.
+Hey! Long day of hustling. Worth it.
+Evening! Golden hour is great for brand photos, just saying.
+# greet time=night
+Still up? Same. Sleep is for people without dreams.
+Late night grind! I'm drafting a business plan for a business plan app.
+Night owl! The best ideas come after midnight.
+# farewell
+Gotta run, I've got a call with Singapore. Well, a guy in Carrburg. Same energy.
+Later! Let's circle back!
+Bye! Follow me on everything!
+Ciao! Keep hustling!
+Alright, I'm off! Time is money!
+See you! Remember, you miss every shot you don't take!
+# farewell stage=friend+
+Later, partner! Text me if you hear any good leads!
+Bye, {player}! Seriously, thanks for believing in me.
+Catch you on the flip side! Lunch is on me next time. For real this time.
+# smalltalk
+I'm launching a food truck that only sells artisanal toast. Thoughts?
+I read forty books on leadership this year. Well, the summaries.
+The startup incubator above Hamilton Records is accepting applications. I applied twice.
+Did you know the Mount's GDP grew three percent last year? I'm responsible for maybe point one of that.
+I've got five side hustles right now. Dog walking, tutoring, reselling sneakers, and two I can't talk about.
+Networking tip: always remember people's names. You're... {player}! See?
+I'm thinking of starting a podcast. About starting podcasts.
+Coffee is my love language. Also wire transfers.
+I just bought a domain name. I don't know what for yet.
+There's a market gap in this town for late-night smoothies. I'm on it.
+I wake up at four, journal, cold plunge, and then I'm unstoppable until noon.
+Have you thought about your personal brand? Everyone has one. Even you.
+# smalltalk stage=friend+
+Honestly? Sometimes I'm scared none of this will work.
+You're the only person who doesn't want something from me. That's rare.
+My dad never thought I'd make it. I'm going to prove him wrong.
+I'd hire you in a heartbeat. Not as an employee. As a partner.
+You keep me grounded. Every hustler needs someone like that.
+If I ever make it big, I'm buying you a house. I'm serious.
+# smalltalk weekend=true
+Weekends are just weekdays without meetings. More time to build!
+Saturday! I'm hitting the farmers market to research small vendors.
+It's the weekend, which means my competition is resting. Not me.
+# about_self
+I sold candy out of my locker in middle school. Made four hundred bucks.
+I dropped out of business school because they were teaching me how to work for someone else.
+I've failed six businesses. Number seven is going to be the one.
+I want to own a building on Hamilton Street someday. My name on it.
+My idol is a guy who started with one hot dog cart and ended up with an empire.
+I've never taken a vacation. Vacations are for people who've already won.
+Behind the hustle, I just want my family to be proud of me.
+# opinion_place
+{place}? Great foot traffic. Terrible branding. I could fix that.
+I'd invest in {place}. If I had money. Which I will.
+{place} has potential. Untapped potential.
+Have you seen the margins at {place}? Neither have I, but I bet they're great.
+{place} needs a loyalty program. I've got a pitch ready.
+# compliment_reply
+Thanks! I put a lot of work into this image.
+I appreciate that! Feedback is a gift.
+You've got a great eye. Want a job?
+That's what I'm talking about! Positive vibes increase productivity!
+Thanks, {player}! I'll put that on my testimonials page.
+# insult_reply
+Haters are just fans in denial.
+Noted. I'll use that as fuel for my next quarter.
+Interesting perspective. Wrong, but interesting.
+That's fine. Success is the best revenge.
+Wow. Okay. I'm blocking you. Mentally.
+# gift_reply
+Whoa, this is a great gift! Very high perceived value!
+Thank you! I'm going to post about this. Tagging you.
+That's thoughtful. I'll remember this when I'm rich.
+No way! You're a real one, {player}.
+I love it! You've got good taste. Want to go into retail?
+# joke
+Why did the entrepreneur bring a ladder to work? To climb the corporate ladder. Literally.
+My wallet is like an onion. Opening it makes me cry.
+I'm reading a book on reverse psychology. Don't buy it.
+What's the best way to make a small fortune? Start with a large one and launch a startup.
+# ask_favor
+Can you share my post? The algorithm needs a boost.
+Would you be a beta tester for my app? It's a to-do list that yells at you.
+Could you pretend to be a customer at my pop-up? Just for the photos.
+# favor_reply
+You're a legend! I'm giving you founding member status!
+Thank you! Seriously, you're on the board of advisors now.
+I owe you big. Like, equity-level big.
+# work_talk
+I'm a barista by day, entrepreneur by night. And by early morning.
+Closed a deal with a local bakery! They're letting me sell their muffins online!
+My boss doesn't know about my side hustles. Don't tell him.
+Work is just a stepping stone. A very boring stepping stone.
+# school_talk
+I'm taking a marketing class. I already know everything, but the credential helps.
+My business professor said my plan was ambitious. That's a compliment.
+I'm skipping class to meet a potential investor. Worth it.
+# hostile stage=dislike-
+I don't have time for you. Literally. My schedule's packed.
+You're bad for business, {player}.
+I've cut people out for less.
+Not interested. In anything you're selling.
+Take me off your contact list.
+I'm surrounding myself with winners. Bye.
+# flirt_reply romance=none
+Ha! Flattered, but I'm married to my business right now.
+Interesting proposal. Let me get back to you. Never.
+I appreciate the interest! But I keep my personal and professional separate.
+# flirt_reply romance=crush
+Wow. I didn't see that coming. And I see everything coming.
+Okay, you've got my attention. And I'm a very busy person.
+That's the best pitch I've heard all year.
+I'm blushing. That's never happened in a negotiation.
+# ask_out_yes
+A date? Absolutely. I'll clear my calendar. Well, move some things.
+Yes! I know the perfect place. The owner owes me a favor.
+# ask_out_no
+I'm flattered, but I can't afford distractions right now. Rain check?
+That's sweet. But I'm going to pass. Strictly business between us.
+
+== dating
+# date_greet
+Hey, you! I cancelled two meetings for this. You're worth it.
+There you are! You look amazing. Very high-end.
+Hi! I made reservations at the best place in town. Took some networking.
+Hey, babe! Phone's on silent. Mostly. Okay, vibrate.
+You made it! This is the highlight of my quarter.
+Hey, gorgeous! I put this date in my calendar in bold.
+# flirt
+You're the best investment I've ever made. Emotionally.
+I'd give up all my side hustles for you. Maybe not the sneaker one.
+You're my top priority. Above my inbox.
+Every time I see you, my stock goes up.
+You're the only thing I want more than success.
+You're the dream. I'm building the empire for you.
+I've never wanted to take a day off until I met you.
+# date_talk
+Tell me your five-year plan. I want to make sure we're aligned.
+I've never told anyone this, but I'm terrified of failing.
+What would you do with a million dollars? I've got a list for mine.
+I booked us a tasting menu. Fourteen courses. Very exclusive.
+Let's go to the rooftop at Top of the Mount. The view's worth it.
+You make me want to slow down. A little.
+I think we'd make an amazing team. In business and in life.
+Can I be honest? I sometimes forget to have fun. You remind me.
+I turned my phone off. Actually off. That's how much I like you.
+What's your dream? Not job. Dream.
+I love how you challenge me. Nobody challenges me.
+I'm already planning our future. Is that too fast?
+# compliment
+You're so smart. Like, boardroom smart.
+You've got great instincts. I trust them.
+You're beautiful. And you've got a great work ethic.
+You make everyone around you better. That's leadership.
+You're the most genuine person I know.
+# kiss_reply
+Whoa. That's a closing deal if I've ever seen one.
+That was amazing. Best ROI of my life.
+I just forgot about every email I have. That's a first.
+Okay, that's going in my journal.
+# miss_you
+I missed you. I checked my phone more than my bank app.
+I couldn't focus on my pitch today. Kept thinking about you.
+I need you on my calendar more often.
+I closed a deal and wanted to call you first.
+# jealous
+Who was that? Are they a competitor? In business or for you?
+I don't like sharing. My market share or you.
+I trust you. I just need to know you're committed to this partnership.
+# date_end
+Tonight was a big win. Let's schedule a follow-up.
+Goodnight! I'll text you a recap. Kidding. Mostly.
+Thanks for tonight. You make the grind worth it.
+I'm going to sleep happy. Then wake up at four.
+Same time next week? I'll block it out.
+# lovers_quarrel
+I hear you. Let's find a solution that works for both of us.
+You're right. I've been prioritizing work. I'm sorry.
+I'm frustrated, but I'm not giving up on us.
+Let's not make this a negotiation. Let's just talk.
+# proposal_yes
+Yes! This is the biggest merger of my life!
+I'll marry you! Best deal I'll ever close. Yes!
+
+== marriage
+# home_greet time=morning
+Morning, babe! I've already been up for two hours, but I waited to have coffee with you.
+Good morning, partner! Big day today. For both of us.
+Rise and grind, love! I made you breakfast. Avocado toast.
+Morning! I meditated, journaled, and made a smoothie. Your turn!
+Good morning! I've got a pitch at ten. Wish me luck.
+Morning, gorgeous! Let's make today count.
+Hey, love. I'm leaving my phone in the kitchen for ten minutes. All yours.
+Good morning! I read the financial news. We're doing great.
+Morning! I put your coffee in a thermos. You're welcome.
+Good morning, babe. I dreamed about our future house. It had a pool.
+Morning! I signed us up for a sunrise yoga class. Too late to back out.
+Good morning! Let's go over the week's goals. Kidding. Unless?
+# home_greet time=evening
+Welcome home, love! How'd your day go? Tell me everything.
+There's my partner! I closed a deal today. We're celebrating.
+Hey, babe! I ordered takeout from that place you like.
+You're home! I put my laptop away. Officially off the clock.
+Welcome home! Let's have a glass of wine and decompress.
+Hey, love. Long day? Mine too. Let's just be.
+There you are! I've been waiting to tell you about my new idea.
+Welcome home! I booked us a massage for Saturday.
+Hey, gorgeous. Let's not talk about work tonight. Okay, maybe five minutes.
+You're home! The house feels like headquarters again.
+# home_greet time=night
+Hey, you're home late. Me too. Let's get some sleep.
+Long day, babe? I left a plate in the fridge.
+It's late, love. Come to bed. I put my phone on airplane mode.
+You're home. I was drafting an email but I'll stop. For you.
+Hey. You must be exhausted. Let me rub your shoulders.
+Late night? We're both grinders. Let's rest.
+There you are. I kept the light on. And the coffee pot ready for tomorrow.
+Hey, babe. Today was a lot. Let's just cuddle.
+# goodbye_work
+Go crush it, babe! You're the best in the business!
+Bye, love! Network with at least three people today!
+Have a great day! Remember your elevator pitch!
+Off you go! Make that money!
+Bye, partner! Text me your wins!
+Go get 'em! You're unstoppable!
+Have a great day, {player}! Chase those goals!
+Kiss for luck! Now go close something!
+# work_return
+How'd it go? Any big wins?
+Did your boss notice your work? They should promote you.
+Tell me everything. I want the full report.
+You look tired. Was it a grind? Let's unwind.
+Did you meet anyone useful? I'm always looking for connections.
+Proud of you, love. You work so hard.
+Did you ask for that raise? You deserve it.
+Rough day? Let's order in and forget about it.
+# affection
+You're my best decision. Ever.
+I love you more than my business. And that's saying a lot.
+You're my partner in everything.
+I couldn't do any of this without you.
+You're the reason I work so hard. For us.
+I love you. I'm going to make sure you have everything.
+You keep me human, {player}.
+You're my favorite person. My number one.
+I'd trade every deal for one more day with you.
+You believe in me. That's everything.
+You're my safe harbor. In a world of risk.
+I'm the luckiest person alive. No, really, I've done the math.
+I love that you don't care about money. It keeps me honest.
+You're the best thing I ever built. Well, we built it together.
+I love you more than equity. And I really love equity.
+You make me want to slow down and enjoy it all.
+I'm so proud to call you my spouse.
+I'd go broke for you. Don't let me, though.
+# home_talk
+I'm thinking about starting a business from home. A real one this time.
+I set up a home office in the spare room. It's very motivational.
+I read that successful people make their bed every morning. I've started.
+I bought a standing desk. I've been standing for nine hours. My feet hurt.
+I'm thinking about getting into real estate. We could flip houses!
+I made a vision board for our family. Want to see?
+I joined the neighborhood association. Leadership opportunity.
+I've been listening to a podcast about generational wealth.
+I'm thinking about selling handmade candles online. Very trendy.
+I organized the garage into a mini warehouse. For inventory.
+The neighbors want me to help with their small business. I said yes, for a fee.
+I made a spreadsheet for our groceries. We're saving three percent.
+I read that couples who set goals together stay together. Let's set goals.
+I'm learning a new language. Mandarin. For business.
+I'm thinking about investing in crypto. Just a little. Okay, a lot. Kidding.
+I found a great deal on a lawn mower. Bought two. Reselling one.
+I've been thinking about what kind of legacy we'll leave.
+I hung my first dollar bill on the wall. Framed it.
+The house looks great. We should get it appraised.
+I'm thinking about hosting a networking dinner. Here. Next Saturday.
+I've been trying to take one day off a week. It's hard. But I'm trying.
+I signed us up for a financial literacy class. Couples' edition.
+I'm proud of what we've built. This house. This life.
+I installed a smart thermostat. It saves us twelve dollars a month!
+I've been reading about minimalism. We should declutter. And sell the clutter.
+I want us to own a cabin someday. With Wi-Fi. For emergencies.
+# chores
+I hired someone to clean the gutters. Delegation is key.
+I did the dishes while listening to an audiobook. Multitasking!
+I optimized our laundry routine. It's twenty minutes faster now.
+Could you take the trash out? I've got a call in five.
+I mowed the lawn. Thought of three business ideas while doing it.
+I organized the pantry by category and expiration date.
+I made a chore schedule. It's color-coded. With incentives.
+I vacuumed. It's surprisingly meditative.
+I cleaned the whole kitchen during a conference call. On mute.
+I fixed the sink myself. Saved us a plumber fee.
+Let's outsource the deep clean. Our time is worth more.
+I washed the car. Got some brand photos while I was at it.
+# money
+I made a budget. We're on track for our five-year goal.
+I invested a little in an index fund. Slow and steady.
+We should talk about our retirement plan.
+I got a bonus! Let's put half in savings and half into something fun.
+I'm thinking about opening a high-yield savings account.
+We're doing great financially. I checked the numbers this morning.
+Let's not buy anything we don't need this month.
+I sold some of my old sneakers. Made three hundred bucks!
+I want us to be debt-free in two years. I've got a plan.
+Money is a tool. Let's use it to build the life we want.
+# meal
+Dinner's ready! I followed a chef's recipe exactly. Five stars.
+I ordered from that new place. Supporting local business!
+Breakfast is a power smoothie. Brain fuel for the day.
+I made salmon. Omega-3s for focus.
+Let's do a fancy dinner at home. I bought the good wine.
+I made meal prep containers for the week. All labeled.
+I tried making sushi. It's harder than it looks.
+Let's grab tacos. I know the owner. We get a discount.
+I made pasta from scratch. Very artisanal.
+Dinner's on me tonight. Literally, I'm cooking.
+# argue
+You said you'd come to my launch event. You didn't come.
+I feel like you don't take my business seriously.
+Can we not talk about money right now? I'm stressed.
+You spent how much? We had a budget!
+I'm working this hard for us. For our future.
+I need you to support me. Not question everything.
+I know I've been working too much. But I'm doing it for us.
+Please don't call my business a hobby.
+I'm not being greedy. I'm being ambitious.
+You never want to talk about our goals.
+I can't keep doing everything alone.
+I just want you to be proud of me.
+# makeup
+I'm sorry, love. I got caught up in work again.
+You're more important than any deal. I mean that.
+Let's take a day off together. No phones.
+I'm sorry I snapped. The stress got to me.
+You're my partner. Partners work things out.
+Let's not let business come between us. Ever.
+I'll do better. I'll schedule time for us. Real time.
+I love you. More than anything I could ever build.
+# support
+Hey, it's okay. Setbacks are just setups for comebacks.
+You're going to get through this. I believe in you.
+Let's make a plan. Together. Step by step.
+You don't have to be productive today. Just rest.
+I'm here, love. No meetings, no calls. Just you.
+Every successful person has bad days. You're not alone.
+Let me take care of things tonight.
+Whatever happens, we're a team.
+You're stronger than any challenge.
+I've got your back. Always.
+# plans
+Let's take a real vacation this year. Somewhere without Wi-Fi.
+I want to go to that business conference in the city. Come with me?
+How about a weekend at a cabin? Total unplug.
+Let's go to the farmers market and support local vendors.
+I want to take you to a fancy dinner. Black-tie fancy.
+Let's go on a cruise. I hear they have great networking.
+How about a road trip? I'll plan the whole thing.
+Let's go to the beach and do absolutely nothing. I'll try.
+Let's take a cooking class together. Couples' team building.
+I want to buy us a boat someday. A small one. To start.
+# memories
+Remember when we met? I gave you my business card. You laughed at it.
+Remember our first date? I took a work call. You never let me forget it.
+Remember when my first business failed? You bought me ice cream.
+I still have the first dollar we made together. From that yard sale.
+Remember our wedding? I didn't check my phone once.
+Remember when we were broke and ate ramen every night? We were happy.
+Remember the night we stayed up planning our future on a napkin?
+Remember when I almost moved to the city for a job, and you said stay?
+I remember the first time you said you believed in me.
+Remember our honeymoon? I didn't work. Not once. Okay, once.
+# anniversary
+Happy anniversary, love! Best partnership I've ever been in.
+Another year! Our growth is exponential.
+I got you something. It's an investment. In us.
+Happy anniversary! I cleared my whole calendar for you.
+Here's to another year of building our empire. Together.
+I love you more every quarter. Every year. Every day.
+# tease
+You put your phone down when I talk. I'm still learning that.
+You think "hustle" is a dance. I love it.
+You've never once read the terms and conditions.
+You think I work too much. You might be right. Don't tell anyone.
+You laugh at my business cards. Still.
+You bought a lottery ticket. That's not a financial strategy.
+You fall asleep during my pitch practice.
+You spend money like it grows on trees. It doesn't. I checked.
+You call my vision board a collage.
+You hide my laptop on weekends. I always find it.
+You're the only person who can make me take a day off.
+You think networking is just making friends. Actually, you might be right.
+# bedtime
+Goodnight, love. Phone's off. I promise.
+Let's go to bed. Big day tomorrow. Every day's a big day.
+Goodnight, partner. We crushed it today.
+Sleep well, babe. I'll wake you up with coffee.
+Let's go to bed early. Sleep is a productivity hack.
+Goodnight, {player}. You're my greatest asset.
+Lights out. Tomorrow we hustle.
+Goodnight. I love you. More than my five-year plan.
+Come to bed. I'll stop working. Right after this email. Okay, now.
+Sweet dreams. Dream big.

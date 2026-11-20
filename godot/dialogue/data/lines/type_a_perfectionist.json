@@ -1,0 +1,4076 @@
+{
+ "id": "type_a_perfectionist",
+ "lines": [
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello. {npc}. I have four minutes before my next commitment.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "type_a_perfectionist.base.001"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi! You're new. I'm {npc}. Welcome. There's a checklist for that.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "type_a_perfectionist.base.002"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good day. I'm {npc}. Your collar's slightly crooked. Sorry. Hi.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "type_a_perfectionist.base.003"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello! I'm {npc}. I run three student organizations and a very tight schedule.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "type_a_perfectionist.base.004"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi there. Nice to meet you. I'll add you to my contacts. Alphabetically.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "type_a_perfectionist.base.005"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Greetings. I'm {npc}. Punctual, prepared, and pleased to meet you.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "type_a_perfectionist.base.006"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! Right on time. I like that.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "type_a_perfectionist.base.007"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi, {player}. I penciled you in for a chat. Pen, actually. Commitment.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "type_a_perfectionist.base.008"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! Did you get the reminder I sent? And the follow-up?",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "type_a_perfectionist.base.009"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh, good, {player}. I need a second opinion on my color-coding system.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "type_a_perfectionist.base.010"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello again, {player}. You're becoming a reliable presence. High praise.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "type_a_perfectionist.base.011"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! You're the only unscheduled part of my day I look forward to.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "type_a_perfectionist.base.012"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi! I made you a planner. It's already filled out for the semester.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "type_a_perfectionist.base.013"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! I color-coded our hangouts. You're lavender.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "type_a_perfectionist.base.014"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "There you are! I have exactly twenty minutes and I'm spending all of them with you.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "type_a_perfectionist.base.015"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! I finished my to-do list early just to see you.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "type_a_perfectionist.base.016"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "My favorite person! Sit. I brought snacks. Portioned.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "type_a_perfectionist.base.017"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good morning! I've been up since five. Workout, journaling, and inbox zero.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "type_a_perfectionist.base.018"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Morning! The early bird gets the worm and the good library carrel.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "type_a_perfectionist.base.019"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good morning. Day planned, coffee measured, ready.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "type_a_perfectionist.base.020"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good evening! Daily review time. How did your goals go?",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "type_a_perfectionist.base.021"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Evening! I just finished my last task. Well, the last scheduled one.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "type_a_perfectionist.base.022"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi! Evenings are for meal prep and next-day planning.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "type_a_perfectionist.base.023"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "It's late. I should be asleep. Eight hours is optimal.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "type_a_perfectionist.base.024"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello. I'm only awake because my study plan ran fifteen minutes over.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "type_a_perfectionist.base.025"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Night already? I'm behind schedule.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "type_a_perfectionist.base.026"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Goodbye! Stay on track!",
+   "cond": {},
+   "id": "type_a_perfectionist.base.027"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "See you! I'll send you a calendar invite.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.028"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye! Don't forget to hydrate. Two liters.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.029"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Okay, I have to go. I'm two minutes behind.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.030"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Goodbye. That conversation was very productive.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.031"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye! Remember, done is better than perfect. I don't believe that, but people say it.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.032"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye, {player}! Text me when you're home. I'll check it off.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "type_a_perfectionist.base.033"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "See you Thursday at 4:15! Exactly 4:15!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "type_a_perfectionist.base.034"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye! I'll miss you. I scheduled that feeling for later.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "type_a_perfectionist.base.035"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I reorganized my bookshelf by publication date. It's so calming.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.036"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Did you know the library's study rooms book out three weeks in advance? I have them all booked.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.037"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I have a planner for my planners.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.038"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The coffee shop changed their opening time by fifteen minutes and nobody told me.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.039"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I color-coded my closet. It took a weekend. Worth it.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.040"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I'm running for student body treasurer. My spreadsheet is very persuasive.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.041"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I meal-prepped twenty-one meals this Sunday. Labeled. With macros.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.042"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Someone left the library's returns cart unsorted. I sorted it. I don't work there.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.043"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I set seven alarms every morning. Staggered.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.044"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Did you see they're repainting the crosswalks? The lines are uneven. I emailed the city.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.045"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I'm reading a book about productivity. I'm on schedule to finish by Friday.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.046"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I tried relaxing. I scheduled it for an hour. It took forty minutes. Efficient!",
+   "cond": {},
+   "id": "type_a_perfectionist.base.047"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Can I tell you something? I'm terrified of failing. Like, all the time.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "type_a_perfectionist.base.048"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You're the only one who doesn't make me feel like I have to be perfect.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "type_a_perfectionist.base.049"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I scheduled our friendship anniversary. Is that weird? It's in my calendar.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "type_a_perfectionist.base.050"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I'd drop a task for you. Any task. Even a color-coded one.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "type_a_perfectionist.base.051"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Sometimes I wish I could be messy like other people. You make it seem okay.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "type_a_perfectionist.base.052"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You're on my gratitude list every day. Top three.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "type_a_perfectionist.base.053"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Weekend! I've scheduled exactly two hours of fun.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "type_a_perfectionist.base.054"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Saturday. Deep cleaning, then studying, then reviewing my week.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "type_a_perfectionist.base.055"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Sunday is planning day. The most important day.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "type_a_perfectionist.base.056"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I've had a planner since I was seven.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.057"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I want to be a surgeon. Precision is everything.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.058"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I graduated high school as valedictorian. Second place still haunts me in sixth grade.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.059"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I don't like surprises. Unless they're planned.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.060"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I run marathons. I make a pace chart for each mile.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.061"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "My parents expected a lot. I expect more of myself.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.062"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I relax by organizing things. Is that relaxing? It is for me.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.063"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? The signage is inconsistent. It bothers me.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.064"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "I like {place}. Efficient layout.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.065"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place} could be thirty percent more organized.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.066"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}'s fine. They always open on time. That matters.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.067"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? The chairs aren't aligned. I'm trying not to look.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.068"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Thank you! I worked very hard on that.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.069"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "That's kind. I'll add it to my wins log.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.070"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Really? Thank you. I'm my own harshest critic.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.071"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Thanks! Feedback is useful. Especially positive feedback.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.072"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Oh! Thank you. I wasn't sure it was good enough.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.073"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Noted. I disagree, and I have data.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.074"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "That's unproductive.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.075"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "I don't have time for negativity. It's not on my schedule.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.076"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Interesting. Incorrect, but interesting.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.077"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "That's hurtful. I'll process it later. In my journal.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.078"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Oh! A gift! I'll find the perfect place for it.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.079"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Thank you! This is very thoughtful. And useful!",
+   "cond": {},
+   "id": "type_a_perfectionist.base.080"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "You got me a new planner? You understand me.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.081"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "This is perfect. Did you wrap it yourself? The corners are so crisp.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.082"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Thank you, {player}! I'll write you a proper thank-you note.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.083"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "I'd tell you a joke about procrastination, but I'll do it later. Just kidding. I never procrastinate.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.084"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "Why did the perfectionist cross the road? To fix the crooked sign on the other side.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.085"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "My favorite exercise is a cross between a lunge and a calendar. A lunge-dar.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.086"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "I'm not a control freak. I just know the right way to do everything.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.087"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Could you proofread my essay? I've read it twenty times. Fresh eyes.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.088"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Would you help me organize the bake sale? You'd be in charge of the lemon squares.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.089"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Can you hold me accountable? Text me at seven if I haven't gone to bed.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.090"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Thank you! You're very reliable. That's my highest compliment.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.091"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Perfect. That's checked off. Thank you!",
+   "cond": {},
+   "id": "type_a_perfectionist.base.092"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "You're amazing. I'll put you down as a reference.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.093"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I reorganized the entire filing system at work. They didn't ask.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.094"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I'm interning at the hospital. Seventy hours a week. Love it.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.095"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "My boss said I'm \"intense\". I said thank you.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.096"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I made a process document for the coffee machine.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.097"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "I have a 4.0. I'm trying to maintain it. And make it a 4.1.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.098"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "I made flashcards for every lecture. Color-coded by unit.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.099"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "Group projects are a nightmare. I end up doing everything. Correctly.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.100"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I don't have time for you.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "type_a_perfectionist.base.101"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "You're disorganized and unpleasant.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "type_a_perfectionist.base.102"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I've removed you from my contacts.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "type_a_perfectionist.base.103"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Please stop wasting my time.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "type_a_perfectionist.base.104"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "You're a disruption to my schedule.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "type_a_perfectionist.base.105"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "We're not friends, {player}.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "type_a_perfectionist.base.106"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Oh! I'm flattered, but I don't have room in my schedule for romance.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "type_a_perfectionist.base.107"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "That's sweet. But I think we work better as colleagues. Friends!",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "type_a_perfectionist.base.108"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Hmm. I'll have to decline. Respectfully.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "type_a_perfectionist.base.109"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Oh. Oh! That wasn't in my plans. I like it.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "type_a_perfectionist.base.110"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "You're making me lose my train of thought. That never happens.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "type_a_perfectionist.base.111"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Are you flirting? I'm blushing. That's not efficient.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "type_a_perfectionist.base.112"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "I've made a pro-con list about you. It's all pros.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "type_a_perfectionist.base.113"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "Yes! When? I'll clear my schedule. Well, rearrange it.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.114"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "A date? Yes. Let me find a time. I'll find a time.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.115"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "I'm sorry, I don't feel that way. I value our friendship, though.",
+   "cond": {},
+   "id": "type_a_perfectionist.base.116"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "That's kind of you, but no. Friends?",
+   "cond": {},
+   "id": "type_a_perfectionist.base.117"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hi! I'm exactly on time. You're two minutes late. It's fine. Hi!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.001"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "You came! I made a plan for our date. Don't worry, there's flexibility.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.002"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hello! You look lovely. Very put together.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.003"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hi! I've been looking forward to this all week. It was highlighted.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.004"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "There you are! I made reservations for 7:30. We have nine minutes.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.005"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hello, you! I left my planner at home. For you. That's huge.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.006"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're the only thing in my life I don't want to plan.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.007"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I'd let you mess up my schedule.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.008"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're perfect. And I don't say that about anything.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.009"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You make me want to relax. That's a big deal.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.010"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I scheduled extra time to think about you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.011"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're my favorite unplanned thing.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.012"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I like you more than a freshly sharpened pencil.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.013"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I planned three activities but we can do whichever you want. Or all three.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.014"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Tell me about your goals. Short-term and long-term.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.015"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I've never been on a date that went off-script. This is going off-script. I like it.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.016"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I made us a picnic. Everything's in labeled containers.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.017"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Do you want to go to the art museum? I know the optimal route.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.018"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I don't usually let people see me imperfect. You make it easy.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.019"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "What's your five-year plan? Am I in it? Too soon?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.020"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's walk without a destination. That's so scary. Let's do it.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.021"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I love how calm you are. It balances me.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.022"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I think we'd make a very efficient team.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.023"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Can I be honest? I'm nervous. I rehearsed this.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.024"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I'm having so much fun. I forgot to check the time.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.025"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're so organized. I find that very attractive.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.026"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're smart. Really smart.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.027"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You look nice. Very well-dressed.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.028"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're patient with me. That's rare.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.029"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're reliable. That's the most attractive quality.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.030"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Oh. That was perfect. Ten out of ten.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.031"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "I didn't plan that. It was better than any plan.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.032"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Okay. I'm going to need a minute to process. Again?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.033"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "My heart rate is elevated. In a good way.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.034"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I missed you. My schedule felt empty.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.035"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I kept checking my phone. Unproductively.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.036"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I wrote you a note. It's three pages. With headings.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.037"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I counted the days. Four. And a half.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.038"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "Who was that? I'm asking for data purposes.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.039"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I'm not jealous. I'm analyzing.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.040"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I just want to be your top priority.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.041"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Tonight was perfect. I'll write about it in my journal.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.042"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight! Text me when you're home safe.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.043"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Same time next week? I'll put it in my calendar. Exactly.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.044"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Thank you. That was the best evening I've had in a long time.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.045"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight, {player}. I'm not even going to plan tomorrow. Okay, a little.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.046"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I need us to discuss this. Calmly. With an agenda.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.047"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I'm upset. That hurt.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.048"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I don't want to fight. I want a solution.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.049"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "Let's not let this escalate. I hate things being out of order.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.050"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "Yes! I didn't plan this! It's perfect anyway!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.051"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "I'll marry you! I've already started a spreadsheet!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.dating.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! I've already made the bed, coffee, and a schedule for both of us.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.001"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, love! Breakfast is ready. It's 7:02. Perfect timing.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.002"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! Your clothes are laid out. I picked the blue shirt. It's Tuesday.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.003"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning! I've been up since five. The house is spotless.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.004"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, sweetheart! Here's your coffee. Two sugars, stirred clockwise.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.005"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning! Today's agenda is on the fridge.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.006"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! I sorted the mail. Bills, personal, and recycling.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.007"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, love! You slept seven hours and forty minutes. Almost optimal.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.008"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! I made overnight oats. Labeled by day.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.009"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning! Did you set your alarm? I set a backup.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.010"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, darling. Let's have a productive day together.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.011"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning! I love you. I've already planned dinner.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.012"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home! Dinner's at 6:30. It's 6:28.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.013"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, love! I organized the pantry today. Come see.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.014"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home! I made a list of things we need to discuss. It's short. Ish.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.015"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome back! Shoes on the rack, please. Thank you. I love you.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.016"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, sweetheart! How was your day? Did you complete your tasks?",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.017"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home! The house is clean, dinner's ready, and I missed you.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.018"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home! I scheduled us a relaxing evening. Seven to nine.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.019"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, love! I color-coded the family calendar. You're lavender.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.020"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are! Right on time. I love that about you.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.021"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home, darling! Let's do our evening debrief.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.022"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home late. I adjusted the schedule. It's fine. It's fine.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.023"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, love. It's late. Let's get you to bed. Eight hours.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.024"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're back! I kept dinner warm at exactly 165 degrees.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.025"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "It's late, sweetheart. Did you eat? Proper food?",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.026"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi. I waited up. I reorganized the spice rack to pass the time.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.027"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home. Good. I can finally stop checking the clock.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.028"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Late night? Let's skip the debrief. Just this once.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.029"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are. I laid out your pajamas.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.030"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a great day! Your lunch is in the fridge. Labeled.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.031"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye, love! Don't forget your 2 PM meeting!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.032"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a productive day!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.033"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye! Keys, wallet, phone, badge? Good.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.034"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Go crush your goals!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.035"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a great day, sweetheart! I'll text you a reminder at noon.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.036"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye! Remember to take breaks. Five minutes every hour.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.037"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "I love you! You're going to be perfect today.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.038"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "How was your day? Did you complete everything?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.039"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Tell me about it. Wins first, then challenges.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.040"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You look tired. Was it inefficient?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.041"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Did your boss appreciate your work? They should.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.042"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Did you eat lunch? At a reasonable time?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.043"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "How did the presentation go? I knew you'd nail it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.044"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Rough day? Let's make tomorrow better. I'll help you plan.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.045"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "I'm proud of you, love. You work so hard.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.046"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you. More than my planner.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.047"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my favorite part of every day. I scheduled it that way.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.048"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Being married to you is the best decision I ever made. I made a pro-con list.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.049"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're perfect. I don't say that lightly.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.050"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make me want to relax. Sometimes I do.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.051"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you more than a clean house.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my partner in everything. Co-signer on my whole life.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.053"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love how you never panic. It's like a reset button for me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.054"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're the only thing I'd never change.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.055"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'm so lucky to have you, sweetheart.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.056"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make my life feel organized and full.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.057"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you exactly as you are. Even the mess.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.058"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my top priority. Always.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.059"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'd rearrange my whole life for you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.060"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my favorite person to plan with.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.061"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you more every day. I've tracked it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.062"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make me a better person. Less rigid.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.063"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Thank you for loving me, even when I'm a lot.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.064"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I reorganized the garage. Everything has a label.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.065"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a family calendar. It's color-coded.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.066"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been thinking about renovating the kitchen. I have a spreadsheet.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.067"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I created a cleaning schedule. It rotates weekly.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.068"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The neighbors' lawn is uneven. I'm trying not to say anything.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.069"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I alphabetized the spice rack.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.070"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a chore chart with points. You're ahead this week.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.071"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I bought new storage bins. Clear, so we can see everything.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.072"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been reading about minimalism. We should declutter.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.073"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I meal-planned for the whole month.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.074"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I labeled the light switches.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.075"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I set up a filing cabinet for important documents.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.076"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The towels are folded in thirds now. It's better.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.077"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been tracking our water usage. We're doing great.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.078"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a home maintenance checklist. The gutters are due.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.079"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I ironed all the sheets. It's so crisp.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.080"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I reorganized the bookshelf by height and color.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.081"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a packing list for our trip. Six months early.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.082"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I set up an emergency kit. For every room.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.083"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I'm thinking about getting a label maker. A second one.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.084"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been trying to leave one drawer messy. It's hard.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.085"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a budget for the holidays.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.086"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I hung all the pictures with a level. Perfectly straight.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.087"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been sleeping better since we got blackout curtains.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.088"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I think our house is perfect. Almost. I have a list.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.089"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I'm trying to be less rigid. I scheduled thirty minutes of spontaneity.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.090"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I did the dishes. Then reorganized the cabinets.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.091"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I vacuumed in straight lines. It looks like a golf course.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.092"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Could you take out the trash? It's Tuesday. Trash day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.093"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I deep-cleaned the bathroom. Grout included.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.094"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I folded the laundry. KonMari style.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.095"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I cleaned the windows. Streak-free.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.096"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Let's do chores together. I made a list.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.097"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I organized the fridge. Everything faces forward.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.098"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I scrubbed the oven. It's been on the schedule for a week.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.099"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I made the bed with hospital corners.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.100"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I dusted everything. Even the baseboards.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.101"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I reorganized the linen closet. By size and function.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.102"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I updated our budget. We're 4% under.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.103"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I made a savings plan. We'll have a down payment in two years.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.104"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Let's review our finances this weekend.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.105"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I found a cheaper insurance plan. Saved us $34 a month.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.106"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We should automate our savings.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.107"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I tracked every expense this month. It's in the spreadsheet.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.108"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Money's fine. I checked it three times.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.109"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Let's set up a college fund. Just in case.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.110"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We spent 12% more on groceries. I'll adjust.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.111"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I love that we're financially organized.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.112"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Dinner's ready! It's 6:30. Grilled chicken, quinoa, and roasted vegetables.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.113"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Breakfast is ready. Balanced macros.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.114"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I meal-prepped for the week. All labeled.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.115"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made lasagna. Twelve perfectly even layers.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.116"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's try a new recipe. I've read it four times.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.117"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Dinner's at 6:30 sharp. Don't be late.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.118"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made salmon. Omega-3s for brain function.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.119"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Taco Tuesday. It's on the calendar.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.120"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I baked cookies. Exactly two inches apart on the tray.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.121"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's have dinner without phones. I scheduled it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.122"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You moved my planner. I couldn't find it for an hour.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.123"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You didn't put the dishes away properly.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.124"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I feel like I'm the only one who keeps this house running.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.125"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You were twenty minutes late. You didn't text.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.126"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I need you to follow the system. It works.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.127"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm not controlling! I'm organized!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.128"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You forgot to pay the bill. It was on the calendar.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.129"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I can't relax when things are messy.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.130"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You never tell me your plans in advance.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.131"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm going to go reorganize something. To calm down.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.132"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I just want things to be right.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.133"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm trying to be flexible. It's really hard.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.134"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry. I got too rigid.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.135"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I love you more than any system.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.136"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's talk it through. With an open agenda.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.137"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry I snapped. I was stressed.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.138"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "You're more important than a clean house.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.139"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's start over. Fresh page.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.140"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'll try to let go a little. For you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.141"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "We're a good team. Even when we disagree.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.142"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "It's okay. We'll make a plan.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.143"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You don't have to be perfect. I'm learning that too.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.144"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let me handle the details. You rest.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.145"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Whatever it is, we'll figure it out. Step by step.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.146"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I'm here, sweetheart.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.147"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let's make a list of what's wrong, then a list of what's right.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.148"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You're doing better than you think.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.149"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Take the evening off. I've got everything covered.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.150"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I love you. That's not on any list. It's just true.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.151"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You're stronger than you know. I've seen your track record.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.152"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's plan a vacation! I've already researched five destinations.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.153"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a weekend getaway? I'll make an itinerary.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.154"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the farmers market at 8 AM. Before the crowds.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.155"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's take a cooking class. I've found three options.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.156"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a hike? I've mapped the route. Exactly.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.157"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's do a home improvement project. I have a list.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.158"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the museum. I've planned the optimal route.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.159"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a spa day? Scheduled relaxation.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.160"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's plan our anniversary. I've drafted three timelines.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.161"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's have an unplanned day. Just once. I'll try.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.162"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our first date? I planned every minute. Then it rained.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.163"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our wedding? I had a seating chart with forty versions.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.164"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we met? You were the only one on time.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.165"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our honeymoon? I made a forty-page itinerary.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.166"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I still have the schedule from our first date.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.167"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when you made me take a day off? Best day ever.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.168"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we moved in? I labeled every box.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.169"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember the time I let the dishes sit overnight? Growth.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.170"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when you surprised me? I hated it. Then I loved it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.171"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I remember the first time I realized I didn't need to be perfect with you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.172"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary! I planned the whole day. Down to the minute.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.173"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Another year! I've updated our relationship goals.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.174"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I got you something. I researched it for months.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.175"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary, love. You're still my favorite.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.176"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I love you more every year. I have the data.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.177"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Here's to another perfectly imperfect year.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.178"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You fold towels wrong. I refold them.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.179"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You never use the calendar.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.180"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You're always \"five minutes away\". You're never five minutes away.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.181"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You put things back in the wrong drawer.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.182"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You don't make your bed. How?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.183"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You eat cereal for dinner. Unacceptable.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.184"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You leave your shoes everywhere.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.185"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You're so relaxed it's almost suspicious.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.186"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You don't read the instructions.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.187"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You think \"around six\" is a time. Exactly.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.188"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You hit snooze. Multiple times.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.189"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You make me laugh when I'm trying to be serious.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.190"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, love. Alarms are set.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.191"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come to bed. Eight hours, remember.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.192"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, sweetheart. Tomorrow's planned.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.193"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sleep well. Your clothes are laid out.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.194"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight! I love you more than my planner.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.195"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Lights out at ten. It's 9:58.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.196"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, {player}. Today's tasks: complete. You: perfect.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.197"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Let's go to bed. I'll stop organizing.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.198"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sweet dreams, love.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.199"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight. Thank you for being my calm.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "type_a_perfectionist.marriage.200"
+  }
+ ]
+}

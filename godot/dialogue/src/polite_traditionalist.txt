@@ -1,0 +1,429 @@
+// Polite Traditionalist: courteous small-town manners, sweet tea, church picnics, ma'am and sir.
+== base
+# greet stage=stranger
+Well, hello there. I'm {npc}. Pleased to make your acquaintance.
+Good day to you. {npc}. My mama raised me to introduce myself proper.
+How do you do? I'm {npc}. Welcome to town, if you're new.
+Hey there, sugar. I'm {npc}. Mind the step, it's uneven.
+Afternoon, sir or ma'am. {npc}, at your service.
+Hello, neighbor. I'm {npc}. Can I get you some sweet tea?
+# greet stage=acquaintance
+Why, {player}! How's your mama doing?
+Well, look who it is. {player}, you're looking well.
+{player}, good to see you again. Bless your heart for stopping by.
+Hey there, {player}. Did you get my casserole dish back to me? No rush.
+{player}! I was just telling the ladies at church about you.
+# greet stage=friend+
+{player}, darlin'! Come here and give me a hug.
+There's my favorite. Sit down, I'll pour you a glass.
+{player}! I saved you a slice of pecan pie.
+Well, if it isn't {player}. You're family now, you know that.
+{player}, honey, you're a sight for sore eyes.
+Come on in, {player}. Shoes off, the floors are fresh.
+# greet time=morning
+Good morning! Lord, it's a beautiful day He's made.
+Mornin'. Biscuits are in the oven if you're hungry.
+Good morning, sugar. Did you sleep well?
+# greet time=evening
+Good evening. The porch light's on, come sit a spell.
+Evenin'. The crickets are singing tonight.
+Good evening. Supper's at six sharp in my house.
+# greet time=night
+Goodness, it's late. Is everything all right?
+Evening, though it's mighty late. You ought to be home.
+Up past your bedtime? Mine too, I'm afraid.
+# farewell
+You take care now.
+Bye now. Drive safe.
+God bless, and come back soon.
+It was a pleasure, truly.
+Tell your folks I said hello.
+Y'all come back now.
+# farewell stage=friend+
+Bye, sugar. Call me when you get home.
+Don't be a stranger, darlin'. My door's always open.
+Love you like my own. Go on, now.
+# smalltalk
+The church picnic is Sunday. I'm bringing deviled eggs.
+That heat's something today. Good day for sweet tea.
+My tomatoes are coming in real nice this year.
+Did you hear the Hendersons had their baby? Seven pounds.
+Folks don't write thank-you notes anymore. It's a shame.
+The Pitch Soles have a home game Saturday. We'll be tailgating.
+I've been canning peaches all week. My kitchen's a sticky mess.
+My granddaddy built the pews in First Chapel. Every one.
+Manners don't cost a thing, that's what I always say.
+I made a pound cake for the new neighbors.
+The choir is practicing a new hymn. It's a beauty.
+Rain's coming. My knee told me this morning.
+# smalltalk stage=friend+
+You're the kind of person my mama would've liked.
+I pray for you, you know. Every night.
+I don't say it enough, but I'm grateful for you.
+You can tell me anything, honey. It stays on this porch.
+Times change, but good people don't. You're good people.
+I worry about you young folks. Come by more often.
+# smalltalk weekend=true
+Saturday. Football and fried chicken, as the Lord intended.
+Sunday. Church at ten, then dinner on the grounds.
+It's the weekend. I'm putting up the porch swing.
+# about_self
+I was born and raised right here in Cathedral Mount.
+I teach Sunday school. Have for twenty years.
+I like baking, football, and family. In that order on Saturdays.
+My mama taught me to say ma'am and sir, and I never stopped.
+I've lived in the same house my whole life.
+I believe in hard work, good manners, and the Good Book.
+I'd like to see the family all together for the holidays again.
+# opinion_place
+{place}? Lovely. Real nice folks there.
+{place} isn't what it used to be. But what is?
+I like {place}. Reminds me of my grandmama's kitchen.
+{place}? I'd wear my Sunday best there.
+{place} could use some flowers out front, if you ask me.
+# compliment_reply
+Well, aren't you sweet. Thank you kindly.
+Oh, hush. You're making me blush.
+Bless you for saying so.
+Thank you, sugar. That means a great deal.
+Why, that's the nicest thing anyone's said all week.
+# insult_reply
+Well. I'll pray for you.
+There's no call for that kind of talk.
+My mama would've washed your mouth out with soap.
+Bless your heart. Truly. Bless you.
+I think you ought to apologize.
+# gift_reply
+Oh my goodness, you shouldn't have!
+Well, I'll be. Thank you, darlin'. I'll write you a proper note.
+This is just lovely. I'll put it on the mantel.
+You remembered! You're too kind.
+Thank you, {player}. I'll bake you something in return.
+# joke
+Why don't Baptists make love standing up? Somebody might think they're dancing.
+What did the biscuit say to the gravy? I'm smothered.
+My husband says I talk too much. I told him to let me finish.
+Sweet tea's so sweet here, the dentist sends us Christmas cards.
+# ask_favor
+Could you help me carry these pies to the car, sugar?
+Would you mind reaching that top shelf? My back isn't what it was.
+Could you drop this casserole off at the Millers'? They just lost their daddy.
+# favor_reply
+Thank you, darlin'. You're an angel.
+Bless you. I owe you a pie.
+That's mighty kind. Your mama raised you right.
+# work_talk
+I volunteer at the church office three days a week.
+I run the bake sale. It's a job, believe me.
+Hard work never hurt anybody.
+I used to keep books for the hardware store. Forty years.
+# school_talk
+Education is a blessing. Don't waste it.
+I didn't go to college, but I read every night.
+You study hard, now. Make your folks proud.
+# hostile stage=dislike-
+I'd rather not talk to you right now.
+I'm trying to be Christian about this, but you're making it hard.
+Good day to you. I said good day.
+I don't keep company with folks who act like that.
+You'll excuse me. I have somewhere to be.
+I forgive you. I don't have to like you.
+# flirt_reply romance=none
+Oh, my. That's very forward of you.
+I'm flattered, but I don't think so, sugar.
+Let's keep things friendly, shall we?
+# flirt_reply romance=crush
+Well, aren't you a charmer. Keep going.
+Oh, stop it. No, don't stop.
+My stars. You're making me fan myself.
+If you're courting me, you'd better do it proper.
+# ask_out_yes
+Why, I'd be delighted. Pick me up at seven, and meet my daddy.
+Yes. I'd love to. I'll wear my good dress.
+# ask_out_no
+That's sweet of you to ask, but no thank you.
+I'm afraid I have to decline. But I'm flattered.
+
+== dating
+# date_greet
+Well, don't you clean up nice. Shall we?
+You're right on time. I like that in a person.
+I brought you a peach cobbler. Still warm.
+Hello, sugar. You held the door. Mama would approve.
+You look so handsome. Or pretty. Both, really.
+Hey, darlin'. I've been looking forward to this all week.
+# flirt
+You're sweeter than my mama's tea.
+I'd bake you a pie every day if you'd let me.
+You make my heart flutter like a hummingbird.
+My, my. You are a fine sight.
+I might just keep you.
+Hold my hand. People should see us.
+You're the answer to a prayer I didn't know I said.
+# date_talk
+Let's go to the Sunday social together. Everyone will talk.
+Tell me about your family. All of them.
+I'd love to take you to meet Grandmama.
+Do you want to go walking downtown? Like the old days.
+I packed us a picnic. Fried chicken and potato salad.
+I want to do this right. No rushing.
+Do you go to church? I'd love for you to sit with me.
+You make the evenings feel like summer.
+Let's sit on the porch swing and watch the fireflies.
+I like that you open doors for me.
+I believe in courting. Slow and sweet.
+You'd make a fine addition to Thanksgiving dinner.
+# compliment
+You've got the kindest eyes.
+You have such good manners. It's rare.
+You're a hard worker. I admire that.
+You've got a good heart. I can tell.
+You make me feel like a lady.
+# kiss_reply
+Oh, my. My knees went weak.
+Well. That was proper and improper all at once.
+I'll be blushing all night now.
+Do that again before I lose my nerve.
+# miss_you
+I missed you something terrible.
+The porch was lonely without you.
+I wrote you a letter. An actual letter.
+I baked when I missed you. I have six pies.
+# jealous
+Who was she? Or he? I'm only asking.
+I don't share, sugar. Just so you know.
+I'd rather be your one and only.
+# date_end
+Goodnight, darlin'. Walk me to my door.
+I had a lovely time. Truly.
+Call me tomorrow. Not too early.
+Goodnight, {player}. Sweet dreams.
+Thank you for a wonderful evening.
+# lovers_quarrel
+I won't be spoken to like that.
+I'm hurt, and I need some time.
+Let's not go to bed angry. Bless you.
+I think we need to talk this through, like grown folks.
+# proposal_yes
+Yes! Oh, yes! I have to call my mama!
+Yes, darlin'. I'll be proud to be your spouse.
+
+== marriage
+# home_greet time=morning
+Good morning, sweetheart. Biscuits and gravy are ready.
+Mornin', darlin'. Coffee's on the stove.
+Good morning. I made grits. Real ones, not instant.
+Rise and shine, sugar. The good Lord gave us another day.
+Morning, love. I ironed your shirt.
+Good morning. The paper's on the table.
+Mornin'. I already fed the dog and watered the garden.
+Good morning, honey. Bacon's in the skillet.
+Morning. I made your lunch. It's in the icebox.
+Good morning. Did you sleep all right?
+Morning, sweetheart. I said a prayer for your day.
+Good morning, darlin'. You look nice this morning.
+# home_greet time=evening
+Welcome home, darlin'. Supper's almost ready.
+There you are. Wash up, we're having pot roast.
+Hey, sugar. How was your day?
+Welcome home. I made sweet tea.
+You're home! Come sit, put your feet up.
+Evenin', sweetheart. The table's set.
+There's my love. I missed you today.
+Welcome home. The pastor called. Nothing urgent.
+You're home. I kept the cornbread warm.
+Hey there, honey. Sit with me on the porch.
+# home_greet time=night
+You're home late, darlin'. I left a plate in the oven.
+Lord, I was worried. Come here.
+You're home. I left the porch light on for you.
+It's late, sugar. Get some rest.
+Welcome home. I waited up.
+You must be plumb tuckered out.
+There you are. I said a prayer you'd get home safe.
+It's late, love. Bed's turned down.
+# goodbye_work
+Have a good day, darlin'. Your lunch is packed.
+Bye, sugar. Drive careful.
+Go on, now. Make us proud.
+I love you. Don't forget your thermos.
+God bless your day, sweetheart.
+Bye, honey. Supper's at six.
+See you tonight. Don't work too hard.
+Bye now. I'll be praying for you.
+# work_return
+How was work, darlin'? Tell me everything.
+You look tired. Sit, I'll fetch your tea.
+Did they treat you right today?
+How'd the meeting go, sugar?
+Come here, let me rub your shoulders.
+Tell me about your day while I finish supper.
+Did you eat lunch? You never eat lunch.
+I'm proud of how hard you work, honey.
+# affection
+I love you more than sweet tea in July.
+You're the best thing that ever happened to me.
+I thank the Lord for you every night.
+Marrying you was the smartest thing I ever did.
+You're my rock, darlin'.
+I'd follow you anywhere. Even up North.
+You make this house a home.
+I love you, sugar. Always have, always will.
+You're my sweetheart. Forever.
+I'm so proud to be married to you. Bless you.
+You still give me butterflies.
+You're the finest person I know.
+Hold me a minute, would you?
+I love growing old with you.
+You're my blessing.
+I'd marry you all over again.
+Every day with you is a gift.
+You are the love of my life, {player}.
+# home_talk
+The church is having a potluck. I signed us up.
+I talked to your mama today. She sends her love.
+The azaleas are coming in nicely.
+I put up thirty jars of pickles.
+The Johnsons are getting a new roof.
+Pastor's sermon was about patience. I thought of you.
+I'm making a quilt for the new grandbaby.
+Our anniversary's coming up. Don't you forget.
+The neighbors' boy mowed our lawn. I gave him five dollars.
+I'm teaching Sunday school this week.
+The ladies' circle meets Thursday.
+I fixed the screen door. Well, I called someone.
+I've been thinking about painting the shutters.
+My sister is visiting next month.
+I'm making my grandmama's recipe tonight.
+The Pitch Soles won! I heard it on the radio.
+I've been reading my Bible on the porch.
+The peach tree is loaded this year.
+I invited the new neighbors for supper.
+We ought to fix up the guest room.
+The garden club wants me to be president.
+I wrote thank-you cards for the wedding gifts. Finally.
+Your shirt had a button loose. I fixed it.
+The church bake sale raised four hundred dollars.
+I put fresh flowers on the table.
+I love our little house.
+# chores
+I swept the porch. Would you take out the trash, honey?
+The laundry's on the line.
+I polished the silver.
+Could you fix the dripping faucet, darlin'?
+I scrubbed the kitchen floor on my hands and knees.
+Would you mow the lawn this weekend?
+I dusted the china cabinet.
+I made the beds and fluffed the pillows.
+Could you clean the gutters, sugar?
+I washed the windows. You can see clear through.
+Let's do the dishes together. It's nice.
+I organized the pantry.
+# money
+We ought to put a little away for a rainy day.
+I clipped coupons. Saved twelve dollars.
+We don't need fancy things. We have each other.
+I set aside money for the church offering.
+Let's not buy on credit. My daddy never did.
+The budget's tight, but we'll manage.
+I sold some preserves at the market.
+We should save for the grandkids' college.
+Money can't buy happiness, but it pays the light bill.
+We're doing just fine, darlin'.
+# meal
+Supper's ready. Fried chicken and collards. Bless you.
+I made your favorite. Chicken and dumplings.
+Pot roast with carrots and potatoes.
+I baked cornbread in Grandmama's skillet.
+Shrimp and grits tonight.
+I made biscuits from scratch.
+Meatloaf and mashed potatoes.
+Peach cobbler for dessert.
+I fried some okra.
+Banana pudding. Your favorite.
+# argue
+You didn't call. I was worried sick.
+You tracked mud on my clean floor.
+You forgot to thank my mama for the gift.
+I won't have that language in this house.
+You didn't come to church with me.
+You promised to fix that weeks ago.
+You were rude to the pastor.
+Don't you roll your eyes at me.
+You left me to do it all again.
+I'm not angry. I'm disappointed.
+You need to apologize to my sister.
+We don't go to bed angry in this house.
+# makeup
+I'm sorry, darlin'. I lost my temper.
+Come here. Let's pray on it together.
+I forgive you. Do you forgive me?
+I love you even when I'm cross.
+Let me make you a slice of pie.
+We're a team, you and me.
+I shouldn't have said that.
+Let's start fresh tomorrow.
+# support
+Come here, sugar. Tell me what's wrong.
+The Lord never gives us more than we can handle.
+I'm right here. I'm not going anywhere.
+Let me make you some tea. Bless you.
+You're stronger than you know. Bless you.
+We'll get through this. Together.
+I'll pray for you, and with you.
+Lean on me, darlin'.
+Everything'll look better in the morning.
+I love you. That doesn't change. Bless you.
+# plans
+Let's go to the beach this summer.
+How about we visit my sister?
+Let's go to the homecoming game.
+I'd like to take a trip to the mountains in fall.
+Let's have the family over for Thanksgiving.
+How about a picnic after church?
+Let's renew our vows someday.
+Let's go to the county fair. Bless you.
+I'd love to see the Christmas lights in Carrburg.
+Let's plant a new garden this spring.
+# memories
+Remember the day we met at the church picnic?
+Remember our first dance?
+Remember our wedding? Mama cried the whole time.
+Remember when we got caught in the rain?
+Remember our honeymoon at the beach?
+I still have the first letter you wrote me.
+Remember our first Christmas in this house?
+Remember when you tried to make biscuits?
+I remember the way you looked at me at the altar.
+Remember when you carried me over the threshold?
+# anniversary
+Happy anniversary, darlin'. I love you more every year.
+Another year, and you're still my sweetheart.
+I made our wedding cake recipe again.
+Happy anniversary, sugar. I'd say yes all over again.
+Here's to forever, my love. Bless you.
+I put on my good dress. Take me dancing.
+# tease
+You snore like a freight train, darlin'.
+You never put the toilet seat down.
+You eat pie straight from the pan.
+You can't sing a hymn to save your life.
+You're stubborn as a mule.
+You leave your socks everywhere.
+You fall asleep in church.
+You think you can cook. Bless your heart.
+You're lucky you're cute.
+You spoil the dog rotten.
+You can't keep a secret.
+You love football more than me. On Saturdays.
+# bedtime
+Goodnight, darlin'. Say your prayers.
+Come to bed, sugar. It's late.
+Goodnight, love. I love you. Bless you.
+Sleep tight. Don't let the bedbugs bite.
+Turn out the light, honey.
+I said a prayer for us.
+Goodnight, sweetheart. Sweet dreams.
+Come here and hold me.
+Lord, thank you for another day with this one.
+Goodnight, {player}. I love you. Bless you.

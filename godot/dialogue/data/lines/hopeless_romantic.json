@@ -1,0 +1,4076 @@
+{
+ "id": "hopeless_romantic",
+ "lines": [
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh. Hello. Have we met before? In another life, maybe?",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "hopeless_romantic.base.001"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi. I'm {npc}. Sorry, I was daydreaming. The light is so soft today.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "hopeless_romantic.base.002"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello, stranger. Every great story starts with a hello, you know.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "hopeless_romantic.base.003"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh! Hi. You look like the opening scene of a movie. I'm {npc}.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "hopeless_romantic.base.004"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello. I believe everyone we meet is a chapter. Nice to meet you.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "hopeless_romantic.base.005"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi there. I'm {npc}. Isn't it a beautiful day to meet someone?",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "hopeless_romantic.base.006"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! I was just thinking about fate, and here you are.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "hopeless_romantic.base.007"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello again, {player}. The universe keeps putting us in the same place.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "hopeless_romantic.base.008"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh, {player}! Your timing is poetic.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "hopeless_romantic.base.009"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi, {player}. I wrote a little poem this morning. Not about you. Probably.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "hopeless_romantic.base.010"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}. Seeing you feels like a song I know the words to.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "hopeless_romantic.base.011"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! My dearest friend! Come walk with me under the oaks.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "hopeless_romantic.base.012"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "There you are. My heart did a little twirl when I saw you.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "hopeless_romantic.base.013"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! I pressed a flower for you. It's in my journal.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "hopeless_romantic.base.014"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello, darling friend. You make every day feel like a love letter.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "hopeless_romantic.base.015"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! Let's go somewhere beautiful and talk about everything.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "hopeless_romantic.base.016"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "My favorite person! I've been saving up stories for you.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "hopeless_romantic.base.017"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good morning. The dew on the roses looks like little diamonds.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "hopeless_romantic.base.018"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Morning. I woke up to birdsong. Like a fairy tale.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "hopeless_romantic.base.019"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good morning! Mornings are full of promise, don't you think?",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "hopeless_romantic.base.020"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good evening. The sky's blushing. Like it's in love with someone.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "hopeless_romantic.base.021"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Evening. This is the hour for love letters and long walks.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "hopeless_romantic.base.022"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello. Twilight makes everything feel possible.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "hopeless_romantic.base.023"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "The moon's so bright tonight. Do you think it gets lonely?",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "hopeless_romantic.base.024"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello, night wanderer. The stars came out just for us.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "hopeless_romantic.base.025"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "It's late. The best conversations happen after midnight.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "hopeless_romantic.base.026"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Goodbye. Until we meet again.",
+   "cond": {},
+   "id": "hopeless_romantic.base.027"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Farewell! Isn't that a lovely word? Farewell.",
+   "cond": {},
+   "id": "hopeless_romantic.base.028"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "See you soon. Don't forget to look at the sky tonight.",
+   "cond": {},
+   "id": "hopeless_romantic.base.029"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye. May your day be full of small wonders.",
+   "cond": {},
+   "id": "hopeless_romantic.base.030"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Goodbye for now. Parting is such sweet sorrow.",
+   "cond": {},
+   "id": "hopeless_romantic.base.031"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Take care. Smell some flowers on the way home.",
+   "cond": {},
+   "id": "hopeless_romantic.base.032"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Goodbye, dear {player}. I'll miss you until next time.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "hopeless_romantic.base.033"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye! Write me a letter. A real one!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "hopeless_romantic.base.034"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Until tomorrow, my friend. Dream something beautiful.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "hopeless_romantic.base.035"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "There's a rose bush behind the Pamlico Inn that blooms in November. Isn't that magical?",
+   "cond": {},
+   "id": "hopeless_romantic.base.036"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I watched an old black-and-white film last night. They don't make love stories like that anymore.",
+   "cond": {},
+   "id": "hopeless_romantic.base.037"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Did you know swans mate for life? I think about that a lot.",
+   "cond": {},
+   "id": "hopeless_romantic.base.038"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I found a love letter in a used book at Tarry Page. Dated 1951. I cried.",
+   "cond": {},
+   "id": "hopeless_romantic.base.039"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The fountain on Founders' Quad, they say if you toss a coin with someone, you'll be together forever.",
+   "cond": {},
+   "id": "hopeless_romantic.base.040"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I've been writing sonnets. Fourteen lines of longing.",
+   "cond": {},
+   "id": "hopeless_romantic.base.041"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The way the bell tower rings at sunset, it sounds like a wedding.",
+   "cond": {},
+   "id": "hopeless_romantic.base.042"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I keep a list of the most romantic places in town. The Cistern at dusk is number one.",
+   "cond": {},
+   "id": "hopeless_romantic.base.043"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Rain is romantic, don't you think? Like the sky is feeling something.",
+   "cond": {},
+   "id": "hopeless_romantic.base.044"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I saw an elderly couple holding hands on Hamilton. I had to sit down.",
+   "cond": {},
+   "id": "hopeless_romantic.base.045"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I believe in love at first sight. And second sight. And third.",
+   "cond": {},
+   "id": "hopeless_romantic.base.046"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The florist on Rosemary lets me smell the peonies for free.",
+   "cond": {},
+   "id": "hopeless_romantic.base.047"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Can I tell you a secret? I've been in love eleven times. Each one was real.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "hopeless_romantic.base.048"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You're the kind of friend people write songs about.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "hopeless_romantic.base.049"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I sometimes worry I'm too much. You never make me feel that way.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "hopeless_romantic.base.050"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I think everyone deserves a great love story. Even you. Especially you.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "hopeless_romantic.base.051"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You have such a gentle soul, {player}. I noticed it the first day.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "hopeless_romantic.base.052"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "If I ever get married, you have to give a toast. Promise me.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "hopeless_romantic.base.053"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Weekends are for picnics, poetry, and possibility.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "hopeless_romantic.base.054"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Saturday! I'm going to the flower market and buying everything.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "hopeless_romantic.base.055"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Sunday mornings feel like a love song.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "hopeless_romantic.base.056"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I grew up watching my grandparents dance in the kitchen. That's what I want.",
+   "cond": {},
+   "id": "hopeless_romantic.base.057"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I write poetry. Most of it's about longing. Some of it's about soup.",
+   "cond": {},
+   "id": "hopeless_romantic.base.058"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I keep every letter anyone's ever sent me. In a box tied with ribbon.",
+   "cond": {},
+   "id": "hopeless_romantic.base.059"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I'm studying literature. Romantic poets, mostly. Obviously.",
+   "cond": {},
+   "id": "hopeless_romantic.base.060"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "People say I fall too fast. I say I fall honestly.",
+   "cond": {},
+   "id": "hopeless_romantic.base.061"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I've had my heart broken. It healed bigger. That's how hearts work.",
+   "cond": {},
+   "id": "hopeless_romantic.base.062"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I dream of a wedding in a garden, with fairy lights and a string quartet.",
+   "cond": {},
+   "id": "hopeless_romantic.base.063"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? It's so romantic. Can you imagine a first kiss here?",
+   "cond": {},
+   "id": "hopeless_romantic.base.064"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "I love {place}. The lighting is perfect for confessions.",
+   "cond": {},
+   "id": "hopeless_romantic.base.065"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place} feels like a scene from an old movie.",
+   "cond": {},
+   "id": "hopeless_romantic.base.066"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place} is lovely. It needs more candles, though.",
+   "cond": {},
+   "id": "hopeless_romantic.base.067"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "I once had my heart broken at {place}. I still come back. It's beautiful.",
+   "cond": {},
+   "id": "hopeless_romantic.base.068"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Oh! You're making me swoon.",
+   "cond": {},
+   "id": "hopeless_romantic.base.069"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "That's the loveliest thing anyone's said to me all week.",
+   "cond": {},
+   "id": "hopeless_romantic.base.070"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Thank you. I'm going to write that down and keep it forever.",
+   "cond": {},
+   "id": "hopeless_romantic.base.071"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Oh, stop. No, don't. Thank you.",
+   "cond": {},
+   "id": "hopeless_romantic.base.072"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "You have a poet's tongue, {player}.",
+   "cond": {},
+   "id": "hopeless_romantic.base.073"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Oh. That's a thorn in my rose garden.",
+   "cond": {},
+   "id": "hopeless_romantic.base.074"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "I'll forgive you. Everyone deserves a redemption arc.",
+   "cond": {},
+   "id": "hopeless_romantic.base.075"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Your words hurt, but I won't let them make me bitter.",
+   "cond": {},
+   "id": "hopeless_romantic.base.076"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "I'm going to go cry dramatically under a tree now.",
+   "cond": {},
+   "id": "hopeless_romantic.base.077"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "How unkind. I hope someone softens your heart someday.",
+   "cond": {},
+   "id": "hopeless_romantic.base.078"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Oh! You remembered! I'm going to cry.",
+   "cond": {},
+   "id": "hopeless_romantic.base.079"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "This is the most thoughtful gift. I'll treasure it always.",
+   "cond": {},
+   "id": "hopeless_romantic.base.080"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Flowers? For me? My heart!",
+   "cond": {},
+   "id": "hopeless_romantic.base.081"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "I'm going to keep this in my memory box. Forever.",
+   "cond": {},
+   "id": "hopeless_romantic.base.082"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "You shouldn't have. But I'm so, so glad you did.",
+   "cond": {},
+   "id": "hopeless_romantic.base.083"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "I asked the moon out on a date. It said it was going through a phase.",
+   "cond": {},
+   "id": "hopeless_romantic.base.084"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "What did one candle say to the other? You light up my life.",
+   "cond": {},
+   "id": "hopeless_romantic.base.085"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "I'd write you a love song, but I'm still working on the chorus.",
+   "cond": {},
+   "id": "hopeless_romantic.base.086"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "Why did the rose break up with the tulip? It needed someone with more stem.",
+   "cond": {},
+   "id": "hopeless_romantic.base.087"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Could you deliver this letter to someone? I'm too shy to do it myself.",
+   "cond": {},
+   "id": "hopeless_romantic.base.088"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Would you help me plant roses in the community garden?",
+   "cond": {},
+   "id": "hopeless_romantic.base.089"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Could you be my plus-one at the poetry reading? I hate going alone.",
+   "cond": {},
+   "id": "hopeless_romantic.base.090"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Thank you. You're a true knight. Or knightess. A true friend.",
+   "cond": {},
+   "id": "hopeless_romantic.base.091"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "You've done me a kindness I'll never forget.",
+   "cond": {},
+   "id": "hopeless_romantic.base.092"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Oh, thank you! You're a gem, {player}.",
+   "cond": {},
+   "id": "hopeless_romantic.base.093"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I work at the florist. It's like working inside a love song.",
+   "cond": {},
+   "id": "hopeless_romantic.base.094"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "Someone bought two dozen roses today for a proposal. I teared up at the register.",
+   "cond": {},
+   "id": "hopeless_romantic.base.095"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "Work is fine. I write poems on the back of receipts.",
+   "cond": {},
+   "id": "hopeless_romantic.base.096"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I arrange wedding bouquets. Every single one makes me hopeful.",
+   "cond": {},
+   "id": "hopeless_romantic.base.097"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "I'm writing my thesis on unrequited love in poetry. It's very personal.",
+   "cond": {},
+   "id": "hopeless_romantic.base.098"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "My professor said my essay was \"overwrought.\" I took it as a compliment.",
+   "cond": {},
+   "id": "hopeless_romantic.base.099"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "I fell in love with a character in our reading. Again.",
+   "cond": {},
+   "id": "hopeless_romantic.base.100"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I don't want to talk to you. You've bruised my heart.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "hopeless_romantic.base.101"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Please. Just let me be.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "hopeless_romantic.base.102"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I thought you were kind. I was wrong.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "hopeless_romantic.base.103"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "You're the villain in my story, {player}.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "hopeless_romantic.base.104"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I'm going to write a sad poem about this. Go away.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "hopeless_romantic.base.105"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Not every story has a happy ending. Ours certainly doesn't.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "hopeless_romantic.base.106"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Oh! How sweet. But my heart is spoken for. By an idea of someone.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "hopeless_romantic.base.107"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "That's lovely, but I think we're meant to be friends.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "hopeless_romantic.base.108"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "I'm flattered, truly. But I feel a friendship kind of love for you.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "hopeless_romantic.base.109"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Oh. Oh my. Did you mean that? Please say you meant it.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "hopeless_romantic.base.110"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "My heart just skipped. Do it again.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "hopeless_romantic.base.111"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "I've been waiting for this moment like the end of a long novel.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "hopeless_romantic.base.112"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "You're making me blush like a sunset.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "hopeless_romantic.base.113"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "Yes! Yes, a thousand times yes. I've been dreaming of this.",
+   "cond": {},
+   "id": "hopeless_romantic.base.114"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "A date? Oh, I'll wear my best dress. My best everything. Yes.",
+   "cond": {},
+   "id": "hopeless_romantic.base.115"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "I'm so sorry. My heart just doesn't feel that way. I hope you find your great love.",
+   "cond": {},
+   "id": "hopeless_romantic.base.116"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "Oh, I wish I could say yes. But I can't lie to you. No.",
+   "cond": {},
+   "id": "hopeless_romantic.base.117"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "There you are. You look like a dream I had once.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.001"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "My love! I brought you a single red rose.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.002"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hello, darling. I've been counting the hours.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.003"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "You came! My heart is fluttering like a bird.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.004"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hi. I wore your favorite color. Did you notice?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.005"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "You look breathtaking. I mean it. I can't breathe.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.006"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "Your eyes are like the night sky. Full of stars.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.007"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I'd write you a thousand sonnets. And then a thousand more.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.008"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're the love story I've been waiting for my whole life.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.009"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "Every time you smile, a poet somewhere gets an idea.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.010"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "Do you believe in soulmates? Because I'm looking at mine.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.011"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I could listen to your voice forever.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.012"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You make my heart feel like a love song.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.013"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's walk under the oaks. Hand in hand.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.014"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I made us a picnic. With strawberries and champagne. Well, sparkling cider.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.015"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Tell me your dreams. All of them.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.016"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's dance. Right here. There's no music, but I can hear it.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.017"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I wrote you a poem. Can I read it to you?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.018"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I never thought I'd find someone who loves like I do.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.019"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's toss a coin in the fountain. Together. You know what that means.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.020"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Do you want to see the rose garden behind the Inn? It's our secret place now.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.021"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I think we were meant to meet. I really do.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.022"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's watch the sunset. Every sunset. Forever.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.023"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I feel like I've known you forever. In every lifetime.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.024"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I'm so happy, my love. I could burst.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.025"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're the most beautiful person I've ever seen.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.026"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You have the soul of a poet.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.027"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're so kind. It makes me fall for you more.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.028"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "Your laugh is my favorite music.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.029"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're my muse, {player}.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.030"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Oh. That was like a movie. With swelling music.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.031"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "My heart is soaring.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.032"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "That was the kiss I've been dreaming about.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.033"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "I'll remember that kiss until I'm old and gray.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.034"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I missed you so much it hurt. Like a poem.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.035"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "Every moment apart feels like an eternity.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.036"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I wrote you a letter. Three pages. With pressed flowers.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.037"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I looked at the moon and thought of you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.038"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "Who was that? Are they my rival for your heart?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.039"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I'm not jealous. I'm just... wistful.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.040"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I want to be the only one in your story.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.041"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight, my love. Sweet dreams.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.042"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Parting is such sweet sorrow.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.043"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "I'll dream of you tonight.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.044"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Thank you for the most beautiful evening.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.045"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Until tomorrow, my darling.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.046"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "You've wounded my heart. But I know we can heal it.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.047"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "Please don't let this be the end of our story.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.048"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I'm upset, but I still love you. That's how love works.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.049"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "Let's not let this tragedy become our ending.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.050"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "Yes! Yes! I've dreamed of this moment my whole life!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.051"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "I'll marry you! This is the happiest ending!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.dating.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, my love. You're the first thing I want to see every day.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.001"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, darling. I brought you breakfast in bed. And a rose.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.002"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! The sun came up just to see your smile.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.003"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, my heart. I wrote you a little poem while you slept.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.004"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, love. Every day with you is a gift.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.005"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hello, my darling. I dreamed of our wedding again.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.006"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! The birds are singing our song.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.007"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, love. I made heart-shaped pancakes.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.008"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, my soulmate. I still can't believe you're real.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.009"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning! I picked flowers from the garden for the table.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.010"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, love. I lit a candle. For no reason. For love.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.011"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, my darling. Let's have coffee on the porch and watch the world wake up.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.012"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home, my love! I've missed you terribly!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.013"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are, darling. Dinner's by candlelight tonight.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.014"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home! I put on our song.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.015"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome back, my heart. The house was so lonely without you.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.016"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hello, my love. I drew you a bath with rose petals.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.017"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home! Come dance with me in the kitchen.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.018"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home, darling. I wrote you a love letter. It's on your pillow.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.019"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are! I've been watching the door all evening.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.020"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome back, love. Let's watch the sunset together.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.021"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home. Now everything is perfect.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.022"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home late, my love. I waited up with candles.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.023"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Darling, you're back! I couldn't sleep without you.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.024"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hello, my heart. Come to bed. The stars are out.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.025"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home. The moon and I were keeping each other company.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.026"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Late night, love? Let me hold you.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.027"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are. I left the porch light on like a lighthouse.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.028"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're back, my darling. Now I can rest.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.029"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hello, love. Let's look at the stars before bed.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.030"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Goodbye, my love. I'll count the minutes until you're home.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.031"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a beautiful day, darling. I put a love note in your pocket.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.032"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Go, my love. And come back to me soon.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.033"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Goodbye, my heart. You carry it with you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.034"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a lovely day! Think of me at lunch.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.035"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Goodbye, darling. Every hour without you is a sonnet of longing.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.036"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Kiss me before you go. Okay, one more.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.037"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a wonderful day, my soulmate.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.038"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "How was your day, my love? Tell me everything.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.039"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You look tired, darling. Let me rub your shoulders.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.040"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Did anything beautiful happen today?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.041"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Tell me about your day. Every little detail.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.042"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Did they treat you well, my love?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.043"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Hard day, darling? Come here. You're home now.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.044"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "I'm so proud of you, love. Always.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.045"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You're home. That's all that matters.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.046"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you more than all the stars in the sky.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.047"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my soulmate. I knew it the moment I saw you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.048"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Every day with you is a love story.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.049"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're the poem I've been trying to write my whole life.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.050"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'd marry you a thousand times over.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.051"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my heart, my soul, my everything.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you more today than yesterday. And less than tomorrow.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.053"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make my life a fairy tale.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.054"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'm the luckiest person in the world. Truly.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.055"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my dream come true.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.056"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Every love song I hear is about you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.057"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'd follow you to the ends of the earth.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.058"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my forever, my always.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.059"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love the way you look at me. Like I'm the only one.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.060"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my home. My heart's home.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.061"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Every moment with you is a treasure.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.062"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you, my darling. Endlessly.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.063"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make even ordinary days feel like magic.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.064"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I planted a rose bush in the garden. For us.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.065"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been writing a book of poems. All about you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.066"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I found our wedding invitation in a drawer. I cried.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.067"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I hung fairy lights in the bedroom. It's so romantic now.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.068"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been learning to play our song on the piano.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.069"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a scrapbook of our love story.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.070"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The garden's blooming! It's like a painting.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.071"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I bought new candles. They smell like roses.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.072"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been reading old love letters. From famous couples. And from you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.073"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I pressed some flowers from our garden.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.074"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I think we should renew our vows. Every year.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.075"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I framed the poem you wrote me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.076"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a playlist of all the songs that remind me of you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.077"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been thinking about our first dance. I want to dance like that again.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.078"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The neighbors' wedding was so beautiful. Not as beautiful as ours.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.079"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I set up a little reading nook by the window. For two.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.080"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been watching old romance movies. They make me think of us.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.081"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I wrote our names on a lock and put it on the bridge by the ravine.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.082"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I bought a vintage record player. For slow dancing.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.083"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been dreaming about our future. It's beautiful.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.084"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a love jar. Every day, I write something I love about you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.085"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The moon was so full last night. Did you see it?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.086"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I painted our bedroom a soft blush. It's like living in a rose.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.087"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been learning to make chocolates. Heart-shaped.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.088"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I think every room in this house is full of love.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.089"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I hung our wedding photo in the hallway.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.090"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I did the dishes. While singing love songs.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.091"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I folded the laundry. Your shirts smell like you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.092"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Could you help me in the garden? It's romantic.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.093"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I made the bed with fresh sheets and rose petals.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.094"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I cleaned the kitchen. By candlelight. Very atmospheric.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.095"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I swept the porch. The leaves looked like confetti.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.096"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Let's do chores together. Everything's better together.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.097"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I polished the silver from our wedding.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.098"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I watered the roses. They're thriving. Like our love.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.099"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I dusted the bookshelves. And reread our letters.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.100"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I scrubbed the bathroom. Even that can be romantic. Kind of.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.101"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I organized the closet. Found your love letters. Cried again.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.102"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Money's tight, but love is free.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.103"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I don't need riches. Just you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.104"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I've been saving for a romantic getaway.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.105"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I made a budget. There's a line for flowers.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.106"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We're rich in love. That's what matters.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.107"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I found a coupon for a candlelight dinner!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.108"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Let's save for a trip to Paris. Someday.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.109"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I sold some of my poems. Made fifty dollars!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.110"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We don't need much. A little house, a garden, each other.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.111"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Let's spend less on things and more on moments.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.112"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Dinner by candlelight, my love.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.113"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made breakfast in bed. With a rose on the tray.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.114"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made pasta. Like in that old movie. Let's share a noodle.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.115"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's have a picnic in the garden, among the roses.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.116"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I baked a heart-shaped cake.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.117"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made your favorite. With extra love.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.118"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's have dinner on the porch under the stars.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.119"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made chocolate-covered strawberries.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.120"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made soup. It's warm, like my love for you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.121"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Dessert is me. Kidding. It's crème brûlée.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.122"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You forgot our special day. Again.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.123"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I feel like you don't see me anymore.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.124"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You used to write me letters. Now you don't.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.125"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I need romance. Is that too much to ask?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.126"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You don't hold my hand anymore.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.127"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I feel like we're losing the magic.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.128"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You didn't even notice my new dress.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.129"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Please don't brush me off. I'm trying to talk to you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.130"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I feel unloved when you ignore me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.131"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm not being dramatic. I'm being romantic.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.132"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm going to sit in the garden and cry.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.133"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I just want to feel like I matter to you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.134"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry, my love. Let's not let this ruin our story.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.135"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Come here. Let's dance it out.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.136"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I love you. That's all that matters.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.137"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry I was so dramatic. You know how I am.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.138"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's start over. Our next chapter.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.139"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I hate fighting with you. It breaks my heart.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.140"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's write each other apology letters.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.141"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "We're soulmates. We'll always find our way back.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.142"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "It's okay, my love. I'm here.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.143"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let me hold you. As long as you need.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.144"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You're stronger than you know.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.145"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Whatever it is, we'll face it together, hand in hand.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.146"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let me draw you a bath and light some candles.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.147"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You're my hero. Always.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.148"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let's watch a romantic movie and forget the world.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.149"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I love you. Even on the hardest days.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.150"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You don't have to be strong. Not with me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.151"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let me take care of you tonight, like you've always taken care of my heart.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.152"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to Paris someday. The city of love.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.153"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a weekend at a bed and breakfast?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.154"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's take a dance class together.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.155"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's renew our vows in the rose garden.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.156"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a picnic by the lake at sunset?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.157"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the opera. Dress up and everything.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.158"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's take a carriage ride downtown.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.159"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a trip to the coast? Walks on the beach.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.160"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go stargazing on Carillon Hill and name a star after us.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.161"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's plan the most romantic anniversary ever.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.162"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our first date? Under the oaks?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.163"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our first kiss? By the fountain.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.164"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I still have the rose you gave me. Pressed.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.165"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our wedding? Fairy lights and a string quartet.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.166"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we tossed coins in the fountain together?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.167"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when you read me poetry under the stars?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.168"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our honeymoon? Every sunset was perfect.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.169"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I remember the moment I knew I loved you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.170"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our first dance? I cried.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.171"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when you surprised me with a hundred roses?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.172"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary, my love! Another year of our love story!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.173"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I wrote you a sonnet. Happy anniversary.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.174"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Another year, my darling. I love you more than ever.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.175"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary! Let's dance like it's our wedding night.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.176"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I got you a hundred roses. One for every reason I love you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.177"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Here's to forever, my love.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.178"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You still can't write a poem. But you try. It's adorable.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.179"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You fall asleep during romantic movies.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.180"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You think candles are a fire hazard.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.181"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You forgot the words to our song. Again.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.182"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You call my sonnets \"long texts\".",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.183"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You hide your tears during sad movies. I see them.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.184"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You're secretly more romantic than me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.185"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You still blush when I say I love you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.186"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You hum our song when you think I'm not listening.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.187"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You can't dance. I love it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.188"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You always say I'm too dramatic. I am. You love it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.189"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You eat the strawberries before they're dipped.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.190"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, my love. Dream of me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.191"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come to bed, darling. The stars are waiting.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.192"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, my heart. I love you endlessly.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.193"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sleep well, my soulmate.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.194"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Let's fall asleep in each other's arms.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.195"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, {player}. You're my forever.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.196"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "I love you to the moon and the stars and back.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.197"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sweet dreams, my darling.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.198"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight. Thank you for another beautiful day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.199"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Let's whisper until we fall asleep.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "hopeless_romantic.marriage.200"
+  }
+ ]
+}

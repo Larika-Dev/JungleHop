@@ -1,0 +1,429 @@
+// Thrill Seeker: adrenaline junkie, dares, "send it", skateboarding, cliff jumps, motorcycles, bored by safety.
+== base
+# greet stage=stranger
+Yo! You look like you've never jumped off anything. We can fix that. I'm {npc}.
+Hey! I'm {npc}. Got a scar for every year I've been alive.
+What's up! Wanna see me ollie that bench? Watch. Okay, I'm fine. I'm {npc}.
+Hey, new blood! You into climbing? Skating? Danger in general?
+Sup! I'm {npc}. Life's short. Let's make it interesting.
+Hey! Don't mind the cast. Broke it rappelling. Totally worth it.
+# greet stage=acquaintance
+{player}! You ready to do something stupid? I mean, awesome?
+Hey, {player}! I found a new ledge by the ravine. It's sick.
+{player}! I dare you to eat the hottest wing at Top of the Mount.
+Yo, {player}! I just bombed Columbia Street on my board. No brakes.
+{player}! Perfect timing. I need someone to film my jump.
+# greet stage=friend+
+{player}! My adrenaline buddy! Let's go!
+There's my wingman! What are we risking today?
+{player}! I bought a second parachute. It's for you.
+Ayy, {player}! You're the only one brave enough to keep up with me.
+{player}! I've been waiting all day to drag you somewhere dangerous.
+My partner in recklessness! Let's send it!
+# greet time=morning
+Morning! Already went for a sunrise climb. Feet still shaking.
+Yo! Cold plunge in the creek at six. Wakes you right up.
+Morning! Perfect fog for a mountain bike run.
+# greet time=evening
+Evening! Sunset skate session on the parking deck. You in?
+Hey! Golden hour means epic footage. Let's go!
+Evening! The ravine's perfect right now. Spooky and fast.
+# greet time=night
+Night! Wanna climb the water tower? Kidding. Mostly.
+Late night? Midnight bike ride down Carillon Hill!
+Yo, night owl! The best adventures start after dark.
+# farewell
+Later! Stay dangerous!
+See ya! Don't break anything I wouldn't!
+Peace! Send it!
+Bye! Live like you've got nine lives!
+Catch you later! I gotta go jump off something.
+Gotta bounce! Literally, there's a trampoline park.
+# farewell stage=friend+
+Later, {player}! Saturday, cliff jumping, don't flake!
+See ya, buddy! Wear a helmet. I won't, but you should.
+Bye! You're the only one I trust to call my mom if something happens.
+# smalltalk
+I jumped off the rope swing at the quarry. Did a backflip. Landed a belly flop.
+The parking deck on Rosemary has the best ramps in town. Security disagrees.
+I'm saving up for a motorcycle. A fast one.
+I tried the ghost pepper challenge at Cosmic Carnitas. I saw the afterlife.
+I climbed the outside of the old mill. Got a great view. And a fine.
+There's a zip line in the mountains that goes sixty miles an hour. I'm going.
+I got stung by a jellyfish last summer. Still the best beach day ever.
+The ravine has a waterfall. Twenty feet. Jumpable.
+I did a polar plunge in January. Lost feeling in my toes for an hour.
+I'm learning to skydive. Tandem first. Then solo.
+Somebody said the bell tower roof is off limits. That's an invitation.
+I went bungee jumping last month. My soul left my body. Ten out of ten.
+# smalltalk stage=friend+
+Honestly? Sometimes I chase danger because sitting still makes my brain loud.
+You're the only person who doesn't tell me to be careful. Thank you.
+I'd jump out of a plane for you. I'd also jump out of a plane for fun.
+You keep me alive. Literally. You talked me out of the water tower.
+If anything ever happens to me, take my skateboard. It's yours.
+You're braver than you think. I've seen it.
+# smalltalk weekend=true
+Weekend! White water rafting! Let's go!
+Saturday! Rock climbing at the gorge. Bring chalk.
+Sunday! Motocross track in Carrburg!
+# about_self
+I broke my first bone at six. Jumped off the roof with an umbrella.
+I want to climb every mountain on every continent.
+I work at the climbing gym. Free climbing all day.
+My parents have stopped asking what I'm up to. They don't want to know.
+I've been in the ER eleven times. The nurses know me by name.
+I'm not reckless. I'm calculated. Mostly.
+The scariest thing for me is a boring life.
+# opinion_place
+{place}? Good roof. I could jump that.
+{place}'s okay. Needs a zip line.
+I skated past {place} once. Got chased by the owner.
+{place} is way too safe. Where's the edge?
+{place}? Great spot for parkour.
+# compliment_reply
+Thanks! That's the adrenaline glow!
+Aw, really? You're making my heart race. And that's hard to do.
+Ha! Thanks! You should see me mid-air.
+You're sweet! Wanna go do something crazy?
+Thanks, {player}! That's going in my highlight reel.
+# insult_reply
+Ha! I've had worse. I've had a bear growl at me.
+That doesn't scare me. Nothing scares me.
+Whatever, man. I've fallen off cliffs. Words don't hurt.
+Wow. That's weak. Try harder.
+You're just mad you're scared of heights.
+# gift_reply
+No way! New gloves! These are perfect for climbing!
+Whoa! This is so cool! I'm taking it on my next trip!
+You got me a GoPro mount?! You're the best!
+Dude! Thank you! You know me so well!
+This is awesome! I'm gonna break it in. Hopefully not break it.
+# joke
+I used to be afraid of heights. Then I fell. Now I'm afraid of the ground.
+Why don't skydivers ever get lonely? They're always dropping in.
+I told my doctor I broke my arm in two places. He told me to stop going to those places.
+What's a thrill seeker's favorite letter? The X. Extreme.
+# ask_favor
+Can you film my jump? Don't stop recording no matter what.
+Would you spot me on the climbing wall? I'm trying a new route.
+Can you drive me to the ER if this goes badly? Kidding! Mostly.
+# favor_reply
+Legend! Thanks!
+You're the best! That footage is gonna be epic!
+Thanks, man! You saved my life. Maybe literally.
+# work_talk
+I'm a river guide. I get paid to almost drown.
+I work at the climbing gym. Today a kid did his first overhang. So proud.
+I do stunt work for local commercials. I fell off a car for a mattress ad.
+Work's fun! I got to rappel down the bank building for a window cleaning gig.
+# school_talk
+I'm studying outdoor recreation. It's a real major!
+I skipped class to go cliff jumping. Worth it.
+My professor said I'm a risk-taker. I said thanks.
+# hostile stage=dislike-
+You're boring and you're mean. Worst combo.
+I'd rather jump off a cliff than talk to you. And I would.
+Get out of my way.
+You're a coward, {player}.
+I'm not scared of you. Nothing scares me.
+Bye. Go be lame somewhere else.
+# flirt_reply romance=none
+Ha! Whoa! I'm flattered, but I'm not into that right now!
+Aw, you're sweet! But let's just be adventure buddies!
+Nah, but thanks! Want to go skydiving instead?
+# flirt_reply romance=crush
+Whoa! My heart just did a backflip!
+Okay, that's scarier than any cliff. And I like it.
+You're making me nervous. That never happens!
+Is this what falling feels like? Because I'm into it.
+# ask_out_yes
+Yes! Let's go skydiving! Or dinner. Or both!
+A date? Heck yes! Let's do something wild!
+# ask_out_no
+Ah, I'm sorry. I don't feel that way. Still adventure buddies?
+I'm gonna pass, but you're brave for asking! Respect!
+
+== dating
+# date_greet
+There you are! I planned a date. It involves a helmet.
+Hey, gorgeous! Ready for an adventure?
+You came! I've got two tickets to the haunted corn maze!
+Hey, babe! I brought the motorcycle. Hop on.
+Hi! You look amazing! Let's go do something crazy!
+Hey, you! I found a secret swimming hole!
+# flirt
+You're scarier than any cliff. In a good way.
+You make my heart race faster than freefall.
+I'd jump off anything for you. Literally anything.
+You're the best adrenaline rush I've ever had.
+Being with you is the most thrilling thing I've ever done.
+You're my favorite adventure.
+I'd give up skydiving for you. Okay, not really. But I'd take you with me.
+# date_talk
+Let's go to the top of Carillon Hill and watch the sunset. Then run down.
+Tell me the scariest thing you've ever done.
+I want to take you everywhere. Every mountain. Every ocean.
+Want to go rock climbing next weekend? I'll teach you.
+I've never told anyone this, but I'm scared of being alone.
+Let's do a midnight bike ride. Under the stars.
+I love that you're brave enough to keep up with me.
+I made us a campfire. With marshmallows. And ghost stories.
+You make me want to slow down. Just a little.
+Let's go white water rafting! I'll hold you if we flip.
+I think you're the best thing that's happened to me.
+I'm so happy right now. Like, top-of-a-mountain happy.
+# compliment
+You're so brave. Braver than you think.
+You look amazing. Like, wind-in-your-hair amazing.
+You're the most fun person I know.
+You've got guts. I love that.
+You're beautiful, {player}. Seriously.
+# kiss_reply
+Whoa! That was better than bungee jumping!
+My heart's pounding! Again!
+That was the best rush ever!
+Okay, I'm officially addicted.
+# miss_you
+I missed you! The climb wasn't the same without you.
+I kept thinking about you on the trail.
+Every jump today, I thought about you.
+I hate being away from you. It's the scariest thing.
+# jealous
+Who was that? Are they braver than me? They're not.
+I'm not jealous! I'm just... competitive!
+I want to be your only adventure.
+# date_end
+Tonight was epic! Get home safe!
+Goodnight, babe! Text me when you're home!
+Best date ever! Same time next week?
+That was amazing! You're amazing!
+Goodnight, {player}! Dream about adventures!
+# lovers_quarrel
+I'm upset, and that's scarier than any cliff.
+Let's talk. I don't want to run away from this.
+That hurt. I don't get hurt easily.
+I don't want to fight. I want to fix this. Rush!
+# proposal_yes
+YES! This is the biggest leap I've ever taken!
+I'll marry you! Let's do it at the top of a mountain!
+
+== marriage
+# home_greet time=morning
+Good morning, babe! I already went for a run. Up the mountain.
+Morning, love! I made coffee. Strong. Like, rocket fuel strong.
+Good morning! I planned a hike for this afternoon!
+Morning! The sunrise was incredible. I watched it from the roof.
+Good morning, sweetheart! Breakfast and then adventure?
+Hey, sleepyhead! The weather's perfect for climbing!
+Good morning! I fixed your bike. It's faster now.
+Morning, love! I love waking up next to my favorite adventure.
+Good morning! Let's do something crazy today.
+Morning! I made protein pancakes. Fuel for the day.
+Good morning, babe! The river's high. Rafting?
+Morning! I already did a cold plunge. You next!
+# home_greet time=evening
+Welcome home, babe! Let's go for a sunset ride!
+You're home! I found a new trail. Want to check it out?
+Hey, love! Dinner's ready. Then night hike?
+Welcome back! I built a fire pit in the backyard!
+There you are! I've been bouncing off the walls waiting.
+Hey, sweetheart! I signed us up for a ropes course!
+You're home! Let's go watch the stars from the roof!
+Welcome home! I bought new climbing gear for both of us!
+Hey, babe! I missed you so much today!
+You're back! The house is too quiet without your laugh.
+# home_greet time=night
+You're home late! Midnight adventure?
+Hey, love. Long day? Let's just cuddle tonight.
+It's late! Come to bed. Big hike tomorrow!
+You're back! I was on the roof looking at the stars.
+Hey, babe. I waited up. Sharpening my ice axes.
+Late night? Let me rub your feet.
+There you are! I was getting antsy.
+Hey, sweetheart. Let's sleep. We need energy for tomorrow.
+# goodbye_work
+Have a great day, babe! Live dangerously!
+Bye, love! Take the stairs. Two at a time!
+Have a good day! I'll plan our next adventure!
+Go crush it! You're fearless!
+Bye! Text me if anything exciting happens!
+Have a great day, sweetheart! Don't be boring!
+Off you go! I'll be at the climbing gym!
+Bye, love! Kiss for luck!
+# work_return
+How was work? Anything exciting?
+Tell me about your day! Was it an adventure?
+You look tired, babe. Let's go for a quick hike to recharge.
+Did your boss stress you out? Let's go punch a bag.
+How'd it go? Any wins? Rush!
+Rough day? Let's go ride bikes and forget about it.
+You're home now! Let's have some fun!
+I'm proud of you, love. You're brave every day.
+# affection
+I love you more than any mountain.
+You're my favorite adventure. Forever.
+Being married to you is the biggest thrill of my life.
+You make my heart race every day.
+I'm so lucky to have you, babe.
+You're my partner in every adventure.
+I'd climb any mountain for you.
+You're the bravest person I know. Rush!
+I love you more than skydiving. And I really love skydiving.
+You keep me grounded. Literally.
+You're my safe place. My base camp.
+I love how you keep up with me.
+You're the best thing that ever happened to me. Better than any jump.
+I love you, babe. More than adrenaline.
+You make me want to come home.
+I'm so proud to be your spouse. Rush!
+You're my anchor, love.
+I love you more every day. Like a summit that keeps getting higher.
+# home_talk
+I built a climbing wall in the garage!
+I found a new cliff to jump off. It's fifty feet!
+I've been training for a marathon. A mountain marathon.
+I bought a kayak! Two kayaks!
+I'm thinking about doing an ironman.
+I've been learning to surf. On YouTube. Then a real wave.
+I signed us up for a skydiving class!
+I fixed the motorcycle. It purrs now.
+I've been planning a trip to the Himalayas.
+I put a zip line in the backyard. Don't tell the HOA.
+I built a treehouse. For adults.
+I've been teaching the neighbor's kid to skateboard.
+I found a cave by the ravine. Want to explore it?
+I've been doing parkour on the roof.
+I bought a paddleboard!
+I've been learning to ride a unicycle.
+I set up a slackline between the trees.
+I've been taking flying lessons. Small planes.
+I found a hot spring in the mountains!
+I've been trying to be more careful. For you.
+I made a list of all the adventures we've had.
+I bought a tent for four seasons!
+I've been rock climbing every morning.
+I think we should get a dog. An adventure dog.
+I set up a trampoline in the backyard!
+I love our wild life together.
+# chores
+I did the dishes! As fast as I could. Speed run!
+I vacuumed! While doing lunges.
+Could you take out the trash? I'm in the middle of a pull-up set.
+I cleaned the gutters! From the roof!
+I mowed the lawn! Fastest time yet!
+I fixed the roof! Climbed up there myself!
+Let's do chores together! Race you!
+I washed the car! And the motorcycle!
+I cleaned out the garage! Found my old skateboard!
+I raked the leaves! Then jumped in them!
+I chopped firewood! With an axe! Very satisfying!
+I scrubbed the bathroom! Like a challenge!
+# money
+I spent too much on gear this month. Sorry, babe.
+We should save for a big trip! Mount Everest!
+Money's tight. Let's do free adventures!
+I got a bonus for stunt work! Let's go skydiving!
+I sold my old bike. Bought a better one.
+We're doing okay! Adventures don't have to be expensive!
+Let's save for a camper van!
+I'm picking up extra guiding shifts!
+We should get better insurance. For me.
+We're rich in memories, love!
+# meal
+Dinner's ready! Grilled over the campfire!
+I made trail mix! For our next hike!
+Let's have a picnic on the mountain!
+I made the spiciest chili ever! Dare you to eat it!
+Breakfast of champions! Eggs and adrenaline!
+I made foil packet dinners! Camping style!
+Let's grill out! Steaks and corn!
+I made smoothies! With extra protein!
+Let's eat on the roof!
+I made s'mores! In the fire pit!
+# argue
+You said you'd come climbing with me! You didn't!
+I feel like you don't like my adventures.
+I'm not reckless! I'm adventurous!
+You hid my motorcycle keys! Again!
+Can you please not worry so much?
+I know I take risks. But I'm careful!
+You never want to do anything exciting anymore.
+I feel like you want me to be boring.
+I'm trying to be safe! It's hard for me!
+I'm going to go for a run. To cool off.
+I just want you to have fun with me.
+You're scared. And that's okay. But don't hold me back.
+# makeup
+I'm sorry, babe. I'll be more careful.
+I hate fighting with you. It's worse than any fall.
+Let's make up. With a hike!
+I love you. I'm sorry I scared you.
+You're my favorite person. Even when we fight. Rush!
+Let's start over. New trail.
+I'll wear the helmet. For you.
+We're good, love. We always land on our feet.
+# support
+Hey, it's okay. Let's go for a walk. Fresh air.
+You're stronger than any mountain, babe.
+I'm here, love. Always. Rush!
+Whatever it is, we'll climb over it together.
+Let's take a break from everything.
+You don't have to be brave today. I'll be brave for both of us.
+Let's sit by the fire and just be.
+I love you. Even on the hard days. Rush!
+You're my hero, love. Rush!
+Let me take care of you tonight. Rush!
+# plans
+Let's go cliff jumping this weekend!
+How about a road trip to the mountains?
+Let's go white water rafting!
+Let's try hang gliding!
+How about a camping trip? Off the grid!
+Let's go to the motocross track!
+Let's go scuba diving!
+How about a weekend at the beach? Surfing!
+Let's go rock climbing at the gorge!
+Let's plan our anniversary on a mountaintop!
+# memories
+Remember our first date? The haunted corn maze!
+Remember when we went skydiving together?
+Remember our wedding? On the mountain!
+Remember when we got lost on the trail?
+Remember our honeymoon? We climbed a volcano!
+I still have the carabiner from our first climb together.
+Remember when we flipped the raft?
+Remember the night we camped in the rain?
+I remember the first time you jumped off the cliff with me.
+Remember when we watched the sunrise from the summit?
+# anniversary
+Happy anniversary, babe! Let's go skydiving!
+Another year! Let's climb a new mountain!
+I got you new climbing shoes! Happy anniversary!
+Happy anniversary, love! You're still my favorite adventure!
+I love you more every year! Like altitude!
+Here's to another year of adventures! Rush!
+# tease
+You still scream on roller coasters.
+You won't jump off the high dive.
+You're scared of spiders. And you climb with me?
+You always pack too much for camping.
+You walk around puddles. I jump in them.
+You check the weather three times before a hike.
+You hold the railing on stairs.
+You're secretly braver than me.
+You always say "be careful". I never am.
+You hide the motorcycle keys.
+You can't start a campfire.
+You love adventure. Admit it.
+# bedtime
+Goodnight, babe! Big adventure tomorrow!
+Come to bed! We need rest for the climb!
+Goodnight, love! You're my favorite adventure!
+Sleep tight! Dream about mountains!
+Goodnight! I love you more than adrenaline!
+Let's sleep. Then let's live!
+Goodnight, {player}! You're amazing!
+Sweet dreams, babe!
+Come cuddle! I'm warm from the fire!
+Goodnight. Thanks for keeping me alive.
