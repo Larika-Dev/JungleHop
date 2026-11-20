@@ -121,39 +121,54 @@ static func outfit_for(rec: Dictionary) -> Dictionary:
 	return out
 
 
-## How far this body vertex is pushed out for the garment (meters), or -1 if
-## the garment doesn't cover it. part/yn/df as in npc_body.gdshader.
-static func _cover(it: Dictionary, part: int, yn: float, df: float) -> float:
+## For a body vertex: x = how far the garment sits off the skin (m), y = the
+## signed distance (in height fractions) inside the garment's edges. Vertices a
+## little outside (y > -MARGIN) are kept so the shader can cut clean hems.
+const MARGIN := 0.025
+const NONE := Vector2(0.0, -1.0)
+
+
+static func _cover(it: Dictionary, part: int, yn: float, df: float) -> Vector2:
 	var t: float = it.thick
 	match it.slot:
 		"shoes":
-			if part == 4 or (part == 1 and yn < it.collar):
-				return t
+			if part == 4:
+				return Vector2(t, 1.0)
+			if part == 1:
+				return Vector2(t, it.collar - yn)
 		"top", "outer":
 			return _upper(it, part, yn, df, t)
 		"bottom":
 			if it.get("dress", false):
 				var u := _upper(it, part, yn, df, t)
-				if u >= 0.0 or (part == 0 and yn > 0.5):
-					return t
-			elif part == 0 and yn < it.waist:
-				return t
-			elif part == 1 and it.skirt <= 0.0 and yn > it.leg_hem:
-				return t
-			elif part == 1 and it.skirt > 0.0 and yn > 0.44:
-				return t
-	return -1.0
+				if part == 0:
+					var lower := Vector2(t * 1.4, 0.62 - yn)
+					return u if u.y > lower.y else lower
+				return u
+			if part == 0:
+				return Vector2(t * 1.3, it.waist - yn)
+			if part == 1:
+				if it.skirt > 0.0:
+					return Vector2(t, yn - 0.44)
+				var loose := 1.0 + 0.6 * clampf((yn - 0.3) / 0.2, 0.0, 1.0)
+				return Vector2(t * loose, yn - it.leg_hem)
+	return NONE
 
 
-static func _upper(it: Dictionary, part: int, yn: float, df: float, t: float) -> float:
-	var top_y: float = it.neck - (it.vneck * clampf(1.0 - df / 25.0, 0.0, 1.0))
-	if part == 0 and yn > it.hem and yn < top_y and not (it.open and df < 6.0):
-		return t
-	if part == 2 and yn > it.sleeve:
-		return t
-	if part == 6 and it.turtle and yn < 0.86:
-		return t
-	return -1.0
+static func _upper(it: Dictionary, part: int, yn: float, df: float, t: float) -> Vector2:
+	if part == 0:
+		var top_y: float = it.neck - (it.vneck * clampf(1.0 - df / 25.0, 0.0, 1.0))
+		var m := minf(yn - it.hem, top_y - yn)
+		if it.open:
+			m = minf(m, (df - 5.0) / 400.0)
+		# looser over the belly and back than over the shoulders
+		var loose := 1.0 + 0.8 * clampf((0.72 - yn) / 0.12, 0.0, 1.0)
+		return Vector2(t * loose, m)
+	if part == 2:
+		return Vector2(t * 1.2, yn - it.sleeve)
+	if part == 6:
+		return Vector2(t, 0.86 - yn) if it.turtle else Vector2(t, it.neck - yn)
+	return NONE
 
 
 static func mesh(sex: String, id: String) -> ArrayMesh:
@@ -188,17 +203,24 @@ static func _build(sex: String, it: Dictionary) -> ArrayMesh:
 	var I: PackedInt32Array = a[Mesh.ARRAY_INDEX]
 	var n := V.size()
 	var th := PackedFloat32Array()
+	var mg := PackedFloat32Array()
 	th.resize(n)
+	mg.resize(n)
 	for i in n:
 		var part := int(floor(UV[i].x + 0.01))
-		th[i] = _cover(it, part, UV[i].y, absf(UV2[i].x * 360.0 - 270.0)) if part <= 6 else -1.0
+		var cv := _cover(it, part, UV[i].y, absf(UV2[i].x * 360.0 - 270.0)) if part <= 6 else NONE
+		th[i] = cv.x
+		mg[i] = cv.y
 	var remap := PackedInt32Array()
 	remap.resize(n)
 	remap.fill(-1)
 	var keep := PackedInt32Array()
 	var idx := PackedInt32Array()
 	for t in range(0, I.size(), 3):
-		if th[I[t]] < 0.0 or th[I[t + 1]] < 0.0 or th[I[t + 2]] < 0.0:
+		var m0 := mg[I[t]]
+		var m1 := mg[I[t + 1]]
+		var m2 := mg[I[t + 2]]
+		if minf(m0, minf(m1, m2)) < -MARGIN or maxf(m0, maxf(m1, m2)) <= 0.0:
 			continue
 		for k in 3:
 			var v := I[t + k]
@@ -207,6 +229,10 @@ static func _build(sex: String, it: Dictionary) -> ArrayMesh:
 				keep.append(v)
 			idx.append(remap[v])
 	var out := _gather(keep, V, N, th, UV, UV2, B, W, idx)
+	var ouv2: PackedVector2Array = out[Mesh.ARRAY_TEX_UV2]
+	for j in keep.size():
+		ouv2[j].y = mg[keep[j]]   # hem cut in the shader
+	out[Mesh.ARRAY_TEX_UV2] = ouv2
 	var out_shapes := []
 	for s in shapes:
 		out_shapes.append(_gather(keep, s[Mesh.ARRAY_VERTEX], s[Mesh.ARRAY_NORMAL], th, null, null, null, null, null))
@@ -275,8 +301,8 @@ static func _add_skirt(it: Dictionary, V: PackedVector3Array, UV: PackedVector2A
 			zmax = maxf(zmax, V[i].z)
 	var cz := (zmin + zmax) * 0.5
 	var rz := (zmax - zmin) * 0.5
-	rx += it.thick + 0.004
-	rz += it.thick + 0.004
+	rx += it.thick + 0.012
+	rz += it.thick + 0.012
 	var y1: float = (it.skirt if it.coat <= 0.0 else it.coat) * H
 	var flare: float = it.flare if it.coat <= 0.0 else 1.12
 	var rings := int((y0 - y1) / 0.02) + 1
@@ -301,12 +327,14 @@ static func _add_skirt(it: Dictionary, V: PackedVector3Array, UV: PackedVector2A
 			var d := Vector3(cos(ang) * rx * s, 0, sin(ang) * rz * s)
 			pv.append(Vector3(d.x, y, cz + d.z))
 			pn.append(Vector3(cos(ang) * rz, 0.15, sin(ang) * rx).normalized())
-			uv.append(Vector2(0.0, y / H))
-			uv2.append(Vector2(fposmod(ang / TAU, 1.0), 0.5))
-			var side := NpcBodyMesh.B_THIGH_L if d.x < 0.0 else NpcBodyMesh.B_THIGH_R
-			var wl := 0.45 * f * absf(cos(ang))
-			b.append_array([pelvis, side, 0, 0])
-			w.append_array([1.0 - wl, wl, 0.0, 0.0])
+			uv.append(Vector2(12.0, y / H))
+			uv2.append(Vector2(fposmod(ang / TAU, 1.0), 1.0))
+			# the hem follows the legs: left half with the left thigh, right with the right
+			var u := clampf(cos(ang), -1.0, 1.0)
+			var wl := 0.9 * f * (0.5 - 0.5 * u)
+			var wr := 0.9 * f * (0.5 + 0.5 * u)
+			b.append_array([pelvis, NpcBodyMesh.B_THIGH_L, NpcBodyMesh.B_THIGH_R, 0])
+			w.append_array([1.0 - wl - wr, wl, wr, 0.0])
 			if r < rings:
 				var a0 := base + r * SEG + k
 				var a1 := base + r * SEG + (k + 1) % SEG

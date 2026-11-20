@@ -36,6 +36,27 @@ def map_bone(n):
         return "%s%d%s" % (name, 1 if seg == "1" else 2, side)
     return "head"  # head, jaw, eyes, tongue and face muscles
 
+FACE_SHAPES = [
+    ("nose_width", ["nose/nose-scale-horiz-incr"], ["nose/nose-scale-horiz-decr"]),
+    ("nose_length", ["nose/nose-scale-vert-incr"], ["nose/nose-scale-vert-decr"]),
+    ("nose_hump", ["nose/nose-hump-incr"], ["nose/nose-hump-decr"]),
+    ("nose_up", ["nose/nose-trans-up"], []),
+    ("nose_depth", ["nose/nose-scale-depth-incr"], []),
+    ("chin_prominent", ["chin/chin-prominent-incr"], ["chin/chin-prominent-decr"]),
+    ("chin_width", ["chin/chin-width-incr"], ["chin/chin-width-decr"]),
+    ("mouth_width", ["mouth/mouth-scale-horiz-incr"], ["mouth/mouth-scale-horiz-decr"]),
+    ("lips_full", ["mouth/mouth-upperlip-volume-incr", "mouth/mouth-lowerlip-volume-incr"], []),
+    ("head_oval", ["head/head-oval"], ["head/head-round"]),
+    ("head_square", ["head/head-square"], []),
+    ("eyes_big", ["eyes/l-eye-scale-incr", "eyes/r-eye-scale-incr"], []),
+    ("cheekbones", ["cheek/l-cheek-bones-incr", "cheek/r-cheek-bones-incr"], []),
+    ("cheeks_full", ["cheek/l-cheek-inner-incr", "cheek/r-cheek-inner-incr"], []),
+    ("brows_up", ["eyebrows/eyebrows-trans-up"], []),
+    ("brows_angle", ["eyebrows/eyebrows-angle-up"], []),
+    ("ears_big", ["ears/l-ear-scale-incr", "ears/r-ear-scale-incr"], []),
+    ("young_face", ["head/head-age-decr"], []),
+]
+
 BONES = ["root", "pelvis", "spine", "chest", "neck", "head",
          "thigh_L", "shin_L", "foot_L", "thigh_R", "shin_R", "foot_R",
          "upperarm_L", "forearm_L", "hand_L", "upperarm_R", "forearm_R", "hand_R"]
@@ -250,6 +271,13 @@ def main():
         }
         for r in RACES:
             shapes[r] = races[r] - mean
+        # Per-person face variety: signed shapes (weight -1..1) from MakeHuman modifiers.
+        T = lambda rel: read_target(fetch(src, "targets/%s.target" % rel), n)
+        for nm, pos_t, neg_t in FACE_SHAPES:
+            d = sum(T(t) for t in pos_t) / 1.0
+            if neg_t:
+                d = (d - sum(T(t) for t in neg_t)) / 2.0
+            shapes[nm] = d
         # MakeHuman: decimeters, +Z forward, +X = character's left.
         # Game: meters, -Z forward, -X = character's left (rotate 180 degrees about Y).
         conv = lambda p: np.stack([-p[:, 0], p[:, 1], -p[:, 2]], 1) * 0.1
@@ -465,7 +493,7 @@ def main():
             amp = g(y, 0.5, 0.035) * back * pelv * 0.005 * (H / 1.75)
             flex["glute_flex_" + name] = n0 * amp[:, None]
         names = ["fat", "slim", "muscle", "calf_flex_L", "calf_flex_R", "quad_flex_L", "quad_flex_R",
-                 "glute_flex_L", "glute_flex_R", "barefoot", "caucasian", "african", "asian"]
+                 "glute_flex_L", "glute_flex_R", "barefoot", "caucasian", "african", "asian"] + [f[0] for f in FACE_SHAPES]
         blocks = []
         for nm in names:
             if nm in D: sp = pos_rest + D[nm][out_v]

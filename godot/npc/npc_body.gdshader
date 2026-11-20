@@ -88,7 +88,7 @@ void fragment() {
 			col = mix(col, hair_color * 0.8, COLOR.a * mix(dots * 0.6, 0.9, smoothstep(0.6, 1.0, stubble)));
 		}
 		if (COLOR.r > 0.5) mat = 6;
-		if (COLOR.g > 0.35) mat = 9;
+		if (COLOR.g > 0.55) mat = 9;
 	} else if (part == 3) {               // head
 		float line = df < 40.0 ? mix(hair_front, hair_side, smoothstep(20.0, 40.0, df))
 			: (df < 110.0 ? mix(hair_side, hair_back, smoothstep(70.0, 110.0, df)) : hair_back);
@@ -144,7 +144,7 @@ void fragment() {
 		rough = 0.6;
 	} else if (mat == 4) {
 		float strands = vnoise(vec2(UV2.x * 900.0, yn * 160.0));
-		col = hair_color * (0.75 + 0.5 * strands * detail);
+		col = hair_color * (0.6 + 0.35 * strands * detail);
 		if (hair_amount < 0.75) col = mix(skin_color, col, hair_amount * 1.2);
 		rough = 0.62;
 		spec = 0.25;

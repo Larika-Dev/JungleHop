@@ -37,6 +37,8 @@ var _build := {}
 var _race := {}
 var _garments: Array[MeshInstance3D] = []
 var outfit := {}   # NpcWardrobe item ids by slot
+var _stride := 1.0  # shorter steps in skirts and long coats
+var _hair: MeshInstance3D
 var _height_m := 1.75
 var _flee_until := 0.0
 var _barefoot := false
@@ -67,7 +69,7 @@ static func ref_height(p_sex: String) -> float:
 
 
 static func shape_names() -> Array:
-	return NpcMhMesh.SHAPES if use_mh else NpcBodyMesh.SHAPES
+	return NpcMhMesh.shape_list() if use_mh else NpcBodyMesh.SHAPES
 
 
 func _init() -> void:
@@ -185,6 +187,13 @@ func apply_record(rec: Dictionary) -> void:
 		_race["caucasian"] = clampf(mix[0] * 1.5 - 0.5 + 0.3 * r, -0.5, 1.0)
 		_race["african"] = clampf(mix[1] * 1.5 - 0.5 + 0.3 * (1.0 - r), -0.5, 1.0)
 		_race["asian"] = clampf(mix[2] * 1.5 - 0.5, -0.5, 1.0)
+		# Per-person face: every face shape gets its own small random amount.
+		var frng := RandomNumberGenerator.new()
+		frng.seed = hash(npc_id + "face")
+		var shapes: Array = NpcMhMesh.shape_list()
+		for k in range(shapes.find(NpcMhMesh.FACE_FIRST), shapes.size()):
+			_race[shapes[k]] = clampf(frng.randfn(0.0, 0.38), -0.9, 0.9)
+		_race["young_face"] = clampf(_race.get("young_face", 0.0) + (0.4 if age < 25 else (-0.3 if age > 50 else 0.0)), -0.9, 1.0)
 	_material.set_shader_parameter("hair_front", hair[0])
 	record["_hair_front"] = hair[0]
 	_material.set_shader_parameter("stubble", 0.0)
@@ -194,6 +203,18 @@ func apply_record(rec: Dictionary) -> void:
 	set_barefoot(bool(rec.get("outfit", {}).get("barefoot", false)))
 	if use_mh:
 		dress(NpcWardrobe.outfit_for(rec), rec.get("wardrobe_tint", {}))
+		if _hair:
+			_hair.queue_free()
+			_hair = null
+		var hm := NpcHair.mesh(sex, hs)
+		if hm:
+			_hair = MeshInstance3D.new()
+			_hair.name = "Hair"
+			skeleton.add_child(_hair)
+			_hair.skeleton = NodePath("..")
+			_hair.skin = mesh_instance.skin
+			_hair.mesh = hm
+			_hair.material_override = NpcHair.material(p.hair)
 	if interactable and interactable.has_method("setup"):
 		interactable.setup(self)
 	if lod >= 0:
@@ -235,6 +256,11 @@ func dress(items: Dictionary, tint: Dictionary = {}) -> void:
 		g.skin = mesh_instance.skin
 		g.material_override = NpcWardrobe.material(it, tint.get(slot))
 		_garments.append(g)
+	_stride = 1.0
+	for slot in ["bottom", "outer"]:
+		var it2 := NpcWardrobe.item(items.get(slot, ""))
+		if not it2.is_empty() and (it2.skirt > 0.0 or it2.coat > 0.0):
+			_stride = 0.7
 	_material.set_shader_parameter("separate_clothes", 1.0)
 	_apply_build_shapes()
 
@@ -257,6 +283,8 @@ func set_lod(l: int) -> void:
 	for n in shape_names():
 		_shape_idx[n] = mesh_instance.find_blend_shape_by_name(n)
 	_material.set_shader_parameter("detail", 1.0 if l == 0 else (0.4 if l == 1 else 0.0))
+	if _hair:
+		_hair.visible = l < 2
 	_material.set_shader_parameter("painted_eyes", 1.0 if l == 2 and not use_mh else 0.0)
 	_material.set_shader_parameter("use_regions", 1.0 if use_mh else 0.0)
 	mesh_instance.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_ON if l < 2 else GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
@@ -328,7 +356,7 @@ func animate(delta: float, speed: float) -> void:
 	var flex := lod == 0 or lod == 1
 	for side in [0, 1]:  # 0 = left, 1 = right
 		var p := fposmod(_phase + (0.5 if side == 0 else 0.0), 1.0)
-		var hip := (22.0 * cos(TAU * p) + 3.0) * walk
+		var hip := (22.0 * cos(TAU * p) + 3.0) * walk * _stride
 		var knee := (5.0 + 15.0 * _bump(p, 0.12, 0.07) + 58.0 * _bump(p, 0.72, 0.11)) * walk + 3.0 * (1.0 - walk)
 		var ankle := _ankle_curve(p) * walk
 		var o := 0 if side == 0 else 3

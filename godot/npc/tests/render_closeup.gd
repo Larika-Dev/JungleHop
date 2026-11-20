@@ -33,7 +33,12 @@ func _init() -> void:
 	var pop := NpcPopulation.generate(60)
 	var picks := [pop[3], pop[11], pop[20], pop[33], pop[41]]
 	picks[0]["wardrobe"] = {"outer": "denim_jacket"}
-	picks[3]["wardrobe"] = {"outer": "peacoat"}
+	picks[3]["wardrobe"] = {"outer": "puffer"}
+	picks[0].hair_style = "medium"
+	picks[1].hair_style = "short"
+	picks[2].hair_style = "ponytail"
+	picks[3].hair_style = "curly"
+	picks[4].hair_style = "long"
 	for i in picks.size():
 		var b := NpcBody.new()
 		root3d.add_child(b)

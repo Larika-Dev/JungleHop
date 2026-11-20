@@ -16,8 +16,29 @@ float vnoise(vec2 p) {
 	return mix(mix(hash(i), hash(i + vec2(1, 0)), u.x), mix(hash(i + vec2(0, 1)), hash(i + vec2(1, 1)), u.x), u.y);
 }
 
+float folds(float yn, float ang, int part) {
+	// soft horizontal folds that gather at elbows, knees, the waist and hems,
+	// plus long vertical drape folds on skirts
+	float h = 0.0;
+	float n = vnoise(vec2(ang * 40.0, yn * 30.0));
+	float joint = 0.25;
+	if (part == 2) joint += 1.2 * exp(-pow((yn - 0.63) / 0.03, 2.0));
+	if (part == 1) joint += 1.0 * exp(-pow((yn - 0.285) / 0.03, 2.0)) + 1.2 * smoothstep(0.12, 0.05, yn);
+	if (part == 0) joint += 0.8 * exp(-pow((yn - 0.585) / 0.025, 2.0));
+	h += sin(yn * 380.0 + n * 9.0 + sin(ang * 25.0) * 3.0) * joint * (0.4 + 0.6 * vnoise(vec2(ang * 18.0, yn * 60.0)));
+	if (part == 12) h = sin(ang * 70.0 + n * 3.0) * (0.4 + 0.6 * smoothstep(0.55, 0.3, yn)) + 0.3 * sin(yn * 300.0 + n * 5.0);
+	return h * 0.5;
+}
+
 void fragment() {
 	float yn = UV.y;
+	if (UV2.y < 0.0) discard;   // outside the hem / neckline / cuff
+	int part = int(floor(UV.x + 0.01));
+	float e = 0.0015;
+	float f0 = folds(yn, UV2.x, part);
+	float fy = folds(yn + e, UV2.x, part);
+	float fx = folds(yn, UV2.x + e, part);
+	NORMAL_MAP = normalize(vec3((f0 - fx) * 0.35 * detail, (f0 - fy) * 0.35 * detail, 1.0)) * 0.5 + 0.5;
 	vec2 q = vec2(UV2.x * 520.0, yn * 1700.0);   // about 1 mm cells
 	vec3 c = color;
 	float rough = 0.85;
@@ -41,6 +62,7 @@ void fragment() {
 	}
 	c *= 0.97 + 0.06 * vnoise(q * 0.35) * detail;
 	if (is_shoe > 0.5 && yn < 0.012) { c = color2; rough = 0.7; }   // sole
+	c *= 0.93 + 0.07 * f0;   // shading in the fold valleys
 	ALBEDO = c;
 	ROUGHNESS = rough;
 	SPECULAR = spec;

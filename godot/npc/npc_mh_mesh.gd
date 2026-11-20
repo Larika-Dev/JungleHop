@@ -4,9 +4,11 @@ extends RefCounted
 ## tools/build_mh_body.py from CC0 MakeHuman data) as a skinned ArrayMesh with
 ## blend shapes and automatic LODs. Cached in user://npc_cache.
 
-const VERSION := 5
-const SHAPES := ["fat", "slim", "muscle", "calf_flex_L", "calf_flex_R", "quad_flex_L", "quad_flex_R",
-	"glute_flex_L", "glute_flex_R", "barefoot", "caucasian", "african", "asian"]
+const VERSION := 6
+## Blend shape names come from the model's meta (body, flex, ethnicity, face variety).
+static func shape_list() -> Array:
+	return meta("male").get("shapes", [])
+const FACE_FIRST := "nose_width"
 
 static var _meta := {}
 
@@ -84,7 +86,7 @@ static func build(sex: String) -> ArrayMesh:
 	arrays[Mesh.ARRAY_WEIGHTS] = weights
 	arrays[Mesh.ARRAY_INDEX] = idx
 	var shapes := []
-	for s in SHAPES:
+	for s in shape_list():
 		var sa := []
 		sa.resize(Mesh.ARRAY_MAX)
 		sa[Mesh.ARRAY_VERTEX] = _v3(take.call(n * 3).to_float32_array())
@@ -92,7 +94,7 @@ static func build(sex: String) -> ArrayMesh:
 		shapes.append(sa)
 	var im := ImporterMesh.new()
 	im.set_blend_shape_mode(Mesh.BLEND_SHAPE_MODE_NORMALIZED)
-	for s in SHAPES:
+	for s in shape_list():
 		im.add_blend_shape(s)
 	im.add_surface(Mesh.PRIMITIVE_TRIANGLES, arrays, shapes)
 	im.generate_lods(60.0, 25.0, [])
