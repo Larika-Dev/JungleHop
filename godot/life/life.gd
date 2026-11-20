@@ -38,6 +38,8 @@ var _recent_external: Dictionary = {}
 var _place_timer: float = 0.0
 var _hooked_game_state: bool = false
 var _business_by_building: Dictionary = {}
+## "furniture_instance|action" -> game minute a held pose (sit, lie_down) started
+var _pose_started: Dictionary = {}
 
 
 func _init() -> void:
@@ -278,6 +280,8 @@ func _on_node_added(node: Node) -> void:
 	if node.has_signal("action_finished") and (node.is_in_group("furniture") or "furniture_kind" in node):
 		if not node.action_finished.is_connected(_on_furniture_action):
 			node.action_finished.connect(_on_furniture_action)
+		if node.has_signal("action_started") and not node.action_started.is_connected(_on_furniture_started):
+			node.action_started.connect(_on_furniture_started)
 	if "npc_id" in node and str(node.npc_id) != "":
 		_register_npc_node(node)
 
@@ -290,32 +294,87 @@ func _register_npc_node(node: Node) -> void:
 	relationships.register_npc(str(node.npc_id), inf)
 
 
+func _on_furniture_started(action_id: String, actor: Variant, furniture: Variant) -> void:
+	if _is_player_actor(actor) and furniture is Object:
+		_pose_started["%d|%s" % [furniture.get_instance_id(), action_id]] = clock.total_minutes
+
+
 func _on_furniture_action(action_id: String, actor: Variant, furniture: Variant) -> void:
 	apply_external_action(action_id, furniture, actor)
 
 
 func _on_game_state_action(action_id: String, target: Variant, actor: Variant) -> void:
-	# Actions started through Life.actions.perform on NPCs are already applied.
-	if target is Node and actions.target_kind(target) == "npc":
-		return
+	# NPC actions run through Life.actions.perform are already applied, and
+	# furniture reports through its own action_finished (held poses end later).
+	if target is Node and actions.target_kind(target) in ["npc", "furniture"]:
+		if (target as Node).has_signal("action_finished"):
+			return
 	apply_external_action(action_id, target, actor)
+
+
+func _is_player_actor(actor: Variant) -> bool:
+	return not (actor is Node and actor != self and not (actor as Node).is_in_group("player"))
+
+
+## The furniture side's definition of an action: Furniture.action_def(id) when
+## the furniture manager exists, else the entry from the node's get_actions().
+## Shape: {label, minutes, needs, perHour?}.
+func _furniture_def(action_id: String, target: Variant) -> Dictionary:
+	var mgr := get_node_or_null("/root/Furniture")
+	if mgr and mgr.has_method("action_def"):
+		var d: Variant = mgr.action_def(action_id)
+		if d is Dictionary and not d.is_empty():
+			return d
+	if target is Node and target.has_method("get_actions"):
+		for a in actions.native_furniture_actions(target):
+			if str(a.get("id", "")) == action_id:
+				var d2: Dictionary = a.duplicate()
+				if not d2.has("needs"):
+					d2["needs"] = a.get("needs_effects", {})
+				if not d2.has("minutes"):
+					d2["minutes"] = int(a.get("duration_game_minutes", 0))
+				return d2
+	return {}
 
 
 ## Apply life effects for an action another system ran (furniture, Interactable).
 ## De-duplicated, so both the furniture signal and GameState can report it.
 func apply_external_action(action_id: String, target: Variant, actor: Variant) -> void:
-	if actor is Node and actor != self and not (actor as Node).is_in_group("player"):
+	if not _is_player_actor(actor):
 		return
-	var key := "%s|%s" % [action_id, str(target.get_instance_id()) if target is Object else str(target)]
+	var tid := str(target.get_instance_id()) if target is Object else str(target)
+	var key := "%s|%s" % [action_id, tid]
 	var now := Time.get_ticks_msec()
 	if now - int(_recent_external.get(key, -100000)) < 400:
 		return
 	_recent_external[key] = now
+	var fdef := _furniture_def(action_id, target)
+	# Held poses (sit, lie_down): effects per game hour actually held.
+	if fdef.get("perHour", false):
+		var pk := "%s|%s" % [tid, action_id]
+		var hours: float = (clock.total_minutes - float(_pose_started.get(pk, clock.total_minutes))) / 60.0
+		_pose_started.erase(pk)
+		if hours > 0.0:
+			needs.apply(fdef.get("needs", {}), hours)
+		return
 	var def: Dictionary = actions.get_def(action_id)
-	if not def.is_empty():
-		var scale := 1.0
-		var fx := {"needs": def.get("needs", {})}
-		needs.apply(fx.needs, scale)
+	var own: bool = not def.is_empty() and def.get("target", "self") != "npc"
+	var fx_needs: Dictionary = def.get("needs", {}) if own else fdef.get("needs", {})
+	var minutes: float = float(def.get("minutes", fdef.get("minutes", 0))) if own else float(fdef.get("minutes", 0))
+	if def.is_empty() and fdef.is_empty():
+		return
+	# Furniture finishes at once; Life spends the action's time by skipping the clock.
+	var is_furniture: bool = target is Node and actions.target_kind(target) == "furniture"
+	if is_furniture and minutes > 0.0 and not actions.busy():
+		var hold: Array = []
+		for n in fx_needs:
+			if float(fx_needs[n]) > 0.0:
+				hold.append(n if n != "comfort" else "energy")
+		needs.hold(hold)
+		clock.advance_minutes(minutes)
+		needs.release_all()
+	needs.apply(fx_needs)
+	if own:
 		for s in def.get("skills", {}):
 			skills.add_xp(s, float(def.skills[s]))
 		if float(def.get("earn", 0)) > 0.0:
@@ -323,15 +382,8 @@ func apply_external_action(action_id: String, target: Variant, actor: Variant) -
 		var msg := str(def.get("message", ""))
 		if msg != "":
 			notify.emit(msg)
-		actions.action_finished.emit(action_id, target, {"ok": true, "success": true, "message": "",
-			"external": true})
-		return
-	# No life definition: use the furniture's own needs_effects.
-	if target is Node and target.has_method("get_actions"):
-		for a in actions.native_furniture_actions(target):
-			if str(a.get("id", "")) == action_id:
-				needs.apply(a.get("needs_effects", {}))
-				return
+	actions.action_finished.emit(action_id, target, {"ok": true, "success": true, "message": "",
+		"external": true})
 
 
 # --- Compatibility aliases (jobs / education threads asked for these) --------

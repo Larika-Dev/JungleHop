@@ -29,7 +29,12 @@ func near(a: float, b: float, eps: float = 0.011) -> bool:
 func _run() -> void:
 	life = root.get_node_or_null("Life")
 	if life == null:
-		life = load("res://life/life.gd").new()
+		var script: Script = load("res://life/life.gd")
+		if script == null or not script.can_instantiate():
+			printerr("FAIL: life.gd does not load")
+			quit(1)
+			return
+		life = script.new()
 		life.name = "Life"
 		root.add_child(life)
 	await process_frame
@@ -218,6 +223,20 @@ func test_furniture() -> void:
 	life.needs.set_value("fun", 20)
 	life.actions.perform("bounce", bed)
 	ok(near(life.needs.get_value("fun"), 30.0, 0.2), "native-only action uses needs_effects")
+	# Held pose: per-hour effects for the time actually seated.
+	var chair := DemoFurniture.new()
+	chair.furniture_kind = "chair"
+	chair.native = [{"id": "sit", "label": "Sit", "minutes": 0, "perHour": true, "needs": {"fun": 6}}]
+	root.add_child(chair)
+	await process_frame
+	life.needs.enabled = false
+	life.needs.set_value("fun", 20)
+	life.actions.perform("sit", chair)
+	ok(near(life.needs.get_value("fun"), 20.0), "sitting applies nothing until you stand")
+	life.clock.advance_minutes(120)
+	chair.stand_up()
+	ok(near(life.needs.get_value("fun"), 32.0, 0.1), "2 h seated at +6/h = +12 fun (%.1f)" % life.needs.get_value("fun"))
+	life.needs.enabled = true
 	life.needs.set_value("hygiene", 10)
 	var res: Dictionary = life.actions.perform("shower", shower)
 	ok(res.ok and life.actions.busy(), "shower is timed")

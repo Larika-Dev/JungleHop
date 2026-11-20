@@ -420,8 +420,10 @@ func _perform_native_furniture(id: String, target: Node) -> Dictionary:
 		target.perform(id, actor)
 	else:
 		target.perform(id)
-	# If no signal reported it back (no GameState, plain test furniture), apply now.
-	life.apply_external_action(id, target, actor if actor else life)
+	# Furniture with action_finished reports back itself (held poses later);
+	# anything else gets its effects now.
+	if not target.has_signal("action_finished"):
+		life.apply_external_action(id, target, actor if actor else life)
 	return {"ok": true, "reason": ""}
 
 

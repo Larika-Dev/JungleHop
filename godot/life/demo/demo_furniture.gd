@@ -7,6 +7,7 @@ signal action_finished(action_id: String, actor: Node, furniture: Node)
 @export var furniture_kind: String = "bed"
 @export var display_name: String = "Bed"
 var native: Array = []
+var _held: String = ""
 
 
 func _ready() -> void:
@@ -17,10 +18,19 @@ func get_actions() -> Array:
 	return native
 
 
+## Mirrors the furniture thread: timed actions finish at once (Life skips the
+## clock), held poses ("sit", "lie_down") finish on stand_up().
 func perform(action_id: String, actor: Node = null) -> void:
+	if action_id in ["sit", "lie_down"]:
+		_held = action_id
+		action_started.emit(action_id, actor, self)
+		return
 	action_started.emit(action_id, actor, self)
-	# Real furniture owns its own timing; the stand-in just skips the clock.
-	for a in native:
-		if a.get("id", "") == action_id and int(a.get("duration_game_minutes", 0)) > 0:
-			get_node("/root/Life").clock.advance_minutes(int(a.duration_game_minutes))
 	action_finished.emit(action_id, actor, self)
+
+
+func stand_up(actor: Node = null) -> void:
+	if _held != "":
+		var a := _held
+		_held = ""
+		action_finished.emit(a, actor, self)

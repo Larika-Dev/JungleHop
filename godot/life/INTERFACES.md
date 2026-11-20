@@ -185,16 +185,24 @@ var res := Life.actions.perform("chat", npc_node)       # starts it; returns {ok
 `target` may be `null` (self), an NPC node (group `npc`, property `npc_id`),
 a furniture node (group `furniture`), a place dictionary, or an NPC id string.
 
-### Furniture contract (agreed with the furniture thread)
+### Furniture contract (agreed with the furniture thread, PR #3)
 
-Furniture nodes join group `furniture`, have `get_actions() -> Array[Dictionary]`
-(`{id, label, verb, duration_game_minutes, needs_effects}`), `perform(id, actor)`,
-optional `furniture_kind: String`, and emit
-`action_finished(action_id, actor, furniture)`. Life connects to every furniture
-node it sees. When the actor is in group `player`, Life applies the life effects
-of the action with the same id (falling back to the furniture's
-`needs_effects`). `Life.actions.available_for(furniture)` merges the furniture's
-own actions with the life actions whose `furniture` list matches.
+Furniture nodes join group `furniture`, have `get_actions(actor)`, `perform(id, actor)`,
+`furniture_kind: String`, and emit `action_started` / `action_finished(action_id, actor, furniture)`.
+Life connects to every furniture node it sees and, when the actor is the player:
+
+- **Timed actions** (sleep, nap, cook, watch TV...) finish on the furniture at once.
+  Life then skips the clock by the action's minutes (Life's definition if it has
+  one, else `Furniture.action_def(id).minutes`) and applies the needs, skills and
+  money. Needs the action restores don't decay during the skip.
+- **Held poses** (`perHour: true`, e.g. sit, lie_down) start on `action_started`
+  and finish on stand-up. Life applies their `needs` scaled by game hours held.
+- If Life has no definition for an id, or its id belongs to an NPC action
+  (e.g. `cuddle`), the furniture's own `needs` are used.
+- `Life.actions.available_for(furniture)` merges the furniture's actions with the
+  life actions whose `furniture` list matches its `furniture_kind` or action ids.
+- `GameState.action_performed` echoes for furniture are ignored, so nothing is
+  applied twice.
 
 ## Player flags and place
 

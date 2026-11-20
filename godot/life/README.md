@@ -52,7 +52,8 @@ Export presets must include `*.json` in "non-resource files to export" so
   Social success depends on Charm, the relationship tier, the NPC's traits
   (`likes`) and shared interests (`topic`), and your mood.
 - **Furniture.** Furniture's own actions (sit, sleep, cook, study...) run on the
-  furniture, and Life adds their effects. Life also adds actions by furniture
+  furniture; Life skips the clock for timed ones and adds their effects, and
+  seated or lying poses pay out per hour held. Life also adds actions by furniture
   kind (shower, toilet, TV, piano, weights, pool table and so on).
 - **Places.** Place actions (buy coffee, deposit cash, watch a movie...) appear
   in the "yourself" menu when the player is inside a matching room or business.
@@ -63,7 +64,7 @@ Export presets must include `*.json` in "non-resource files to export" so
 godot --headless --path godot -s res://life/tests/run_tests.gd
 ```
 
-Last run: 637 checks passed, 0 failed (Godot 4.5.1).
+Last run: 639 checks passed, 0 failed (Godot 4.5.1).
 
 ## Action catalogue
 
