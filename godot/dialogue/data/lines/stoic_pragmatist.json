@@ -1,0 +1,4076 @@
+{
+ "id": "stoic_pragmatist",
+ "lines": [
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "stoic_pragmatist.base.001"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Name's {npc}.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "stoic_pragmatist.base.002"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Afternoon. You need something?",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "stoic_pragmatist.base.003"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Haven't seen you before. {npc}.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "stoic_pragmatist.base.004"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hm. Hello.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "stoic_pragmatist.base.005"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Morning or afternoon. Either way, hello.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "stoic_pragmatist.base.006"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "stoic_pragmatist.base.007"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey, {player}. Doing alright?",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "stoic_pragmatist.base.008"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}. Good to see you.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "stoic_pragmatist.base.009"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "You again. Fine by me.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "stoic_pragmatist.base.010"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}. Car still running okay?",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "stoic_pragmatist.base.011"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}. Glad you came by.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "stoic_pragmatist.base.012"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey. Coffee's on. Pour yourself one.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "stoic_pragmatist.base.013"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}. I fixed that thing you mentioned.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "stoic_pragmatist.base.014"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "There you are. Sit.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "stoic_pragmatist.base.015"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}. Good. I could use a hand. Or company. Either.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "stoic_pragmatist.base.016"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey, friend.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "stoic_pragmatist.base.017"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Morning. Early start.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "stoic_pragmatist.base.018"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Up already. Good.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "stoic_pragmatist.base.019"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Morning. Frost on the windshields today.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "stoic_pragmatist.base.020"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Evening. Long day?",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "stoic_pragmatist.base.021"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Evening. Shop's closed. I'm not.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "stoic_pragmatist.base.022"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey. Getting dark early now.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "stoic_pragmatist.base.023"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Late. Everything alright?",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "stoic_pragmatist.base.024"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "You're out late. Be careful.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "stoic_pragmatist.base.025"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Night. Roads are slick after nine.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "stoic_pragmatist.base.026"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Later. That's that.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.027"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Take care.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.028"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "See you.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.029"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Drive safe.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.030"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Alright. Go on.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.031"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Watch your step.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.032"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Call if you need anything. I mean it.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "stoic_pragmatist.base.033"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "See you, {player}. Door's open.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "stoic_pragmatist.base.034"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Get home safe. Text me.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "stoic_pragmatist.base.035"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Rain tomorrow. Clean your gutters.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.036"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Fixed the neighbor's fence. Took an hour.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.037"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Tire pressure drops in the cold. Check yours.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.038"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Hamilton's getting repaved. Detours all week.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.039"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Hardware store's got a sale on drill bits.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.040"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Not much to report.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.041"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The new bridge in Carrburg was built right. Good welds.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.042"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Saw a red-tailed hawk by the ravine.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.043"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "People overcomplicate things.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.044"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Coffee's coffee. Don't need it fancy.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.045"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Changed my oil today. Saves money.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.046"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Built a bookshelf. Holds four hundred pounds.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.047"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You're alright, {player}. I don't say that much.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "stoic_pragmatist.base.048"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Not a talker. But I'm glad you're around.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "stoic_pragmatist.base.049"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "If your car breaks down, call me. Not a tow truck.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "stoic_pragmatist.base.050"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I trust you. That's rare for me. That's that.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "stoic_pragmatist.base.051"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I'd help you move. That's friendship.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "stoic_pragmatist.base.052"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I made you a key to the shop. In case.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "stoic_pragmatist.base.053"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Weekend. Projects.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "stoic_pragmatist.base.054"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Saturday. Fishing at dawn.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "stoic_pragmatist.base.055"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Sunday's for rest. Mostly I fix things.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "stoic_pragmatist.base.056"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I'm a mechanic. Thirty years.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.057"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "Grew up on a farm. Learned to fix what breaks.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.058"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "My dad didn't talk much. Neither do I.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.059"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I build furniture in my garage. Oak, mostly.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.060"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "Served four years. Came back. Settled here.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.061"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I don't like fuss. I like things that work.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.062"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I read at night. History. Westerns.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.063"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}. Solid building.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.064"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}'s fine. Too loud.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.065"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}. Wiring's old. Someone should look at it.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.066"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "I don't come to {place} much. It's alright.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.067"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}. Good coffee. That's enough.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.068"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Thanks.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.069"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Appreciate it.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.070"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Hm. Kind of you.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.071"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Thank you. Means something.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.072"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Okay. Thanks.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.073"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Noted. That's that.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.074"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "That right.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.075"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "You done?",
+   "cond": {},
+   "id": "stoic_pragmatist.base.076"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Not worth my time.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.077"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Say that again and we'll have a problem.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.078"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Huh. Thank you.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.079"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Useful. Thanks.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.080"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Didn't have to. Appreciate it.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.081"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "This is good quality. Thank you.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.082"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "I'll put it to use.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.083"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "Why'd the mechanic sleep under the car? Wanted to wake up oily.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.084"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "I have a joke about construction. Still working on it.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.085"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "Duct tape can't fix stupid. But it can muffle it.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.086"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "My wrench and I have a lot in common. We both like to tighten things up.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.087"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Hold this ladder.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.088"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Can you give me a ride to the shop? Truck's in the lift.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.089"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Help me move a dresser Saturday? I'll buy lunch.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.090"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Thanks. Owe you.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.091"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Good. That helped.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.092"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Won't forget it.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.093"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "Rebuilt a transmission today.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.094"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "Work's steady.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.095"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "Customer brought a car with a squirrel in the engine. Squirrel's fine.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.096"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "Job's good. Honest.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.097"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "Didn't go to college. Learned on the job.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.098"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "Took a welding course at the community college. Worth it.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.099"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "School's important. I tell my nephew.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.100"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Leave.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "stoic_pragmatist.base.101"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Don't push me.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "stoic_pragmatist.base.102"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I've got nothing to say to you.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "stoic_pragmatist.base.103"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Keep walking.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "stoic_pragmatist.base.104"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "We're done talking.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "stoic_pragmatist.base.105"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Stay off my property.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "stoic_pragmatist.base.106"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "No. That's that.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "stoic_pragmatist.base.107"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Not interested. No offense.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "stoic_pragmatist.base.108"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Hm. I'll pass.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "stoic_pragmatist.base.109"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Huh. Didn't expect that.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "stoic_pragmatist.base.110"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "You're making me smile. That's hard.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "stoic_pragmatist.base.111"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Okay. Keep going.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "stoic_pragmatist.base.112"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "I like you too. Thought you should know.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "stoic_pragmatist.base.113"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "Yes. Saturday.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.114"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "Alright. I'll pick you up.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.115"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "No. Sorry.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.116"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "Not like that. Friends.",
+   "cond": {},
+   "id": "stoic_pragmatist.base.117"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "You look nice.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.001"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hey. Got here early. Checked the place out.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.002"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Brought you something. From the shop. It's a keychain.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.003"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hey. Glad you came.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.004"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Wore the good shirt.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.005"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hey, you. Ready?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.006"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're a good-looking person, {player}.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.007"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "Don't usually smile this much.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.008"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I'd fix anything for you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.009"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're easy to be around.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.010"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I think about you more than I should.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.011"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "Not good with words. But I like you. A lot.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.012"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You've got a good head on your shoulders. And a nice smile.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.013"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's walk. Talking's easier walking.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.014"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Know a place by the lake. Quiet.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.015"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Tell me about your family.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.016"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Don't like crowds. Do like you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.017"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I cooked. Steak. It's the one thing I make right.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.018"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Built a bench by the river. Want to see it?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.019"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I don't do this often.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.020"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "You want to learn to drive stick? I'll teach you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.021"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I'm a simple person. Hope that's okay.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.022"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Never told anyone this. I like poetry. Some of it.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.023"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I'd like to keep seeing you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.024"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "You're good company. Best I've had.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.025"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're smart.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.026"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You work hard. I notice.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.027"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You look good today.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.028"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're kind. Real kind.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.029"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "I trust your judgment.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.030"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Huh. Good.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.031"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "That was nice. Real nice.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.032"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Again.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.033"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Well. Okay. Yes.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.034"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "Missed you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.035"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "Shop was quiet without you around.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.036"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "Thought about calling. Did.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.037"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "Glad you're back.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.038"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "Who was that?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.039"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "Don't like that guy.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.040"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I'm not jealous. Just paying attention.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.041"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight. Drive safe.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.042"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Text me you got home.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.043"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Had a good time.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.044"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "See you Saturday.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.045"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Night, {player}.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.046"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I'm not good at this. Say what you need.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.047"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "That bothered me.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.048"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "Let's not yell. Let's talk.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.049"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I'm not going anywhere. But we need to fix this.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.050"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "Yes.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.051"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "Yes. Been waiting for you to ask. Or for me to.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.dating.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning. Coffee's made.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.001"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning. Already shoveled the drive.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.002"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey. Made eggs.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.003"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning. You sleep alright?",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.004"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Up early. Fixed the squeaky hinge.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.005"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, love.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.006"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Coffee's on the counter. Black, like always. Well, with your sugar.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.007"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning. Warmed up your car.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.008"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey. Weather's turning. Wear a coat.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.009"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning. Paper's on the table.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.010"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning. You look rested.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.011"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey. Packed your lunch.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.012"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.013"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey. Supper's ready.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.014"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.015"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey. Fixed the dishwasher.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.016"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.017"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Evening. Sit. I'll get you a drink.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.018"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, love. Good day?",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.019"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're back. Good.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.020"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Evening. Fire's going.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.021"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey. Missed you.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.022"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Late. Rough night?",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.023"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Kept a plate warm.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.024"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Waited up.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.025"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home. Good. Bed.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.026"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Long day. Come here.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.027"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Left the porch light on.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.028"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey. Careful, the step's icy.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.029"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're back. Locked up already.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.030"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a good day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.031"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Drive careful.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.032"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "See you tonight.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.033"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Love you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.034"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Lunch is in your bag.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.035"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Checked your tires. You're good.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.036"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Go on. Don't be late.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.037"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Call if anything comes up.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.038"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "How was work?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.039"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Anybody give you trouble?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.040"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You look tired.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.041"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Tell me about it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.042"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Good day or bad?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.043"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Need anything?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.044"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Want to talk, or just sit?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.045"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Proud of you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.046"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Love you. Truck's warmed up.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.047"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're the best thing in my life.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.048"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Don't say it much. Mean it every day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.049"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'd do anything for you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.050"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Glad I married you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.051"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make this house a home. That's that.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my person.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.053"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Every day, I'm grateful.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.054"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Come here.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.055"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'd choose you again.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.056"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're steady. Like me. Better than me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.057"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I like our life.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.058"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You matter more than anything.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.059"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Not a lot of words. A lot of love.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.060"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're the reason I come home.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.061"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'll always take care of you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.062"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I see you. All of you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.063"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Thank you. For everything.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.064"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Fixed the leaky faucet.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.065"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Gutters need cleaning. I'll do it Saturday.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.066"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Built a new shelf for the garage.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.067"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Furnace needs a filter. Bought one.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.068"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Neighbor's tree is leaning. Talked to him.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.069"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Painted the shed.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.070"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Car needs new brakes. I'll do it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.071"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Snow's coming. Got the shovels ready.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.072"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Planted some tomatoes.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.073"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Roof's solid. Checked it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.074"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Built a birdhouse.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.075"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Fence post's loose. Fixed it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.076"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Saw a deer in the yard this morning.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.077"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Water heater's making noise. I'll look at it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.078"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Back porch needs sealing. Next weekend.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.079"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Made a new cutting board. Walnut.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.080"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Lawn mower's running better. Sharpened the blade.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.081"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Window in the bedroom sticks. Planed it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.082"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Bought a new toolbox. The old one rusted.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.083"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Found a mouse in the garage. Relocated him.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.084"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "House is in good shape.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.085"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I like this house. Built right.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.086"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Thought about adding a deck.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.087"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Fixed the garage door opener.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.088"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Replaced the smoke detector batteries.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.089"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Got the truck washed.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.090"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Did the dishes.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.091"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Took out the trash.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.092"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Mowed.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.093"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Fixed the vacuum.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.094"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Raked the leaves.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.095"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Cleaned the gutters.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.096"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Folded the laundry. Not well.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.097"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Swept the garage.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.098"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Changed the air filter.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.099"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Washed the windows.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.100"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Cleaned the grill.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.101"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Split some firewood.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.102"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Budget's fine.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.103"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Don't need to buy that. I can build it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.104"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Saved a little this month.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.105"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Truck's paid off.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.106"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We're doing alright.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.107"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Fixed it myself. Saved two hundred.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.108"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Let's put some away.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.109"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Don't like debt.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.110"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Bonus came in. Put it in savings.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.111"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We'll be fine.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.112"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Supper. Pot roast.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.113"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Made chili.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.114"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Grilled steaks.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.115"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Breakfast. Bacon and eggs.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.116"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Made sandwiches.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.117"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Fried fish. Caught it this morning.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.118"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Soup. It's cold out.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.119"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Burgers on the grill.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.120"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Made biscuits. Your mother's recipe.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.121"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Pancakes. Sunday.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.122"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "That's not right.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.123"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You said you'd handle it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.124"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I don't like how you said that.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.125"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I need you to listen.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.126"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "We talked about this.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.127"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "That was money we needed.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.128"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Don't shut me out. That's that.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.129"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm not mad. I'm frustrated.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.130"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You're not hearing me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.131"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Going for a walk. Need to think.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.132"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I can't fix this one alone.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.133"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "That hurt.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.134"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Sorry.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.135"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I was wrong.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.136"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Come here. It's fine.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.137"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's not do that again.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.138"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I love you. That doesn't change. That's that.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.139"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'll do better.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.140"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "We're alright.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.141"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Shouldn't have said that.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.142"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I'm here.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.143"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "It'll be alright.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.144"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Sit. I'll get you something.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.145"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Tell me what happened.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.146"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You don't have to say anything.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.147"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I've got you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.148"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Whatever it is, we'll handle it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.149"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You're stronger than this.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.150"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Take your time.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.151"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I'll fix what I can. Rest.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.152"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Fishing Saturday?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.153"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Want to drive to the mountains?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.154"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Thought we'd fix up the porch together.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.155"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Camping next month.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.156"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Lake this weekend.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.157"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the county fair. That's that.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.158"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Could build a garden bed. Spring.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.159"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Drive to the coast. Just us.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.160"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Want to see the old train station in Carrburg?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.161"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Rest this weekend. No projects.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.162"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we met? At the hardware store.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.163"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our first date? You ordered for both of us.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.164"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember the wedding? I said four words. All true.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.165"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when the truck broke down on the highway?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.166"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Built you that bench. Our first summer.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.167"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember the first winter here? Pipes froze.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.168"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when you laughed at me fixing the sink? I was soaked.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.169"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember the cabin? No power. Best week.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.170"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "First time you said you loved me, I couldn't speak.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.171"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember fixing up this place? Took two years.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.172"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.173"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Made you something. A box. Walnut.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.174"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Another year. Good year.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.175"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Love you more than last year.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.176"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Here's to more.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.177"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Took the day off. For you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.178"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You can't back up a trailer.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.179"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You use my good scissors.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.180"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You leave lights on.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.181"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You hum.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.182"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You never put the tools back.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.183"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You think everything needs a professional.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.184"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You talk to the cat.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.185"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You steal the covers.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.186"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You're scared of the basement.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.187"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You always want to stop and ask directions.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.188"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You put ketchup on steak.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.189"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You laugh at my one joke. Every time.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.190"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Bed.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.191"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Night, love.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.192"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Locked up. Let's sleep.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.193"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Long day. Rest.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.194"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.195"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come here. Cold.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.196"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sleep well.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.197"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Love you. Night.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.198"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Alarm's set.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.199"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Night, {player}. Glad you're mine.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "stoic_pragmatist.marriage.200"
+  }
+ ]
+}

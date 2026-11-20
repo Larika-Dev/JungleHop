@@ -1,0 +1,4076 @@
+{
+ "id": "by_the_book",
+ "lines": [
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good day. I'm {npc}. Please note the sidewalk is for pedestrians only.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "by_the_book.base.001"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello! I'm {npc}. Welcome. Recycling pickup is Thursdays, in case you didn't know.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "by_the_book.base.002"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Greetings. I'm {npc}. Have you registered your bicycle with the town? It's required.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "by_the_book.base.003"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello there. I'm {npc}. Pleased to make your acquaintance, properly.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "by_the_book.base.004"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi. I'm {npc}. You're standing in a loading zone. Just so you know.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "by_the_book.base.005"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good afternoon. I'm {npc}. I volunteer as a crossing guard. Always look both ways.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "by_the_book.base.006"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello, {player}. You returned your library books on time, I hope.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "by_the_book.base.007"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Ah, {player}. Good to see you. Parking validated?",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "by_the_book.base.008"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! I was just reviewing the neighborhood guidelines.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "by_the_book.base.009"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good day, {player}. Wearing your seatbelt, I trust?",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "by_the_book.base.010"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello again, {player}. Always a pleasure. A rule-abiding pleasure.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "by_the_book.base.011"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! My most trustworthy friend.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "by_the_book.base.012"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello, {player}. I saved you a seat at board game night. As agreed.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "by_the_book.base.013"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! I've brought the laminated rules for tonight's game.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "by_the_book.base.014"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Ah, my dear friend. Punctual as ever. I appreciate that.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "by_the_book.base.015"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! I spotted a rare warbler this morning. I documented it for you.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "by_the_book.base.016"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "There you are, {player}. Right on schedule.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "by_the_book.base.017"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good morning. Quiet hours ended at seven, so we may speak freely.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "by_the_book.base.018"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Morning. The crossing guard shift starts at 7:45. I'm early.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "by_the_book.base.019"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good morning. Birds are most active now. Ideal for observation.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "by_the_book.base.020"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good evening. Please mind the speed limit on Hamilton. It's 25.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "by_the_book.base.021"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Evening. Streetlights on at sunset, per ordinance.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "by_the_book.base.022"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good evening. Time for my evening walk. Same route as always.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "by_the_book.base.023"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "It's late. Quiet hours begin at ten. Let's whisper.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "by_the_book.base.024"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good evening. Or night, technically. Be safe.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "by_the_book.base.025"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello. Don't jaywalk on the way home, please.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "by_the_book.base.026"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Goodbye. Drive safely.",
+   "cond": {},
+   "id": "by_the_book.base.027"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Farewell. Use the crosswalk.",
+   "cond": {},
+   "id": "by_the_book.base.028"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Take care. Remember to lock your doors.",
+   "cond": {},
+   "id": "by_the_book.base.029"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Goodbye. It was a pleasure.",
+   "cond": {},
+   "id": "by_the_book.base.030"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "See you soon. Please dispose of that cup properly.",
+   "cond": {},
+   "id": "by_the_book.base.031"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Goodbye. Have a lawful day.",
+   "cond": {},
+   "id": "by_the_book.base.032"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Goodbye, {player}. Text me when you've arrived safely.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "by_the_book.base.033"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Until next time, friend. Thursday at seven, board games.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "by_the_book.base.034"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Goodbye. Thank you for always being considerate.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "by_the_book.base.035"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The town council voted on new parking rules. I read all forty pages.",
+   "cond": {},
+   "id": "by_the_book.base.036"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Someone parked in the fire lane at the library. I left a polite note.",
+   "cond": {},
+   "id": "by_the_book.base.037"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I've seen seventy-three species of bird in Cathedral Mount. I keep a log.",
+   "cond": {},
+   "id": "by_the_book.base.038"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The crosswalk signal on Columbia is three seconds too short. I've filed a report.",
+   "cond": {},
+   "id": "by_the_book.base.039"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I organized a neighborhood cleanup. Everyone signed the waiver.",
+   "cond": {},
+   "id": "by_the_book.base.040"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I always read the terms and conditions. Everyone should.",
+   "cond": {},
+   "id": "by_the_book.base.041"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The library's new policy allows six renewals. Very generous.",
+   "cond": {},
+   "id": "by_the_book.base.042"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I've been a jury member three times. It's a civic honor.",
+   "cond": {},
+   "id": "by_the_book.base.043"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Did you know the town has an ordinance against singing in the park after nine?",
+   "cond": {},
+   "id": "by_the_book.base.044"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I returned a wallet I found on Rosemary. With all the cash inside, naturally.",
+   "cond": {},
+   "id": "by_the_book.base.045"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I'm learning the official rules of croquet. There are many.",
+   "cond": {},
+   "id": "by_the_book.base.046"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I've never had a parking ticket. Not one.",
+   "cond": {},
+   "id": "by_the_book.base.047"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I know I can be rigid. You never make me feel strange about it.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "by_the_book.base.048"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You're the most reliable person I know. That means everything to me.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "by_the_book.base.049"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Sometimes I wish I could be more spontaneous. Maybe with you.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "by_the_book.base.050"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I trust you completely. That's not something I say lightly.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "by_the_book.base.051"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You're on my emergency contact list. I hope that's alright.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "by_the_book.base.052"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I'd break a minor rule for you. A very minor one.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "by_the_book.base.053"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Saturday. Birdwatching at the ravine, then board games.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "by_the_book.base.054"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Weekend. Time to reorganize my tax documents.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "by_the_book.base.055"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Sunday. A day of rest. As tradition dictates.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "by_the_book.base.056"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I work at the county clerk's office. I process permits.",
+   "cond": {},
+   "id": "by_the_book.base.057"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "My father was a police officer. Rules kept our family safe.",
+   "cond": {},
+   "id": "by_the_book.base.058"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I've never been late to anything. Not once.",
+   "cond": {},
+   "id": "by_the_book.base.059"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I like structure. It makes the world make sense.",
+   "cond": {},
+   "id": "by_the_book.base.060"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I'm a birdwatcher. You have to be patient and follow the guidelines.",
+   "cond": {},
+   "id": "by_the_book.base.061"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I've read the town charter three times. It's quite good.",
+   "cond": {},
+   "id": "by_the_book.base.062"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "People think I'm boring. I think I'm dependable.",
+   "cond": {},
+   "id": "by_the_book.base.063"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? Well-maintained. Up to code, I believe.",
+   "cond": {},
+   "id": "by_the_book.base.064"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place} has clear signage. I appreciate that.",
+   "cond": {},
+   "id": "by_the_book.base.065"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "I'm fond of {place}. They follow the health guidelines.",
+   "cond": {},
+   "id": "by_the_book.base.066"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}'s occupancy limit is often exceeded. I've noticed.",
+   "cond": {},
+   "id": "by_the_book.base.067"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? The fire exits are clearly marked. Good.",
+   "cond": {},
+   "id": "by_the_book.base.068"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Thank you. That's very kind of you to say.",
+   "cond": {},
+   "id": "by_the_book.base.069"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "I appreciate that sincerely.",
+   "cond": {},
+   "id": "by_the_book.base.070"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Oh. Thank you. I do try.",
+   "cond": {},
+   "id": "by_the_book.base.071"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "That's thoughtful. Thank you.",
+   "cond": {},
+   "id": "by_the_book.base.072"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Thank you, {player}. I'll keep that in mind.",
+   "cond": {},
+   "id": "by_the_book.base.073"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "That's uncalled for.",
+   "cond": {},
+   "id": "by_the_book.base.074"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "I'd prefer if you didn't speak to me that way.",
+   "cond": {},
+   "id": "by_the_book.base.075"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "That's disrespectful. Please stop.",
+   "cond": {},
+   "id": "by_the_book.base.076"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "I'll be filing that under unpleasant.",
+   "cond": {},
+   "id": "by_the_book.base.077"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "I don't respond to rudeness.",
+   "cond": {},
+   "id": "by_the_book.base.078"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Oh! Thank you. I'll be sure to write a thank-you note.",
+   "cond": {},
+   "id": "by_the_book.base.079"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "How thoughtful. Thank you very much.",
+   "cond": {},
+   "id": "by_the_book.base.080"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "This is lovely. Thank you, {player}.",
+   "cond": {},
+   "id": "by_the_book.base.081"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "A birding guide? You remembered. Thank you.",
+   "cond": {},
+   "id": "by_the_book.base.082"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Thank you. I'll treasure it. Responsibly.",
+   "cond": {},
+   "id": "by_the_book.base.083"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "I'd tell you a joke about rules, but I'd have to follow it with a disclaimer.",
+   "cond": {},
+   "id": "by_the_book.base.084"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "Why did the rule book go to therapy? Too many issues with its sections.",
+   "cond": {},
+   "id": "by_the_book.base.085"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "What's the best way to stay safe? Read the manual. That's not a joke. It's advice.",
+   "cond": {},
+   "id": "by_the_book.base.086"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "I tried to be spontaneous once. I scheduled it for Tuesday.",
+   "cond": {},
+   "id": "by_the_book.base.087"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Could you sign this petition for a new stop sign?",
+   "cond": {},
+   "id": "by_the_book.base.088"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Would you help me count birds for the annual survey?",
+   "cond": {},
+   "id": "by_the_book.base.089"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Could you hold this ladder? Safety requires two people.",
+   "cond": {},
+   "id": "by_the_book.base.090"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Thank you. That was very responsible of you.",
+   "cond": {},
+   "id": "by_the_book.base.091"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "I appreciate your help. Truly.",
+   "cond": {},
+   "id": "by_the_book.base.092"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Thank you, {player}. You're very dependable.",
+   "cond": {},
+   "id": "by_the_book.base.093"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I processed forty-two permits today. All correctly.",
+   "cond": {},
+   "id": "by_the_book.base.094"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "Someone tried to submit a form in pencil. I had to say no.",
+   "cond": {},
+   "id": "by_the_book.base.095"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "Work was orderly. Just how I like it.",
+   "cond": {},
+   "id": "by_the_book.base.096"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I found an error in last year's records. I corrected it.",
+   "cond": {},
+   "id": "by_the_book.base.097"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "I'm taking a night class on civics. It's fascinating.",
+   "cond": {},
+   "id": "by_the_book.base.098"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "I always submitted assignments early. It's a good habit.",
+   "cond": {},
+   "id": "by_the_book.base.099"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "The syllabus is a contract. I treat it as such.",
+   "cond": {},
+   "id": "by_the_book.base.100"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I'd prefer you keep your distance.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "by_the_book.base.101"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I don't associate with people who disregard rules.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "by_the_book.base.102"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Please leave. Or I'll have to report you.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "by_the_book.base.103"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "You've been very disrespectful, {player}.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "by_the_book.base.104"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I have nothing to discuss with you.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "by_the_book.base.105"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Good day. And I mean that as a farewell.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "by_the_book.base.106"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Oh! That's flattering. But I'm not interested. Thank you, though.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "by_the_book.base.107"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "I appreciate the sentiment, but I'd prefer we remain friends.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "by_the_book.base.108"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "That's very kind. But no, thank you.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "by_the_book.base.109"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Oh. Oh my. That's... I wasn't prepared for that. I like it.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "by_the_book.base.110"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "I'm blushing. That's not in my usual protocol.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "by_the_book.base.111"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "I've been hoping you'd say something like that.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "by_the_book.base.112"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "I feel the same. I've just been too proper to say so.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "by_the_book.base.113"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "Yes. Shall we say Friday at seven? I'll make a reservation.",
+   "cond": {},
+   "id": "by_the_book.base.114"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "I'd be honored. Yes.",
+   "cond": {},
+   "id": "by_the_book.base.115"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "I'm sorry, but I don't feel that way. I hope we can remain friends.",
+   "cond": {},
+   "id": "by_the_book.base.116"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "Thank you for asking, but no. Respectfully.",
+   "cond": {},
+   "id": "by_the_book.base.117"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Good evening. You look lovely. I arrived ten minutes early.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.001"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hello. I've made a reservation and confirmed it twice.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.002"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hi. I brought you flowers. Purchased from a licensed florist.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.003"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "There you are. Right on time. I appreciate that.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.004"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hello, dear. I've been looking forward to this all week.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.005"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Good evening. I've planned a lovely route. All lit, all safe.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.006"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You make me want to break the rules. Small ones.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.007"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're the only exception I'd ever make.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.008"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I feel very safe with you. And very happy.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.009"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I've never felt this way. It's not in any manual.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.010"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're perfect. Within acceptable parameters. Exceeding them, actually.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.011"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I'd stay out past quiet hours for you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.012"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You have a lovely smile. I've noticed it many times.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.013"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I've planned a nice walk along the river. Well-lit path.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.014"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Would you like to go birdwatching with me? It's very peaceful.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.015"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Tell me about yourself. I'd like to know everything. In order.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.016"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I don't usually do this. Dating, I mean. I've read about it.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.017"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I like that you're dependable. It's very attractive.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.018"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Shall we play a board game? I'll explain all the rules.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.019"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I think we're compatible. Very compatible.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.020"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I'm a bit nervous. Please forgive me.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.021"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I made us dinner. I followed the recipe exactly.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.022"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "You make me feel like I can relax a little.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.023"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I'd like to see you again. Regularly. Weekly, perhaps.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.024"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I'm very happy tonight. Thank you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.025"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're very considerate. I admire that.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.026"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You look wonderful this evening.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.027"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're honest. That's the most important quality.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.028"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're kind to everyone. I notice.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.029"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're very trustworthy. I love that.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.030"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Oh. That was lovely.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.031"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "I wasn't expecting that. I'm glad it happened.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.032"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "That was perfectly wonderful.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.033"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "May I kiss you again? With your consent, of course.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.034"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I missed you. The week felt very long.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.035"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I kept thinking about you during my shift.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.036"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I wrote you a letter. With proper postage.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.037"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I missed our routine.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.038"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "Who was that? I'm simply curious.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.039"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I'm not jealous. I'm just observing.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.040"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I value our commitment. I hope you do too.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.041"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight. Please text me when you've arrived home safely.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.042"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Thank you for this evening. It was delightful.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.043"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Same time next week?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.044"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight, dear. Drive carefully.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.045"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight, {player}. Sleep well.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.046"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I think we should discuss this calmly.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.047"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "That hurt my feelings. I need to say so.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.048"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "Let's establish some ground rules for this conversation.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.049"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I don't want to argue. I want to resolve this.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.050"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "Yes. Absolutely yes. I've been hoping you'd ask.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.051"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "I'd be honored to marry you. Yes.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "by_the_book.dating.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, dear. Coffee's ready at 6:45, as always.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.001"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, love. The recycling goes out today.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.002"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning. I checked the weather. Bring an umbrella.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.003"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, dear. I've signed the permission slip for the bake sale.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.004"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning. Breakfast is on the table. Balanced and nutritious.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.005"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, love. I saw a cardinal at the feeder. Logged it.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.006"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning. Your lunch is packed and labeled.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.007"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, dear. I set your alarm. You're welcome.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.008"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning. Remember the HOA meeting tonight.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.009"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, love. I've already read the town bulletin.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.010"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning. The car's been warmed up. Five minutes, as recommended.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.011"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, dear. I love you. That's not a rule. It's a fact.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.012"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home, dear. Dinner is at six. It's 5:58.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.013"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hello, love. Shoes on the mat, please. Thank you.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.014"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome back. How was your day?",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.015"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are. I've set out the board game for tonight.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.016"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good evening, love. I paid the bills. All on time.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.017"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home. I made your favorite casserole.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.018"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hello, dear. I've been looking forward to this all day.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.019"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home. The house is in order.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.020"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, love. I spotted a rare bird today. I'll tell you over dinner.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.021"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home. Good. Now our evening can begin.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.022"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home late, dear. I was concerned.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.023"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hello, love. It's past quiet hours. Let's whisper.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.024"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are. I kept your dinner at a safe temperature.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.025"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "It's late, dear. Let's get you to bed.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.026"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're back. I locked up after you. Twice.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.027"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hello, love. I waited up. As is proper.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.028"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are. I left the porch light on.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.029"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Late night? Next time, please call.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.030"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a good day, dear. Drive the speed limit.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.031"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Goodbye, love. Seatbelt on, please.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.032"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a productive day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.033"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Your lunch is in the fridge. Labeled with today's date.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.034"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Goodbye. Remember your ID badge.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.035"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a lovely day, dear. Call if you'll be late.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.036"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Off you go. I love you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.037"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Goodbye, love. Use the crosswalk.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.038"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "How was your day, dear?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.039"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Did everything go according to plan?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.040"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You look tired, love. Sit down.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.041"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Was your supervisor fair today?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.042"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Did you take your mandated breaks?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.043"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Tell me about it. I'll listen.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.044"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You're home. Let's relax. Properly.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.045"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "I'm proud of you, dear. You're very diligent.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.046"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you, dear. Consistently and without exception.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.047"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my most trusted person.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.048"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Being married to you is the best decision I ever made.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.049"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make our home feel safe.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.050"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you more than a well-organized filing cabinet.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.051"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my partner in everything. Officially and emotionally.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'm grateful for you every day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.053"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make me feel like I can relax.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.054"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're wonderful, love. Truly.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.055"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'd follow you anywhere. Within the law.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.056"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my favorite routine.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.057"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love how dependable you are.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.058"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my heart, dear.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.059"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you. That's a binding statement.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.060"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make life orderly and joyful.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.061"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'm so lucky to have you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.062"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my peace of mind.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.063"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Thank you for loving me, rules and all.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.064"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I reviewed the HOA bylaws. We're in compliance.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.065"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The neighbor's fence is two inches over the property line. I'll mention it politely.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.066"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've updated our emergency preparedness kit.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.067"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I logged twelve bird species in the yard this week.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.068"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I reorganized the board game closet.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.069"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I renewed our car registration early.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.070"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been reading about home safety. We need a carbon monoxide detector upstairs.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.071"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I filed our taxes. Early.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.072"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The town is repaving our street next month. I read the notice.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.073"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've made a family rule chart. It's on the fridge.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.074"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I attended the town council meeting. Very informative.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.075"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been volunteering as a crossing guard again.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.076"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I checked all the smoke detectors.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.077"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a list of important phone numbers.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.078"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The neighbors' dog was off leash. I reminded them of the ordinance.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.079"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been teaching the neighbor's kids about bike safety.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.080"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I bought a new bird feeder. Squirrel-proof.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.081"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a maintenance schedule for the house.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.082"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I joined the neighborhood watch.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.083"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been learning about first aid. I'm certified now.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.084"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I organized our documents into labeled folders.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.085"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I installed new locks on the doors.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.086"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I signed us up for the community garden. I read the rules.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.087"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I think we should have a family game night every Friday.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.088"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been trying to be more spontaneous. It's going slowly.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.089"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I love our orderly little home.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.090"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I did the dishes. In the correct order. Glasses first.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.091"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I vacuumed. Every room, systematically.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.092"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Could you take out the trash, dear? It's Tuesday.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.093"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I separated the recycling properly.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.094"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I cleaned the gutters. With a spotter, of course.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.095"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I folded the laundry. Neatly.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.096"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Let's do chores together. I've made a checklist.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.097"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I mowed the lawn. Within permitted hours.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.098"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I washed the car. With biodegradable soap.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.099"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I organized the garage. Everything's labeled.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.100"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I changed the furnace filter. It's on schedule.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.101"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I cleaned the bathroom. Thoroughly.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.102"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I balanced the checkbook. To the penny.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.103"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We're on budget this month.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.104"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I filed our taxes early. We're getting a refund.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.105"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Let's not exceed our spending limit.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.106"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I've set up automatic savings.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.107"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I compared insurance plans. We're getting a better rate.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.108"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I always pay bills on the due date. Never late.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.109"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We should keep three months of expenses in savings.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.110"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I found a billing error. I called and fixed it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.111"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Financially, we're very responsible.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.112"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Dinner is served. Balanced portions.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.113"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made the casserole from the community cookbook.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.114"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Breakfast is ready. Oatmeal and fruit.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.115"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made meatloaf. Cooked to a safe internal temperature.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.116"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's have a picnic. I've packed hand sanitizer.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.117"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made chicken soup. My mother's recipe, precisely.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.118"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Taco night. It's Tuesday.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.119"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I baked cookies. Following the recipe exactly.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.120"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Dinner's at six. As always.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.121"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made a salad. With properly washed vegetables.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.122"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You didn't follow the plan we agreed on.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.123"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I feel like you don't respect our agreements.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.124"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You were late and didn't call. That's not acceptable.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.125"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Please don't park on the lawn. It's against the HOA rules.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.126"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm not rigid. I'm consistent.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.127"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You forgot to pay the water bill.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.128"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I need you to take the rules seriously.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.129"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You left the door unlocked.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.130"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I feel like you dismiss my concerns.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.131"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm going to take my evening walk. To calm down.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.132"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "We had a rule about this.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.133"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I just want things to be done properly.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.134"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry, dear. I was too strict.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.135"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's discuss it calmly. I'll listen.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.136"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I love you more than any rule.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.137"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I apologize for my tone.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.138"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's make a new agreement together.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.139"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "You're more important than being right.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.140"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'll try to be more flexible.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.141"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "We're alright, love. We always work it out.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.142"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "It's alright, dear. I'm here.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.143"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let's make a plan to handle it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.144"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You're stronger than you think, love.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.145"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Whatever it is, we'll address it together.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.146"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I'll take care of the details. You rest.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.147"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let me make you some tea.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.148"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You don't have to have everything in order. I'll help.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.149"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I love you. No conditions.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.150"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let's sit quietly for a while.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.151"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You've handled hard things before. You will again.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.152"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go birdwatching at the ravine this weekend.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.153"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a board game tournament with the neighbors?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.154"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's visit the historical society museum.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.155"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's take a scenic drive. The speed limit is 45, very relaxing.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.156"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a picnic at the park? I've checked the permit rules.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.157"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the town council meeting. Date night.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.158"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's take a trip to the coast. I'll plan the itinerary.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.159"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a quiet weekend at home?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.160"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the county fair.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.161"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's plan our anniversary dinner. I'll make a reservation now.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.162"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we met? At the library. You returned a book on time.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.163"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our first date? I confirmed the reservation three times.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.164"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our wedding? It went exactly according to schedule.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.165"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when you convinced me to jaywalk? I still feel guilty.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.166"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our honeymoon? I read every safety card on the plane.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.167"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I still have the receipt from our first dinner.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.168"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we saw the snowy owl? So rare.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.169"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we won the board game championship?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.170"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I remember the first time you made me laugh during a meeting.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.171"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we stayed up past quiet hours? Scandalous.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.172"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary, dear. Another year of commitment.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.173"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I've made reservations at our favorite restaurant. Happy anniversary.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.174"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Another year. I love you more than last year. Measurably.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.175"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary, love. You're my best decision.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.176"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I got you something. I wrapped it carefully.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.177"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Here's to many more orderly, happy years.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.178"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You still don't read the instructions.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.179"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You jaywalk when you think I'm not looking.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.180"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You leave the cap off the toothpaste.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.181"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You never return the shopping cart. I do it for you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.182"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You think \"around six\" is a time.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.183"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You park crooked.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.184"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You skip the rules in board games.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.185"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You eat in the car.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.186"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You never read the HOA newsletter.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.187"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You're secretly very law-abiding. I've seen it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.188"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You laugh when I cite ordinances.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.189"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You make me break the rules. Small ones. I like it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.190"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, dear. Quiet hours have begun.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.191"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come to bed, love. It's 10 PM.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.192"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight. Doors are locked.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.193"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sleep well, dear. Alarm's set for six.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.194"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, love. I love you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.195"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Lights out. As scheduled.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.196"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, {player}. You're wonderful.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.197"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Let's get our eight hours.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.198"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come here, dear. Let's rest.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.199"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight. Thank you for another orderly day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "by_the_book.marriage.200"
+  }
+ ]
+}

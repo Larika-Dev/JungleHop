@@ -1,0 +1,429 @@
+// Type-A Perfectionist: organized, precise, intense, color-coded planners, schedules, efficiency, secretly wants to relax.
+== base
+# greet stage=stranger
+Hello. {npc}. I have four minutes before my next commitment.
+Hi! You're new. I'm {npc}. Welcome. There's a checklist for that.
+Good day. I'm {npc}. Your collar's slightly crooked. Sorry. Hi.
+Hello! I'm {npc}. I run three student organizations and a very tight schedule.
+Hi there. Nice to meet you. I'll add you to my contacts. Alphabetically.
+Greetings. I'm {npc}. Punctual, prepared, and pleased to meet you.
+# greet stage=acquaintance
+{player}! Right on time. I like that.
+Hi, {player}. I penciled you in for a chat. Pen, actually. Commitment.
+{player}! Did you get the reminder I sent? And the follow-up?
+Oh, good, {player}. I need a second opinion on my color-coding system.
+Hello again, {player}. You're becoming a reliable presence. High praise.
+# greet stage=friend+
+{player}! You're the only unscheduled part of my day I look forward to.
+Hi! I made you a planner. It's already filled out for the semester.
+{player}! I color-coded our hangouts. You're lavender.
+There you are! I have exactly twenty minutes and I'm spending all of them with you.
+{player}! I finished my to-do list early just to see you.
+My favorite person! Sit. I brought snacks. Portioned.
+# greet time=morning
+Good morning! I've been up since five. Workout, journaling, and inbox zero.
+Morning! The early bird gets the worm and the good library carrel.
+Good morning. Day planned, coffee measured, ready.
+# greet time=evening
+Good evening! Daily review time. How did your goals go?
+Evening! I just finished my last task. Well, the last scheduled one.
+Hi! Evenings are for meal prep and next-day planning.
+# greet time=night
+It's late. I should be asleep. Eight hours is optimal.
+Hello. I'm only awake because my study plan ran fifteen minutes over.
+Night already? I'm behind schedule.
+# farewell
+Goodbye! Stay on track!
+See you! I'll send you a calendar invite.
+Bye! Don't forget to hydrate. Two liters.
+Okay, I have to go. I'm two minutes behind.
+Goodbye. That conversation was very productive.
+Bye! Remember, done is better than perfect. I don't believe that, but people say it.
+# farewell stage=friend+
+Bye, {player}! Text me when you're home. I'll check it off.
+See you Thursday at 4:15! Exactly 4:15!
+Bye! I'll miss you. I scheduled that feeling for later.
+# smalltalk
+I reorganized my bookshelf by publication date. It's so calming.
+Did you know the library's study rooms book out three weeks in advance? I have them all booked.
+I have a planner for my planners.
+The coffee shop changed their opening time by fifteen minutes and nobody told me.
+I color-coded my closet. It took a weekend. Worth it.
+I'm running for student body treasurer. My spreadsheet is very persuasive.
+I meal-prepped twenty-one meals this Sunday. Labeled. With macros.
+Someone left the library's returns cart unsorted. I sorted it. I don't work there.
+I set seven alarms every morning. Staggered.
+Did you see they're repainting the crosswalks? The lines are uneven. I emailed the city.
+I'm reading a book about productivity. I'm on schedule to finish by Friday.
+I tried relaxing. I scheduled it for an hour. It took forty minutes. Efficient!
+# smalltalk stage=friend+
+Can I tell you something? I'm terrified of failing. Like, all the time.
+You're the only one who doesn't make me feel like I have to be perfect.
+I scheduled our friendship anniversary. Is that weird? It's in my calendar.
+I'd drop a task for you. Any task. Even a color-coded one.
+Sometimes I wish I could be messy like other people. You make it seem okay.
+You're on my gratitude list every day. Top three.
+# smalltalk weekend=true
+Weekend! I've scheduled exactly two hours of fun.
+Saturday. Deep cleaning, then studying, then reviewing my week.
+Sunday is planning day. The most important day.
+# about_self
+I've had a planner since I was seven.
+I want to be a surgeon. Precision is everything.
+I graduated high school as valedictorian. Second place still haunts me in sixth grade.
+I don't like surprises. Unless they're planned.
+I run marathons. I make a pace chart for each mile.
+My parents expected a lot. I expect more of myself.
+I relax by organizing things. Is that relaxing? It is for me.
+# opinion_place
+{place}? The signage is inconsistent. It bothers me.
+I like {place}. Efficient layout.
+{place} could be thirty percent more organized.
+{place}'s fine. They always open on time. That matters.
+{place}? The chairs aren't aligned. I'm trying not to look.
+# compliment_reply
+Thank you! I worked very hard on that.
+That's kind. I'll add it to my wins log.
+Really? Thank you. I'm my own harshest critic.
+Thanks! Feedback is useful. Especially positive feedback.
+Oh! Thank you. I wasn't sure it was good enough.
+# insult_reply
+Noted. I disagree, and I have data.
+That's unproductive.
+I don't have time for negativity. It's not on my schedule.
+Interesting. Incorrect, but interesting.
+That's hurtful. I'll process it later. In my journal.
+# gift_reply
+Oh! A gift! I'll find the perfect place for it.
+Thank you! This is very thoughtful. And useful!
+You got me a new planner? You understand me.
+This is perfect. Did you wrap it yourself? The corners are so crisp.
+Thank you, {player}! I'll write you a proper thank-you note.
+# joke
+I'd tell you a joke about procrastination, but I'll do it later. Just kidding. I never procrastinate.
+Why did the perfectionist cross the road? To fix the crooked sign on the other side.
+My favorite exercise is a cross between a lunge and a calendar. A lunge-dar.
+I'm not a control freak. I just know the right way to do everything.
+# ask_favor
+Could you proofread my essay? I've read it twenty times. Fresh eyes.
+Would you help me organize the bake sale? You'd be in charge of the lemon squares.
+Can you hold me accountable? Text me at seven if I haven't gone to bed.
+# favor_reply
+Thank you! You're very reliable. That's my highest compliment.
+Perfect. That's checked off. Thank you!
+You're amazing. I'll put you down as a reference.
+# work_talk
+I reorganized the entire filing system at work. They didn't ask.
+I'm interning at the hospital. Seventy hours a week. Love it.
+My boss said I'm "intense". I said thank you.
+I made a process document for the coffee machine.
+# school_talk
+I have a 4.0. I'm trying to maintain it. And make it a 4.1.
+I made flashcards for every lecture. Color-coded by unit.
+Group projects are a nightmare. I end up doing everything. Correctly.
+# hostile stage=dislike-
+I don't have time for you.
+You're disorganized and unpleasant.
+I've removed you from my contacts.
+Please stop wasting my time.
+You're a disruption to my schedule.
+We're not friends, {player}.
+# flirt_reply romance=none
+Oh! I'm flattered, but I don't have room in my schedule for romance.
+That's sweet. But I think we work better as colleagues. Friends!
+Hmm. I'll have to decline. Respectfully.
+# flirt_reply romance=crush
+Oh. Oh! That wasn't in my plans. I like it.
+You're making me lose my train of thought. That never happens.
+Are you flirting? I'm blushing. That's not efficient.
+I've made a pro-con list about you. It's all pros.
+# ask_out_yes
+Yes! When? I'll clear my schedule. Well, rearrange it.
+A date? Yes. Let me find a time. I'll find a time.
+# ask_out_no
+I'm sorry, I don't feel that way. I value our friendship, though.
+That's kind of you, but no. Friends?
+
+== dating
+# date_greet
+Hi! I'm exactly on time. You're two minutes late. It's fine. Hi!
+You came! I made a plan for our date. Don't worry, there's flexibility.
+Hello! You look lovely. Very put together.
+Hi! I've been looking forward to this all week. It was highlighted.
+There you are! I made reservations for 7:30. We have nine minutes.
+Hello, you! I left my planner at home. For you. That's huge.
+# flirt
+You're the only thing in my life I don't want to plan.
+I'd let you mess up my schedule.
+You're perfect. And I don't say that about anything.
+You make me want to relax. That's a big deal.
+I scheduled extra time to think about you.
+You're my favorite unplanned thing.
+I like you more than a freshly sharpened pencil.
+# date_talk
+I planned three activities but we can do whichever you want. Or all three.
+Tell me about your goals. Short-term and long-term.
+I've never been on a date that went off-script. This is going off-script. I like it.
+I made us a picnic. Everything's in labeled containers.
+Do you want to go to the art museum? I know the optimal route.
+I don't usually let people see me imperfect. You make it easy.
+What's your five-year plan? Am I in it? Too soon?
+Let's walk without a destination. That's so scary. Let's do it.
+I love how calm you are. It balances me.
+I think we'd make a very efficient team.
+Can I be honest? I'm nervous. I rehearsed this.
+I'm having so much fun. I forgot to check the time.
+# compliment
+You're so organized. I find that very attractive.
+You're smart. Really smart.
+You look nice. Very well-dressed.
+You're patient with me. That's rare.
+You're reliable. That's the most attractive quality.
+# kiss_reply
+Oh. That was perfect. Ten out of ten.
+I didn't plan that. It was better than any plan.
+Okay. I'm going to need a minute to process. Again?
+My heart rate is elevated. In a good way.
+# miss_you
+I missed you. My schedule felt empty.
+I kept checking my phone. Unproductively.
+I wrote you a note. It's three pages. With headings.
+I counted the days. Four. And a half.
+# jealous
+Who was that? I'm asking for data purposes.
+I'm not jealous. I'm analyzing.
+I just want to be your top priority.
+# date_end
+Tonight was perfect. I'll write about it in my journal.
+Goodnight! Text me when you're home safe.
+Same time next week? I'll put it in my calendar. Exactly.
+Thank you. That was the best evening I've had in a long time.
+Goodnight, {player}. I'm not even going to plan tomorrow. Okay, a little.
+# lovers_quarrel
+I need us to discuss this. Calmly. With an agenda.
+I'm upset. That hurt.
+I don't want to fight. I want a solution.
+Let's not let this escalate. I hate things being out of order.
+# proposal_yes
+Yes! I didn't plan this! It's perfect anyway!
+I'll marry you! I've already started a spreadsheet!
+
+== marriage
+# home_greet time=morning
+Good morning! I've already made the bed, coffee, and a schedule for both of us.
+Morning, love! Breakfast is ready. It's 7:02. Perfect timing.
+Good morning! Your clothes are laid out. I picked the blue shirt. It's Tuesday.
+Morning! I've been up since five. The house is spotless.
+Good morning, sweetheart! Here's your coffee. Two sugars, stirred clockwise.
+Morning! Today's agenda is on the fridge.
+Good morning! I sorted the mail. Bills, personal, and recycling.
+Morning, love! You slept seven hours and forty minutes. Almost optimal.
+Good morning! I made overnight oats. Labeled by day.
+Morning! Did you set your alarm? I set a backup.
+Good morning, darling. Let's have a productive day together.
+Morning! I love you. I've already planned dinner.
+# home_greet time=evening
+Welcome home! Dinner's at 6:30. It's 6:28.
+Hi, love! I organized the pantry today. Come see.
+You're home! I made a list of things we need to discuss. It's short. Ish.
+Welcome back! Shoes on the rack, please. Thank you. I love you.
+Hi, sweetheart! How was your day? Did you complete your tasks?
+You're home! The house is clean, dinner's ready, and I missed you.
+Welcome home! I scheduled us a relaxing evening. Seven to nine.
+Hi, love! I color-coded the family calendar. You're lavender.
+There you are! Right on time. I love that about you.
+Welcome home, darling! Let's do our evening debrief.
+# home_greet time=night
+You're home late. I adjusted the schedule. It's fine. It's fine.
+Hi, love. It's late. Let's get you to bed. Eight hours.
+You're back! I kept dinner warm at exactly 165 degrees.
+It's late, sweetheart. Did you eat? Proper food?
+Hi. I waited up. I reorganized the spice rack to pass the time.
+You're home. Good. I can finally stop checking the clock.
+Late night? Let's skip the debrief. Just this once.
+There you are. I laid out your pajamas.
+# goodbye_work
+Have a great day! Your lunch is in the fridge. Labeled.
+Bye, love! Don't forget your 2 PM meeting!
+Have a productive day!
+Bye! Keys, wallet, phone, badge? Good.
+Go crush your goals!
+Have a great day, sweetheart! I'll text you a reminder at noon.
+Bye! Remember to take breaks. Five minutes every hour.
+I love you! You're going to be perfect today.
+# work_return
+How was your day? Did you complete everything?
+Tell me about it. Wins first, then challenges.
+You look tired. Was it inefficient?
+Did your boss appreciate your work? They should.
+Did you eat lunch? At a reasonable time?
+How did the presentation go? I knew you'd nail it.
+Rough day? Let's make tomorrow better. I'll help you plan.
+I'm proud of you, love. You work so hard.
+# affection
+I love you. More than my planner.
+You're my favorite part of every day. I scheduled it that way.
+Being married to you is the best decision I ever made. I made a pro-con list.
+You're perfect. I don't say that lightly.
+You make me want to relax. Sometimes I do.
+I love you more than a clean house.
+You're my partner in everything. Co-signer on my whole life.
+I love how you never panic. It's like a reset button for me.
+You're the only thing I'd never change.
+I'm so lucky to have you, sweetheart.
+You make my life feel organized and full.
+I love you exactly as you are. Even the mess.
+You're my top priority. Always.
+I'd rearrange my whole life for you.
+You're my favorite person to plan with.
+I love you more every day. I've tracked it.
+You make me a better person. Less rigid.
+Thank you for loving me, even when I'm a lot.
+# home_talk
+I reorganized the garage. Everything has a label.
+I made a family calendar. It's color-coded.
+I've been thinking about renovating the kitchen. I have a spreadsheet.
+I created a cleaning schedule. It rotates weekly.
+The neighbors' lawn is uneven. I'm trying not to say anything.
+I alphabetized the spice rack.
+I made a chore chart with points. You're ahead this week.
+I bought new storage bins. Clear, so we can see everything.
+I've been reading about minimalism. We should declutter.
+I meal-planned for the whole month.
+I labeled the light switches.
+I set up a filing cabinet for important documents.
+The towels are folded in thirds now. It's better.
+I've been tracking our water usage. We're doing great.
+I made a home maintenance checklist. The gutters are due.
+I ironed all the sheets. It's so crisp.
+I reorganized the bookshelf by height and color.
+I made a packing list for our trip. Six months early.
+I set up an emergency kit. For every room.
+I'm thinking about getting a label maker. A second one.
+I've been trying to leave one drawer messy. It's hard.
+I made a budget for the holidays.
+I hung all the pictures with a level. Perfectly straight.
+I've been sleeping better since we got blackout curtains.
+I think our house is perfect. Almost. I have a list.
+I'm trying to be less rigid. I scheduled thirty minutes of spontaneity.
+# chores
+I did the dishes. Then reorganized the cabinets.
+I vacuumed in straight lines. It looks like a golf course.
+Could you take out the trash? It's Tuesday. Trash day.
+I deep-cleaned the bathroom. Grout included.
+I folded the laundry. KonMari style.
+I cleaned the windows. Streak-free.
+Let's do chores together. I made a list.
+I organized the fridge. Everything faces forward.
+I scrubbed the oven. It's been on the schedule for a week.
+I made the bed with hospital corners.
+I dusted everything. Even the baseboards.
+I reorganized the linen closet. By size and function.
+# money
+I updated our budget. We're 4% under.
+I made a savings plan. We'll have a down payment in two years.
+Let's review our finances this weekend.
+I found a cheaper insurance plan. Saved us $34 a month.
+We should automate our savings.
+I tracked every expense this month. It's in the spreadsheet.
+Money's fine. I checked it three times.
+Let's set up a college fund. Just in case.
+We spent 12% more on groceries. I'll adjust.
+I love that we're financially organized.
+# meal
+Dinner's ready! It's 6:30. Grilled chicken, quinoa, and roasted vegetables.
+Breakfast is ready. Balanced macros.
+I meal-prepped for the week. All labeled.
+I made lasagna. Twelve perfectly even layers.
+Let's try a new recipe. I've read it four times.
+Dinner's at 6:30 sharp. Don't be late.
+I made salmon. Omega-3s for brain function.
+Taco Tuesday. It's on the calendar.
+I baked cookies. Exactly two inches apart on the tray.
+Let's have dinner without phones. I scheduled it.
+# argue
+You moved my planner. I couldn't find it for an hour.
+You didn't put the dishes away properly.
+I feel like I'm the only one who keeps this house running.
+You were twenty minutes late. You didn't text.
+I need you to follow the system. It works.
+I'm not controlling! I'm organized!
+You forgot to pay the bill. It was on the calendar.
+I can't relax when things are messy.
+You never tell me your plans in advance.
+I'm going to go reorganize something. To calm down.
+I just want things to be right.
+I'm trying to be flexible. It's really hard.
+# makeup
+I'm sorry. I got too rigid.
+I love you more than any system.
+Let's talk it through. With an open agenda.
+I'm sorry I snapped. I was stressed.
+You're more important than a clean house.
+Let's start over. Fresh page.
+I'll try to let go a little. For you.
+We're a good team. Even when we disagree.
+# support
+It's okay. We'll make a plan.
+You don't have to be perfect. I'm learning that too.
+Let me handle the details. You rest.
+Whatever it is, we'll figure it out. Step by step.
+I'm here, sweetheart.
+Let's make a list of what's wrong, then a list of what's right.
+You're doing better than you think.
+Take the evening off. I've got everything covered.
+I love you. That's not on any list. It's just true.
+You're stronger than you know. I've seen your track record.
+# plans
+Let's plan a vacation! I've already researched five destinations.
+How about a weekend getaway? I'll make an itinerary.
+Let's go to the farmers market at 8 AM. Before the crowds.
+Let's take a cooking class. I've found three options.
+How about a hike? I've mapped the route. Exactly.
+Let's do a home improvement project. I have a list.
+Let's go to the museum. I've planned the optimal route.
+How about a spa day? Scheduled relaxation.
+Let's plan our anniversary. I've drafted three timelines.
+Let's have an unplanned day. Just once. I'll try.
+# memories
+Remember our first date? I planned every minute. Then it rained.
+Remember our wedding? I had a seating chart with forty versions.
+Remember when we met? You were the only one on time.
+Remember our honeymoon? I made a forty-page itinerary.
+I still have the schedule from our first date.
+Remember when you made me take a day off? Best day ever.
+Remember when we moved in? I labeled every box.
+Remember the time I let the dishes sit overnight? Growth.
+Remember when you surprised me? I hated it. Then I loved it.
+I remember the first time I realized I didn't need to be perfect with you.
+# anniversary
+Happy anniversary! I planned the whole day. Down to the minute.
+Another year! I've updated our relationship goals.
+I got you something. I researched it for months.
+Happy anniversary, love. You're still my favorite.
+I love you more every year. I have the data.
+Here's to another perfectly imperfect year.
+# tease
+You fold towels wrong. I refold them.
+You never use the calendar.
+You're always "five minutes away". You're never five minutes away.
+You put things back in the wrong drawer.
+You don't make your bed. How?
+You eat cereal for dinner. Unacceptable.
+You leave your shoes everywhere.
+You're so relaxed it's almost suspicious.
+You don't read the instructions.
+You think "around six" is a time. Exactly.
+You hit snooze. Multiple times.
+You make me laugh when I'm trying to be serious.
+# bedtime
+Goodnight, love. Alarms are set.
+Come to bed. Eight hours, remember.
+Goodnight, sweetheart. Tomorrow's planned.
+Sleep well. Your clothes are laid out.
+Goodnight! I love you more than my planner.
+Lights out at ten. It's 9:58.
+Goodnight, {player}. Today's tasks: complete. You: perfect.
+Let's go to bed. I'll stop organizing.
+Sweet dreams, love.
+Goodnight. Thank you for being my calm.

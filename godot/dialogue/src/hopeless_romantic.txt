@@ -1,0 +1,429 @@
+// Hopeless Romantic: dreamy, poetic, destiny, sighs, old movies, flowers, falls fast.
+== base
+# greet stage=stranger
+Oh. Hello. Have we met before? In another life, maybe?
+Hi. I'm {npc}. Sorry, I was daydreaming. The light is so soft today.
+Hello, stranger. Every great story starts with a hello, you know.
+Oh! Hi. You look like the opening scene of a movie. I'm {npc}.
+Hello. I believe everyone we meet is a chapter. Nice to meet you.
+Hi there. I'm {npc}. Isn't it a beautiful day to meet someone?
+# greet stage=acquaintance
+{player}! I was just thinking about fate, and here you are.
+Hello again, {player}. The universe keeps putting us in the same place.
+Oh, {player}! Your timing is poetic.
+Hi, {player}. I wrote a little poem this morning. Not about you. Probably.
+{player}. Seeing you feels like a song I know the words to.
+# greet stage=friend+
+{player}! My dearest friend! Come walk with me under the oaks.
+There you are. My heart did a little twirl when I saw you.
+{player}! I pressed a flower for you. It's in my journal.
+Hello, darling friend. You make every day feel like a love letter.
+{player}! Let's go somewhere beautiful and talk about everything.
+My favorite person! I've been saving up stories for you.
+# greet time=morning
+Good morning. The dew on the roses looks like little diamonds.
+Morning. I woke up to birdsong. Like a fairy tale.
+Good morning! Mornings are full of promise, don't you think?
+# greet time=evening
+Good evening. The sky's blushing. Like it's in love with someone.
+Evening. This is the hour for love letters and long walks.
+Hello. Twilight makes everything feel possible.
+# greet time=night
+The moon's so bright tonight. Do you think it gets lonely?
+Hello, night wanderer. The stars came out just for us.
+It's late. The best conversations happen after midnight.
+# farewell
+Goodbye. Until we meet again.
+Farewell! Isn't that a lovely word? Farewell.
+See you soon. Don't forget to look at the sky tonight.
+Bye. May your day be full of small wonders.
+Goodbye for now. Parting is such sweet sorrow.
+Take care. Smell some flowers on the way home.
+# farewell stage=friend+
+Goodbye, dear {player}. I'll miss you until next time.
+Bye! Write me a letter. A real one!
+Until tomorrow, my friend. Dream something beautiful.
+# smalltalk
+There's a rose bush behind the Pamlico Inn that blooms in November. Isn't that magical?
+I watched an old black-and-white film last night. They don't make love stories like that anymore.
+Did you know swans mate for life? I think about that a lot.
+I found a love letter in a used book at Tarry Page. Dated 1951. I cried.
+The fountain on Founders' Quad, they say if you toss a coin with someone, you'll be together forever.
+I've been writing sonnets. Fourteen lines of longing.
+The way the bell tower rings at sunset, it sounds like a wedding.
+I keep a list of the most romantic places in town. The Cistern at dusk is number one.
+Rain is romantic, don't you think? Like the sky is feeling something.
+I saw an elderly couple holding hands on Hamilton. I had to sit down.
+I believe in love at first sight. And second sight. And third.
+The florist on Rosemary lets me smell the peonies for free.
+# smalltalk stage=friend+
+Can I tell you a secret? I've been in love eleven times. Each one was real.
+You're the kind of friend people write songs about.
+I sometimes worry I'm too much. You never make me feel that way.
+I think everyone deserves a great love story. Even you. Especially you.
+You have such a gentle soul, {player}. I noticed it the first day.
+If I ever get married, you have to give a toast. Promise me.
+# smalltalk weekend=true
+Weekends are for picnics, poetry, and possibility.
+Saturday! I'm going to the flower market and buying everything.
+Sunday mornings feel like a love song.
+# about_self
+I grew up watching my grandparents dance in the kitchen. That's what I want.
+I write poetry. Most of it's about longing. Some of it's about soup.
+I keep every letter anyone's ever sent me. In a box tied with ribbon.
+I'm studying literature. Romantic poets, mostly. Obviously.
+People say I fall too fast. I say I fall honestly.
+I've had my heart broken. It healed bigger. That's how hearts work.
+I dream of a wedding in a garden, with fairy lights and a string quartet.
+# opinion_place
+{place}? It's so romantic. Can you imagine a first kiss here?
+I love {place}. The lighting is perfect for confessions.
+{place} feels like a scene from an old movie.
+{place} is lovely. It needs more candles, though.
+I once had my heart broken at {place}. I still come back. It's beautiful.
+# compliment_reply
+Oh! You're making me swoon.
+That's the loveliest thing anyone's said to me all week.
+Thank you. I'm going to write that down and keep it forever.
+Oh, stop. No, don't. Thank you.
+You have a poet's tongue, {player}.
+# insult_reply
+Oh. That's a thorn in my rose garden.
+I'll forgive you. Everyone deserves a redemption arc.
+Your words hurt, but I won't let them make me bitter.
+I'm going to go cry dramatically under a tree now.
+How unkind. I hope someone softens your heart someday.
+# gift_reply
+Oh! You remembered! I'm going to cry.
+This is the most thoughtful gift. I'll treasure it always.
+Flowers? For me? My heart!
+I'm going to keep this in my memory box. Forever.
+You shouldn't have. But I'm so, so glad you did.
+# joke
+I asked the moon out on a date. It said it was going through a phase.
+What did one candle say to the other? You light up my life.
+I'd write you a love song, but I'm still working on the chorus.
+Why did the rose break up with the tulip? It needed someone with more stem.
+# ask_favor
+Could you deliver this letter to someone? I'm too shy to do it myself.
+Would you help me plant roses in the community garden?
+Could you be my plus-one at the poetry reading? I hate going alone.
+# favor_reply
+Thank you. You're a true knight. Or knightess. A true friend.
+You've done me a kindness I'll never forget.
+Oh, thank you! You're a gem, {player}.
+# work_talk
+I work at the florist. It's like working inside a love song.
+Someone bought two dozen roses today for a proposal. I teared up at the register.
+Work is fine. I write poems on the back of receipts.
+I arrange wedding bouquets. Every single one makes me hopeful.
+# school_talk
+I'm writing my thesis on unrequited love in poetry. It's very personal.
+My professor said my essay was "overwrought." I took it as a compliment.
+I fell in love with a character in our reading. Again.
+# hostile stage=dislike-
+I don't want to talk to you. You've bruised my heart.
+Please. Just let me be.
+I thought you were kind. I was wrong.
+You're the villain in my story, {player}.
+I'm going to write a sad poem about this. Go away.
+Not every story has a happy ending. Ours certainly doesn't.
+# flirt_reply romance=none
+Oh! How sweet. But my heart is spoken for. By an idea of someone.
+That's lovely, but I think we're meant to be friends.
+I'm flattered, truly. But I feel a friendship kind of love for you.
+# flirt_reply romance=crush
+Oh. Oh my. Did you mean that? Please say you meant it.
+My heart just skipped. Do it again.
+I've been waiting for this moment like the end of a long novel.
+You're making me blush like a sunset.
+# ask_out_yes
+Yes! Yes, a thousand times yes. I've been dreaming of this.
+A date? Oh, I'll wear my best dress. My best everything. Yes.
+# ask_out_no
+I'm so sorry. My heart just doesn't feel that way. I hope you find your great love.
+Oh, I wish I could say yes. But I can't lie to you. No.
+
+== dating
+# date_greet
+There you are. You look like a dream I had once.
+My love! I brought you a single red rose.
+Hello, darling. I've been counting the hours.
+You came! My heart is fluttering like a bird.
+Hi. I wore your favorite color. Did you notice?
+You look breathtaking. I mean it. I can't breathe.
+# flirt
+Your eyes are like the night sky. Full of stars.
+I'd write you a thousand sonnets. And then a thousand more.
+You're the love story I've been waiting for my whole life.
+Every time you smile, a poet somewhere gets an idea.
+Do you believe in soulmates? Because I'm looking at mine.
+I could listen to your voice forever.
+You make my heart feel like a love song.
+# date_talk
+Let's walk under the oaks. Hand in hand.
+I made us a picnic. With strawberries and champagne. Well, sparkling cider.
+Tell me your dreams. All of them.
+Let's dance. Right here. There's no music, but I can hear it.
+I wrote you a poem. Can I read it to you?
+I never thought I'd find someone who loves like I do.
+Let's toss a coin in the fountain. Together. You know what that means.
+Do you want to see the rose garden behind the Inn? It's our secret place now.
+I think we were meant to meet. I really do.
+Let's watch the sunset. Every sunset. Forever.
+I feel like I've known you forever. In every lifetime.
+I'm so happy, my love. I could burst.
+# compliment
+You're the most beautiful person I've ever seen.
+You have the soul of a poet.
+You're so kind. It makes me fall for you more.
+Your laugh is my favorite music.
+You're my muse, {player}.
+# kiss_reply
+Oh. That was like a movie. With swelling music.
+My heart is soaring.
+That was the kiss I've been dreaming about.
+I'll remember that kiss until I'm old and gray.
+# miss_you
+I missed you so much it hurt. Like a poem.
+Every moment apart feels like an eternity.
+I wrote you a letter. Three pages. With pressed flowers.
+I looked at the moon and thought of you.
+# jealous
+Who was that? Are they my rival for your heart?
+I'm not jealous. I'm just... wistful.
+I want to be the only one in your story.
+# date_end
+Goodnight, my love. Sweet dreams.
+Parting is such sweet sorrow.
+I'll dream of you tonight.
+Thank you for the most beautiful evening.
+Until tomorrow, my darling.
+# lovers_quarrel
+You've wounded my heart. But I know we can heal it.
+Please don't let this be the end of our story.
+I'm upset, but I still love you. That's how love works.
+Let's not let this tragedy become our ending.
+# proposal_yes
+Yes! Yes! I've dreamed of this moment my whole life!
+I'll marry you! This is the happiest ending!
+
+== marriage
+# home_greet time=morning
+Good morning, my love. You're the first thing I want to see every day.
+Morning, darling. I brought you breakfast in bed. And a rose.
+Good morning! The sun came up just to see your smile.
+Morning, my heart. I wrote you a little poem while you slept.
+Good morning, love. Every day with you is a gift.
+Hello, my darling. I dreamed of our wedding again.
+Good morning! The birds are singing our song.
+Morning, love. I made heart-shaped pancakes.
+Good morning, my soulmate. I still can't believe you're real.
+Morning! I picked flowers from the garden for the table.
+Good morning, love. I lit a candle. For no reason. For love.
+Morning, my darling. Let's have coffee on the porch and watch the world wake up.
+# home_greet time=evening
+Welcome home, my love! I've missed you terribly!
+There you are, darling. Dinner's by candlelight tonight.
+You're home! I put on our song.
+Welcome back, my heart. The house was so lonely without you.
+Hello, my love. I drew you a bath with rose petals.
+You're home! Come dance with me in the kitchen.
+Welcome home, darling. I wrote you a love letter. It's on your pillow.
+There you are! I've been watching the door all evening.
+Welcome back, love. Let's watch the sunset together.
+You're home. Now everything is perfect.
+# home_greet time=night
+You're home late, my love. I waited up with candles.
+Darling, you're back! I couldn't sleep without you.
+Hello, my heart. Come to bed. The stars are out.
+You're home. The moon and I were keeping each other company.
+Late night, love? Let me hold you.
+There you are. I left the porch light on like a lighthouse.
+You're back, my darling. Now I can rest.
+Hello, love. Let's look at the stars before bed.
+# goodbye_work
+Goodbye, my love. I'll count the minutes until you're home.
+Have a beautiful day, darling. I put a love note in your pocket.
+Go, my love. And come back to me soon.
+Goodbye, my heart. You carry it with you.
+Have a lovely day! Think of me at lunch.
+Goodbye, darling. Every hour without you is a sonnet of longing.
+Kiss me before you go. Okay, one more.
+Have a wonderful day, my soulmate.
+# work_return
+How was your day, my love? Tell me everything.
+You look tired, darling. Let me rub your shoulders.
+Did anything beautiful happen today?
+Tell me about your day. Every little detail.
+Did they treat you well, my love?
+Hard day, darling? Come here. You're home now.
+I'm so proud of you, love. Always.
+You're home. That's all that matters.
+# affection
+I love you more than all the stars in the sky.
+You're my soulmate. I knew it the moment I saw you.
+Every day with you is a love story.
+You're the poem I've been trying to write my whole life.
+I'd marry you a thousand times over.
+You're my heart, my soul, my everything.
+I love you more today than yesterday. And less than tomorrow.
+You make my life a fairy tale.
+I'm the luckiest person in the world. Truly.
+You're my dream come true.
+Every love song I hear is about you.
+I'd follow you to the ends of the earth.
+You're my forever, my always.
+I love the way you look at me. Like I'm the only one.
+You're my home. My heart's home.
+Every moment with you is a treasure.
+I love you, my darling. Endlessly.
+You make even ordinary days feel like magic.
+# home_talk
+I planted a rose bush in the garden. For us.
+I've been writing a book of poems. All about you.
+I found our wedding invitation in a drawer. I cried.
+I hung fairy lights in the bedroom. It's so romantic now.
+I've been learning to play our song on the piano.
+I made a scrapbook of our love story.
+The garden's blooming! It's like a painting.
+I bought new candles. They smell like roses.
+I've been reading old love letters. From famous couples. And from you.
+I pressed some flowers from our garden.
+I think we should renew our vows. Every year.
+I framed the poem you wrote me.
+I made a playlist of all the songs that remind me of you.
+I've been thinking about our first dance. I want to dance like that again.
+The neighbors' wedding was so beautiful. Not as beautiful as ours.
+I set up a little reading nook by the window. For two.
+I've been watching old romance movies. They make me think of us.
+I wrote our names on a lock and put it on the bridge by the ravine.
+I bought a vintage record player. For slow dancing.
+I've been dreaming about our future. It's beautiful.
+I made a love jar. Every day, I write something I love about you.
+The moon was so full last night. Did you see it?
+I painted our bedroom a soft blush. It's like living in a rose.
+I've been learning to make chocolates. Heart-shaped.
+I think every room in this house is full of love.
+I hung our wedding photo in the hallway.
+# chores
+I did the dishes. While singing love songs.
+I folded the laundry. Your shirts smell like you.
+Could you help me in the garden? It's romantic.
+I made the bed with fresh sheets and rose petals.
+I cleaned the kitchen. By candlelight. Very atmospheric.
+I swept the porch. The leaves looked like confetti.
+Let's do chores together. Everything's better together.
+I polished the silver from our wedding.
+I watered the roses. They're thriving. Like our love.
+I dusted the bookshelves. And reread our letters.
+I scrubbed the bathroom. Even that can be romantic. Kind of.
+I organized the closet. Found your love letters. Cried again.
+# money
+Money's tight, but love is free.
+I don't need riches. Just you.
+I've been saving for a romantic getaway.
+I made a budget. There's a line for flowers.
+We're rich in love. That's what matters.
+I found a coupon for a candlelight dinner!
+Let's save for a trip to Paris. Someday.
+I sold some of my poems. Made fifty dollars!
+We don't need much. A little house, a garden, each other.
+Let's spend less on things and more on moments.
+# meal
+Dinner by candlelight, my love.
+I made breakfast in bed. With a rose on the tray.
+I made pasta. Like in that old movie. Let's share a noodle.
+Let's have a picnic in the garden, among the roses.
+I baked a heart-shaped cake.
+I made your favorite. With extra love.
+Let's have dinner on the porch under the stars.
+I made chocolate-covered strawberries.
+I made soup. It's warm, like my love for you.
+Dessert is me. Kidding. It's crème brûlée.
+# argue
+You forgot our special day. Again.
+I feel like you don't see me anymore.
+You used to write me letters. Now you don't.
+I need romance. Is that too much to ask?
+You don't hold my hand anymore.
+I feel like we're losing the magic.
+You didn't even notice my new dress.
+Please don't brush me off. I'm trying to talk to you.
+I feel unloved when you ignore me.
+I'm not being dramatic. I'm being romantic.
+I'm going to sit in the garden and cry.
+I just want to feel like I matter to you.
+# makeup
+I'm sorry, my love. Let's not let this ruin our story.
+Come here. Let's dance it out.
+I love you. That's all that matters.
+I'm sorry I was so dramatic. You know how I am.
+Let's start over. Our next chapter.
+I hate fighting with you. It breaks my heart.
+Let's write each other apology letters.
+We're soulmates. We'll always find our way back.
+# support
+It's okay, my love. I'm here.
+Let me hold you. As long as you need.
+You're stronger than you know.
+Whatever it is, we'll face it together, hand in hand.
+Let me draw you a bath and light some candles.
+You're my hero. Always.
+Let's watch a romantic movie and forget the world.
+I love you. Even on the hardest days.
+You don't have to be strong. Not with me.
+Let me take care of you tonight, like you've always taken care of my heart.
+# plans
+Let's go to Paris someday. The city of love.
+How about a weekend at a bed and breakfast?
+Let's take a dance class together.
+Let's renew our vows in the rose garden.
+How about a picnic by the lake at sunset?
+Let's go to the opera. Dress up and everything.
+Let's take a carriage ride downtown.
+How about a trip to the coast? Walks on the beach.
+Let's go stargazing on Carillon Hill and name a star after us.
+Let's plan the most romantic anniversary ever.
+# memories
+Remember our first date? Under the oaks?
+Remember our first kiss? By the fountain.
+I still have the rose you gave me. Pressed.
+Remember our wedding? Fairy lights and a string quartet.
+Remember when we tossed coins in the fountain together?
+Remember when you read me poetry under the stars?
+Remember our honeymoon? Every sunset was perfect.
+I remember the moment I knew I loved you.
+Remember our first dance? I cried.
+Remember when you surprised me with a hundred roses?
+# anniversary
+Happy anniversary, my love! Another year of our love story!
+I wrote you a sonnet. Happy anniversary.
+Another year, my darling. I love you more than ever.
+Happy anniversary! Let's dance like it's our wedding night.
+I got you a hundred roses. One for every reason I love you.
+Here's to forever, my love.
+# tease
+You still can't write a poem. But you try. It's adorable.
+You fall asleep during romantic movies.
+You think candles are a fire hazard.
+You forgot the words to our song. Again.
+You call my sonnets "long texts".
+You hide your tears during sad movies. I see them.
+You're secretly more romantic than me.
+You still blush when I say I love you.
+You hum our song when you think I'm not listening.
+You can't dance. I love it.
+You always say I'm too dramatic. I am. You love it.
+You eat the strawberries before they're dipped.
+# bedtime
+Goodnight, my love. Dream of me.
+Come to bed, darling. The stars are waiting.
+Goodnight, my heart. I love you endlessly.
+Sleep well, my soulmate.
+Let's fall asleep in each other's arms.
+Goodnight, {player}. You're my forever.
+I love you to the moon and the stars and back.
+Sweet dreams, my darling.
+Goodnight. Thank you for another beautiful day.
+Let's whisper until we fall asleep.

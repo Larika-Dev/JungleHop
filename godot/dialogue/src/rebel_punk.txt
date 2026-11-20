@@ -1,0 +1,429 @@
+// Rebel Punk: anti-authority, blunt, loyal to the crew, loud music, zines, skate, DIY.
+== base
+# greet stage=stranger
+What? Oh. Hey. I'm {npc}. Don't call me sweetie.
+Yo. Nice boots. Or not. Whatever. {npc}.
+You a cop? No? Cool. I'm {npc}.
+Hey. You look like you've never been to a basement show. I'm {npc}.
+Sup. I'm {npc}. I don't do small talk. Unless it's about the system.
+Hey. Name's {npc}. If you're here to tell me to turn the music down, don't.
+# greet stage=acquaintance
+{player}. You came back. Brave.
+Yo, {player}. You read the zine I gave you?
+{player}! Cool. You didn't narc on me. Respect.
+Hey, {player}. There's a show at the Grinding Stone Friday. Come.
+{player}. You're alright. For a normie.
+# greet stage=friend+
+{player}! My crew!
+Hey, you. Finally, someone real.
+{player}! I made you a patch. It says "nope". Very you.
+Yo! You're the only one in this town who gets it.
+{player}! I saved you a spot in the pit.
+There's my partner in crime. Not real crime. Mostly.
+# greet time=morning
+Ugh. Morning. The man wants us up early. Screw the man.
+Morning. I'm only up because the band practiced till four.
+Hey. Coffee. Black. Like my soul. And my jacket.
+# greet time=evening
+Evening. Time to wake up for real.
+Yo. Show starts at nine. Don't be late. Or do. I don't care.
+Hey. The night's the only honest part of the day.
+# greet time=night
+Now we're talking. Night's when the real ones come out.
+Yo! Wanna wheatpaste some posters on Rosemary?
+Late night? Cool. Me too. Always.
+# farewell
+Later.
+Peace. Stay angry.
+See ya. Don't let them tame you.
+Bye. Question everything.
+Catch you at the show.
+Later. Burn something. Metaphorically.
+# farewell stage=friend+
+Later, {player}. You're one of the good ones.
+See ya, crew. Text me if anyone gives you trouble.
+Bye. I got your back. Always.
+# smalltalk
+The town's trying to ban skating on the plaza. Over my dead board.
+They painted over our mural in Tanner's Alley. We're painting a bigger one.
+The Grinding Stone books real bands. Everything else is corporate garbage.
+I made a new zine. It's about landlords. Spoiler: they suck.
+Somebody called the cops on our band practice. Cool, more audience.
+I dyed my hair green. My mom cried. Then she said it suits me.
+The student union raised prices again. Revolution is overdue.
+I thrifted a leather jacket for six bucks. Still smells like someone's grandpa.
+The Billram mascot is a symbol of corporate oppression. Also, it's kind of cute.
+I got a new tattoo. It's a raccoon. Raccoons don't follow rules.
+There's a DIY venue in a garage in Carrburg. Best sound in the county.
+I fixed my own bike. Don't need a shop. Don't need anybody.
+# smalltalk stage=friend+
+You know I'm not as tough as I act, right? Don't tell anyone.
+You're the only person I'd let see me cry. Don't make it a thing.
+My crew is my family. You're crew now.
+I'd fight anyone for you. Literally.
+Sometimes the anger is just sadness wearing boots.
+You make this town less awful. Thanks for that.
+# smalltalk weekend=true
+Weekend! Shows Friday, Saturday, and Sunday.
+Saturday. Zine fair at the library. Even the library's cool sometimes.
+Sunday. Recovery day. From all the moshing.
+# about_self
+I play bass in a band called Broken Curfew. We're loud.
+I got kicked out of three schools. Their loss.
+I work at the tattoo shop. Front desk. For now.
+I don't trust authority. Authority hasn't earned it.
+My dad's a cop. That explains a lot.
+I make zines about stuff nobody else talks about.
+I'm loyal. If you're my people, you're my people forever.
+# opinion_place
+{place}? Corporate. Gross.
+{place}'s alright. They let us put up flyers.
+I got thrown out of {place} once. Badge of honor.
+{place} needs more noise. And fewer rules.
+{place}? The owner's chill. He doesn't call the cops.
+# compliment_reply
+Huh. Thanks. I guess.
+Don't get soft on me. But thanks.
+Cool. You're cool too.
+Whatever. Okay. Thanks.
+That's... nice. Don't tell anyone you said that.
+# insult_reply
+Say that again. I dare you.
+Wow. Edgy. Never heard that before.
+You think I care? I don't.
+That's the most boring insult ever.
+Cool story. Nobody asked.
+# gift_reply
+A patch? Sick! Thanks!
+Whoa. That's actually rad.
+You didn't have to. That's punk of you.
+Thanks. I'm putting this on my jacket.
+Cool. You get it.
+# joke
+How many punks does it take to change a lightbulb? Two. One to do it, one to say it's a sellout.
+What do you call a punk with no band? Unemployed.
+I'm not anti-social. I'm anti-everything.
+What's a punk's favorite type of math? Anarchy. Okay, that's not math.
+# ask_favor
+Can you help me carry the amp to the show? It weighs a ton.
+Would you keep watch while I put up posters?
+Can you lend me five bucks for strings? I'll pay you back. Probably.
+# favor_reply
+Thanks. You're solid.
+That was cool of you. I won't forget.
+You're crew. That's what crew does.
+# work_talk
+I work at the tattoo shop. Today some guy got his ex's name. Again.
+My boss is okay. He doesn't make me wear a uniform.
+Work's just a way to pay for strings and rent.
+I quit my last job. They wanted me to smile.
+# school_talk
+School is a system. I'm studying the system to destroy it. Sociology major.
+My professor gave me a C. He said I'm "disruptive". Yeah.
+I go to class when it matters. It rarely matters.
+# hostile stage=dislike-
+Get lost.
+You're the system, {player}.
+I don't talk to posers.
+Back off before I make you.
+You're not welcome here.
+Go ruin someone else's night.
+# flirt_reply romance=none
+Ha. No. But you've got guts.
+Nah. Let's just be crew.
+Cute. No.
+# flirt_reply romance=crush
+Whoa. Okay. That's... not terrible.
+Are you serious? Because I'm into it.
+You're making me blush. That's never happened. Shut up.
+I like you too. Don't make it weird.
+# ask_out_yes
+Yeah. Okay. Somewhere loud.
+A date? Fine. Yes. Come to my show.
+# ask_out_no
+Nah. Sorry. You're cool, though.
+No. But we're still crew.
+
+== dating
+# date_greet
+Hey, you. You look rad.
+You came. Cool. Very cool.
+I wore my good jacket. The one with fewer holes.
+Hey. I saved you a spot by the stage.
+Yo. Wanna go break some rules?
+Hey, cutie. Don't tell anyone I said that.
+# flirt
+You're the only thing I'd ever conform for.
+You're more punk than anyone I know.
+I'd write a song about you. It'd be loud.
+You make my heart go double time.
+You're my favorite rebellion.
+I don't believe in much. I believe in you.
+You're dangerous. For my reputation as a hard case.
+# date_talk
+Let's go to the show. Then get tacos.
+Tell me what you're angry about. I want to know.
+I've never told anyone this, but I write love songs. Secretly.
+Want to make a zine together?
+Let's skate down Columbia at midnight.
+You don't try to change me. That's everything.
+Wanna get matching tattoos? Kidding. Unless?
+Let's sit on the roof and watch the town sleep.
+I think you're the realest person I've met.
+I like being quiet with you. That's weird for me.
+I'm happy. Don't spread it around.
+You're the only good part of this town.
+# compliment
+You're not fake. That's rare.
+You look amazing. Seriously.
+You've got guts. I like that.
+You're kind without being a pushover.
+You're the coolest person I know.
+# kiss_reply
+Whoa. Okay. That was punk rock.
+Do it again.
+That was better than a stage dive.
+Yeah. I'm in trouble.
+# miss_you
+Missed you. The show was boring without you.
+I kept looking for you in the crowd.
+I wrote a song. It's about you. It's angry and sad.
+Don't disappear like that.
+# jealous
+Who was that guy? Want me to have a word?
+I'm not jealous. I'm protective. Different.
+You're my crew. Don't forget it.
+# date_end
+Night. Get home safe.
+That was rad. Thanks.
+Same time next week. Or tomorrow.
+Goodnight, {player}. Text me.
+I had fun. Don't tell anyone.
+# lovers_quarrel
+That pissed me off. Let's talk.
+Don't treat me like everyone else does.
+I'm not running away. Say what you mean.
+I'm hurt. And I hate being hurt.
+# proposal_yes
+Yeah. Yes. Let's do it. Our way.
+Marry you? Hell yes. Courthouse. Then a show.
+
+== marriage
+# home_greet time=morning
+Morning. Coffee's black. Your sugar's next to it.
+Hey. I made toast. It's slightly burnt. Like my heart.
+Morning, love. Ugh. Morning. But love.
+Hey, you. Don't talk to me till coffee. Except you can.
+Morning. Band practice at noon. You coming?
+Hey. You look good. Even at this ungodly hour.
+Morning. I fixed the leaky faucet myself. No landlord needed.
+Hey, love. The neighbors complained about the music again.
+Morning. I dreamed we started a band.
+Hey. I made eggs. Don't expect it again.
+Morning. Wanna skip everything and stay in bed?
+Hey. You're my favorite person to wake up next to. Only person.
+# home_greet time=evening
+You're home. Good. Let's put on a record.
+Hey, love. I made dinner. It's tacos.
+Welcome back. I painted the living room black.
+Yo. You're home. I missed you.
+Hey. Let's sit on the porch and complain about everything.
+You're back. The house was too quiet.
+Hey, you. I wrote a new song today. Want to hear?
+Welcome home. Kick your boots off.
+There you are. Show tonight?
+Hey. Let's order pizza and stay in.
+# home_greet time=night
+You're home late. Good show?
+Hey. Long night? Come here.
+It's late. Let's crash.
+You're back. I was worried. Don't tell anyone.
+Hey. I left the porch light on. Even though it's wasteful.
+Late night? Me too. Let's sit and listen to the rain.
+There you are. I was playing bass to stay awake.
+Hey, love. Bed?
+# goodbye_work
+Bye. Don't let them grind you down.
+Go. Stick it to the man.
+Later. Text me if your boss is a jerk.
+Bye, love. You're better than that job.
+See ya. Come home soon.
+Go on. I'll be here making noise.
+Bye. Keep your head up.
+Later. I love you. Don't make it a thing.
+# work_return
+How was work? Did anyone deserve a punch?
+Your boss sounds like a tool.
+You look beat. Sit down.
+Tell me everything. I'll be angry for you.
+Did they treat you right?
+Rough day? Let's put on something loud.
+You're home. Forget them.
+Proud of you. You survive every day.
+# affection
+I love you. Shut up, it's true.
+You're my crew. My family. My everything.
+Being married to you is the most punk thing I've ever done.
+You make this rotten world bearable.
+I'd fight the whole world for you.
+You're the only rule I follow.
+I love you more than my bass. And I love my bass.
+You get me. Nobody gets me.
+You're my home. My safe place. Whatever.
+I'm lucky. Don't tell anyone I said lucky.
+You're my favorite song.
+I love how you don't try to change me.
+You're the realest thing in my life.
+I'd stage dive into anything for you.
+You make me softer. Ugh.
+I'm proud to be yours. Whatever.
+You're my anchor in all the noise.
+Thanks for loving me loud.
+# home_talk
+I fixed the porch myself. Landlords are a scam.
+I painted a mural on the garage. The neighbors hate it.
+The band's recording an EP. In our basement.
+I made a new zine about our street.
+The HOA sent another letter. I'm framing it.
+I planted a guerrilla garden on the median.
+I found a record player at the thrift store. It works!
+The neighbor's kid asked me to teach him drums.
+I built a bookshelf out of pallets.
+I've been thinking about starting a community fridge.
+The cops drove by twice today. Just checking on me, I guess.
+I got a new tattoo. It's your initials. Small. Don't freak out.
+I made a punk birdhouse. Spikes and all.
+I've been writing songs about us.
+I organized a benefit show for the shelter.
+I think we should get a dog. A mutt. From the shelter.
+I fixed the car. With duct tape and spite.
+I've been learning to sew. Patches mostly.
+The landlord raised the rent. I'm writing him a song.
+I painted our door red. Rebellion.
+I set up a practice space in the garage.
+I've been reading about anarchism. It's very organized, actually.
+I love our weird little house.
+I've been trying to yell less. It's hard.
+The neighbors invited us to a barbecue. Should we go? Ugh, fine.
+I hung all our show posters in the hallway.
+# chores
+I did the dishes. To loud music.
+I vacuumed. The cat hated it. Solidarity.
+Could you take out the trash? I'm restringing.
+I cleaned the bathroom. Don't expect a medal.
+I mowed the lawn. Into a pattern. It says "no".
+I folded the laundry. Badly. On purpose.
+Let's do chores together. With a record on.
+I swept the porch. The leaves can stay where they want, honestly.
+I washed the dishes. All of them. Even the gross pan.
+I cleaned out the garage. Found my old skateboard.
+I fixed the leaky roof. No contractor.
+I made the bed. Kinda. Whatever.
+# money
+Money's tight. Capitalism's a scam.
+We'll get by. We always do. Whatever.
+I sold some merch at the show. Forty bucks.
+I'm picking up extra shifts at the shop.
+We don't need much. Records and each other.
+Let's not buy anything new. Thrift everything.
+Rent's due. I hate rent.
+I found twenty bucks in my jacket. Score.
+We should save a little. For a van. For the band.
+We're rich in the stuff that matters.
+# meal
+Dinner's ready. Tacos. Again.
+I made ramen. The good kind. Added an egg.
+Let's grab burritos from the truck.
+I made chili. It's spicy. Deal with it.
+Breakfast is coffee and toast. Punk breakfast.
+I made a big pot of beans. Cheap and good.
+Pizza night. Extra jalapeños.
+I made grilled cheese. Perfect every time.
+Let's eat on the roof.
+I made vegan cookies. Don't knock it.
+# argue
+You turned off my record mid-song.
+Don't tell me to calm down.
+I'm not being difficult. I'm being honest.
+You sound like my dad right now.
+You said you'd come to my show. You didn't.
+I hate when you try to make me "normal".
+Don't treat me like a kid.
+You never stand up for yourself. It drives me nuts.
+I'm not angry at you. I'm angry at everything. Okay, a little at you.
+I'm going for a walk. Don't follow me.
+Don't shut me out.
+I just want you to get it.
+# makeup
+Okay. I'm sorry. I was being a jerk.
+Come here. Let's not fight. Whatever.
+I love you. That's not changing.
+Sorry I yelled. You didn't deserve it.
+Let's put on our song and just sit.
+We're crew. Crew makes up.
+I'll do better. I mean it.
+We're good. We're always good. Whatever.
+# support
+Hey. Whoever did this, I'll handle it.
+It's okay. Let it out.
+I'm here. Not going anywhere.
+You're tougher than you think. Whatever.
+Let's put on something loud and scream.
+The world's broken. You're not.
+I'll take care of everything tonight.
+Cry. It's punk to cry.
+I love you. Even when you're a mess.
+We'll get through this. Us against everything.
+# plans
+Let's go to the punk fest this weekend.
+How about a road trip? Just us and the van.
+Let's go to the zine fair.
+Let's crash the town council meeting.
+How about we skate the new park?
+Let's throw a house show.
+Let's go to the beach. In winter. Nobody's there.
+How about a protest? Date night.
+Let's go to the record fair.
+Let's get matching tattoos for our anniversary.
+# memories
+Remember when we met? At the show. You got knocked into me.
+Remember our first date? We got kicked out of the diner.
+Remember our wedding? Courthouse, then a house show.
+Remember when we painted the alley mural together?
+Remember our honeymoon? A road trip with no plan.
+I still have the setlist from the night we met.
+Remember when we got caught skating the parking deck?
+Remember when you came to my first show? You were the only one who stayed.
+I remember the first time you saw me cry. You didn't flinch.
+Remember when the van broke down in the middle of nowhere?
+# anniversary
+Happy anniversary. Another year of not conforming.
+I wrote you a song. It's loud. Happy anniversary.
+Another year. Still the best rebellion.
+Happy anniversary. I got you a patch.
+I love you more than last year. Don't tell anyone.
+Here's to another year of us against everything.
+# tease
+You still can't mosh.
+You like pop music. I've heard you.
+You iron your shirts. Who does that?
+You always say "please" to the cops.
+You're secretly a rebel. I've seen it.
+You hide my bass.
+You call my band "noise".
+You get scared at shows.
+You always want to leave early.
+You read the terms and conditions.
+You hum my songs when you think I'm not listening.
+You're more punk than me sometimes. Don't tell anyone.
+# bedtime
+Night. Lock the door.
+Come to bed. I'm tired of the world.
+Goodnight, love. Don't steal the covers.
+Bed. Now.
+Night. I love you. Shut up.
+Lights out. Tomorrow we fight again.
+Goodnight, {player}. You're my crew.
+Sleep tight.
+Come here. You're cold. Whatever.
+Night. Thanks for being real.

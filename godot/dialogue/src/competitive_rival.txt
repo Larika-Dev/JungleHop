@@ -1,0 +1,429 @@
+// Competitive Rival: trash talk, everything is a contest, scorekeeping, respects strength, sore loser, secretly loyal.
+== base
+# greet stage=stranger
+New challenger approaching. I'm {npc}. I'm better than you at most things.
+Hey. I'm {npc}. Undefeated in ping pong at the student union. Three years.
+Sup. You look like you can't parallel park. I'm {npc}.
+Hi. I'm {npc}. Want to arm wrestle? No? Coward. Kidding. Mostly.
+Hey. You walk fast. Not as fast as me. I'm {npc}.
+Name's {npc}. Remember it. You'll hear it at the awards.
+# greet stage=acquaintance
+{player}. Back for another loss?
+Oh, {player}. I've been practicing. You're going down.
+{player}! Rematch. Chess. Tonight. You pick the time, I pick the victory.
+Hey, {player}. I beat your high score at the arcade. Just so you know.
+{player}. You look slow today. Good.
+# greet stage=friend+
+{player}! My rival! My favorite rival!
+There you are. I need someone worthy to beat.
+{player}! I kept score of our hangouts. I'm winning.
+Hey, you. You're the only one who ever beats me. Barely.
+{player}! I brought cards. Prepare to lose. Lovingly.
+My nemesis and best friend! Same thing, really.
+# greet time=morning
+Morning. Already beat my 5K time. You're up late.
+Good morning. Early riser wins. That's me.
+Morning. First one to the coffee shop wins.
+# greet time=evening
+Evening. Trivia at Top of the Mount. We're winning.
+Hey. Pickup game on the courts in ten. You in?
+Evening. Sunset? I've seen better. I've seen it from a higher hill.
+# greet time=night
+Late night? I'm still up. I win.
+Night. I'm grinding ranked matches. Don't distract me.
+Hey. The night belongs to champions.
+# farewell
+Later, loser. Kidding. Mostly.
+See ya. I'll be practicing.
+Bye. I'm going to beat you next time.
+Peace. Stay in your lane. My lane's the fast one.
+Catch you later. Bring your A-game.
+Bye. Victory waits for no one.
+# farewell stage=friend+
+Later, {player}. Good game. Next time I crush you.
+See ya, rival. Text me your score.
+Bye. You're alright. For second place.
+# smalltalk
+I beat the Earl University fan at darts last night. Three times. He cried.
+The Billram are going to win the championship. I've bet my dignity on it.
+I timed myself climbing the stadium stairs. New record.
+Somebody beat my score on the pinball machine at the Grinding Stone. I'm investigating.
+I entered the pie-eating contest at Founders' Day. Second place. Rigged.
+I'm learning chess openings. Twelve so far.
+The pickup basketball game on Thursday is mine. Everyone knows it.
+I can do forty push-ups in a minute. Wanna see?
+I beat my roommate at every board game we own. He moved out.
+I joined the debate team. I win arguments for fun.
+I bet I can eat more wings than anyone at Top of the Mount.
+Participation trophies are a crime.
+# smalltalk stage=friend+
+Honestly? You're the only person I'm happy to lose to.
+I compete because my brother always won. Now I can't stop.
+You make me want to be better. Not just beat you.
+If anyone ever messes with you, they deal with me.
+I'd let you win. Once. Maybe.
+You're the best opponent and the best friend.
+# smalltalk weekend=true
+Weekend! Tournament Saturday. I'm the favorite.
+Saturday. Golf. I'm terrible. I'm still going to win.
+Sunday. Football. Real sport. Real competition.
+# about_self
+I played every sport in high school. Captain of four.
+I don't lose. I learn. Then I win.
+I'm a sales rep. Top of the leaderboard six months running.
+I keep a spreadsheet of every game I've ever played.
+My family game nights ended in shouting. Every time.
+I'm competitive, not mean. There's a difference. Sometimes.
+I want to run an ultramarathon. And win it.
+# opinion_place
+{place}? I've been here more than you.
+{place} has a dartboard. I own that dartboard.
+{place} is fine. I'd design it better.
+I like {place}. I won a bet here.
+{place}? Their trivia night is soft. Easy wins.
+# compliment_reply
+Thanks. I know.
+Obviously. But thanks.
+Ha. You noticed. Good eye.
+Appreciated. You're not bad yourself.
+Thanks. I'll add it to my trophy shelf.
+# insult_reply
+Cute. Say that after I beat you.
+That's weak. Like your backhand.
+Is that all you've got?
+Try harder. I'm not even warmed up.
+Wow. Bold for someone with your record.
+# gift_reply
+A trophy? For me? Oh, it's a mug. Still, I'll take it.
+Whoa. This is great. You win this round.
+Thanks. I owe you one. I hate owing people.
+Nice. You know what I like.
+Okay, you beat me at gift-giving. Respect.
+# joke
+Why did the golfer bring two pants? In case he got a hole in one.
+I'm so competitive I raced my own shadow. I won.
+I lost a game once. I think about it daily.
+Why did the chess player cross the road? Strategic advantage.
+# ask_favor
+Can you time my sprint? Be honest. Unless it's slow.
+Would you be my doubles partner? You're decent.
+Can you hold my phone? I need to arm wrestle someone.
+# favor_reply
+Thanks. You're a solid teammate.
+Good. You came through. I respect that.
+Thanks. I owe you. I'll pay you back with a win.
+# work_talk
+Closed three deals today. Leaderboard is mine.
+My coworker thinks he's going to beat my sales numbers. Adorable.
+Work's a competition. I'm winning.
+My boss gave me employee of the month. Fifth time.
+# school_talk
+I got the highest grade in organic chem. Ask me how.
+My study group is a competition. I'm the top scorer.
+I'm on the dean's list. Obviously.
+# hostile stage=dislike-
+You're not even worth beating.
+Get out of my way, {player}.
+You're a sore loser and a bad winner.
+I don't compete with cheaters.
+You're done. Bench yourself.
+Bye. I'm not wasting my energy.
+# flirt_reply romance=none
+Ha! Nice try. Not happening.
+Nope. You're a rival, not a date.
+Smooth. Still no.
+# flirt_reply romance=crush
+Whoa. Did you just make the first move? Respect.
+Okay, you win this one. I'm blushing.
+Are you flirting? Because I'm going to flirt better.
+I like you too. There. I said it first. I win.
+# ask_out_yes
+Yes. I'll plan the best date you've ever had.
+A date? Sure. Bowling. I'll win.
+# ask_out_no
+No. But I respect the courage.
+I'll pass. Still rivals, though.
+
+== dating
+# date_greet
+You're here. Good. I got here first.
+Hey, you. You look great. Better than me. Barely.
+I planned the best date ever. Prepare to be impressed.
+Hey! Mini golf. Loser buys dessert.
+There you are. I've been warming up.
+Hi. You look amazing. That's not a competition. You win.
+# flirt
+You're the only prize I want.
+I'd lose every game for you. Okay, most games.
+You're the best thing I've ever won.
+You make my heart race faster than any finish line.
+You're out of my league. I'm going to win you anyway.
+You're my greatest victory.
+You're the only person I'd let beat me.
+# date_talk
+Let's go bowling. Highest score picks the movie.
+Tell me something you're proud of.
+I've never told anyone this, but I'm scared of losing you.
+Want to race to the fountain? I'll give you a head start. Kidding.
+I made dinner. It's the best dinner. Taste it.
+I like that you push back. Nobody pushes back.
+Let's play pool at the Grinding Stone. Stakes: a kiss.
+You're not afraid of me. I love that.
+I think we'd make an unbeatable team.
+Let's do a trivia night. Couples bracket.
+I'm happy. Like, championship happy.
+You're the first person I don't want to compete with.
+# compliment
+You're tough. I like that.
+You look amazing tonight. Ten out of ten.
+You're smarter than you let on.
+You've got heart. Real heart.
+You're the best person I know. That's not trash talk.
+# kiss_reply
+Okay. That was a winning move.
+That's the best thing I've ever lost my breath to.
+Again. Best two out of three.
+Wow. I concede.
+# miss_you
+I missed you. Nobody to beat.
+The games were boring without you.
+I kept score of the days. Too many.
+I missed my favorite opponent.
+# jealous
+Who was that? Are they competition? They're not.
+I'm not jealous. I just don't lose.
+You're mine. Fair and square.
+# date_end
+Good game tonight. Goodnight.
+Same time next week. Rematch.
+Text me when you're home. I'll beat you to it.
+Tonight was a win. A big one.
+Goodnight, {player}. You're my champion.
+# lovers_quarrel
+I'm mad. And I'm not good at losing arguments.
+That hurt. I don't like admitting that.
+Let's not make this a contest. Let's just talk.
+I want to fix this. That's my competitive side.
+# proposal_yes
+Yes! Best win of my life!
+I'll marry you! Undefeated forever, together!
+
+== marriage
+# home_greet time=morning
+Morning. I beat you awake again.
+Good morning, love. Race you to the coffee.
+Morning. I ran four miles. What did you do? Sleep? Cute.
+Hey. Breakfast is ready. It's the best eggs you'll ever have.
+Morning, champ. Let's win today.
+Good morning. I made the bed first. One point.
+Morning, love. Who's taking a shower first? Me. I'm faster.
+Hey. I already finished the crossword. Personal best.
+Morning. Game night later. You're going down.
+Good morning. You look great. I look better. Kidding.
+Morning. Let's see who gets more done today.
+Hey, love. Coffee's on. I beat the alarm by twenty minutes.
+# home_greet time=evening
+You're home! Rematch from last night. Cards on the table.
+Welcome home, love. I made dinner. Better than yours.
+Hey. I beat my sales record today. Celebrate with me.
+There you are. I've been practicing chess.
+Welcome back. Pickup game? Or dinner? Both.
+Hey, love. I missed you. Don't let it go to your head.
+You're home. Let's watch the game. Billram are winning.
+Welcome home! I set up the ping pong table in the garage!
+Hey, you. Who had the better day? Tell me. Then I'll tell you.
+You're back. Good. I needed my rival.
+# home_greet time=night
+You're home late. I win the who-got-home-first game.
+Hey, love. Long day? I'll let you win something tonight.
+It's late. Bed. Race you.
+You're back. I was practicing free throws in the driveway.
+Hey. I waited up. Undefeated at waiting.
+Late night? I saved you dinner. It's still the best dinner.
+There you are. Let's crash. Tomorrow we win again.
+Hey, love. Come here. You're tired. I'm stronger. I'll carry you.
+# goodbye_work
+Go win today.
+Bye, love. Crush them.
+Have a great day. Beat yesterday's numbers.
+Go get 'em, champ.
+Bye. I'll text you my score.
+Have a good one. Don't let anyone outwork you.
+Bye, love. Let's see who has the better day.
+Go. I believe in you. I'm still better, but I believe in you.
+# work_return
+How'd it go? Did you win?
+Tell me about your day. Wins and losses.
+You look tired. Did someone outwork you? Impossible.
+Did your boss notice you? He should.
+Rough day? Let's play a game. You'll feel better when you lose. Kidding.
+Did you beat your coworker's numbers?
+You're home. Champions rest too.
+Proud of you, love. You're a winner.
+# affection
+I love you. That's my biggest win.
+You're my favorite teammate.
+Being married to you is a championship every day.
+You make me want to be better.
+I'd lose every game for you. Mostly.
+You're my greatest victory. Point to me.
+I love you more than winning. That's a big deal.
+You're my MVP.
+You challenge me. I love that.
+You're the only one I want on my team.
+I'm so lucky. Luckier than anyone.
+You're the best thing I've ever won. Point to me.
+I love how you never let me win.
+You're my home team.
+I'd fight anyone for you.
+You make every day a win.
+I'm proud to be yours.
+I love you. Undefeated.
+# home_talk
+I set up a scoreboard in the kitchen.
+I built a ping pong table in the garage.
+I'm training for a marathon. Want to train with me? Losing is fine.
+I joined a bowling league. We're undefeated.
+I signed us up for the couples' trivia night.
+The neighbor challenged me to a lawn contest. He's going to lose.
+I've been learning poker. For game night.
+I made a chart of our wins and losses at board games.
+I bought a dartboard. Don't touch it.
+I'm thinking about coaching the kids' soccer team.
+I hung up my trophies in the hallway.
+I beat the neighbor at horseshoes. He wants a rematch.
+I've been practicing my golf swing in the backyard.
+I bought a new basketball hoop.
+I found my old high school medals.
+I made a bracket for the family reunion games.
+I've been doing crosswords in pen. Speed rounds.
+I won the office fantasy league.
+I'm trying to lose gracefully. It's going badly.
+I put a chess board on the porch.
+I've been teaching the neighbor's kid to play chess. He's good. Too good.
+I bet the neighbor I could grow bigger tomatoes.
+I set a new record on the rowing machine.
+I think we should get a dog. A fast one.
+I've been trying to compete less with you. Key word: trying.
+I love our home. It's undefeated.
+# chores
+I did the dishes. In record time.
+I vacuumed faster than you could.
+Race you to fold the laundry.
+I mowed the lawn. Perfect stripes. Beat the neighbor's.
+Could you take out the trash? I did it last three times. I'm keeping count.
+I cleaned the bathroom. Spotless. Inspect it.
+Let's race. First to finish chores picks dinner.
+I organized the garage. It's a competition-level garage.
+I washed the car. Shinier than the neighbor's.
+I raked the leaves. Biggest pile on the street.
+I scrubbed the kitchen. Gold medal.
+I made the bed. Hospital corners. Ten out of ten.
+# money
+We saved more than last month. We're winning.
+I made a budget. Let's beat it.
+Money's tight. Challenge accepted.
+I got a bonus! Top seller!
+We should invest. Beat the market.
+I found a better deal than you did. Admit it.
+Let's see who can save more this month.
+I won a bet. Fifty bucks.
+We're doing better than the neighbors.
+We're winning at money, love.
+# meal
+Dinner's ready. Best steak in town.
+I made breakfast. Champion's breakfast.
+Let's have a cook-off. I'll win.
+I made chili. Prize-winning chili.
+I made pasta. Better than the restaurant.
+I grilled burgers. Perfect sear.
+I made wings. Spicier than you can handle.
+Taco night. I made more tacos than you can eat.
+I baked cookies. Better than your mom's. Don't tell her.
+Dinner's on the table. Eat it before it gets cold. I win.
+# argue
+You cheated at cards.
+You never admit when you're wrong.
+I'm not too competitive. You're not competitive enough.
+You quit the game halfway through.
+You told everyone I lost. I didn't lose. I let you win.
+You never want to play with me anymore.
+I feel like you don't take me seriously.
+You moved my trophy.
+I'm going for a run. To cool off.
+I don't like losing arguments.
+You know I hate losing.
+I just want you on my team.
+# makeup
+Okay. I'm sorry. You win this one.
+I hate fighting with you. Let's call it a draw.
+I love you. More than being right.
+Sorry. I was a sore loser.
+Let's play a game and make up.
+You're my favorite person. Even when you beat me.
+Let's start over. New game.
+We're good. We're a team.
+# support
+Hey. You're a champion. This is just a setback.
+I've got your back. Always. Point to me.
+You're tougher than this.
+Whatever it is, we'll beat it together.
+I'm here, love. Let's rest. Then fight.
+You don't have to win today.
+Let me take over. You've earned a break.
+I love you. Win or lose.
+You've come back from worse. You'll come back from this.
+You're my MVP. Always.
+# plans
+Let's do a 10K this weekend.
+How about a bowling tournament?
+Let's go to the Billram game. Front row.
+Let's do an escape room. Beat the record.
+How about a mini golf rematch?
+Let's go to the arcade. I'll win you every prize.
+Let's do a cooking competition at home.
+How about a hiking race up Carillon Hill?
+Let's go to trivia night. Undefeated.
+Let's plan our anniversary. A tournament. Kidding. Dinner.
+# memories
+Remember when we met? You beat me at darts. I was furious.
+Remember our first date? Mini golf. You cheated.
+Remember our wedding? I won the dance-off.
+Remember when we won couples' trivia?
+Remember our honeymoon? I beat you at everything. Except surfing.
+I still have the scorecard from our first bowling date.
+Remember when you let me win? I knew.
+Remember the time we lost and you held my hand?
+I remember the first time I didn't care that I lost.
+Remember when we beat the neighbors at horseshoes?
+# anniversary
+Happy anniversary, love. Another year undefeated.
+I got you a trophy. Best spouse.
+Another year! We're winning at marriage.
+Happy anniversary, champ.
+I love you more every year. That's a record.
+Here's to another year of us against everyone.
+# tease
+You still can't beat me at chess.
+You throw like a toddler.
+You cheat at that real estate board game. Every single time.
+You take forever to make a move.
+You count your cards out loud.
+You're a sore winner.
+You let the cat win at games.
+You can't parallel park.
+You always pick the slowest line.
+You're secretly more competitive than me.
+You gloat when you win. Like me.
+You love losing to me.
+# bedtime
+Goodnight, love. I win the race to bed.
+Come to bed. Rest up. Tomorrow we win.
+Goodnight, champ.
+Sleep well. Rematch tomorrow.
+Goodnight. I love you more than winning.
+Lights out. Winner gets the good pillow.
+Goodnight, {player}. Best teammate ever.
+Sleep tight, rival.
+Come here. You lose. I get to hold you.
+Goodnight. Thanks for being my favorite opponent.

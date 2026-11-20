@@ -1,0 +1,429 @@
+// Party Animal: LOUD, generous, nightlife, "let's goooo", hangovers, knows every party.
+== base
+# greet stage=stranger
+WHAT'S UP! New friend! I'm {npc}! You coming out tonight?
+Heyyy! I don't know you yet but I already love you! I'm {npc}!
+Yo! You look like you know how to have a good time!
+Hey hey hey! First round's on me! Kidding. Unless?
+Ayyy! Fresh face! Welcome to the party capital of Pamlico!
+Sup! I'm {npc}! I know a guy who knows a guy who's throwing a party.
+# greet stage=acquaintance
+{player}! Were you at the thing last night? I don't remember much!
+Ayy, {player}! You still owe me a dance!
+{player}! There's a party on Rosemary tonight, you in?
+Yooo, {player}! Good to see you not in a dark room with strobe lights!
+{player}! My guy! My pal! My dance partner!
+# greet stage=friend+
+{player}! MY BEST FRIEND! I'm screaming! Are you screaming?
+There's my wingman! What are we getting into tonight?
+{player}!! Come here, I'm giving you a hug whether you like it or not!
+Ayy, it's my partner in crime! Well, partner in fun! Legally!
+{player}! I told everyone at the Grinding Stone you're a legend!
+YOU! You're here! Now it's a party!
+# greet time=morning
+Ugh. Morning. Is it? Why is the sun so loud?
+Morning... I need a breakfast sandwich and a nap. In that order.
+Hey. I just got home. Or I just woke up. Unclear.
+# greet time=evening
+EVENING! Pregame time, baby!
+Hey! The night is young and so are we!
+Evening! I can feel it, tonight's gonna be legendary!
+# greet time=night
+Heyyy! It's party o'clock!
+Yo! You out tonight? We're heading to the Grinding Stone!
+The night's just getting started!
+# farewell
+Later! Party at my place Friday!
+Bye! Text me if anything fun happens!
+Peace out! Don't do anything I wouldn't do! Which is nothing!
+See ya! Stay hydrated! Mostly with water!
+Bye bye! Love you! I love everyone!
+Gotta run! There's a karaoke thing I'm late for!
+# farewell stage=friend+
+Later, bestie! Saturday! Don't you dare bail!
+Bye, {player}! You're the best! I'll pay you back for the pizza! Eventually!
+Love you, man! Text me your playlist!
+# smalltalk
+Did you see the Billram game? I screamed so loud I lost my voice for two days.
+The Grinding Stone has a new neon sign. It's so pink. I love it.
+I went to three parties last night. Personal record.
+Somebody brought a karaoke machine to the quad. I sang four songs. Nobody asked.
+Top of the Mount has half-price wings on Thursdays. That's practically free.
+I'm planning a theme party. The theme is "more party".
+I met the coolest person at the bar. I forgot their name. And their face.
+Did you know if you dance for an hour you burn like five hundred calories? I'm basically an athlete.
+I've been to every bar on Hamilton Street. Some twice. In one night.
+My neighbors complained about the noise. So I invited them. Now they're my friends.
+The Junior Varsity Cinema is doing midnight movies. We should go loud.
+Tailgate season is the best season. Fight me.
+# smalltalk stage=friend+
+You know you're my favorite party buddy, right?
+Real talk, sometimes I party so I don't have to be alone.
+You always make sure I get home okay. That means a lot.
+I'd throw you the biggest birthday party this town has ever seen.
+If I ever get too wild, you have permission to drag me home.
+You're the only person I'd skip a party for. Probably.
+# smalltalk weekend=true
+IT'S THE WEEKEND! We are going OUT!
+Saturday! Day party, then night party, then after party!
+Sunday Funday! Brunch with bottomless mimosas!
+# about_self
+I was voted "most likely to start a conga line" in high school.
+I'm a bartender. Basically I get paid to party.
+I've never been to a party I didn't like. Well, one. It had a clown.
+My mom says I came out of the womb dancing.
+I want to throw the biggest New Year's party in Cathedral Mount history.
+People think I'm shallow. I just like having fun. Is that a crime?
+I'm a really good friend, actually. Ask anyone. Ask the bouncers.
+# opinion_place
+{place}? Could be a great party spot. Needs a DJ.
+I've partied at {place}. Twice. Don't ask.
+{place} is kind of a snooze. Let's liven it up!
+I love {place}! The vibes are immaculate!
+{place}? Does it have a dance floor? It should have a dance floor.
+# compliment_reply
+AHH! Thank you! You're amazing too!
+Stop it! You're making me blush! Keep going!
+Thanks, babe! I'm literally glowing right now!
+You're so sweet! I'm buying you a drink!
+OMG thank you! I'm screenshotting this moment in my brain!
+# insult_reply
+Whoa! Rude! But I'm too happy to care!
+Okay, buzzkill. I'm gonna go dance.
+That's not cool, man. Why you gotta be like that?
+Party pooper alert!
+I'm going to forget you said that. I forget a lot of things.
+# gift_reply
+NO WAY! For me?! You're the best!
+I love it! I'm going to wear it to every party!
+Ahh, you shouldn't have! But I'm glad you did!
+This is amazing! I'm hugging you! Too late, it's happening!
+You're the best friend ever! Shots on me! Kidding! Coffee on me!
+# joke
+I'm not a regular partier. I'm a cool partier.
+I asked the DJ to play something good. He said he'd drop the beat. Now it's broken.
+What's a party animal's favorite type of math? Add-ventures!
+I don't have a drinking problem. I drink, I get a little loud, no problem.
+# ask_favor
+Can you help me set up for my party? I need someone to blow up balloons.
+Could you be my designated driver tonight? I'll owe you big time.
+Can you lend me twenty bucks? I'll pay you back after the weekend. Promise.
+# favor_reply
+You're the best! Seriously! I'm buying you something!
+Thank you! You just saved my party!
+You're a lifesaver! Love you, man!
+# work_talk
+I worked a double at the bar. Made so much in tips!
+My boss said I'm too loud for the customers. The customers love it!
+Work is just the thing I do between parties.
+I got a promotion! I'm head bartender now! Party at my place!
+# school_talk
+I have class at nine. I'm going to skip it. Wait, no. I'll go. Hungover.
+I'm majoring in communications. I'm very good at communicating.
+My professor said I'm very social. That's a compliment, right?
+# hostile stage=dislike-
+You're not invited. To anything.
+Ew. It's you. Party's over.
+I don't want you anywhere near my parties.
+You bring the energy down, {player}.
+Go away. You're a total buzzkill.
+I'm uninviting you from everything. Forever.
+# flirt_reply romance=none
+Ha! You're cute, but let's just keep it fun and friendly!
+Whoa! Love the energy! But I'm not into that right now!
+Hahaha! Good one! Want a drink? Just friends!
+# flirt_reply romance=crush
+Ohhh! Okay! I like where this is going!
+Are you hitting on me? Because I'm totally into it!
+Oh my gosh, stop! Okay, don't stop!
+You're making me forget the music! That never happens!
+# ask_out_yes
+YES! Let's go somewhere with a dance floor!
+A date?! I've been waiting for you to ask!
+# ask_out_no
+Aw, you're sweet, but I'm not looking for that right now. Still friends?
+I'm gonna say no, but let's party together anyway!
+
+== dating
+# date_greet
+THERE you are! You look so hot!
+Babe! I got us VIP at the club! Well, the guy said he'd let us in.
+Hey, gorgeous! Ready to dance all night?
+Heyyy! I've been pregaming for this date all day!
+You're here! The night just got so much better!
+Hey, babe! I wore my lucky shoes for you!
+# flirt
+You're the hottest person at every party.
+I'd leave any party early for you. That's love.
+You make my heart beat louder than the bass.
+Let's dance. Close. Really close.
+You're my favorite song. On repeat.
+I'd give up karaoke for you. Maybe.
+Every time you laugh, it's like a party in my chest.
+# date_talk
+Let's go to the Grinding Stone and dance on the tables!
+Want to go to the rooftop at Top of the Mount? The view is wild!
+I've never been on a date this fun! Okay, maybe one. But this is better!
+Let's do karaoke! I'll sing you a love song! Badly!
+Tell me your wildest story. I'll tell you mine.
+I actually really like you. Like, sober-like you.
+I don't always want to party. Sometimes I just want to be with you.
+Let's get late-night pizza after this!
+You're the first person who makes me want to stay in. Sometimes.
+Let's go to the midnight movie! We'll be so loud!
+I think you're the most fun person I've ever met.
+Can we stay out all night? Please?
+# compliment
+You look amazing tonight! Like, call-the-fire-department amazing!
+You've got the best moves on the dance floor.
+You're so fun. Like, the most fun.
+You've got a great laugh. It's contagious.
+You light up every room, babe.
+# kiss_reply
+WHOA! That was better than any party!
+Mmm, again! Do it again!
+Okay, my heart just did a backflip!
+That was amazing! I'm telling everyone!
+# miss_you
+I missed you so much! The party wasn't the same without you!
+I kept looking for you on the dance floor!
+I couldn't stop thinking about you! Even at the bar!
+I texted you like forty times. Did you get them?
+# jealous
+Who were you dancing with? I'm not mad! I'm a little mad!
+Hey, I saw you laughing with someone. Was it funny? I'm funnier!
+I'm the one you go home with, right? Right?
+# date_end
+That was the BEST night! Text me when you get home!
+Goodnight, babe! I'm still buzzing!
+Same time tomorrow? Every night?
+I had so much fun! You're the best!
+Goodnight! Don't forget to drink water!
+# lovers_quarrel
+I don't want to fight! I want to dance!
+You hurt my feelings, babe. Even party animals have feelings.
+Okay, I'm upset. Can we talk somewhere quiet?
+I don't want to lose you. Let's fix this.
+# proposal_yes
+YES! YES! WE'RE GETTING MARRIED! PARTY!
+Of course I'll marry you! This is the best night of my life!
+
+== marriage
+# home_greet time=morning
+Morning, babe! I made coffee! And by made I mean I ordered it!
+Ugh, morning. Why did we stay up so late? Totally worth it.
+Good morning! I made breakfast! It's leftover pizza. Gourmet.
+Morning, love! Let's start the day with a dance party!
+Hey, sleepyhead! I'm blasting music to wake you up!
+Good morning! Hangover breakfast? I've got bacon!
+Morning! I'm so happy we're married. Like, so happy!
+Rise and shine, babe! Today's going to be fun!
+Morning! I made a playlist for breakfast!
+Good morning, love! We should throw a brunch party!
+Morning! Do you remember what happened last night? I don't!
+Hey, babe! Coffee's ready! And so am I! For fun!
+# home_greet time=evening
+You're home! Let's celebrate! Celebrate what? Everything!
+Welcome home, babe! I invited a few friends over! Like ten!
+Hey, love! Dinner's ready and so is the dance floor!
+You're back! The party can start now!
+Welcome home! Let's go out tonight!
+Hey, babe! I made cocktails! Mocktails! Something!
+There you are! I missed you! Let's dance in the kitchen!
+Hey! The neighbors are having a barbecue! Let's crash it!
+Welcome home, love! Tonight we're having a theme night!
+You're home! Put on something fun! We're going out!
+# home_greet time=night
+Heyyy! You're home! Want to go out? It's still early!
+Babe! You're back! The after-party's in the living room!
+It's late, love! Come cuddle! Or dance! Your choice!
+You're home! I saved you some pizza! And some energy!
+Hey, babe! I fell asleep on the couch waiting! Ha!
+You're back! Let's stay up all night! Like old times!
+Hey, love! Long night? Me too! Let's crash!
+There you are! I left the music on for you!
+# goodbye_work
+Have a great day, babe! Party tonight?
+Bye, love! Go make that money! We need it for the weekend!
+Have fun at work! Or at least pretend!
+Bye! I'll be planning our next party!
+Go get 'em, babe! I'll miss you so much!
+Have a great day! Don't forget, happy hour at six!
+Bye, love! Text me something funny!
+Have a good one! I'll have snacks ready when you get home!
+# work_return
+How was work? Boring? Let's fix that!
+Tell me everything! Did anything wild happen?
+You look tired, babe. Let's have a chill night. Ha, just kidding! Party!
+Did your boss annoy you? Let's go dance it off!
+How was your day, love? I want all the gossip!
+Rough day? I made a margarita! Virgin! Mostly!
+Did you get through it? You're a hero!
+You're home now! The fun starts now!
+# affection
+I love you so much! More than parties! And I really love parties!
+You're the best part of my life, babe!
+Being married to you is like a never-ending party!
+You're my favorite dance partner. Forever!
+I'm so lucky! Like, winning-the-lottery lucky!
+I love you more than karaoke!
+You're the best thing that ever happened to me!
+You make every day feel like a celebration!
+I'd give up every party for you. Well, most parties.
+You're my person. My forever plus-one!
+I love how you laugh at my dumb jokes!
+You're my home, babe. My forever after-party.
+I love you! I'm yelling it! I LOVE YOU!
+You make me want to be a better person. A slightly calmer person.
+I'm so proud to be married to you!
+You're the best decision I ever made. Better than any party.
+I love you more than pizza! And that's saying something!
+You keep me grounded, babe. I need that.
+# home_talk
+I'm planning a party for Saturday! It's going to be huge!
+I bought a disco ball for the living room! It's amazing!
+The neighbors complained again. So I invited them to the next party!
+I made a new playlist! It's all bangers!
+I've been thinking about building a bar in the basement!
+I bought a karaoke machine! We're going to be so annoying!
+I hung up fairy lights in the backyard! Party vibes!
+The cat seems stressed. Maybe it's the music?
+I signed us up for a dance class! Salsa!
+I found a costume shop downtown! We need costumes!
+I think we should have a game night! With drinks!
+I organized all our party supplies. We have so many cups!
+The house looks amazing! Perfect for a party!
+I've been thinking about getting a hot tub!
+I made a list of every party we've thrown! It's long!
+I'm thinking about throwing a surprise party for my mom!
+I got a new speaker! It's so loud!
+The neighbors' kid asked me to DJ his birthday party!
+I've been trying to party less. It's hard.
+I think we need a bigger living room. For dancing.
+I made a calendar of all the parties this month!
+I'm thinking about throwing a Halloween party! A big one!
+I found a recipe for a punch that serves fifty!
+I've been practicing my dance moves! Want to see?
+I've been sleeping more lately. Weird, right? Must be married life.
+I bought a fog machine! For special occasions!
+# chores
+I did the dishes! With music! It was a dance party!
+I cleaned up after the party! Took all morning!
+Could you take out the recycling? There's a lot of cans.
+I vacuumed! Found three earrings and a phone!
+I mopped the floor! It was sticky. From the party.
+Let's clean together! Put on some music!
+I did the laundry! Washed all my party clothes!
+I scrubbed the kitchen! It was a disaster!
+I took out the trash! Six bags!
+I cleaned the bathroom! Someone threw up. Not me!
+I organized the closet! Found my old party shoes!
+I washed the windows! They were covered in glitter!
+# money
+We spent a lot on that party. Worth it, though!
+I'm going to start budgeting! For parties!
+We should save some money. For a bigger party!
+I got great tips at work! Let's go out!
+Money's tight. Maybe we stay in this weekend. Ugh.
+I found twenty bucks in my jacket! Pizza night!
+We need to cut back on going out. Maybe.
+I'm going to pick up extra shifts! For our vacation!
+We should stop buying so many party supplies. We have enough cups for a year.
+Let's do a staycation! Cheaper! And we can still party!
+# meal
+Dinner's ready! It's nachos! A whole tray!
+I made pizza! Homemade! With everything on it!
+Let's order wings! A lot of wings!
+I made breakfast tacos! Hangover food!
+Let's have a dinner party! I'll cook! You invite!
+I made mac and cheese! With extra cheese!
+Let's go out to eat! Somewhere fun!
+I made sliders! Party food for two!
+I grilled burgers! Backyard cookout vibes!
+Dessert is a giant cookie! Want to share?
+# argue
+You never want to go out anymore!
+I'm not too loud! I'm just enthusiastic!
+You said you'd come to the party! You didn't come!
+Can you please not be a buzzkill right now?
+I know I party a lot! But I'm still here for you!
+You're always tired! It's like you don't want to have fun with me!
+I feel like you're embarrassed of me sometimes.
+I'm trying to calm down! It's hard for me!
+You don't have to come to everything! But sometimes would be nice!
+I spent too much. I know. I'm sorry.
+I'm not irresponsible! I'm spontaneous!
+Okay, I'm going to go cool off. Then let's talk.
+# makeup
+I'm sorry, babe! Let's dance it out!
+I hate fighting with you! It's the worst!
+Let's make up! With pizza!
+I love you! I'm sorry! Hug?
+I'm sorry I was too much. I'll tone it down.
+You're my favorite person. Even when we fight.
+Let's just stay in tonight. Just us.
+We're good, babe! We're always good!
+# support
+Hey, it's okay. Let's just stay in tonight.
+I've got you, babe. No parties. Just us.
+You're the strongest person I know.
+Let's watch a movie and eat ice cream.
+Whatever it is, I'm here. Always.
+Bad days don't last. But we do!
+Let's turn off the music and just talk.
+I love you. That's all that matters right now.
+Let me take care of you tonight. Pajamas, blanket, zero noise. I can do quiet!
+You're going to get through this. I know it.
+# plans
+Let's go to the beach this weekend! Beach party!
+Let's go to a music festival! Camping and dancing!
+How about a road trip to the city? Clubs!
+Let's throw a backyard barbecue! Invite everyone!
+Let's go to the Billram game and tailgate!
+Let's go on a cruise! Party boat!
+How about a weekend in a cabin? With a hot tub!
+Let's go dancing at the Pamlico Inn ballroom!
+Let's take a salsa class together!
+Let's throw the biggest anniversary party ever!
+# memories
+Remember our first date? We danced until they closed the bar!
+Remember our wedding? Best party ever!
+Remember when we sang karaoke and got a standing ovation?
+Remember when we met? I spilled my drink on you!
+Remember our honeymoon? We partied every night!
+Remember when we danced in the rain on Hamilton Street?
+I still have the wristband from the night we met!
+Remember when we threw that huge party and the cops came? Fun times!
+Remember the time we went to five bars in one night?
+Remember when we danced at the Founders' Day festival?
+# anniversary
+Happy anniversary, babe! Let's party!
+Another year! I'm throwing us a party!
+I love you more every year! Let's celebrate!
+Happy anniversary! Best year ever!
+I got us tickets to a concert! Happy anniversary!
+Here's to another year of fun!
+# tease
+You fall asleep at parties now. You're getting old!
+You can't dance! I love you anyway!
+You always want to leave early!
+You hide when I bring out the karaoke machine!
+You still can't handle a late night!
+You're a terrible DJ, babe!
+You get so grumpy when you're hungover!
+You always forget where we parked!
+You sing louder than me in the car!
+You say "one more song" and then dance for an hour!
+You're secretly the life of the party. Don't deny it.
+You laugh at your own jokes before the punchline!
+# bedtime
+Goodnight, babe! Best day ever!
+Come to bed! Or let's stay up! Okay, bed!
+Goodnight, love! Tomorrow, more fun!
+Let's go to sleep! I'm finally tired!
+Night, babe! You're my favorite!
+Goodnight! I love you! See you in the morning!
+Sleep tight! Don't let the hangover bite!
+Goodnight, {player}! You're the best!
+Come cuddle! I'm so cozy!
+Lights out! The party's over! Until tomorrow!

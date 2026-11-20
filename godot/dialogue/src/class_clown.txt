@@ -1,0 +1,429 @@
+// Class Clown: puns, bits, pranks, impressions, deflects with humor, sweet underneath.
+== base
+# greet stage=stranger
+Hi! I'm {npc}. I'd shake your hand, but I've got a buzzer in mine. Kidding. Or am I?
+Well, hello! Has anyone told you you look like a person? Because you do. I'm {npc}.
+Hey! New audience member! I'm {npc}, and I'll be here all week.
+Greetings, earthling! Take me to your snacks.
+Hi! I'm {npc}. I do birthday parties, weddings, and awkward silences.
+Oh, hey! You walked right into my comedy zone. No refunds.
+# greet stage=acquaintance
+{player}! My favorite heckler!
+Hey, {player}! Did you hear the one about the guy who forgot his own punchline? Me neither.
+{player}! I have new material! It's mostly puns!
+Ayy, {player}! You've been promoted from stranger to sidekick.
+{player}! Quick, pretend we're spies. Act natural.
+# greet stage=friend+
+{player}! My comedy partner! My straight man! My favorite!
+There's my best friend! I saved you a whoopee cushion seat.
+{player}! I've been practicing my impression of you. It's mostly sighing.
+Hey, you! The only person who laughs at my bad jokes AND my good ones.
+{player}! Want to prank the Earl University fans? I have a plan and a goat costume.
+My partner in crime! Comedic crime!
+# greet time=morning
+Good morning! Or as I call it, good mourning, because I miss my bed.
+Morning! I'm not a morning person. I'm barely a person.
+Rise and shine! Well, rise. Shining's optional.
+# greet time=evening
+Evening! The sun's going down, and so is my energy. Just kidding, I'm a goblin at night.
+Good evening! It's open mic night at the Grinding Stone. You know where I'll be.
+Hey! The evening is young and so are my jokes. Immature.
+# greet time=night
+Hey, night owl! Hoo hoo! That's my owl impression.
+It's late! Perfect time for terrible decisions and better jokes.
+Hi! I'm only up because my brain keeps writing jokes.
+# farewell
+Bye! Don't do anything I would do!
+Later, alligator! In a while, crocodile! Goodbye, other reptile!
+See ya! Try the veal! I'm here all week!
+Peace out, rainbow trout!
+Gotta jet! Not literally. I don't own a jet. Yet.
+Bye! Tip your waitress!
+# farewell stage=friend+
+Bye, {player}! You're the best audience I've ever had!
+Later, partner! Same prank, same time tomorrow!
+Love ya! Don't tell anyone I'm sincere!
+# smalltalk
+I tried to catch fog yesterday. Mist.
+Did you hear about the restaurant on the moon? Great food, no atmosphere.
+Somebody put a rubber duck on every statue on the quad. It wasn't me. It was me.
+I'm writing a stand-up set about the bus system. It's mostly sobbing.
+I put googly eyes on the vending machines in the student union. Now they watch you.
+I told my wife she was drawing her eyebrows too high. She looked surprised. I'm not married. I just like the joke.
+The Billram mascot and I have a rivalry. He doesn't know about it.
+I got kicked out of the library for laughing at a book. It was a dictionary. "Pun" made me lose it.
+I did an impression of the mayor at open mic. He was in the audience. He laughed! Then he didn't.
+I'm reading a book about anti-gravity. Okay, I stole that one. Comedy is theft.
+I tried to start a hot air balloon business. It never took off.
+Someone told me to break a leg before my show. I nearly did. Tripped on the stage.
+# smalltalk stage=friend+
+You know, I make jokes because I'm scared people won't like the real me.
+You're the only one who knows when I'm actually sad. Thanks for that.
+I'd take a pie to the face for you. I've done it before. For less.
+If I ever get famous, you're getting a shout-out. A big one.
+You're the best friend I've ever had. No joke. Really. No joke.
+Sometimes the jokes stop working. Then you show up and they work again.
+# smalltalk weekend=true
+Weekend! Time for my two favorite things: sleeping in and pranking my roommate.
+Saturday! Improv workshop at the community center! Yes, and!
+Sunday! Day of rest! I'm resting my funny bone.
+# about_self
+I was the class clown in every grade. Even kindergarten. I peaked early.
+I do stand-up at open mics. I've killed twice. Died forty times.
+I want to be a comedy writer. Or a professional clown. The dream.
+My dad was a dentist. He had a lot of drilling jokes. That's where I get it.
+I'm actually really shy. Jokes are my armor.
+I've been banned from three pizza places for pranks. Worth it.
+I can juggle. Three balls, two oranges, one existential crisis.
+# opinion_place
+{place}? Great acoustics for a whoopee cushion.
+{place} is fun! I once got stuck in the revolving door here. For an hour.
+{place}? I'd do a set here. Tough crowd, though.
+I love {place}. It's where I tell my best jokes. And my worst.
+{place} has the vibe of a sitcom set. Laugh track included.
+# compliment_reply
+Aw, shucks! You're making me blush! Ha, I'm already red. Sunburn.
+Thank you! I'll be here all week!
+Stop it! No, really, keep going. I live for this.
+You're too kind! And you're right!
+Aw, thanks! I'll put that in my act.
+# insult_reply
+Oof! Tough crowd!
+Ha! Good one! I'll steal that.
+Wow, burn! I'll need some aloe for that.
+Is that a heckle? I love a heckle!
+That hurt. Just kidding. That really hurt.
+# gift_reply
+For me? Is it a snake in a can? It's not? Even better!
+Whoa! This is awesome! Is it going to explode? No? Bummer. Kidding! Thank you!
+You got me something! I'm speechless! That never happens!
+This is perfect! You know me so well!
+Thank you! I'm going to use this in a prank. Lovingly.
+# joke
+Why don't skeletons fight each other? They don't have the guts.
+I used to hate facial hair, but then it grew on me.
+I'm on a seafood diet. I see food, and I eat it.
+What do you call a fake noodle? An impasta!
+# ask_favor
+Can you distract the professor while I put a rubber chicken in his briefcase?
+Would you come to my open mic Thursday? I need at least one person laughing.
+Could you help me fill the RA's room with balloons? It's her birthday!
+# favor_reply
+You're the best! I owe you a pie! To eat. Not to throw.
+Thanks! You've just been promoted to co-conspirator!
+You're a legend! I'll write a bit about you!
+# work_talk
+I work at the ice cream shop. It's a sweet gig. Sorry.
+My boss told me to stop making balloon animals for customers. They loved it!
+I'm a tour guide on campus. I make up half the facts.
+I got written up for doing impressions over the intercom.
+# school_talk
+I'm a theater major. Shocking, I know.
+I made my professor laugh during a presentation. Got a B. Worth it.
+My study group kicked me out. Too many puns.
+# hostile stage=dislike-
+Oh, look, it's the funniest person in town. Not.
+I'd make a joke about you, but life already did.
+You're like a joke without a punchline, {player}.
+I'm not laughing. And I always laugh.
+Get lost. That's not a joke.
+You're the reason I'm not funny today.
+# flirt_reply romance=none
+Ha! Good one! Wait, you were serious? Let's stay friends!
+Whoa! I'm flattered! But I'm married to comedy!
+Aww, you're sweet! But we're better as a comedy duo!
+# flirt_reply romance=crush
+Wait, was that a pickup line? Because it worked!
+Oh no, I'm blushing! Quick, someone tell a joke!
+You're making me forget all my material!
+I've been trying to think of a joke about how much I like you. There isn't one. It's just true.
+# ask_out_yes
+Yes! Should I wear the clown nose? I'll leave it at home. Yes!
+A date? Yes! I'll even be serious for five whole minutes!
+# ask_out_no
+Aw, I'm flattered, but I don't feel that way. Still my favorite audience!
+I'm going to say no, but I'll write you a really good joke as a consolation prize.
+
+== dating
+# date_greet
+Hey, gorgeous! I brought you flowers! They squirt water! Kidding, they're real.
+You came! I was worried you'd figure out I'm a clown.
+Hi! You look amazing. I'm speechless. Which is a first.
+Hey, you! I left the whoopee cushion at home. Just for you.
+There you are! I've been rehearsing my charm all day.
+Hi! Let's make tonight the funniest date ever.
+# flirt
+Are you a magician? Because whenever I look at you, everyone else disappears.
+You're the punchline to all my best jokes.
+If you were a vegetable, you'd be a cute-cumber.
+You make me laugh. And I'm usually the one doing that.
+I'd stop joking forever for you. Okay, for a day.
+You're my favorite person to make laugh.
+You're the best thing that's happened to me since the knock-knock joke.
+# date_talk
+Let's go to the comedy club! I'll heckle myself!
+Tell me something funny about yourself. Or something serious. I'll try.
+I'm actually nervous. Jokes are how I hide it.
+Want to go to the arcade? I'm great at skee-ball.
+Let's do a bit! You be the straight man!
+I've never told anyone this, but I cry at rom-coms.
+I think you're the first person who sees the real me.
+Let's go to the improv show on Friday!
+I'll be honest. I really like you. No punchline.
+Do you want to share this milkshake? I'll make the slurping noise for both of us.
+You have the best laugh. I want to hear it every day.
+I'm so happy right now. Like, sitcom-ending happy.
+# compliment
+You're really funny. Funnier than me. Don't tell anyone.
+You have the best laugh. I'm addicted.
+You look stunning. I'm out of jokes.
+You're so kind. It's kind of annoying how kind you are.
+You're the best audience and the best person.
+# kiss_reply
+Whoa. That was better than a standing ovation.
+Okay, I'm officially speechless. Write that down.
+That was perfect. No joke.
+Encore! Encore!
+# miss_you
+I missed you! My jokes fell flat all day without you.
+I saved my best material for you.
+I kept turning to tell you something funny and you weren't there.
+Life's a comedy, but it's a tragedy without you.
+# jealous
+Who was that? Are they funnier than me? They're not.
+I'm not jealous. I'm just a little salty. Like a pretzel.
+I want to be the only one who makes you laugh.
+# date_end
+Tonight was a hit! Goodnight!
+Goodnight, beautiful! I'll be thinking of you. And puns.
+That was the best date ever! And I've been on, like, three!
+Same time next week? I'll bring new material!
+Goodnight, {player}. Thanks for laughing.
+# lovers_quarrel
+I'm upset. That's not a bit. That's real.
+Can we talk? No jokes. I promise.
+I don't want to fight. I want to fix this.
+That hurt. Even clowns have feelings.
+# proposal_yes
+YES! This is the best punchline ever!
+I'll marry you! No joke! The most serious I've ever been!
+
+== marriage
+# home_greet time=morning
+Good morning, sunshine! I made pancakes shaped like your face. Well, they're circles.
+Morning, love! I put a rubber spider in your shoe. Don't check.
+Good morning! I'm doing my morning bit. It's called "Coffee, Please".
+Rise and shine, my favorite person! I'm already doing impressions!
+Morning! I made coffee. I also made a joke. Coffee's better.
+Good morning, darling! The cat's wearing a hat. I did that.
+Morning, love! I hid your keys. They're in the fridge. Kidding. They're in the freezer.
+Good morning! I wrote you a joke on the bathroom mirror. In toothpaste.
+Morning! I'm practicing a new bit. You're the test audience.
+Good morning, honey! You look adorable with bed head.
+Morning! I made breakfast. It's cereal. I'm a chef.
+Good morning! Today's going to be hilarious. I can feel it.
+# home_greet time=evening
+Welcome home! I've been waiting all day to tell you a joke!
+Hi, love! I made dinner and a whoopee cushion. Don't sit there.
+You're home! The house was too quiet. I was talking to the cat.
+Welcome back! I learned a magic trick! Pick a card!
+Hey, honey! I put googly eyes on everything in the fridge.
+You're home! Let's do something fun. Or silly. Or both.
+Welcome home, darling! I wrote a song about your day. I didn't know about your day.
+Hi! I missed you! Here's a hug and a pun.
+There you are! I've been doing my impression of you all day. The cat loved it.
+Welcome home! I made a comedy show for you. It's in the living room.
+# home_greet time=night
+You're home late! I waited up. Doing shadow puppets.
+Hi, love. Long day? I'll tell you the worst joke I know. It'll help.
+It's late! Come to bed! I've warmed it up. With my comedy.
+You're back! I fell asleep watching stand-up.
+Hey, sweetheart. Let's cuddle. I'll be quiet. Mostly.
+Late night? I saved you some pizza and a knock-knock joke.
+There you are! I was getting worried. And bored. Mostly worried.
+Hi, love. The house is so quiet without your laugh.
+# goodbye_work
+Have a great day, love! Don't let them see you laughing at my texts!
+Bye, honey! I packed your lunch. There's a joke inside.
+Go get 'em! Be the funniest person in the office!
+Have a great day! Check your pocket for a surprise. It's a rubber duck.
+Bye! I'll miss you! I'll be writing new material!
+Have a good day, sweetheart! Text me something funny!
+Go! You're going to be great! I'm not joking!
+Bye, love! Kiss for the road! And a pun for the highway!
+# work_return
+How was work? Did anyone laugh at the joke I packed in your lunch?
+Tell me everything! I'll turn it into a bit!
+You look tired, love. Want me to do an impression of your boss?
+Was it a good day or a bad day? I have jokes for both.
+Did your boss do the thing again? Tell me. I'll roast him.
+Rough day? Let me make you laugh. It's the only thing I'm good at.
+You're home now. Comedy time.
+I'm proud of you, love. Seriously. No bit.
+# affection
+I love you more than my best joke.
+You're my favorite audience. Forever.
+Being married to you is the best punchline ever.
+You make me laugh harder than I make you laugh.
+I'm so lucky to have you. No joke.
+You're my partner in comedy and in life.
+I love your laugh. It's my favorite sound.
+You're the only one who sees the real me.
+I'd stop joking for you. Well, I'd try.
+You make every day a comedy. The good kind.
+I love you. That's not a bit. That's real.
+You're my home, love. My favorite stage.
+I love how you roll your eyes at my puns.
+You're the best thing that ever happened to me. Even better than the time I got a laugh from the mayor.
+I love you more than a perfect pratfall.
+You make me want to be a better person. A funnier person.
+I'm so proud to be your spouse. I tell people at every show.
+You're my forever straight man. I mean that lovingly.
+# home_talk
+I put a whoopee cushion on the neighbor's porch. They laughed! Eventually.
+I'm working on a new stand-up set. It's about married life.
+I taught the cat to high-five. Well, she swatted me.
+I found a clown wig at the thrift store. It's mine now.
+I've been writing a sitcom. It's about us.
+I put googly eyes on all our houseplants.
+The neighbor's kid asked me to do a magic show for his birthday.
+I learned to juggle five things! Well, four. One's on the floor.
+I set up a stage in the garage. For practice.
+I hid little notes around the house. Find them all!
+I've been practicing my ventriloquism. The dummy's very rude.
+I made a prank calendar. Every day's a new surprise.
+I bought a fog machine. For dramatic entrances.
+The neighbors think I'm weird. I think they're right.
+I wrote a joke about our mailbox. It's a real stamp of approval.
+I've been doing improv with the cat. She's a natural.
+I made a fake spider. It's very realistic. Don't look in the bathtub.
+I signed us up for a couples' comedy class!
+I made a list of all my favorite jokes. It's long.
+I've been trying to be more serious. It's not working.
+I made a sign for the front door. It says "Laugh Here."
+I think the house needs a laugh track.
+I learned a new card trick! Pick a card! Any card!
+I put a rubber chicken in the freezer. For later.
+I've been writing jokes about the weather. They're very dry.
+I love our silly little life.
+# chores
+I did the dishes! And made a bubble beard!
+I vacuumed! I made it a race against myself. I won.
+Could you take out the trash? I'm in the middle of a bit.
+I folded the laundry! Into little animals!
+I cleaned the bathroom! The rubber duck is sparkling!
+I swept the porch! Then did a broom dance!
+Let's do chores together! I'll be the entertainment!
+I mopped the floor! Then slid across it in socks!
+I organized the fridge! The googly eyes are all facing forward!
+I washed the car! Then got sprayed by the hose. On purpose.
+I made the bed! With a surprise under the pillow!
+I dusted everything! Including my old clown shoes!
+# money
+We're a little tight this month. But laughter is free!
+I made a budget! There's a line item for whoopee cushions.
+I got paid for a comedy gig! Fifty bucks!
+We should save up for a vacation! Somewhere funny!
+Money's tight. Let's eat ramen and tell jokes.
+I found a dollar in my clown shoe!
+We don't need much. Just each other and a laugh.
+I'm doing birthday parties on the side! Extra cash!
+Let's not spend money this weekend. Free fun only!
+We're rich in laughs, love!
+# meal
+Dinner's ready! I made spaghetti! I'm the impasta chef!
+I made breakfast! Pancakes with smiley faces!
+Let's order pizza! I'll do the voice of the delivery guy!
+I made tacos! They're nacho average tacos!
+I made soup! It's souper good!
+Let's have a picnic in the living room!
+I made grilled cheese! It's grate!
+I baked cookies! They're a little crumby!
+Dinner's on the table! Unless the cat ate it!
+I made chili! It's chilly! Just kidding, it's hot!
+# argue
+You didn't laugh at my joke. I'm hurt. No, really.
+I feel like you don't take me seriously. Ever.
+I'm not being immature! I'm being playful!
+You hid my clown wig! I needed that!
+Can you please not roll your eyes at me? It's mean.
+I know I joke a lot. But I'm serious right now.
+You never come to my shows anymore.
+I feel like you're embarrassed of me.
+I'm trying to be serious! It's really hard!
+You stepped on the whoopee cushion and blamed me!
+I'm going to go cool off. No jokes.
+I just want you to laugh with me again.
+# makeup
+I'm sorry, love. Want a joke? Or a hug?
+I hate fighting with you. It's no laughing matter.
+Let's make up! I'll do my best impression of a sorry person!
+I'm sorry I got upset. I love you.
+You're my favorite person. Even when we fight. Our fights have great dialogue.
+Let's start over! Take two!
+I'll do better. I'll joke less. Okay, a little less.
+We're good, love. The show must go on.
+# support
+Hey, it's okay. Want me to do something stupid to cheer you up?
+I'm here, love. No jokes. Just me.
+You're stronger than you think. You survived my puns for years.
+Let me make you laugh. Just a little.
+Whatever it is, we'll get through it together. I'll even bring a serious face. I have one somewhere.
+You don't have to smile. I'll smile for both of us.
+Let's watch a funny movie and eat ice cream.
+I love you. Even on the hard days.
+I'll do all the chores tonight. You rest.
+You're my hero, love. Cape and everything.
+# plans
+Let's go to the comedy festival this weekend!
+How about a road trip? I'll do voices the whole way!
+Let's go to the circus! I want to see the clowns!
+Let's have a game night! Charades!
+How about a trip to the beach? I'll build a sandcastle shaped like you!
+Let's take an improv class together!
+Let's go to the Founders' Day festival! There's a pie-eating contest!
+How about a picnic? I'll bring the jokes!
+Let's go to the amusement park! I'll scream the whole time!
+Let's plan our anniversary! A comedy roast!
+# memories
+Remember when we met? I did a pratfall into your lap.
+Remember our first date? I made you laugh so hard you snorted.
+Remember our wedding? I wore a clown nose during the vows.
+Remember when I proposed? I hid the ring in a whoopee cushion.
+Remember our honeymoon? I pranked the hotel staff every day.
+I still have the joke I wrote you on our first date.
+Remember when we got kicked out of the movie for laughing too loud?
+Remember when I did my first stand-up and you were the only one laughing?
+Remember when we dressed up as a horse for Halloween?
+I remember the first time you laughed at one of my jokes. I was hooked.
+# anniversary
+Happy anniversary, love! Another year of laughs!
+I wrote you a comedy roast! Happy anniversary!
+Another year! I love you more than my best joke!
+Happy anniversary! You're still my favorite audience!
+I got you something! It's not a prank! Probably!
+Here's to another year of silliness!
+# tease
+You still don't get my puns.
+You laugh at your own jokes. That's my thing!
+You snort when you laugh. I love it.
+You're the worst at charades.
+You can't keep a straight face.
+You always fall for my pranks.
+You hide when I bring out the clown nose.
+You're secretly funnier than me.
+You groan at my jokes, but you're smiling.
+You can't tell a joke without laughing first.
+You think you're the straight man. You're not.
+You still haven't found all the notes I hid.
+# bedtime
+Goodnight, love! Don't let the bed bugs bite! I'll bite them first!
+Come to bed! I've got one more joke!
+Goodnight, my favorite audience!
+Sleep tight, love! Tomorrow, more jokes!
+Goodnight! I love you more than comedy!
+Lights out! The show's over! Until tomorrow!
+Goodnight, {player}! Thank you, you've been a wonderful audience!
+Sweet dreams, love! Dream of clowns! Nice ones!
+Come cuddle! I promise no pranks! Tonight!
+Goodnight. Thanks for laughing at my jokes. Even the bad ones.

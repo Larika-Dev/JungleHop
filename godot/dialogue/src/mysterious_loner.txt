@@ -1,0 +1,429 @@
+// Mysterious Loner: cryptic, quiet night owl; night walks, photography, old cemeteries, vinyl.
+== base
+# greet stage=stranger
+...{npc}. That's all you need for now.
+Hm. You can see me. Most people don't.
+I'm {npc}. Don't make it a thing.
+You found me. Interesting.
+Shadows are better company. But hello. {npc}.
+I don't usually talk to strangers. I'm {npc}.
+# greet stage=acquaintance
+{player}. You came back. They usually don't.
+Hm. {player}. The fog suits you.
+You again. I don't mind.
+{player}. I took a photo of this spot an hour ago. You weren't in it.
+Funny. I was thinking about you. Briefly.
+# greet stage=friend+
+{player}. I saved this bench for you.
+You're one of the few I'm glad to see.
+I have a record you need to hear. Later.
+{player}. Walk with me. The moon's up.
+I don't say it often. Good to see you.
+You. Good. The night is less quiet with you.
+# greet time=morning
+Morning. I haven't slept. Don't ask.
+The light's too honest this early.
+Sunrise. I watched it from the cemetery wall.
+# greet time=evening
+Evening. My favorite hour starts now.
+The streetlights are waking up. So am I.
+Dusk. Everything looks like a memory.
+# greet time=night
+Night. Now we can talk.
+You're out late. So the night chose you too.
+The town sleeps. We don't.
+# farewell
+Until next time.
+Go. Before the fog thickens.
+Hm. Bye.
+We'll cross paths again. We always do.
+Watch the shadows on your way.
+Leave the way you came.
+# farewell stage=friend+
+Be safe. I mean that.
+Find me under the spire. Thursday. Late.
+Goodnight, {player}. You're one of the good ones.
+# smalltalk
+The old cemetery on Toadstool Hill has a grave with no name. I visit it.
+I took forty photos of the same streetlight. Each one was different.
+Vinyl crackles. That's the sound of time.
+There's a door in Tanner's Alley that's been locked for sixty years.
+I walk the ravine at three AM. It hums.
+People talk too much. Silence tells you more.
+The bell tower chimes thirteen sometimes. Nobody else hears it.
+I found an old photograph in a thrift store. I keep it. I don't know them.
+Ravens remember faces. So do I.
+The moon was red last month. I have the photo.
+Some places hold on to people. This town does.
+I don't like crowds. Too many stories at once.
+# smalltalk stage=friend+
+I don't let many people in. You're in.
+I lost someone, a long time ago. That's why I walk at night.
+You don't fill the silence. I appreciate that.
+I'll show you my darkroom someday.
+You're the only one I've told about the grave.
+I trust you. That's rare for me.
+# smalltalk weekend=true
+Weekends are loud. I wait for Sunday night.
+Record fair in Carrburg. I'll be in the back, in the dust.
+Saturday. Everyone's out. I'm in the darkroom.
+# about_self
+I'm a photographer. Mostly at night.
+I like old things. Records, graves, letters.
+I grew up somewhere else. That's all I'll say.
+I don't sleep much. The night is easier.
+I've got a record collection. Two thousand. Mostly forgotten bands.
+I'm not antisocial. I'm selective.
+I'm looking for something. I'll know it when I find it.
+# opinion_place
+{place}? It has ghosts. Good ones.
+{place} is better at night. Empty.
+{place}. Too bright. Too loud.
+I photographed {place} once. It didn't want to be photographed.
+{place}? I've stood there at 4 AM. It's a different place then.
+# compliment_reply
+Hm. Thank you.
+I'll remember that.
+...That's kind. Unexpected.
+You mean that. I can tell.
+Don't tell anyone you said that. Thanks.
+# insult_reply
+I've heard worse. From myself.
+Noted.
+That says more about you.
+Hm. Walk away.
+Careful. I remember things.
+# gift_reply
+...For me? Why?
+Hm. This is good. Thank you.
+You noticed what I like. That's rare.
+I'll keep it in the darkroom. Safe.
+Thank you, {player}. I don't get gifts.
+# joke
+Why don't ghosts lie? You can see right through them.
+I'd tell you a cemetery joke, but people are dying to hear it.
+I'm not a vampire. Vampires have better hours.
+My social battery is a single AA. From 1994.
+# ask_favor
+Hold this lens. Don't breathe on it.
+Walk with me through the ravine. I don't want to go alone tonight.
+Keep this envelope for me. Don't open it.
+# favor_reply
+Thanks. I owe you.
+You didn't ask questions. Good.
+Hm. You're dependable.
+# work_talk
+I develop film for the camera shop. Night shift, mostly.
+I sell prints sometimes. Strangers buy their own streets.
+Work is a way to pay for film.
+I like jobs where nobody talks to me.
+# school_talk
+I took art history. Mostly for the dead painters.
+I studied photography. Then I just started doing it.
+Classes are crowded. I sat in the back.
+# hostile stage=dislike-
+Leave me alone.
+I don't want you here.
+You're louder than you think.
+Walk. Away.
+I don't talk to people like you.
+Don't follow me.
+# flirt_reply romance=none
+No.
+I don't do that. Not with you.
+Hm. Don't.
+# flirt_reply romance=crush
+...You're bolder than I thought.
+I'd say stop. But I don't want you to.
+You make my heart do something it doesn't usually do.
+Hm. Say that again. Slower.
+# ask_out_yes
+Yes. Midnight. The cemetery gate. Bring a coat.
+...All right. Yes. Somewhere quiet.
+# ask_out_no
+No. Not now. Maybe not ever.
+I can't. It's not you. It's me. Literally.
+
+== dating
+# date_greet
+You came. I wasn't sure you would.
+The moon's out. Good timing.
+I brought my camera. You're the subject tonight.
+You look good in this light.
+Hi. I'm... glad. That's the word.
+I picked a spot nobody knows.
+# flirt
+You're the only light I don't mind.
+I want to photograph you. Every version.
+You make the quiet feel full.
+I keep thinking about you. At three AM. Especially.
+You're a mystery I want to solve.
+Stay close. The fog's getting thick.
+You see me. Really see me.
+# date_talk
+Let's walk the cemetery. It's peaceful, I promise.
+I'll play you a record nobody else has heard.
+Tell me something you've never told anyone.
+I want to show you the ravine at night.
+I don't usually do this. Talk. Like this.
+The stars are clearer from Toadstool Hill.
+You're easy to be quiet with.
+I developed a photo of you. You looked happy.
+I want to know what scares you.
+Let's sit here until the sun comes up.
+You're changing me. I don't hate it.
+I wrote your name in the dust on my darkroom window.
+# compliment
+You're braver than you think.
+You have an honest face.
+You're kind without trying.
+Your laugh sounds good in the dark.
+You make me want to stay.
+# kiss_reply
+...Oh.
+That felt like a secret.
+Do it again. Before I overthink it.
+I won't forget that. Ever.
+# miss_you
+I missed you. The nights were longer.
+I walked our route alone. It was wrong.
+I took photos of places you'd like.
+I played our record. Twice.
+# jealous
+Who were you with? ...Never mind. Tell me.
+I don't share well.
+I want to be the only one you walk with at night.
+# date_end
+Goodnight. Text me when you're inside.
+This was good. I don't say that.
+Same time. Same place. Next week.
+Goodnight, {player}. Dream of something strange.
+I'll walk you home. Through the long way.
+# lovers_quarrel
+I need space. Not forever. Just tonight.
+You pushed too hard.
+I don't open up easily. Don't make me regret it.
+Let's not do this in the light. Let's talk tonight.
+# proposal_yes
+Yes. ...Yes. I didn't think I'd ever say that.
+Yes. Forever. Even the dark parts.
+
+== marriage
+# home_greet time=morning
+Morning. I'm going to sleep now. Kiss me first.
+Coffee's black. Like my soul. Kidding. Mostly.
+Morning. I watched you sleep. Not creepy. Nice.
+You're up. I'm just getting in.
+Morning. I left a print on the table. It's of you.
+The light's harsh. Close the curtains, would you?
+Morning, love. I made breakfast. Before bed.
+Good morning. I found a raven feather on the porch.
+Morning. I played something quiet for you.
+You're awake. Good. I wanted to tell you about last night's fog.
+Morning. Don't open the darkroom door.
+Good morning. You look peaceful.
+# home_greet time=evening
+You're home. The day's over. Now it's ours.
+Evening, love. I'm just waking up.
+Welcome back. I lit candles.
+You're here. The house was too quiet.
+Evening. I put a record on for you.
+Welcome home. Dinner's on. Something dark. Gumbo.
+There you are. I've been waiting.
+You're back. Walk with me after supper.
+Evening. I developed a roll today. You're in all of them.
+Welcome home, {player}.
+# home_greet time=night
+Finally. The night is ours.
+You're home late. Good. I'm wide awake.
+Come out to the porch. The stars are out.
+You're back. I was about to go walking.
+Night, love. Stay up with me.
+There you are. I saved you some tea.
+You're home. The fog rolled in. It's beautiful.
+It's late. Sit with me in the dark.
+# goodbye_work
+Go. I'll be asleep when you leave.
+Be safe out there. It's bright.
+Have a good day. I'll dream about you.
+Leave quietly. I just got to sleep.
+Bye. Come home before dark.
+Go on. I'll be here.
+Love you. Don't let them drain you.
+See you tonight. Our time.
+# work_return
+How was the bright world?
+You look tired. Sit in the dark with me.
+Did people talk too much today?
+I'm awake now. Tell me everything.
+You smell like daylight.
+I'll put on something slow.
+Do you want silence or a record?
+I missed you, even while I slept.
+# affection
+I love you. In every shade of dark.
+You're my lighthouse.
+I never thought I'd let anyone stay. You stayed.
+You make the long nights feel short.
+I'd walk any cemetery with you.
+You're the only person I don't hide from.
+I love you. Quietly. Completely.
+You're my favorite photograph.
+You found me when I was lost.
+Hold my hand. Just for a while.
+You're the reason I sleep at all.
+I'd give up the night for you. Maybe.
+You know my silences. That's love.
+I'm better with you. I mean it.
+You're the song I keep replaying.
+Stay. Always.
+I love the way you look at me in the dark.
+You're my home, {player}.
+# home_talk
+I found an old letter in the attic. From 1912.
+I bought a record. It's never been played.
+The darkroom's almost finished.
+I photographed the cemetery at dawn. You'd like it.
+I heard an owl outside. It came back.
+I've been reading about the town's history. Strange stuff.
+The neighbors think I'm a vampire. I didn't correct them.
+I fixed the record player. It sounds warmer now.
+There's a crack in the basement wall. It's interesting.
+I framed one of my photos. For the hallway.
+I walked the ravine last night. It was flooded.
+I've been collecting old keys. Don't ask.
+I painted the bedroom darker. You'll like it.
+I found a book of poems in the thrift store.
+I'm trying to photograph the bell tower at midnight.
+I saw a fox in the garden.
+I've been learning to develop color film.
+The moon was huge last night. I have the shot.
+I got a print into the Carrburg gallery.
+I've been writing. Just for me.
+I put blackout curtains in the guest room.
+I saw a shooting star. I made a wish. About us.
+The house creaks at night. I like it.
+I'm thinking of a trip somewhere foggy.
+I've been listening to records from the year we met.
+I like our life. Quiet. Ours.
+# chores
+I did the dishes. At 3 AM. They're clean.
+Could you take the trash out? I don't do mornings.
+I cleaned the darkroom. Don't touch anything.
+I swept the porch. Under the moonlight.
+I folded laundry. All black. Easy.
+I dusted the records. One by one.
+Could you do the shopping? Daylight's your thing.
+I fixed the leaky pipe. Mostly.
+I organized the photos by year.
+I watered the plants. The night ones.
+I scrubbed the bathroom while you slept.
+I cleared the gutters. Found a nest.
+# money
+I sold three prints. That covers the light bill.
+Film's expensive. But worth it.
+We're fine. I keep an eye on it.
+I don't need much. Records and you.
+I put some away. Just in case.
+Let's not spend on things we don't need.
+I got paid for a gallery piece.
+I found a rare record for two dollars. Worth fifty.
+Money's just paper. But we need it.
+We're okay. Trust me.
+# meal
+I made gumbo. Dark roux.
+Black bean soup. Fitting.
+I cooked at midnight. Want some?
+Coffee and toast. It's what I know.
+I made pasta with squid ink.
+I roasted vegetables while you slept.
+I made dinner by candlelight.
+Blackberry pie. Picked them myself at dusk.
+I made breakfast for dinner.
+I made chili. It's better the second night.
+# argue
+You opened the darkroom door. You ruined a whole roll.
+You never want to stay up with me.
+You told people about me. I asked you not to.
+You moved my records.
+I needed quiet. You didn't give it.
+You don't understand why I walk at night.
+You pushed me to go to the party.
+You turned on all the lights again.
+I'm not cold. I'm just quiet.
+You read my journal.
+You keep asking me to change.
+I need you to trust me.
+# makeup
+I'm sorry. I shut down. It's what I do.
+Come here. I didn't mean it.
+Let's walk it off. Together.
+I'll try to talk more.
+You matter more than the darkroom.
+Forgive me? I'll play our song.
+I don't want to lose you.
+We're okay. I promise.
+# support
+Sit with me. You don't have to talk.
+I'm here. In the dark with you.
+It'll pass. Like fog.
+I'll stay up with you.
+Whatever it is, I'm on your side.
+Let me hold you.
+You don't have to be strong tonight.
+I'll play something soft.
+Let's walk. It helps.
+I love you. Even when it's hard.
+# plans
+Let's take a night drive. Nowhere in particular.
+Let's go somewhere foggy. The coast.
+Let's visit an old cemetery. A famous one.
+How about a record fair?
+Let's camp. I want to see the Milky Way.
+Let's see a midnight movie.
+Let's walk the whole ravine trail. At night.
+I want to photograph a lighthouse with you.
+Let's spend a whole weekend in the dark. Candles. Records.
+Let's go to the old train station. It's abandoned.
+# memories
+Remember our first walk in the cemetery?
+Remember the record I played you first?
+Remember our wedding? At midnight. Under the stars.
+Remember when we got lost in the ravine?
+I still have the first photo I took of you.
+Remember the night the power went out? Perfect.
+Remember when you found me on the bell tower steps?
+Remember our first kiss? In the fog.
+I remember the moment I stopped hiding.
+Remember the owl at our window on our first night here?
+# anniversary
+Happy anniversary. Another year of nights.
+I made you a print. Every year since we met.
+Happy anniversary, love. You stayed.
+I found a record from the year we married.
+Let's walk to where we met. At midnight.
+Here's to more dark and more us.
+# tease
+You're scared of the dark. Still.
+You sleep with a nightlight. I know.
+You think my records are depressing.
+You talk to strangers. Willingly.
+You open the curtains at noon. Monster.
+You can't keep a secret. I know.
+You flinched at the owl.
+You hum when you're nervous.
+You say "spooky" like it's a bad thing.
+You're the sun. I'm the moon. Somehow it works.
+You hide my black sweater. Then wear it.
+You think I'm mysterious. I'm just tired.
+# bedtime
+Go to sleep. I'll keep watch.
+Goodnight, love. I'll be in after a while.
+Sleep. I'll be right here in the dark.
+Goodnight. The house is safe.
+Close your eyes. I'll play something soft.
+Sleep well. I'll wake you if the moon turns red.
+Goodnight, {player}. I love you. Hm.
+Stay. Just until I fall asleep.
+Goodnight. Dream of somewhere foggy.
+Lay with me. The stars can wait.

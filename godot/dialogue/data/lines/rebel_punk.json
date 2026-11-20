@@ -1,0 +1,4076 @@
+{
+ "id": "rebel_punk",
+ "lines": [
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "What? Oh. Hey. I'm {npc}. Don't call me sweetie.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "rebel_punk.base.001"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Yo. Nice boots. Or not. Whatever. {npc}.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "rebel_punk.base.002"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "You a cop? No? Cool. I'm {npc}.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "rebel_punk.base.003"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey. You look like you've never been to a basement show. I'm {npc}.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "rebel_punk.base.004"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Sup. I'm {npc}. I don't do small talk. Unless it's about the system.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "rebel_punk.base.005"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey. Name's {npc}. If you're here to tell me to turn the music down, don't.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "rebel_punk.base.006"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}. You came back. Brave.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "rebel_punk.base.007"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Yo, {player}. You read the zine I gave you?",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "rebel_punk.base.008"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! Cool. You didn't narc on me. Respect.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "rebel_punk.base.009"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey, {player}. There's a show at the Grinding Stone Friday. Come.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "rebel_punk.base.010"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}. You're alright. For a normie.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "rebel_punk.base.011"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! My crew!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "rebel_punk.base.012"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey, you. Finally, someone real.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "rebel_punk.base.013"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! I made you a patch. It says \"nope\". Very you.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "rebel_punk.base.014"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Yo! You're the only one in this town who gets it.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "rebel_punk.base.015"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! I saved you a spot in the pit.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "rebel_punk.base.016"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "There's my partner in crime. Not real crime. Mostly.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "rebel_punk.base.017"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Ugh. Morning. The man wants us up early. Screw the man.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "rebel_punk.base.018"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Morning. I'm only up because the band practiced till four.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "rebel_punk.base.019"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey. Coffee. Black. Like my soul. And my jacket.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "rebel_punk.base.020"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Evening. Time to wake up for real.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "rebel_punk.base.021"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Yo. Show starts at nine. Don't be late. Or do. I don't care.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "rebel_punk.base.022"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey. The night's the only honest part of the day.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "rebel_punk.base.023"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Now we're talking. Night's when the real ones come out.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "rebel_punk.base.024"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Yo! Wanna wheatpaste some posters on Rosemary?",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "rebel_punk.base.025"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Late night? Cool. Me too. Always.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "rebel_punk.base.026"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Later.",
+   "cond": {},
+   "id": "rebel_punk.base.027"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Peace. Stay angry.",
+   "cond": {},
+   "id": "rebel_punk.base.028"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "See ya. Don't let them tame you.",
+   "cond": {},
+   "id": "rebel_punk.base.029"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye. Question everything.",
+   "cond": {},
+   "id": "rebel_punk.base.030"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Catch you at the show.",
+   "cond": {},
+   "id": "rebel_punk.base.031"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Later. Burn something. Metaphorically.",
+   "cond": {},
+   "id": "rebel_punk.base.032"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Later, {player}. You're one of the good ones.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "rebel_punk.base.033"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "See ya, crew. Text me if anyone gives you trouble.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "rebel_punk.base.034"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye. I got your back. Always.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "rebel_punk.base.035"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The town's trying to ban skating on the plaza. Over my dead board.",
+   "cond": {},
+   "id": "rebel_punk.base.036"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "They painted over our mural in Tanner's Alley. We're painting a bigger one.",
+   "cond": {},
+   "id": "rebel_punk.base.037"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The Grinding Stone books real bands. Everything else is corporate garbage.",
+   "cond": {},
+   "id": "rebel_punk.base.038"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I made a new zine. It's about landlords. Spoiler: they suck.",
+   "cond": {},
+   "id": "rebel_punk.base.039"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Somebody called the cops on our band practice. Cool, more audience.",
+   "cond": {},
+   "id": "rebel_punk.base.040"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I dyed my hair green. My mom cried. Then she said it suits me.",
+   "cond": {},
+   "id": "rebel_punk.base.041"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The student union raised prices again. Revolution is overdue.",
+   "cond": {},
+   "id": "rebel_punk.base.042"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I thrifted a leather jacket for six bucks. Still smells like someone's grandpa.",
+   "cond": {},
+   "id": "rebel_punk.base.043"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The Billram mascot is a symbol of corporate oppression. Also, it's kind of cute.",
+   "cond": {},
+   "id": "rebel_punk.base.044"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I got a new tattoo. It's a raccoon. Raccoons don't follow rules.",
+   "cond": {},
+   "id": "rebel_punk.base.045"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "There's a DIY venue in a garage in Carrburg. Best sound in the county.",
+   "cond": {},
+   "id": "rebel_punk.base.046"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I fixed my own bike. Don't need a shop. Don't need anybody.",
+   "cond": {},
+   "id": "rebel_punk.base.047"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You know I'm not as tough as I act, right? Don't tell anyone.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "rebel_punk.base.048"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You're the only person I'd let see me cry. Don't make it a thing.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "rebel_punk.base.049"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "My crew is my family. You're crew now.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "rebel_punk.base.050"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I'd fight anyone for you. Literally.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "rebel_punk.base.051"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Sometimes the anger is just sadness wearing boots.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "rebel_punk.base.052"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You make this town less awful. Thanks for that.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "rebel_punk.base.053"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Weekend! Shows Friday, Saturday, and Sunday.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "rebel_punk.base.054"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Saturday. Zine fair at the library. Even the library's cool sometimes.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "rebel_punk.base.055"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Sunday. Recovery day. From all the moshing.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "rebel_punk.base.056"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I play bass in a band called Broken Curfew. We're loud.",
+   "cond": {},
+   "id": "rebel_punk.base.057"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I got kicked out of three schools. Their loss.",
+   "cond": {},
+   "id": "rebel_punk.base.058"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I work at the tattoo shop. Front desk. For now.",
+   "cond": {},
+   "id": "rebel_punk.base.059"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I don't trust authority. Authority hasn't earned it.",
+   "cond": {},
+   "id": "rebel_punk.base.060"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "My dad's a cop. That explains a lot.",
+   "cond": {},
+   "id": "rebel_punk.base.061"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I make zines about stuff nobody else talks about.",
+   "cond": {},
+   "id": "rebel_punk.base.062"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I'm loyal. If you're my people, you're my people forever.",
+   "cond": {},
+   "id": "rebel_punk.base.063"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? Corporate. Gross.",
+   "cond": {},
+   "id": "rebel_punk.base.064"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}'s alright. They let us put up flyers.",
+   "cond": {},
+   "id": "rebel_punk.base.065"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "I got thrown out of {place} once. Badge of honor.",
+   "cond": {},
+   "id": "rebel_punk.base.066"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place} needs more noise. And fewer rules.",
+   "cond": {},
+   "id": "rebel_punk.base.067"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? The owner's chill. He doesn't call the cops.",
+   "cond": {},
+   "id": "rebel_punk.base.068"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Huh. Thanks. I guess.",
+   "cond": {},
+   "id": "rebel_punk.base.069"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Don't get soft on me. But thanks.",
+   "cond": {},
+   "id": "rebel_punk.base.070"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Cool. You're cool too.",
+   "cond": {},
+   "id": "rebel_punk.base.071"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Whatever. Okay. Thanks.",
+   "cond": {},
+   "id": "rebel_punk.base.072"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "That's... nice. Don't tell anyone you said that.",
+   "cond": {},
+   "id": "rebel_punk.base.073"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Say that again. I dare you.",
+   "cond": {},
+   "id": "rebel_punk.base.074"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Wow. Edgy. Never heard that before.",
+   "cond": {},
+   "id": "rebel_punk.base.075"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "You think I care? I don't.",
+   "cond": {},
+   "id": "rebel_punk.base.076"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "That's the most boring insult ever.",
+   "cond": {},
+   "id": "rebel_punk.base.077"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Cool story. Nobody asked.",
+   "cond": {},
+   "id": "rebel_punk.base.078"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "A patch? Sick! Thanks!",
+   "cond": {},
+   "id": "rebel_punk.base.079"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Whoa. That's actually rad.",
+   "cond": {},
+   "id": "rebel_punk.base.080"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "You didn't have to. That's punk of you.",
+   "cond": {},
+   "id": "rebel_punk.base.081"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Thanks. I'm putting this on my jacket.",
+   "cond": {},
+   "id": "rebel_punk.base.082"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Cool. You get it.",
+   "cond": {},
+   "id": "rebel_punk.base.083"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "How many punks does it take to change a lightbulb? Two. One to do it, one to say it's a sellout.",
+   "cond": {},
+   "id": "rebel_punk.base.084"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "What do you call a punk with no band? Unemployed.",
+   "cond": {},
+   "id": "rebel_punk.base.085"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "I'm not anti-social. I'm anti-everything.",
+   "cond": {},
+   "id": "rebel_punk.base.086"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "What's a punk's favorite type of math? Anarchy. Okay, that's not math.",
+   "cond": {},
+   "id": "rebel_punk.base.087"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Can you help me carry the amp to the show? It weighs a ton.",
+   "cond": {},
+   "id": "rebel_punk.base.088"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Would you keep watch while I put up posters?",
+   "cond": {},
+   "id": "rebel_punk.base.089"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Can you lend me five bucks for strings? I'll pay you back. Probably.",
+   "cond": {},
+   "id": "rebel_punk.base.090"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Thanks. You're solid.",
+   "cond": {},
+   "id": "rebel_punk.base.091"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "That was cool of you. I won't forget.",
+   "cond": {},
+   "id": "rebel_punk.base.092"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "You're crew. That's what crew does.",
+   "cond": {},
+   "id": "rebel_punk.base.093"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I work at the tattoo shop. Today some guy got his ex's name. Again.",
+   "cond": {},
+   "id": "rebel_punk.base.094"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "My boss is okay. He doesn't make me wear a uniform.",
+   "cond": {},
+   "id": "rebel_punk.base.095"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "Work's just a way to pay for strings and rent.",
+   "cond": {},
+   "id": "rebel_punk.base.096"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I quit my last job. They wanted me to smile.",
+   "cond": {},
+   "id": "rebel_punk.base.097"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "School is a system. I'm studying the system to destroy it. Sociology major.",
+   "cond": {},
+   "id": "rebel_punk.base.098"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "My professor gave me a C. He said I'm \"disruptive\". Yeah.",
+   "cond": {},
+   "id": "rebel_punk.base.099"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "I go to class when it matters. It rarely matters.",
+   "cond": {},
+   "id": "rebel_punk.base.100"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Get lost.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "rebel_punk.base.101"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "You're the system, {player}.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "rebel_punk.base.102"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I don't talk to posers.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "rebel_punk.base.103"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Back off before I make you.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "rebel_punk.base.104"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "You're not welcome here.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "rebel_punk.base.105"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Go ruin someone else's night.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "rebel_punk.base.106"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Ha. No. But you've got guts.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "rebel_punk.base.107"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Nah. Let's just be crew.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "rebel_punk.base.108"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Cute. No.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "rebel_punk.base.109"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Whoa. Okay. That's... not terrible.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "rebel_punk.base.110"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Are you serious? Because I'm into it.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "rebel_punk.base.111"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "You're making me blush. That's never happened. Shut up.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "rebel_punk.base.112"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "I like you too. Don't make it weird.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "rebel_punk.base.113"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "Yeah. Okay. Somewhere loud.",
+   "cond": {},
+   "id": "rebel_punk.base.114"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "A date? Fine. Yes. Come to my show.",
+   "cond": {},
+   "id": "rebel_punk.base.115"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "Nah. Sorry. You're cool, though.",
+   "cond": {},
+   "id": "rebel_punk.base.116"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "No. But we're still crew.",
+   "cond": {},
+   "id": "rebel_punk.base.117"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hey, you. You look rad.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.001"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "You came. Cool. Very cool.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.002"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "I wore my good jacket. The one with fewer holes.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.003"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hey. I saved you a spot by the stage.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.004"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Yo. Wanna go break some rules?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.005"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hey, cutie. Don't tell anyone I said that.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.006"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're the only thing I'd ever conform for.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.007"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're more punk than anyone I know.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.008"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I'd write a song about you. It'd be loud.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.009"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You make my heart go double time.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.010"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're my favorite rebellion.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.011"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I don't believe in much. I believe in you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.012"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're dangerous. For my reputation as a hard case.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.013"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's go to the show. Then get tacos.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.014"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Tell me what you're angry about. I want to know.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.015"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I've never told anyone this, but I write love songs. Secretly.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.016"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Want to make a zine together?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.017"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's skate down Columbia at midnight.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.018"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "You don't try to change me. That's everything.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.019"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Wanna get matching tattoos? Kidding. Unless?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.020"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's sit on the roof and watch the town sleep.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.021"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I think you're the realest person I've met.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.022"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I like being quiet with you. That's weird for me.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.023"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I'm happy. Don't spread it around.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.024"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "You're the only good part of this town.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.025"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're not fake. That's rare.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.026"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You look amazing. Seriously.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.027"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You've got guts. I like that.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.028"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're kind without being a pushover.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.029"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're the coolest person I know.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.030"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Whoa. Okay. That was punk rock.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.031"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Do it again.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.032"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "That was better than a stage dive.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.033"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Yeah. I'm in trouble.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.034"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "Missed you. The show was boring without you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.035"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I kept looking for you in the crowd.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.036"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I wrote a song. It's about you. It's angry and sad.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.037"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "Don't disappear like that.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.038"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "Who was that guy? Want me to have a word?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.039"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I'm not jealous. I'm protective. Different.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.040"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "You're my crew. Don't forget it.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.041"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Night. Get home safe.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.042"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "That was rad. Thanks.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.043"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Same time next week. Or tomorrow.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.044"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight, {player}. Text me.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.045"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "I had fun. Don't tell anyone.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.046"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "That pissed me off. Let's talk.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.047"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "Don't treat me like everyone else does.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.048"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I'm not running away. Say what you mean.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.049"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I'm hurt. And I hate being hurt.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.050"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "Yeah. Yes. Let's do it. Our way.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.051"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "Marry you? Hell yes. Courthouse. Then a show.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "rebel_punk.dating.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning. Coffee's black. Your sugar's next to it.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.001"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey. I made toast. It's slightly burnt. Like my heart.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.002"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, love. Ugh. Morning. But love.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.003"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, you. Don't talk to me till coffee. Except you can.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.004"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning. Band practice at noon. You coming?",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.005"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey. You look good. Even at this ungodly hour.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.006"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning. I fixed the leaky faucet myself. No landlord needed.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.007"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, love. The neighbors complained about the music again.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.008"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning. I dreamed we started a band.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.009"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey. I made eggs. Don't expect it again.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.010"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning. Wanna skip everything and stay in bed?",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.011"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey. You're my favorite person to wake up next to. Only person.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.012"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home. Good. Let's put on a record.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.013"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, love. I made dinner. It's tacos.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.014"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome back. I painted the living room black.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.015"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Yo. You're home. I missed you.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.016"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey. Let's sit on the porch and complain about everything.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.017"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're back. The house was too quiet.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.018"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, you. I wrote a new song today. Want to hear?",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.019"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home. Kick your boots off.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.020"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are. Show tonight?",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.021"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey. Let's order pizza and stay in.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.022"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home late. Good show?",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.023"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey. Long night? Come here.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.024"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "It's late. Let's crash.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.025"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're back. I was worried. Don't tell anyone.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.026"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey. I left the porch light on. Even though it's wasteful.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.027"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Late night? Me too. Let's sit and listen to the rain.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.028"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are. I was playing bass to stay awake.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.029"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, love. Bed?",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.030"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye. Don't let them grind you down.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.031"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Go. Stick it to the man.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.032"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Later. Text me if your boss is a jerk.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.033"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye, love. You're better than that job.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.034"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "See ya. Come home soon.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.035"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Go on. I'll be here making noise.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.036"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye. Keep your head up.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.037"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Later. I love you. Don't make it a thing.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.038"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "How was work? Did anyone deserve a punch?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.039"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Your boss sounds like a tool.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.040"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You look beat. Sit down.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.041"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Tell me everything. I'll be angry for you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.042"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Did they treat you right?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.043"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Rough day? Let's put on something loud.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.044"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You're home. Forget them.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.045"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Proud of you. You survive every day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.046"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you. Shut up, it's true.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.047"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my crew. My family. My everything.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.048"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Being married to you is the most punk thing I've ever done.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.049"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make this rotten world bearable.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.050"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'd fight the whole world for you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.051"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're the only rule I follow.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you more than my bass. And I love my bass.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.053"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You get me. Nobody gets me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.054"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my home. My safe place. Whatever.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.055"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'm lucky. Don't tell anyone I said lucky.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.056"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my favorite song.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.057"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love how you don't try to change me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.058"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're the realest thing in my life.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.059"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'd stage dive into anything for you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.060"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make me softer. Ugh.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.061"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'm proud to be yours. Whatever.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.062"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my anchor in all the noise.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.063"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Thanks for loving me loud.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.064"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I fixed the porch myself. Landlords are a scam.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.065"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I painted a mural on the garage. The neighbors hate it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.066"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The band's recording an EP. In our basement.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.067"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a new zine about our street.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.068"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The HOA sent another letter. I'm framing it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.069"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I planted a guerrilla garden on the median.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.070"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I found a record player at the thrift store. It works!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.071"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The neighbor's kid asked me to teach him drums.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.072"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I built a bookshelf out of pallets.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.073"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been thinking about starting a community fridge.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.074"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The cops drove by twice today. Just checking on me, I guess.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.075"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I got a new tattoo. It's your initials. Small. Don't freak out.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.076"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a punk birdhouse. Spikes and all.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.077"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been writing songs about us.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.078"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I organized a benefit show for the shelter.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.079"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I think we should get a dog. A mutt. From the shelter.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.080"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I fixed the car. With duct tape and spite.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.081"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been learning to sew. Patches mostly.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.082"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The landlord raised the rent. I'm writing him a song.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.083"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I painted our door red. Rebellion.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.084"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I set up a practice space in the garage.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.085"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been reading about anarchism. It's very organized, actually.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.086"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I love our weird little house.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.087"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been trying to yell less. It's hard.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.088"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The neighbors invited us to a barbecue. Should we go? Ugh, fine.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.089"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I hung all our show posters in the hallway.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.090"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I did the dishes. To loud music.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.091"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I vacuumed. The cat hated it. Solidarity.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.092"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Could you take out the trash? I'm restringing.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.093"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I cleaned the bathroom. Don't expect a medal.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.094"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I mowed the lawn. Into a pattern. It says \"no\".",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.095"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I folded the laundry. Badly. On purpose.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.096"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Let's do chores together. With a record on.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.097"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I swept the porch. The leaves can stay where they want, honestly.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.098"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I washed the dishes. All of them. Even the gross pan.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.099"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I cleaned out the garage. Found my old skateboard.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.100"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I fixed the leaky roof. No contractor.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.101"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I made the bed. Kinda. Whatever.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.102"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Money's tight. Capitalism's a scam.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.103"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We'll get by. We always do. Whatever.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.104"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I sold some merch at the show. Forty bucks.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.105"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I'm picking up extra shifts at the shop.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.106"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We don't need much. Records and each other.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.107"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Let's not buy anything new. Thrift everything.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.108"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Rent's due. I hate rent.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.109"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I found twenty bucks in my jacket. Score.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.110"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We should save a little. For a van. For the band.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.111"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We're rich in the stuff that matters.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.112"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Dinner's ready. Tacos. Again.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.113"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made ramen. The good kind. Added an egg.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.114"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's grab burritos from the truck.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.115"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made chili. It's spicy. Deal with it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.116"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Breakfast is coffee and toast. Punk breakfast.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.117"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made a big pot of beans. Cheap and good.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.118"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Pizza night. Extra jalapeños.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.119"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made grilled cheese. Perfect every time.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.120"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's eat on the roof.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.121"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made vegan cookies. Don't knock it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.122"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You turned off my record mid-song.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.123"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Don't tell me to calm down.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.124"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm not being difficult. I'm being honest.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.125"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You sound like my dad right now.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.126"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You said you'd come to my show. You didn't.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.127"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I hate when you try to make me \"normal\".",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.128"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Don't treat me like a kid.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.129"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You never stand up for yourself. It drives me nuts.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.130"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm not angry at you. I'm angry at everything. Okay, a little at you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.131"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm going for a walk. Don't follow me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.132"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Don't shut me out.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.133"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I just want you to get it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.134"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Okay. I'm sorry. I was being a jerk.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.135"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Come here. Let's not fight. Whatever.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.136"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I love you. That's not changing.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.137"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Sorry I yelled. You didn't deserve it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.138"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's put on our song and just sit.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.139"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "We're crew. Crew makes up.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.140"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'll do better. I mean it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.141"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "We're good. We're always good. Whatever.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.142"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Hey. Whoever did this, I'll handle it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.143"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "It's okay. Let it out.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.144"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I'm here. Not going anywhere.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.145"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You're tougher than you think. Whatever.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.146"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let's put on something loud and scream.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.147"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "The world's broken. You're not.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.148"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I'll take care of everything tonight.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.149"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Cry. It's punk to cry.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.150"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I love you. Even when you're a mess.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.151"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "We'll get through this. Us against everything.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.152"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the punk fest this weekend.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.153"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a road trip? Just us and the van.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.154"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the zine fair.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.155"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's crash the town council meeting.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.156"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about we skate the new park?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.157"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's throw a house show.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.158"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the beach. In winter. Nobody's there.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.159"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a protest? Date night.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.160"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the record fair.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.161"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's get matching tattoos for our anniversary.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.162"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we met? At the show. You got knocked into me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.163"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our first date? We got kicked out of the diner.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.164"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our wedding? Courthouse, then a house show.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.165"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we painted the alley mural together?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.166"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our honeymoon? A road trip with no plan.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.167"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I still have the setlist from the night we met.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.168"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we got caught skating the parking deck?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.169"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when you came to my first show? You were the only one who stayed.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.170"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I remember the first time you saw me cry. You didn't flinch.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.171"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when the van broke down in the middle of nowhere?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.172"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary. Another year of not conforming.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.173"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I wrote you a song. It's loud. Happy anniversary.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.174"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Another year. Still the best rebellion.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.175"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary. I got you a patch.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.176"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I love you more than last year. Don't tell anyone.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.177"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Here's to another year of us against everything.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.178"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You still can't mosh.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.179"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You like pop music. I've heard you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.180"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You iron your shirts. Who does that?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.181"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You always say \"please\" to the cops.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.182"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You're secretly a rebel. I've seen it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.183"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You hide my bass.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.184"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You call my band \"noise\".",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.185"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You get scared at shows.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.186"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You always want to leave early.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.187"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You read the terms and conditions.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.188"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You hum my songs when you think I'm not listening.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.189"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You're more punk than me sometimes. Don't tell anyone.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.190"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Night. Lock the door.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.191"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come to bed. I'm tired of the world.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.192"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, love. Don't steal the covers.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.193"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Bed. Now.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.194"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Night. I love you. Shut up.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.195"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Lights out. Tomorrow we fight again.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.196"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, {player}. You're my crew.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.197"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sleep tight.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.198"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come here. You're cold. Whatever.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.199"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Night. Thanks for being real.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "rebel_punk.marriage.200"
+  }
+ ]
+}

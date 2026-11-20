@@ -1,0 +1,4076 @@
+{
+ "id": "earnest_activist",
+ "lines": [
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi! I'm {npc}. Do you have a minute for the planet? Kidding. Mostly.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "earnest_activist.base.001"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello! Are you registered to vote in Cathedral Mount? Sorry, habit. I'm {npc}.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "earnest_activist.base.002"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey there! I'm {npc}. We're always looking for new faces at the community garden.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "earnest_activist.base.003"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi! Love your reusable bag. Or I would, if you had one. I'm {npc}!",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "earnest_activist.base.004"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello, neighbor! New here? You should come to the town hall on Tuesday.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "earnest_activist.base.005"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey! I'm {npc}. I organize things. Lots of things.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "earnest_activist.base.006"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! Did you sign the petition about the bike lanes on Columbia?",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "earnest_activist.base.007"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey, {player}! Good to see a familiar face in the movement.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "earnest_activist.base.008"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! I was hoping you'd come by the food drive.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "earnest_activist.base.009"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh, hi, {player}! You still have my flyer, right?",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "earnest_activist.base.010"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey, {player}! Every conversation is a chance to make change. Hi!",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "earnest_activist.base.011"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! My comrade in kindness!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "earnest_activist.base.012"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey, friend! You're the reason I still believe people care.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "earnest_activist.base.013"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! I saved you a seat at the meeting. Front row, of course.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "earnest_activist.base.014"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "There you are! I need your help painting protest signs. Well, rally signs. Positive ones.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "earnest_activist.base.015"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! You inspire me more than you know.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "earnest_activist.base.016"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi, partner in change! What are we fixing today?",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "earnest_activist.base.017"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good morning! Already picked up trash on my walk. Twelve bottles!",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "earnest_activist.base.018"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Morning! The community garden needs watering, want to come?",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "earnest_activist.base.019"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good morning! Fair-trade coffee in hand, ready to save the world.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "earnest_activist.base.020"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Evening! Just got back from the council meeting. We won a small one!",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "earnest_activist.base.021"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey! The vigil on the quad starts at eight, if you want to come.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "earnest_activist.base.022"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good evening! Nothing like a sunset to remind you what we're protecting.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "earnest_activist.base.023"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey! Still up? Me too. Writing letters to the editor.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "earnest_activist.base.024"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Late night! Making signs for tomorrow's march.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "earnest_activist.base.025"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Night! The stars are so bright here. Less light pollution than the city. Let's keep it that way.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "earnest_activist.base.026"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye! Stay hopeful!",
+   "cond": {},
+   "id": "earnest_activist.base.027"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "See you! Remember, small actions add up!",
+   "cond": {},
+   "id": "earnest_activist.base.028"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Take care! And recycle that cup, please!",
+   "cond": {},
+   "id": "earnest_activist.base.029"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye for now! Change starts with us!",
+   "cond": {},
+   "id": "earnest_activist.base.030"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "See you at the next meeting!",
+   "cond": {},
+   "id": "earnest_activist.base.031"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Goodbye! Keep fighting the good fight!",
+   "cond": {},
+   "id": "earnest_activist.base.032"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye, {player}! Thanks for always showing up.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "earnest_activist.base.033"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Later, friend! Text me if you hear about anything we can help with.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "earnest_activist.base.034"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye! You're one of the good ones. Seriously.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "earnest_activist.base.035"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Did you know the oaks on the North Quad are older than the state? We need to protect them.",
+   "cond": {},
+   "id": "earnest_activist.base.036"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The town wants to pave the old meadow in Carrburg for a parking lot. Not on my watch.",
+   "cond": {},
+   "id": "earnest_activist.base.037"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I'm organizing a clothing swap on Saturday. Fast fashion is a crisis.",
+   "cond": {},
+   "id": "earnest_activist.base.038"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The bus system needs more routes. I wrote a fifteen-page proposal.",
+   "cond": {},
+   "id": "earnest_activist.base.039"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I went to the farmers market and only bought local. It felt amazing.",
+   "cond": {},
+   "id": "earnest_activist.base.040"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "We got thirty volunteers for the river cleanup! Thirty!",
+   "cond": {},
+   "id": "earnest_activist.base.041"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Have you thought about composting? I can show you how.",
+   "cond": {},
+   "id": "earnest_activist.base.042"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The food bank is low on canned goods. I'm doing a drive.",
+   "cond": {},
+   "id": "earnest_activist.base.043"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I learned to fix bikes so I could start a free repair clinic.",
+   "cond": {},
+   "id": "earnest_activist.base.044"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The student union finally switched to compostable cups. Three years of campaigning!",
+   "cond": {},
+   "id": "earnest_activist.base.045"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I'm going vegan for a month. Well, vegetarian. Pescatarian. I'm trying.",
+   "cond": {},
+   "id": "earnest_activist.base.046"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Somebody keyed the bike lane sign on Hamilton. I replaced it with a hand-painted one.",
+   "cond": {},
+   "id": "earnest_activist.base.047"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Sometimes it feels like nothing changes. Then I see people like you and keep going.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "earnest_activist.base.048"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I get burnt out, honestly. You help me remember why I do this.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "earnest_activist.base.049"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I want to do something that matters with my life. You get that.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "earnest_activist.base.050"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You're the first person who's asked how I'm doing instead of what I'm doing.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "earnest_activist.base.051"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I'd chain myself to a tree with you. Metaphorically. Maybe literally.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "earnest_activist.base.052"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I'm glad we're friends. You make the world feel less heavy.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "earnest_activist.base.053"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Weekend! Community garden workday at nine. Bring gloves!",
+   "cond": {
+    "weekend": true
+   },
+   "id": "earnest_activist.base.054"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Saturday! There's a march downtown. Peaceful, positive, with snacks.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "earnest_activist.base.055"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "It's the weekend, which means more time to volunteer!",
+   "cond": {
+    "weekend": true
+   },
+   "id": "earnest_activist.base.056"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I started my first petition when I was nine. To save the school's hamster.",
+   "cond": {},
+   "id": "earnest_activist.base.057"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I'm studying public policy. I want to run for town council someday.",
+   "cond": {},
+   "id": "earnest_activist.base.058"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I grew up near a factory that polluted our river. That's why I care.",
+   "cond": {},
+   "id": "earnest_activist.base.059"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "People say I'm too idealistic. I say someone has to be.",
+   "cond": {},
+   "id": "earnest_activist.base.060"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I volunteer at three different organizations. I sleep sometimes.",
+   "cond": {},
+   "id": "earnest_activist.base.061"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I believe in community. Neighbors helping neighbors. That's how we change things.",
+   "cond": {},
+   "id": "earnest_activist.base.062"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I know I can be a lot. But I'd rather care too much than not at all.",
+   "cond": {},
+   "id": "earnest_activist.base.063"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? Do they use sustainable practices? I'm asking for a friend. The friend is the earth.",
+   "cond": {},
+   "id": "earnest_activist.base.064"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "I like {place}! They donate to the food bank.",
+   "cond": {},
+   "id": "earnest_activist.base.065"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place} could really use a recycling bin. I'll bring it up with the owner.",
+   "cond": {},
+   "id": "earnest_activist.base.066"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place} is great. Locally owned, fair wages. My kind of place.",
+   "cond": {},
+   "id": "earnest_activist.base.067"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? I organized a sit-in there once. Long story. It worked out.",
+   "cond": {},
+   "id": "earnest_activist.base.068"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Thank you! But really, it's the community that deserves the credit.",
+   "cond": {},
+   "id": "earnest_activist.base.069"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Aw, thanks! That means a lot coming from you.",
+   "cond": {},
+   "id": "earnest_activist.base.070"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "That's so kind! I'm going to use that energy at the next rally.",
+   "cond": {},
+   "id": "earnest_activist.base.071"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Thank you! Now, have you thought about volunteering?",
+   "cond": {},
+   "id": "earnest_activist.base.072"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Wow, thanks. I needed that today.",
+   "cond": {},
+   "id": "earnest_activist.base.073"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "That's okay. I've heard worse at town hall meetings.",
+   "cond": {},
+   "id": "earnest_activist.base.074"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "I'm going to choose compassion over anger right now.",
+   "cond": {},
+   "id": "earnest_activist.base.075"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Wow. I hope you find some peace.",
+   "cond": {},
+   "id": "earnest_activist.base.076"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Hurt people hurt people. I hope you're okay.",
+   "cond": {},
+   "id": "earnest_activist.base.077"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "I'm not going to let that discourage me. Or the cause.",
+   "cond": {},
+   "id": "earnest_activist.base.078"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Oh, thank you! Is it ethically sourced? Never mind, I love it!",
+   "cond": {},
+   "id": "earnest_activist.base.079"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "This is so thoughtful! I'm going to use it at the garden.",
+   "cond": {},
+   "id": "earnest_activist.base.080"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Thank you! I'll donate one of mine in your honor.",
+   "cond": {},
+   "id": "earnest_activist.base.081"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "You remembered I love sunflowers! Thank you!",
+   "cond": {},
+   "id": "earnest_activist.base.082"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "This is perfect! You're the best.",
+   "cond": {},
+   "id": "earnest_activist.base.083"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "How do you make a tissue dance? Put a little boogie in it. Recycle the tissue after.",
+   "cond": {},
+   "id": "earnest_activist.base.084"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "Why did the solar panel go to therapy? It had too many issues with the grid.",
+   "cond": {},
+   "id": "earnest_activist.base.085"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "I'm reading a book about recycling. It's really been reused.",
+   "cond": {},
+   "id": "earnest_activist.base.086"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "What did the tree say to the activist? Thanks for leaving me alone.",
+   "cond": {},
+   "id": "earnest_activist.base.087"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Could you sign this petition? It's for more crosswalks near the elementary school.",
+   "cond": {},
+   "id": "earnest_activist.base.088"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Would you volunteer at the food bank on Saturday? Just two hours.",
+   "cond": {},
+   "id": "earnest_activist.base.089"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Can you help me carry these donations to the shelter?",
+   "cond": {},
+   "id": "earnest_activist.base.090"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Thank you so much! You're making a real difference.",
+   "cond": {},
+   "id": "earnest_activist.base.091"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "You're amazing! The community thanks you!",
+   "cond": {},
+   "id": "earnest_activist.base.092"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "I knew I could count on you! Thank you!",
+   "cond": {},
+   "id": "earnest_activist.base.093"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I work at a nonprofit. The pay's terrible but the purpose is amazing.",
+   "cond": {},
+   "id": "earnest_activist.base.094"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "We got a grant for the community garden today! Huge win!",
+   "cond": {},
+   "id": "earnest_activist.base.095"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "My boss and I are planning a voter registration drive.",
+   "cond": {},
+   "id": "earnest_activist.base.096"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "Some days feel like we're moving mountains with a spoon. But we're moving them.",
+   "cond": {},
+   "id": "earnest_activist.base.097"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "I'm writing my thesis on urban sustainability.",
+   "cond": {},
+   "id": "earnest_activist.base.098"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "My professor said my policy proposal was the best in the class!",
+   "cond": {},
+   "id": "earnest_activist.base.099"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "I started a student club for environmental justice. Twenty members!",
+   "cond": {},
+   "id": "earnest_activist.base.100"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I don't think we share the same values.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "earnest_activist.base.101"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I'm trying to be compassionate, but you're making it really hard.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "earnest_activist.base.102"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I'd rather talk to a brick wall. At least it's recyclable.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "earnest_activist.base.103"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Please leave me alone. I have work to do.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "earnest_activist.base.104"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "You're part of the problem, {player}.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "earnest_activist.base.105"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I'm not going to waste my energy on you.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "earnest_activist.base.106"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Oh! That's sweet. But I'm married to the cause right now.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "earnest_activist.base.107"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Ha! Thank you, but let's keep it friendly. Comrades!",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "earnest_activist.base.108"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "I'm flattered! But I don't think of you that way. Want to join a protest?",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "earnest_activist.base.109"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Oh! Wow. I didn't expect that. I really like it.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "earnest_activist.base.110"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Are you flirting with me? Because it's working. Revolutionary.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "earnest_activist.base.111"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "You make my heart race faster than a rally chant.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "earnest_activist.base.112"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "I've been hoping you'd say something like that. It matters.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "earnest_activist.base.113"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "Yes! Can we go somewhere with plant-based options?",
+   "cond": {},
+   "id": "earnest_activist.base.114"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "A date? I'd love to! I'll even take a night off from organizing!",
+   "cond": {},
+   "id": "earnest_activist.base.115"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "I'm sorry, I don't feel that way. But I value our friendship so much.",
+   "cond": {},
+   "id": "earnest_activist.base.116"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "That's so kind, but no. Can we still work on the garden together?",
+   "cond": {},
+   "id": "earnest_activist.base.117"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hi! I biked here! Carbon-neutral date!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.001"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "You came! I made us reusable picnic bags!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.002"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hey! You look amazing. Very sustainable. I mean, gorgeous.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.003"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hi! I took the whole night off for you. That's huge for me.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.004"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "There you are! I'm so happy to see you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.005"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hey, you! I brought you a flower from the community garden.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.006"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're the best cause I've ever believed in.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.007"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You make me want to change the world. And also just hold your hand.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.008"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I'd march for you. Anywhere.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.009"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're more beautiful than a protected wetland.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.010"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I care about a lot of things. You're at the top of the list.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.011"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You make my heart feel renewable.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.012"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're my favorite reason to take a night off.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.013"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's go to the farmers market and cook dinner together.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.014"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "What do you care about most? I really want to know.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.015"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I love that you listen when I talk about issues. Most people glaze over.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.016"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Can we walk by the river? We cleaned it up last month.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.017"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Tell me what kind of world you want to live in.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.018"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I never thought I'd find someone who shares my values. Then I met you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.019"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I'm sorry, I'll stop talking about policy. Okay, one more thing.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.020"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Want to volunteer together next weekend? It could be our thing.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.021"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "You make me feel like the world isn't so bad.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.022"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's go stargazing. No light pollution on Carillon Hill.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.023"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I think we'd make a great team. In activism and in love.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.024"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I'm really happy right now. Just being here with you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.025"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're so kind to everyone. It's inspiring.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.026"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You've got a big heart. I love that.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.027"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You look really nice tonight. Like, really nice.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.028"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're the most genuine person I know. No greenwashing.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.029"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You care about people. That's rare.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.030"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Wow. That was revolutionary.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.031"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Mmm. I feel like I could change the world right now.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.032"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "That was perfect. Sustainably perfect.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.033"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "I think I just forgot every cause I've ever had. For a second.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.034"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I missed you! The meeting was so boring without you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.035"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I kept thinking about you during the rally.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.036"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I wrote you a letter. On recycled paper.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.037"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I missed you so much. Every day without you feels like a setback.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.038"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "Who was that? I'm not jealous. Jealousy is a construct. I'm a little jealous.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.039"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I trust you. I just get insecure sometimes.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.040"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I want to be the one you share your passions with.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.041"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Tonight was amazing. Thank you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.042"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight! Bike home safe!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.043"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "I had the best time. Let's do this again soon.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.044"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight, {player}. You give me hope.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.045"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Thanks for tonight. I needed it.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.046"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I'm upset, and I need you to hear me.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.047"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "Let's talk about this. Calmly. Like adults.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.048"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I don't want to fight. I want to understand.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.049"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "You hurt me. But I believe we can fix this.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.050"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "Yes! Yes! Let's build a better world together!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.051"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "I'll marry you! Our wedding will be zero-waste!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "earnest_activist.dating.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, love! I made fair-trade coffee!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.001"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning! I already watered the garden. The tomatoes are thriving!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.002"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! Ready to change the world today?",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.003"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, love! I made oat milk lattes. Homemade oat milk!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.004"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! I read the news. There's so much to do. But first, breakfast.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.005"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, sleepyhead! The compost bin is full. Big win!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.006"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! I biked to the bakery for fresh bread!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.007"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, love! Let's make today count.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.008"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! I wrote three letters to the council before you woke up.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.009"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning! The bees are back in the garden! So exciting!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.010"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! I love waking up next to my favorite activist.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.011"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, love! Let's plan our week of volunteering!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.012"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home, love! Dinner's ready. All local ingredients!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.013"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home! I just got back from a meeting. We won!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.014"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, love! I made lentil soup. Want some?",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.015"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome back! The garden looks amazing tonight.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.016"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey! I've been making signs for the march tomorrow. Want to help?",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.017"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home! Let's take a walk around the neighborhood.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.018"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home! I lit the beeswax candles.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.019"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, love! How was your day? Did you make a difference?",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.020"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're back! I missed you. The house felt empty.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.021"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home! I started a new petition. You're my first signature.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.022"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home late. I waited up. Writing letters.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.023"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, love. Long day? Come rest.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.024"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "It's late. Come to bed. The revolution can wait until morning.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.025"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're back. I made chamomile tea from the garden.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.026"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey. I fell asleep reading a policy report.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.027"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Late night? Let's get some sleep.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.028"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are. I kept the porch light off. Light pollution.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.029"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, love. Let's just cuddle. No talking about issues.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.030"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a great day, love! Go change the world!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.031"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye! I packed you a zero-waste lunch!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.032"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a good day! Bike safe!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.033"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Go make a difference!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.034"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye, love! I'll be at the food bank this afternoon!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.035"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a great day! Remember to use your reusable cup!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.036"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye! I love you! Stay hopeful!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.037"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Go get 'em, love! You're amazing!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.038"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "How was work? Did you make a difference?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.039"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Tell me about your day! I want to hear everything!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.040"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You look tired, love. Was it hard?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.041"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Did your boss listen to your idea? They should.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.042"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "How'd it go? Any wins?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.043"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Rough day? Let's take a walk in the garden.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.044"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You're home now. Rest.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.045"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "I'm proud of you. You work so hard.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.046"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you more than I love the planet. Don't tell the planet.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.047"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my favorite cause.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.048"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Being married to you makes everything feel possible.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.049"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my partner in change. And in life.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.050"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'm so lucky to have someone who shares my values.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.051"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make me believe in a better world.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you so much it's revolutionary.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.053"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my home, love. My little ecosystem.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.054"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'd march to the ends of the earth for you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.055"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You keep me going when I'm burnt out.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.056"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love how much you care about people.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.057"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're the best thing that ever happened to me. And the planet's lucky too.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.058"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make me want to be a better person.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.059"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you more than our garden. And I love our garden.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.060"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my hope, love.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.061"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'm so proud to be married to someone who shows up.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.062"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my favorite person to change the world with.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.063"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you. More than anything.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.064"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I started a neighborhood composting program!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.065"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The council approved the bike lanes! We did it!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.066"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I planted a pollinator garden in the backyard!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.067"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been thinking about installing solar panels.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.068"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I organized a block party! For community building!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.069"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been learning to make my own soap!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.070"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The neighbors joined the composting program! All of them!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.071"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been writing a newsletter for the neighborhood!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.072"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a rain barrel! For the garden!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.073"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I started a little free library on our street!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.074"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been volunteering at the animal shelter!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.075"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been thinking about running for council. Seriously.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.076"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a list of local businesses to support!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.077"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I fixed the leaky faucet! Water conservation!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.078"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I started a community fridge downtown!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.079"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been learning about permaculture!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.080"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The kids next door asked me to help with their school project. On recycling!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.081"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been reading about tiny houses. Should we downsize?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.082"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a mural for the community center!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.083"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been trying to take more breaks. Self-care is activism too.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.084"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I organized a clothing drive at work!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.085"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I hung up our protest signs in the garage. Memories!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.086"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been thinking about adopting a rescue dog!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.087"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The garden produced so many zucchini! I'm giving them to the neighbors!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.088"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I signed us up for a climate workshop!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.089"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I'm so proud of our little home. It's sustainable!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.090"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I did the dishes! With eco-friendly soap!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.091"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I took out the compost! It's so full!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.092"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Could you sort the recycling? I'm making signs.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.093"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I washed the cloth napkins! No paper towels in this house!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.094"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I swept the porch! With a broom made from recycled materials!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.095"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I hung the laundry on the line! Solar-powered drying!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.096"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I cleaned the kitchen with vinegar! Non-toxic!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.097"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Let's do chores together! Teamwork!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.098"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I weeded the garden! The tomatoes can breathe!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.099"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I fixed the bike! Ready for the week!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.100"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I organized the pantry! Bulk bins only!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.101"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I cleaned out the gutters! Rain barrel's ready!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.102"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We're a little tight this month. But we're rich in community!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.103"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I made a budget! There's a line for donations!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.104"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We should save for solar panels!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.105"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I got a grant for my project! Some of it's for us!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.106"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Let's not buy anything new this month. Secondhand only!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.107"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I found a great thrift store! Saved us so much!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.108"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Money's tight, but our values aren't for sale.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.109"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I'm thinking about selling our extra veggies at the market!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.110"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We're doing okay. Simple living!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.111"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Let's give a little more this month. Someone needs it more.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.112"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Dinner's ready! Lentil curry! All plant-based!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.113"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made bread from scratch! Local flour!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.114"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's have a garden salad! Everything's from the backyard!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.115"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made veggie burgers! They're delicious, I promise!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.116"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Breakfast is oatmeal with local honey!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.117"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made soup from the garden zucchini!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.118"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's have a potluck with the neighbors!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.119"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made tacos! With beans and fresh salsa!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.120"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I baked muffins! With zucchini! Again!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.121"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Dinner's on the porch tonight!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.122"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You didn't recycle that! Again!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.123"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I feel like you don't care about the things I care about.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.124"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm not being preachy! I'm being passionate!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.125"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You said you'd come to the rally. You didn't come.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.126"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I know I'm busy. But it's for a good cause.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.127"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Can you please not buy plastic water bottles?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.128"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I feel like I'm always the one who has to care.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.129"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm burnt out, and I need you to understand that.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.130"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You never want to talk about the issues with me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.131"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I need you to support me. Not question me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.132"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm going to take a walk and cool off.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.133"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm not trying to change you. I just want you to care.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.134"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry, love. I got too intense.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.135"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's make up. In the garden.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.136"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I love you. I'm sorry I lectured you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.137"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I hate fighting with you. Let's talk.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.138"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry I was so busy. You're my priority.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.139"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "You're my partner. We'll figure this out.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.140"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's have a cup of tea and talk.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.141"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "We're a team. Always.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.142"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Hey, it's okay. Let's just rest.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.143"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You're doing great, love. Really.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.144"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I'm here. Always.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.145"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Whatever it is, we'll organize our way through it together.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.146"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You don't have to save the world today.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.147"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let's take a walk in the garden. It helps.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.148"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You're stronger than you think.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.149"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I've got you. No matter what.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.150"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let me make you some tea. From the garden.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.151"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You're my hero, love.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.152"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the climate march this weekend!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.153"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a camping trip? Leave no trace!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.154"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's volunteer at the food bank on Saturday!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.155"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the farmers market and cook together!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.156"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a trip to the national park?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.157"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's plant a tree together! For our anniversary!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.158"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the town hall meeting! Date night!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.159"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a bike ride to the lake?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.160"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's start a community project together!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.161"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's take a weekend off. No activism. Just us.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.162"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our first date? We picked up trash by the river.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.163"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we chained ourselves to the old oak? We saved it!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.164"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our wedding? Zero waste!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.165"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we met? At the town hall meeting!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.166"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our first protest together?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.167"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I still have the sign from our first march.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.168"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we planted our first garden?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.169"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our honeymoon? We volunteered at a turtle sanctuary!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.170"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when the council approved our proposal? We cried!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.171"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I remember the first time you said you believed in my petition. And me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.172"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary, love! Another year of changing the world!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.173"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I planted a tree for us! Happy anniversary!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.174"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary! You're my favorite cause!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.175"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Another year! Our love is sustainable!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.176"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I got you something. It's ethically sourced!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.177"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Here's to another year of hope!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.178"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You still can't sort the recycling correctly.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.179"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You bought a plastic bottle. I saw you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.180"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You fall asleep during documentaries.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.181"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You put the compost in the trash. Twice.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.182"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You hide your fast food wrappers.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.183"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You call my signs \"art projects\".",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.184"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You're secretly a big softie about the bees.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.185"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You sing protest songs in the shower.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.186"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You always forget your reusable bag.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.187"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You're more passionate than me sometimes. Don't deny it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.188"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You talk to the plants. They're thriving, so keep it up.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.189"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You say \"one more petition\" like I say \"one more chapter\".",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.190"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, love! Tomorrow we change the world!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.191"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come to bed. The revolution can wait.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.192"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight! I love you more than the planet!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.193"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sleep well, love. Rest is resistance.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.194"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, {player}. Tomorrow we try again, together.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.195"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Let's go to bed. Lights off, save energy!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.196"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight. Dream of a better world.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.197"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come cuddle. I'm cold. We turned the heat down.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.198"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, love. Thank you for today.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.199"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sleep tight. I love you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "earnest_activist.marriage.200"
+  }
+ ]
+}

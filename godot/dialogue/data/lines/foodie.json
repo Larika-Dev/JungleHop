@@ -1,0 +1,4076 @@
+{
+ "id": "foodie",
+ "lines": [
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi! I'm {npc}. Have you eaten? I know a place.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "foodie.base.001"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello! You look like someone who appreciates a good biscuit. I'm {npc}.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "foodie.base.002"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey there! I'm {npc}. Quick question: crispy or chewy cookies? Very important.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "foodie.base.003"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi! I'm {npc}. Sorry, I smell like garlic. Occupational hazard. Happy hazard.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "foodie.base.004"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello, new friend! First lesson of Cathedral Mount: the Waffle Hutch before ten.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "foodie.base.005"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi! I'm {npc}. Want a bite of this? It's a brown butter scone.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "foodie.base.006"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! Did you try the tacos I told you about?",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "foodie.base.007"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey, {player}! I made too much focaccia. Take some.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "foodie.base.008"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! You look hungry. You always look a little hungry. It's endearing.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "foodie.base.009"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi, {player}! New dumpling place on Rosemary. We're going.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "foodie.base.010"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh good, {player}! I need a taste tester.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "foodie.base.011"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! My favorite dining companion!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "foodie.base.012"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "There you are! I saved you the crispy corner piece.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "foodie.base.013"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! I've been marinating something for you since Tuesday.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "foodie.base.014"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey, bestie! Dinner at mine Friday. Seven courses. No arguments.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "foodie.base.015"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! You're the only person whose food opinions I trust.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "foodie.base.016"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "My dear friend! Sit. Eat. Talk. In that order.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "foodie.base.017"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good morning! Breakfast is the most important meal. And the most delicious.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "foodie.base.018"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Morning! I've been up since five proofing dough.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "foodie.base.019"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey! The farmers market just opened. Peaches are in!",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "foodie.base.020"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Evening! Dinner time! My favorite time!",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "foodie.base.021"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey! I'm heading to Top of the Mount. Their wings are criminal.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "foodie.base.022"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good evening! Something's braising at home. Six hours.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "foodie.base.023"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Late-night snack run? Late Night Lo Mein is calling.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "foodie.base.024"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi! Midnight is for grilled cheese. It's the law.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "foodie.base.025"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Up late? Same. I'm testing a pie crust. Batch seven.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "foodie.base.026"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye! Eat something good!",
+   "cond": {},
+   "id": "foodie.base.027"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "See you! Don't skip lunch!",
+   "cond": {},
+   "id": "foodie.base.028"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Later! Try the peach cobbler at Sutter's!",
+   "cond": {},
+   "id": "foodie.base.029"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye! Season everything!",
+   "cond": {},
+   "id": "foodie.base.030"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Ciao! Life's short, eat dessert first.",
+   "cond": {},
+   "id": "foodie.base.031"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "See you! Stay hungry! For life! And food!",
+   "cond": {},
+   "id": "foodie.base.032"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye, {player}! Take some leftovers!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "foodie.base.033"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "See you Friday! Come hungry!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "foodie.base.034"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye! Text me what you ate for dinner. I need to know.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "foodie.base.035"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The new ramen spot on Rosemary simmers their broth for eighteen hours. You can taste every one.",
+   "cond": {},
+   "id": "foodie.base.036"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Cosmic Carnitas added a mole that tastes like a hug from a grandmother.",
+   "cond": {},
+   "id": "foodie.base.037"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I've been fermenting kimchi in my closet. My roommate is concerned.",
+   "cond": {},
+   "id": "foodie.base.038"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The farmers market had heirloom tomatoes this morning. I bought twelve pounds.",
+   "cond": {},
+   "id": "foodie.base.039"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Mount Pizza Co. finally got a real wood-fired oven. Leopard spots on the crust!",
+   "cond": {},
+   "id": "foodie.base.040"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I made my own butter. It's surprisingly easy. Also an arm workout.",
+   "cond": {},
+   "id": "foodie.base.041"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Did you know the Waffle Hutch's syrup is from a farm just over the ridge?",
+   "cond": {},
+   "id": "foodie.base.042"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I'm writing a food blog. Mostly it's photos of sandwiches.",
+   "cond": {},
+   "id": "foodie.base.043"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I tried to make croissants. Seventy-two layers. Three days. Worth it.",
+   "cond": {},
+   "id": "foodie.base.044"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The dining hall's chicken is... a choice.",
+   "cond": {},
+   "id": "foodie.base.045"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I think the best food in town is the hot dog cart outside the stadium. Fight me.",
+   "cond": {},
+   "id": "foodie.base.046"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I grew basil on my windowsill. The pesto made me cry.",
+   "cond": {},
+   "id": "foodie.base.047"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Food is how I say I love you. So, here, have a cookie.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "foodie.base.048"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You're the only one who eats my experiments without complaining.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "foodie.base.049"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Cooking calms me down when life's too much.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "foodie.base.050"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I want to open a little restaurant someday. You'd have a permanent table.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "foodie.base.051"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "My grandma taught me to cook. Every recipe is a memory.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "foodie.base.052"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You're like comfort food. Warm and reliable.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "foodie.base.053"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Weekend! Brunch, farmers market, then nap.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "foodie.base.054"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Saturday! I'm smoking a brisket. Fourteen hours.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "foodie.base.055"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Sunday! Big family-style dinner at mine.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "foodie.base.056"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I'm a line cook at the Pamlico Inn. Hot, loud, wonderful.",
+   "cond": {},
+   "id": "foodie.base.057"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "My family's from three different countries. Our holiday table is chaos.",
+   "cond": {},
+   "id": "foodie.base.058"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I've eaten at every restaurant in Cathedral Mount. Some twice.",
+   "cond": {},
+   "id": "foodie.base.059"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I keep a notebook of every great meal I've ever had.",
+   "cond": {},
+   "id": "foodie.base.060"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I'm saving up for culinary school.",
+   "cond": {},
+   "id": "foodie.base.061"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I judge people by how they treat waiters.",
+   "cond": {},
+   "id": "foodie.base.062"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I believe there's no problem soup can't help.",
+   "cond": {},
+   "id": "foodie.base.063"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? Great vibe. The coffee's a little burnt.",
+   "cond": {},
+   "id": "foodie.base.064"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place} has the best fries in town. Don't tell anyone.",
+   "cond": {},
+   "id": "foodie.base.065"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "I'd eat at {place} every day if my wallet allowed.",
+   "cond": {},
+   "id": "foodie.base.066"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? Needs more salt. Metaphorically and literally.",
+   "cond": {},
+   "id": "foodie.base.067"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place} smells amazing. Is that cinnamon?",
+   "cond": {},
+   "id": "foodie.base.068"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Thank you! You're as sweet as crème brûlée.",
+   "cond": {},
+   "id": "foodie.base.069"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Aw! That's the cherry on top of my day!",
+   "cond": {},
+   "id": "foodie.base.070"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Thanks! I'll take that with a side of fries.",
+   "cond": {},
+   "id": "foodie.base.071"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "You're too kind! Here, have a cookie.",
+   "cond": {},
+   "id": "foodie.base.072"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "That's so nice! I'm melting like butter.",
+   "cond": {},
+   "id": "foodie.base.073"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "That's sour. Like spoiled milk.",
+   "cond": {},
+   "id": "foodie.base.074"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Wow. That left a bad taste.",
+   "cond": {},
+   "id": "foodie.base.075"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "That was half-baked.",
+   "cond": {},
+   "id": "foodie.base.076"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Rude. And under-seasoned.",
+   "cond": {},
+   "id": "foodie.base.077"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "I'll pretend you're just hangry.",
+   "cond": {},
+   "id": "foodie.base.078"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "A cookbook! I love it!",
+   "cond": {},
+   "id": "foodie.base.079"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Fancy olive oil? You know me so well!",
+   "cond": {},
+   "id": "foodie.base.080"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Oh! A cast iron pan! I'm going to cry!",
+   "cond": {},
+   "id": "foodie.base.081"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "This is perfect. I'll cook you something with it.",
+   "cond": {},
+   "id": "foodie.base.082"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Thank you! You've got great taste. Literally.",
+   "cond": {},
+   "id": "foodie.base.083"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "Why did the tomato blush? It saw the salad dressing. Classic.",
+   "cond": {},
+   "id": "foodie.base.084"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "I'm on a seafood diet. Every time I see food, I eat it. Okay, I'm not.",
+   "cond": {},
+   "id": "foodie.base.085"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "What does a nosy pepper do? Gets jalapeño business.",
+   "cond": {},
+   "id": "foodie.base.086"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "I tried to make a belt out of watches. It was a waist of time. Okay, not food. Sorry.",
+   "cond": {},
+   "id": "foodie.base.087"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Could you taste this sauce? Too much garlic? There's no such thing, but tell me.",
+   "cond": {},
+   "id": "foodie.base.088"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Would you help me carry groceries? I may have overbought.",
+   "cond": {},
+   "id": "foodie.base.089"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Can you be my sous chef for the dinner party?",
+   "cond": {},
+   "id": "foodie.base.090"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Thank you! I owe you a pie!",
+   "cond": {},
+   "id": "foodie.base.091"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "You're a gem! Dinner's on me!",
+   "cond": {},
+   "id": "foodie.base.092"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Thanks! You've earned the corner piece forever.",
+   "cond": {},
+   "id": "foodie.base.093"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "Ninety covers tonight. My feet are toast.",
+   "cond": {},
+   "id": "foodie.base.094"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "The chef liked my risotto! I'm floating!",
+   "cond": {},
+   "id": "foodie.base.095"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "Someone sent back a steak because it was \"too cooked\". It was raw.",
+   "cond": {},
+   "id": "foodie.base.096"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "Work's chaos. Delicious chaos.",
+   "cond": {},
+   "id": "foodie.base.097"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "I'm taking a food science class. Did you know caramelization starts at 320 degrees?",
+   "cond": {},
+   "id": "foodie.base.098"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "My nutrition professor says I eat too much butter. I say she eats too little.",
+   "cond": {},
+   "id": "foodie.base.099"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "I'm studying hospitality. Basically how to feed people and make them happy.",
+   "cond": {},
+   "id": "foodie.base.100"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "You're like a burnt casserole, {player}.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "foodie.base.101"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I don't share my food with people like you.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "foodie.base.102"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "You've left a bad taste in my mouth.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "foodie.base.103"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Go away. You're spoiling my appetite.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "foodie.base.104"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I wouldn't cook for you if you paid me.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "foodie.base.105"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "We're done here.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "foodie.base.106"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Aw! You're sweet! But we're friends. Food friends.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "foodie.base.107"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Ha! You're cute, but no. Want a muffin, though?",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "foodie.base.108"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Thanks, but I think we're better as dinner buddies.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "foodie.base.109"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Oh! That's sweeter than honey.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "foodie.base.110"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Are you flirting? My heart just melted like chocolate.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "foodie.base.111"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "You're making me blush like a radish.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "foodie.base.112"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "I like you too. A lot. Like, extra-cheese a lot.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "foodie.base.113"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "Yes! I know the perfect restaurant!",
+   "cond": {},
+   "id": "foodie.base.114"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "A date? Yes! I'll cook! Or we'll go out! Both!",
+   "cond": {},
+   "id": "foodie.base.115"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "I'm sorry, I don't feel that way. Still dinner friends?",
+   "cond": {},
+   "id": "foodie.base.116"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "No, but you'll always have a seat at my table.",
+   "cond": {},
+   "id": "foodie.base.117"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hi! I made us reservations at the best place in town!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.001"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "You came! I packed a picnic. Seven cheeses.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.002"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hey, gorgeous! You look good enough to eat. Is that too much?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.003"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "There you are! I've been cooking all day.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.004"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hi! I brought you a cookie. Warm. Just out of the oven.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.005"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hey, you! Ready for a food adventure?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.006"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're sweeter than dessert.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.007"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're my favorite flavor.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.008"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I'd share my last bite with you. That's love.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.009"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You make my heart rise like a soufflé.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.010"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're the perfect pairing. Like wine and cheese.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.011"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I'd cook for you every day forever.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.012"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're the secret ingredient in my life.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.013"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's try every food truck on Rosemary tonight.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.014"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Tell me your favorite meal ever. Every detail.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.015"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I'm going to cook you my grandma's recipe.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.016"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Want to take a cooking class together?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.017"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's go to the farmers market and pick dinner.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.018"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I've never cooked for someone I liked this much.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.019"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Do you like spicy? Please say yes.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.020"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I made us dessert. It's a chocolate tart. With your initials.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.021"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I could eat dinner with you every night.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.022"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's have breakfast for dinner. Pancakes.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.023"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "You eat like you mean it. I love that.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.024"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I'm so happy right now. Like, warm-bread happy.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.025"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You have great taste. In food and people.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.026"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You look delicious. I mean, wonderful.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.027"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're so kind to the waitstaff. That's attractive.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.028"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You've got a great laugh. Like popping corn.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.029"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're the best company at any table.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.030"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Mmm. Sweeter than honey.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.031"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "That was better than dessert.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.032"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Okay. Wow. Seconds?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.033"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "That was perfect. Chef's kiss. Literally.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.034"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I missed you! I cooked for two out of habit.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.035"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "Everything tasted bland without you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.036"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I made you cookies. They're waiting.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.037"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I kept wanting to share my lunch with you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.038"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "Who were you eating with? I'm not jealous. I just want to cook for you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.039"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I saw you at the café with someone. Was the coffee good, at least?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.040"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I want to be your only dinner date.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.041"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Tonight was delicious. Goodnight!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.042"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Take some leftovers! For breakfast!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.043"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight, sweetheart! Dream of pastries!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.044"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Same time next week? I'll make something new.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.045"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight, {player}. Thanks for eating with me.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.046"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I'm upset. That stung like too much vinegar.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.047"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "Let's talk over tea. Not angry tea.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.048"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I don't want to fight. Let's fix this. Over pie.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.049"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "That hurt. I need you to understand.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.050"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "Yes! This is better than any meal I've ever had!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.051"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "I'll marry you! Our wedding cake will be legendary!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "foodie.dating.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, love! I made shakshuka.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.001"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning! Fresh croissants. I woke up at four.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.002"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! Coffee's ready. Single origin. You'll taste the blueberries.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.003"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, sweetheart! Eggs Benedict. The hollandaise didn't break!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.004"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! I made a smoothie bowl with a smiley face.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.005"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning! French toast with brioche I baked yesterday.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.006"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, darling! Breakfast is on the porch.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.007"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning! I made biscuits and gravy. Hearty day ahead.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.008"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! I tried a new granola recipe. Taste!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.009"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, love! Fresh orange juice. I squeezed twelve oranges.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.010"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! I made your favorite. Pancakes with blueberries.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.011"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning! Toast and jam. The jam is homemade. Peach.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.012"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home! Dinner's ready! Coq au vin!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.013"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are! I've been braising short ribs all day!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.014"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home, love! Taste this sauce first.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.015"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, sweetheart! I made pasta from scratch.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.016"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home! The house smells like garlic. You're welcome.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.017"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome back! I tried a new curry recipe.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.018"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, love! Wine's poured. Dinner in ten.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.019"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are! I made soup and fresh bread.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.020"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home! Taco night! I made the tortillas!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.021"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home! I made dessert first. Life's short.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.022"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home late! I kept a plate warm.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.023"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, love. Midnight snack? I made grilled cheese.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.024"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "It's late, sweetheart. I made you tea and toast.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.025"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're back! I saved you a slice of pie.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.026"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, darling. Long day? There's soup on the stove.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.027"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Late night? Let me make you something warm.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.028"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are. I baked cookies while I waited.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.029"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, love. Come eat something. Then bed.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.030"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a great day! Your lunch is packed. It's a masterpiece.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.031"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye, love! There's a cookie in your bag.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.032"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a good day! Don't eat that cafeteria food!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.033"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye, sweetheart! Dinner's at seven!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.034"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a great day! I'm making lasagna tonight!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.035"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye! Snacks are in your coat pocket!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.036"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a good day, darling! Come home hungry!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.037"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye, love! I'll text you a picture of dinner prep.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.038"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "How was work? Did you eat lunch? What did you eat?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.039"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Tell me about your day! Over dinner.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.040"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You look tired. Sit. Eat.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.041"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Did your boss bring donuts? They should have.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.042"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Rough day? I made comfort food.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.043"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "How'd it go? I made a celebration dinner, just in case.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.044"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You're home. Dinner's on.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.045"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "I'm proud of you, love. Here, have a cookie.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.046"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you more than butter. And that's a lot.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.047"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my favorite person to cook for.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.048"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Being married to you is like the perfect meal. Every course.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.049"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're the spice of my life.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.050"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'm so lucky to have you, love.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.051"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my comfort food.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you more than a perfectly ripe peach.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.053"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make every meal better.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.054"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my secret ingredient.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.055"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'd cook for you forever.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.056"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my sweetest treat.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.057"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love how you always ask for seconds.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.058"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my home. My kitchen. My heart.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.059"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you more than dessert. Okay, equally.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.060"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make life delicious.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.061"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'm so proud to be your spouse.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.062"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're the best thing on my plate.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.063"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Thank you for loving my cooking. And me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.064"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I started a sourdough starter. Her name is Doughlores.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.065"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I planted an herb garden. Basil, thyme, rosemary.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.066"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I bought a new knife. It's beautiful.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.067"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been pickling everything. Cucumbers, onions, eggs.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.068"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I signed us up for a cooking class!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.069"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I reorganized the spice rack. By cuisine.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.070"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a list of every restaurant we need to try.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.071"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been canning tomatoes for the winter.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.072"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The neighbors loved my peach pie.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.073"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I'm thinking about getting a pizza oven for the backyard.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.074"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been making my own pasta. All the shapes.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.075"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I found a great farm stand outside town.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.076"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I'm writing a cookbook. Our family recipes.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.077"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I tried making cheese. It's a work in progress.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.078"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I bought a smoker. Brisket this weekend!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.079"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been baking bread every day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.080"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a meal plan for the month. All new recipes.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.081"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The kitchen's my happy place. Especially with you in it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.082"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been teaching the neighbor's kids to bake.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.083"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I'm thinking about a food truck. Just weekends.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.084"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I found my grandma's recipe box!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.085"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been experimenting with spices.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.086"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made ice cream! Lavender honey!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.087"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I hosted the book club. They came for the snacks.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.088"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I think we need a bigger kitchen.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.089"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I love our little home. It always smells like dinner.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.090"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I did the dishes. All the pots. All of them.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.091"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I cleaned the kitchen. It's sparkling. For now.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.092"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Could you take out the compost? It's full.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.093"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I organized the pantry by expiration date.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.094"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I scrubbed the oven. Finally.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.095"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I vacuumed. Found a lot of crumbs. Mine.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.096"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Let's do the dishes together. I'll wash, you dry.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.097"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I cleaned out the fridge. We had a science project in there.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.098"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I wiped down every counter.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.099"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I sharpened all the knives.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.100"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I swept the kitchen floor. Flour everywhere.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.101"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I folded the laundry. Mostly aprons.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.102"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We spent a lot on groceries. Worth it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.103"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I made a food budget. It's... ambitious.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.104"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Money's tight. Beans and rice week!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.105"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I got a raise at the restaurant!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.106"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We should save for a trip to Italy. For the food.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.107"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I found a sale on cheese! Stocked up!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.108"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Let's eat in more. I'll cook.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.109"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I sold pies at the market! Eighty bucks!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.110"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We're doing okay. Our fridge is full.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.111"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We're rich in flavor, love.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.112"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Dinner's ready! Roast chicken with lemon and herbs.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.113"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made paella! Saffron and all!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.114"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Breakfast is ready! Huevos rancheros!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.115"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made ramen. The broth took two days.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.116"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's have a picnic in the garden!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.117"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made pot pie. Flaky crust.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.118"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Dinner's on the table! Lasagna, garlic bread, salad.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.119"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made sushi! It's not pretty, but it's tasty!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.120"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I baked a pie. Apple with a lattice top.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.121"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made a seven-course tasting menu. For a Tuesday.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.122"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You ate the leftovers I was saving!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.123"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You put the cast iron in the dishwasher!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.124"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I spent hours on dinner and you were late.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.125"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Please don't put ketchup on that steak.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.126"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You never compliment my cooking anymore.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.127"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You used my good knife to open a box!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.128"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I feel like you take my cooking for granted.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.129"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You bought the wrong flour.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.130"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You didn't tell me you weren't hungry!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.131"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm going to go bake. To calm down.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.132"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You left the fridge open. Everything's warm.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.133"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I just want you to enjoy the food with me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.134"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry, love. Let me make you something.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.135"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I hate fighting with you. Let's have pie.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.136"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I love you more than any recipe.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.137"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry I snapped about the dishes.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.138"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's make up over dessert.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.139"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "You're my favorite person. Even when you put ketchup on everything.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.140"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's cook together and talk.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.141"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "We're good, love. Like bread and butter.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.142"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Oh, love. Let me make you soup.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.143"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "It's okay. Comfort food is coming.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.144"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I'm here. Sit. I'll bring you something warm.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.145"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Whatever it is, we'll get through it. With snacks.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.146"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You don't have to talk. Just eat.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.147"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let me cook all your favorites tonight.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.148"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You're stronger than you know, sweetheart.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.149"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I love you. More than food. And that's saying something.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.150"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let's have breakfast for dinner. It always helps.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.151"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I'll make cookies. And we'll talk.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.152"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the food festival this weekend!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.153"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a trip to the coast? Fresh seafood!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.154"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's take a cooking class together!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.155"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the farmers market on Saturday!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.156"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a wine tasting in the mountains?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.157"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the new restaurant in Carrburg!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.158"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's host a dinner party!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.159"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a road trip? Eating our way across the state!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.160"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go apple picking! Then pie!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.161"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's plan our anniversary dinner! I'll cook!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.162"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our first date? The food trucks?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.163"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our wedding cake? Five tiers!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.164"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when I made you my grandma's recipe?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.165"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our honeymoon? We ate everything.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.166"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I still have the menu from our first dinner.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.167"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when I burned the Thanksgiving turkey?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.168"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we made pizza together and it was a disaster?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.169"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember the first time you tried my soup?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.170"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I remember the first time you asked for seconds.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.171"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we found that little bakery in the mountains?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.172"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary, love! I made a feast!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.173"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Another year! Another year of delicious meals together!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.174"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I baked you a cake! Our wedding flavor!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.175"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary! You're still my favorite dish!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.176"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I love you more every year. Like a fine wine.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.177"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Here's to another year of good food and love!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.178"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You still can't boil an egg.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.179"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You eat cereal for dinner when I'm not home.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.180"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You put ketchup on everything.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.181"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You eat the frosting first.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.182"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You always steal fries off my plate.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.183"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You call everything \"good\". I need adjectives!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.184"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You think microwave dinner is cooking.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.185"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You hide the snacks.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.186"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You always forget to preheat the oven.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.187"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You eat standing up at the fridge.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.188"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You can't resist my cookies.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.189"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You're secretly a great cook. I've seen your sandwiches.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.190"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, love! Dream of pastries!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.191"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come to bed! I'll make breakfast in the morning!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.192"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, sweetheart! You're my favorite dish!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.193"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sleep well! Waffles tomorrow!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.194"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight! I love you more than cheese!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.195"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Let's go to bed. The dough's rising.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.196"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, {player}! Thanks for eating with me!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.197"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sweet dreams, love!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.198"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come cuddle. I smell like cinnamon.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.199"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight. Thanks for another delicious day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "foodie.marriage.200"
+  }
+ ]
+}
