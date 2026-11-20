@@ -24,14 +24,17 @@ func build(p: Dictionary) -> void:
 	_parts.clear()
 	_height = clampf(float(p.get("height_cm", 175)) / 100.0, 1.4, 2.1)
 	var female: bool = p.get("sex", "male") == "female"
-	var bw := lerpf(0.85, 1.25, float(p.get("build", 0.5)))
+	var bw := lerpf(0.85, 1.3, float(p.get("build", 0.5)))
+	var mus := 1.0 + (float(p.get("muscle", 4)) - 4.0) * 0.045   # broader shoulders and limbs
 	var s := _height / 1.75
 	var skin := _mat(SKIN_TONES[clampi(int(p.get("skin", 2)), 0, SKIN_TONES.size() - 1)], 0.6)
 	var shirt := _mat(CLOTH_COLORS[clampi(int(p.get("shirt_color", 0)), 0, CLOTH_COLORS.size() - 1)], 0.9)
 	var pants := _mat(CLOTH_COLORS[clampi(int(p.get("pants_color", 3)), 0, CLOTH_COLORS.size() - 1)], 0.9)
-	var hair := _mat(HAIR_COLORS[clampi(int(p.get("hair_color", 1)), 0, HAIR_COLORS.size() - 1)], 0.7)
+	var hc: Color = HAIR_COLORS[clampi(int(p.get("hair_color", 1)), 0, HAIR_COLORS.size() - 1)]
+	hc = hc.lerp(Color("#B8B8B4"), clampf((float(p.get("age", 20)) - 45.0) / 30.0, 0.0, 0.8))
+	var hair := _mat(hc, 0.7)
 	var shoes := _mat(Color("#18191A"), 0.5)
-	var shoulder := (0.22 if not female else 0.19) * bw * s
+	var shoulder := (0.22 if not female else 0.19) * lerpf(bw, mus, 0.5) * s
 	var hip := (0.16 if not female else 0.18) * bw * s
 	var leg_len := 0.86 * s
 	var torso_len := 0.56 * s
@@ -41,7 +44,7 @@ func build(p: Dictionary) -> void:
 		leg.position = Vector3(side * hip * 0.55, leg_len + 0.04 * s, 0)
 		add_child(leg)
 		leg.add_child(_capsule(0.075 * bw * s, leg_len * 0.55, Vector3(0, -leg_len * 0.27, 0), pants))
-		leg.add_child(_capsule(0.06 * bw * s, leg_len * 0.52, Vector3(0, -leg_len * 0.73, 0), pants))
+		leg.add_child(_capsule(0.06 * bw * mus * s, leg_len * 0.52, Vector3(0, -leg_len * 0.73, 0), pants))
 		leg.add_child(_box(Vector3(0.1, 0.07, 0.26) * s, Vector3(0, -leg_len - 0.005, -0.05 * s), shoes))
 		_parts["leg_%d" % side] = leg
 	# torso
@@ -68,8 +71,8 @@ func build(p: Dictionary) -> void:
 		var arm := Node3D.new()
 		arm.position = Vector3(side * (shoulder + 0.03 * s), leg_len + torso_len * 0.95, 0)
 		add_child(arm)
-		arm.add_child(_capsule(0.05 * bw * s, 0.3 * s, Vector3(0, -0.15 * s, 0), shirt))
-		arm.add_child(_capsule(0.042 * bw * s, 0.28 * s, Vector3(0, -0.43 * s, 0), skin))
+		arm.add_child(_capsule(0.05 * bw * mus * s, 0.3 * s, Vector3(0, -0.15 * s, 0), shirt))
+		arm.add_child(_capsule(0.042 * bw * mus * s, 0.28 * s, Vector3(0, -0.43 * s, 0), skin))
 		arm.add_child(_sphere(0.045 * s, Vector3(0, -0.6 * s, 0), skin))
 		_parts["arm_%d" % side] = arm
 	set_first_person(_first_person)
@@ -110,6 +113,18 @@ func set_first_person(fp: bool) -> void:
 			mi.visible = true
 
 
+func hip_height_standing() -> float:
+	return 0.9 * (_height / 1.75)
+
+
+func hip_height_sitting() -> float:
+	return hip_height_standing() - 0.42 * (_height / 1.75)
+
+
+func hip_to_eye() -> float:
+	return _height - 0.1 - hip_height_standing()
+
+
 func set_pose(pose: String) -> void:
 	_pose = pose
 	if _parts.is_empty():
@@ -118,7 +133,12 @@ func set_pose(pose: String) -> void:
 	for side in [-1, 1]:
 		_parts["leg_%d" % side].rotation.x = deg_to_rad(90) if sit else 0.0
 		_parts["arm_%d" % side].rotation.x = deg_to_rad(20) if sit else 0.0
-	position.y = -0.42 * (_height / 1.75) if sit else 0.0
+	position = Vector3(0, -0.42 * (_height / 1.75), 0) if sit else Vector3.ZERO
+	basis = Basis.IDENTITY
+	if pose == "lie":
+		# body along -Z (head toward -Z), hips at the origin, lying on the back
+		basis = Basis(Vector3(-1, 0, 0), Vector3(0, 0, -1), Vector3(0, -1, 0))
+		position = Vector3(0, 0.12, hip_height_standing())
 
 
 func animate(speed: float, delta: float) -> void:

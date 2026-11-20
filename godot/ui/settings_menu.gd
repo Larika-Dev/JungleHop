@@ -6,7 +6,6 @@ var _bind_buttons := {}
 
 
 func _ready() -> void:
-	set_anchors_preset(Control.PRESET_CENTER)
 	custom_minimum_size = Vector2(900, 640)
 	var v := VBoxContainer.new()
 	v.add_theme_constant_override("separation", 12)
@@ -29,7 +28,7 @@ func _ready() -> void:
 	back.pressed.connect(on_back)
 	row.add_child(back)
 	await get_tree().process_frame
-	position = -size * 0.5
+	UI.center(self)
 	back.grab_focus()
 
 
