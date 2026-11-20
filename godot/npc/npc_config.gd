@@ -28,7 +28,7 @@ const STREAM_INTERVAL := 0.2       # seconds between streaming passes
 # muscle deformation; only the nearest LOD0_BUDGET NPCs may use it at once.
 const LOD0_DISTANCE := 12.0
 const LOD1_DISTANCE := 40.0
-const LOD0_BUDGET := 8
+const LOD0_BUDGET := 6
 
 # Time: one in-game hour is one real minute.
 const REAL_SECONDS_PER_GAME_HOUR := 60.0

@@ -18,10 +18,10 @@
 class_name NpcBodyMesh
 extends RefCounted
 
-const VERSION := 5
+const VERSION := 6
 const SHAPES := ["fat", "slim", "muscle", "calf_flex_L", "calf_flex_R", "quad_flex_L", "quad_flex_R", "glute_flex_L", "glute_flex_R"]
 const FLEX_FIRST := 3                 # shapes from this index on are muscle flex
-const LOD_SPACING := [0.007, 0.02, 0.05]   # target vertex spacing in meters
+const LOD_SPACING := [0.005, 0.02, 0.05]   # target vertex spacing in meters
 const LOD_HEAD_SPACING := [0.004, 0.014, 0.04]
 const REF_HEIGHT := {"male": 1.753, "female": 1.613}
 
@@ -31,7 +31,7 @@ const BONES := ["root", "pelvis", "spine", "chest", "neck", "head",
 const PARENT := [-1, 0, 1, 2, 3, 4, 1, 6, 7, 1, 9, 10, 3, 12, 13, 3, 15, 16]
 enum { B_ROOT, B_PELVIS, B_SPINE, B_CHEST, B_NECK, B_HEAD, B_THIGH_L, B_SHIN_L, B_FOOT_L, B_THIGH_R, B_SHIN_R, B_FOOT_R,
 	B_UPPERARM_L, B_FOREARM_L, B_HAND_L, B_UPPERARM_R, B_FOREARM_R, B_HAND_R }
-enum { P_TORSO, P_LEG, P_ARM, P_HEAD, P_FOOT, P_HAND, P_NECK }
+enum { P_TORSO, P_LEG, P_ARM, P_HEAD, P_FOOT, P_HAND, P_NECK, P_FINGER }
 
 # Joint heights as a fraction of standing height.
 const Y_ANKLE := 0.039
@@ -58,6 +58,11 @@ const TORSO := {
 }
 const ARM := [[0.822, 0.022, 0.024], [0.81, 0.029, 0.029], [0.795, 0.031, 0.030], [0.76, 0.027, 0.028], [0.71, 0.024, 0.026], [0.665, 0.021, 0.021],
 	[0.63, 0.020, 0.021], [0.60, 0.022, 0.020], [0.55, 0.019, 0.016], [0.50, 0.015, 0.012], [0.485, 0.014, 0.010]]
+# Palm only (LOD0/1, fingers are separate): wrist to knuckles.
+const PALM := [[0.487, 0.0085, 0.016], [0.47, 0.009, 0.022], [0.445, 0.0085, 0.0235], [0.428, 0.0075, 0.0225], [0.422, 0.005, 0.018]]
+# Fingers: [name, z offset across the palm, length, base radius], fraction of H.
+const FINGERS := [["index", -0.0155, 0.040, 0.0052], ["middle", -0.0052, 0.045, 0.0054], ["ring", 0.0052, 0.042, 0.0050], ["little", 0.0150, 0.033, 0.0044]]
+# Mitten hand for the far LOD.
 const HAND := [[0.487, 0.0085, 0.016], [0.47, 0.009, 0.022], [0.43, 0.008, 0.024], [0.415, 0.007, 0.022], [0.39, 0.0055, 0.018], [0.38, 0.003, 0.008]]
 # Head [y, half width, half depth, center z].
 const HEAD := [[0.862, 0.010, 0.012, -0.024], [0.866, 0.020, 0.026, -0.020], [0.874, 0.028, 0.036, -0.014], [0.888, 0.034, 0.044, -0.008], [0.905, 0.038, 0.049, -0.004],
@@ -416,7 +421,55 @@ func _build_hand(side: int, sp: float) -> void:
 		return Vector3(side * (x0 + 0.003 * s + c * r), yf, sn * r) * h
 	var weights := func(_p: Vector3) -> Array:
 		return _w2(B_HAND_L if side < 0 else B_HAND_R, 0, 1.0)
-	_tube(P_HAND, rings, segs, eval, [0, 1], weights, Vector3.UP, side)
+	if lod == 2:
+		_tube(P_HAND, rings, segs, eval, [0, 1], weights, Vector3.UP, side)
+		return
+	# Palm, then four fingers and a thumb, each with knuckle and nail detail.
+	var palm := func(s: float, t: float, k: int) -> Vector3:
+		var yf := lerpf(y0, 0.422, s)
+		var r2 := _table2(PALM, yf)
+		var f := (0.9 if fem else 1.0) * (1.08 if k == 1 else 1.0)
+		var th := t * TAU
+		var c := cos(th)
+		var sn := sin(th)
+		var r := 1.0 / sqrt((c / (r2.x * f)) * (c / (r2.x * f)) + (sn / (r2.y * f)) * (sn / (r2.y * f)))
+		return Vector3(side * (x0 + 0.002 * s + c * r), yf, sn * r) * h
+	_tube(P_HAND, maxi(4, ceili((y0 - 0.422) * h / sp)), segs, palm, [0, 1], weights, Vector3.UP, side)
+	var fs := 0.9 if fem else 1.0
+	for fg in FINGERS:
+		var zf: float = fg[1] * fs
+		var fl: float = fg[2] * fs
+		var fr: float = fg[3] * fs
+		var base := Vector3(x0 + 0.002, 0.428, zf)
+		var dir := Vector3(-0.08, -1.0, zf * 0.6).normalized()   # slight curl toward the palm, slight spread
+		_finger(side, base, dir, fl, fr, sp, weights)
+	# Thumb: from the base of the palm, forward and down.
+	_finger(side, Vector3(x0 - 0.004, 0.468, -0.018 * fs), Vector3(-0.25, -0.62, -0.74).normalized(), 0.050 * fs, 0.0068 * fs, sp, weights)
+
+
+## One finger: a tapered tube with knuckle swellings and a flattened nail side.
+## Weighted to the hand bone (fingers keep a relaxed pose; no per-finger bones).
+func _finger(side: int, base: Vector3, dir: Vector3, length: float, r0: float, sp: float, weights: Callable) -> void:
+	var lateral := Vector3(1, 0, 0)
+	var u := (lateral - dir * lateral.dot(dir)).normalized()   # back of the finger (nail side)
+	var v := dir.cross(u).normalized()
+	var rings := maxi(6, ceili(length * h / sp) + 2)
+	var segs := _even(maxi(8, ceili(TAU * r0 * h / sp)))
+	var eval := func(s: float, t: float, k: int) -> Vector3:
+		var th := t * TAU
+		var r := r0 * lerpf(1.0, 0.78, s)
+		r *= 1.0 + 0.09 * exp(-pow((s - 0.38) / 0.06, 2.0)) + 0.07 * exp(-pow((s - 0.7) / 0.05, 2.0))   # knuckles
+		if s > 0.86:
+			r *= sqrt(maxf(0.0, 1.0 - pow((s - 0.86) / 0.14, 2.0))) * 0.85 + 0.15   # rounded tip
+		if k == 1: r *= 1.08
+		var c := cos(th)
+		var sn := sin(th)
+		var ry := r * (0.82 if c > 0.0 else 1.0)   # nail side flatter
+		var off := (u * c * ry + v * sn * r)
+		var bend := s * s * 0.012                   # gentle curl along the length
+		var p := base + dir * (s * length) - u * bend + off
+		return Vector3(side * p.x, p.y, p.z) * h
+	_tube(P_FINGER, rings, segs, eval, [0, 1], weights, -Vector3.UP, side)
 
 
 func _build_foot(side: int, sp: float) -> void:

@@ -34,7 +34,7 @@ without anyone leaving the bounds. Verified on the 4,000: men 89.9%, women 90.0%
 
 ## Body detail: what is real and what is not
 
-* Close-up body (LOD0): about 63,000 vertices, roughly 7 mm apart on the legs
+* Close-up body (LOD0): about 120,000 vertices, roughly 5 mm apart on the body
   and 4 mm on the face. Muscles are modeled as shapes in the surface:
   gastrocnemius (two heads), soleus, Achilles hollows, tibia, patella, vastus
   medialis/lateralis, rectus femoris, hamstrings, glutes, pecs, deltoids,
@@ -46,9 +46,10 @@ without anyone leaving the bounds. Verified on the 4,000: men 89.9%, women 90.0%
   shader adds 1 mm pore and weave detail up close. Geometry at 1 mm everywhere
   would be millions of triangles per person, which no PC can draw for 100
   people, so it is not done.
-* Budget: only the nearest 8 NPCs within 12 m use LOD0; up to 40 m use LOD1
+* Budget: only the nearest 6 NPCs within 12 m use LOD0; up to 40 m use LOD1
   (7,000 vertices, still flexing); the rest use LOD2 (1,300 vertices).
-* Not modeled: separate fingers, hair strands, faces with expressions, cloth
+* Hands: palm, four fingers and a thumb with knuckles and nails (LOD0/1; far LOD uses a mitten). Fingers hold a relaxed pose (no finger bones).
+* Not modeled: toes (shoes are always on), hair strands, faces with expressions, cloth
   simulation. Hair, eyes, lips and clothing are painted by the shader.
 
 ## API (`NPCs` autoload)

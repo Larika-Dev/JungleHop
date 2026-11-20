@@ -49,6 +49,7 @@ func _init() -> void:
 		["lineup", Vector3(0, 1.0, 5.2), Vector3(0, 0.85, 0)],
 		["calves_side", Vector3(-1.6 - 1.1, 0.35, 0.0), Vector3(-1.6, 0.3, 0)],
 		["calves_back", Vector3(-1.6 + 0.2, 0.4, -1.0), Vector3(-1.6, 0.3, 0)],
+		["hand", Vector3(-1.6 - 0.45, 0.78, -0.25), Vector3(-1.6 - 0.24, 0.74, 0.0)],
 		["face", Vector3(-1.6 + 0.1, 1.62, 0.55), Vector3(-1.6, 1.6, 0)],
 		["lineup_back", Vector3(0, 1.0, -5.2), Vector3(0, 0.85, 0)],
 	]

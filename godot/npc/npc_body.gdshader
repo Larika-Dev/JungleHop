@@ -46,6 +46,9 @@ void fragment() {
 		mat = yn > sleeve_cut ? 1 : 0;
 	} else if (part == 4) {               // foot
 		mat = 3;
+	} else if (part == 7) {               // finger: nail on the back near the tip
+		float a = min(th, 360.0 - th);    // 0 = back of the finger
+		if (a < 42.0 && UV2.y > 0.74 && UV2.y < 0.97) mat = 7;
 	} else if (part == 3) {               // head
 		float line = df < 40.0 ? mix(hair_front, hair_side, smoothstep(20.0, 40.0, df))
 			: (df < 110.0 ? mix(hair_side, hair_back, smoothstep(70.0, 110.0, df)) : hair_back);
@@ -93,6 +96,10 @@ void fragment() {
 		spec = 0.5;
 	} else if (mat == 5) {
 		rough = 0.08;
+		spec = 0.6;
+	} else if (mat == 7) {
+		col = mix(skin_color, vec3(0.93, 0.82, 0.8), 0.55);
+		rough = 0.18;
 		spec = 0.6;
 	} else if (mat == 6) {
 		col = mix(skin_color, vec3(0.62, 0.32, 0.32), 0.35) * 0.92;
