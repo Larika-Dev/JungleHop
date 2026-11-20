@@ -59,7 +59,22 @@
    "base": 117,
    "dating": 52,
    "marriage": 200
+  },
+  "stoic_pragmatist": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "social_gossip": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
+  },
+  "grumpy_curmudgeon": {
+   "base": 117,
+   "dating": 52,
+   "marriage": 200
   }
  },
- "total_lines": 4429
+ "total_lines": 5536
 }

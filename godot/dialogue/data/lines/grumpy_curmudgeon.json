@@ -1,0 +1,4076 @@
+{
+ "id": "grumpy_curmudgeon",
+ "lines": [
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "What do you want?",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.001"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hmph. Another new face. Town's getting crowded.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.002"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Stay off the grass. Oh, hello. I'm {npc}.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.003"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "If you're collecting for something, the answer's no.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.004"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "You're blocking my sun.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.005"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Who are you? Never mind. Doesn't matter. {npc}. There, now we've met.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.006"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh. It's you, {player}. Could be worse.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.007"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}. You didn't park in front of my house, did you?",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.008"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hmph. {player}. Still around, I see.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.009"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "You again. Well, you're quieter than most.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.010"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}. Wipe your feet if you're coming closer.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.011"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}. Finally, someone with sense.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.012"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hmph. Took you long enough. Sit down.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.013"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}. I made too much soup. Take some. Don't argue.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.014"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "There you are. Those kids were on my lawn again. Sit, I'll tell you about it.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.015"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}. You're the only person in this town who doesn't irritate me. Much.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.016"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh, good. You. I was running out of people to complain to.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.017"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Morning. Too early. Birds won't shut up.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.018"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "What's good about it? Garbage truck came at six.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.019"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Morning. Somebody's leaf blower is already going. Criminal.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.020"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Evening. The students are starting their racket.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.021"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hmph. Sun's down, mosquitoes are up.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.022"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Evening. Prime time for my shows. Make it quick.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.023"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "It's late. Shouldn't you be in bed? I should.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.024"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Night. Those college kids are howling again.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.025"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Can't sleep. Neighbor's dog. Every night.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.026"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Go on, then.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.027"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye. Close the gate behind you.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.028"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Yeah, yeah. See you.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.029"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Don't let the door hit you.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.030"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Off with you. And slow down on that bike.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.031"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Fine. Goodbye.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.032"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Come by tomorrow. I'll have something to complain about.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.033"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye, {player}. Wear a hat, it's cold.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.034"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Go on. Not too long before you come back, though.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.035"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "They raised the price of coffee at the diner. Two-fifty for coffee! Highway robbery.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.036"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Kids today. Can't even look up from their phones to say hello.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.037"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "That new bike lane on Columbia is a menace. Bikes everywhere.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.038"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "In my day, we had one stoplight and we were grateful.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.039"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The weather's terrible. Too hot. Then too cold. Never right.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.040"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "My doctor says I need to relax. I'll relax when the town stops being loud.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.041"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "They tore down the old movie palace for condos. Condos!",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.042"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Some fool keeps putting flyers on my windshield.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.043"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The paper's half ads now. I read it anyway. To be angry.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.044"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The bell tower rang twelve minutes late yesterday. Nobody noticed but me.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.045"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "They changed the recipe at the Waffle Hutch. I can taste it.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.046"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Did you see the price of tomatoes? I'm growing my own out of spite.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.047"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Don't tell anyone, but I left a bag of treats out for the neighbor's dog.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.048"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You're alright, {player}. Don't let it go to your head.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.049"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "My wife used to say I was a marshmallow inside. Nonsense. Mostly.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.050"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I've lived alone a long time. It's nice having someone stop by.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.051"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "If anyone gives you trouble, send them to me. I'll glare at them.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.052"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I saved you the crossword. I only did half. You can do the rest.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.053"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Weekend. More noise. More traffic. More nonsense.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "grumpy_curmudgeon.base.054"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Saturday. Mowing my lawn before the neighbor kid can play on it.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "grumpy_curmudgeon.base.055"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Sunday. Day of rest. If the church bells would let me.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "grumpy_curmudgeon.base.056"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I worked at the post office for forty years. Never missed a day.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.057"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I've lived in the same house since 1968. Paid it off in 1990.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.058"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "My lawn is the best on the street. Don't step on it.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.059"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I don't like people. I like a few people. Very few.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.060"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I used to have a dog. Best friend I ever had. Never complained.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.061"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "People think I'm mean. I'm just honest and tired.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.062"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I read the newspaper cover to cover every day. Then I write letters to the editor.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.063"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? Too loud. Too expensive. Too many people.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.064"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? It was better before they renovated.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.065"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "I come to {place} because it's the only place with decent coffee. Barely decent.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.066"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}. Hmph. The chairs are uncomfortable.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.067"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? I don't trust it. Never have.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.068"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Hmph. Well. Thank you.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.069"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Don't butter me up. But thank you.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.070"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "You need glasses. But thanks.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.071"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Hmph. That's nice. I guess.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.072"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Well, I've heard worse.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.073"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Get off my porch.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.074"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "I've been insulted by better people. And by worse people. You're in the middle.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.075"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Hmph. Your parents raised you poorly.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.076"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "I'll be writing a letter about this.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.077"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Young people. No respect.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.078"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Hmph. What's this? Oh. That's... thoughtful.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.079"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "You didn't have to. Really. I'll keep it, though.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.080"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Huh. Well. Thanks.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.081"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "I suppose this is acceptable. More than acceptable.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.082"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Don't make a habit of this. Thank you.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.083"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "Know what's worse than a leaf blower? Two leaf blowers.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.084"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "I'm not grumpy. I'm just right more often than people like.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.085"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "They say laughter's the best medicine. My copay says otherwise.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.086"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "At my age, happy hour is a nap.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.087"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Carry these groceries in. My back's shot.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.088"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Could you tell the kids next door to keep the ball out of my yard?",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.089"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Help me with the gutters. Don't fall off the ladder.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.090"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Hmph. Thanks. You did alright.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.091"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Well. That was helpful. Thanks.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.092"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "I owe you one. Don't remind me.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.093"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "Work? I retired. Best decision I ever made.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.094"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "In my day, people worked. Now they sit in coffee shops with laptops.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.095"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "You work hard? Good. Most don't.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.096"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I worked forty years and got a watch. It's slow.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.097"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "College. Four years and a mountain of debt to learn what I could've told you for free.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.098"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "Study hard. Don't waste your parents' money.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.099"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "The university's gotten too big. They're building everywhere.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.100"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Get off my property.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.101"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I've got nothing to say to you.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.102"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "You're worse than the leaf blowers.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.103"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Go away before I call the police. Or your mother.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.104"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Don't you dare walk on my lawn.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.105"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Hmph. You.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.106"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "What? No. Go away.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.107"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Ha! You're kidding. Go flirt with someone young.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.108"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Don't be ridiculous.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.109"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Hmph. Well. That's... not terrible to hear.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.110"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Stop that. You're making me blush. I don't blush.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.111"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Huh. Didn't think anyone noticed me anymore.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.112"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Fine. I like you too. Don't tell anyone.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "grumpy_curmudgeon.base.113"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "Hmph. Fine. Yes. Somewhere quiet. With real food.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.114"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "A date? At my age? Yes. Don't be late.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.115"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "No. But thank you for asking. Nobody asks anymore.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.116"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "Hmph. No. But you're alright.",
+   "cond": {},
+   "id": "grumpy_curmudgeon.base.117"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "You're on time. Good. Nobody's on time anymore.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.001"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hmph. You look nice. Don't let it go to your head.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.002"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "There you are. I reserved a table away from the noise.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.003"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "I wore my good shirt. It itches.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.004"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Well. Here we are. Let's sit down.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.005"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "You came. Good. I didn't want to waste my reservation.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.006"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're the only thing in this town that's improved.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.007"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I don't like most people. I like you a lot.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.008"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You make me want to stop complaining. Almost.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.009"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're prettier than my lawn. And that's saying something.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.010"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "Hmph. You're making me smile. Stop it. Don't stop.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.011"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're the best thing that's happened to me in decades.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.012"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I'd let you walk on my lawn.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.013"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "This place is too loud. But you're here, so I'll manage.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.014"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Tell me about yourself. I'll try not to interrupt.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.015"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I don't do this often. Dates. Nice things.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.016"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's walk. Slowly. My knees.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.017"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "You know, I used to dance. Before my hip.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.018"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I made dinner. Meatloaf. It's the only thing I make.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.019"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "You're the first person I've wanted to talk to in years.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.020"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's go to the old diner. Before they ruin it.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.021"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I like that you don't talk too much. Or too little.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.022"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I've been grumpy a long time. You make me less grumpy.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.023"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I suppose I could get used to this.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.024"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "You're good company. Rare thing.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.025"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You have good sense.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.026"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're polite. Nobody's polite anymore.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.027"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You look nice today. Very nice.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.028"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're not annoying. That's high praise.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.029"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're kind. I noticed.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.030"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Hmph. Well. That was nice.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.031"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Haven't been kissed like that since the seventies.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.032"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Again. If you want.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.033"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Hm. My heart's going. Good thing I took my pill.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.034"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "Hmph. Where have you been? I missed you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.035"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "The house was too quiet. Never thought I'd say that.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.036"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I saved you a slice of pie. It's been sitting there.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.037"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "Don't disappear like that. I worry.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.038"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "Who was that? Hmph. Didn't like the look of him.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.039"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I'm not jealous. I'm cautious.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.040"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I've been alone a long time. I don't want to lose this.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.041"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight. Drive carefully. People drive like maniacs.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.042"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "That was... nice. Very nice.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.043"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Same time next week. Don't be late.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.044"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Hmph. I'll miss you. Go on.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.045"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight, {player}. Call me when you get home.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.046"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "Hmph. You're being unreasonable.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.047"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I don't like fighting. I do it a lot, but I don't like it.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.048"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "Let's talk. Calmly. Like adults.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.049"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "You hurt my feelings. I have them. Surprise.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.050"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "Hmph. Yes. Of course yes. Don't make a fuss.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.051"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "Marry you? At my age? Yes. Absolutely yes.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.dating.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning. Coffee's made. It's too strong. Drink it anyway.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.001"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hmph. You're up. Good. The paper came late again.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.002"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning. Neighbor's sprinkler hit our window again.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.003"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning. Don't step on the cat.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.004"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning. I made oatmeal. It's good for you. Eat it.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.005"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're awake. Good. The birds have been screaming since five.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.006"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning. I already complained to the city about the potholes.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.007"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hmph. Good morning, love. Don't tell anyone I said \"love\".",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.008"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning. You hog the blanket. Every night.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.009"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning. The garbage men left the can in the street again.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.010"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning. I fixed the toaster. It works. Barely.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.011"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning. Weather's terrible. Stay in bed.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.012"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home. Good. Supper's on the table.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.013"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hmph. You're late. Five minutes. I noticed.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.014"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home. Take your shoes off. The floor's clean.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.015"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're back. The kids next door were screaming all afternoon.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.016"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Evening. I saved you the good chair.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.017"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are. I was about to start worrying. I wasn't worried.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.018"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hmph. You're home. I missed you. Don't make a thing of it.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.019"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Evening. I watered the lawn. Twice.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.020"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home. I made meatloaf. Again.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.021"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're back. Good. Now I can complain to someone who listens.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.022"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home late. I waited up. Hmph.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.023"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "It's late. Come to bed. The noise is finally dying down.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.024"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are. I kept the porch light on. It's wasting electricity.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.025"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hmph. Late. I worry, you know.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.026"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're back. Lock the door. Twice.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.027"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "It's late. Did you eat? There's soup.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.028"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are. The dog next door's been barking for an hour.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.029"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home. Good. Now I can sleep.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.030"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Go on. Don't be late.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.031"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Drive carefully. People are idiots on the road.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.032"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Hmph. Have a good day. Or a tolerable one.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.033"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Take an umbrella. Forecast's wrong, but take one.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.034"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye. Lunch is in the fridge. Don't forget it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.035"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Go. Make your money. Come back.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.036"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Watch out for the potholes on Rosemary.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.037"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Love you. Now go.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.038"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "How was work? Did they work you too hard?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.039"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Anybody give you trouble? Give me names.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.040"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You look tired. Sit down.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.041"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Your boss sounds like a fool. Always has.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.042"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Did you eat lunch? Hmph. I knew it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.043"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Tell me about it. I'll complain with you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.044"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Rough day? Supper will help.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.045"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Hmph. You work too hard. Proud of you, though.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.046"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Hmph. I love you. There. Said it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.047"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're the only thing in this world I don't complain about.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.048"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'd be a miserable old fool without you. More miserable.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.049"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make this house bearable. More than bearable.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.050"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Don't tell anyone, but you're the best thing that happened to me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.051"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'm lucky. Don't let it go to your head.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my favorite person. My only favorite person.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.053"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you more than my lawn.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.054"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're the reason I get up in the morning. Besides the birds.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.055"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Hmph. You're beautiful. Still.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.056"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'd marry you again. I'd complain about the cake, but I'd do it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.057"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my home.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.058"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I don't say it enough. But I'm grateful.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.059"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Come here. I'm in a hugging mood. It won't last.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.060"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make me softer. I hate it. I love it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.061"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you. Every grumpy bit of me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.062"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're the best decision I ever made.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.063"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Thank you for putting up with me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.064"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The neighbor's tree is dropping leaves on our lawn. Again.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.065"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I wrote another letter to the city about the streetlight.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.066"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The kids next door kicked their ball into my roses.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.067"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Someone's playing music too loud on Rosemary.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.068"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The paper raised its price. Again.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.069"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I fixed the leaky faucet. Plumber wanted a hundred dollars. Thieves.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.070"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The mailman's new. He's slow.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.071"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been watching the birds. They're the only quiet neighbors.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.072"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The city wants to put a bike lane on our street. Over my dead body.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.073"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I planted more tomatoes. They're doing better than the neighbor's.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.074"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The cable bill went up again.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.075"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I saw the neighbor's teenager driving. Terrifying.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.076"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The church is having another bake sale. I'll buy one pie. One.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.077"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I found a squirrel in the attic. We had words.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.078"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I read the whole paper. It's all bad news.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.079"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The lawn looks good. Best on the street.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.080"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I painted the fence. Nobody noticed.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.081"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The weatherman's always wrong. Always.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.082"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The neighbors got a new car. Loud engine.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.083"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I'm thinking about getting a bird feeder. For the cardinals. Not the squirrels.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.084"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "They're building something on the corner. Probably another coffee shop.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.085"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The garage door squeaks. I'll fix it. Eventually.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.086"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The house is fine. Drafty, but fine.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.087"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been sleeping better. Must be you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.088"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The doctor says I need to walk more. I walk to the mailbox.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.089"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I like it here. Don't tell anyone.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.090"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I did the dishes. You left a pan soaking. Again.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.091"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I mowed the lawn. Perfect lines.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.092"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Take the trash out. My back.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.093"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I cleaned the gutters. Don't ask how.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.094"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I vacuumed. The cat hates the vacuum. So do I.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.095"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I swept the porch. The leaves came back in five minutes.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.096"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I folded the laundry. Your socks don't match.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.097"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I fixed the screen door. It was banging all night.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.098"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I cleaned the bathroom. Who uses this much toothpaste?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.099"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I raked the leaves. The wind undid it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.100"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I scrubbed the kitchen. It's cleaner than the diner.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.101"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I watered the plants. Nobody else does.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.102"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Prices are ridiculous. Everything costs too much.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.103"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We're fine. I keep a budget. In pencil.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.104"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Don't buy that. We don't need it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.105"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I clipped coupons. Saved us four dollars.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.106"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "The electric bill's too high. Turn off the lights.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.107"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I don't trust credit cards. Cash only.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.108"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We have enough. We don't need more.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.109"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Social security came in. Barely enough.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.110"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I'm not cheap. I'm careful.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.111"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We've done alright. Better than most.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.112"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Supper. Meatloaf. Don't complain.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.113"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made soup. It's good for your cold. You don't have a cold. Eat it anyway.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.114"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Breakfast. Eggs. Toast. Coffee. Like a civilized person.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.115"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made pot roast. Took all day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.116"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Leftovers. Waste not, want not.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.117"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made pie. Apple. Don't tell the neighbors.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.118"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Dinner's at six. Not six-oh-five. Six.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.119"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made chili. Not too spicy. My stomach.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.120"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Sandwiches. Ham. With mustard.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.121"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made cornbread. Proper cornbread.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.122"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You left the lights on again. Do you know what electricity costs?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.123"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You didn't tell me you'd be late.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.124"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Hmph. You never listen.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.125"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You let the neighbor's kid on our lawn!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.126"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Stop moving my things.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.127"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm not grumpy. I'm right.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.128"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You spent how much? On what?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.129"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You're as stubborn as I am. That's a problem.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.130"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Don't roll your eyes at me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.131"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm going out to the garden. Don't follow me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.132"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I don't like being ignored.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.133"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You know I hate surprises.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.134"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Hmph. I'm sorry.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.135"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Come here. Let's not fight.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.136"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I was being a stubborn old fool.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.137"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I love you. Even when you're wrong.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.138"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry I snapped. Supper's on me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.139"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's not go to bed angry.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.140"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I don't like fighting with you. It's the worst part of the day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.141"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Hmph. We're fine. Come here.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.142"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Hmph. Whoever upset you, I'll write them a letter.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.143"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Sit down. I'll make you soup.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.144"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "It'll be alright. Things usually are. Eventually.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.145"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I'm here. I'm not going anywhere.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.146"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You're tougher than you think.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.147"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Don't cry. Or cry. I've got a handkerchief.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.148"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "The world's terrible. You're not.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.149"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let me handle it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.150"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You'll get through this. I've seen you get through worse.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.151"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Hmph. I love you. That's got to count for something.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.152"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's stay home this weekend. Away from people.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.153"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Maybe we drive to the mountains. Less people there.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.154"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "The diner has a senior special on Tuesdays. We should go.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.155"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the hardware store. I need a new rake.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.156"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "We could visit your sister. If we must.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.157"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's watch the game. The Billram are terrible this year.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.158"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's plant a garden. A big one.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.159"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Maybe the beach. In the off-season. No tourists.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.160"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the county fair. I want to complain about the prices.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.161"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's just sit on the porch. That's a plan.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.162"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we met? You stepped on my foot.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.163"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our first date? The restaurant was terrible. You were wonderful.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.164"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our wedding? The band played too loud.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.165"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our first house? The roof leaked every spring.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.166"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we drove to the coast and the car broke down?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.167"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I remember the first time you made me laugh. Took you a month.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.168"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember the blizzard of '93? We were snowed in for a week. Best week.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.169"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when the kids next door broke our window? You made them cookies.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.170"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our honeymoon? I complained the whole time. Still loved it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.171"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I remember the first time I thought, I'm going to marry this one.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.172"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary. Hmph. Another year. Good year.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.173"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I got you something. Don't make a fuss.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.174"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Another year with you. Best year yet. Don't tell anyone.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.175"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary. I made reservations. At the quiet place.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.176"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I love you more than last year. And I loved you a lot last year.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.177"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Hmph. Here's to more years.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.178"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You still can't parallel park.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.179"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You put ketchup on everything.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.180"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You talk to the TV.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.181"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You buy too many plants.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.182"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You laugh at the neighbors' dog. You're supposed to be on my side.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.183"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You leave the toilet seat however it is. Every time.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.184"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You let the cat on the bed.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.185"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You think the weatherman's right. He's never right.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.186"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You sing in the shower. Badly.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.187"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You buy the expensive coffee. Highway robbery.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.188"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You fall asleep during the news.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.189"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You're nicer to the neighbors than I am. Traitor.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.190"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Bed. It's late.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.191"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight. Lock the door.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.192"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Hmph. Goodnight, love.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.193"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come to bed. The noise stopped.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.194"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight. Don't steal the blanket.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.195"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sleep. Tomorrow's another day of nonsense.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.196"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Night. Turn off the hall light.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.197"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, {player}. You're alright.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.198"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come here. You're cold.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.199"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Night. I love you. Go to sleep.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "grumpy_curmudgeon.marriage.200"
+  }
+ ]
+}

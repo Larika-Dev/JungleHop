@@ -1,0 +1,4076 @@
+{
+ "id": "social_gossip",
+ "lines": [
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh, hello! You're new. I know everyone, so you're definitely new. I'm {npc}.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "social_gossip.base.001"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi, honey! I'm {npc}. Who are you, where are you from, and are you single? Kidding! Mostly.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "social_gossip.base.002"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Well, hello there! I haven't seen you at brunch. I'm {npc}.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "social_gossip.base.003"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hiii! You must be the one who moved into the yellow house. Am I right? I'm always right.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "social_gossip.base.004"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey, new face! Let me guess, you're a grad student. No? A barista? Tell me everything.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "social_gossip.base.005"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello! I'm {npc}. If you need to know anything about anyone, I'm your girl. Or your guy. Your person.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "social_gossip.base.006"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! Oh good, you're just the person I wanted to see.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "social_gossip.base.007"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey, {player}! You will not believe what I heard this morning.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "social_gossip.base.008"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}, honey! Sit down. I have tea. Not literal tea. Gossip tea.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "social_gossip.base.009"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh my gosh, {player}! Did you hear about the bookstore guy?",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "social_gossip.base.010"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi, {player}! You look great. Who are you seeing? I'll find out anyway.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "social_gossip.base.011"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! My bestie! Okay, drop everything, I have news.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "social_gossip.base.012"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Babe! Get over here! Brunch, now, my treat, I have so much to tell you.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "social_gossip.base.013"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! You're the only person I tell the real stuff to.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "social_gossip.base.014"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "There's my favorite! Did you get my eleven texts?",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "social_gossip.base.015"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}, darling! Okay, you didn't hear this from me, but...",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "social_gossip.base.016"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi, love! I saved you a seat and a scandal.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "social_gossip.base.017"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Morning, sunshine! Coffee and gossip, the breakfast of champions.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "social_gossip.base.018"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good morning! I've already been to three coffee shops and heard four rumors.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "social_gossip.base.019"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Morning! Did you see who was doing the walk of shame on Rosemary? I'm not saying. I'm saying.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "social_gossip.base.020"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Evening! Happy hour at Top of the Mount, everybody's there.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "social_gossip.base.021"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey! The evening crowd at the Inn is so interesting tonight.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "social_gossip.base.022"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good evening, honey! Wine and stories, that's my evening plan.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "social_gossip.base.023"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh, you're out late! What are you up to? Who are you up to?",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "social_gossip.base.024"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey, night owl! The best stories happen after ten.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "social_gossip.base.025"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Late night! I just left the most dramatic party.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "social_gossip.base.026"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye, honey! Call me!",
+   "cond": {},
+   "id": "social_gossip.base.027"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Toodles! Don't do anything I wouldn't tell everyone about!",
+   "cond": {},
+   "id": "social_gossip.base.028"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Kiss kiss! I'll text you!",
+   "cond": {},
+   "id": "social_gossip.base.029"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye! And remember, you didn't hear it from me!",
+   "cond": {},
+   "id": "social_gossip.base.030"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Okay, go! But text me the second something happens!",
+   "cond": {},
+   "id": "social_gossip.base.031"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Ciao, darling! Stay fabulous!",
+   "cond": {},
+   "id": "social_gossip.base.032"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye, bestie! I'll call you tonight, I have a part two.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "social_gossip.base.033"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Love you! Brunch Sunday, it's non-negotiable!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "social_gossip.base.034"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye, babe! Your secrets are safe with me. Mostly. Totally. Mostly.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "social_gossip.base.035"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "So, the guy who owns the waffle place? He's dating the pharmacist at Sutter's. I know!",
+   "cond": {},
+   "id": "social_gossip.base.036"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Did you hear the mayor's dog bit the mailman? Third time this year.",
+   "cond": {},
+   "id": "social_gossip.base.037"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Somebody's been leaving anonymous love notes on the North Quad oaks. I have a theory.",
+   "cond": {},
+   "id": "social_gossip.base.038"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The two professors who share an office? Not speaking. Over a stapler. A stapler!",
+   "cond": {},
+   "id": "social_gossip.base.039"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I heard the old cinema might reopen. My cousin's friend's landlord said so.",
+   "cond": {},
+   "id": "social_gossip.base.040"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The new couple at the end of Rosemary? Married six weeks, already arguing about curtains.",
+   "cond": {},
+   "id": "social_gossip.base.041"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Did you know the barista at Pamlico Coffee is secretly a famous poet? Well, famous online.",
+   "cond": {},
+   "id": "social_gossip.base.042"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The book club is in shambles. Someone picked a self-help book.",
+   "cond": {},
+   "id": "social_gossip.base.043"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I saw the Billram mascot without the head on. I can't unsee it.",
+   "cond": {},
+   "id": "social_gossip.base.044"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Everyone's talking about the new bakery. I'll tell you if it's worth the hype.",
+   "cond": {},
+   "id": "social_gossip.base.045"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "My neighbor's son dropped out to start a band. His mother is devastated. I brought her a casserole.",
+   "cond": {},
+   "id": "social_gossip.base.046"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I heard the Inn is hosting a celebrity wedding. Don't ask me who. I'm sworn to secrecy. It's not really a celebrity.",
+   "cond": {},
+   "id": "social_gossip.base.047"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Okay, real talk? I know I gossip, but I'd never spill anything about you.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "social_gossip.base.048"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Sometimes I talk so much because I don't want anyone to notice I'm lonely.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "social_gossip.base.049"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You're my favorite person in this town, and I know every person in this town.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "social_gossip.base.050"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I trust you with my secrets. And I have a lot of other people's secrets.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "social_gossip.base.051"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "If anyone ever says anything bad about you, I'll handle it. Socially.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "social_gossip.base.052"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You're the only one who listens when I'm not gossiping.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "social_gossip.base.053"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "It's Saturday! Brunch, shopping, and catching up on everyone's drama.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "social_gossip.base.054"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Weekend! The farmers market is where all the real news happens.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "social_gossip.base.055"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Sunday! Church, then brunch, then reviewing the week's events.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "social_gossip.base.056"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I host a podcast. It's about the town. Mostly about people in the town.",
+   "cond": {},
+   "id": "social_gossip.base.057"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I've lived here my whole life. I know where all the bodies are buried. Figuratively!",
+   "cond": {},
+   "id": "social_gossip.base.058"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I'm a hairdresser. People tell their hairdresser everything.",
+   "cond": {},
+   "id": "social_gossip.base.059"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I love people! I just love knowing what they're up to.",
+   "cond": {},
+   "id": "social_gossip.base.060"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I organize the neighborhood newsletter. It's very popular. And very juicy.",
+   "cond": {},
+   "id": "social_gossip.base.061"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "My mom was the gossip of Toadstool Hill. It's in my blood.",
+   "cond": {},
+   "id": "social_gossip.base.062"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I'm actually great at keeping secrets. When they're mine.",
+   "cond": {},
+   "id": "social_gossip.base.063"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? Oh, the owner's having an affair. I'm joking! Or am I?",
+   "cond": {},
+   "id": "social_gossip.base.064"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "I love {place}! Best people-watching in Cathedral Mount.",
+   "cond": {},
+   "id": "social_gossip.base.065"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? Everyone comes here after a breakup. I've seen things.",
+   "cond": {},
+   "id": "social_gossip.base.066"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place} is where I heard my best rumor of the year.",
+   "cond": {},
+   "id": "social_gossip.base.067"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place} is fine, but the regulars are so dramatic. I love it.",
+   "cond": {},
+   "id": "social_gossip.base.068"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Oh, stop! No, keep going! You're so sweet!",
+   "cond": {},
+   "id": "social_gossip.base.069"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Thank you, honey! I'm telling everyone you said that.",
+   "cond": {},
+   "id": "social_gossip.base.070"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Aww, you're a doll! This is going on my socials.",
+   "cond": {},
+   "id": "social_gossip.base.071"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "You're too kind! And so right!",
+   "cond": {},
+   "id": "social_gossip.base.072"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "That just made my week! Tell me more nice things!",
+   "cond": {},
+   "id": "social_gossip.base.073"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Excuse me? I'll be telling everyone about this.",
+   "cond": {},
+   "id": "social_gossip.base.074"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Oh, honey. That's going straight into the newsletter.",
+   "cond": {},
+   "id": "social_gossip.base.075"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Wow. Okay. I know things about you too, you know.",
+   "cond": {},
+   "id": "social_gossip.base.076"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Rude! I'll pray for you. Loudly. In public.",
+   "cond": {},
+   "id": "social_gossip.base.077"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "That's going to come back to you. Karma and I have a group chat.",
+   "cond": {},
+   "id": "social_gossip.base.078"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "For me? You shouldn't have! What is it? Oh, I love it!",
+   "cond": {},
+   "id": "social_gossip.base.079"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Ohhh, it's gorgeous! I'm telling everyone you got me this!",
+   "cond": {},
+   "id": "social_gossip.base.080"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "You remembered! You're my favorite. Don't tell my other favorites.",
+   "cond": {},
+   "id": "social_gossip.base.081"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Thank you, darling! I'm wearing this to brunch!",
+   "cond": {},
+   "id": "social_gossip.base.082"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "This is so thoughtful! Where did you get it? I need to know everything.",
+   "cond": {},
+   "id": "social_gossip.base.083"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "I'm not a gossip. I'm a news anchor without a station.",
+   "cond": {},
+   "id": "social_gossip.base.084"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "Why did the gossip cross the road? Because she heard there was drama on the other side.",
+   "cond": {},
+   "id": "social_gossip.base.085"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "I never repeat gossip, so listen carefully the first time.",
+   "cond": {},
+   "id": "social_gossip.base.086"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "I'm on a diet. A juice cleanse. Only the juicy stories.",
+   "cond": {},
+   "id": "social_gossip.base.087"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Could you find out if the new guy at the gym is single? For a friend. The friend is me.",
+   "cond": {},
+   "id": "social_gossip.base.088"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Can you help me set up for my garden party? It's going to be the event of the season.",
+   "cond": {},
+   "id": "social_gossip.base.089"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Would you come to brunch with me? I need a buffer from my ex-sister-in-law.",
+   "cond": {},
+   "id": "social_gossip.base.090"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "You're the best! I owe you a mimosa!",
+   "cond": {},
+   "id": "social_gossip.base.091"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Thank you, honey! You're a real one!",
+   "cond": {},
+   "id": "social_gossip.base.092"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "I knew I could count on you! You're getting a shout-out in the newsletter!",
+   "cond": {},
+   "id": "social_gossip.base.093"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I did seven haircuts today and heard seven life stories.",
+   "cond": {},
+   "id": "social_gossip.base.094"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "My client is getting divorced. I can't say who. It's the dentist.",
+   "cond": {},
+   "id": "social_gossip.base.095"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "Work was great! The salon is basically a confessional with blow dryers.",
+   "cond": {},
+   "id": "social_gossip.base.096"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "My boss is dating the tattoo artist. Nobody knows. Except me. And now you.",
+   "cond": {},
+   "id": "social_gossip.base.097"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "I'm taking a communications class. I'm a natural.",
+   "cond": {},
+   "id": "social_gossip.base.098"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "My professor is dating a student. Allegedly! Allegedly.",
+   "cond": {},
+   "id": "social_gossip.base.099"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "The sorority drama this semester is unreal.",
+   "cond": {},
+   "id": "social_gossip.base.100"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Oh, it's you. I've heard things about you.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "social_gossip.base.101"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Don't talk to me. I'm still telling everyone about last time.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "social_gossip.base.102"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "You're not welcome at brunch.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "social_gossip.base.103"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I'd tell you what everyone's saying about you, but it's not nice.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "social_gossip.base.104"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I'm unfollowing you. In real life.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "social_gossip.base.105"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Bye, {player}. And I mean that in the meanest possible way.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "social_gossip.base.106"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Oh, honey! Flattered, but we're friends! Friends who gossip!",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "social_gossip.base.107"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Ha! You're cute, but I'm not dating anyone I might want to talk about.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "social_gossip.base.108"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Aww! No, sweetie. But I know someone who might be interested!",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "social_gossip.base.109"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Wait, are you flirting with me? Oh my gosh. I'm not telling anyone. Yet.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "social_gossip.base.110"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Oh! Well! This is the best news I've heard all week!",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "social_gossip.base.111"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "I've been waiting for you to say something like that!",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "social_gossip.base.112"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "You're making me blush! And I never blush!",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "social_gossip.base.113"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "Yes! Oh, I can't wait to tell everyone! I mean, nobody! Yes!",
+   "cond": {},
+   "id": "social_gossip.base.114"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "A date? Yes! I know the perfect place, the owner owes me a secret.",
+   "cond": {},
+   "id": "social_gossip.base.115"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "Oh, honey, I'm so flattered! But I don't feel that way. We're still besties, right?",
+   "cond": {},
+   "id": "social_gossip.base.116"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "That's sweet, but no. Don't worry, I won't tell anyone. Probably.",
+   "cond": {},
+   "id": "social_gossip.base.117"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "There you are! You look stunning! Everyone's going to see us together!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.001"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hi, babe! I told the hostess we're a couple. She was jealous.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.002"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "You came! I've already told three people we're on a date.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.003"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hey, gorgeous! I picked the table by the window. So people can see us.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.004"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hiii! I wore my best outfit. Do you love it? You love it.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.005"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hello, darling! I've been looking forward to this all week!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.006"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're the juiciest thing in my life right now.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.007"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I don't even want to talk about anyone else when I'm with you. That's huge.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.008"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're my favorite topic of conversation.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.009"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "Everyone's going to be so jealous of me.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.010"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're my best-kept secret. Not for long, though.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.011"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I'd give up all the town gossip for you. Well, most of it.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.012"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You make my heart race like breaking news.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.013"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Okay, tell me everything about you. Every detail.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.014"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "So, who were you dating before me? I need to know.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.015"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I've told my mom about you. She already loves you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.016"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's go to the Inn's rooftop. Everyone important goes there.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.017"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I want to know all your secrets. I promise I'll keep them.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.018"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I can't stop smiling. People are going to ask why.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.019"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Do you want to go to the gala next month? I'll introduce you to everyone.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.020"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I love that you actually listen to my stories.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.021"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's make a pact to tell each other everything.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.022"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I think we're the town's new it couple.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.023"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "You're so different from everyone else here. In the best way.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.024"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I feel like I can be real with you. That's rare for me.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.025"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You have the best taste. In everything. Especially in partners.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.026"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're so charming. Everyone loves you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.027"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You look amazing tonight. Everyone's staring.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.028"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're the most interesting person in town.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.029"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're a great listener. That's my favorite thing about you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.030"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Ooh! That's going in my diary!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.031"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Oh my gosh. Okay. That was perfect.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.032"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Everyone saw that! I'm so happy!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.033"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Again! And this time slower!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.034"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I missed you! I had so much to tell you!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.035"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I saved up all the gossip for you!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.036"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I texted you a hundred times. Did you see them?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.037"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "The day was so boring without you!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.038"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "Who was that? I need a full report.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.039"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I saw you talking to them. I know about them. Be careful.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.040"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I'm not jealous! I'm informed! There's a difference!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.041"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Tonight was perfect! Text me the second you get home!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.042"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight, babe! I'll call you tomorrow with the recap!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.043"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "I had the best time! Everyone's going to hear about it!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.044"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight, {player}! Dream about me!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.045"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Same time next week? I'll book the good table!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.046"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I can't believe you said that! In public!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.047"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I'm upset, babe. And everyone's going to know it.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.048"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "Let's talk about this. Privately. For once.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.049"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I don't want to fight. I want us to be the couple everyone envies.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.050"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "YES! Oh my gosh, YES! I have to call everyone!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.051"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "I'll marry you! This is the biggest news of the year!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "social_gossip.dating.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, honey! I already know what everyone's doing today!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.001"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, babe! Coffee's ready, and I have news.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.002"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! You'll never guess who I saw jogging past our window!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.003"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, love! I was up early reading the neighborhood group chat.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.004"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, darling! Breakfast and gossip on the patio?",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.005"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, sleepyhead! The Hendersons are fighting again. I could hear it.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.006"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! I made pancakes. And a list of things to tell you.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.007"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, honey! Mrs. Kowalski's daughter is engaged! To a drummer!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.008"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! You look adorable when you just wake up.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.009"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, babe! I've got brunch reservations at eleven.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.010"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! I've decided we're hosting a dinner party this weekend.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.011"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, love! I already called my mom and my sister. They say hi.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.012"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home! Sit down, I have so much to tell you!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.013"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home, honey! You will not believe the day I had!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.014"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, babe! Dinner's ready, and so is the tea. The gossip kind.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.015"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are! I've been dying to talk to you!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.016"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome back, darling! The neighbors got a new car. Lease, I bet.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.017"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, love! I ran into your old boss at the market. She's had work done.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.018"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home! Okay, first things first, how was your day? Then mine.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.019"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home! I invited the Garcias for dinner Friday. You're welcome.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.020"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, babe! I missed you! The house was so quiet. I hated it.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.021"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're back! Good. I need someone to talk to who isn't the cat.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.022"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home late, honey! Where were you? Who were you with?",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.023"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, babe. Long day? I waited up. I have a story.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.024"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "It's late! Come to bed, and I'll tell you what happened at book club.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.025"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're back! I was starting to worry. And imagine scenarios.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.026"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, love. I fell asleep on the couch reading the neighborhood forum.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.027"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are! The street was so quiet tonight. Suspiciously quiet.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.028"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, honey. Let me make you some tea. Then I'll tell you everything.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.029"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home! I couldn't sleep without debriefing you.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.030"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a great day, honey! Bring back stories!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.031"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye, babe! Find out if your coworker's still dating that guy!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.032"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a good day, darling! Text me if anything juicy happens!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.033"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye, love! I'll be at the salon, hearing everything!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.034"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have fun at work! Don't let anyone talk about you! Unless it's nice!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.035"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye, honey! I'll have dinner ready and gossip prepared!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.036"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a great day! Wear the blue shirt, people notice!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.037"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Off you go! I love you! Call me at lunch!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.038"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "How was work? Tell me everything! Every detail!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.039"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Who said what to who? I need names.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.040"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Did your boss mention the promotion? I have a feeling.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.041"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Is that coworker still being weird? I want the whole saga.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.042"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Was it a good day? You look stressed. Who stressed you?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.043"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Did anything dramatic happen? Please say yes.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.044"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You're home! Okay, spill.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.045"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "I'm so proud of you, honey. Even if your office is boring.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.046"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you more than gossip. And you know how much I love gossip.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.047"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my favorite person in the whole town. And I know the whole town.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.048"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Being married to you is the best story I've ever told.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.049"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my best secret and my best headline.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.050"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'm so lucky! Everyone says so. I make sure they say so.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.051"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my everything, honey.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love how you listen to me ramble.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.053"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're the only person I never want to gossip about.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.054"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'd tell the whole world how much I love you. I already have.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.055"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my home, babe. My safe place.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.056"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you, darling. Truly, madly, publicly.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.057"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're the best thing that ever happened to me. Front-page news.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.058"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love waking up next to you. And telling you about my dreams.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.059"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make me want to be a better person. A slightly more discreet person.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.060"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'm so proud to be your spouse. I tell everyone.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.061"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my favorite topic.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.062"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you more than brunch.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.063"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my forever plus-one.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.064"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The neighbors are getting divorced. I'm not supposed to know. I know.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.065"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I organized a block party. Everyone's coming. Even the grumpy guy.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.066"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I heard the house across the street is selling. Overpriced.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.067"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The Hendersons got a new puppy. It's adorable. And loud.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.068"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I joined a new book club. Mostly for the people.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.069"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been redecorating. Don't look at the receipts.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.070"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Your mom called. We talked for two hours. About you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.071"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I started a neighborhood watch. It's mostly a gossip group.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.072"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The mailman told me about the people on Elm. Shocking.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.073"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I'm thinking about hosting a holiday party. A big one.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.074"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I saw the new couple on our street. They look miserable.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.075"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been writing a memoir. It's about the town. It's mostly about the town.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.076"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The kids next door are so cute. Their parents, less so.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.077"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I painted the front door red. Everyone's talking about it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.078"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I reorganized the closet. Found your high school yearbook. Interesting photos.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.079"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The salon's getting a new stylist. She's from the city. Very glamorous.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.080"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I'm planning a surprise party for my sister. Don't tell anyone.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.081"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been reading about feng shui. We need to move the couch.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.082"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The book club drama is unbelievable. I'll tell you later. Now. I'll tell you now.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.083"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The neighbor's tree is over our fence. I'll handle it. Diplomatically.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.084"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I bought new throw pillows. Twelve of them.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.085"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I think we should renew our vows. A big ceremony. Everyone invited.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.086"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The church bake sale was a disaster. Someone used salt instead of sugar.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.087"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I heard the old mill is getting turned into condos.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.088"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been trying to gossip less. It's not going well.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.089"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I'm so happy with our life, honey. Everyone's jealous.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.090"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I did the dishes while on the phone with my sister!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.091"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I vacuumed! And listened to my favorite podcast. The gossip one.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.092"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Could you take out the trash? I'm in the middle of a call.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.093"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I cleaned the whole house! Guests are coming!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.094"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I folded the laundry! While watching my reality show!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.095"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I dusted everything! Found a note from the previous owners!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.096"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Let's clean together! I'll tell you stories!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.097"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I organized the pantry! Very chic now.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.098"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I scrubbed the kitchen! Mrs. Lee says her kitchen isn't this clean!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.099"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I made the bed with the fancy pillows!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.100"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I swept the porch and chatted with three neighbors!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.101"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I washed the windows! Now I can see the street better!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.102"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We spent a lot on that party. But everyone loved it!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.103"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I made a budget! There's a line for brunch!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.104"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Money's tight. Let's not tell anyone.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.105"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I got a big tip from a client! She's getting divorced!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.106"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We should save for a vacation! Somewhere fancy!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.107"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I found a great sale! I bought everything!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.108"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Let's cut back on eating out. Maybe. Starting next month.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.109"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "The neighbors bought a boat. We don't need a boat. Do we?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.110"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We're doing well! Better than the Joneses!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.111"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Let's put some money aside for the holiday party.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.112"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Dinner's ready! I made a recipe from my book club!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.113"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made brunch! Mimosas and eggs benedict!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.114"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's go out to eat! Somewhere everyone goes!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.115"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made a casserole! The one everyone raves about!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.116"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Dinner party Friday! I'm making my famous lasagna!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.117"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made salad! Very healthy. I'm doing a cleanse.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.118"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's have a picnic! In the park, where everyone can see!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.119"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made cookies! For the neighbors! And us!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.120"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Dinner's on the patio tonight!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.121"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I ordered from the new place! I need to review it!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.122"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You told my sister what I said? That was private!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.123"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I feel like you don't listen when I talk!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.124"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm not a gossip! I'm a communicator!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.125"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You embarrassed me in front of the neighbors!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.126"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I need you to take my side! Publicly!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.127"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You never want to go to parties with me!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.128"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Please don't tell anyone about this fight!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.129"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I feel like you're keeping secrets from me!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.130"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You don't care about my friends!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.131"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm going to call my sister. And vent.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.132"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You know how much I hate being the last to know!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.133"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I just want you to tell me things!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.134"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry, honey! Let's make up!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.135"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I didn't mean it! Let's not let the neighbors hear!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.136"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I love you! I'm sorry! Hug it out before the neighbors notice?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.137"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry I told everyone. I'll stop. Mostly.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.138"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "You're my favorite person, honey. Even when we fight. Especially then, it's dramatic.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.139"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's go to brunch and make up!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.140"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry. Let's start over. And keep this between us.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.141"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "We're good, babe! Officially. I'm updating our status.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.142"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "It's okay, honey. I'm here.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.143"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Tell me everything. I'll listen. I won't tell anyone.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.144"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Whoever hurt you, I'll handle them. Socially.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.145"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You're the strongest person I know, and I know everyone.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.146"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let's have a quiet night. No gossip. Just us.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.147"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I love you, darling. That's the only headline that matters.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.148"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Whatever it is, we'll get through it together, babe.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.149"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let me make you some tea and we'll talk.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.150"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You don't have to be okay, honey. I've got you, and I'm not telling a soul.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.151"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I'm proud of you, honey. Always.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.152"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the gala this weekend! Everyone's going!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.153"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's take a trip to the city! Shopping!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.154"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a cruise? I hear it's very social!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.155"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's host a barbecue! Invite the whole street!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.156"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the Founders' Day festival! Everyone's there!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.157"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to that new restaurant! I need to review it!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.158"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a weekend at the Inn? Very romantic!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.159"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's take a dance class! Couples only!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.160"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to my high school reunion! I want to show you off!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.161"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's throw the biggest anniversary party!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.162"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we met? I already knew everything about you!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.163"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our first date? Everyone was talking about it!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.164"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our wedding? The whole town came!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.165"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when you proposed? I called everyone in an hour!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.166"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our honeymoon? I sent postcards to everyone!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.167"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I still have the newsletter where I announced our engagement!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.168"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our first dinner party? The Hendersons fought!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.169"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we danced at the Inn? Everyone watched!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.170"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when I told you all my secrets? You still keep them!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.171"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we moved in? The neighbors brought cookies! I brought more!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.172"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary, honey! I told everyone!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.173"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Another year! Let's throw a party!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.174"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I got you something! It's from that boutique everyone loves!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.175"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary, babe! We're still the town's favorite couple!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.176"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I love you more every year! And I tell more people every year!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.177"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Here's to another year of us!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.178"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You can't keep a secret. Wait, that's me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.179"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You never know who anyone is. I have to tell you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.180"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You fall asleep during my stories.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.181"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You forget everyone's name. I remember for both of us.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.182"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You're so quiet at parties! I love it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.183"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You never read the group chat!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.184"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You still don't know who the Hendersons are. They live next door!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.185"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You hide when I get on the phone.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.186"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You're secretly a gossip too. I've heard you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.187"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You always say \"I don't care\" and then ask for details.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.188"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You wear the same shirt to every party.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.189"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You laugh at my stories. Even the ones you've heard.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.190"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, honey! I'll tell you the rest tomorrow!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.191"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come to bed! I have one more story!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.192"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, babe! You're my favorite!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.193"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sleep well, darling!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.194"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, love! Big day tomorrow! Brunch!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.195"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, {player}! I love you!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.196"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Lights out! Phones down! Okay, one more text!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.197"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sweet dreams, honey!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.198"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come cuddle! I'll whisper the gossip!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.199"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight! Don't tell anyone how much I love you! Actually, tell everyone!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "social_gossip.marriage.200"
+  }
+ ]
+}

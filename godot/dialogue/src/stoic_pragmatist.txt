@@ -1,0 +1,429 @@
+// Stoic Pragmatist: few words, practical, steady, fixes things, care shown through actions.
+== base
+# greet stage=stranger
+Hey.
+Name's {npc}.
+Afternoon. You need something?
+Haven't seen you before. {npc}.
+Hm. Hello.
+Morning or afternoon. Either way, hello.
+# greet stage=acquaintance
+{player}.
+Hey, {player}. Doing alright?
+{player}. Good to see you.
+You again. Fine by me.
+{player}. Car still running okay?
+# greet stage=friend+
+{player}. Glad you came by.
+Hey. Coffee's on. Pour yourself one.
+{player}. I fixed that thing you mentioned.
+There you are. Sit.
+{player}. Good. I could use a hand. Or company. Either.
+Hey, friend.
+# greet time=morning
+Morning. Early start.
+Up already. Good.
+Morning. Frost on the windshields today.
+# greet time=evening
+Evening. Long day?
+Evening. Shop's closed. I'm not.
+Hey. Getting dark early now.
+# greet time=night
+Late. Everything alright?
+You're out late. Be careful.
+Night. Roads are slick after nine.
+# farewell
+Later.
+Take care.
+See you.
+Drive safe.
+Alright. Go on.
+Watch your step.
+# farewell stage=friend+
+Call if you need anything. I mean it.
+See you, {player}. Door's open.
+Get home safe. Text me.
+# smalltalk
+Rain tomorrow. Clean your gutters.
+Fixed the neighbor's fence. Took an hour.
+Tire pressure drops in the cold. Check yours.
+Hamilton's getting repaved. Detours all week.
+Hardware store's got a sale on drill bits.
+Not much to report.
+The new bridge in Carrburg was built right. Good welds.
+Saw a red-tailed hawk by the ravine.
+People overcomplicate things.
+Coffee's coffee. Don't need it fancy.
+Changed my oil today. Saves money.
+Built a bookshelf. Holds four hundred pounds.
+# smalltalk stage=friend+
+You're alright, {player}. I don't say that much.
+Not a talker. But I'm glad you're around.
+If your car breaks down, call me. Not a tow truck.
+I trust you. That's rare for me.
+I'd help you move. That's friendship.
+I made you a key to the shop. In case.
+# smalltalk weekend=true
+Weekend. Projects.
+Saturday. Fishing at dawn.
+Sunday's for rest. Mostly I fix things.
+# about_self
+I'm a mechanic. Thirty years.
+Grew up on a farm. Learned to fix what breaks.
+My dad didn't talk much. Neither do I.
+I build furniture in my garage. Oak, mostly.
+Served four years. Came back. Settled here.
+I don't like fuss. I like things that work.
+I read at night. History. Westerns.
+# opinion_place
+{place}. Solid building.
+{place}'s fine. Too loud.
+{place}. Wiring's old. Someone should look at it.
+I don't come to {place} much. It's alright.
+{place}. Good coffee. That's enough.
+# compliment_reply
+Thanks.
+Appreciate it.
+Hm. Kind of you.
+Thank you. Means something.
+Okay. Thanks.
+# insult_reply
+Noted.
+That right.
+You done?
+Not worth my time.
+Say that again and we'll have a problem.
+# gift_reply
+Huh. Thank you.
+Useful. Thanks.
+Didn't have to. Appreciate it.
+This is good quality. Thank you.
+I'll put it to use.
+# joke
+Why'd the mechanic sleep under the car? Wanted to wake up oily.
+I have a joke about construction. Still working on it.
+Duct tape can't fix stupid. But it can muffle it.
+My wrench and I have a lot in common. We both like to tighten things up.
+# ask_favor
+Hold this ladder.
+Can you give me a ride to the shop? Truck's in the lift.
+Help me move a dresser Saturday? I'll buy lunch.
+# favor_reply
+Thanks. Owe you.
+Good. That helped.
+Won't forget it.
+# work_talk
+Rebuilt a transmission today.
+Work's steady.
+Customer brought a car with a squirrel in the engine. Squirrel's fine.
+Job's good. Honest.
+# school_talk
+Didn't go to college. Learned on the job.
+Took a welding course at the community college. Worth it.
+School's important. I tell my nephew.
+# hostile stage=dislike-
+Leave.
+Don't push me.
+I've got nothing to say to you.
+Keep walking.
+We're done talking.
+Stay off my property.
+# flirt_reply romance=none
+No.
+Not interested. No offense.
+Hm. I'll pass.
+# flirt_reply romance=crush
+Huh. Didn't expect that.
+You're making me smile. That's hard.
+Okay. Keep going.
+I like you too. Thought you should know.
+# ask_out_yes
+Yes. Saturday.
+Alright. I'll pick you up.
+# ask_out_no
+No. Sorry.
+Not like that. Friends.
+
+== dating
+# date_greet
+You look nice.
+Hey. Got here early. Checked the place out.
+Brought you something. From the shop. It's a keychain.
+Hey. Glad you came.
+Wore the good shirt.
+Hey, you. Ready?
+# flirt
+You're a good-looking person, {player}.
+Don't usually smile this much.
+I'd fix anything for you.
+You're easy to be around.
+I think about you more than I should.
+Not good with words. But I like you. A lot.
+You've got a good head on your shoulders. And a nice smile.
+# date_talk
+Let's walk. Talking's easier walking.
+Know a place by the lake. Quiet.
+Tell me about your family.
+Don't like crowds. Do like you.
+I cooked. Steak. It's the one thing I make right.
+Built a bench by the river. Want to see it?
+I don't do this often.
+You want to learn to drive stick? I'll teach you.
+I'm a simple person. Hope that's okay.
+Never told anyone this. I like poetry. Some of it.
+I'd like to keep seeing you.
+You're good company. Best I've had.
+# compliment
+You're smart.
+You work hard. I notice.
+You look good today.
+You're kind. Real kind.
+I trust your judgment.
+# kiss_reply
+Huh. Good.
+That was nice. Real nice.
+Again.
+Well. Okay. Yes.
+# miss_you
+Missed you.
+Shop was quiet without you around.
+Thought about calling. Did.
+Glad you're back.
+# jealous
+Who was that?
+Don't like that guy.
+I'm not jealous. Just paying attention.
+# date_end
+Goodnight. Drive safe.
+Text me you got home.
+Had a good time.
+See you Saturday.
+Night, {player}.
+# lovers_quarrel
+I'm not good at this. Say what you need.
+That bothered me.
+Let's not yell. Let's talk.
+I'm not going anywhere. But we need to fix this.
+# proposal_yes
+Yes.
+Yes. Been waiting for you to ask. Or for me to.
+
+== marriage
+# home_greet time=morning
+Morning. Coffee's made.
+Morning. Already shoveled the drive.
+Hey. Made eggs.
+Morning. You sleep alright?
+Up early. Fixed the squeaky hinge.
+Morning, love.
+Coffee's on the counter. Black, like always. Well, with your sugar.
+Morning. Warmed up your car.
+Hey. Weather's turning. Wear a coat.
+Morning. Paper's on the table.
+Morning. You look rested.
+Hey. Packed your lunch.
+# home_greet time=evening
+You're home.
+Hey. Supper's ready.
+Welcome home.
+Hey. Fixed the dishwasher.
+There you are.
+Evening. Sit. I'll get you a drink.
+Hey, love. Good day?
+You're back. Good.
+Evening. Fire's going.
+Hey. Missed you.
+# home_greet time=night
+Late. Rough night?
+Kept a plate warm.
+Waited up.
+You're home. Good. Bed.
+Long day. Come here.
+Left the porch light on.
+Hey. Careful, the step's icy.
+You're back. Locked up already.
+# goodbye_work
+Have a good day.
+Drive careful.
+See you tonight.
+Love you.
+Lunch is in your bag.
+Checked your tires. You're good.
+Go on. Don't be late.
+Call if anything comes up.
+# work_return
+How was work?
+Anybody give you trouble?
+You look tired.
+Tell me about it.
+Good day or bad?
+Need anything?
+Want to talk, or just sit?
+Proud of you.
+# affection
+Love you. Truck's warmed up.
+You're the best thing in my life.
+Don't say it much. Mean it every day.
+I'd do anything for you.
+Glad I married you.
+You make this house a home.
+You're my person.
+Every day, I'm grateful.
+Come here.
+I'd choose you again.
+You're steady. Like me. Better than me.
+I like our life.
+You matter more than anything.
+Not a lot of words. A lot of love.
+You're the reason I come home.
+I'll always take care of you.
+I see you. All of you.
+Thank you. For everything.
+# home_talk
+Fixed the leaky faucet.
+Gutters need cleaning. I'll do it Saturday.
+Built a new shelf for the garage.
+Furnace needs a filter. Bought one.
+Neighbor's tree is leaning. Talked to him.
+Painted the shed.
+Car needs new brakes. I'll do it.
+Snow's coming. Got the shovels ready.
+Planted some tomatoes.
+Roof's solid. Checked it.
+Built a birdhouse.
+Fence post's loose. Fixed it.
+Saw a deer in the yard this morning.
+Water heater's making noise. I'll look at it.
+Back porch needs sealing. Next weekend.
+Made a new cutting board. Walnut.
+Lawn mower's running better. Sharpened the blade.
+Window in the bedroom sticks. Planed it.
+Bought a new toolbox. The old one rusted.
+Found a mouse in the garage. Relocated him.
+House is in good shape.
+I like this house. Built right.
+Thought about adding a deck.
+Fixed the garage door opener.
+Replaced the smoke detector batteries.
+Got the truck washed.
+# chores
+Did the dishes.
+Took out the trash.
+Mowed.
+Fixed the vacuum.
+Raked the leaves.
+Cleaned the gutters.
+Folded the laundry. Not well.
+Swept the garage.
+Changed the air filter.
+Washed the windows.
+Cleaned the grill.
+Split some firewood.
+# money
+Budget's fine.
+Don't need to buy that. I can build it.
+Saved a little this month.
+Truck's paid off.
+We're doing alright.
+Fixed it myself. Saved two hundred.
+Let's put some away.
+Don't like debt.
+Bonus came in. Put it in savings.
+We'll be fine.
+# meal
+Supper. Pot roast.
+Made chili.
+Grilled steaks.
+Breakfast. Bacon and eggs.
+Made sandwiches.
+Fried fish. Caught it this morning.
+Soup. It's cold out.
+Burgers on the grill.
+Made biscuits. Your mother's recipe.
+Pancakes. Sunday.
+# argue
+That's not right.
+You said you'd handle it.
+I don't like how you said that.
+I need you to listen.
+We talked about this.
+That was money we needed.
+Don't shut me out.
+I'm not mad. I'm frustrated.
+You're not hearing me.
+Going for a walk. Need to think.
+I can't fix this one alone.
+That hurt.
+# makeup
+Sorry.
+I was wrong.
+Come here. It's fine.
+Let's not do that again.
+I love you. That doesn't change.
+I'll do better.
+We're alright.
+Shouldn't have said that.
+# support
+I'm here.
+It'll be alright.
+Sit. I'll get you something.
+Tell me what happened.
+You don't have to say anything.
+I've got you.
+Whatever it is, we'll handle it.
+You're stronger than this.
+Take your time.
+I'll fix what I can. Rest.
+# plans
+Fishing Saturday?
+Want to drive to the mountains?
+Thought we'd fix up the porch together.
+Camping next month.
+Lake this weekend.
+Let's go to the county fair.
+Could build a garden bed. Spring.
+Drive to the coast. Just us.
+Want to see the old train station in Carrburg?
+Rest this weekend. No projects.
+# memories
+Remember when we met? At the hardware store.
+Remember our first date? You ordered for both of us.
+Remember the wedding? I said four words. All true.
+Remember when the truck broke down on the highway?
+Built you that bench. Our first summer.
+Remember the first winter here? Pipes froze.
+Remember when you laughed at me fixing the sink? I was soaked.
+Remember the cabin? No power. Best week.
+First time you said you loved me, I couldn't speak.
+Remember fixing up this place? Took two years.
+# anniversary
+Happy anniversary.
+Made you something. A box. Walnut.
+Another year. Good year.
+Love you more than last year.
+Here's to more.
+Took the day off. For you.
+# tease
+You can't back up a trailer.
+You use my good scissors.
+You leave lights on.
+You hum.
+You never put the tools back.
+You think everything needs a professional.
+You talk to the cat.
+You steal the covers.
+You're scared of the basement.
+You always want to stop and ask directions.
+You put ketchup on steak.
+You laugh at my one joke. Every time.
+# bedtime
+Bed.
+Night, love.
+Locked up. Let's sleep.
+Long day. Rest.
+Goodnight.
+Come here. Cold.
+Sleep well.
+Love you. Night.
+Alarm's set.
+Night, {player}. Glad you're mine.
