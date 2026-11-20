@@ -49,6 +49,7 @@ func _run() -> void:
 	await test_furniture()
 	test_places()
 	await test_sleep()
+	await test_looks_and_standing()
 	test_runtime_registration()
 	test_save_load()
 	test_external_clock()
@@ -322,6 +323,64 @@ func test_sleep() -> void:
 	life.clock.advance_minutes(10)
 	ok(passed[0] and life.needs.get_value("energy") > 40.0, "pass out at 0 energy and wake partly rested")
 	life.passed_out.disconnect(cb)
+
+
+func test_looks_and_standing() -> void:
+	life.new_game({"sex": "male", "age": 22, "height_cm": 178, "weight_kg": 69.0, "muscle": 4, "base_attractiveness": 5.0})
+	ok(near(life.money.cash, 1000.0), "new game starts with $1,000")
+	ok(life.get_flag("age") == 22 and life.body.muscle == 4.0, "profile seeds age and muscle")
+	var a0: float = life.body.attractiveness()
+	ok(a0 >= 1.0 and a0 <= 10.0, "composite in 1..10 (%.2f)" % a0)
+	life.body.weight_kg = 110.0
+	ok(life.body.attractiveness() < a0, "heavy weight lowers attractiveness")
+	life.body.weight_kg = 69.0
+	life.body.muscle = 7.0
+	ok(life.body.self_bonus() > 1.9 and life.body.self_bonus() <= 2.0, "ideal BMI + muscle 7 = about +2")
+	life.body.muscle = 10.0
+	ok(life.body.muscle_quality() < 0.2, "muscle above 7 is not better")
+	var s0: float = life.body.style_bonus()
+	life.body.buy_outfit(1.0)
+	life.body.salon(4.0)
+	life.body.daily_care(2.0)
+	ok(life.body.style_bonus() > s0 and life.body.style_bonus() <= 2.0, "style up to +2 (%.2f)" % life.body.style_bonus())
+	life.clock.advance_minutes(31 * 1440)
+	ok(life.body.outfit_now() <= 0.25 and life.body.grooming() <= 4.0, "clothes and salon wear off after a month")
+	var w0: float = life.body.weight_kg
+	for i in 5:
+		life.body.ate(200)
+		life.clock.advance_minutes(1440)
+	ok(life.body.weight_kg > w0, "overeating gains weight (%.1f -> %.1f)" % [w0, life.body.weight_kg])
+	var m0: float = life.body.muscle
+	life.body.muscle = 4.0
+	life.skills.add_xp("fitness", 100)
+	ok(life.body.muscle > 4.0, "workouts build muscle")
+	var npc := DemoNpc.new()
+	npc.npc_id = "npc_rate"
+	root.add_child(npc)
+	await process_frame
+	var comp: float = life.body.attractiveness()
+	var all_ok := true
+	for i in 30:
+		life.actions.cooldowns.clear()
+		life.actions.perform("ask_rating", npc)
+		life.clock.advance_minutes(2)
+	life.actions.action_finished.connect(func(id, _t, r): if id == "ask_rating": all_ok = all_ok and absf(r.rating - comp) <= 1.5)
+	life.actions.cooldowns.clear()
+	life.actions.perform("ask_rating", npc)
+	life.clock.advance_minutes(2)
+	ok(all_ok, "rating is within +-1 of the composite")
+	ok(not life.body.visual_params().is_empty(), "visual params for the NPC/appearance side")
+	# reputation: +1 per 10 people talked to
+	for i in 10:
+		life.relationships.register_npc("rep_%d" % i, {})
+		life.actions.perform("wave", "rep_%d" % i)
+	ok(life.standing.reputation() >= 1, "reputation +1 after 10 people (%d)" % life.standing.reputation())
+	var k0: float = life.standing.get_score("kindness")
+	life.actions.cooldowns.clear()
+	life.actions.perform("insult", "rep_0")
+	life.clock.advance_minutes(2)
+	ok(life.standing.get_score("kindness") < k0, "insults lower hidden kindness")
+	ok(life.standing.summary().size() >= 12, "12+ hidden scores")
 
 
 func test_runtime_registration() -> void:

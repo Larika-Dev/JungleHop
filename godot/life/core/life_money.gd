@@ -10,7 +10,7 @@ signal bill_missed(bill_id: String, amount: float)
 
 const LEDGER_MAX := 200
 
-var cash: float = 400.0
+var cash: float = 1000.0
 var bank: float = 0.0
 var debt: float = 0.0
 var ledger: Array = []

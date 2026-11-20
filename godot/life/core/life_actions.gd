@@ -503,8 +503,15 @@ func success_chance(def: Dictionary, target: Variant) -> float:
 			p += (rel.trait_value(nid, tr) - 0.5) * 0.4 * float(def.likes[tr])
 		if def.has("topic") and rel.has_interest(nid, def.topic):
 			p += 0.15
-		if def.get("category", "") == "romance":
+		p += life.standing.chance_modifier(def, nid)
+		if def.get("category", "") == "romance" or def.get("looks_matter", false):
 			p += rel.romance(nid) / 400.0
+			# Looks matter in dating: your attractiveness, and how it compares
+			# with theirs when the NPC has one (info "attractiveness", 1..10).
+			var mine: float = life.body.attractiveness()
+			p += (mine - 5.5) * 0.04
+			var theirs := float(rel.npc_info(nid).get("attractiveness", mine))
+			p += clampf(mine - theirs, -3.0, 3.0) * 0.03
 	if life.needs.enabled:
 		p += (life.needs.mood() - 60.0) / 400.0
 	return clampf(p, 0.05, 0.97)
@@ -520,6 +527,11 @@ func _complete(id: String, target: Variant, scale: float = 1.0, minutes_done: fl
 	var result := {"ok": true, "success": success, "message": "", "money": 0.0,
 		"needs": {}, "skills": {}, "rel": {}}
 	result.needs = life.needs.apply(fx.get("needs", {}), scale)
+	if success:
+		life.apply_body_effects(def, scale)
+	life.standing.on_action(def, success, scale)
+	if nid != "":
+		life.standing.note_interaction(nid)
 	if success and def.has("needs_per_hour"):
 		var hrs := (minutes_done if minutes_done >= 0.0 else duration_for(def)) / 60.0
 		var extra: Dictionary = life.needs.apply(def.needs_per_hour, hrs)
@@ -534,6 +546,9 @@ func _complete(id: String, target: Variant, scale: float = 1.0, minutes_done: fl
 		var rel: Dictionary = fx.get("rel", {})
 		var df := float(rel.get("friendship", 0)) * scale
 		var dr := float(rel.get("romance", 0)) * scale
+		if dr > 0.0:
+			# Attraction builds faster for better-looking players (x0.7 at 1, x1.4 at 10).
+			dr *= 0.62 + life.body.attractiveness() * 0.078
 		if def.has("topic") and life.relationships.has_interest(nid, def.topic) and df > 0.0:
 			df *= 1.5
 		life.relationships.change(nid, df, dr, id if success else id + "_failed")
@@ -556,14 +571,17 @@ func _complete(id: String, target: Variant, scale: float = 1.0, minutes_done: fl
 		for f in sf:
 			life.set_flag(f, sf[f])
 		if def.has("special"):
-			_special(str(def.special), result)
+			_special(str(def.special), result, target)
 	var cd := float(def.get("cooldown_minutes", 0))
 	if cd > 0.0:
 		cooldowns[id + "|" + target_key(target)] = life.clock.total_minutes + cd
 	var msg := str(def.get("message", "")) if success else str(def.get("fail_message", ""))
 	if msg == "" and not success:
 		msg = "That didn't go well."
-	result.message = msg.replace("{npc}", life.relationships.display_name(nid) if nid != "" else "them")
+	# Specials (bank, rating...) write their own message; keep it.
+	if msg != "" or not success:
+		result.message = msg
+	result.message = str(result.message).replace("{npc}", life.relationships.display_name(nid) if nid != "" else "them")
 	if handlers.has(id) and handlers[id].is_valid():
 		var r: Variant = handlers[id].call(def, target, result)
 		if r is Dictionary:
@@ -571,9 +589,19 @@ func _complete(id: String, target: Variant, scale: float = 1.0, minutes_done: fl
 	action_finished.emit(id, target, result)
 
 
-func _special(kind: String, result: Dictionary) -> void:
+func _special(kind: String, result: Dictionary, target: Variant = null) -> void:
 	var m = life.money
 	match kind:
+		"rate_me":
+			var r: int = life.body.perceived_rating(rng)
+			result["rating"] = r
+			var lines := {1: "Um. A one?", 2: "Honestly? A two.", 3: "A three. Sorry.", 4: "Maybe a four.",
+				5: "A solid five.", 6: "I'd say a six.", 7: "A seven, for sure.", 8: "An eight. Not bad!",
+				9: "A nine. Wow.", 10: "A ten. Easy."}
+			result.message = "{npc} looks you over. \"%s\"" % lines[r]
+		"weigh":
+			var b = life.body
+			result.message = "You weigh %d lb (%.1f kg). BMI %.1f, %s." % [int(round(b.weight_kg / 0.45359237)), b.weight_kg, b.bmi(), b.bmi_category()]
 		"deposit_all":
 			var amt: float = m.cash
 			m.deposit(amt)

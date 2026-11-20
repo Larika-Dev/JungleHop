@@ -2,7 +2,7 @@
 
 Shared life systems for Cathedral Mount: game time, basic needs, skills, money
 with hourly pay, relationships with NPCs, and a data-driven action system with
-**428 player actions**. Jobs (`godot/jobs/`), education (`godot/education/`)
+**446 player actions**. Jobs (`godot/jobs/`), education (`godot/education/`)
 and crime plug into it. The full API is in [INTERFACES.md](INTERFACES.md).
 
 ## Hook it up
@@ -70,7 +70,7 @@ Export presets must include `*.json` in "non-resource files to export" so
 godot --headless --path godot -s res://life/tests/run_tests.gd
 ```
 
-Last run: 1,358 checks passed, 0 failed (Godot 4.5.1).
+Last run: 1,416 checks passed, 0 failed (Godot 4.5.1).
 
 ## Action catalogue
 

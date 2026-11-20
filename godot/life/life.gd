@@ -15,6 +15,10 @@ const LifeSkills := preload("res://life/core/life_skills.gd")
 const LifeMoney := preload("res://life/core/life_money.gd")
 const LifeRelationships := preload("res://life/core/life_relationships.gd")
 const LifeActions := preload("res://life/core/life_actions.gd")
+const LifeBody := preload("res://life/core/life_body.gd")
+const LifeStanding := preload("res://life/core/life_standing.gd")
+
+const STARTING_CASH := 1000.0
 
 const SAVE_PATH := "user://life_save.json"
 const SAVE_VERSION := 1
@@ -25,6 +29,11 @@ var skills: RefCounted
 var money: RefCounted
 var relationships: RefCounted
 var actions: RefCounted
+## Hidden body and looks stats: weight/BMI, muscle, grooming, attractiveness.
+var body: RefCounted
+## Hidden reputation and standing scores (charisma, trust, kindness...).
+var standing: RefCounted
+var _loaded_save: bool = false
 
 ## Free-form player state shared by all systems. Prefix your keys: job. edu. crime.
 var flags: Dictionary = {}
@@ -53,6 +62,9 @@ func _init() -> void:
 	money = LifeMoney.new(now)
 	relationships = LifeRelationships.new(now)
 	actions = LifeActions.new(self)
+	body = LifeBody.new(self)
+	standing = LifeStanding.new(self, _load_json("res://life/data/standing.json"))
+	money.cash = STARTING_CASH
 
 
 func _ready() -> void:
@@ -65,6 +77,7 @@ func _ready() -> void:
 	actions.action_failed.connect(func(_id, _t, reason): notify.emit(reason))
 	skills.skill_leveled.connect(func(id, lv): notify.emit("%s skill is now level %d" % [id.capitalize(), lv]))
 	relationships.tier_changed.connect(_on_tier_changed)
+	skills.xp_gained.connect(_on_xp_gained)
 	money.bill_missed.connect(func(id, amt): notify.emit("Missed payment: %s (%s)" % [money.bills.get(id, {}).get("reason", id), money.fmt(amt)]))
 	var n: int = actions.load_dir()
 	print_verbose("Life: %d actions loaded" % n)
@@ -82,6 +95,15 @@ func _hook_foundation() -> void:
 			gs.action_performed.connect(_on_game_state_action)
 		if gs.has_method("register_saveable"):
 			gs.register_saveable("life", self)
+		# A new game from the character-creation screen seeds the body and money.
+		if gs.has_signal("game_started"):
+			gs.game_started.connect(func(_a = null):
+				# A loaded save already restored everything (load_data runs first).
+				if _loaded_save:
+					_loaded_save = false
+					return
+				var prof: Variant = gs.get("player_profile")
+				new_game(prof if prof is Dictionary else {}))
 	# Pull actions other autoloads expose with get_life_actions() / get_actions().
 	for n in ["Education", "JobSystem", "Crime", "CrimeSystem", "Law"]:
 		var sys := get_node_or_null("/root/" + n)
@@ -143,8 +165,53 @@ func _on_hour(_day: int, _hour: int) -> void:
 
 
 func _on_day(day: int) -> void:
+	body.on_day(day)
 	money.on_day(day)
 	relationships.on_day(day)
+
+
+func _on_xp_gained(id: String, amount: float) -> void:
+	if id == "fitness":
+		body.exercised(amount, 0.0)
+	elif id == "athletics":
+		body.exercised(0.0, amount)
+
+
+## Body side of an action: food eaten (even past full, which is how weight goes
+## up), clothes ("outfit": quality 0..1), salon grooming ("salon": points, a
+## month) and daily care ("daily_care": points, a day).
+func apply_body_effects(def: Dictionary, scale: float = 1.0) -> void:
+	var food := float(def.get("needs", {}).get("hunger", 0.0))
+	if food > 0.0:
+		body.ate(food * scale)
+	if def.has("outfit"):
+		body.buy_outfit(float(def.outfit))
+	if def.has("salon"):
+		body.salon(float(def.salon) * scale)
+	if def.has("daily_care"):
+		body.daily_care(float(def.daily_care) * scale)
+
+
+## Start a new life. profile: sex, age, height_cm, weight_kg (or weight_lb),
+## muscularity (0..10 or a preset), base_attractiveness (optional), name.
+## Everyone starts with $1,000 cash.
+func new_game(profile: Dictionary = {}) -> void:
+	money.from_save({"cash": STARTING_CASH, "bank": 0.0, "debt": 0.0, "ledger": [], "sessions": {}, "bills": {}})
+	needs.from_save({"values": {}, "enabled": needs.enabled})
+	for id in needs.defs:
+		needs.values[id] = float(needs.defs[id].get("start", 75))
+	skills.xp_by_skill.clear()
+	for sid in skills.DEFAULT_SKILLS:
+		skills.xp_by_skill[sid] = 0.0
+	relationships.records.clear()
+	actions.cooldowns.clear()
+	flags.clear()
+	body.setup(profile)
+	standing.reset()
+	money.cash = float(profile.get("starting_cash", STARTING_CASH))
+	set_flag("age", body.age)
+	if profile.has("name"):
+		set_flag("player.name", str(profile.name))
 
 
 func _on_need_critical(id: String) -> void:
@@ -171,6 +238,7 @@ func _on_action_finished(_id: String, _target: Variant, result: Dictionary) -> v
 
 
 func _on_tier_changed(npc_id: String, _old: String, new_tier: String) -> void:
+	standing.note_tier(npc_id, new_tier)
 	notify.emit("%s: %s" % [relationships.display_name(npc_id), relationships.TIER_LABELS.get(new_tier, new_tier)])
 
 
@@ -393,6 +461,7 @@ func apply_external_action(action_id: String, target: Variant, actor: Variant) -
 		clock.advance_minutes(minutes)
 		needs.release_all()
 	needs.apply(fx_needs)
+	apply_body_effects(def if own else {"needs": fx_needs})
 	if own and def.has("needs_per_hour"):
 		needs.apply(def.needs_per_hour, minutes / 60.0)
 	if own:
@@ -437,6 +506,8 @@ func to_save() -> Dictionary:
 		"version": SAVE_VERSION,
 		"clock": clock.to_save(),
 		"needs": needs.to_save(),
+		"body": body.to_save(),
+		"standing": standing.to_save(),
 		"skills": skills.to_save(),
 		"money": money.to_save(),
 		"relationships": relationships.to_save(),
@@ -454,6 +525,10 @@ func to_save() -> Dictionary:
 func from_save(d: Dictionary) -> void:
 	clock.from_save(d.get("clock", {}))
 	needs.from_save(d.get("needs", {}))
+	if d.has("body"):
+		body.from_save(d.body)
+	if d.has("standing"):
+		standing.from_save(d.standing)
 	skills.from_save(d.get("skills", {}))
 	money.from_save(d.get("money", {}))
 	relationships.from_save(d.get("relationships", {}))
@@ -473,6 +548,7 @@ func save_data() -> Dictionary:
 
 func load_data(d: Dictionary) -> void:
 	from_save(d)
+	_loaded_save = true
 
 
 func save_game(path: String = SAVE_PATH) -> bool:

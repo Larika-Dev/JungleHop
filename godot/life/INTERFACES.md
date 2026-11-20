@@ -233,3 +233,26 @@ writes `user://life_save.json` with every provider plus the core.
   activity, toast messages.
 - `ui/relationships_panel.gd` (Control): people you know, tiers, flags.
 - `demo/life_demo.tscn`: a playable test scene with fake NPCs and furniture.
+
+## Body, looks and hidden standing (all internal, not in the HUD)
+
+- `Life.new_game(profile)`: seeds everything from character creation and sets cash to
+  `profile.starting_cash` (default $1,000). Called automatically on `GameState.game_started`
+  for a new game (skipped after a load). Profile keys: sex, age, height_cm, weight_kg,
+  muscle (1..10), base_attractiveness (optional, else rolled), name.
+- `Life.body`: `weight_kg`, `bmi()`, `muscle` (0..10, best 7), `grooming()` (0..10),
+  `outfit_now()` (0..1), `base_attractiveness` (1..10), `style_bonus()` (0..+2),
+  `self_bonus()` (-2..+2, best at BMI 21.7 and muscle 7), `attractiveness()` (1..10),
+  `perceived_rating()` (composite within +-1). Clothes and salon grooming last a game month.
+  Food eaten and workouts change weight and muscle daily.
+  `visual_params()` -> {height_cm, weight_kg, bmi, fat 0..1, muscle, muscle_norm, grooming,
+  grooming_norm, outfit, hygiene, attractiveness} for drawing the body and face;
+  signals `weight_changed`, `attractiveness_changed`.
+- `Life.standing`: `reputation()` (starts 0, +1 per 10 connections: each person talked to,
+  plus each person who became a friend; `add_reputation(n)` for crime etc.), and 0..100 scores
+  charisma, trust, kindness, intelligence, humor, confidence, notoriety, romance_rep,
+  reliability, coolness (data/standing.json), plus derived wealth and looks. `get_score(id)`,
+  `change(id, d)`, `summary()`. They shift NPC success chances by NPC traits
+  (`chance_modifier`). Action defs may add `"standing": {score: delta}`.
+- Dating: romance actions use attractiveness (and the gap to the NPC's own `attractiveness`
+  if the NPC info has it); romance gains scale x0.7 to x1.4 with looks.
