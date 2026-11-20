@@ -104,3 +104,20 @@ Copy JSON. In code: `NpcPopulation.make_record(rng, {"sex": "female", "height_cm
 GODOT=/path/to/godot4.5 godot/npc/tests/run_tests.sh   # population, simulation, streaming, body
 GODOT=... godot/npc/tests/render.sh /tmp/shots         # PNG close-ups (needs xvfb-run)
 ```
+
+## Body mesh (MakeHuman base, CC0)
+
+NPC bodies now use the MakeHuman 1.x base mesh, default rig weights and macro
+targets (all CC0, makehumancommunity/makehuman on GitHub), converted by
+`tools/build_mh_body.py` into `models/mh_<sex>.bin/.json`:
+
+- blend shapes: fat, slim, muscle (MakeHuman weight/muscle targets), calf/quad/glute
+  flex (walk), and caucasian/african/asian face and body shape (set from ethnicity);
+- 38-bone skeleton (MakeHuman bones merged), arms hung down from the A-pose at runtime;
+- eyeballs, a hair shell over the scalp, brows, lips, nails and the beard zone as
+  vertex regions the shader paints; automatic mesh LODs (`ImporterMesh.generate_lods`).
+
+Skin, hair and clothes are still painted by `npc_body.gdshader` (no texture packs
+were reachable from the build machine). The old procedural body in
+`npc_body_mesh.gd` is the fallback when `models/` is missing.
+Rebuild: `python3 godot/npc/tools/build_mh_body.py --src /tmp/mh` (downloads the data).

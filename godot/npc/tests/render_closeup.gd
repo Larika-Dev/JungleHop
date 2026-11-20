@@ -48,12 +48,12 @@ func _init() -> void:
 	cam.fov = 40
 	shots = [
 		["lineup", Vector3(0, 1.0, 5.2), Vector3(0, 0.85, 0)],
-		["calves_side", Vector3(-1.6 - 1.1, 0.35, 0.0), Vector3(-1.6, 0.3, 0)],
-		["calves_back", Vector3(-1.6 + 0.2, 0.4, -1.0), Vector3(-1.6, 0.3, 0)],
-		["hand", Vector3(-1.6 - 0.62, 0.74, 0.18), Vector3(-1.6 - 0.24, 0.72, 0.0)],
-		["toes", Vector3(-1.6 + 0.05, 0.22, 0.55), Vector3(-1.6, 0.03, 0.12)],
+
+
+
+
 		["face", Vector3(-1.6 + 0.05, 0.935 * bodies[0]._height_m, 0.40), Vector3(-1.6, 0.93 * bodies[0]._height_m, 0)],
-		["lineup_back", Vector3(0, 1.0, -5.2), Vector3(0, 0.85, 0)],
+
 	]
 
 func _process(delta: float) -> bool:
