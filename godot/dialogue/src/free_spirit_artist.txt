@@ -1,0 +1,429 @@
+// Free-spirit Artist: whimsical, talks in colors and textures, murals, thrift finds, paint on everything.
+== base
+# greet stage=stranger
+Oh, hi! Your aura is a really nice teal. I'm {npc}.
+Hello! Sorry, I have paint on my hands. And my face, probably. I'm {npc}.
+Hey there! You have a really interesting silhouette. Can I sketch you sometime? I'm {npc}.
+Hi! I'm {npc}. I paint murals. And sometimes walls that didn't ask for murals.
+Oh, a new face! Faces are my favorite thing to draw. Hi!
+Hello, stranger! The light's hitting you like a Vermeer right now.
+# greet stage=acquaintance
+{player}! You're wearing ochre today. Bold choice. I love it.
+Hey, {player}! I finished that piece I told you about. Well, abandoned it. Same thing.
+Oh, {player}! You're like a splash of color on a gray day.
+Hi, {player}! I found a lamp shaped like a swan at the thrift store. Life is good.
+{player}! Come see what I'm painting on the alley wall.
+# greet stage=friend+
+{player}! My muse! My dear friend!
+There you are! I painted you into my new mural. You're the sun.
+{player}! I've been saving a color just for you. It's called "you".
+Hey, love! Come to the studio, I'm making terrible pottery and I need company.
+{player}! You make the whole world look like watercolor.
+My favorite human canvas! Hi!
+# greet time=morning
+Morning! The light's so golden right now. I have to paint it before it's gone.
+Good morning! I've been up since dawn watching the fog on the ravine.
+Hi! Mornings are pale yellow. Afternoons are orange. You're always magenta.
+# greet time=evening
+Evening! The sky's doing purple again. It never gets old.
+Hello! Golden hour, the best hour. Everything glows.
+Hi! The streetlights on Hamilton make everything look like a film set.
+# greet time=night
+Oh, hi! Night owls see the best colors. Deep indigo everywhere.
+Hello! I'm on my way to paint by moonlight. Want to come?
+The night is so velvety. Can you feel it?
+# farewell
+Bye! Stay colorful!
+See you! Notice something beautiful today, okay?
+Ciao! May your day be full of happy accidents.
+Bye! I'm off to chase the light.
+Later! Don't let anyone tell you to color inside the lines.
+Goodbye! You're a masterpiece, by the way.
+# farewell stage=friend+
+Bye, {player}! Come to my gallery opening! It's in a garage.
+See you, sweet friend. Take some of my paint home.
+Bye, my muse! I'll send you a sketch tonight.
+# smalltalk
+Have you seen the new mural on Tanner's Alley? I did that. Shh.
+The thrift store on Rosemary had a box of vintage buttons. I bought all of them.
+I'm doing a series of paintings of the North Quad oaks. Each one is a different emotion.
+Did you notice the brick on the old mill turns pink at sunset?
+I made a sculpture out of bike parts. It's called "Commute".
+I dyed my hair with beet juice. It's fading into a lovely rose.
+The art department let me use the kiln. I made seventeen lopsided mugs.
+I found a dead moth with perfect wings. I'm painting it. Respectfully.
+Somebody painted over my sidewalk chalk. The rain beat them to it, though.
+I traded a painting for a month of coffee at Pamlico Coffee. Best deal ever.
+I think the color of Cathedral Mount is burnt sienna. With little flecks of heaven blue.
+I'm learning to make paper from old jeans.
+# smalltalk stage=friend+
+You know, you're one of the few people who gets my art.
+Sometimes I'm scared I'll never be good enough. Then you look at my work and I feel okay.
+I want to paint you properly someday. Like, a real portrait.
+You make me brave enough to show people my stuff.
+I don't have much money, but I'd give you any painting I've ever made.
+You're like my favorite brush. Reliable and a little messy.
+# smalltalk weekend=true
+Weekend! Flea market, then painting until my eyes cross.
+Saturday! The artists' collective is having an open studio.
+Sunday! Perfect day to paint the river.
+# about_self
+I grew up in a house where every wall was a different color. My mom's idea.
+I dropped out of art school to paint for real. Best and worst decision.
+I live above the record store. My studio is also my kitchen and bedroom.
+I see colors when I hear music. It's called synesthesia. Or I'm just weird.
+I want to paint a mural on every building in this town. Ask permission later.
+I make jewelry out of old forks. People buy it! Sometimes.
+I'm not great with money or schedules. But I'm great with color.
+# opinion_place
+{place}? The light in here is incredible. Look at the shadows.
+{place} needs a mural. A big one. With a heron.
+I love {place}. The textures are so honest.
+{place}? It's very beige. I'd fix it.
+{place} has a vibe like a faded postcard. I mean that lovingly.
+# compliment_reply
+Oh! That's so sweet! I'm going to paint that feeling.
+Thank you! You just turned my day bright yellow.
+Aww. You're a sunbeam, {player}.
+Really? You like it? I'm glowing!
+Thank you! I'll carry that around like a pebble in my pocket.
+# insult_reply
+Oh. That feels like a muddy brown. Not nice.
+Art is subjective. So is rudeness.
+I'm going to paint this feeling and call it "Rude Person, Oil on Canvas".
+That's okay. Van Gogh only sold one painting.
+Wow. Your aura just turned gray.
+# gift_reply
+For me? Oh, it's beautiful! The texture!
+I'm going to use this in a piece! In a good way!
+You remembered I like weird little things! Thank you!
+This is perfect! It's going on my altar of found objects!
+Oh, I love it! You have such a good eye.
+# joke
+Why did the artist go to jail? Because she was framed.
+What's an artist's favorite kind of tree? A palette pine.
+I tried to draw a circle, but it was pointless.
+My paintings are like my love life. Abstract.
+# ask_favor
+Could you model for me? Just sit still for three hours. Easy!
+Would you help me carry canvases to the gallery? They're huge.
+Can you hold the ladder while I paint the top of the wall? Don't tell the owner.
+# favor_reply
+Thank you! You're a work of art!
+You're the best! I'll paint you something!
+I owe you a painting. A big one.
+# work_talk
+I work at the frame shop. Surrounded by art all day. Heaven.
+Sold a painting today! Forty dollars! I'm rich!
+My boss says I can't paint on the customer's frames. Rules are so restrictive.
+I teach a kids' art class. They're better than me.
+# school_talk
+I'm auditing a color theory class. I already know it, but I love hearing it.
+My professor said my work was "chaotic." Yes. Thank you.
+Art history makes me cry. In a good way.
+# hostile stage=dislike-
+You're a really dull color, {player}.
+Please go away. You're ruining my composition.
+I don't want you in my space.
+You're like turpentine. Harsh.
+I'm not going to waste my creative energy on you.
+Bye. Go be gray somewhere else.
+# flirt_reply romance=none
+Ha! You're sweet, but I'm in a committed relationship with my art.
+Oh! That's so flattering! But no, darling. Friends.
+I love you! As a friend! A friend I paint!
+# flirt_reply romance=crush
+Oh! Your words just turned everything pink.
+Are you flirting with me? I'm blushing in cadmium red.
+You're making my heart do brushstrokes.
+I've been sketching you in secret. Is that weird? I'm into you.
+# ask_out_yes
+Yes! Let's go somewhere with good light!
+A date? With me? Yes! I'll wear something with fewer paint stains!
+# ask_out_no
+I'm sorry, darling. I don't feel that way. But I adore you as a friend.
+Oh, that's lovely, but no. Still my muse, though?
+
+== dating
+# date_greet
+Hi! I put on lipstick. And it's not paint! Mostly.
+There you are! You look like a Renoir!
+Hello, darling! I brought you a little sketch I did of us.
+You came! The whole evening just turned gold.
+Hi! I found us the perfect spot. The light's going to be amazing.
+Hey, beautiful! I'm so happy to see you!
+# flirt
+You're my favorite color. All of them.
+I want to paint you every day for the rest of my life.
+You make my heart feel like a watercolor bleeding into wet paper.
+You're the most beautiful thing in this town. And I've painted the whole town.
+Every time you smile, I see a new color.
+You're my muse. My forever muse.
+I'd give up blue for you. And I love blue.
+# date_talk
+Let's go to the sculpture garden behind the art building.
+Can I paint your hand? Just your hand. It's beautiful.
+Tell me your favorite color and why. This is important.
+I made us a picnic. Everything's colorful. Even the sandwiches.
+Let's go to the thrift store and buy each other weird gifts.
+I've never shown anyone my sketchbook. Want to see?
+Let's watch the sunset from the roof of the old mill.
+You make the world feel less gray.
+I think we'd make a beautiful painting. Two colors, blending.
+Let's make art together! Even if it's terrible!
+Do you believe in fate? I believe in color. And you.
+I'm so happy right now. Like, sunflower happy.
+# compliment
+You have such an artistic soul.
+Your eyes are the most amazing shade.
+You see beauty in things. That's rare.
+You're gorgeous tonight. Like a painting.
+You make everything feel inspired.
+# kiss_reply
+Oh. That was a masterpiece.
+I saw colors. Real colors.
+That was like a Chagall. Floating.
+Again! I want to memorize it!
+# miss_you
+I missed you! I painted you from memory. You're better in person.
+Everything was a little gray without you.
+I kept seeing your colors everywhere.
+I made you a collage. It's all about missing you.
+# jealous
+Who was that? They have a very bland aura.
+I'm not jealous. I'm a little green. Like sap green.
+I just want to be the only artist in your life.
+# date_end
+Tonight was a masterpiece. Goodnight!
+Goodnight, darling. I'll dream in color.
+Thank you for tonight. I'm going to paint it.
+Same time next week? Same light?
+Goodnight, my muse.
+# lovers_quarrel
+That hurt. It feels like a dark gray.
+I'm upset, darling. Let's not let this smear us.
+Can we talk? I don't want to lose this color.
+I need some space. I'll go paint. Then let's talk.
+# proposal_yes
+Yes! Yes! Oh, everything's gold!
+I'll marry you! Our wedding will be the most colorful thing ever!
+
+== marriage
+# home_greet time=morning
+Good morning, my love! The light in the kitchen is perfect right now.
+Morning, darling! I painted the sunrise for you. It's drying.
+Hi, love! Coffee's ready. I put it in the mug I made.
+Good morning! You look like a Rembrandt when you sleep.
+Morning! I've been up since five. The fog was too beautiful.
+Good morning, my muse! Let's have breakfast in the garden.
+Hi, sweetheart! I left paint on the counter. Sorry. Again.
+Morning, love! I dreamed in colors I've never seen.
+Good morning! I sketched you while you slept. Don't be mad.
+Morning! I found a bird's feather on the porch. It's iridescent!
+Good morning, darling. Let's make today beautiful.
+Hi! The kitchen smells like turpentine and toast. Our home.
+# home_greet time=evening
+Welcome home, love! Come see what I painted today!
+You're home! I made dinner and a mess. Both are art.
+Hi, darling! I lit candles. The shadows are lovely.
+Welcome back, my muse! The house was so beige without you.
+Hi, love! I rearranged the living room. Everything's a different color now.
+You're home! Let's watch the sunset from the porch.
+Welcome home! I sold a painting today! A real one!
+Hi, sweetheart! I made you a mug. It's lopsided. Like my heart for you.
+There you are! I've been waiting all day.
+Welcome home, darling! The light's turning purple. Perfect timing.
+# home_greet time=night
+You're home late, love. The moonlight's gorgeous.
+Hi, darling. I was painting by lamplight. Come see.
+It's late! Come to bed. Or come to the studio.
+You're back! I waited up, mixing colors.
+Hi, love. Long day? Let me hold you.
+There you are. The house is so cozy at night.
+Hi, sweetheart. I fell asleep in the studio again.
+You're home. Now the night feels complete.
+# goodbye_work
+Have a beautiful day, love!
+Bye, darling! Notice the colors today!
+Have a great day! I'll be painting you while you're gone!
+Bye! You've got a little paint on your sleeve. Leave it. It's art.
+Have a lovely day, my muse!
+Go! Make the world prettier!
+Bye, love! I put a sketch in your bag.
+Have a good day, darling! Come back soon!
+# work_return
+How was your day, love? Was it a gray day or a gold day?
+Tell me everything! What colors did you see?
+You look tired, darling. Come sit in the garden.
+Did anything beautiful happen?
+Was your boss beige again? I'm sorry.
+Rough day? Let's paint it away.
+You're home now. Let's make it soft.
+I'm proud of you, love. Always.
+# affection
+I love you more than all the colors in the world.
+You're my favorite masterpiece.
+Being married to you is like living in a painting.
+You're my muse. Forever.
+I'd paint you every day for a thousand years.
+You make my life so colorful.
+I love you, darling. Every shade of you.
+You're the most beautiful thing I've ever seen. And I've seen a lot of sunsets.
+You make me feel like art.
+I'm so lucky to have you, love.
+You're my home. My studio. My everything.
+I love the way the light hits you.
+You're my favorite color. Still.
+I'd give up painting for you. Okay, not really. But I'd think about it.
+You make every day inspired.
+I love you more than blue. And I really love blue.
+You're my best work. Well, we made us together.
+You make my heart feel like a sunrise.
+# home_talk
+I painted the bathroom teal. Do you love it? Be honest. Love it.
+I found an old window frame on the curb. I'm turning it into a mirror.
+I've been making a mosaic for the garden path.
+The neighbor asked me to paint their mailbox. I said yes. It's going to be a whale.
+I hung up some of my paintings in the hallway.
+I made a wind chime out of old spoons.
+I've been thinking about painting the ceiling. Like a sky.
+I found a vintage armchair at the thrift store. It's mustard yellow.
+I planted wildflowers in the yard. All the colors.
+I started a pottery class at the community center.
+I made new curtains from old saris. They glow in the morning.
+The garden is blooming! I'm painting it every day.
+I'm thinking about turning the garage into a gallery.
+I made a collage of our life together.
+I traded a painting for a bunch of fresh flowers.
+I've been dyeing fabric with avocado pits. They turn pink!
+The cat walked through my paint. There are blue paw prints everywhere.
+I painted a little door at the bottom of the garden wall. For fairies.
+I've been making stained glass. It's harder than it looks.
+I think the house needs more plants. Hanging ones.
+I'm doing a portrait series of our neighbors.
+I hung fairy lights in the studio.
+I found a box of old photographs at the flea market. Strangers' lives. So beautiful.
+I've been inspired lately. I think it's you.
+I want to paint the front door every season.
+I love our little home. It's a work in progress. Like us.
+# chores
+I did the dishes. And painted a little flower on the soap dish.
+I vacuumed. Found three paintbrushes under the couch.
+Could you take out the trash? I'm mid-brushstroke.
+I swept the studio. It's still messy. Organized chaos.
+I folded the laundry. Badly. Artistically.
+I cleaned the kitchen. Mostly paint off the counter.
+Let's clean together! Put on some jazz!
+I watered all the plants. They're my little sculptures.
+I organized my paint tubes by color. It's a rainbow.
+I scrubbed the bathroom. The teal is so pretty when it's clean.
+I made the bed. With the patchwork quilt.
+I washed the windows. The light is so much better now.
+# money
+Money's tight this month. Art doesn't always pay.
+I sold a painting! We can pay the electric bill!
+I made a budget. With watercolors.
+We don't need much, love. Just paint and each other.
+I'm doing a commission for a restaurant. Good money!
+Let's not buy anything new. Thrift everything!
+I traded art for groceries. Barter economy!
+We should save a little. For a trip to see the old masters.
+I'll teach more classes. For extra money.
+We're rich in beauty, darling.
+# meal
+Dinner's ready! I arranged the salad like a painting.
+I made breakfast! Fruit, cut into flowers!
+Let's eat in the garden tonight.
+I made soup. It's a beautiful orange.
+I baked bread. It's lumpy. It's art.
+Let's have a picnic in the studio.
+I made pasta with beets. It's pink!
+Dinner by candlelight. Everything looks better.
+I made a cake. It's a little lopsided. Like everything I make.
+Let's try that new taco place. The walls are painted so beautifully.
+# argue
+You moved my paintings. I had them in a very specific order.
+I feel like you don't take my art seriously.
+I'm not messy! I'm creative!
+You said we'd go to my gallery opening. You didn't come.
+Can you please not call my work a hobby?
+I need space to create. Literally. Space.
+You never notice when I change things.
+I'm not irresponsible. I'm free.
+I feel like you want me to be practical. I'm not practical.
+I'm going to go paint. And cool off.
+You stepped on my canvas!
+I just want you to see me. The real me.
+# makeup
+I'm sorry, darling. Let's start a fresh canvas.
+I love you. I'm sorry I got so worked up.
+Let's paint together. It always helps.
+I hate fighting with you. It turns everything gray.
+I'm sorry I'm so messy. In every way.
+You're my favorite person. Even when we clash.
+Let's make up in the garden.
+We're good, love. We always blend back together.
+# support
+It's okay, love. Let's sit in the garden.
+You're beautiful, even when you're sad.
+Let me paint you something happy.
+Whatever it is, we'll get through it.
+Breathe, darling. Look at the light.
+You don't have to be okay. Just be.
+I'm here, love. Paint-stained and always here.
+Let's make something together. Art heals.
+You're stronger than you know. Like oak gall ink. It never fades.
+I love you. Every shade of you. Even the blue ones.
+# plans
+Let's go to the art museum in the city this weekend!
+How about a trip to the coast? I want to paint the ocean.
+Let's go to the flea market! Treasure hunting!
+Let's take a pottery class together!
+How about a road trip to see the fall colors?
+Let's paint a mural together on the garage!
+Let's go to the open studios in Carrburg!
+How about a picnic by the river? I'll bring my sketchbook.
+Let's go stargazing. The night sky is the best painting.
+Let's travel to Europe someday. See all the old masters.
+# memories
+Remember our first date? I painted your hand.
+Remember when we met? I had paint on my face.
+Remember our wedding? The wildflowers everywhere?
+Remember the mural we painted together on our first anniversary?
+Remember our honeymoon? I painted every sunset.
+I still have the sketch I did of you the day we met.
+Remember when we found that weird lamp at the thrift store?
+Remember when we got caught painting the alley wall?
+Remember the first time you came to my gallery opening?
+Remember when we danced in the studio covered in paint?
+# anniversary
+Happy anniversary, my love! I painted us!
+Another year! Our love is a masterpiece!
+I made you something! It's a sculpture of us!
+Happy anniversary, darling! Still my favorite color!
+I love you more every year. Like layers of paint.
+Here's to another year of art and love!
+# tease
+You still can't draw a straight line.
+You think beige is a color. It's not.
+You always ask "what is it?" about my paintings.
+You hide my paintbrushes.
+You're secretly a great artist. I've seen your doodles.
+You call my studio "the mess".
+You always step on my wet canvases.
+You can't tell turquoise from teal.
+You fall asleep in museums.
+You think thrift shopping is weird. It's treasure hunting!
+You laugh when I talk about auras.
+You're my favorite critic. Even when you're wrong.
+# bedtime
+Goodnight, my love. Dream in color.
+Come to bed, darling. The moon's out.
+Goodnight, my muse. Same easel tomorrow?
+Sleep well, love. I'll paint the sunrise for you.
+Goodnight! I love you more than paint.
+Let's fall asleep under the fairy lights.
+Goodnight, {player}. You're my masterpiece.
+Sweet dreams, darling.
+Come cuddle. I washed the paint off. Mostly.
+Goodnight. Thank you for another day in full color.

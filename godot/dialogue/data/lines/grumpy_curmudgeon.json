@@ -892,7 +892,7 @@
   {
    "tier": "base",
    "context": "hostile",
-   "text": "I've got nothing to say to you.",
+   "text": "I've got nothing to say to you. Except get off my lawn.",
    "cond": {
     "stage": [
      "enemy",
@@ -2205,7 +2205,7 @@
   {
    "tier": "marriage",
    "context": "goodbye_work",
-   "text": "Go on. Don't be late.",
+   "text": "Go on. Don't be late. Lateness is how civilization ends.",
    "cond": {
     "romance": [
      "married"
@@ -2260,7 +2260,7 @@
   {
    "tier": "marriage",
    "context": "goodbye_work",
-   "text": "Go. Make your money. Come back.",
+   "text": "Go. Make your money. Come back before the traffic.",
    "cond": {
     "romance": [
      "married"
@@ -3525,7 +3525,7 @@
   {
    "tier": "marriage",
    "context": "support",
-   "text": "You'll get through this. I've seen you get through worse.",
+   "text": "You'll get through this. You got through my mother's Thanksgivings.",
    "cond": {
     "romance": [
      "married"

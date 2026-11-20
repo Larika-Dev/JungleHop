@@ -123,7 +123,7 @@ Study hard. Don't waste your parents' money.
 The university's gotten too big. They're building everywhere.
 # hostile stage=dislike-
 Get off my property.
-I've got nothing to say to you.
+I've got nothing to say to you. Except get off my lawn.
 You're worse than the leaf blowers.
 Go away before I call the police. Or your mother.
 Don't you dare walk on my lawn.
@@ -243,12 +243,12 @@ It's late. Did you eat? There's soup.
 There you are. The dog next door's been barking for an hour.
 You're home. Good. Now I can sleep.
 # goodbye_work
-Go on. Don't be late.
+Go on. Don't be late. Lateness is how civilization ends.
 Drive carefully. People are idiots on the road.
 Hmph. Have a good day. Or a tolerable one.
 Take an umbrella. Forecast's wrong, but take one.
 Bye. Lunch is in the fridge. Don't forget it.
-Go. Make your money. Come back.
+Go. Make your money. Come back before the traffic.
 Watch out for the potholes on Rosemary.
 Love you. Now go.
 # work_return
@@ -372,7 +372,7 @@ You're tougher than you think.
 Don't cry. Or cry. I've got a handkerchief.
 The world's terrible. You're not.
 Let me handle it.
-You'll get through this. I've seen you get through worse.
+You'll get through this. You got through my mother's Thanksgivings.
 Hmph. I love you. That's got to count for something.
 # plans
 Let's stay home this weekend. Away from people.
