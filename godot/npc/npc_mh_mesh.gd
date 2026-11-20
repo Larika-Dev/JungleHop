@@ -4,7 +4,7 @@ extends RefCounted
 ## tools/build_mh_body.py from CC0 MakeHuman data) as a skinned ArrayMesh with
 ## blend shapes and automatic LODs. Cached in user://npc_cache.
 
-const VERSION := 6
+const VERSION := 9
 ## Blend shape names come from the model's meta (body, flex, ethnicity, face variety).
 static func shape_list() -> Array:
 	return meta("male").get("shapes", [])

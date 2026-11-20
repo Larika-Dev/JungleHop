@@ -34,6 +34,7 @@ func _init() -> void:
 	var picks := [pop[3], pop[11], pop[20], pop[33], pop[41]]
 	picks[0]["wardrobe"] = {"outer": "denim_jacket"}
 	picks[3]["wardrobe"] = {"outer": "puffer"}
+	picks[1]["wardrobe"] = {"top": "", "bottom": "", "outer": "", "under_top": "undershirt", "under_bottom": "boxer_briefs"}
 	picks[0].hair_style = "medium"
 	picks[1].hair_style = "short"
 	picks[2].hair_style = "ponytail"

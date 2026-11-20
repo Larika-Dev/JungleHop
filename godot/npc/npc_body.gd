@@ -262,7 +262,19 @@ func dress(items: Dictionary, tint: Dictionary = {}) -> void:
 		if not it2.is_empty() and (it2.skirt > 0.0 or it2.coat > 0.0):
 			_stride = 0.7
 	_material.set_shader_parameter("separate_clothes", 1.0)
+	_update_under_visibility()
 	_apply_build_shapes()
+
+
+## Undergarments are always worn (and in `outfit`), but only drawn when nothing
+## covers them: no clipping through trousers, and fewer draw calls.
+func _update_under_visibility() -> void:
+	var dress_on: bool = NpcWardrobe.item(outfit.get("bottom", "")).get("dress", false)
+	for g in _garments:
+		if g.name == "Wear_under_bottom":
+			g.visible = outfit.get("bottom", "") == ""
+		elif g.name == "Wear_under_top":
+			g.visible = outfit.get("top", "") == "" and outfit.get("outer", "") == "" and not dress_on
 
 
 ## Same, straight from Life.body.visual_params() (godot/life):
@@ -285,6 +297,7 @@ func set_lod(l: int) -> void:
 	_material.set_shader_parameter("detail", 1.0 if l == 0 else (0.4 if l == 1 else 0.0))
 	if _hair:
 		_hair.visible = l < 2
+	_update_under_visibility()
 	_material.set_shader_parameter("painted_eyes", 1.0 if l == 2 and not use_mh else 0.0)
 	_material.set_shader_parameter("use_regions", 1.0 if use_mh else 0.0)
 	mesh_instance.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_ON if l < 2 else GeometryInstance3D.SHADOW_CASTING_SETTING_OFF

@@ -74,7 +74,7 @@ void fragment() {
 			vec3 dv = normalize(COLOR.rgb * 2.0 - 1.0);
 			e = degrees(acos(clamp(-dv.z, -1.0, 1.0))) / 32.0 * 0.075;
 		}
-		col = e < 0.075 ? (e < 0.032 ? vec3(0.015) : eye_color * (0.7 + 6.0 * (e - 0.032))) : mix(vec3(0.95, 0.93, 0.9), vec3(0.88, 0.8, 0.78), smoothstep(0.2, 0.5, e));
+		col = e < 0.075 ? (e < 0.024 ? vec3(0.015) : eye_color * (0.7 + 6.0 * (e - 0.032))) : mix(vec3(0.95, 0.93, 0.9), vec3(0.88, 0.8, 0.78), smoothstep(0.2, 0.5, e));
 		if (e > 0.06 && e < 0.08) col *= 0.6;   // limbal ring
 	} else if (part == 7) {               // finger: nail on the back near the tip
 		float a = min(th, 360.0 - th);    // 0 = back of the finger
@@ -89,6 +89,7 @@ void fragment() {
 		}
 		if (COLOR.r > 0.5) mat = 6;
 		if (COLOR.g > 0.55) mat = 9;
+		if (UV2.y > 0.72) col = mix(col, hair_color * 0.2 + vec3(0.02), clamp((UV2.y - 0.72) / 0.2, 0.0, 1.0));   // lash line
 	} else if (part == 3) {               // head
 		float line = df < 40.0 ? mix(hair_front, hair_side, smoothstep(20.0, 40.0, df))
 			: (df < 110.0 ? mix(hair_side, hair_back, smoothstep(70.0, 110.0, df)) : hair_back);
@@ -160,8 +161,9 @@ void fragment() {
 		rough = 0.6;
 		spec = 0.3;
 	} else if (mat == 6) {
-		col = mix(skin_color, vec3(0.62, 0.32, 0.32), 0.35) * 0.92;
-		rough = 0.35;
+		col = mix(skin_color, vec3(0.55, 0.27, 0.27), 0.42) * 0.88;
+		rough = 0.48;
+		spec = 0.3;
 	}
 	ALBEDO = col;
 	ROUGHNESS = rough;

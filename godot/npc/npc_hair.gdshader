@@ -10,7 +10,7 @@ float hash(float x) { return fract(sin(x * 127.1) * 43758.5453); }
 void fragment() {
 	float across = fract(UV.x);
 	float seed = floor(UV.x * 0.0) + UV.x - across;
-	float lanes = 7.0;
+	float lanes = 9.0;
 	float lane = floor(across * lanes);
 	float lx = fract(across * lanes);
 	float r = hash(lane + UV.x * 13.0 - across * 13.0);
@@ -19,7 +19,10 @@ void fragment() {
 	float edge = smoothstep(0.0, 0.12, across) * smoothstep(1.0, 0.88, across);
 	ALPHA = strand * edge;
 	ALPHA_SCISSOR_THRESHOLD = 0.35;
-	vec3 c = hair_color * (0.65 + 0.5 * r) * mix(0.7, 1.05, UV.y);
+	vec3 c = hair_color * (0.7 + 0.4 * r) * mix(0.75, 1.05, UV.y);
+	// a soft sheen band along the strand, like light catching the hair
+	float sheen = pow(clamp(1.0 - abs(dot(normalize(NORMAL), normalize(VIEW))), 0.0, 1.0), 3.0);
+	c += hair_color * 0.25 * sheen;
 	ALBEDO = c;
 	ROUGHNESS = 0.55;
 	SPECULAR = 0.45;

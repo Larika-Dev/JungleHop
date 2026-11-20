@@ -6,7 +6,13 @@ extends RefCounted
 ## it follows weight, muscle and the walk. Skirts and dresses add a flared tube.
 ## 10 outerwear, 20 shirts, 20 pants/skirts/dresses, 10 shoes.
 
-const SLOTS := ["shoes", "bottom", "top", "outer"]
+const SLOTS := ["under_bottom", "under_top", "shoes", "bottom", "top", "outer"]
+const UNDER := ["under_bottom", "under_top"]
+# Laplacian smoothing passes per slot: clothes drape over the body instead of
+# showing every muscle; shoes lose the toes.
+const SMOOTH := {"under_bottom": 0, "under_top": 0, "shoes": 15, "bottom": 8, "top": 16, "outer": 20}
+# Minimum distance off the skin per layer, so layers never cross each other.
+const MIN_OFF := {"under_bottom": 0.0015, "under_top": 0.0028, "shoes": 0.006, "bottom": 0.0045, "top": 0.0075, "outer": 0.013}
 # Patterns: 0 solid, 1 stripes, 2 plaid, 3 denim, 4 knit, 5 leather.
 static var ITEMS := _items()
 static var _cache := {}
@@ -16,7 +22,7 @@ static var _shader: Shader
 static func _it(id: String, name: String, slot: String, c: String, c2: String, pattern: int, p: Dictionary) -> Dictionary:
 	var d := {"id": id, "name": name, "slot": slot, "color": Color(c), "color2": Color(c2), "pattern": pattern,
 		"thick": 0.004, "hem": 0.555, "neck": 0.815, "sleeve": 0.72, "vneck": 0.0, "turtle": false, "open": false,
-		"coat": 0.0, "waist": 0.6, "leg_hem": 0.04, "skirt": 0.0, "flare": 1.25, "collar": 0.045, "sex": "any"}
+		"coat": 0.0, "waist": 0.6, "leg_hem": 0.04, "skirt": 0.0, "flare": 1.25, "collar": 0.045, "sex": "any", "sport": false}
 	d.merge(p, true)
 	return d
 
@@ -76,6 +82,17 @@ static func _items() -> Array:
 		_it("shift_dress", "Black shift dress", "bottom", "#1E1F1F", "#1E1F1F", 0, {"dress": true, "skirt": 0.33, "flare": 1.15, "sleeve": 0.73, "sex": "female"}),
 		_it("wrap_dress", "Green wrap dress", "bottom", "#2F5E3A", "#2F5E3A", 0, {"dress": true, "skirt": 0.26, "flare": 1.3, "sleeve": 0.6, "vneck": 0.06, "sex": "female"}),
 		_it("sweater_dress", "Sweater dress", "bottom", "#B5A68A", "#B5A68A", 4, {"dress": true, "skirt": 0.31, "flare": 1.1, "sleeve": 0.49, "turtle": true, "thick": 0.006, "sex": "female"}),
+		# Undergarments (separate pieces under everything)
+		_it("briefs", "Briefs", "under_bottom", "#F1F0EB", "#5F646A", 4, {"thick": 0.0018, "uleg": 0.465, "uwaist": 0.565, "sex": "male"}),
+		_it("boxer_briefs", "Boxer briefs", "under_bottom", "#1E1F1F", "#5F646A", 4, {"thick": 0.0018, "uleg": 0.40, "uwaist": 0.57, "sex": "male"}),
+		_it("boxers", "Plaid boxers", "under_bottom", "#4C7A8C", "#F1F0EB", 2, {"thick": 0.004, "uleg": 0.39, "uwaist": 0.57, "sex": "male"}),
+		_it("panties", "Panties", "under_bottom", "#E8C9B8", "#D9A99A", 4, {"thick": 0.0015, "uleg": 0.47, "uwaist": 0.55, "sex": "female"}),
+		_it("boyshorts", "Boy shorts", "under_bottom", "#1E1F1F", "#3A3C3E", 4, {"thick": 0.0015, "uleg": 0.445, "uwaist": 0.555, "sex": "female"}),
+		_it("bra", "Bra", "under_top", "#E8C9B8", "#D9A99A", 0, {"thick": 0.0025, "sex": "female"}),
+		_it("bra_black", "Black bra", "under_top", "#1E1F1F", "#1E1F1F", 0, {"thick": 0.0025, "sex": "female"}),
+		_it("sports_bra", "Sports bra", "under_top", "#5F646A", "#80B4D9", 4, {"thick": 0.003, "sport": true, "sex": "female"}),
+		_it("undershirt", "White undershirt", "under_top", "#F4F2EC", "#F4F2EC", 4, {"thick": 0.0015, "hem": 0.545, "sleeve": 0.74, "neck": 0.818, "sex": "male"}),
+		_it("tank_undershirt", "Tank undershirt", "under_top", "#F4F2EC", "#F4F2EC", 4, {"thick": 0.0015, "hem": 0.545, "sleeve": 2.0, "vneck": 0.03, "sex": "male"}),
 		# Shoes (10)
 		_it("sneaker_white", "White sneakers", "shoes", "#F1F0EB", "#D9D9D4", 5, {"thick": 0.008, "collar": 0.05}),
 		_it("sneaker_black", "Black sneakers", "shoes", "#1E1F1F", "#F1F0EB", 5, {"thick": 0.008, "collar": 0.05}),
@@ -113,6 +130,8 @@ static func outfit_for(rec: Dictionary) -> Dictionary:
 		if slot == "bottom" and sex == "female" and rng.randf() < 0.55:
 			pool = pool.filter(func(it): return it.sex == "any")
 		out[slot] = pool[rng.randi() % pool.size()].id
+	if sex == "male" and rng.randf() < 0.65:
+		out.under_top = ""
 	if rng.randf() > 0.35:
 		out.outer = ""
 	if item(out.bottom).get("dress", false):
@@ -128,9 +147,30 @@ const MARGIN := 0.025
 const NONE := Vector2(0.0, -1.0)
 
 
-static func _cover(it: Dictionary, part: int, yn: float, df: float) -> Vector2:
+static func _cover(it: Dictionary, part: int, yn: float, df: float, x: float = 0.0) -> Vector2:
 	var t: float = it.thick
 	match it.slot:
+		"under_bottom":
+			if part == 0:
+				return Vector2(t, it.uwaist - yn)
+			if part == 1:
+				return Vector2(t, yn - it.uleg)
+		"under_top":
+			if it.id.begins_with("bra") or it.id == "sports_bra":
+				if part != 0:
+					return NONE
+				var front := clampf(1.0 - df / 75.0, 0.0, 1.0)
+				# cups in front, a narrower band at the back
+				var lo := lerpf(0.695, 0.672, front)
+				var hi := lerpf(0.735, 0.775 if not it.sport else 0.79, front)
+				var m := minf(yn - lo, hi - yn)
+				# straps over the shoulders
+				var ax := absf(x)
+				var strap := minf(0.012 - absf(ax - 0.075), 0.82 - yn) / 3.0
+				if it.sport:
+					strap = minf(0.03 - absf(ax - 0.07), 0.82 - yn) / 3.0
+				return Vector2(t, maxf(m, strap))
+			return _upper(it, part, yn, df, t)
 		"shoes":
 			if part == 4:
 				return Vector2(t, 1.0)
@@ -208,7 +248,7 @@ static func _build(sex: String, it: Dictionary) -> ArrayMesh:
 	mg.resize(n)
 	for i in n:
 		var part := int(floor(UV[i].x + 0.01))
-		var cv := _cover(it, part, UV[i].y, absf(UV2[i].x * 360.0 - 270.0)) if part <= 6 else NONE
+		var cv := _cover(it, part, UV[i].y, absf(UV2[i].x * 360.0 - 270.0), V[i].x) if part <= 6 else NONE
 		th[i] = cv.x
 		mg[i] = cv.y
 	var remap := PackedInt32Array()
@@ -236,6 +276,7 @@ static func _build(sex: String, it: Dictionary) -> ArrayMesh:
 	var out_shapes := []
 	for s in shapes:
 		out_shapes.append(_gather(keep, s[Mesh.ARRAY_VERTEX], s[Mesh.ARRAY_NORMAL], th, null, null, null, null, null))
+	_drape(it, out, out_shapes, keep, V, N, th, UV, UV2)
 	if it.skirt > 0.0 or it.coat > 0.0:
 		_add_skirt(it, V, UV, src.get_blend_shape_count(), out, out_shapes)
 	var m := ArrayMesh.new()
@@ -357,3 +398,103 @@ static func _add_skirt(it: Dictionary, V: PackedVector3Array, UV: PackedVector2A
 	out[Mesh.ARRAY_BONES] = b
 	out[Mesh.ARRAY_WEIGHTS] = w
 	out[Mesh.ARRAY_INDEX] = idx
+
+
+## Smooths the garment so it hangs over the body instead of following every
+## muscle (shoes lose the toes), keeps it at least a minimum distance off the
+## skin, and adds real fold geometry where cloth bunches (elbows, knees, ankles,
+## waist). The same offsets go onto every blend shape so the garment still
+## follows weight, muscle and face shapes.
+static func _drape(it: Dictionary, out: Array, out_shapes: Array, keep: PackedInt32Array, V: PackedVector3Array, N: PackedVector3Array, th: PackedFloat32Array, UV: PackedVector2Array, UV2: PackedVector2Array) -> void:
+	var pv: PackedVector3Array = out[Mesh.ARRAY_VERTEX]
+	var idx: PackedInt32Array = out[Mesh.ARRAY_INDEX]
+	var n := pv.size()
+	# weld UV-seam duplicates so smoothing doesn't open cracks
+	var weld := PackedInt32Array()
+	weld.resize(n)
+	var seen := {}
+	for j in n:
+		var k := Vector3i(roundi(V[keep[j]].x * 20000.0), roundi(V[keep[j]].y * 20000.0), roundi(V[keep[j]].z * 20000.0))
+		if not seen.has(k):
+			seen[k] = j
+		weld[j] = seen[k]
+	var nb := []
+	nb.resize(n)
+	for j in n:
+		nb[j] = PackedInt32Array()
+	for t in range(0, idx.size(), 3):
+		for e in 3:
+			var a := weld[idx[t + e]]
+			var b := weld[idx[t + (e + 1) % 3]]
+			if not nb[a].has(b):
+				nb[a].append(b)
+				nb[b].append(a)
+	var cur := pv.duplicate()
+	var iters: int = SMOOTH.get(it.slot, 3)
+	for _i in iters:
+		var nxt := cur.duplicate()
+		for j in n:
+			if weld[j] != j:
+				continue
+			var lst: PackedInt32Array = nb[j]
+			if lst.size() < 3:
+				continue   # hem edge: keep it put
+			var acc := Vector3.ZERO
+			for b in lst:
+				acc += cur[b]
+			nxt[j] = cur[j].lerp(acc / lst.size(), 0.6)
+		cur = nxt
+	var min_off: float = maxf(float(it.thick) * 0.75, MIN_OFF.get(it.slot, 0.004))
+	var delta := PackedVector3Array()
+	delta.resize(n)
+	for j in n:
+		var w := weld[j]
+		var v := keep[j]
+		var p := cur[w]
+		var skin := V[v]
+		var off := (p - skin).dot(N[v])
+		if off < min_off:
+			p += N[v] * (min_off - off)
+		if it.slot == "shoes" and skin.y < 0.02 and N[v].y < -0.3:
+			p.y = minf(p.y, -0.002)   # flat sole
+		# fold geometry: rings that bunch at the joints (about 6 cm apart)
+		var part := int(floor(UV[v].x + 0.01))
+		var yn := UV[v].y
+		var ang := UV2[v].x
+		var joint := 0.0
+		if part == 2:
+			joint = exp(-pow((yn - 0.63) / 0.035, 2.0)) + 0.6 * clampf((0.53 - yn) / 0.04, 0.0, 1.0)
+		elif part == 1 and it.slot != "shoes":
+			joint = exp(-pow((yn - 0.285) / 0.035, 2.0)) + clampf((0.13 - yn) / 0.06, 0.0, 1.0)
+		elif part == 0 and not it.slot in UNDER:
+			joint = 0.6 * exp(-pow((yn - 0.58) / 0.03, 2.0))
+		if joint > 0.0 and not it.slot in UNDER:
+			var wave := sin(yn * 175.0 + sin(ang * 31.0) * 1.7 + sin(ang * 13.0 + yn * 40.0))
+			p += N[v] * (0.0045 * joint * (0.5 + 0.5 * wave))
+		delta[j] = p - pv[j]
+	for j in n:
+		pv[j] += delta[j]
+	out[Mesh.ARRAY_VERTEX] = pv
+	for sa in out_shapes:
+		var sp: PackedVector3Array = sa[Mesh.ARRAY_VERTEX]
+		for j in n:
+			sp[j] += delta[j]
+		sa[Mesh.ARRAY_VERTEX] = sp
+	# smooth normals from the new surface
+	var nn := PackedVector3Array()
+	nn.resize(n)
+	for t in range(0, idx.size(), 3):
+		var a := idx[t]
+		var b := idx[t + 1]
+		var c := idx[t + 2]
+		var fnrm := (pv[c] - pv[a]).cross(pv[b] - pv[a])
+		nn[weld[a]] += fnrm
+		nn[weld[b]] += fnrm
+		nn[weld[c]] += fnrm
+	var on: PackedVector3Array = out[Mesh.ARRAY_NORMAL]
+	for j in n:
+		var v2 := nn[weld[j]]
+		if v2.length_squared() > 1e-14:
+			v2 = v2.normalized()
+			on[j] = v2 if v2.dot(on[j]) >= 0.0 else -v2
+	out[Mesh.ARRAY_NORMAL] = on

@@ -57,7 +57,7 @@ static func _build(sex: String, style: String) -> ArrayMesh:
 	var st: Array = STYLE[style]
 	var rng := RandomNumberGenerator.new()
 	rng.seed = hash(key_of(sex, style))
-	var want := 1300
+	var want := 2600
 	var step := maxi(1, roots.size() / want)
 	var pos := PackedVector3Array()
 	var nrm := PackedVector3Array()
@@ -95,15 +95,17 @@ static func _build(sex: String, style: String) -> ArrayMesh:
 			d = (d + target * g * 0.9).normalized()
 			if st[2] > 0.0:
 				d = (d + Vector3(sin(f * 14.0 + r), cos(f * 11.0 + r * 0.7), sin(f * 9.0 + r * 1.3)) * 0.7).normalized()
+			# steer away from the face early, so strands curve round it instead of being clamped
+			if p.z < c.z - rad.z * 0.1 and p.y < face_y + rad.y * 0.55 and absf(p.x) < rad.x * 0.95:
+				d = (d + Vector3(sx * 0.45, 0.0, 0.5)).normalized()
 			p += d * length / SEGS
 			var vol := Vector3.ONE * float(st[3])
 			var q := (p - c) / (rad + vol)
 			if q.length() < 1.0:
 				p = c + q.normalized() * (rad + vol)
 			# never over the face: below the hairline in front, keep to the sides
-			if p.z < c.z - rad.z * 0.15 and p.y < face_y + rad.y * 0.35:
-				p.x = sx * maxf(absf(p.x), rad.x + float(st[3]) + 0.004)
-				p.z = maxf(p.z, c.z - rad.z * 0.6)
+			if p.z < c.z - rad.z * 0.15 and p.y < face_y + rad.y * 0.2 and absf(p.x) < rad.x * 0.8:
+				p.z = maxf(p.z, c.z - rad.z * 0.15)   # last resort: never hang in front of the face
 			# long hair falls behind the neck and shoulders
 			if p.y < chin_y and absf(p.x) < 0.2:
 				p.z = maxf(p.z, c.z + rad.z * 0.55 + 0.03 * (chin_y - p.y) / 0.2)
@@ -115,7 +117,7 @@ static func _build(sex: String, style: String) -> ArrayMesh:
 			var dir: Vector3 = (pts[mini(k + 1, pts.size() - 1)] - pts[maxi(k - 1, 0)]).normalized()
 			var out := (pk - c).normalized()
 			var side := dir.cross(out).normalized()
-			var w := w0 * (1.0 - 0.6 * float(k) / SEGS)
+			var w := w0 * 0.7 * (1.0 - 0.6 * float(k) / SEGS)
 			pos.append(pk - side * w * 0.5)
 			pos.append(pk + side * w * 0.5)
 			nrm.append(out)

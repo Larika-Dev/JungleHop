@@ -357,6 +357,15 @@ def main():
             if not sel: continue
             c = pos[sel].mean(0)
             r = np.linalg.norm(pos[sel] - c, axis=1).max()
+            # lash line: eyelid skin right at the edge of the eyeball
+            for i in range(m):
+                if int(part[i]) == 3:
+                    dd = np.linalg.norm(pos[i] - c)
+                    vv = (pos[i] - c) / max(dd, 1e-9)
+                    theta = math.degrees(math.acos(max(-1.0, min(1.0, -vv[2]))))
+                    if dd < r + 0.003 and 22.0 < theta < 72.0:
+                        upper = 1.0 if pos[i, 1] > c[1] + r * 0.1 else 0.0
+                        uv2[i, 1] = 0.7 + 0.3 * upper * float(np.clip((r + 0.003 - dd) / 0.0015, 0, 1))
             for i in sel:
                 v = (pos[i] - c) / r
                 eye_dir[i] = v / max(np.linalg.norm(v), 1e-9)
