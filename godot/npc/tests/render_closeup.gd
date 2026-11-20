@@ -34,6 +34,7 @@ func _init() -> void:
 	var picks := [pop[3], pop[11], pop[20], pop[33], pop[41]]
 	picks[0].outfit.bottom_style = "shorts"
 	picks[1].outfit.bottom_style = "skirt"
+	picks[0].outfit.barefoot = true
 	for i in picks.size():
 		var b := NpcBody.new()
 		root3d.add_child(b)
@@ -49,8 +50,9 @@ func _init() -> void:
 		["lineup", Vector3(0, 1.0, 5.2), Vector3(0, 0.85, 0)],
 		["calves_side", Vector3(-1.6 - 1.1, 0.35, 0.0), Vector3(-1.6, 0.3, 0)],
 		["calves_back", Vector3(-1.6 + 0.2, 0.4, -1.0), Vector3(-1.6, 0.3, 0)],
-		["hand", Vector3(-1.6 - 0.45, 0.78, -0.25), Vector3(-1.6 - 0.24, 0.74, 0.0)],
-		["face", Vector3(-1.6 + 0.1, 1.62, 0.55), Vector3(-1.6, 1.6, 0)],
+		["hand", Vector3(-1.6 - 0.62, 0.74, 0.18), Vector3(-1.6 - 0.24, 0.72, 0.0)],
+		["toes", Vector3(-1.6 + 0.05, 0.22, 0.55), Vector3(-1.6, 0.03, 0.12)],
+		["face", Vector3(-1.6 + 0.05, 0.935 * bodies[0]._height_m, 0.40), Vector3(-1.6, 0.93 * bodies[0]._height_m, 0)],
 		["lineup_back", Vector3(0, 1.0, -5.2), Vector3(0, 0.85, 0)],
 	]
 

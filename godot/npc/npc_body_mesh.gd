@@ -18,20 +18,22 @@
 class_name NpcBodyMesh
 extends RefCounted
 
-const VERSION := 6
-const SHAPES := ["fat", "slim", "muscle", "calf_flex_L", "calf_flex_R", "quad_flex_L", "quad_flex_R", "glute_flex_L", "glute_flex_R"]
+const VERSION := 10
+const SHAPES := ["fat", "slim", "muscle", "calf_flex_L", "calf_flex_R", "quad_flex_L", "quad_flex_R", "glute_flex_L", "glute_flex_R", "barefoot"]
 const FLEX_FIRST := 3                 # shapes from this index on are muscle flex
 const LOD_SPACING := [0.005, 0.02, 0.05]   # target vertex spacing in meters
-const LOD_HEAD_SPACING := [0.004, 0.014, 0.04]
+const LOD_HEAD_SPACING := [0.0025, 0.012, 0.04]
 const REF_HEIGHT := {"male": 1.753, "female": 1.613}
 
 const BONES := ["root", "pelvis", "spine", "chest", "neck", "head",
 	"thigh_L", "shin_L", "foot_L", "thigh_R", "shin_R", "foot_R",
-	"upperarm_L", "forearm_L", "hand_L", "upperarm_R", "forearm_R", "hand_R"]
-const PARENT := [-1, 0, 1, 2, 3, 4, 1, 6, 7, 1, 9, 10, 3, 12, 13, 3, 15, 16]
+	"upperarm_L", "forearm_L", "hand_L", "upperarm_R", "forearm_R", "hand_R",
+	"thumb1_L", "thumb2_L", "index1_L", "index2_L", "middle1_L", "middle2_L", "ring1_L", "ring2_L", "little1_L", "little2_L", "thumb1_R", "thumb2_R", "index1_R", "index2_R", "middle1_R", "middle2_R", "ring1_R", "ring2_R", "little1_R", "little2_R"]
+const PARENT := [-1, 0, 1, 2, 3, 4, 1, 6, 7, 1, 9, 10, 3, 12, 13, 3, 15, 16, 14, 18, 14, 20, 14, 22, 14, 24, 14, 26, 17, 28, 17, 30, 17, 32, 17, 34, 17, 36]
+const B_FINGER0 := 18   # + side(0 L, 1 R) * 10 + finger(0 thumb..4 little) * 2 + segment(0, 1)
 enum { B_ROOT, B_PELVIS, B_SPINE, B_CHEST, B_NECK, B_HEAD, B_THIGH_L, B_SHIN_L, B_FOOT_L, B_THIGH_R, B_SHIN_R, B_FOOT_R,
 	B_UPPERARM_L, B_FOREARM_L, B_HAND_L, B_UPPERARM_R, B_FOREARM_R, B_HAND_R }
-enum { P_TORSO, P_LEG, P_ARM, P_HEAD, P_FOOT, P_HAND, P_NECK, P_FINGER }
+enum { P_TORSO, P_LEG, P_ARM, P_HEAD, P_FOOT, P_HAND, P_NECK, P_FINGER, P_EYE, P_TOE }
 
 # Joint heights as a fraction of standing height.
 const Y_ANKLE := 0.039
@@ -98,12 +100,22 @@ const ARM_BUMPS := [
 ]
 # Head theta: 0 = +X, 90 back, 270 face.
 const HEAD_BUMPS := [
-	["nose", 0.923, 270.0, 0.009, 8.0, 0.0085], ["nose_tip", 0.917, 270.0, 0.004, 9.0, 0.0035], ["nose_bridge", 0.936, 270.0, 0.008, 6.0, 0.004],
-	["brow", 0.947, 270.0, 0.004, 38.0, 0.0022],
-	["eye_R", 0.938, 289.0, 0.004, 11.0, -0.0022], ["eye_L", 0.938, 251.0, 0.004, 11.0, -0.0022],
-	["cheek_R", 0.928, 300.0, 0.008, 14.0, 0.0018], ["cheek_L", 0.928, 240.0, 0.008, 14.0, 0.0018],
-	["lips", 0.902, 270.0, 0.004, 14.0, 0.0022], ["chin", 0.873, 270.0, 0.006, 22.0, 0.002],
-	["ear_R", 0.933, 8.0, 0.013, 7.0, 0.0055], ["ear_L", 0.933, 172.0, 0.013, 7.0, 0.0055],
+	["nose", 0.924, 270.0, 0.0085, 6.5, 0.0080], ["nose_tip", 0.9175, 270.0, 0.0035, 7.0, 0.0038],
+	["nose_bridge", 0.937, 270.0, 0.007, 5.0, 0.0035], ["ala_R", 0.9165, 277.0, 0.003, 4.0, 0.0028], ["ala_L", 0.9165, 263.0, 0.003, 4.0, 0.0028],
+	["nostril_R", 0.9145, 275.0, 0.0012, 2.5, -0.0018], ["nostril_L", 0.9145, 265.0, 0.0012, 2.5, -0.0018],
+	["philtrum", 0.9085, 270.0, 0.0025, 3.0, -0.0006],
+	["brow", 0.9475, 270.0, 0.0035, 36.0, 0.0024], ["glabella", 0.943, 270.0, 0.003, 8.0, 0.0012],
+	["socket_R", 0.938, 289.0, 0.0045, 11.0, -0.0042], ["socket_L", 0.938, 251.0, 0.0045, 11.0, -0.0042],
+	["lid_up_R", 0.9425, 289.0, 0.0011, 9.0, 0.0012], ["lid_up_L", 0.9425, 251.0, 0.0011, 9.0, 0.0012],
+	["lid_lo_R", 0.9345, 289.0, 0.0010, 8.0, 0.0010], ["lid_lo_L", 0.9345, 251.0, 0.0010, 8.0, 0.0010],
+	["cheek_R", 0.927, 302.0, 0.008, 13.0, 0.0022], ["cheek_L", 0.927, 238.0, 0.008, 13.0, 0.0022],
+	["nasolabial_R", 0.912, 283.0, 0.006, 3.0, -0.0008], ["nasolabial_L", 0.912, 257.0, 0.006, 3.0, -0.0008],
+	["lip_up", 0.9032, 270.0, 0.0017, 11.0, 0.0024], ["lip_lo", 0.8988, 270.0, 0.0020, 10.0, 0.0028],
+	["mouth", 0.9012, 270.0, 0.0006, 12.0, -0.0016], ["mentolabial", 0.8945, 270.0, 0.0014, 11.0, -0.0010],
+	["chin", 0.8775, 270.0, 0.0065, 18.0, 0.0024], ["jaw_R", 0.882, 310.0, 0.006, 16.0, 0.0018], ["jaw_L", 0.882, 230.0, 0.006, 16.0, 0.0018],
+	["ear_R", 0.933, 8.0, 0.0145, 6.0, 0.0085], ["ear_L", 0.933, 172.0, 0.0145, 6.0, 0.0085],
+	["concha_R", 0.931, 9.0, 0.005, 2.5, -0.0035], ["concha_L", 0.931, 171.0, 0.005, 2.5, -0.0035],
+	["lobe_R", 0.9215, 8.0, 0.0035, 4.0, 0.0018], ["lobe_L", 0.9215, 172.0, 0.0035, 4.0, 0.0018],
 ]
 
 var sex: String
@@ -148,6 +160,18 @@ static func mesh_from_arrays(data: Dictionary) -> ArrayMesh:
 
 
 ## Rest pose of the skeleton for this sex at its reference height.
+## Fingers for the right hand in fraction-of-height units:
+## [base, direction, length, radius]; thumb first. Mirror x for the left hand.
+static func finger_specs(p_sex: String) -> Array:
+	var x0 := (0.135 if p_sex == "male" else 0.140)
+	var fs := 0.9 if p_sex == "female" else 1.0
+	var out: Array = [[Vector3(x0 - 0.004, 0.468, -0.018 * fs), Vector3(-0.25, -0.62, -0.74).normalized(), 0.050 * fs, 0.0068 * fs]]
+	for fg in FINGERS:
+		var zf: float = fg[1] * fs
+		out.append([Vector3(x0 + 0.002, 0.428, zf), Vector3(-0.08, -1.0, zf * 0.6).normalized(), fg[2] * fs, fg[3] * fs])
+	return out
+
+
 static func bone_rest_positions(p_sex: String) -> Array:
 	var H: float = REF_HEIGHT[p_sex]
 	var hip_x := (0.051 if p_sex == "male" else 0.057) * H
@@ -170,6 +194,13 @@ static func bone_rest_positions(p_sex: String) -> Array:
 		model[B_UPPERARM_L + o] = Vector3(side * sh_x, Y_SHOULDER * H, 0)
 		model[B_FOREARM_L + o] = Vector3(side * lerpf(sh_x, arm_out, t_el), Y_ELBOW * H, 0)
 		model[B_HAND_L + o] = Vector3(side * arm_out, Y_WRIST * H, 0)
+		var specs := finger_specs(p_sex)
+		for fi in 5:
+			var base: Vector3 = specs[fi][0]
+			var mid: Vector3 = base + specs[fi][1] * specs[fi][2] * 0.5
+			var bi := B_FINGER0 + (0 if side < 0 else 10) + fi * 2
+			model[bi] = Vector3(side * base.x, base.y, base.z) * H
+			model[bi + 1] = Vector3(side * mid.x, mid.y, mid.z) * H
 	return model
 
 
@@ -435,41 +466,37 @@ func _build_hand(side: int, sp: float) -> void:
 		var r := 1.0 / sqrt((c / (r2.x * f)) * (c / (r2.x * f)) + (sn / (r2.y * f)) * (sn / (r2.y * f)))
 		return Vector3(side * (x0 + 0.002 * s + c * r), yf, sn * r) * h
 	_tube(P_HAND, maxi(4, ceili((y0 - 0.422) * h / sp)), segs, palm, [0, 1], weights, Vector3.UP, side)
-	var fs := 0.9 if fem else 1.0
-	for fg in FINGERS:
-		var zf: float = fg[1] * fs
-		var fl: float = fg[2] * fs
-		var fr: float = fg[3] * fs
-		var base := Vector3(x0 + 0.002, 0.428, zf)
-		var dir := Vector3(-0.08, -1.0, zf * 0.6).normalized()   # slight curl toward the palm, slight spread
-		_finger(side, base, dir, fl, fr, sp, weights)
-	# Thumb: from the base of the palm, forward and down.
-	_finger(side, Vector3(x0 - 0.004, 0.468, -0.018 * fs), Vector3(-0.25, -0.62, -0.74).normalized(), 0.050 * fs, 0.0068 * fs, sp, weights)
+	var specs := finger_specs(sex)
+	for fi in 5:
+		var b0 := B_FINGER0 + (0 if side < 0 else 10) + fi * 2
+		var wf := func(t: float) -> Array:
+			return _w2(b0, b0 + 1, 1.0 - smoothstep(0.42, 0.56, t))
+		_finger(side, specs[fi][0], specs[fi][1], specs[fi][2], specs[fi][3], sp, wf, P_FINGER, Vector3(1, 0, 0))
 
 
-## One finger: a tapered tube with knuckle swellings and a flattened nail side.
-## Weighted to the hand bone (fingers keep a relaxed pose; no per-finger bones).
-func _finger(side: int, base: Vector3, dir: Vector3, length: float, r0: float, sp: float, weights: Callable) -> void:
-	var lateral := Vector3(1, 0, 0)
-	var u := (lateral - dir * lateral.dot(dir)).normalized()   # back of the finger (nail side)
+## One finger or toe: a tapered tube with knuckle swellings, a flattened nail
+## side (`up`) and a rounded tip. `wf(s)` gives bone weights along its length.
+func _finger(side: int, base: Vector3, dir: Vector3, length: float, r0: float, sp: float, wf: Callable, part: int, up: Vector3) -> void:
+	var u := (up - dir * up.dot(dir)).normalized()   # nail side
 	var v := dir.cross(u).normalized()
-	var rings := maxi(6, ceili(length * h / sp) + 2)
+	var rings := maxi(6, ceili(length * h / sp) + 3)
 	var segs := _even(maxi(8, ceili(TAU * r0 * h / sp)))
 	var eval := func(s: float, t: float, k: int) -> Vector3:
 		var th := t * TAU
-		var r := r0 * lerpf(1.0, 0.78, s)
-		r *= 1.0 + 0.09 * exp(-pow((s - 0.38) / 0.06, 2.0)) + 0.07 * exp(-pow((s - 0.7) / 0.05, 2.0))   # knuckles
-		if s > 0.86:
-			r *= sqrt(maxf(0.0, 1.0 - pow((s - 0.86) / 0.14, 2.0))) * 0.85 + 0.15   # rounded tip
+		var r := r0 * lerpf(1.0, 0.8, s)
+		r *= 1.0 + 0.09 * exp(-pow((s - 0.38) / 0.06, 2.0)) + 0.07 * exp(-pow((s - 0.7) / 0.05, 2.0))
+		if s > 0.84:
+			r *= sqrt(maxf(0.0, 1.0 - pow((s - 0.84) / 0.16, 2.0))) * 0.85 + 0.15
 		if k == 1: r *= 1.08
 		var c := cos(th)
 		var sn := sin(th)
-		var ry := r * (0.82 if c > 0.0 else 1.0)   # nail side flatter
-		var off := (u * c * ry + v * sn * r)
-		var bend := s * s * 0.012                   # gentle curl along the length
-		var p := base + dir * (s * length) - u * bend + off
+		var ru := r * (0.8 if c > 0.0 else 1.0)
+		var p := base + dir * (s * length) - u * (s * s * 0.006) + u * c * ru + v * sn * r
 		return Vector3(side * p.x, p.y, p.z) * h
-	_tube(P_FINGER, rings, segs, eval, [0, 1], weights, -Vector3.UP, side)
+	var weights := func(p: Vector3) -> Array:
+		var q := Vector3(side * p.x, p.y, p.z) / h
+		return wf.call(clampf((q - base).dot(dir) / length, 0.0, 1.0))
+	_tube(part, rings, segs, eval, [0, 1], weights, -Vector3.UP, side)
 
 
 func _build_foot(side: int, sp: float) -> void:
@@ -479,32 +506,53 @@ func _build_foot(side: int, sp: float) -> void:
 	var z1 := -0.126
 	var rings := maxi(4, ceili((z0 - z1) * h / sp))
 	var segs := _even(maxi(8, ceili(TAU * 0.022 * h / sp)))
+	var bare_k := SHAPES.find("barefoot") + 1
 	var eval := func(s: float, t: float, k: int) -> Vector3:
 		var row := _table3(FOOT, s)
 		var a: float = row.x * (1.05 if k == 1 else 1.0)
 		var b: float = row.y
 		var yc: float = row.z
+		var zs := s
+		if k == bare_k:
+			# Bare foot: no toe box; the foot ends at the ball and the toes show.
+			a *= 0.94
+			b *= 0.9
+			if s > 0.72:
+				zs = 0.72 + (s - 0.72) * 0.3
+				var f := (s - 0.72) / 0.28
+				b *= lerpf(1.0, 0.55, f)
+				yc = lerpf(yc, b * 1.05, f)
 		var th := t * TAU
 		var c := cos(th)
 		var sn := sin(th)
 		var r := 1.0 / sqrt((c / a) * (c / a) + (sn / b) * (sn / b))
-		return Vector3(side * (ax + 0.008 * s + c * r), yc + sn * r, lerpf(z0, z1, s)) * h
+		return Vector3(side * (ax + 0.008 * s + c * r), yc + sn * r, lerpf(z0, z1, zs)) * h
 	var weights := func(p: Vector3) -> Array:
 		var foot := B_FOOT_L if side < 0 else B_FOOT_R
 		var a := 0.3 * smoothstep(0.045 * h, 0.055 * h, p.y)
 		return _w2(foot, foot - 1, 1.0 - a)
-	_tube(P_FOOT, rings, segs, eval, [0, 1], weights, Vector3.BACK, side)
+	_tube(P_FOOT, rings, segs, eval, [0, 1, bare_k], weights, Vector3.BACK, side)
+	if lod == 2:
+		return
+	# Toes, big toe on the inside. Inside the shoe's toe box until barefoot.
+	var foot_b := B_FOOT_L if side < 0 else B_FOOT_R
+	var wf := func(_t: float) -> Array: return _w2(foot_b, 0, 1.0)
+	var cx := ax + 0.0064
+	var toes := [[-0.0135, 0.031, 0.0072], [-0.003, 0.025, 0.0050], [0.0055, 0.022, 0.0046], [0.0125, 0.019, 0.0042], [0.0185, 0.016, 0.0038]]
+	for i in toes.size():
+		var tz: float = -0.088 + i * 0.006
+		_finger(side, Vector3(cx + toes[i][0], toes[i][2] + 0.0006, tz), Vector3(0.0, -0.06, -1.0).normalized(), toes[i][1], toes[i][2], sp * 0.7, wf, P_TOE, Vector3.UP)
 
 
 func _build_neck(sp: float) -> void:
 	var y0 := 0.80
-	var y1 := 0.885
+	var y1 := 0.874
 	var rings := maxi(4, ceili((y1 - y0) * h / sp))
 	var segs := _even(maxi(8, ceili(TAU * 0.034 * h / sp)))
 	var fem := sex == "female"
 	var eval := func(s: float, t: float, k: int) -> Vector3:
 		var yf := lerpf(y0, y1, s)
-		var r := lerpf(0.034, 0.031, s) * (0.85 if fem else 1.0)
+		var r := lerpf(0.034, 0.028, s) * (0.85 if fem else 1.0)
 		if k == 1: r *= 1.12
 		if k == 3: r *= 1.06
 		var th := t * TAU
@@ -533,7 +581,10 @@ func _build_head(sp: float) -> void:
 		var a: float = row.x * (0.96 if fem else 1.0)
 		var b: float = row.y * (0.97 if fem else 1.0)
 		var zc: float = row.z
-		if k == 1 and yf < 0.9: a *= 1.12; b *= 1.08
+		if k == 1:
+			var ff := smoothstep(0.925, 0.875, yf)   # fuller cheeks, jowls and chin
+			a *= 1.0 + 0.12 * ff
+			b *= 1.0 + 0.08 * ff
 		var th := t * TAU
 		var c := cos(th)
 		var sn := sin(th)
@@ -550,6 +601,26 @@ func _build_head(sp: float) -> void:
 	var weights := func(_p: Vector3) -> Array:
 		return _w2(B_HEAD, 0, 1.0)
 	_tube(P_HEAD, rings, segs, eval, [0, 1], weights, Vector3.UP, 0)
+	if lod == 2:
+		return
+	# Eyeballs: 24 mm spheres set into the sockets, looking forward (-Z).
+	var R := 0.0068 * (0.97 if fem else 1.0)
+	for side in [-1, 1]:
+		var th := deg_to_rad(251.0 if side < 0 else 289.0)
+		var a := 0.044 * (0.96 if fem else 1.0)
+		var b := 0.055 * (0.97 if fem else 1.0)
+		var c := cos(th)
+		var sn := sin(th)
+		var r := pow(pow(absf(c / a), 2.2) + pow(absf(sn / b), 2.2), -1.0 / 2.2) - 0.0042
+		var center := Vector3(c * r, 0.938, sn * r + R * 0.3)
+		var eye := func(s: float, t: float, _k: int) -> Vector3:
+			var phi := s * PI
+			var tt := t * TAU
+			var rr := R * sin(phi)
+			return (center + Vector3(cos(tt) * rr, sin(tt) * rr, -R * cos(phi))) * h
+		var er := maxi(10, ceili(PI * R * h / (sp * 0.6)))
+		var es := _even(maxi(12, ceili(TAU * R * h / (sp * 0.6))))
+		_tube(P_EYE, er, es, eye, [0], weights, Vector3.FORWARD, side)
 
 
 # --- tube machinery -----------------------------------------------------------
@@ -603,7 +674,15 @@ func _tube(part: int, rings: int, segs: int, eval: Callable, used: Array, weight
 			_v[k].append(c)
 			var d := c - nb
 			_n[k].append(d.normalized() if d.length_squared() > 1e-12 else (axis if ci == 1 else -axis))
-	# Triangles. Godot's front faces wind clockwise.
+	# Triangles. Every tube must wind the same way as the torso (the first one
+	# built, which renders correctly), whatever its axis or mirroring.
+	var mi := (rings / 2) * cols + segs / 4
+	var ga := base[mi]
+	var gn := (base[mi + 1] - ga).cross(base[mi + cols] - ga)
+	var sgn := signf(gn.dot(base_n[mi]))
+	if _ref_sign == 0.0:
+		_ref_sign = sgn
+	_flip = sgn != _ref_sign and sgn != 0.0
 	for i in rings - 1:
 		for j in segs:
 			var a: int = start + i * cols + j
@@ -618,7 +697,7 @@ func _tube(part: int, rings: int, segs: int, eval: Callable, used: Array, weight
 		_tri(cap_ids[1], last + j, last + j + 1, grids[0], start)
 
 
-var _winding_checked := false
+var _ref_sign := 0.0
 var _flip := false
 
 func _tri(a: int, b: int, c: int, _g, _start) -> void:

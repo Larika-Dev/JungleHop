@@ -36,6 +36,8 @@ var _shape_idx := {}
 var _build := {}
 var _height_m := 1.75
 var _flee_until := 0.0
+var _barefoot := false
+var grip := 0.0
 
 static var _skins := {}
 static var _meshes := {}
@@ -141,6 +143,7 @@ func apply_record(rec: Dictionary) -> void:
 	_material.set_shader_parameter("hair_side", hair[1])
 	_material.set_shader_parameter("hair_back", hair[2])
 	_material.set_shader_parameter("hair_amount", hair[3])
+	set_barefoot(bool(rec.get("outfit", {}).get("barefoot", false)))
 	if interactable and interactable.has_method("setup"):
 		interactable.setup(self)
 	if lod >= 0:
@@ -178,6 +181,7 @@ func set_lod(l: int) -> void:
 	for i in NpcBodyMesh.SHAPES.size():
 		_shape_idx[NpcBodyMesh.SHAPES[i]] = mesh_instance.find_blend_shape_by_name(NpcBodyMesh.SHAPES[i])
 	_material.set_shader_parameter("detail", 1.0 if l == 0 else (0.4 if l == 1 else 0.0))
+	_material.set_shader_parameter("painted_eyes", 1.0 if l == 2 else 0.0)
 	mesh_instance.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_ON if l < 2 else GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
 	_apply_build_shapes()
 
@@ -185,6 +189,37 @@ func set_lod(l: int) -> void:
 func _apply_build_shapes() -> void:
 	for k in ["fat", "slim", "muscle"]:
 		_set_shape(k, _build.get(k, 0.0))
+	_set_shape("barefoot", 1.0 if _barefoot else 0.0)
+
+
+## 0 = relaxed hands, 1 = closed fists (holding a cup, a bag, a railing).
+func set_grip(amount: float) -> void:
+	grip = clampf(amount, 0.0, 1.0)
+
+
+func set_barefoot(on: bool) -> void:
+	_barefoot = on
+	_material.set_shader_parameter("barefoot", 1.0 if on else 0.0)
+	_apply_build_shapes()
+
+
+## Curls each finger toward the palm: knuckle and middle joint per finger.
+func _pose_fingers(curl: float) -> void:
+	var specs: Array = NpcBodyMesh.finger_specs(sex)
+	for side in [-1, 1]:
+		for fi in 5:
+			var d: Vector3 = specs[fi][1]
+			d.x *= side
+			var palm := Vector3(-side, 0, 0) if fi > 0 else Vector3(-side * 0.4, 0, 0.9).normalized()
+			var axis := d.cross(palm).normalized()
+			var bi := NpcBodyMesh.B_FINGER0 + (0 if side < 0 else 10) + fi * 2
+			var a1 := deg_to_rad(lerpf(12.0, 75.0, curl) + fi * 2.0)
+			var a2 := deg_to_rad(lerpf(18.0, 95.0, curl) + fi * 3.0)
+			if fi == 0:
+				a1 *= 0.5
+				a2 *= 0.7
+			skeleton.set_bone_pose_rotation(bi, Quaternion(axis, a1))
+			skeleton.set_bone_pose_rotation(bi + 1, Quaternion(axis, a2))
 
 
 func _set_shape(n: String, v: float) -> void:
@@ -231,6 +266,8 @@ func animate(delta: float, speed: float) -> void:
 	skeleton.set_bone_pose_rotation(NpcBodyMesh.B_PELVIS, Quaternion(Vector3.UP, deg_to_rad(4.0 * sin(TAU * _phase) * walk)) * Quaternion(Vector3.RIGHT, deg_to_rad(-3.0 * walk)))
 	var breath := sin(_t * TAU * 0.25)
 	skeleton.set_bone_pose_rotation(NpcBodyMesh.B_CHEST, Quaternion(Vector3.UP, deg_to_rad(-6.0 * sin(TAU * _phase) * walk)) * Quaternion(Vector3.RIGHT, deg_to_rad(0.8 * breath + 2.0 * walk)))
+	if lod < 2:
+		_pose_fingers(grip + 0.08 * walk * (0.5 + 0.5 * sin(TAU * _phase)))
 	skeleton.set_bone_pose_rotation(NpcBodyMesh.B_HEAD, Quaternion(Vector3.UP, deg_to_rad(2.0 * sin(TAU * _phase) * walk + 6.0 * sin(_t * 0.31) * (1.0 - walk))))
 
 

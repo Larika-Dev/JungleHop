@@ -17,6 +17,8 @@ uniform float hair_front = 0.968;   // hairline height at the forehead
 uniform float hair_side = 0.948;
 uniform float hair_back = 0.905;    // lowest hair at the back of the head
 uniform float hair_amount = 1.0;    // 0 = bald, 0.5 = buzz cut
+uniform float barefoot = 0.0;
+uniform float painted_eyes = 0.0;  // far LOD has no eyeballs
 uniform float stubble = 0.0;       // 0 clean shaven .. 1 full beard (grooming)
 uniform float detail = 1.0;         // 1 close up, 0 far: fades 1 mm pore/weave detail
 
@@ -45,7 +47,15 @@ void fragment() {
 	} else if (part == 2) {               // arm
 		mat = yn > sleeve_cut ? 1 : 0;
 	} else if (part == 4) {               // foot
-		mat = 3;
+		mat = barefoot > 0.5 ? 0 : 3;
+	} else if (part == 9) {               // toe: nail on top near the tip
+		float a = min(th, 360.0 - th);
+		mat = (a < 45.0 && UV2.y > 0.62 && UV2.y < 0.97) ? 7 : 0;
+	} else if (part == 8) {               // eyeball, front pole at UV2.y = 0
+		mat = 5;
+		float e = UV2.y;
+		col = e < 0.075 ? (e < 0.032 ? vec3(0.015) : eye_color * (0.7 + 6.0 * (e - 0.032))) : mix(vec3(0.95, 0.93, 0.9), vec3(0.88, 0.8, 0.78), smoothstep(0.2, 0.5, e));
+		if (e > 0.06 && e < 0.08) col *= 0.6;   // limbal ring
 	} else if (part == 7) {               // finger: nail on the back near the tip
 		float a = min(th, 360.0 - th);    // 0 = back of the finger
 		if (a < 42.0 && UV2.y > 0.74 && UV2.y < 0.97) mat = 7;
@@ -53,7 +63,7 @@ void fragment() {
 		float line = df < 40.0 ? mix(hair_front, hair_side, smoothstep(20.0, 40.0, df))
 			: (df < 110.0 ? mix(hair_side, hair_back, smoothstep(70.0, 110.0, df)) : hair_back);
 		if (hair_amount > 0.01 && yn > line) mat = 4;
-		for (int e = 0; e < 2; e++) {
+		for (int e = 0; e < 2 && painted_eyes > 0.5; e++) {
 			float ec = e == 0 ? 251.0 : 289.0;
 			float ex = (th - ec) / 9.5;             // 1 = half the eye width (about 13 mm)
 			float ey = (yn - 0.938) / 0.0028;       // 1 = half the eye height (about 5 mm)

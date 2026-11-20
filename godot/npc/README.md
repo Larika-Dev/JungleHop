@@ -48,8 +48,10 @@ without anyone leaving the bounds. Verified on the 4,000: men 89.9%, women 90.0%
   people, so it is not done.
 * Budget: only the nearest 6 NPCs within 12 m use LOD0; up to 40 m use LOD1
   (7,000 vertices, still flexing); the rest use LOD2 (1,300 vertices).
-* Hands: palm, four fingers and a thumb with knuckles and nails (LOD0/1; far LOD uses a mitten). Fingers hold a relaxed pose (no finger bones).
-* Not modeled: toes (shoes are always on), hair strands, faces with expressions, cloth
+* Hands: palm, four fingers and a thumb with knuckles and nails, two bones per finger (38 bones total). Fingers curl a little while walking; `body.set_grip(0..1)` closes them into a fist.
+* Feet: five toes with nails inside the shoe toe box; `outfit.barefoot = true` (or `body.set_barefoot(true)`) reshapes the foot and shows them.
+* Face: eyeballs (iris, pupil, limbal ring) in sockets with upper and lower lids; nose with bridge, tip, alae and nostrils; philtrum, upper and lower lips and mouth line; cheekbones, nasolabial folds, jaw and chin; ears with concha and lobe; brow ridge. The fat shape fills out cheeks and jaw.
+* Not modeled: facial expressions or talking mouth, hair strands, faces with expressions, cloth
   simulation. Hair, eyes, lips and clothing are painted by the shader.
 
 ## API (`NPCs` autoload)
