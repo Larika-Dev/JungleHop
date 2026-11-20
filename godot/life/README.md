@@ -70,7 +70,7 @@ Export presets must include `*.json` in "non-resource files to export" so
 godot --headless --path godot -s res://life/tests/run_tests.gd
 ```
 
-Last run: 1,356 checks passed, 0 failed (Godot 4.5.1).
+Last run: 1,358 checks passed, 0 failed (Godot 4.5.1).
 
 ## Action catalogue
 

@@ -40,6 +40,8 @@ var _hooked_game_state: bool = false
 var _business_by_building: Dictionary = {}
 ## "furniture_instance|action" -> game minute a held pose (sit, lie_down) started
 var _pose_started: Dictionary = {}
+## "action|furniture_instance" for sleeps already applied on action_started
+var _skip_applied: Dictionary = {}
 
 
 func _init() -> void:
@@ -295,8 +297,20 @@ func _register_npc_node(node: Node) -> void:
 
 
 func _on_furniture_started(action_id: String, actor: Variant, furniture: Variant) -> void:
-	if _is_player_actor(actor) and furniture is Object:
-		_pose_started["%d|%s" % [furniture.get_instance_id(), action_id]] = clock.total_minutes
+	if not (_is_player_actor(actor) and furniture is Object):
+		return
+	var fid: int = furniture.get_instance_id()
+	_pose_started["%d|%s" % [fid, action_id]] = clock.total_minutes
+	# Sleep and naps happen as soon as the player lies down, whether the
+	# furniture reports them finished now or only on stand-up.
+	var def: Dictionary = actions.get_def(action_id)
+	if def.get("time_skip", false) and def.get("target", "") == "furniture":
+		apply_external_action(action_id, furniture, actor)
+		_skip_applied["%s|%d" % [action_id, fid]] = true
+		# A pose held through the sleep (lie_down) doesn't also pay out for those hours.
+		for k in _pose_started.keys():
+			if str(k).begins_with("%d|" % fid):
+				_pose_started[k] = clock.total_minutes
 
 
 func _on_furniture_action(action_id: String, actor: Variant, furniture: Variant) -> void:
@@ -344,6 +358,10 @@ func apply_external_action(action_id: String, target: Variant, actor: Variant) -
 		return
 	var tid := str(target.get_instance_id()) if target is Object else str(target)
 	var key := "%s|%s" % [action_id, tid]
+	if _skip_applied.has(key):
+		# The finish report of a sleep we already ran when it started.
+		_skip_applied.erase(key)
+		return
 	# An echo of the same action arrives within moments and with the clock where
 	# the first report left it; anything else is a new use.
 	var now := Time.get_ticks_msec()

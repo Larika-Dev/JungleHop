@@ -288,6 +288,20 @@ func test_sleep() -> void:
 	life.actions.perform("sleep", bed)
 	ok(life.clock.hour() == 8 and life.clock.minute() == 0, "furniture sleep wakes at the 8 AM alarm (%s)" % life.clock.time_string())
 	ok(life.needs.get_value("energy") >= 95.0, "furniture sleep restores energy (%.1f)" % life.needs.get_value("energy"))
+	# Furniture that reports sleep only on stand-up (held pose): Life sleeps on start.
+	var bed2 := DemoFurniture.new()
+	bed2.furniture_kind = "bed"
+	bed2.native = [{"id": "sleep", "label": "Sleep", "minutes": 480}]
+	root.add_child(bed2)
+	await process_frame
+	life.clock.set_time(life.clock.day(), 23, 0)
+	life.needs.set_value("energy", 20)
+	bed2.action_started.emit("sleep", null, bed2)
+	ok(life.clock.hour() == 8 and life.needs.get_value("energy") >= 95.0, "held-pose sleep runs when lying down (%s)" % life.clock.time_string())
+	var e1: float = life.needs.get_value("energy")
+	life.needs.set_value("energy", 50)
+	bed2.action_finished.emit("sleep", null, bed2)
+	ok(near(life.needs.get_value("energy"), 50.0, 0.01), "standing up after that sleep applies nothing again")
 	life.actions.perform("clear_alarm")
 	ok(life.get_flag("home.alarm_hour") == null, "alarm cleared")
 	life.clock.set_time(life.clock.day(), 14, 0)
