@@ -32,9 +32,8 @@ func _init() -> void:
 	root3d.add_child(floor)
 	var pop := NpcPopulation.generate(60)
 	var picks := [pop[3], pop[11], pop[20], pop[33], pop[41]]
-	picks[0].outfit.bottom_style = "shorts"
-	picks[1].outfit.bottom_style = "skirt"
-	picks[0].outfit.barefoot = true
+	picks[0]["wardrobe"] = {"outer": "denim_jacket"}
+	picks[3]["wardrobe"] = {"outer": "peacoat"}
 	for i in picks.size():
 		var b := NpcBody.new()
 		root3d.add_child(b)

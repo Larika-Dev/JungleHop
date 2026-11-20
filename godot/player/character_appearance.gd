@@ -16,13 +16,36 @@ var _phase := 0.0
 var _pose := "stand"
 var _first_person := true
 var _height := 1.75
+var _body: Node3D   # detailed NPC body (godot/npc) when available
+
+
+## Uses the detailed NPC body (MakeHuman base, separate clothes) when the NPC
+## module is present; falls back to the simple capsule body below.
+func _build_detailed(p: Dictionary) -> bool:
+	if not ResourceLoader.exists("res://npc/npc_body.gd") or not ResourceLoader.exists("res://npc/models/mh_male.json"):
+		return false
+	var rec: Dictionary = load("res://npc/npc_appearance.gd").record_from_profile(p)
+	rec["wardrobe"] = {"top": "tee_white", "bottom": "chinos_khaki", "shoes": "sneaker_white", "outer": ""}
+	rec["wardrobe_tint"] = {"top": CLOTH_COLORS[clampi(int(p.get("shirt_color", 0)), 0, CLOTH_COLORS.size() - 1)],
+		"bottom": CLOTH_COLORS[clampi(int(p.get("pants_color", 1)), 0, CLOTH_COLORS.size() - 1)]}
+	_body = load("res://npc/npc_body.gd").new()
+	_body.name = "Body"
+	add_child(_body)
+	_body.remove_from_group("npc")
+	_body.collider.collision_layer = 0
+	_body.apply_record(rec)
+	_body.set_lod(0)
+	return true
 
 
 func build(p: Dictionary) -> void:
 	for c in get_children():
 		c.queue_free()
 	_parts.clear()
+	_body = null
 	_height = clampf(float(p.get("height_cm", 175)) / 100.0, 1.4, 2.1)
+	if _build_detailed(p):
+		return
 	var female: bool = p.get("sex", "male") == "female"
 	var bw := lerpf(0.85, 1.25, float(p.get("build", 0.5)))
 	var s := _height / 1.75
@@ -101,6 +124,10 @@ func _add_hair(head: Node3D, style: int, s: float, m: Material, _female: bool) -
 
 func set_first_person(fp: bool) -> void:
 	_first_person = fp
+	if _body:
+		for mi in _body.find_children("*", "MeshInstance3D", true, false):
+			(mi as MeshInstance3D).cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_SHADOWS_ONLY if fp else GeometryInstance3D.SHADOW_CASTING_SETTING_ON
+		return
 	# In first person hide head/torso/arms (keeps the camera clear); legs stay for looking down.
 	for k in _parts:
 		var n: Node3D = _parts[k]
@@ -112,6 +139,9 @@ func set_first_person(fp: bool) -> void:
 
 func set_pose(pose: String) -> void:
 	_pose = pose
+	if _body:
+		position.y = -0.42 * (_height / 1.75) if pose == "sit" else 0.0
+		return
 	if _parts.is_empty():
 		return
 	var sit := pose == "sit"
@@ -122,6 +152,9 @@ func set_pose(pose: String) -> void:
 
 
 func animate(speed: float, delta: float) -> void:
+	if _body:
+		_body.animate(delta, 0.0 if _pose == "sit" else speed)
+		return
 	if _parts.is_empty() or _pose == "sit":
 		return
 	var stride := clampf(speed / 1.4, 0.0, 2.8)

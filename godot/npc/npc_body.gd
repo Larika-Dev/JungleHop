@@ -35,6 +35,8 @@ var _speed := 0.0
 var _shape_idx := {}
 var _build := {}
 var _race := {}
+var _garments: Array[MeshInstance3D] = []
+var outfit := {}   # NpcWardrobe item ids by slot
 var _height_m := 1.75
 var _flee_until := 0.0
 var _barefoot := false
@@ -190,6 +192,8 @@ func apply_record(rec: Dictionary) -> void:
 	_material.set_shader_parameter("hair_back", hair[2])
 	_material.set_shader_parameter("hair_amount", hair[3])
 	set_barefoot(bool(rec.get("outfit", {}).get("barefoot", false)))
+	if use_mh:
+		dress(NpcWardrobe.outfit_for(rec), rec.get("wardrobe_tint", {}))
 	if interactable and interactable.has_method("setup"):
 		interactable.setup(self)
 	if lod >= 0:
@@ -207,6 +211,32 @@ func set_body_condition(weight_kg: float, muscle: float, grooming: float = 1.0, 
 	_material.set_shader_parameter("stubble", stub)
 	# Unkempt: hair less defined at the hairline, a duller look overall.
 	_material.set_shader_parameter("hair_front", lerpf(0.975, record.get("_hair_front", 0.966), clampf(grooming, 0.0, 1.0)))
+
+
+## Puts on separate clothing meshes: {shoes, bottom, top, outer} -> NpcWardrobe
+## item id ("" = none). `tint` optionally recolors a slot: {"top": Color(...)}.
+func dress(items: Dictionary, tint: Dictionary = {}) -> void:
+	for g in _garments:
+		g.queue_free()
+	_garments.clear()
+	outfit = items
+	for slot in NpcWardrobe.SLOTS:
+		var id: String = items.get(slot, "")
+		if id == "" or (slot == "shoes" and _barefoot):
+			continue
+		var it := NpcWardrobe.item(id)
+		if it.is_empty():
+			continue
+		var g := MeshInstance3D.new()
+		g.name = "Wear_" + slot
+		skeleton.add_child(g)
+		g.skeleton = NodePath("..")
+		g.mesh = NpcWardrobe.mesh(sex, id)
+		g.skin = mesh_instance.skin
+		g.material_override = NpcWardrobe.material(it, tint.get(slot))
+		_garments.append(g)
+	_material.set_shader_parameter("separate_clothes", 1.0)
+	_apply_build_shapes()
 
 
 ## Same, straight from Life.body.visual_params() (godot/life):
@@ -258,8 +288,8 @@ func _pose_fingers(curl: float) -> void:
 		for k in _finger_axes.size():
 			var fi := k % 5
 			var bi := NpcBodyMesh.B_FINGER0 + k * 2
-			var a1 := deg_to_rad(lerpf(10.0, 70.0, curl) + fi * 3.0) * (0.4 if fi == 0 else 1.0)
-			var a2 := deg_to_rad(lerpf(15.0, 95.0, curl) + fi * 4.0) * (0.6 if fi == 0 else 1.0)
+			var a1 := deg_to_rad(lerpf(22.0, 70.0, curl) + fi * 3.0) * (0.4 if fi == 0 else 1.0)
+			var a2 := deg_to_rad(lerpf(28.0, 95.0, curl) + fi * 4.0) * (0.6 if fi == 0 else 1.0)
 			skeleton.set_bone_pose_rotation(bi, Quaternion(_finger_axes[k], a1))
 			skeleton.set_bone_pose_rotation(bi + 1, Quaternion(_finger_axes[k], a2))
 		return
@@ -284,6 +314,8 @@ func _set_shape(n: String, v: float) -> void:
 	var i: int = _shape_idx.get(n, -1)
 	if i >= 0:
 		mesh_instance.set_blend_shape_value(i, v)
+		for g in _garments:
+			g.set_blend_shape_value(i, v)
 
 
 ## Advances the walk or idle animation. `speed` in m/s (0 = standing).

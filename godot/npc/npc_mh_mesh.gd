@@ -4,7 +4,7 @@ extends RefCounted
 ## tools/build_mh_body.py from CC0 MakeHuman data) as a skinned ArrayMesh with
 ## blend shapes and automatic LODs. Cached in user://npc_cache.
 
-const VERSION := 2
+const VERSION := 5
 const SHAPES := ["fat", "slim", "muscle", "calf_flex_L", "calf_flex_R", "quad_flex_L", "quad_flex_R",
 	"glute_flex_L", "glute_flex_R", "barefoot", "caucasian", "african", "asian"]
 

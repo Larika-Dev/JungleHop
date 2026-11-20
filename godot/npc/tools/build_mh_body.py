@@ -73,6 +73,139 @@ def read_target(path, n):
     return d
 
 
+def make_arm_pose(base, skel, wts, n):
+    """Returns f(points) that hangs the arms down from the A-pose (linear blend
+    skinning with MakeHuman's own weights: clavicle, shoulder and upper arm share
+    the rotation so the shoulder keeps its slope)."""
+    jp = lambda k: base[skel["joints"][k]].mean(0)
+    bones = skel["bones"]
+    names = list(bones.keys())
+    head = {b: jp(bones[b]["head"]) for b in names}
+    local = {b: np.eye(4) for b in names}
+    def rot(axis, ang, c):
+        axis = axis / np.linalg.norm(axis)
+        x, y, z = axis; c_, s_ = math.cos(ang), math.sin(ang); t = 1 - c_
+        R = np.array([[t*x*x + c_, t*x*y - s_*z, t*x*z + s_*y], [t*x*y + s_*z, t*y*y + c_, t*y*z - s_*x], [t*x*z - s_*y, t*y*z + s_*x, t*z*z + c_]])
+        M = np.eye(4); M[:3, :3] = R; M[:3, 3] = c - R @ c
+        return M
+    for sd, sx in (("L", 1.0), ("R", -1.0)):
+        d = head["lowerarm01." + sd] - head["upperarm01." + sd]
+        d /= np.linalg.norm(d)
+        target = np.array([sx * 0.12, -1.0, -0.02]); target /= np.linalg.norm(target)
+        axis = np.cross(d, target); ang = math.asin(min(1.0, np.linalg.norm(axis)))
+        for b, f in (("clavicle", 0.08), ("shoulder01", 0.22), ("upperarm01", 0.70)):
+            local[b + "." + sd] = rot(axis, ang * f, head[b + "." + sd])
+        # straighten the elbow to a slight bend, and twist the forearm so the
+        # palms face the thighs (thumbs forward = +Z here)
+        Ru = local["clavicle." + sd] @ local["shoulder01." + sd] @ local["upperarm01." + sd]
+        la = head["lowerarm01." + sd]
+        fa = head["wrist." + sd] - la; fa /= np.linalg.norm(fa)
+        want = np.array([sx * 0.10, -1.0, 0.2]); want /= np.linalg.norm(want)
+        want_rest = Ru[:3, :3].T @ want
+        ax2 = np.cross(fa, want_rest)
+        align = rot(ax2, math.asin(min(1.0, np.linalg.norm(ax2))), la) if np.linalg.norm(ax2) > 1e-6 else np.eye(4)
+        th_ = np.append(head["finger1-1." + sd], 1); li_ = np.append(head["finger5-1." + sd], 1)
+        best = None
+        for deg in range(-180, 180, 5):
+            L = align @ rot(fa, math.radians(deg), la)
+            M = Ru @ L
+            score = (M @ th_)[2] - (M @ li_)[2]
+            if best is None or score > best[0]:
+                best = (score, L)
+        local["lowerarm01." + sd] = best[1]
+        # bring the fingers halfway together (the A-pose spreads them)
+        dm = jp(bones["finger3-1." + sd]["tail"]) - head["finger3-1." + sd]
+        for f in (2, 4, 5):
+            b = "finger%d-1.%s" % (f, sd)
+            df_ = jp(bones[b]["tail"]) - head[b]
+            ax3 = np.cross(df_, dm)
+            ang3 = math.atan2(np.linalg.norm(ax3), np.dot(df_, dm))
+            if np.linalg.norm(ax3) > 1e-9:
+                local[b] = rot(ax3, ang3 * 0.55, head[b])
+    world = {}
+    def W(b):
+        if b not in world:
+            par = bones[b].get("parent")
+            world[b] = (W(par) if par else np.eye(4)) @ local[b]
+        return world[b]
+    mats = np.stack([W(b) for b in names])
+    bi = {b: i for i, b in enumerate(names)}
+    Wm = np.zeros((n, len(names)))
+    for b, lst in wts.items():
+        if b in bi:
+            for vi, w in lst:
+                Wm[vi, bi[b]] += w
+    tot = Wm.sum(1, keepdims=True)
+    Wm = np.where(tot > 0, Wm / np.maximum(tot, 1e-9), 0)
+    Wm[tot[:, 0] == 0, bi["head"]] = 1.0
+    def f(p):
+        ph = np.concatenate([p, np.ones((len(p), 1))], 1)
+        out = np.zeros_like(p)
+        for k in range(len(names)):
+            w = Wm[:, k]
+            nz = w > 0
+            if nz.any():
+                out[nz] += w[nz, None] * (ph[nz] @ mats[k].T)[:, :3]
+        return out
+    return f
+
+
+def subdivide_head(pos, nrm, uv, uv2, tuv, col, bones, weights, idx, blocks):
+    """Splits every face triangle (head, eyes, hair) into four, with curved
+    (PN-triangle) edge midpoints; neighbours of split edges are split too, so
+    there are no cracks. Roughly quadruples the face's triangle count."""
+    tri = idx.reshape(-1, 3)
+    part = np.floor(uv[:, 0] + 0.01).astype(int)
+    face = np.isin(part, [3, 8, 11])
+    split_tri = face[tri].all(1)
+    edges = {}
+    def key(a, b): return (a, b) if a < b else (b, a)
+    for t in tri[split_tri]:
+        for k in range(3):
+            edges[key(t[k], t[(k + 1) % 3])] = -1
+    ek = list(edges.keys())
+    a = np.array([e[0] for e in ek]); b = np.array([e[1] for e in ek])
+    base = len(pos)
+    for j, e in enumerate(ek): edges[e] = base + j
+    def mid(P, N):
+        d = P[b] - P[a]
+        m = (P[a] + P[b]) / 2 + ((np.sum(d * N[a], 1) - np.sum(d * N[b], 1)) / 8)[:, None] * (N[a] + N[b]) / 2
+        nn = N[a] + N[b]
+        return m, nn / np.maximum(np.linalg.norm(nn, axis=1, keepdims=True), 1e-9)
+    pm, nm = mid(pos, nrm)
+    pos = np.concatenate([pos, pm]); nrm = np.concatenate([nrm, nm])
+    uv = np.concatenate([uv, np.stack([uv[a, 0], (uv[a, 1] + uv[b, 1]) / 2], 1)])
+    uv2 = np.concatenate([uv2, (uv2[a] + uv2[b]) / 2])
+    tuv = np.concatenate([tuv, (tuv[a] + tuv[b]) / 2])
+    col = np.concatenate([col, (col[a] + col[b]) / 2])
+    nb = np.zeros((len(ek), 4), np.int32); nw = np.zeros((len(ek), 4), np.float32)
+    for j in range(len(ek)):
+        acc = {}
+        for v in (a[j], b[j]):
+            for k in range(4): acc[bones[v, k]] = acc.get(bones[v, k], 0) + weights[v, k] * 0.5
+        top = sorted(acc.items(), key=lambda t: -t[1])[:4]
+        tot = sum(w for _, w in top) or 1
+        for k, (bb, w) in enumerate(top): nb[j, k] = bb; nw[j, k] = w / tot
+    bones = np.concatenate([bones, nb]); weights = np.concatenate([weights, nw])
+    blocks = [(np.concatenate([sp, mid(sp, sn)[0]]).astype(np.float32), np.concatenate([sn, mid(sp, sn)[1]]).astype(np.float32)) for sp, sn in blocks]
+    out = []
+    for t in tri:
+        m = [edges.get(key(t[k], t[(k + 1) % 3]), -1) for k in range(3)]
+        cnt = sum(x >= 0 for x in m)
+        if cnt == 0: out.append(t); continue
+        if cnt == 3:
+            out += [[t[0], m[0], m[2]], [m[0], t[1], m[1]], [m[2], m[1], t[2]], [m[0], m[1], m[2]]]; continue
+        # rotate so the first split edge is (v0, v1)
+        r = [k for k in range(3) if m[k] >= 0][0] if cnt == 1 else [k for k in range(3) if m[k] < 0][0]
+        v = [t[(r + k) % 3] for k in range(3)]; mm = [m[(r + k) % 3] for k in range(3)]
+        if cnt == 1:
+            out += [[v[0], mm[0], v[2]], [mm[0], v[1], v[2]]]
+        else:   # edge (v0, v1) not split; (v1, v2) and (v2, v0) split
+            out += [[v[0], v[1], mm[1]], [v[0], mm[1], mm[2]], [mm[2], mm[1], v[2]]]
+    idx = np.array(out, np.int64).reshape(-1)
+    return pos.astype(np.float32), nrm.astype(np.float32), uv, uv2, tuv, col, bones, weights, list(idx), blocks
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--src", default="/tmp/mh")
@@ -110,6 +243,7 @@ def main():
         def univ(m, w):
             return read_target(fetch(src, "targets/macrodetails/universal-%s-young-%s-%s.target" % (sex, m, w)), n)
         base = V + mean
+        pose_fn = make_arm_pose(base, skel, wts, n)
         shapes = {
             "fat": univ("averagemuscle", "maxweight"), "slim": univ("averagemuscle", "minweight"),
             "muscle": univ("maxmuscle", "averageweight"),
@@ -119,6 +253,10 @@ def main():
         # MakeHuman: decimeters, +Z forward, +X = character's left.
         # Game: meters, -Z forward, -X = character's left (rotate 180 degrees about Y).
         conv = lambda p: np.stack([-p[:, 0], p[:, 1], -p[:, 2]], 1) * 0.1
+        posed = pose_fn(base)
+        shapes = {k: pose_fn(base + v) - posed for k, v in shapes.items()}
+        V_rest = V
+        base = posed
         P = conv(base)
         body_idx = sorted({c[0] for g, cs in faces if g == "body" for c in cs})
         ground = P[body_idx, 1].min()
@@ -181,6 +319,7 @@ def main():
             d = pos[i] - hc
             th = (math.degrees(math.atan2(d[2], d[0])) + 360.0) % 360.0
             uv2[i] = (th / 360.0, 0.5)
+        eye_dir = {}
         # Eyeballs: distance from the front pole (iris and pupil in the shader).
         for i in range(m):
             if int(part[i]) == 8:
@@ -192,6 +331,7 @@ def main():
             r = np.linalg.norm(pos[sel] - c, axis=1).max()
             for i in sel:
                 v = (pos[i] - c) / r
+                eye_dir[i] = v / max(np.linalg.norm(v), 1e-9)
                 uv2[i, 1] = math.degrees(math.acos(max(-1.0, min(1.0, -v[2])))) / 32.0 * 0.075
         # Arms, hands and fingers: height as if the arm hung straight down, so the
         # shader's sleeve cut works on the A-pose rest mesh.
@@ -203,8 +343,10 @@ def main():
                 sh = np.array(rest[BONES.index("upperarm" + sd)])
                 yv[i] = sh[1] - np.linalg.norm(pos[i] - sh)
         # Region weights for the shader in COLOR: r lips, g brows, b nails, a beard.
-        J = lambda k: conv(V[skel["joints"][k]].mean(0, keepdims=True) + mean[skel["joints"][k]].mean(0, keepdims=True))[0] - np.array([0, ground, 0])
+        J = lambda k: conv(base[skel["joints"][k]].mean(0, keepdims=True))[0] - np.array([0, ground, 0])
         col = np.zeros((m, 4), np.float32)
+        for i, v in eye_dir.items():
+            col[i, :3] = v * 0.5 + 0.5   # eyeball: direction from its center (iris drawn per pixel)
         n_pre = None
         mouth = (J("oris05____head") + J("oris01____head")) / 2
         eye_l, eye_r = J("eye.L____head"), J("eye.R____head")
@@ -336,13 +478,16 @@ def main():
         pos = shell(pos_rest)
         n0 = normals(pos)
         uv = np.stack([part, yv / H], 1).astype(np.float32)
-        meta = {"sex": sex, "height": float(H), "vertices": m, "indices": len(idx), "bones": BONES,
+        pos, n0, uv, uv2, out_uv, col, bones, weights, idx, blocks = subdivide_head(
+            pos.astype(np.float32), n0, uv, uv2, np.array(out_uv, np.float32), col, bones, weights, np.array(idx, np.int64), blocks)
+        m = len(pos)
+        meta = {"sex": sex, "height": float(H), "vertices": m, "indices": int(len(idx)), "bones": BONES,
                 "rest": rest, "shapes": names, "landmarks": landmarks,
                 "layout": ["pos", "normal", "uv", "uv2", "texuv", "color", "bones", "weights", "index", "shapes(pos,normal)..."]}
         os.makedirs(OUT, exist_ok=True)
         with open(os.path.join(OUT, "mh_%s.bin" % sex), "wb") as f:
-            for arr in [pos.astype(np.float32), n0.astype(np.float32), uv, uv2, np.array(out_uv, np.float32),
-                        col, bones, weights, np.array(idx, np.int32)]:
+            for arr in [pos.astype(np.float32), n0.astype(np.float32), uv.astype(np.float32), uv2.astype(np.float32),
+                        np.array(out_uv, np.float32), col.astype(np.float32), bones.astype(np.int32), weights.astype(np.float32), np.array(idx, np.int32)]:
                 f.write(arr.tobytes())
             for sp, sn in blocks:
                 f.write(sp.tobytes()); f.write(sn.tobytes())

@@ -21,7 +21,8 @@ uniform float barefoot = 0.0;
 uniform float painted_eyes = 0.0;  // far LOD has no eyeballs
 uniform float stubble = 0.0;       // 0 clean shaven .. 1 full beard (grooming)
 uniform float detail = 1.0;
-uniform float use_regions = 0.0;   // MakeHuman body: COLOR = lips, brows, nails, beard zone
+uniform float use_regions = 0.0;
+uniform float separate_clothes = 0.0;  // clothes are their own meshes (NpcWardrobe): body is all skin   // MakeHuman body: COLOR = lips, brows, nails, beard zone
 
 varying vec3 rest_info;
 varying flat float vpart;   // flat: no blending between parts across a triangle
@@ -46,7 +47,9 @@ void fragment() {
 	float rough = 0.55;
 	float spec = 0.4;
 	int mat = 0;                          // 0 skin, 1 top, 2 bottom, 3 shoe, 4 hair, 5 eye, 6 lip
-	if (part == 0) {                      // torso
+	if (separate_clothes > 0.5 && (part == 0 || part == 1 || part == 2 || part == 4)) {
+		mat = (part == 4 && COLOR.b > 0.5) ? 7 : 0;
+	} else if (part == 0) {                      // torso
 		mat = yn > 0.822 ? 0 : (yn > 0.565 ? 1 : 2);
 	} else if (part == 1) {               // leg
 		mat = yn > bottom_cut ? 2 : 0;
@@ -67,6 +70,10 @@ void fragment() {
 	} else if (part == 8) {               // eyeball, front pole at UV2.y = 0
 		mat = 5;
 		float e = UV2.y;
+		if (use_regions > 0.5) {
+			vec3 dv = normalize(COLOR.rgb * 2.0 - 1.0);
+			e = degrees(acos(clamp(-dv.z, -1.0, 1.0))) / 32.0 * 0.075;
+		}
 		col = e < 0.075 ? (e < 0.032 ? vec3(0.015) : eye_color * (0.7 + 6.0 * (e - 0.032))) : mix(vec3(0.95, 0.93, 0.9), vec3(0.88, 0.8, 0.78), smoothstep(0.2, 0.5, e));
 		if (e > 0.06 && e < 0.08) col *= 0.6;   // limbal ring
 	} else if (part == 7) {               // finger: nail on the back near the tip
@@ -112,6 +119,20 @@ void fragment() {
 		col *= 1.0 + 0.035 * n2 * detail + 0.02 * n1 * detail;
 		rough = 0.52 + 0.12 * n1 * detail;
 		spec = 0.35;
+		// pores and fine skin lines as a normal map (about 0.5-1 mm features)
+		vec2 pq = fine * 1.6;
+		float e = 0.35;
+		float h0 = vnoise(pq) + 0.5 * vnoise(pq * 2.7);
+		float hx = vnoise(pq + vec2(e, 0.0)) + 0.5 * vnoise((pq + vec2(e, 0.0)) * 2.7);
+		float hy = vnoise(pq + vec2(0.0, e)) + 0.5 * vnoise((pq + vec2(0.0, e)) * 2.7);
+		float k = (part == 3 ? 0.55 : 0.3) * detail;
+		NORMAL_MAP = normalize(vec3((h0 - hx) * k, (h0 - hy) * k, 1.0)) * 0.5 + 0.5;
+		if (part == 3 && use_regions > 0.5) {
+			// warmer cheeks, nose and ears; slightly darker around the eyes
+			float warm = smoothstep(55.0, 20.0, abs(df - 28.0)) * smoothstep(0.035, 0.0, abs(yn - 0.925)) * 0.5
+				+ smoothstep(9.0, 0.0, df) * smoothstep(0.02, 0.0, abs(yn - 0.918)) * 0.6;
+			col = mix(col, col * vec3(1.08, 0.86, 0.84), warm * 0.45);
+		}
 	} else if (mat == 1 || mat == 2) {
 		col = mat == 1 ? top_color : bottom_color;
 		float weave = sin(fine.x * 3.1) * sin(fine.y * 2.3);
