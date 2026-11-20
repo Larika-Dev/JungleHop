@@ -33,7 +33,7 @@ func _ready() -> void:
 	env.tonemap_exposure = 1.0
 	env.ssao_enabled = true
 	env.fog_enabled = true
-	env.fog_density = 0.0008
+	env.fog_density = 0.00022
 	env.fog_sky_affect = 0.3
 	env.glow_enabled = true
 	env.glow_intensity = 0.4
@@ -49,7 +49,7 @@ func _ready() -> void:
 	moon = DirectionalLight3D.new()
 	moon.name = "Moon"
 	moon.light_color = MOON
-	moon.light_energy = 0.15
+	moon.light_energy = 0.3
 	add_child(moon)
 	_update()
 
@@ -89,5 +89,5 @@ func _update() -> void:
 	sky_mat.sky_horizon_color = SKY_NIGHT.lightened(0.08).lerp(hor, day)
 	sky_mat.ground_horizon_color = sky_mat.sky_horizon_color
 	sky_mat.ground_bottom_color = SKY_NIGHT.lerp(Color(0.25, 0.24, 0.22), day)
-	env.ambient_light_energy = lerpf(0.25, 1.0, day)
+	env.ambient_light_energy = lerpf(0.55, 1.0, day)
 	env.fog_light_color = sky_mat.sky_horizon_color

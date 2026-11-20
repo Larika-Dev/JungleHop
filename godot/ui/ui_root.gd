@@ -152,6 +152,12 @@ func close_panel(c: Control = null) -> void:
 				p.set_input_enabled(true)
 
 
+## Center a panel on screen (call after it has its size).
+func center(c: Control) -> void:
+	c.reset_size()
+	c.position = ((_panel_host.size - c.size) * 0.5).floor()
+
+
 func is_panel_open() -> bool:
 	return not _panels.is_empty()
 
@@ -187,7 +193,6 @@ func open_action_menu(target: Interactable, actor: Node) -> void:
 		return
 	var acts := target.get_actions(actor)
 	var pc := PanelContainer.new()
-	pc.set_anchors_preset(Control.PRESET_CENTER)
 	var v := VBoxContainer.new()
 	v.add_theme_constant_override("separation", 8)
 	pc.add_child(v)
@@ -216,7 +221,7 @@ func open_action_menu(target: Interactable, actor: Node) -> void:
 	v.add_child(cancel)
 	open_panel(pc)
 	pc.reset_size()
-	pc.position = -pc.size * 0.5
+	center(pc)
 	(first if first else cancel).grab_focus()
 
 
