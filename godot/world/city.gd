@@ -42,6 +42,9 @@ func _ready() -> void:
 	_apply_settings()
 	GameState.world_ready.emit(self)
 	GameState.game_started.emit()
+	if not get_tree().get_meta("shown_controls_hint", false):
+		get_tree().set_meta("shown_controls_hint", true)
+		UI.notify("E: use / talk   Hold E or Tab: all actions   Q: you & this place   R: people   M: map   Esc: menu", 12.0)
 
 
 func _exit_tree() -> void:

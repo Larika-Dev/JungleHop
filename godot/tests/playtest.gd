@@ -185,6 +185,25 @@ func _run() -> void:
 	if law:
 		var crimes: Array = life.actions.order.filter(func(id): return str(id).begins_with("crime_"))
 		check(crimes.size() >= 30, "%d crime actions in the menu" % crimes.size())
+	# Visible police: commit a felony in plain view, officers show up and run at you
+	if law:
+		law.commit("robbery", {"success": true, "witnesses": [{"id": "officer_test", "kind": "police", "distance": 5.0, "sees": true}]})
+		check(law.wanted() > 0, "robbery in front of a cop makes you wanted (%d stars)" % law.wanted())
+		var pu := get_tree().current_scene.get_node_or_null("PoliceUnits")
+		check(pu != null, "police units in the world")
+		if pu and law.wanted() > 0:
+			law.police_dispatched.emit(law.wanted(), 2, "patrol", p.global_position, 0)
+			await wait_s(3.0)
+			check(pu.officers.size() > 0, "officers spawned (%d)" % pu.officers.size())
+			if pu.officers.size() > 0:
+				var o: Node3D = pu.officers[0]
+				o.global_position = p.global_position + (-p.global_transform.basis.z * 3.0)
+				await snap("06g-police", 10)
+				o.global_position = p.global_position + Vector3(0.5, 0, 0)
+				await wait_s(1.5)
+				check(law.wanted() == 0, "caught by an officer = arrested (wanted %d)" % law.wanted())
+				if law.has_method("serve_sentence"):
+					law.serve_sentence()
 	# Furniture
 	var fm := get_node_or_null("/root/Furniture")
 	check(fm != null, "Furniture autoload")
