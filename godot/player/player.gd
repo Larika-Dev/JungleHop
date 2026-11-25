@@ -169,6 +169,10 @@ func _unhandled_input(event: InputEvent) -> void:
 		_e_down_t = -1.0
 	elif event.is_action_pressed("action_menu") and focus:
 		UI.open_action_menu(focus, self)
+	elif event.is_action_pressed("life_menu") or (event.is_action_pressed("action_menu") and focus == null):
+		UI.open_life_menu()
+	elif event.is_action_pressed("people"):
+		UI.open_people()
 
 
 func _run_first(it: Interactable) -> void:

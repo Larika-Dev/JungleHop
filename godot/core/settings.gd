@@ -12,11 +12,13 @@ const REBINDABLE := {
 	"move_forward": "Move forward", "move_back": "Move back", "move_left": "Move left", "move_right": "Move right",
 	"jump": "Jump", "run": "Run", "interact": "Interact", "action_menu": "Action menu",
 	"toggle_view": "First / third person", "map": "Map", "pause": "Pause menu",
+	"life_menu": "You / this place actions", "people": "People you know",
 }
 const DEFAULT_KEYS := {
 	"move_forward": KEY_W, "move_back": KEY_S, "move_left": KEY_A, "move_right": KEY_D,
 	"jump": KEY_SPACE, "run": KEY_SHIFT, "interact": KEY_E, "action_menu": KEY_TAB,
 	"toggle_view": KEY_C, "map": KEY_M, "pause": KEY_ESCAPE, "fly": KEY_F,
+	"life_menu": KEY_Q, "people": KEY_R,
 }
 
 # Graphics

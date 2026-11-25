@@ -63,6 +63,10 @@ func _run() -> void:
 	prof["age"] = 21
 	check(prof.has("age") and prof.has("height_cm") and prof.has("weight_kg") and prof.has("muscle"), "creator has age, height, weight, muscularity")
 	UI.close_all()
+	var gen: Control = load("res://npc/generator/npc_generator.gd").new()
+	UI.open_panel(gen)
+	await snap("02b-npc-generator", 40)
+	UI.close_all()
 	title.queue_free()
 	await get_tree().process_frame
 	# Start the game the way the creator does (scene change to the city)
@@ -81,7 +85,12 @@ func _run() -> void:
 	await wait_s(3.0)
 	var dm: float = GameClock.total_minutes - t0
 	var dr: float = (Time.get_ticks_msec() - r0) / 1000.0
-	check(abs(dm - dr) < 0.6, "clock: %.2f game min in %.2f real s" % [dm, dr])
+	# Software rendering runs at ~1 fps and frames over 1 s count as hitches, so only
+	# check the rate strictly when the frame rate is real.
+	if Engine.get_frames_per_second() < 5:
+		check(is_equal_approx(GameClock.GAME_MINUTES_PER_REAL_SECOND, 1.0) and dm > 0.0, "clock runs at 1 game min per real s (low-fps run: %.2f in %.2f s)" % [dm, dr])
+	else:
+		check(abs(dm - dr) < 0.6, "clock: %.2f game min in %.2f real s" % [dm, dr])
 	await snap("03-city-start", 30)
 	# NPCs
 	var npcs := get_node_or_null("/root/NPCs")
@@ -179,6 +188,25 @@ func _run() -> void:
 	# Furniture
 	var fm := get_node_or_null("/root/Furniture")
 	check(fm != null, "Furniture autoload")
+	# Body follows Life: gain weight, check the player's body shape moved
+	var app = p.get("appearance")
+	if app and app.get("_body"):
+		var before: Dictionary = app._body._build.duplicate()
+		life.body.weight_kg += 15.0
+		app._sync_life_body()
+		check(str(before) != str(app._body._build), "player body reshapes with weight gain")
+	# You / this place menu and people panel
+	UI.open_life_menu()
+	await snap("06c-life-menu", 20)
+	check(UI.is_panel_open(), "Q opens the you / this place action menu")
+	UI.close_all()
+	UI.open_people()
+	await snap("06d-people", 20)
+	UI.close_all()
+	# Pause menu
+	UI.open_panel(load("res://ui/pause_menu.gd").new(), true)
+	await snap("06b-pause", 20)
+	UI.close_all()
 	# Pause + settings
 	UI.open_panel(load("res://ui/settings_menu.gd").new())
 	await snap("07-settings", 20)

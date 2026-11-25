@@ -17,6 +17,11 @@ var _busy := false
 func _ready() -> void:
 	rng.randomize()
 	custom_minimum_size = Vector2(980, 620)
+	# Centered on screen when shown as an in-game panel.
+	if get_parent() is Control or get_parent() is CanvasLayer:
+		set_anchors_preset(Control.PRESET_CENTER)
+		grow_horizontal = Control.GROW_DIRECTION_BOTH
+		grow_vertical = Control.GROW_DIRECTION_BOTH
 	var h := HBoxContainer.new()
 	add_child(h)
 	var form := VBoxContainer.new()

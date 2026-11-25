@@ -35,7 +35,33 @@ func _build_detailed(p: Dictionary) -> bool:
 	_body.collider.collision_layer = 0
 	_body.apply_record(rec)
 	_body.set_lod(0)
+	_sync_life_body()
+	# The body follows Life's hidden stats: weight from eating and exercise, muscle from
+	# workouts, stubble/grooming. Refreshed on every change signal and every game hour.
+	var life := get_node_or_null("/root/Life")
+	if life and life.get("body"):
+		for sig in ["weight_changed", "attractiveness_changed"]:
+			if life.body.has_signal(sig) and not life.body.is_connected(sig, _on_life_body_changed):
+				life.body.connect(sig, _on_life_body_changed)
+	if not GameClock.hour_passed.is_connected(_on_hour):
+		GameClock.hour_passed.connect(_on_hour)
 	return true
+
+
+func _on_life_body_changed(_v = null) -> void:
+	_sync_life_body()
+
+
+func _on_hour(_d: int, _h: int) -> void:
+	_sync_life_body()
+
+
+func _sync_life_body() -> void:
+	if _body == null or not is_instance_valid(_body) or not _body.has_method("apply_life_body"):
+		return
+	var life := get_node_or_null("/root/Life")
+	if life and life.get("body") and life.body.has_method("visual_params") and GameState.in_game:
+		_body.apply_life_body(life.body.visual_params())
 
 
 func build(p: Dictionary) -> void:
