@@ -46,6 +46,10 @@ func _process(delta: float) -> void:
 		var body: NpcBody = loaded.get(i)
 		if body == null:
 			continue
+		if body.has_meta("talking"):
+			# Stand still and face the player while a conversation is open.
+			body.animate(delta, 0.0)
+			continue
 		sim.update_one(i, t)
 		var p := sim.pos[i]
 		var moving := sim.state[i] == NpcSimulation.WALKING

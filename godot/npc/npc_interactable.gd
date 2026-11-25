@@ -31,6 +31,15 @@ func perform(action_id: String, actor: Node) -> void:
 	if action_id == "converse" and dlg:
 		if body and body.has_method("face_toward") and actor is Node3D:
 			body.face_toward(actor.global_position)
+		if body:
+			body.set_meta("talking", true)
+			var b := body
+			var done := func(_id = ""):
+				if is_instance_valid(b) and b.has_meta("talking"):
+					b.remove_meta("talking")
+			if dlg.has_signal("conversation_ended"):
+				dlg.conversation_ended.connect(done, CONNECT_ONE_SHOT)
+			UI.panel_closed.connect(done, CONNECT_ONE_SHOT)
 		dlg.open_conversation(body)
 		super.perform(action_id, actor)
 		return
