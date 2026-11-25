@@ -12,6 +12,7 @@ const HOME_TYPES := ["apartment_bed", "bedroom", "dorm_single", "dorm_double"]
 
 var room_id := ""
 var building_id := ""
+var household: Array = []   # npc ids living with you (partner who moved in, spouse)
 var _loaded := false
 
 
@@ -19,6 +20,7 @@ func _ready() -> void:
 	GameState.register_saveable("home", self)
 	GameState.game_started.connect(_on_game_started)
 	_register_actions.call_deferred()
+	_hook_romance.call_deferred()
 
 
 func _on_game_started() -> void:
@@ -155,12 +157,84 @@ func _register_actions() -> void:
 		return res)
 
 
+# --- Living together ---------------------------------------------------------------
+
+func _hook_romance() -> void:
+	var life := get_node_or_null("/root/Life")
+	if life and life.get("actions") and life.actions.has_signal("action_finished"):
+		life.actions.action_finished.connect(_on_action_finished)
+
+
+func _on_action_finished(id: String, target: Variant, result: Dictionary) -> void:
+	if not result.get("ok", true) or not result.get("success", true):
+		return
+	var life := get_node_or_null("/root/Life")
+	var nid: String = life.actions.npc_id(target) if life and target != null and life.actions.has_method("npc_id") else ""
+	if nid == "":
+		return
+	match id:
+		"move_in_together", "get_married":
+			add_to_household(nid)
+		"break_up", "divorce":
+			remove_from_household(nid)
+
+
+## A partner moves in: they live (and sleep) at your place and pay half the rent.
+func add_to_household(nid: String) -> void:
+	if room_id == "" or nid in household:
+		return
+	household.append(nid)
+	_apply_household(nid)
+	var life := get_node_or_null("/root/Life")
+	var who: String = life.relationships.display_name(nid) if life else nid
+	UI.notify("%s moves in with you. Rent is split from now on." % who)
+	_update_rent()
+
+
+func remove_from_household(nid: String) -> void:
+	if not (nid in household):
+		return
+	household.erase(nid)
+	var npcs := get_node_or_null("/root/NPCs")
+	if npcs and npcs.has_method("restore_home"):
+		npcs.restore_home(nid)
+	var life := get_node_or_null("/root/Life")
+	var who: String = life.relationships.display_name(nid) if life else nid
+	UI.notify("%s moves out." % who)
+	_update_rent()
+
+
+func _apply_household(nid: String) -> void:
+	var npcs := get_node_or_null("/root/NPCs")
+	if npcs == null or not npcs.has_method("relocate_home"):
+		return
+	if not npcs.ready_state:
+		await npcs.population_ready
+	npcs.relocate_home(nid, building_id)
+
+
+func _update_rent() -> void:
+	var life := get_node_or_null("/root/Life")
+	if life == null or life.get("money") == null or room_id == "":
+		return
+	var share := WEEKLY_RENT / float(1 + household.size())
+	var nd: int = int(life.money.bills.get("rent", {}).get("next_day", -1))
+	life.money.add_bill("rent", snappedf(share, 0.01), 7, "Rent: %s%s" % [place_name(), " (split)" if not household.is_empty() else ""], nd)
+
+
 func save_data() -> Dictionary:
-	return {"room_id": room_id}
+	return {"room_id": room_id, "household": household.duplicate()}
 
 
 func load_data(d: Dictionary) -> void:
 	_loaded = true
+	var npcs := get_node_or_null("/root/NPCs")
+	for nid in household:
+		if npcs and npcs.has_method("restore_home"):
+			npcs.restore_home(nid)
+	household = d.get("household", []).duplicate()
 	room_id = str(d.get("room_id", ""))
 	building_id = str(CityData.room(room_id).get("buildingId", "")) if room_id != "" else ""
+	for nid in household:
+		_apply_household(nid)
 	home_changed.emit(room_id)

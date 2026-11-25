@@ -392,8 +392,43 @@ func start_conversation(npc, extra: Dictionary = {}) -> Dictionary:
 	_convos[npc_id] = {"npc": npc, "extra": extra.duplicate(), "options": [], "awaiting": {}}
 	var stage: String = extra.get("stage", _stage(npc_id))
 	var ctx := "hostile" if stage in _convo_def.get("opening", {}).get("hostile_stages", []) else greeting_context(npc)
+	# First impressions: a stranger reacts to how you come across (looks, hygiene,
+	# reputation, notoriety vs. how law-abiding they are) the first time you talk.
+	if stage == "stranger" and not extra.has("stage"):
+		var imp := first_impression(npc_id)
+		if imp <= -0.45:
+			ctx = "hostile"
 	var info := _speak(npc, ctx, extra)
 	return _emit_state(npc_id, info, _offer_options(npc_id), false)
+
+
+## -1 (repelled) .. +1 (charmed). Applied once per NPC as a friendship nudge (up to ±8).
+func first_impression(npc_id: String) -> float:
+	var life := _life()
+	if life == null or life.get("relationships") == null:
+		return 0.0
+	var rel = life.relationships
+	var cached: Variant = rel.npc_info(npc_id).get("first_impression", null)
+	if cached != null:
+		return float(cached)
+	var v := 0.0
+	if life.get("body") and life.body.has_method("attractiveness"):
+		v += (float(life.body.attractiveness()) - 5.5) / 4.5 * 0.35
+	if life.get("needs"):
+		var hyg: float = life.needs.get_value("hygiene")
+		if hyg < 25.0:
+			v -= (25.0 - hyg) / 25.0 * 0.6
+	if life.get("standing"):
+		var st = life.standing
+		v += clampf(float(st.reputation()), -10.0, 10.0) * 0.025
+		var lawful: float = rel.trait_value(npc_id, "lawful") if rel.has_method("trait_value") else 0.5
+		v -= float(st.get_score("notoriety")) / 100.0 * 0.6 * lawful
+		v += (float(st.get_score("charisma")) - 50.0) / 50.0 * 0.15
+	v = clampf(v + _rng.randf_range(-0.1, 0.1), -1.0, 1.0)
+	rel.register_npc(npc_id, {"first_impression": v})
+	if rel.has_method("change"):
+		rel.change(npc_id, roundf(v * 8.0), 0.0, "First impression")
+	return v
 
 ## Player picks option_id (one of the ids in the last state's options).
 func choose(npc, option_id: String) -> Dictionary:
