@@ -46,6 +46,7 @@ func _physics_process(delta: float) -> void:
 			if wanted:
 				for k in int(e.n):
 					_spawn(p.global_position, e.pos)
+				UI.notify("Police are here.")
 	# Chase or leave
 	var pp: Vector3 = p.global_position
 	for o in officers.duplicate():
@@ -107,7 +108,6 @@ func _spawn(player_pos: Vector3, seen_at: Vector3) -> void:
 	body.set_lod(1)
 	body.global_position = pos
 	officers.append(body)
-	UI.notify("Police on the way.")
 
 
 func clear() -> void:
