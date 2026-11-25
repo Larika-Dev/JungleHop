@@ -7,7 +7,7 @@ config_version=5
 
 config/name="Cathedral Mount"
 config/description="A life sim in the college town of Cathedral Mount."
-config/version="1.0.0"
+config/version="1.1.0"
 run/main_scene="res://ui/title_screen.tscn"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
@@ -26,6 +26,7 @@ Education="*res://education/education.gd"
 Law="*res://crime/law.gd"
 NPCs="*res://npc/npc_manager.gd"
 Dialogue="*res://dialogue/dialogue.gd"
+Home="*res://core/home.gd"
 
 [display]
 

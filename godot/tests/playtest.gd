@@ -203,6 +203,20 @@ func _run() -> void:
 	UI.open_people()
 	await snap("06d-people", 20)
 	UI.close_all()
+	# Home
+	var home := get_node_or_null("/root/Home")
+	check(home != null and home.room_id != "", "player has a home (%s)" % (home.room_id if home else ""))
+	if home and home.room_id != "":
+		var t1: float = GameClock.total_minutes
+		var r: Dictionary = life.actions.perform("go_home", null)
+		await wait_s(2.0)
+		check(p.global_position.distance_to(home.home_position()) < 3.0, "Go home moves you home (%.1f m away)" % p.global_position.distance_to(home.home_position()))
+		check(GameClock.total_minutes > t1, "the walk home takes time")
+		await snap("06f-home", 40)
+	UI.open_map()
+	await snap("06e-map", 30)
+	check(UI.is_panel_open(), "M opens the map")
+	UI.close_all()
 	# Pause menu
 	UI.open_panel(load("res://ui/pause_menu.gd").new(), true)
 	await snap("06b-pause", 20)

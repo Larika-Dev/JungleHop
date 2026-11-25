@@ -30,6 +30,11 @@ func _find_external() -> void:
 		var node := get_node_or_null("/root/" + n)
 		if node and node != self and node != get_parent():
 			external = node
+			# A jump of the clock (new game, load, set_time) is not time lived: resync
+			# without replaying every minute (which drained needs and charged bills
+			# for the whole gap when a save from a later day was loaded).
+			if external.has_signal("time_set") and not external.time_set.is_connected(_on_external_time_set):
+				external.time_set.connect(_on_external_time_set)
 			return
 
 
@@ -50,6 +55,11 @@ func _process(delta: float) -> void:
 	else:
 		total_minutes = _read_external()
 	_emit_up_to(total_minutes)
+
+
+func _on_external_time_set(t: float) -> void:
+	total_minutes = float(t)
+	_last_whole = int(floor(total_minutes))
 
 
 func _read_external() -> float:
