@@ -61,8 +61,26 @@ func place_name() -> String:
 	return n if n != "" else "your building"
 
 
+## Just inside the room's door (the middle of a bedroom is usually the bed).
 func home_position() -> Vector3:
-	return CityData.room_world_center(room_id) + Vector3(0, 0.1, 0) if room_id != "" else Vector3.ZERO
+	if room_id == "":
+		return Vector3.ZERO
+	var r: Dictionary = CityData.room(room_id)
+	var rc: Array = r.get("rect", [])
+	if rc.size() < 4:
+		return CityData.room_world_center(room_id) + Vector3(0, 0.1, 0)
+	var y := float(r.get("y", 0.0))
+	var center := Vector3((rc[0] + rc[2]) * 0.5, y, (rc[1] + rc[3]) * 0.5)
+	var local := center
+	for o in r.get("openings", []):
+		if str(o.get("type", "")) == "door":
+			var dp: Array = o.position
+			var door := Vector3(float(dp[0]), y, float(dp[2]))
+			var dir := (center - door)
+			dir.y = 0.0
+			local = door + dir.normalized() * minf(0.9, dir.length())
+			break
+	return CityData.building_transform(str(r.buildingId)) * local + Vector3(0, 0.1, 0)
 
 
 ## Game minutes to walk from p to q (street distance, about 1.3x straight line).
