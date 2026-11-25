@@ -8,7 +8,7 @@
   {"id": "chat", "reply": "smalltalk", "action": "chat", "labels": ["So, what's new?", "How's it going?", "Anything interesting happen lately?", "What have you been up to?"]},
   {"id": "ask_about", "reply": "about_self", "action": "deep_talk", "labels": ["Tell me about yourself.", "What's your story?", "What makes you tick?"]},
   {"id": "compliment", "reply": "compliment_reply", "action": "compliment", "labels": ["You look great today.", "I like talking with you.", "You've got a great vibe."]},
-  {"id": "joke", "reply": "joke", "action": "joke", "labels": ["Know any good jokes?", "Make me laugh.", "Tell me something funny."]},
+  {"id": "joke", "reply": "joke", "action": "tell_joke", "labels": ["Know any good jokes?", "Make me laugh.", "Tell me something funny."]},
   {"id": "opinion_place", "reply": "opinion_place", "labels": ["What do you think of this place?", "Come here often?", "How do you like it here?"]},
   {"id": "work", "reply": "work_talk", "labels": ["How's work?", "What do you do for a living?", "Busy at work lately?"]},
   {"id": "school", "reply": "school_talk", "labels": ["How are classes going?", "Are you a student here?", "Studying anything interesting?"]},
@@ -48,7 +48,7 @@
  "favor": {
   "ask_context": "ask_favor",
   "options": [
-   {"id": "favor_yes", "reply": "favor_reply", "action": "help", "labels": ["Sure, I'll help."]},
+   {"id": "favor_yes", "reply": "favor_reply", "action": "do_favor", "labels": ["Sure, I'll help."]},
    {"id": "favor_no", "reply": "farewell", "labels": ["Sorry, I can't right now."]}
   ]
  },

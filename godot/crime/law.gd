@@ -96,6 +96,13 @@ func _hook_up() -> void:
 	if DisplayServer.get_name() != "headless":
 		_hud = HudScript.new()
 		add_child(_hud)
+	# Visible officers in the city (crime/police_units.gd) whenever a world is loaded.
+	var gs := _node("GameState")
+	if gs and gs.has_signal("world_ready"):
+		gs.world_ready.connect(func(world: Node):
+			var pu: Node = load("res://crime/police_units.gd").new()
+			pu.name = "PoliceUnits"
+			world.add_child(pu))
 	_publish()
 
 
