@@ -1,0 +1,4076 @@
+{
+ "id": "competitive_rival",
+ "lines": [
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "New challenger approaching. I'm {npc}. I'm better than you at most things.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "competitive_rival.base.001"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey. I'm {npc}. Undefeated in ping pong at the student union. Three years.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "competitive_rival.base.002"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Sup. You look like you can't parallel park. I'm {npc}.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "competitive_rival.base.003"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi. I'm {npc}. Want to arm wrestle? No? Coward. Kidding. Mostly.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "competitive_rival.base.004"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey. You walk fast. Not as fast as me. I'm {npc}.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "competitive_rival.base.005"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Name's {npc}. Remember it. You'll hear it at the awards.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "competitive_rival.base.006"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}. Back for another loss?",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "competitive_rival.base.007"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh, {player}. I've been practicing. You're going down.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "competitive_rival.base.008"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! Rematch. Chess. Tonight. You pick the time, I pick the victory.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "competitive_rival.base.009"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey, {player}. I beat your high score at the arcade. Just so you know.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "competitive_rival.base.010"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}. You look slow today. Good.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "competitive_rival.base.011"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! My rival! My favorite rival!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "competitive_rival.base.012"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "There you are. I need someone worthy to beat.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "competitive_rival.base.013"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! I kept score of our hangouts. I'm winning.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "competitive_rival.base.014"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey, you. You're the only one who ever beats me. Barely.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "competitive_rival.base.015"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! I brought cards. Prepare to lose. Lovingly.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "competitive_rival.base.016"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "My nemesis and best friend! Same thing, really.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "competitive_rival.base.017"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Morning. Already beat my 5K time. You're up late.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "competitive_rival.base.018"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good morning. Early riser wins. That's me.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "competitive_rival.base.019"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Morning. First one to the coffee shop wins.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "competitive_rival.base.020"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Evening. Trivia at Top of the Mount. We're winning.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "competitive_rival.base.021"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey. Pickup game on the courts in ten. You in?",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "competitive_rival.base.022"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Evening. Sunset? I've seen better. I've seen it from a higher hill.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "competitive_rival.base.023"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Late night? I'm still up. I win.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "competitive_rival.base.024"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Night. I'm grinding ranked matches. Don't distract me.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "competitive_rival.base.025"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey. The night belongs to champions.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "competitive_rival.base.026"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Later, loser. Kidding. Mostly.",
+   "cond": {},
+   "id": "competitive_rival.base.027"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "See ya. I'll be practicing.",
+   "cond": {},
+   "id": "competitive_rival.base.028"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye. I'm going to beat you next time.",
+   "cond": {},
+   "id": "competitive_rival.base.029"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Peace. Stay in your lane. My lane's the fast one.",
+   "cond": {},
+   "id": "competitive_rival.base.030"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Catch you later. Bring your A-game.",
+   "cond": {},
+   "id": "competitive_rival.base.031"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye. Victory waits for no one.",
+   "cond": {},
+   "id": "competitive_rival.base.032"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Later, {player}. Good game. Next time I crush you.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "competitive_rival.base.033"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "See ya, rival. Text me your score.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "competitive_rival.base.034"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye. You're alright. For second place.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "competitive_rival.base.035"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I beat the Earl University fan at darts last night. Three times. He cried.",
+   "cond": {},
+   "id": "competitive_rival.base.036"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The Billram are going to win the championship. I've bet my dignity on it.",
+   "cond": {},
+   "id": "competitive_rival.base.037"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I timed myself climbing the stadium stairs. New record.",
+   "cond": {},
+   "id": "competitive_rival.base.038"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Somebody beat my score on the pinball machine at the Grinding Stone. I'm investigating.",
+   "cond": {},
+   "id": "competitive_rival.base.039"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I entered the pie-eating contest at Founders' Day. Second place. Rigged.",
+   "cond": {},
+   "id": "competitive_rival.base.040"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I'm learning chess openings. Twelve so far.",
+   "cond": {},
+   "id": "competitive_rival.base.041"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The pickup basketball game on Thursday is mine. Everyone knows it.",
+   "cond": {},
+   "id": "competitive_rival.base.042"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I can do forty push-ups in a minute. Wanna see?",
+   "cond": {},
+   "id": "competitive_rival.base.043"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I beat my roommate at every board game we own. He moved out.",
+   "cond": {},
+   "id": "competitive_rival.base.044"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I joined the debate team. I win arguments for fun.",
+   "cond": {},
+   "id": "competitive_rival.base.045"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I bet I can eat more wings than anyone at Top of the Mount.",
+   "cond": {},
+   "id": "competitive_rival.base.046"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Participation trophies are a crime.",
+   "cond": {},
+   "id": "competitive_rival.base.047"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Honestly? You're the only person I'm happy to lose to.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "competitive_rival.base.048"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I compete because my brother always won. Now I can't stop.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "competitive_rival.base.049"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You make me want to be better. Not just beat you.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "competitive_rival.base.050"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "If anyone ever messes with you, they deal with me.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "competitive_rival.base.051"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I'd let you win. Once. Maybe.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "competitive_rival.base.052"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You're the best opponent and the best friend.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "competitive_rival.base.053"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Weekend! Tournament Saturday. I'm the favorite.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "competitive_rival.base.054"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Saturday. Golf. I'm terrible. I'm still going to win.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "competitive_rival.base.055"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Sunday. Football. Real sport. Real competition.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "competitive_rival.base.056"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I played every sport in high school. Captain of four.",
+   "cond": {},
+   "id": "competitive_rival.base.057"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I don't lose. I learn. Then I win.",
+   "cond": {},
+   "id": "competitive_rival.base.058"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I'm a sales rep. Top of the leaderboard six months running.",
+   "cond": {},
+   "id": "competitive_rival.base.059"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I keep a spreadsheet of every game I've ever played.",
+   "cond": {},
+   "id": "competitive_rival.base.060"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "My family game nights ended in shouting. Every time.",
+   "cond": {},
+   "id": "competitive_rival.base.061"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I'm competitive, not mean. There's a difference. Sometimes.",
+   "cond": {},
+   "id": "competitive_rival.base.062"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I want to run an ultramarathon. And win it.",
+   "cond": {},
+   "id": "competitive_rival.base.063"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? I've been here more than you.",
+   "cond": {},
+   "id": "competitive_rival.base.064"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place} has a dartboard. I own that dartboard.",
+   "cond": {},
+   "id": "competitive_rival.base.065"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place} is fine. I'd design it better.",
+   "cond": {},
+   "id": "competitive_rival.base.066"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "I like {place}. I won a bet here.",
+   "cond": {},
+   "id": "competitive_rival.base.067"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? Their trivia night is soft. Easy wins.",
+   "cond": {},
+   "id": "competitive_rival.base.068"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Thanks. I know.",
+   "cond": {},
+   "id": "competitive_rival.base.069"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Obviously. But thanks.",
+   "cond": {},
+   "id": "competitive_rival.base.070"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Ha. You noticed. Good eye.",
+   "cond": {},
+   "id": "competitive_rival.base.071"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Appreciated. You're not bad yourself.",
+   "cond": {},
+   "id": "competitive_rival.base.072"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Thanks. I'll add it to my trophy shelf.",
+   "cond": {},
+   "id": "competitive_rival.base.073"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Cute. Say that after I beat you.",
+   "cond": {},
+   "id": "competitive_rival.base.074"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "That's weak. Like your backhand.",
+   "cond": {},
+   "id": "competitive_rival.base.075"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Is that all you've got?",
+   "cond": {},
+   "id": "competitive_rival.base.076"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Try harder. I'm not even warmed up.",
+   "cond": {},
+   "id": "competitive_rival.base.077"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Wow. Bold for someone with your record.",
+   "cond": {},
+   "id": "competitive_rival.base.078"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "A trophy? For me? Oh, it's a mug. Still, I'll take it.",
+   "cond": {},
+   "id": "competitive_rival.base.079"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Whoa. This is great. You win this round.",
+   "cond": {},
+   "id": "competitive_rival.base.080"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Thanks. I owe you one. I hate owing people.",
+   "cond": {},
+   "id": "competitive_rival.base.081"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Nice. You know what I like.",
+   "cond": {},
+   "id": "competitive_rival.base.082"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Okay, you beat me at gift-giving. Respect.",
+   "cond": {},
+   "id": "competitive_rival.base.083"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "Why did the golfer bring two pants? In case he got a hole in one.",
+   "cond": {},
+   "id": "competitive_rival.base.084"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "I'm so competitive I raced my own shadow. I won.",
+   "cond": {},
+   "id": "competitive_rival.base.085"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "I lost a game once. I think about it daily.",
+   "cond": {},
+   "id": "competitive_rival.base.086"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "Why did the chess player cross the road? Strategic advantage.",
+   "cond": {},
+   "id": "competitive_rival.base.087"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Can you time my sprint? Be honest. Unless it's slow.",
+   "cond": {},
+   "id": "competitive_rival.base.088"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Would you be my doubles partner? You're decent.",
+   "cond": {},
+   "id": "competitive_rival.base.089"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Can you hold my phone? I need to arm wrestle someone.",
+   "cond": {},
+   "id": "competitive_rival.base.090"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Thanks. You're a solid teammate.",
+   "cond": {},
+   "id": "competitive_rival.base.091"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Good. You came through. I respect that.",
+   "cond": {},
+   "id": "competitive_rival.base.092"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Thanks. I owe you. I'll pay you back with a win.",
+   "cond": {},
+   "id": "competitive_rival.base.093"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "Closed three deals today. Leaderboard is mine.",
+   "cond": {},
+   "id": "competitive_rival.base.094"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "My coworker thinks he's going to beat my sales numbers. Adorable.",
+   "cond": {},
+   "id": "competitive_rival.base.095"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "Work's a competition. I'm winning.",
+   "cond": {},
+   "id": "competitive_rival.base.096"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "My boss gave me employee of the month. Fifth time.",
+   "cond": {},
+   "id": "competitive_rival.base.097"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "I got the highest grade in organic chem. Ask me how.",
+   "cond": {},
+   "id": "competitive_rival.base.098"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "My study group is a competition. I'm the top scorer.",
+   "cond": {},
+   "id": "competitive_rival.base.099"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "I'm on the dean's list. Obviously.",
+   "cond": {},
+   "id": "competitive_rival.base.100"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "You're not even worth beating.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "competitive_rival.base.101"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Get out of my way, {player}.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "competitive_rival.base.102"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "You're a sore loser and a bad winner.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "competitive_rival.base.103"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I don't compete with cheaters.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "competitive_rival.base.104"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "You're done. Bench yourself.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "competitive_rival.base.105"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Bye. I'm not wasting my energy.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "competitive_rival.base.106"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Ha! Nice try. Not happening.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "competitive_rival.base.107"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Nope. You're a rival, not a date.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "competitive_rival.base.108"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Smooth. Still no.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "competitive_rival.base.109"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Whoa. Did you just make the first move? Respect.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "competitive_rival.base.110"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Okay, you win this one. I'm blushing.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "competitive_rival.base.111"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Are you flirting? Because I'm going to flirt better.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "competitive_rival.base.112"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "I like you too. There. I said it first. I win.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "competitive_rival.base.113"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "Yes. I'll plan the best date you've ever had.",
+   "cond": {},
+   "id": "competitive_rival.base.114"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "A date? Sure. Bowling. I'll win.",
+   "cond": {},
+   "id": "competitive_rival.base.115"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "No. But I respect the courage.",
+   "cond": {},
+   "id": "competitive_rival.base.116"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "I'll pass. Still rivals, though.",
+   "cond": {},
+   "id": "competitive_rival.base.117"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "You're here. Good. I got here first.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.001"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hey, you. You look great. Better than me. Barely.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.002"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "I planned the best date ever. Prepare to be impressed.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.003"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hey! Mini golf. Loser buys dessert.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.004"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "There you are. I've been warming up.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.005"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hi. You look amazing. That's not a competition. You win.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.006"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're the only prize I want.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.007"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I'd lose every game for you. Okay, most games.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.008"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're the best thing I've ever won.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.009"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You make my heart race faster than any finish line.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.010"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're out of my league. I'm going to win you anyway.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.011"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're my greatest victory.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.012"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're the only person I'd let beat me.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.013"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's go bowling. Highest score picks the movie.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.014"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Tell me something you're proud of.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.015"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I've never told anyone this, but I'm scared of losing you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.016"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Want to race to the fountain? I'll give you a head start. Kidding.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.017"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I made dinner. It's the best dinner. Taste it.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.018"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I like that you push back. Nobody pushes back.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.019"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's play pool at the Grinding Stone. Stakes: a kiss.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.020"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "You're not afraid of me. I love that.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.021"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I think we'd make an unbeatable team.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.022"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's do a trivia night. Couples bracket.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.023"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I'm happy. Like, championship happy.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.024"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "You're the first person I don't want to compete with.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.025"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're tough. I like that.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.026"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You look amazing tonight. Ten out of ten.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.027"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're smarter than you let on.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.028"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You've got heart. Real heart.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.029"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're the best person I know. That's not trash talk.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.030"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Okay. That was a winning move.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.031"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "That's the best thing I've ever lost my breath to.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.032"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Again. Best two out of three.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.033"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Wow. I concede.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.034"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I missed you. Nobody to beat.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.035"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "The games were boring without you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.036"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I kept score of the days. Too many.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.037"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I missed my favorite opponent.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.038"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "Who was that? Are they competition? They're not.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.039"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I'm not jealous. I just don't lose.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.040"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "You're mine. Fair and square.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.041"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Good game tonight. Goodnight.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.042"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Same time next week. Rematch.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.043"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Text me when you're home. I'll beat you to it.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.044"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Tonight was a win. A big one.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.045"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight, {player}. You're my champion.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.046"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I'm mad. And I'm not good at losing arguments.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.047"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "That hurt. I don't like admitting that.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.048"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "Let's not make this a contest. Let's just talk.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.049"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I want to fix this. That's my competitive side.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.050"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "Yes! Best win of my life!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.051"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "I'll marry you! Undefeated forever, together!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "competitive_rival.dating.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning. I beat you awake again.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.001"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, love. Race you to the coffee.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.002"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning. I ran four miles. What did you do? Sleep? Cute.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.003"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey. Breakfast is ready. It's the best eggs you'll ever have.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.004"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, champ. Let's win today.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.005"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning. I made the bed first. One point.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.006"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, love. Who's taking a shower first? Me. I'm faster.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.007"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey. I already finished the crossword. Personal best.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.008"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning. Game night later. You're going down.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.009"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning. You look great. I look better. Kidding.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.010"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning. Let's see who gets more done today.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.011"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, love. Coffee's on. I beat the alarm by twenty minutes.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.012"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home! Rematch from last night. Cards on the table.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.013"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home, love. I made dinner. Better than yours.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.014"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey. I beat my sales record today. Celebrate with me.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.015"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are. I've been practicing chess.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.016"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome back. Pickup game? Or dinner? Both.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.017"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, love. I missed you. Don't let it go to your head.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.018"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home. Let's watch the game. Billram are winning.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.019"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home! I set up the ping pong table in the garage!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.020"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, you. Who had the better day? Tell me. Then I'll tell you.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.021"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're back. Good. I needed my rival.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.022"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home late. I win the who-got-home-first game.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.023"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, love. Long day? I'll let you win something tonight.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.024"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "It's late. Bed. Race you.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.025"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're back. I was practicing free throws in the driveway.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.026"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey. I waited up. Undefeated at waiting.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.027"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Late night? I saved you dinner. It's still the best dinner.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.028"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are. Let's crash. Tomorrow we win again.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.029"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, love. Come here. You're tired. I'm stronger. I'll carry you.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.030"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Go win today.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.031"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye, love. Crush them.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.032"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a great day. Beat yesterday's numbers.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.033"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Go get 'em, champ.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.034"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye. I'll text you my score.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.035"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a good one. Don't let anyone outwork you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.036"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye, love. Let's see who has the better day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.037"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Go. I believe in you. I'm still better, but I believe in you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.038"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "How'd it go? Did you win?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.039"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Tell me about your day. Wins and losses.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.040"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You look tired. Did someone outwork you? Impossible.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.041"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Did your boss notice you? He should.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.042"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Rough day? Let's play a game. You'll feel better when you lose. Kidding.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.043"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Did you beat your coworker's numbers?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.044"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You're home. Champions rest too.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.045"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Proud of you, love. You're a winner.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.046"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you. That's my biggest win.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.047"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my favorite teammate.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.048"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Being married to you is a championship every day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.049"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make me want to be better.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.050"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'd lose every game for you. Mostly.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.051"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my greatest victory. Point to me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you more than winning. That's a big deal.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.053"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my MVP.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.054"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You challenge me. I love that.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.055"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're the only one I want on my team.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.056"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'm so lucky. Luckier than anyone.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.057"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're the best thing I've ever won. Point to me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.058"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love how you never let me win.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.059"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my home team.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.060"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'd fight anyone for you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.061"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make every day a win.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.062"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'm proud to be yours.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.063"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you. Undefeated.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.064"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I set up a scoreboard in the kitchen.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.065"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I built a ping pong table in the garage.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.066"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I'm training for a marathon. Want to train with me? Losing is fine.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.067"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I joined a bowling league. We're undefeated.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.068"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I signed us up for the couples' trivia night.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.069"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The neighbor challenged me to a lawn contest. He's going to lose.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.070"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been learning poker. For game night.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.071"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a chart of our wins and losses at board games.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.072"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I bought a dartboard. Don't touch it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.073"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I'm thinking about coaching the kids' soccer team.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.074"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I hung up my trophies in the hallway.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.075"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I beat the neighbor at horseshoes. He wants a rematch.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.076"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been practicing my golf swing in the backyard.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.077"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I bought a new basketball hoop.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.078"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I found my old high school medals.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.079"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a bracket for the family reunion games.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.080"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been doing crosswords in pen. Speed rounds.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.081"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I won the office fantasy league.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.082"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I'm trying to lose gracefully. It's going badly.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.083"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I put a chess board on the porch.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.084"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been teaching the neighbor's kid to play chess. He's good. Too good.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.085"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I bet the neighbor I could grow bigger tomatoes.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.086"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I set a new record on the rowing machine.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.087"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I think we should get a dog. A fast one.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.088"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been trying to compete less with you. Key word: trying.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.089"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I love our home. It's undefeated.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.090"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I did the dishes. In record time.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.091"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I vacuumed faster than you could.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.092"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Race you to fold the laundry.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.093"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I mowed the lawn. Perfect stripes. Beat the neighbor's.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.094"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Could you take out the trash? I did it last three times. I'm keeping count.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.095"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I cleaned the bathroom. Spotless. Inspect it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.096"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Let's race. First to finish chores picks dinner.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.097"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I organized the garage. It's a competition-level garage.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.098"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I washed the car. Shinier than the neighbor's.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.099"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I raked the leaves. Biggest pile on the street.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.100"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I scrubbed the kitchen. Gold medal.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.101"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I made the bed. Hospital corners. Ten out of ten.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.102"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We saved more than last month. We're winning.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.103"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I made a budget. Let's beat it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.104"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Money's tight. Challenge accepted.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.105"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I got a bonus! Top seller!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.106"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We should invest. Beat the market.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.107"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I found a better deal than you did. Admit it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.108"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Let's see who can save more this month.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.109"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I won a bet. Fifty bucks.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.110"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We're doing better than the neighbors.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.111"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We're winning at money, love.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.112"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Dinner's ready. Best steak in town.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.113"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made breakfast. Champion's breakfast.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.114"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's have a cook-off. I'll win.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.115"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made chili. Prize-winning chili.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.116"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made pasta. Better than the restaurant.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.117"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I grilled burgers. Perfect sear.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.118"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made wings. Spicier than you can handle.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.119"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Taco night. I made more tacos than you can eat.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.120"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I baked cookies. Better than your mom's. Don't tell her.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.121"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Dinner's on the table. Eat it before it gets cold. I win.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.122"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You cheated at cards.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.123"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You never admit when you're wrong.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.124"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm not too competitive. You're not competitive enough.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.125"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You quit the game halfway through.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.126"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You told everyone I lost. I didn't lose. I let you win.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.127"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You never want to play with me anymore.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.128"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I feel like you don't take me seriously.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.129"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You moved my trophy.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.130"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm going for a run. To cool off.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.131"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I don't like losing arguments.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.132"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You know I hate losing.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.133"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I just want you on my team.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.134"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Okay. I'm sorry. You win this one.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.135"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I hate fighting with you. Let's call it a draw.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.136"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I love you. More than being right.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.137"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Sorry. I was a sore loser.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.138"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's play a game and make up.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.139"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "You're my favorite person. Even when you beat me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.140"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's start over. New game.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.141"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "We're good. We're a team.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.142"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Hey. You're a champion. This is just a setback.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.143"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I've got your back. Always. Point to me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.144"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You're tougher than this.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.145"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Whatever it is, we'll beat it together.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.146"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I'm here, love. Let's rest. Then fight.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.147"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You don't have to win today.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.148"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let me take over. You've earned a break.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.149"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I love you. Win or lose.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.150"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You've come back from worse. You'll come back from this.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.151"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You're my MVP. Always.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.152"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's do a 10K this weekend.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.153"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a bowling tournament?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.154"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the Billram game. Front row.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.155"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's do an escape room. Beat the record.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.156"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a mini golf rematch?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.157"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the arcade. I'll win you every prize.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.158"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's do a cooking competition at home.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.159"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a hiking race up Carillon Hill?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.160"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to trivia night. Undefeated.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.161"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's plan our anniversary. A tournament. Kidding. Dinner.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.162"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we met? You beat me at darts. I was furious.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.163"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our first date? Mini golf. You cheated.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.164"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our wedding? I won the dance-off.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.165"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we won couples' trivia?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.166"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our honeymoon? I beat you at everything. Except surfing.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.167"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I still have the scorecard from our first bowling date.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.168"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when you let me win? I knew.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.169"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember the time we lost and you held my hand?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.170"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I remember the first time I didn't care that I lost.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.171"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we beat the neighbors at horseshoes?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.172"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary, love. Another year undefeated.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.173"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I got you a trophy. Best spouse.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.174"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Another year! We're winning at marriage.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.175"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary, champ.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.176"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I love you more every year. That's a record.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.177"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Here's to another year of us against everyone.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.178"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You still can't beat me at chess.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.179"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You throw like a toddler.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.180"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You cheat at that real estate board game. Every single time.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.181"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You take forever to make a move.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.182"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You count your cards out loud.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.183"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You're a sore winner.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.184"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You let the cat win at games.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.185"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You can't parallel park.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.186"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You always pick the slowest line.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.187"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You're secretly more competitive than me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.188"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You gloat when you win. Like me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.189"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You love losing to me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.190"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, love. I win the race to bed.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.191"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come to bed. Rest up. Tomorrow we win.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.192"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, champ.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.193"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sleep well. Rematch tomorrow.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.194"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight. I love you more than winning.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.195"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Lights out. Winner gets the good pillow.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.196"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, {player}. Best teammate ever.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.197"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sleep tight, rival.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.198"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come here. You lose. I get to hold you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.199"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight. Thanks for being my favorite opponent.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "competitive_rival.marriage.200"
+  }
+ ]
+}

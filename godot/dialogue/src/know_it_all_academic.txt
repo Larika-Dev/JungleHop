@@ -1,0 +1,429 @@
+// Know-it-all Academic: pedantic, "actually", trivia, etymology, citations, kindly corrects, loves lecturing.
+== base
+# greet stage=stranger
+Hello. I'm {npc}. Fun fact: the word "hello" only became common with the telephone.
+Ah, a new acquaintance. I'm {npc}. Doctoral candidate. Well, almost.
+Greetings! You seem curious. Curiosity is the engine of civilization. I'm {npc}.
+Hello there. I'm {npc}. Did you know you're standing on what was once a colonial grazing commons?
+Good day. Pardon my tweed. It's ironic. Partially.
+Hi! I'm {npc}. I'd shake your hand, but statistically that's how colds spread.
+# greet stage=acquaintance
+{player}! Excellent. I've been dying to tell you about the Byzantine Empire.
+Ah, {player}. Have you read the article I sent you? All forty pages?
+{player}! Did you know that today is the anniversary of the first printed newspaper? Well, one of them.
+Hello, {player}. I've been thinking about our last conversation. You were wrong, but interestingly so.
+{player}! A pleasure. I have a fascinating fact about mollusks.
+# greet stage=friend+
+{player}! My favorite interlocutor! That means conversation partner.
+There you are! I saved you a seat at the lecture. Front row, obviously.
+{player}! You're the only one who listens to my tangents. Thank you.
+My dear friend! I've brought you a book. It's only nine hundred pages.
+{player}! I've been preparing a short presentation on why you'd love medieval history.
+Ah, my intellectual equal! Or near-equal. I jest. Sit!
+# greet time=morning
+Good morning! Fun fact: morning comes from the Old English "morgen".
+Morning. I've already read three journal articles and corrected two of them.
+Good morning! The circadian rhythm suggests this is peak alertness. Let's discuss something.
+# greet time=evening
+Good evening! The word "evening" derives from "even", as in the evening of the day.
+Evening. The library's quietest hour. Wonderful for thinking.
+Hello! Twilight is technically three phases: civil, nautical, and astronomical.
+# greet time=night
+Ah, a fellow nocturnal scholar!
+Late night? Excellent. Some of history's greatest ideas came after midnight.
+Hello. I'm only awake because I fell down a research rabbit hole. On rabbits.
+# farewell
+Farewell! From the Old English "faran", to journey.
+Goodbye! Keep learning!
+Until next time. Read something challenging!
+Adieu! That's French. Well, you knew that.
+Cheerio! A British colloquialism, origin debated.
+Goodbye! Remember, the unexamined life is not worth living. Socrates. Allegedly.
+# farewell stage=friend+
+Goodbye, {player}! I'll email you the bibliography.
+Farewell, my friend. Thank you for indulging me.
+Bye! Next time, I'll explain the Peloponnesian War. Briefly. Three hours.
+# smalltalk
+Actually, the Carillon Spire isn't technically a carillon. It has twenty-three bells. You need twenty-three. So it is. Barely.
+Did you know Cathedral Mount was originally called Bramble Hill? I wrote a paper on it.
+People say we only use ten percent of our brains. That's a myth. Completely false.
+I've been reading about the history of the fork. Fascinating. Controversial in its time.
+The oldest willow oak on the North Quad is approximately two hundred and twelve years old. I counted. Well, estimated.
+Pluto's not a planet. I'm still a little sad about it. Scientifically sad.
+The bell tower's chimes are slightly out of tune. A quarter tone. Nobody else notices.
+I attended a lecture on fungi. Did you know mushrooms are closer to animals than plants?
+Technically, a tomato is a fruit. And so is a cucumber. And so is a pumpkin.
+I've memorized pi to a hundred and twelve digits. Want to hear?
+The word "nice" used to mean foolish. Language is so slippery.
+I found a misprint in the campus tour brochure. I've written to them. Twice.
+# smalltalk stage=friend+
+Honestly? I talk so much because I'm afraid of awkward silences.
+You're the only person who doesn't roll their eyes when I start a sentence with "actually".
+I know I can be insufferable. Thank you for suffering me.
+I'd dedicate my thesis to you. If I ever finish it.
+Sometimes I worry I'm all facts and no feelings. You remind me I have both.
+You're the smartest person I know. Second smartest. Kidding. Possibly.
+# smalltalk weekend=true
+Weekend! Perfect time to reorganize my bookshelf by Dewey Decimal.
+Saturday! There's a trivia competition at Top of the Mount. I intend to win.
+Sunday. Museum day. The natural history wing has a new trilobite.
+# about_self
+I've been a student for nine consecutive years. It's a record. Not officially.
+My dissertation is on the agricultural economy of fourteenth-century Flanders. It's riveting.
+I won the state spelling bee in sixth grade. The word was "chiaroscuro".
+I read an encyclopedia cover to cover when I was eleven.
+People find me exhausting. I find people fascinating.
+I collect antique maps. Some are wrong. That's the best part.
+I want to be a professor. Tenured. With elbow patches.
+# opinion_place
+{place}? Did you know this site was originally a livery stable? Circa 1870.
+{place}. The architecture is Neo-Georgian. Mostly. The windows are a later addition.
+I like {place}. Excellent acoustics for a lecture.
+{place}? The signage has a grammatical error. It's driving me mad.
+{place} has historical significance, actually. Shall I explain?
+# compliment_reply
+Thank you! Though technically, flattery is a rhetorical device.
+How kind. I'd return the compliment, but you already know you're wonderful.
+Oh! Thank you. I'm not used to praise. Usually I'm used to correction.
+Thank you, {player}. I'll cite you in my acknowledgments.
+Ah, appreciated! Positive reinforcement improves learning outcomes.
+# insult_reply
+That's an ad hominem attack. A logical fallacy.
+Hmm. Your argument lacks evidence.
+I've been insulted by tenured professors. You'll need to try harder.
+That's rude. And grammatically questionable.
+Interesting. Projection, perhaps? Freud would have a field day.
+# gift_reply
+A book! Oh, I haven't read this one! I've read almost all of them.
+How thoughtful! This is a first edition? No? Still wonderful!
+Thank you! I'll research the history of this object immediately.
+Oh, a globe! Even if it's outdated, I adore it!
+You shouldn't have! But I'm glad you did. Gift-giving is a fascinating social ritual.
+# joke
+A Roman walks into a bar, holds up two fingers, and says, "Five beers, please."
+What did the triangle say to the circle? You're pointless.
+I'd tell you a chemistry joke, but I know I wouldn't get a reaction.
+Why are historians bad at relationships? They keep dwelling on the past.
+# ask_favor
+Could you proofread my thesis chapter? It's only eighty pages.
+Would you be my trivia teammate? You'd be in charge of sports. I don't do sports.
+Could you return these books for me? All twenty-three.
+# favor_reply
+Thank you! You've contributed to the advancement of knowledge!
+Splendid! You're a true scholar's friend.
+I'm in your debt. Intellectually and otherwise.
+# work_talk
+I'm a teaching assistant. I grade a hundred essays a week. Most are bad.
+I corrected a professor during his lecture. He was not pleased. I was correct.
+I work at the library archive. It's paradise. Dusty paradise.
+My research grant was approved! I get to study old tax records!
+# school_talk
+I'm writing three papers simultaneously. It's efficient. And mad.
+My seminar debated free will for three hours. We didn't reach a conclusion. Determined.
+The new curriculum has fewer Latin requirements. A tragedy.
+# hostile stage=dislike-
+I find you intellectually and personally disappointing.
+Please. I'd rather talk to a brick. Bricks have history.
+You're wrong. About everything, probably.
+I don't debate people who don't read.
+Go away, {player}. You're lowering the collective IQ.
+I have nothing further to add. Ever.
+# flirt_reply romance=none
+Oh! That's flattering. But I don't think we're compatible. Intellectually or otherwise.
+Ha! That's a charming attempt. But no.
+I'm married to my research. Sorry.
+# flirt_reply romance=crush
+Oh. Oh my. My heart rate's elevated. Physiologically interesting.
+Was that a flirtation? I'm blushing. That's vasodilation. And feelings.
+You've rendered me speechless. That's never happened before.
+I find you fascinating. That's my highest compliment.
+# ask_out_yes
+Yes! I know a lovely museum. Or a library. Or a lecture!
+A date? Yes. Let me consult my calendar. It's free. Yes!
+# ask_out_no
+I'm sorry, but I don't feel that way. I value our intellectual friendship.
+That's kind of you, but I must decline. Respectfully, of course.
+
+== dating
+# date_greet
+You came! I've prepared a few talking points. Just in case.
+Hello! You look lovely. Aesthetically and objectively.
+Hi! I've planned a date at the planetarium. Did you know Venus spins backwards?
+There you are! I was rereading our texts for subtext.
+Hello, darling! Another fun fact: "darling" comes from Old English "deorling".
+Hi! I brought you a book. I've annotated it with things I love about you.
+# flirt
+You're more fascinating than the Rosetta Stone.
+I'd write a dissertation on you. Three volumes.
+You make my neurons fire. All of them.
+If you were a theorem, I'd prove you every day.
+You're the most interesting subject I've ever studied.
+I love the way you think. And the way you look while thinking.
+You're my favorite primary source.
+# date_talk
+Let's go to the museum! I'll give you a private tour.
+Tell me something you're passionate about. I want to learn.
+I've never met anyone who listens like you do.
+Did you know penguins propose with pebbles? I find that very romantic.
+Let's go stargazing. I'll name all the constellations. And their myths.
+I made us a picnic. The sandwiches are historically accurate. Medieval.
+I'm sorry if I talk too much. You make me nervous. In a good way.
+Do you want to watch a documentary? I've picked one about love. In lobsters.
+I think we're intellectually and emotionally compatible. That's rare.
+I feel like I could talk to you forever. Literally. I've calculated it.
+You challenge me. Nobody challenges me.
+I'm happy. Truly. That's not a fact, it's a feeling.
+# compliment
+You're brilliant. Truly.
+You have a beautiful mind.
+You look stunning tonight. Statistically improbable.
+You're kind and clever. A rare combination.
+You ask the best questions.
+# kiss_reply
+Oh. That was... empirically wonderful.
+My heart rate just doubled. Fascinating.
+That was better than any book I've read.
+Again. For research purposes.
+# miss_you
+I missed you! I read four books to distract myself. It didn't work.
+The library felt empty without you.
+I wrote you a letter. With footnotes.
+I kept thinking about you during my lecture. I lost my place.
+# jealous
+Who was that? Are they smarter than me? They're not.
+I'm not jealous. I'm hypothesizing.
+I want to be the only one you have long conversations with.
+# date_end
+Tonight was splendid. Goodnight!
+Goodnight, darling. I'll dream of you. And the Ottoman Empire.
+Thank you for tonight. It was enlightening.
+Same time next week? I'll prepare a new lecture.
+Goodnight, {player}. You're my favorite subject.
+# lovers_quarrel
+I think we need to discuss this logically.
+That hurt. Emotionally. Which is real, despite what some philosophers say.
+Let's not argue. Let's debate. Respectfully.
+I'm upset. I don't have the right words. That's new for me.
+# proposal_yes
+Yes! I've read every love story ever written, and this is the best one!
+I'll marry you! Absolutely! Without hesitation or footnotes!
+
+== marriage
+# home_greet time=morning
+Good morning, love! Fun fact: coffee was discovered by a goatherd in Ethiopia.
+Morning! I've already read the paper and found two errors.
+Good morning, darling! I made breakfast. Eggs. The incredible edible fact.
+Morning, love! Did you know that yawning is contagious? You just did it.
+Good morning! I've prepared a short summary of today's news.
+Morning, sweetheart! I dreamed about the Library of Alexandria.
+Good morning! I've been reading about sleep cycles. You had four.
+Morning! The word "breakfast" literally means breaking the fast.
+Good morning, love! I alphabetized the cereal.
+Morning! I wrote a haiku about your sleeping face.
+Good morning! Did you know the sun is actually white? It just looks yellow.
+Morning, darling. Let's have coffee and discuss philosophy.
+# home_greet time=evening
+Welcome home! I have so much to tell you about the Byzantines.
+There you are! I made dinner. A medieval recipe. It's mostly turnips.
+Welcome back, love! I found a fascinating article for you.
+Hi, darling! How was your day? Tell me everything. With details.
+You're home! I've been reading about the history of our neighborhood.
+Welcome home! I set up a little lecture in the living room. Just for you.
+Hi, love! The library had a sale. I bought forty books.
+There you are! I've been waiting to debate you about the Renaissance.
+Welcome home, darling! Dinner and documentaries tonight.
+You're home! The house was so quiet. I talked to the books.
+# home_greet time=night
+You're home late! I fell asleep reading. Again.
+Hi, love. It's late. Let's go to bed. I'll tell you a fact first.
+There you are! I was researching why people are late. Inconclusive.
+You're back. I kept a lamp on and a book open.
+Hello, darling. Long day? Let me tell you a soothing fact.
+Late night? Did you know owls can rotate their heads 270 degrees?
+You're home. I can stop worrying. Statistically, you were fine.
+Hi, love. Let's cuddle and talk about the stars.
+# goodbye_work
+Have a good day, love! Learn something new!
+Goodbye, darling! Did you know the average commute is twenty-seven minutes?
+Have a wonderful day! I'll have a new fact for you tonight!
+Bye, love! Bring your umbrella. Barometric pressure's dropping.
+Have a great day! Remember, knowledge is power!
+Goodbye, sweetheart! I'll be at the library!
+Have a good day! Think critically!
+Bye, love! I put a fun fact in your lunch bag!
+# work_return
+How was work? Did you learn anything interesting?
+Tell me about your day! I'll add context.
+You look tired. Did you know stress affects memory? Sit down.
+Did your boss make any errors? I'd love to hear them.
+How'd the meeting go? Was it efficient? Meetings rarely are.
+Rough day? Let's discuss it. Rationally. Then emotionally.
+You're home. Let's relax. With a documentary.
+I'm proud of you, love. Empirically and emotionally.
+# affection
+I love you more than all the books in every library on Earth.
+You're my favorite subject of study.
+Being married to you is the most fascinating thing I've ever done.
+You're brilliant, darling. I learn from you every day.
+I love you. That's not a hypothesis. It's a conclusion.
+You make my life so much richer. Intellectually and otherwise.
+You're my partner in curiosity.
+I'm so lucky to have you. I've calculated the odds. They're astronomical.
+You listen to my tangents. That's love.
+I love you more than history. And I really love history.
+You're my favorite primary source of joy.
+You make me feel understood. That's rare.
+I'd write a thousand dissertations on why I love you.
+You're my home. My library.
+I love you more every day. Exponentially.
+You're the most beautiful mind I know.
+I'm so proud to be married to you. Peer-reviewed and approved.
+You're my favorite fact.
+# home_talk
+I reorganized the library. By subject, then author, then publication date.
+I've been reading about the history of our house. It was built in 1923!
+I found a fascinating documentary about bees.
+I've started a new research project. It's about the history of toast.
+I joined a trivia league. We meet on Tuesdays.
+I bought a telescope. For the backyard.
+I've been learning Ancient Greek. Just for fun.
+I found an error in the encyclopedia. I've written to the publisher.
+I made a timeline of our relationship. It's on the wall.
+The neighbor asked me a question about history. I talked for an hour.
+I've been writing a book. About the history of Cathedral Mount.
+I set up a reading nook in the attic.
+I've been studying the stars. Did you know there are more stars than grains of sand?
+I made flashcards for our anniversary. Of facts about you.
+I've been reading about the history of marriage. Fascinating customs.
+I bought a vintage map of the town.
+I've been learning to cook. Scientifically.
+I've been teaching the neighbor's kid about dinosaurs.
+I installed a chalkboard in the kitchen. For equations.
+I've been reading poetry. Romantic poetry. For you.
+I found a first edition at the used bookstore!
+I've been trying to talk less. It's going poorly.
+I made a list of all the books we own. It's long.
+I've been thinking about getting a parrot. To teach it Latin.
+I hung a periodic table in the bathroom.
+I love our little life. It's full of books and you.
+# chores
+I did the dishes. Did you know soap was invented by the Babylonians?
+I vacuumed. The vacuum was invented in 1860, by the way.
+Could you take out the trash? I'm mid-chapter.
+I dusted the bookshelves. All forty of them.
+I folded the laundry. Efficiently. Using geometry.
+I cleaned the kitchen. With vinegar. Acetic acid. Very effective.
+Let's do chores together. I'll tell you about the history of cleaning.
+I organized the pantry. By food group.
+I washed the windows. Now I can see the stars better.
+I made the bed. With military corners. Historically accurate.
+I scrubbed the bathroom. With a fact for every tile.
+I swept the porch. While reciting Shakespeare.
+# money
+I updated our budget. We're doing well, statistically.
+I've been reading about economics. We should diversify.
+Money's tight. Books are expensive.
+I got a research stipend! Some of it's for us!
+We should save for a trip to the great museums of Europe.
+I found a used bookstore with great prices!
+Let's not buy any more books this month. I'll try.
+We're doing fine. I've done the math.
+I'm tutoring on the side. Extra income.
+We're rich in knowledge, love.
+# meal
+Dinner's ready! A recipe from Ancient Rome!
+I made breakfast! Eggs. Did you know chickens descended from dinosaurs?
+Let's have a picnic! I'll bring historically significant sandwiches.
+I made soup. From a fourteenth-century cookbook.
+I baked bread. The oldest food in human history!
+Let's try a new recipe. I've researched it extensively.
+I made pasta. Did you know Marco Polo didn't actually bring it from China?
+Dinner and a documentary!
+I made tea. The British drink a hundred and sixty-five million cups a day.
+I made cookies. Science-based baking!
+# argue
+You didn't read the article I sent you.
+I feel like you don't take my research seriously.
+I'm not being pedantic! I'm being precise!
+You said "literally" when you meant "figuratively". Again.
+Please don't interrupt me. I'm making a point.
+You never want to discuss anything interesting.
+I know I talk a lot. But I need you to listen.
+You moved my books! They were in a system!
+I'm not condescending! I'm informative!
+I'm going to go read. To calm down.
+I just want you to be curious with me.
+I'm sorry, but you're wrong. About this specific thing.
+# makeup
+I'm sorry, love. I was being insufferable.
+Let's make up. I'll stop correcting you. For a day.
+I love you more than being right.
+I'm sorry I lectured you. You didn't deserve that.
+You're my favorite person. Even when you're wrong. Especially then.
+Let's talk it through. Like reasonable people.
+I'll listen more. I promise.
+We're a good team, love.
+# support
+It's okay, love. Even Einstein had bad days.
+Let me tell you a story. About someone who overcame something hard.
+You're stronger than you know. I've seen the evidence.
+Whatever it is, we'll figure it out. Logically and lovingly.
+I'm here, darling. I'll listen. Just listen.
+Let's watch something comforting. A nature documentary.
+You don't have to have all the answers. I don't either.
+I love you. That's a fact.
+Let me make you tea. It's scientifically proven to help.
+You're brilliant, love. Never forget that.
+# plans
+Let's go to the natural history museum this weekend!
+How about a trip to the city? There's a new exhibit!
+Let's go to a lecture at the university!
+Let's go stargazing! I'll bring the telescope!
+How about a trip to Europe? All the old libraries!
+Let's go to the trivia championship!
+Let's visit the old battlefield. Historical significance!
+How about a weekend of reading? Just us and books.
+Let's take a class together! Astronomy!
+Let's plan our anniversary. At the planetarium!
+# memories
+Remember our first date? The museum. I talked for six hours.
+Remember when we met? I corrected your grammar.
+Remember our wedding? I read a poem in Latin.
+Remember our honeymoon? We visited every library in the city.
+I still have the first book you gave me.
+Remember when you beat me at trivia? I'm still recovering.
+Remember when we stayed up all night debating free will?
+Remember the time we got lost in the library?
+I remember the first time you asked me a question and really listened.
+Remember when we stargazed on Carillon Hill?
+# anniversary
+Happy anniversary, love! I made you a timeline of our marriage!
+Another year! Did you know traditional gifts change every year? This year's is paper!
+I wrote you a sonnet. Shakespearean form.
+Happy anniversary, darling! You're still my favorite subject!
+I love you more every year. The data is conclusive.
+Here's to another year of curiosity and love!
+# tease
+You still don't know the difference between "affect" and "effect".
+You fall asleep during documentaries. Twelve minutes in, on average.
+You think Pluto's still a planet.
+You say "irregardless". It's not a word. Well, it's debated.
+You never read the footnotes.
+You think history is boring. You're wrong.
+You call my books "clutter".
+You roll your eyes when I say "actually".
+You're secretly a nerd too. I've seen your search history.
+You always lose at trivia. Except that one time.
+You can't name all the presidents.
+You love my facts. Admit it.
+# bedtime
+Goodnight, love. Did you know we spend a third of our lives asleep?
+Come to bed, darling. I'll read you something.
+Goodnight, love. Tomorrow, more learning.
+Sleep well. Dream of interesting things.
+Goodnight, {player}. You're my favorite fact.
+Let's go to bed. I'll stop reading. After this chapter.
+Goodnight! I love you more than knowledge.
+Sweet dreams, darling. REM sleep begins in about ninety minutes.
+Come cuddle. I'll tell you about the stars.
+Goodnight. Thank you for listening to me all day.

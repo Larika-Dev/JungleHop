@@ -1,0 +1,4076 @@
+{
+ "id": "free_spirit_artist",
+ "lines": [
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh, hi! Your aura is a really nice teal. I'm {npc}.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "free_spirit_artist.base.001"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello! Sorry, I have paint on my hands. And my face, probably. I'm {npc}.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "free_spirit_artist.base.002"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey there! You have a really interesting silhouette. Can I sketch you sometime? I'm {npc}.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "free_spirit_artist.base.003"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi! I'm {npc}. I paint murals. And sometimes walls that didn't ask for murals.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "free_spirit_artist.base.004"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh, a new face! Faces are my favorite thing to draw. Hi!",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "free_spirit_artist.base.005"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello, stranger! The light's hitting you like a Vermeer right now.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "free_spirit_artist.base.006"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! You're wearing ochre today. Bold choice. I love it.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "free_spirit_artist.base.007"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey, {player}! I finished that piece I told you about. Well, abandoned it. Same thing.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "free_spirit_artist.base.008"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh, {player}! You're like a splash of color on a gray day.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "free_spirit_artist.base.009"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi, {player}! I found a lamp shaped like a swan at the thrift store. Life is good.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "free_spirit_artist.base.010"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! Come see what I'm painting on the alley wall.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "free_spirit_artist.base.011"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! My muse! My dear friend!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "free_spirit_artist.base.012"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "There you are! I painted you into my new mural. You're the sun.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "free_spirit_artist.base.013"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! I've been saving a color just for you. It's called \"you\".",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "free_spirit_artist.base.014"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey, love! Come to the studio, I'm making terrible pottery and I need company.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "free_spirit_artist.base.015"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! You make the whole world look like watercolor.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "free_spirit_artist.base.016"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "My favorite human canvas! Hi!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "free_spirit_artist.base.017"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Morning! The light's so golden right now. I have to paint it before it's gone.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "free_spirit_artist.base.018"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good morning! I've been up since dawn watching the fog on the ravine.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "free_spirit_artist.base.019"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi! Mornings are pale yellow. Afternoons are orange. You're always magenta.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "free_spirit_artist.base.020"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Evening! The sky's doing purple again. It never gets old.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "free_spirit_artist.base.021"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello! Golden hour, the best hour. Everything glows.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "free_spirit_artist.base.022"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi! The streetlights on Hamilton make everything look like a film set.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "free_spirit_artist.base.023"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh, hi! Night owls see the best colors. Deep indigo everywhere.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "free_spirit_artist.base.024"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello! I'm on my way to paint by moonlight. Want to come?",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "free_spirit_artist.base.025"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "The night is so velvety. Can you feel it?",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "free_spirit_artist.base.026"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye! Stay colorful!",
+   "cond": {},
+   "id": "free_spirit_artist.base.027"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "See you! Notice something beautiful today, okay?",
+   "cond": {},
+   "id": "free_spirit_artist.base.028"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Ciao! May your day be full of happy accidents.",
+   "cond": {},
+   "id": "free_spirit_artist.base.029"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye! I'm off to chase the light.",
+   "cond": {},
+   "id": "free_spirit_artist.base.030"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Later! Don't let anyone tell you to color inside the lines.",
+   "cond": {},
+   "id": "free_spirit_artist.base.031"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Goodbye! You're a masterpiece, by the way.",
+   "cond": {},
+   "id": "free_spirit_artist.base.032"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye, {player}! Come to my gallery opening! It's in a garage.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "free_spirit_artist.base.033"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "See you, sweet friend. Take some of my paint home.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "free_spirit_artist.base.034"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye, my muse! I'll send you a sketch tonight.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "free_spirit_artist.base.035"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Have you seen the new mural on Tanner's Alley? I did that. Shh.",
+   "cond": {},
+   "id": "free_spirit_artist.base.036"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The thrift store on Rosemary had a box of vintage buttons. I bought all of them.",
+   "cond": {},
+   "id": "free_spirit_artist.base.037"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I'm doing a series of paintings of the North Quad oaks. Each one is a different emotion.",
+   "cond": {},
+   "id": "free_spirit_artist.base.038"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Did you notice the brick on the old mill turns pink at sunset?",
+   "cond": {},
+   "id": "free_spirit_artist.base.039"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I made a sculpture out of bike parts. It's called \"Commute\".",
+   "cond": {},
+   "id": "free_spirit_artist.base.040"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I dyed my hair with beet juice. It's fading into a lovely rose.",
+   "cond": {},
+   "id": "free_spirit_artist.base.041"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The art department let me use the kiln. I made seventeen lopsided mugs.",
+   "cond": {},
+   "id": "free_spirit_artist.base.042"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I found a dead moth with perfect wings. I'm painting it. Respectfully.",
+   "cond": {},
+   "id": "free_spirit_artist.base.043"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Somebody painted over my sidewalk chalk. The rain beat them to it, though.",
+   "cond": {},
+   "id": "free_spirit_artist.base.044"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I traded a painting for a month of coffee at Pamlico Coffee. Best deal ever.",
+   "cond": {},
+   "id": "free_spirit_artist.base.045"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I think the color of Cathedral Mount is burnt sienna. With little flecks of heaven blue.",
+   "cond": {},
+   "id": "free_spirit_artist.base.046"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I'm learning to make paper from old jeans.",
+   "cond": {},
+   "id": "free_spirit_artist.base.047"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You know, you're one of the few people who gets my art.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "free_spirit_artist.base.048"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Sometimes I'm scared I'll never be good enough. Then you look at my work and I feel okay.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "free_spirit_artist.base.049"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I want to paint you properly someday. Like, a real portrait.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "free_spirit_artist.base.050"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You make me brave enough to show people my stuff.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "free_spirit_artist.base.051"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I don't have much money, but I'd give you any painting I've ever made.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "free_spirit_artist.base.052"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You're like my favorite brush. Reliable and a little messy.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "free_spirit_artist.base.053"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Weekend! Flea market, then painting until my eyes cross.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "free_spirit_artist.base.054"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Saturday! The artists' collective is having an open studio.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "free_spirit_artist.base.055"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Sunday! Perfect day to paint the river.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "free_spirit_artist.base.056"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I grew up in a house where every wall was a different color. My mom's idea.",
+   "cond": {},
+   "id": "free_spirit_artist.base.057"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I dropped out of art school to paint for real. Best and worst decision.",
+   "cond": {},
+   "id": "free_spirit_artist.base.058"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I live above the record store. My studio is also my kitchen and bedroom.",
+   "cond": {},
+   "id": "free_spirit_artist.base.059"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I see colors when I hear music. It's called synesthesia. Or I'm just weird.",
+   "cond": {},
+   "id": "free_spirit_artist.base.060"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I want to paint a mural on every building in this town. Ask permission later.",
+   "cond": {},
+   "id": "free_spirit_artist.base.061"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I make jewelry out of old forks. People buy it! Sometimes.",
+   "cond": {},
+   "id": "free_spirit_artist.base.062"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I'm not great with money or schedules. But I'm great with color.",
+   "cond": {},
+   "id": "free_spirit_artist.base.063"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? The light in here is incredible. Look at the shadows.",
+   "cond": {},
+   "id": "free_spirit_artist.base.064"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place} needs a mural. A big one. With a heron.",
+   "cond": {},
+   "id": "free_spirit_artist.base.065"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "I love {place}. The textures are so honest.",
+   "cond": {},
+   "id": "free_spirit_artist.base.066"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? It's very beige. I'd fix it.",
+   "cond": {},
+   "id": "free_spirit_artist.base.067"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place} has a vibe like a faded postcard. I mean that lovingly.",
+   "cond": {},
+   "id": "free_spirit_artist.base.068"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Oh! That's so sweet! I'm going to paint that feeling.",
+   "cond": {},
+   "id": "free_spirit_artist.base.069"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Thank you! You just turned my day bright yellow.",
+   "cond": {},
+   "id": "free_spirit_artist.base.070"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Aww. You're a sunbeam, {player}.",
+   "cond": {},
+   "id": "free_spirit_artist.base.071"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Really? You like it? I'm glowing!",
+   "cond": {},
+   "id": "free_spirit_artist.base.072"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Thank you! I'll carry that around like a pebble in my pocket.",
+   "cond": {},
+   "id": "free_spirit_artist.base.073"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Oh. That feels like a muddy brown. Not nice.",
+   "cond": {},
+   "id": "free_spirit_artist.base.074"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Art is subjective. So is rudeness.",
+   "cond": {},
+   "id": "free_spirit_artist.base.075"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "I'm going to paint this feeling and call it \"Rude Person, Oil on Canvas\".",
+   "cond": {},
+   "id": "free_spirit_artist.base.076"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "That's okay. Van Gogh only sold one painting.",
+   "cond": {},
+   "id": "free_spirit_artist.base.077"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Wow. Your aura just turned gray.",
+   "cond": {},
+   "id": "free_spirit_artist.base.078"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "For me? Oh, it's beautiful! The texture!",
+   "cond": {},
+   "id": "free_spirit_artist.base.079"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "I'm going to use this in a piece! In a good way!",
+   "cond": {},
+   "id": "free_spirit_artist.base.080"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "You remembered I like weird little things! Thank you!",
+   "cond": {},
+   "id": "free_spirit_artist.base.081"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "This is perfect! It's going on my altar of found objects!",
+   "cond": {},
+   "id": "free_spirit_artist.base.082"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Oh, I love it! You have such a good eye.",
+   "cond": {},
+   "id": "free_spirit_artist.base.083"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "Why did the artist go to jail? Because she was framed.",
+   "cond": {},
+   "id": "free_spirit_artist.base.084"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "What's an artist's favorite kind of tree? A palette pine.",
+   "cond": {},
+   "id": "free_spirit_artist.base.085"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "I tried to draw a circle, but it was pointless.",
+   "cond": {},
+   "id": "free_spirit_artist.base.086"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "My paintings are like my love life. Abstract.",
+   "cond": {},
+   "id": "free_spirit_artist.base.087"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Could you model for me? Just sit still for three hours. Easy!",
+   "cond": {},
+   "id": "free_spirit_artist.base.088"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Would you help me carry canvases to the gallery? They're huge.",
+   "cond": {},
+   "id": "free_spirit_artist.base.089"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Can you hold the ladder while I paint the top of the wall? Don't tell the owner.",
+   "cond": {},
+   "id": "free_spirit_artist.base.090"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Thank you! You're a work of art!",
+   "cond": {},
+   "id": "free_spirit_artist.base.091"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "You're the best! I'll paint you something!",
+   "cond": {},
+   "id": "free_spirit_artist.base.092"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "I owe you a painting. A big one.",
+   "cond": {},
+   "id": "free_spirit_artist.base.093"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I work at the frame shop. Surrounded by art all day. Heaven.",
+   "cond": {},
+   "id": "free_spirit_artist.base.094"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "Sold a painting today! Forty dollars! I'm rich!",
+   "cond": {},
+   "id": "free_spirit_artist.base.095"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "My boss says I can't paint on the customer's frames. Rules are so restrictive.",
+   "cond": {},
+   "id": "free_spirit_artist.base.096"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I teach a kids' art class. They're better than me.",
+   "cond": {},
+   "id": "free_spirit_artist.base.097"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "I'm auditing a color theory class. I already know it, but I love hearing it.",
+   "cond": {},
+   "id": "free_spirit_artist.base.098"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "My professor said my work was \"chaotic.\" Yes. Thank you.",
+   "cond": {},
+   "id": "free_spirit_artist.base.099"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "Art history makes me cry. In a good way.",
+   "cond": {},
+   "id": "free_spirit_artist.base.100"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "You're a really dull color, {player}.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "free_spirit_artist.base.101"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Please go away. You're ruining my composition.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "free_spirit_artist.base.102"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I don't want you in my space.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "free_spirit_artist.base.103"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "You're like turpentine. Harsh.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "free_spirit_artist.base.104"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I'm not going to waste my creative energy on you.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "free_spirit_artist.base.105"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Bye. Go be gray somewhere else.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "free_spirit_artist.base.106"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Ha! You're sweet, but I'm in a committed relationship with my art.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "free_spirit_artist.base.107"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Oh! That's so flattering! But no, darling. Friends.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "free_spirit_artist.base.108"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "I love you! As a friend! A friend I paint!",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "free_spirit_artist.base.109"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Oh! Your words just turned everything pink.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "free_spirit_artist.base.110"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Are you flirting with me? I'm blushing in cadmium red.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "free_spirit_artist.base.111"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "You're making my heart do brushstrokes.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "free_spirit_artist.base.112"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "I've been sketching you in secret. Is that weird? I'm into you.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "free_spirit_artist.base.113"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "Yes! Let's go somewhere with good light!",
+   "cond": {},
+   "id": "free_spirit_artist.base.114"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "A date? With me? Yes! I'll wear something with fewer paint stains!",
+   "cond": {},
+   "id": "free_spirit_artist.base.115"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "I'm sorry, darling. I don't feel that way. But I adore you as a friend.",
+   "cond": {},
+   "id": "free_spirit_artist.base.116"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "Oh, that's lovely, but no. Still my muse, though?",
+   "cond": {},
+   "id": "free_spirit_artist.base.117"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hi! I put on lipstick. And it's not paint! Mostly.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.001"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "There you are! You look like a Renoir!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.002"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hello, darling! I brought you a little sketch I did of us.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.003"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "You came! The whole evening just turned gold.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.004"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hi! I found us the perfect spot. The light's going to be amazing.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.005"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hey, beautiful! I'm so happy to see you!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.006"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're my favorite color. All of them.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.007"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I want to paint you every day for the rest of my life.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.008"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You make my heart feel like a watercolor bleeding into wet paper.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.009"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're the most beautiful thing in this town. And I've painted the whole town.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.010"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "Every time you smile, I see a new color.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.011"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're my muse. My forever muse.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.012"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I'd give up blue for you. And I love blue.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.013"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's go to the sculpture garden behind the art building.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.014"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Can I paint your hand? Just your hand. It's beautiful.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.015"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Tell me your favorite color and why. This is important.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.016"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I made us a picnic. Everything's colorful. Even the sandwiches.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.017"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's go to the thrift store and buy each other weird gifts.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.018"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I've never shown anyone my sketchbook. Want to see?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.019"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's watch the sunset from the roof of the old mill.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.020"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "You make the world feel less gray.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.021"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I think we'd make a beautiful painting. Two colors, blending.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.022"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's make art together! Even if it's terrible!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.023"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Do you believe in fate? I believe in color. And you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.024"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I'm so happy right now. Like, sunflower happy.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.025"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You have such an artistic soul.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.026"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "Your eyes are the most amazing shade.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.027"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You see beauty in things. That's rare.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.028"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're gorgeous tonight. Like a painting.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.029"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You make everything feel inspired.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.030"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Oh. That was a masterpiece.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.031"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "I saw colors. Real colors.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.032"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "That was like a Chagall. Floating.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.033"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Again! I want to memorize it!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.034"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I missed you! I painted you from memory. You're better in person.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.035"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "Everything was a little gray without you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.036"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I kept seeing your colors everywhere.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.037"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I made you a collage. It's all about missing you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.038"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "Who was that? They have a very bland aura.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.039"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I'm not jealous. I'm a little green. Like sap green.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.040"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I just want to be the only artist in your life.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.041"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Tonight was a masterpiece. Goodnight!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.042"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight, darling. I'll dream in color.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.043"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Thank you for tonight. I'm going to paint it.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.044"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Same time next week? Same light?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.045"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight, my muse.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.046"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "That hurt. It feels like a dark gray.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.047"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I'm upset, darling. Let's not let this smear us.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.048"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "Can we talk? I don't want to lose this color.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.049"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I need some space. I'll go paint. Then let's talk.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.050"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "Yes! Yes! Oh, everything's gold!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.051"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "I'll marry you! Our wedding will be the most colorful thing ever!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.dating.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, my love! The light in the kitchen is perfect right now.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.001"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, darling! I painted the sunrise for you. It's drying.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.002"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, love! Coffee's ready. I put it in the mug I made.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.003"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! You look like a Rembrandt when you sleep.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.004"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning! I've been up since five. The fog was too beautiful.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.005"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, my muse! Let's have breakfast in the garden.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.006"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, sweetheart! I left paint on the counter. Sorry. Again.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.007"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, love! I dreamed in colors I've never seen.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.008"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! I sketched you while you slept. Don't be mad.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.009"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning! I found a bird's feather on the porch. It's iridescent!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.010"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, darling. Let's make today beautiful.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.011"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi! The kitchen smells like turpentine and toast. Our home.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.012"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home, love! Come see what I painted today!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.013"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home! I made dinner and a mess. Both are art.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.014"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, darling! I lit candles. The shadows are lovely.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.015"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome back, my muse! The house was so beige without you.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.016"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, love! I rearranged the living room. Everything's a different color now.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.017"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home! Let's watch the sunset from the porch.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.018"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home! I sold a painting today! A real one!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.019"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, sweetheart! I made you a mug. It's lopsided. Like my heart for you.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.020"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are! I've been waiting all day.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.021"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home, darling! The light's turning purple. Perfect timing.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.022"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home late, love. The moonlight's gorgeous.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.023"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, darling. I was painting by lamplight. Come see.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.024"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "It's late! Come to bed. Or come to the studio.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.025"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're back! I waited up, mixing colors.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.026"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, love. Long day? Let me hold you.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.027"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are. The house is so cozy at night.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.028"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, sweetheart. I fell asleep in the studio again.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.029"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home. Now the night feels complete.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.030"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a beautiful day, love!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.031"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye, darling! Notice the colors today!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.032"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a great day! I'll be painting you while you're gone!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.033"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye! You've got a little paint on your sleeve. Leave it. It's art.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.034"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a lovely day, my muse!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.035"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Go! Make the world prettier!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.036"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye, love! I put a sketch in your bag.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.037"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a good day, darling! Come back soon!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.038"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "How was your day, love? Was it a gray day or a gold day?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.039"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Tell me everything! What colors did you see?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.040"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You look tired, darling. Come sit in the garden.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.041"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Did anything beautiful happen?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.042"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Was your boss beige again? I'm sorry.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.043"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Rough day? Let's paint it away.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.044"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You're home now. Let's make it soft.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.045"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "I'm proud of you, love. Always.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.046"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you more than all the colors in the world.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.047"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my favorite masterpiece.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.048"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Being married to you is like living in a painting.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.049"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my muse. Forever.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.050"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'd paint you every day for a thousand years.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.051"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make my life so colorful.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you, darling. Every shade of you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.053"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're the most beautiful thing I've ever seen. And I've seen a lot of sunsets.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.054"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make me feel like art.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.055"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'm so lucky to have you, love. Like a painting.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.056"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my home. My studio. My everything.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.057"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love the way the light hits you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.058"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my favorite color. Still.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.059"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'd give up painting for you. Okay, not really. But I'd think about it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.060"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make every day inspired.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.061"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you more than blue. And I really love blue.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.062"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my best work. Well, we made us together.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.063"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make my heart feel like a sunrise.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.064"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I painted the bathroom teal. Do you love it? Be honest. Love it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.065"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I found an old window frame on the curb. I'm turning it into a mirror.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.066"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been making a mosaic for the garden path.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.067"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The neighbor asked me to paint their mailbox. I said yes. It's going to be a whale.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.068"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I hung up some of my paintings in the hallway.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.069"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a wind chime out of old spoons.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.070"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been thinking about painting the ceiling. Like a sky.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.071"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I found a vintage armchair at the thrift store. It's mustard yellow.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.072"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I planted wildflowers in the yard. All the colors.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.073"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I started a pottery class at the community center.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.074"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made new curtains from old saris. They glow in the morning.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.075"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The garden is blooming! I'm painting it every day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.076"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I'm thinking about turning the garage into a gallery.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.077"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a collage of our life together.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.078"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I traded a painting for a bunch of fresh flowers.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.079"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been dyeing fabric with avocado pits. They turn pink!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.080"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The cat walked through my paint. There are blue paw prints everywhere.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.081"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I painted a little door at the bottom of the garden wall. For fairies.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.082"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been making stained glass. It's harder than it looks.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.083"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I think the house needs more plants. Hanging ones.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.084"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I'm doing a portrait series of our neighbors.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.085"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I hung fairy lights in the studio.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.086"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I found a box of old photographs at the flea market. Strangers' lives. So beautiful.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.087"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been inspired lately. I think it's you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.088"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I want to paint the front door every season.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.089"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I love our little home. It's a work in progress. Like us.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.090"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I did the dishes. And painted a little flower on the soap dish.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.091"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I vacuumed. Found three paintbrushes under the couch.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.092"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Could you take out the trash? I'm mid-brushstroke.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.093"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I swept the studio. It's still messy. Organized chaos.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.094"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I folded the laundry. Badly. Artistically.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.095"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I cleaned the kitchen. Mostly paint off the counter.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.096"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Let's clean together! Put on some jazz!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.097"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I watered all the plants. They're my little sculptures.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.098"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I organized my paint tubes by color. It's a rainbow.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.099"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I scrubbed the bathroom. The teal is so pretty when it's clean.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.100"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I made the bed. With the patchwork quilt.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.101"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I washed the windows. The light is so much better now.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.102"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Money's tight this month. Art doesn't always pay.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.103"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I sold a painting! We can pay the electric bill!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.104"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I made a budget. With watercolors.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.105"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We don't need much, love. Just paint and each other.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.106"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I'm doing a commission for a restaurant. Good money!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.107"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Let's not buy anything new. Thrift everything!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.108"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I traded art for groceries. Barter economy!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.109"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We should save a little. For a trip to see the old masters.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.110"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I'll teach more classes. For extra money.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.111"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We're rich in beauty, darling.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.112"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Dinner's ready! I arranged the salad like a painting.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.113"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made breakfast! Fruit, cut into flowers!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.114"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's eat in the garden tonight.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.115"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made soup. It's a beautiful orange.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.116"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I baked bread. It's lumpy. It's art.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.117"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's have a picnic in the studio.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.118"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made pasta with beets. It's pink!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.119"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Dinner by candlelight. Everything looks better.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.120"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made a cake. It's a little lopsided. Like everything I make.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.121"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's try that new taco place. The walls are painted so beautifully.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.122"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You moved my paintings. I had them in a very specific order.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.123"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I feel like you don't take my art seriously.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.124"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm not messy! I'm creative!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.125"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You said we'd go to my gallery opening. You didn't come.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.126"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Can you please not call my work a hobby?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.127"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I need space to create. Literally. Space.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.128"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You never notice when I change things.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.129"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm not irresponsible. I'm free.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.130"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I feel like you want me to be practical. I'm not practical.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.131"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm going to go paint. And cool off.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.132"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You stepped on my canvas!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.133"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I just want you to see me. The real me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.134"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry, darling. Let's start a fresh canvas.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.135"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I love you. I'm sorry I got so worked up.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.136"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's paint together. It always helps.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.137"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I hate fighting with you. It turns everything gray.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.138"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry I'm so messy. In every way.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.139"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "You're my favorite person. Even when we clash.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.140"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's make up in the garden.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.141"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "We're good, love. We always blend back together.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.142"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "It's okay, love. Let's sit in the garden.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.143"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You're beautiful, even when you're sad.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.144"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let me paint you something happy.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.145"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Whatever it is, we'll get through it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.146"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Breathe, darling. Look at the light.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.147"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You don't have to be okay. Just be.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.148"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I'm here, love. Paint-stained and always here.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.149"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let's make something together. Art heals.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.150"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You're stronger than you know. Like oak gall ink. It never fades.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.151"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I love you. Every shade of you. Even the blue ones.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.152"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the art museum in the city this weekend!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.153"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a trip to the coast? I want to paint the ocean.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.154"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the flea market! Treasure hunting!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.155"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's take a pottery class together!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.156"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a road trip to see the fall colors?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.157"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's paint a mural together on the garage!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.158"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the open studios in Carrburg!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.159"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a picnic by the river? I'll bring my sketchbook.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.160"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go stargazing. The night sky is the best painting.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.161"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's travel to Europe someday. See all the old masters.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.162"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our first date? I painted your hand.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.163"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we met? I had paint on my face.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.164"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our wedding? The wildflowers everywhere?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.165"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember the mural we painted together on our first anniversary?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.166"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our honeymoon? I painted every sunset.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.167"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I still have the sketch I did of you the day we met.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.168"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we found that weird lamp at the thrift store?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.169"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we got caught painting the alley wall?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.170"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember the first time you came to my gallery opening?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.171"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we danced in the studio covered in paint?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.172"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary, my love! I painted us!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.173"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Another year! Our love is a masterpiece!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.174"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I made you something! It's a sculpture of us!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.175"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary, darling! Still my favorite color!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.176"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I love you more every year. Like layers of paint.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.177"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Here's to another year of art and love!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.178"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You still can't draw a straight line.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.179"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You think beige is a color. It's not.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.180"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You always ask \"what is it?\" about my paintings.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.181"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You hide my paintbrushes.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.182"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You're secretly a great artist. I've seen your doodles.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.183"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You call my studio \"the mess\".",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.184"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You always step on my wet canvases.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.185"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You can't tell turquoise from teal.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.186"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You fall asleep in museums.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.187"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You think thrift shopping is weird. It's treasure hunting!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.188"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You laugh when I talk about auras.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.189"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You're my favorite critic. Even when you're wrong.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.190"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, my love. Dream in color.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.191"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come to bed, darling. The moon's out.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.192"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, my muse. Same easel tomorrow?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.193"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sleep well, love. I'll paint the sunrise for you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.194"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight! I love you more than paint.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.195"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Let's fall asleep under the fairy lights.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.196"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, {player}. You're my masterpiece.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.197"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sweet dreams, darling.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.198"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come cuddle. I washed the paint off. Mostly.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.199"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight. Thank you for another day in full color.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "free_spirit_artist.marriage.200"
+  }
+ ]
+}

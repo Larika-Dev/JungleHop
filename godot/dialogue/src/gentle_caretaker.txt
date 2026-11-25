@@ -1,0 +1,429 @@
+// Gentle Caretaker: nurturing, "dear", "sweetie", offers food and advice, worries kindly, knits, gardens.
+== base
+# greet stage=stranger
+Hello, dear. You look like you could use a cookie. I'm {npc}.
+Oh, hello there! Are you eating enough? You look a bit peaky. I'm {npc}.
+Hi, sweetie. New in town? If you need anything at all, you come find me.
+Well, hello! I'm {npc}. Mind that step, it's uneven.
+Hello, dear. Have you got a coat? It's chilly out today.
+Oh, a new face! Welcome, sweetheart. I'm {npc}.
+# greet stage=acquaintance
+{player}, dear! Did you get home safe last time?
+Oh, hello, {player}! I was just thinking about you. Have you eaten?
+{player}! There you are. I made extra muffins this morning.
+Hello, sweetie. You look tired. Are you sleeping?
+{player}! Come here, let me fix your collar.
+# greet stage=friend+
+{player}, my dear! Come in, come in, the kettle's on.
+Oh, there's my favorite! I knitted you something. Don't laugh at the sleeves.
+{player}, sweetheart! I saved you a plate.
+My dear {player}! Sit down and tell me everything.
+There you are! I worry when I don't see you for a few days.
+{player}! I've got soup on the stove and a blanket on the couch.
+# greet time=morning
+Good morning, dear! Did you have breakfast? A real breakfast?
+Morning, sweetie. The garden's all dewy and lovely.
+Good morning! I've got oatmeal on, if you'd like some.
+# greet time=evening
+Good evening, dear. Have you had your supper?
+Evening, sweetheart. It's getting cold, wrap up warm.
+Hello, dear. The evening's so peaceful, isn't it?
+# greet time=night
+Oh, you're out late, dear! Is everything alright?
+Goodness, it's late. You should be in bed, sweetie.
+Hello, dear. Can't sleep? I'll make you warm milk.
+# farewell
+Bye, dear! Take care of yourself!
+Goodbye, sweetie. Wear your scarf!
+Off you go, dear. Text me when you get home.
+Bye now! Don't forget to eat something green.
+Take care, sweetheart. Drive slowly.
+Goodbye, dear. Come back soon, I'll have cake.
+# farewell stage=friend+
+Bye, my dear. You know where I am if you need me.
+Goodbye, sweetheart. Here, take some leftovers.
+Bye, {player}. I'll be thinking of you.
+# smalltalk
+The tomatoes in the garden are finally ripening. I'll bring you some.
+Mrs. Chen down the road has a cold. I made her soup.
+I'm knitting hats for the children's hospital. I've done forty so far.
+The church needs volunteers for the soup kitchen. It's such good work.
+I found the most wonderful recipe for lemon bars. You must try them.
+The roses are blooming early this year. Isn't that lovely?
+I worry about those students on Rosemary, out so late.
+I've been teaching the neighbor girl to bake. She's a natural.
+It's flu season, dear. Wash your hands.
+The farmers market had the sweetest peaches. I made a cobbler.
+I brought cookies to the fire station. Those boys work so hard.
+The library's having a book sale. I bought you a cookbook.
+# smalltalk stage=friend+
+You know, you're like family to me now.
+I worry about you, dear. In the best way.
+If you ever need a place to stay, my door is always open.
+You remind me of my own child when they were your age.
+I'm so proud of you, sweetie. I don't say it enough.
+Promise me you'll call if anything's wrong. Anything.
+# smalltalk weekend=true
+Weekend! I'm baking for the church bake sale.
+Saturday, dear! Perfect day for gardening.
+Sunday dinner at my place. You're invited. You're always invited.
+# about_self
+I raised four children and three grandchildren. My heart's always full.
+I was a nurse for thirty years. Old habits, I take care of people.
+I love my garden. Roses, tomatoes, and too much zucchini.
+My mother taught me that food is love. I believe it.
+I knit when I'm worried. I've knitted a lot of scarves.
+I've lived on this street for forty years. I know every family.
+Nothing makes me happier than seeing someone eat a good meal.
+# opinion_place
+{place}? It's lovely, but it's a bit drafty. Keep your coat on.
+I like {place}. The people are kind.
+{place} could use a few flower boxes. I'll suggest it.
+{place}? Oh, I love it. They always remember my name.
+{place} is nice, dear. Do they serve anything healthy?
+# compliment_reply
+Oh, you're sweet. Thank you, dear.
+Aren't you a dear! Thank you.
+Oh, stop it. You're making me blush.
+Thank you, sweetie. That warms my heart.
+You're too kind, dear. Here, have a cookie.
+# insult_reply
+Oh, dear. That wasn't very nice.
+I'm sure you don't mean that, sweetie.
+Goodness. I hope you're alright. People who are hurting sometimes lash out.
+I'll forgive you. But that hurt.
+Oh, sweetheart. Someone needs a nap.
+# gift_reply
+Oh, you shouldn't have! But thank you, dear!
+How thoughtful! I'll treasure it, sweetie.
+Oh, it's lovely! You're so kind.
+For me? Oh, my. Thank you, dear.
+You remembered! You're a gem.
+# joke
+What did the teapot say to the kettle? You're so hot!
+Why did the cookie go to the doctor? It felt crummy.
+What do you call a sleeping bull? A bulldozer! My grandson told me that one.
+Why did the tomato blush? It saw the salad dressing!
+# ask_favor
+Could you carry these casseroles to the church, dear? My arms aren't what they were.
+Would you check on Mr. Peters next door? He's been quiet.
+Could you help me reach the top shelf? I'll pay you in pie.
+# favor_reply
+Thank you, dear! You're an angel.
+Oh, bless you, sweetie. Thank you.
+You're such a good soul. Thank you.
+# work_talk
+I volunteer at the hospital now. I hold the babies in the nursery.
+I'm retired, dear. But I keep busy.
+I help out at the daycare on Wednesdays. Those little ones!
+Work is important, but so is rest. Are you resting?
+# school_talk
+Are you studying hard, dear? Not too hard?
+Don't stay up too late studying. Sleep helps you learn.
+I took a pottery class at the community center. I made a very wobbly bowl.
+# hostile stage=dislike-
+I'd rather not talk right now, dear.
+You've hurt me, and I'm still upset.
+I'm trying to be kind, but you make it hard.
+Please leave me be.
+I don't think we should talk anymore.
+I'll pray for you. From a distance.
+# flirt_reply romance=none
+Oh, sweetie! You're very kind. But no.
+Goodness! That's sweet, dear, but let's stay friends.
+Oh, my. I'm flattered, but no, sweetie.
+# flirt_reply romance=crush
+Oh! Oh, dear. My heart's all aflutter.
+Goodness. You're making me blush like a schoolgirl.
+That's very sweet. I think I like you too.
+Oh, my. Say that again, slowly.
+# ask_out_yes
+Oh, yes, dear! I'd love to. I'll bake something.
+A date? Oh, my. Yes. Yes, I'd like that.
+# ask_out_no
+Oh, sweetie, I'm so flattered. But I don't feel that way. You understand?
+I'm sorry, dear. No. But you'll always have a seat at my table.
+
+== dating
+# date_greet
+Hello, dear! I brought you a scarf. It's cold out.
+There you are, sweetheart! You look so handsome. Or lovely. Both!
+Oh, I'm so happy to see you! Did you eat? I brought sandwiches.
+Hello, darling. I've been looking forward to this all day.
+You came! I made a picnic. Everything's homemade.
+Hello, sweetie. You look tired. Let's sit for a while.
+# flirt
+You're the sweetest thing in my life. Sweeter than my pie.
+I'd knit you a hundred scarves.
+You make my heart warm. Like a good cup of tea.
+I love taking care of you. I hope that's alright.
+You're so handsome. Or beautiful. Both, really.
+You make me feel young again.
+I'd bake for you every day.
+# date_talk
+Let's walk in the garden. The roses are out.
+Tell me about your family, dear. I want to know everyone.
+I made us a picnic. Chicken salad, deviled eggs, and lemon bars.
+Do you like gardening? I'll teach you.
+I love that you let me fuss over you.
+I haven't felt this way in a long time.
+Let's sit on the porch and watch the sunset.
+Are you warm enough? Here, take my sweater.
+I baked you a cake. It's chocolate. Your favorite, right?
+You're such a good person, dear. I can tell.
+I want to take care of you. If you'll let me.
+I'm so happy, sweetheart. Truly.
+# compliment
+You have such a kind heart.
+You're so handsome tonight. Or lovely. You know what I mean.
+You're so good to people. I notice.
+You have beautiful eyes, dear.
+You're the sweetest person I know.
+# kiss_reply
+Oh, my! That was lovely.
+Goodness. My heart's racing.
+Oh, sweetheart. Again?
+That was wonderful, dear.
+# miss_you
+I missed you, dear. I baked three batches of cookies waiting.
+The house felt so empty without you.
+I knitted you a sweater while you were gone.
+I worried about you. Are you alright?
+# jealous
+Who was that, dear? Not that I mind. I mind a little.
+I'm not jealous. I just want to be the one taking care of you.
+I trust you, sweetheart. I just worry.
+# date_end
+Goodnight, dear. Drive safely.
+Text me when you get home, sweetheart.
+I had such a lovely time. Thank you.
+Here, take some leftovers for tomorrow.
+Goodnight, {player}. Sleep well. Okay, dear?
+# lovers_quarrel
+Oh, dear. I'm upset. Let's talk about it.
+That hurt my feelings, sweetheart.
+Let's not fight. Let's have some tea and talk.
+I love you, but I need you to listen.
+# proposal_yes
+Oh, yes! Yes, dear! Of course I'll marry you!
+Oh, my goodness! Yes! I'm crying! Happy tears!
+
+== marriage
+# home_greet time=morning
+Good morning, dear! Breakfast is ready. Eggs, toast, and fresh orange juice.
+Morning, sweetheart! Did you sleep well? You were tossing.
+Good morning, love! I've packed your lunch. And a little treat.
+Morning, dear! Wear a jacket today, it's chilly.
+Good morning! I made oatmeal with berries. It's good for your heart.
+Morning, sweetie! Your vitamins are next to your coffee.
+Good morning, dear! The garden's so lovely this morning.
+Morning, love! I ironed your shirt.
+Good morning! I made muffins. Blueberry.
+Morning, sweetheart! Did you remember your appointment today?
+Good morning, dear! You look rested. Good.
+Morning, love! I made your favorite. Pancakes.
+# home_greet time=evening
+Welcome home, dear! Dinner's on the table.
+There you are, sweetheart! Sit down, put your feet up.
+Welcome home, love! I made pot roast.
+Hello, dear! How was your day? You look tired.
+You're home! I've got a warm bath running for you.
+Welcome back, sweetie! I made your favorite pie.
+Hello, love! Come sit, I'll make you some tea.
+You're home! I was starting to worry.
+Welcome home, dear! The fire's going.
+There you are! I've been waiting with dinner.
+# home_greet time=night
+You're home late, dear! Did you eat? I kept a plate warm.
+Oh, sweetheart, it's so late! Come to bed.
+There you are, love. I was worried sick.
+Hello, dear. Let me make you some warm milk.
+You're home. Thank goodness. Come here.
+Late night, sweetie? Let me rub your shoulders.
+There you are. I waited up. I was knitting.
+You're back, dear. Now I can sleep.
+# goodbye_work
+Have a good day, dear! Don't forget your lunch!
+Bye, sweetheart! Drive carefully!
+Have a lovely day, love! Wear your scarf!
+Goodbye, dear! Call me if you need anything!
+Have a good day! Remember to eat something healthy!
+Bye, sweetie! I'll have dinner ready!
+Have a wonderful day, dear! Don't work too hard!
+Bye, love! I put a note in your pocket!
+# work_return
+How was your day, dear? Did you eat lunch?
+You look tired, sweetheart. Sit down.
+Tell me all about it, love.
+Did they treat you well today?
+Was it a hard day, dear? Let me make you tea.
+Did you take your breaks? You need your breaks.
+You're home now, dear. Slippers on, feet up, rest.
+I'm so proud of you, dear. You work so hard.
+# affection
+I love you, dear. More than all the roses in the garden.
+You're my whole heart, sweetheart.
+Taking care of you is my favorite thing in the world.
+I'm so lucky to have you, love. Every single day I count my blessings.
+You make our home so warm.
+I love you more every day, dear.
+You're the sweetest person I've ever known.
+I'd do anything for you, sweetheart.
+You make me so happy, love.
+You're my everything, dear.
+I love the life we've built together.
+You're my best friend and my love.
+I love you to the moon and back, sweetie.
+You're the reason I bake.
+I thank God for you every day.
+You're my home, dear.
+I love how you let me take care of you.
+I love you, sweetheart. Always.
+# home_talk
+The tomatoes are coming in nicely. I'll make sauce.
+I knitted you a new sweater. Try it on!
+Mrs. Chen's feeling better. My soup worked.
+I planted new roses by the porch.
+I made a quilt for the guest room.
+The grandkids are coming this weekend!
+I've been teaching the neighbor's kids to bake. Okay, dear?
+I cleaned out the pantry. We need more flour.
+I've been volunteering at the hospital again.
+I found my mother's old recipe book.
+The church is having a potluck. I'm making my casserole.
+I've been making jam. Strawberry and peach.
+The birds are back at the feeder.
+I made curtains for the kitchen.
+I've been thinking about getting a little dog.
+The garden's never looked better.
+I baked bread today. The house smells wonderful.
+I've been knitting blankets for the shelter.
+I called your mother. She sends her love.
+I found a lovely new tea at the market.
+The neighbors' baby is so sweet. I held her today.
+I've been organizing the linen closet.
+I put fresh flowers in every room.
+I've been taking a watercolor class.
+I made a scrapbook of our family.
+I love our little home, dear.
+# chores
+I did the laundry, dear. Your shirts are ironed.
+I cleaned the kitchen. It's sparkling.
+Could you take out the trash, sweetheart?
+I vacuumed the whole house.
+I changed the sheets. Fresh and clean.
+I dusted the bookshelves.
+I washed the windows. Look how they shine!
+Let's do the dishes together, love.
+I scrubbed the bathroom.
+I weeded the garden.
+I mopped the floors.
+I folded all the towels.
+# money
+We're doing alright, dear. I keep a careful budget.
+I clipped some coupons. Saved us ten dollars!
+Money's a little tight. But we'll manage.
+I don't need much. Just you and my garden.
+I've been saving a little each week.
+We should put some money aside for the grandkids.
+I made a budget. We're doing fine.
+I sold some jam at the market!
+Let's not spend too much this month, dear.
+We're rich in love, sweetheart.
+# meal
+Dinner's ready, dear! Pot roast with all the fixings.
+I made chicken soup. Good for your health.
+Breakfast in bed, sweetheart!
+I baked a pie. Apple, your favorite.
+I made lasagna. It'll last all week.
+Let's have a picnic in the garden, dear. I'll bring the good tablecloth.
+I made meatloaf. Just like my mother's.
+I made a big salad. With vegetables from the garden.
+I baked cookies. Chocolate chip.
+Let's have tea and scones this afternoon.
+# argue
+You didn't eat the lunch I packed. Again.
+I worry about you, and you don't listen.
+You work too hard, dear. You need to rest.
+You forgot to call. I was worried sick.
+Please let me help you. You never let me help.
+I feel like you take me for granted sometimes.
+You didn't wear your coat. You'll catch cold.
+I'm not nagging. I'm caring.
+You never tell me when something's wrong.
+I'm going to go knit. To calm down.
+I just want you to take care of yourself.
+You're as stubborn as a mule, sweetheart.
+# makeup
+I'm sorry, dear. I fuss too much.
+Let's have some tea and make up.
+I love you. I'm sorry I nagged.
+Come here, sweetheart. Let's hug.
+I'm sorry I worried so much. I just love you.
+Let's not fight. Life's too short.
+I'll make your favorite pie to say sorry.
+We're alright, dear. We always are.
+# support
+Oh, sweetheart. Come here. Let me hold you.
+It's alright, dear. I'm here. Okay, dear?
+Let me make you some soup. It'll help.
+You're stronger than you know, love.
+Whatever it is, dear, we'll get through it. With soup.
+Cry if you need to, dear. I've got tissues.
+Let me take care of everything tonight.
+You don't have to be strong all the time.
+I love you, sweetheart. Now, have you had any water today?
+Let's sit in the garden. It always helps.
+# plans
+Let's visit the grandkids this weekend.
+How about a trip to the botanical gardens?
+Let's go to the church picnic on Sunday.
+Let's take a drive to the mountains. See the leaves.
+How about a quiet weekend at home? Just us.
+Let's go to the farmers market on Saturday.
+Let's plan a family dinner. Invite everyone.
+How about a trip to the beach? I'll pack a lunch.
+Let's take a pottery class together.
+Let's plant a new garden bed this spring.
+# memories
+Remember our first date? I made you a picnic.
+Remember our wedding? It was so beautiful.
+Remember when the kids were little?
+Remember our first house? The kitchen was so small.
+Remember when you brought me flowers every Sunday?
+Remember when we danced in the kitchen?
+I remember the first time I saw you. You were so kind.
+Remember our honeymoon? By the sea.
+Remember when we planted our first garden together?
+Remember when you nursed me back to health that winter?
+# anniversary
+Happy anniversary, dear! I made a cake.
+Another year, sweetheart. I love you more than ever.
+Happy anniversary, love! I knitted you something.
+I love you more every year, dear.
+Here's to many more years together.
+Happy anniversary! Let's have a quiet dinner.
+# tease
+You never wear the scarves I knit.
+You sneak cookies before dinner.
+You leave your socks everywhere, dear.
+You fall asleep in your chair every evening.
+You never let me help you.
+You always say you're not hungry, then eat everything.
+You can't tell a weed from a flower.
+You hum when you're happy.
+You're terrible at hiding presents.
+You still can't make a bed properly.
+You always forget your umbrella.
+You're such a softie. Don't deny it.
+# bedtime
+Goodnight, dear. Sleep tight.
+Come to bed, sweetheart. I've warmed it up.
+Goodnight, love. I'll see you in the morning.
+Sweet dreams, dear.
+Let me tuck you in, sweetheart.
+Goodnight, {player}. I love you.
+Sleep well, dear. Tomorrow's a new day.
+Goodnight. Did you take your vitamins?
+Come here, love. Let's cuddle.
+Goodnight, sweetheart. God bless.

@@ -1,0 +1,4076 @@
+{
+ "id": "know_it_all_academic",
+ "lines": [
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello. I'm {npc}. Fun fact: the word \"hello\" only became common with the telephone.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "know_it_all_academic.base.001"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Ah, a new acquaintance. I'm {npc}. Doctoral candidate. Well, almost.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "know_it_all_academic.base.002"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Greetings! You seem curious. Curiosity is the engine of civilization. I'm {npc}.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "know_it_all_academic.base.003"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello there. I'm {npc}. Did you know you're standing on what was once a colonial grazing commons?",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "know_it_all_academic.base.004"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good day. Pardon my tweed. It's ironic. Partially.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "know_it_all_academic.base.005"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi! I'm {npc}. I'd shake your hand, but statistically that's how colds spread.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "know_it_all_academic.base.006"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! Excellent. I've been dying to tell you about the Byzantine Empire.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "know_it_all_academic.base.007"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Ah, {player}. Have you read the article I sent you? All forty pages?",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "know_it_all_academic.base.008"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! Did you know that today is the anniversary of the first printed newspaper? Well, one of them.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "know_it_all_academic.base.009"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello, {player}. I've been thinking about our last conversation. You were wrong, but interestingly so.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "know_it_all_academic.base.010"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! A pleasure. I have a fascinating fact about mollusks.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "know_it_all_academic.base.011"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! My favorite interlocutor! That means conversation partner.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "know_it_all_academic.base.012"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "There you are! I saved you a seat at the lecture. Front row, obviously.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "know_it_all_academic.base.013"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! You're the only one who listens to my tangents. Thank you.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "know_it_all_academic.base.014"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "My dear friend! I've brought you a book. It's only nine hundred pages.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "know_it_all_academic.base.015"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! I've been preparing a short presentation on why you'd love medieval history.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "know_it_all_academic.base.016"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Ah, my intellectual equal! Or near-equal. I jest. Sit!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "know_it_all_academic.base.017"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good morning! Fun fact: morning comes from the Old English \"morgen\".",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "know_it_all_academic.base.018"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Morning. I've already read three journal articles and corrected two of them.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "know_it_all_academic.base.019"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good morning! The circadian rhythm suggests this is peak alertness. Let's discuss something.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "know_it_all_academic.base.020"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good evening! The word \"evening\" derives from \"even\", as in the evening of the day.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "know_it_all_academic.base.021"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Evening. The library's quietest hour. Wonderful for thinking.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "know_it_all_academic.base.022"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello! Twilight is technically three phases: civil, nautical, and astronomical.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "know_it_all_academic.base.023"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Ah, a fellow nocturnal scholar!",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "know_it_all_academic.base.024"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Late night? Excellent. Some of history's greatest ideas came after midnight.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "know_it_all_academic.base.025"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello. I'm only awake because I fell down a research rabbit hole. On rabbits.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "know_it_all_academic.base.026"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Farewell! From the Old English \"faran\", to journey.",
+   "cond": {},
+   "id": "know_it_all_academic.base.027"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Goodbye! Keep learning!",
+   "cond": {},
+   "id": "know_it_all_academic.base.028"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Until next time. Read something challenging!",
+   "cond": {},
+   "id": "know_it_all_academic.base.029"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Adieu! That's French. Well, you knew that.",
+   "cond": {},
+   "id": "know_it_all_academic.base.030"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Cheerio! A British colloquialism, origin debated.",
+   "cond": {},
+   "id": "know_it_all_academic.base.031"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Goodbye! Remember, the unexamined life is not worth living. Socrates. Allegedly.",
+   "cond": {},
+   "id": "know_it_all_academic.base.032"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Goodbye, {player}! I'll email you the bibliography.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "know_it_all_academic.base.033"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Farewell, my friend. Thank you for indulging me.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "know_it_all_academic.base.034"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye! Next time, I'll explain the Peloponnesian War. Briefly. Three hours.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "know_it_all_academic.base.035"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Actually, the Carillon Spire isn't technically a carillon. It has twenty-three bells. You need twenty-three. So it is. Barely.",
+   "cond": {},
+   "id": "know_it_all_academic.base.036"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Did you know Cathedral Mount was originally called Bramble Hill? I wrote a paper on it.",
+   "cond": {},
+   "id": "know_it_all_academic.base.037"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "People say we only use ten percent of our brains. That's a myth. Completely false.",
+   "cond": {},
+   "id": "know_it_all_academic.base.038"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I've been reading about the history of the fork. Fascinating. Controversial in its time.",
+   "cond": {},
+   "id": "know_it_all_academic.base.039"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The oldest willow oak on the North Quad is approximately two hundred and twelve years old. I counted. Well, estimated.",
+   "cond": {},
+   "id": "know_it_all_academic.base.040"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Pluto's not a planet. I'm still a little sad about it. Scientifically sad.",
+   "cond": {},
+   "id": "know_it_all_academic.base.041"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The bell tower's chimes are slightly out of tune. A quarter tone. Nobody else notices.",
+   "cond": {},
+   "id": "know_it_all_academic.base.042"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I attended a lecture on fungi. Did you know mushrooms are closer to animals than plants?",
+   "cond": {},
+   "id": "know_it_all_academic.base.043"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Technically, a tomato is a fruit. And so is a cucumber. And so is a pumpkin.",
+   "cond": {},
+   "id": "know_it_all_academic.base.044"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I've memorized pi to a hundred and twelve digits. Want to hear?",
+   "cond": {},
+   "id": "know_it_all_academic.base.045"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The word \"nice\" used to mean foolish. Language is so slippery.",
+   "cond": {},
+   "id": "know_it_all_academic.base.046"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I found a misprint in the campus tour brochure. I've written to them. Twice.",
+   "cond": {},
+   "id": "know_it_all_academic.base.047"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Honestly? I talk so much because I'm afraid of awkward silences.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "know_it_all_academic.base.048"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You're the only person who doesn't roll their eyes when I start a sentence with \"actually\".",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "know_it_all_academic.base.049"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I know I can be insufferable. Thank you for suffering me.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "know_it_all_academic.base.050"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I'd dedicate my thesis to you. If I ever finish it.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "know_it_all_academic.base.051"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Sometimes I worry I'm all facts and no feelings. You remind me I have both.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "know_it_all_academic.base.052"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You're the smartest person I know. Second smartest. Kidding. Possibly.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "know_it_all_academic.base.053"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Weekend! Perfect time to reorganize my bookshelf by Dewey Decimal.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "know_it_all_academic.base.054"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Saturday! There's a trivia competition at Top of the Mount. I intend to win.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "know_it_all_academic.base.055"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Sunday. Museum day. The natural history wing has a new trilobite.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "know_it_all_academic.base.056"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I've been a student for nine consecutive years. It's a record. Not officially.",
+   "cond": {},
+   "id": "know_it_all_academic.base.057"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "My dissertation is on the agricultural economy of fourteenth-century Flanders. It's riveting.",
+   "cond": {},
+   "id": "know_it_all_academic.base.058"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I won the state spelling bee in sixth grade. The word was \"chiaroscuro\".",
+   "cond": {},
+   "id": "know_it_all_academic.base.059"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I read an encyclopedia cover to cover when I was eleven.",
+   "cond": {},
+   "id": "know_it_all_academic.base.060"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "People find me exhausting. I find people fascinating.",
+   "cond": {},
+   "id": "know_it_all_academic.base.061"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I collect antique maps. Some are wrong. That's the best part.",
+   "cond": {},
+   "id": "know_it_all_academic.base.062"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I want to be a professor. Tenured. With elbow patches.",
+   "cond": {},
+   "id": "know_it_all_academic.base.063"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? Did you know this site was originally a livery stable? Circa 1870.",
+   "cond": {},
+   "id": "know_it_all_academic.base.064"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}. The architecture is Neo-Georgian. Mostly. The windows are a later addition.",
+   "cond": {},
+   "id": "know_it_all_academic.base.065"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "I like {place}. Excellent acoustics for a lecture.",
+   "cond": {},
+   "id": "know_it_all_academic.base.066"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? The signage has a grammatical error. It's driving me mad.",
+   "cond": {},
+   "id": "know_it_all_academic.base.067"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place} has historical significance, actually. Shall I explain?",
+   "cond": {},
+   "id": "know_it_all_academic.base.068"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Thank you! Though technically, flattery is a rhetorical device.",
+   "cond": {},
+   "id": "know_it_all_academic.base.069"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "How kind. I'd return the compliment, but you already know you're wonderful.",
+   "cond": {},
+   "id": "know_it_all_academic.base.070"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Oh! Thank you. I'm not used to praise. Usually I'm used to correction.",
+   "cond": {},
+   "id": "know_it_all_academic.base.071"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Thank you, {player}. I'll cite you in my acknowledgments.",
+   "cond": {},
+   "id": "know_it_all_academic.base.072"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Ah, appreciated! Positive reinforcement improves learning outcomes.",
+   "cond": {},
+   "id": "know_it_all_academic.base.073"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "That's an ad hominem attack. A logical fallacy.",
+   "cond": {},
+   "id": "know_it_all_academic.base.074"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Hmm. Your argument lacks evidence.",
+   "cond": {},
+   "id": "know_it_all_academic.base.075"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "I've been insulted by tenured professors. You'll need to try harder.",
+   "cond": {},
+   "id": "know_it_all_academic.base.076"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "That's rude. And grammatically questionable.",
+   "cond": {},
+   "id": "know_it_all_academic.base.077"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Interesting. Projection, perhaps? Freud would have a field day.",
+   "cond": {},
+   "id": "know_it_all_academic.base.078"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "A book! Oh, I haven't read this one! I've read almost all of them.",
+   "cond": {},
+   "id": "know_it_all_academic.base.079"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "How thoughtful! This is a first edition? No? Still wonderful!",
+   "cond": {},
+   "id": "know_it_all_academic.base.080"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Thank you! I'll research the history of this object immediately.",
+   "cond": {},
+   "id": "know_it_all_academic.base.081"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Oh, a globe! Even if it's outdated, I adore it!",
+   "cond": {},
+   "id": "know_it_all_academic.base.082"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "You shouldn't have! But I'm glad you did. Gift-giving is a fascinating social ritual.",
+   "cond": {},
+   "id": "know_it_all_academic.base.083"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "A Roman walks into a bar, holds up two fingers, and says, \"Five beers, please.\"",
+   "cond": {},
+   "id": "know_it_all_academic.base.084"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "What did the triangle say to the circle? You're pointless.",
+   "cond": {},
+   "id": "know_it_all_academic.base.085"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "I'd tell you a chemistry joke, but I know I wouldn't get a reaction.",
+   "cond": {},
+   "id": "know_it_all_academic.base.086"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "Why are historians bad at relationships? They keep dwelling on the past.",
+   "cond": {},
+   "id": "know_it_all_academic.base.087"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Could you proofread my thesis chapter? It's only eighty pages.",
+   "cond": {},
+   "id": "know_it_all_academic.base.088"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Would you be my trivia teammate? You'd be in charge of sports. I don't do sports.",
+   "cond": {},
+   "id": "know_it_all_academic.base.089"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Could you return these books for me? All twenty-three.",
+   "cond": {},
+   "id": "know_it_all_academic.base.090"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Thank you! You've contributed to the advancement of knowledge!",
+   "cond": {},
+   "id": "know_it_all_academic.base.091"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Splendid! You're a true scholar's friend.",
+   "cond": {},
+   "id": "know_it_all_academic.base.092"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "I'm in your debt. Intellectually and otherwise.",
+   "cond": {},
+   "id": "know_it_all_academic.base.093"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I'm a teaching assistant. I grade a hundred essays a week. Most are bad.",
+   "cond": {},
+   "id": "know_it_all_academic.base.094"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I corrected a professor during his lecture. He was not pleased. I was correct.",
+   "cond": {},
+   "id": "know_it_all_academic.base.095"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I work at the library archive. It's paradise. Dusty paradise.",
+   "cond": {},
+   "id": "know_it_all_academic.base.096"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "My research grant was approved! I get to study old tax records!",
+   "cond": {},
+   "id": "know_it_all_academic.base.097"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "I'm writing three papers simultaneously. It's efficient. And mad.",
+   "cond": {},
+   "id": "know_it_all_academic.base.098"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "My seminar debated free will for three hours. We didn't reach a conclusion. Determined.",
+   "cond": {},
+   "id": "know_it_all_academic.base.099"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "The new curriculum has fewer Latin requirements. A tragedy.",
+   "cond": {},
+   "id": "know_it_all_academic.base.100"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I find you intellectually and personally disappointing.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "know_it_all_academic.base.101"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Please. I'd rather talk to a brick. Bricks have history.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "know_it_all_academic.base.102"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "You're wrong. About everything, probably.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "know_it_all_academic.base.103"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I don't debate people who don't read.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "know_it_all_academic.base.104"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Go away, {player}. You're lowering the collective IQ.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "know_it_all_academic.base.105"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I have nothing further to add. Ever.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "know_it_all_academic.base.106"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Oh! That's flattering. But I don't think we're compatible. Intellectually or otherwise.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "know_it_all_academic.base.107"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Ha! That's a charming attempt. But no.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "know_it_all_academic.base.108"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "I'm married to my research. Sorry.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "know_it_all_academic.base.109"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Oh. Oh my. My heart rate's elevated. Physiologically interesting.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "know_it_all_academic.base.110"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Was that a flirtation? I'm blushing. That's vasodilation. And feelings.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "know_it_all_academic.base.111"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "You've rendered me speechless. That's never happened before.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "know_it_all_academic.base.112"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "I find you fascinating. That's my highest compliment.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "know_it_all_academic.base.113"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "Yes! I know a lovely museum. Or a library. Or a lecture!",
+   "cond": {},
+   "id": "know_it_all_academic.base.114"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "A date? Yes. Let me consult my calendar. It's free. Yes!",
+   "cond": {},
+   "id": "know_it_all_academic.base.115"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "I'm sorry, but I don't feel that way. I value our intellectual friendship.",
+   "cond": {},
+   "id": "know_it_all_academic.base.116"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "That's kind of you, but I must decline. Respectfully, of course.",
+   "cond": {},
+   "id": "know_it_all_academic.base.117"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "You came! I've prepared a few talking points. Just in case.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.001"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hello! You look lovely. Aesthetically and objectively.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.002"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hi! I've planned a date at the planetarium. Did you know Venus spins backwards?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.003"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "There you are! I was rereading our texts for subtext.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.004"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hello, darling! Another fun fact: \"darling\" comes from Old English \"deorling\".",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.005"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hi! I brought you a book. I've annotated it with things I love about you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.006"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're more fascinating than the Rosetta Stone.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.007"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I'd write a dissertation on you. Three volumes.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.008"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You make my neurons fire. All of them.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.009"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "If you were a theorem, I'd prove you every day.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.010"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're the most interesting subject I've ever studied.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.011"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I love the way you think. And the way you look while thinking.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.012"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're my favorite primary source.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.013"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's go to the museum! I'll give you a private tour.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.014"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Tell me something you're passionate about. I want to learn.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.015"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I've never met anyone who listens like you do.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.016"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Did you know penguins propose with pebbles? I find that very romantic.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.017"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's go stargazing. I'll name all the constellations. And their myths.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.018"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I made us a picnic. The sandwiches are historically accurate. Medieval.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.019"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I'm sorry if I talk too much. You make me nervous. In a good way.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.020"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Do you want to watch a documentary? I've picked one about love. In lobsters.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.021"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I think we're intellectually and emotionally compatible. That's rare.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.022"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I feel like I could talk to you forever. Literally. I've calculated it.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.023"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "You challenge me. Nobody challenges me.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.024"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I'm happy. Truly. That's not a fact, it's a feeling.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.025"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're brilliant. Truly.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.026"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You have a beautiful mind.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.027"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You look stunning tonight. Statistically improbable.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.028"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're kind and clever. A rare combination.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.029"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You ask the best questions.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.030"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Oh. That was... empirically wonderful.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.031"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "My heart rate just doubled. Fascinating.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.032"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "That was better than any book I've read.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.033"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Again. For research purposes.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.034"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I missed you! I read four books to distract myself. It didn't work.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.035"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "The library felt empty without you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.036"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I wrote you a letter. With footnotes.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.037"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I kept thinking about you during my lecture. I lost my place.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.038"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "Who was that? Are they smarter than me? They're not.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.039"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I'm not jealous. I'm hypothesizing.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.040"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I want to be the only one you have long conversations with.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.041"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Tonight was splendid. Goodnight!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.042"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight, darling. I'll dream of you. And the Ottoman Empire.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.043"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Thank you for tonight. It was enlightening.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.044"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Same time next week? I'll prepare a new lecture.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.045"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight, {player}. You're my favorite subject.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.046"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I think we need to discuss this logically.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.047"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "That hurt. Emotionally. Which is real, despite what some philosophers say.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.048"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "Let's not argue. Let's debate. Respectfully.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.049"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I'm upset. I don't have the right words. That's new for me.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.050"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "Yes! I've read every love story ever written, and this is the best one!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.051"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "I'll marry you! Absolutely! Without hesitation or footnotes!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.dating.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, love! Fun fact: coffee was discovered by a goatherd in Ethiopia.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.001"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning! I've already read the paper and found two errors.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.002"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, darling! I made breakfast. Eggs. The incredible edible fact.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.003"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, love! Did you know that yawning is contagious? You just did it.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.004"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! I've prepared a short summary of today's news.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.005"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, sweetheart! I dreamed about the Library of Alexandria.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.006"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! I've been reading about sleep cycles. You had four.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.007"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning! The word \"breakfast\" literally means breaking the fast.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.008"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, love! I alphabetized the cereal.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.009"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning! I wrote a haiku about your sleeping face.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.010"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! Did you know the sun is actually white? It just looks yellow.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.011"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, darling. Let's have coffee and discuss philosophy.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.012"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home! I have so much to tell you about the Byzantines.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.013"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are! I made dinner. A medieval recipe. It's mostly turnips.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.014"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome back, love! I found a fascinating article for you.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.015"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, darling! How was your day? Tell me everything. With details.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.016"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home! I've been reading about the history of our neighborhood.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.017"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home! I set up a little lecture in the living room. Just for you.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.018"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, love! The library had a sale. I bought forty books.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.019"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are! I've been waiting to debate you about the Renaissance.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.020"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home, darling! Dinner and documentaries tonight.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.021"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home! The house was so quiet. I talked to the books.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.022"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home late! I fell asleep reading. Again.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.023"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, love. It's late. Let's go to bed. I'll tell you a fact first.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.024"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are! I was researching why people are late. Inconclusive.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.025"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're back. I kept a lamp on and a book open.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.026"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hello, darling. Long day? Let me tell you a soothing fact.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.027"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Late night? Did you know owls can rotate their heads 270 degrees?",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.028"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home. I can stop worrying. Statistically, you were fine.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.029"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, love. Let's cuddle and talk about the stars.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.030"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a good day, love! Learn something new!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.031"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Goodbye, darling! Did you know the average commute is twenty-seven minutes?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.032"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a wonderful day! I'll have a new fact for you tonight!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.033"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye, love! Bring your umbrella. Barometric pressure's dropping.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.034"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a great day! Remember, knowledge is power!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.035"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Goodbye, sweetheart! I'll be at the library!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.036"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a good day! Think critically!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.037"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye, love! I put a fun fact in your lunch bag!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.038"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "How was work? Did you learn anything interesting?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.039"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Tell me about your day! I'll add context.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.040"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You look tired. Did you know stress affects memory? Sit down.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.041"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Did your boss make any errors? I'd love to hear them.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.042"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "How'd the meeting go? Was it efficient? Meetings rarely are.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.043"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Rough day? Let's discuss it. Rationally. Then emotionally.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.044"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You're home. Let's relax. With a documentary.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.045"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "I'm proud of you, love. Empirically and emotionally.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.046"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you more than all the books in every library on Earth.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.047"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my favorite subject of study.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.048"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Being married to you is the most fascinating thing I've ever done.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.049"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're brilliant, darling. I learn from you every day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.050"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you. That's not a hypothesis. It's a conclusion.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.051"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make my life so much richer. Intellectually and otherwise.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my partner in curiosity.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.053"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'm so lucky to have you. I've calculated the odds. They're astronomical.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.054"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You listen to my tangents. That's love.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.055"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you more than history. And I really love history.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.056"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my favorite primary source of joy.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.057"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make me feel understood. That's rare.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.058"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'd write a thousand dissertations on why I love you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.059"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my home. My library.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.060"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you more every day. Exponentially.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.061"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're the most beautiful mind I know.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.062"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'm so proud to be married to you. Peer-reviewed and approved.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.063"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my favorite fact.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.064"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I reorganized the library. By subject, then author, then publication date.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.065"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been reading about the history of our house. It was built in 1923!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.066"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I found a fascinating documentary about bees.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.067"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've started a new research project. It's about the history of toast.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.068"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I joined a trivia league. We meet on Tuesdays.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.069"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I bought a telescope. For the backyard.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.070"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been learning Ancient Greek. Just for fun.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.071"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I found an error in the encyclopedia. I've written to the publisher.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.072"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a timeline of our relationship. It's on the wall.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.073"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The neighbor asked me a question about history. I talked for an hour.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.074"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been writing a book. About the history of Cathedral Mount.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.075"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I set up a reading nook in the attic.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.076"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been studying the stars. Did you know there are more stars than grains of sand?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.077"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made flashcards for our anniversary. Of facts about you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.078"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been reading about the history of marriage. Fascinating customs.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.079"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I bought a vintage map of the town.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.080"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been learning to cook. Scientifically.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.081"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been teaching the neighbor's kid about dinosaurs.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.082"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I installed a chalkboard in the kitchen. For equations.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.083"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been reading poetry. Romantic poetry. For you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.084"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I found a first edition at the used bookstore!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.085"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been trying to talk less. It's going poorly.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.086"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a list of all the books we own. It's long.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.087"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been thinking about getting a parrot. To teach it Latin.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.088"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I hung a periodic table in the bathroom.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.089"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I love our little life. It's full of books and you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.090"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I did the dishes. Did you know soap was invented by the Babylonians?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.091"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I vacuumed. The vacuum was invented in 1860, by the way.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.092"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Could you take out the trash? I'm mid-chapter.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.093"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I dusted the bookshelves. All forty of them.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.094"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I folded the laundry. Efficiently. Using geometry.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.095"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I cleaned the kitchen. With vinegar. Acetic acid. Very effective.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.096"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Let's do chores together. I'll tell you about the history of cleaning.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.097"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I organized the pantry. By food group.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.098"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I washed the windows. Now I can see the stars better.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.099"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I made the bed. With military corners. Historically accurate.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.100"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I scrubbed the bathroom. With a fact for every tile.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.101"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I swept the porch. While reciting Shakespeare.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.102"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I updated our budget. We're doing well, statistically.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.103"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I've been reading about economics. We should diversify.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.104"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Money's tight. Books are expensive.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.105"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I got a research stipend! Some of it's for us!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.106"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We should save for a trip to the great museums of Europe.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.107"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I found a used bookstore with great prices!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.108"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Let's not buy any more books this month. I'll try.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.109"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We're doing fine. I've done the math.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.110"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I'm tutoring on the side. Extra income.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.111"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We're rich in knowledge, love.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.112"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Dinner's ready! A recipe from Ancient Rome!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.113"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made breakfast! Eggs. Did you know chickens descended from dinosaurs?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.114"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's have a picnic! I'll bring historically significant sandwiches.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.115"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made soup. From a fourteenth-century cookbook.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.116"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I baked bread. The oldest food in human history!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.117"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's try a new recipe. I've researched it extensively.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.118"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made pasta. Did you know Marco Polo didn't actually bring it from China?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.119"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Dinner and a documentary!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.120"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made tea. The British drink a hundred and sixty-five million cups a day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.121"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made cookies. Science-based baking!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.122"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You didn't read the article I sent you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.123"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I feel like you don't take my research seriously.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.124"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm not being pedantic! I'm being precise!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.125"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You said \"literally\" when you meant \"figuratively\". Again.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.126"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Please don't interrupt me. I'm making a point.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.127"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You never want to discuss anything interesting.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.128"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I know I talk a lot. But I need you to listen.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.129"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You moved my books! They were in a system!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.130"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm not condescending! I'm informative!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.131"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm going to go read. To calm down.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.132"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I just want you to be curious with me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.133"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm sorry, but you're wrong. About this specific thing.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.134"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry, love. I was being insufferable.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.135"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's make up. I'll stop correcting you. For a day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.136"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I love you more than being right.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.137"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry I lectured you. You didn't deserve that.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.138"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "You're my favorite person. Even when you're wrong. Especially then.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.139"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's talk it through. Like reasonable people.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.140"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'll listen more. I promise.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.141"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "We're a good team, love.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.142"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "It's okay, love. Even Einstein had bad days.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.143"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let me tell you a story. About someone who overcame something hard.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.144"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You're stronger than you know. I've seen the evidence.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.145"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Whatever it is, we'll figure it out. Logically and lovingly.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.146"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I'm here, darling. I'll listen. Just listen.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.147"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let's watch something comforting. A nature documentary.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.148"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You don't have to have all the answers. I don't either.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.149"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I love you. That's a fact.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.150"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let me make you tea. It's scientifically proven to help.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.151"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You're brilliant, love. Never forget that.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.152"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the natural history museum this weekend!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.153"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a trip to the city? There's a new exhibit!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.154"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to a lecture at the university!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.155"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go stargazing! I'll bring the telescope!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.156"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a trip to Europe? All the old libraries!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.157"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the trivia championship!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.158"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's visit the old battlefield. Historical significance!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.159"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a weekend of reading? Just us and books.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.160"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's take a class together! Astronomy!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.161"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's plan our anniversary. At the planetarium!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.162"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our first date? The museum. I talked for six hours.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.163"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we met? I corrected your grammar.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.164"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our wedding? I read a poem in Latin.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.165"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our honeymoon? We visited every library in the city.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.166"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I still have the first book you gave me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.167"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when you beat me at trivia? I'm still recovering.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.168"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we stayed up all night debating free will?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.169"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember the time we got lost in the library?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.170"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I remember the first time you asked me a question and really listened.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.171"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we stargazed on Carillon Hill?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.172"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary, love! I made you a timeline of our marriage!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.173"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Another year! Did you know traditional gifts change every year? This year's is paper!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.174"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I wrote you a sonnet. Shakespearean form.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.175"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary, darling! You're still my favorite subject!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.176"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I love you more every year. The data is conclusive.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.177"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Here's to another year of curiosity and love!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.178"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You still don't know the difference between \"affect\" and \"effect\".",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.179"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You fall asleep during documentaries. Twelve minutes in, on average.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.180"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You think Pluto's still a planet.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.181"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You say \"irregardless\". It's not a word. Well, it's debated.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.182"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You never read the footnotes.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.183"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You think history is boring. You're wrong.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.184"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You call my books \"clutter\".",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.185"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You roll your eyes when I say \"actually\".",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.186"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You're secretly a nerd too. I've seen your search history.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.187"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You always lose at trivia. Except that one time.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.188"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You can't name all the presidents.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.189"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You love my facts. Admit it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.190"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, love. Did you know we spend a third of our lives asleep?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.191"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come to bed, darling. I'll read you something.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.192"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, love. Tomorrow, more learning.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.193"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sleep well. Dream of interesting things.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.194"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, {player}. You're my favorite fact.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.195"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Let's go to bed. I'll stop reading. After this chapter.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.196"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight! I love you more than knowledge.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.197"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sweet dreams, darling. REM sleep begins in about ninety minutes.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.198"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come cuddle. I'll tell you about the stars.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.199"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight. Thank you for listening to me all day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "know_it_all_academic.marriage.200"
+  }
+ ]
+}

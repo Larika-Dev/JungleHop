@@ -1,0 +1,4076 @@
+{
+ "id": "polite_traditionalist",
+ "lines": [
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Well, hello there. I'm {npc}. Pleased to make your acquaintance.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "polite_traditionalist.base.001"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good day to you. {npc}. My mama raised me to introduce myself proper.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "polite_traditionalist.base.002"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "How do you do? I'm {npc}. Welcome to town, if you're new.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "polite_traditionalist.base.003"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey there, sugar. I'm {npc}. Mind the step, it's uneven.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "polite_traditionalist.base.004"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Afternoon, sir or ma'am. {npc}, at your service.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "polite_traditionalist.base.005"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello, neighbor. I'm {npc}. Can I get you some sweet tea?",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "polite_traditionalist.base.006"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Why, {player}! How's your mama doing?",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "polite_traditionalist.base.007"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Well, look who it is. {player}, you're looking well.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "polite_traditionalist.base.008"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}, good to see you again. Bless your heart for stopping by.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "polite_traditionalist.base.009"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey there, {player}. Did you get my casserole dish back to me? No rush.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "polite_traditionalist.base.010"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! I was just telling the ladies at church about you.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "polite_traditionalist.base.011"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}, darlin'! Come here and give me a hug.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "polite_traditionalist.base.012"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "There's my favorite. Sit down, I'll pour you a glass.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "polite_traditionalist.base.013"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! I saved you a slice of pecan pie.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "polite_traditionalist.base.014"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Well, if it isn't {player}. You're family now, you know that.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "polite_traditionalist.base.015"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}, honey, you're a sight for sore eyes.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "polite_traditionalist.base.016"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Come on in, {player}. Shoes off, the floors are fresh.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "polite_traditionalist.base.017"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good morning! Lord, it's a beautiful day He's made.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "polite_traditionalist.base.018"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Mornin'. Biscuits are in the oven if you're hungry.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "polite_traditionalist.base.019"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good morning, sugar. Did you sleep well?",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "polite_traditionalist.base.020"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good evening. The porch light's on, come sit a spell.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "polite_traditionalist.base.021"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Evenin'. The crickets are singing tonight.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "polite_traditionalist.base.022"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good evening. Supper's at six sharp in my house.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "polite_traditionalist.base.023"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Goodness, it's late. Is everything all right?",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "polite_traditionalist.base.024"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Evening, though it's mighty late. You ought to be home.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "polite_traditionalist.base.025"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Up past your bedtime? Mine too, I'm afraid.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "polite_traditionalist.base.026"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "You take care now.",
+   "cond": {},
+   "id": "polite_traditionalist.base.027"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye now. Drive safe.",
+   "cond": {},
+   "id": "polite_traditionalist.base.028"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "God bless, and come back soon.",
+   "cond": {},
+   "id": "polite_traditionalist.base.029"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "It was a pleasure, truly.",
+   "cond": {},
+   "id": "polite_traditionalist.base.030"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Tell your folks I said hello.",
+   "cond": {},
+   "id": "polite_traditionalist.base.031"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Y'all come back now.",
+   "cond": {},
+   "id": "polite_traditionalist.base.032"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye, sugar. Call me when you get home.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "polite_traditionalist.base.033"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Don't be a stranger, darlin'. My door's always open.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "polite_traditionalist.base.034"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Love you like my own. Go on, now.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "polite_traditionalist.base.035"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The church picnic is Sunday. I'm bringing deviled eggs.",
+   "cond": {},
+   "id": "polite_traditionalist.base.036"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "That heat's something today. Good day for sweet tea.",
+   "cond": {},
+   "id": "polite_traditionalist.base.037"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "My tomatoes are coming in real nice this year.",
+   "cond": {},
+   "id": "polite_traditionalist.base.038"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Did you hear the Hendersons had their baby? Seven pounds.",
+   "cond": {},
+   "id": "polite_traditionalist.base.039"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Folks don't write thank-you notes anymore. It's a shame.",
+   "cond": {},
+   "id": "polite_traditionalist.base.040"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The Pitch Soles have a home game Saturday. We'll be tailgating.",
+   "cond": {},
+   "id": "polite_traditionalist.base.041"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I've been canning peaches all week. My kitchen's a sticky mess.",
+   "cond": {},
+   "id": "polite_traditionalist.base.042"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "My granddaddy built the pews in First Chapel. Every one.",
+   "cond": {},
+   "id": "polite_traditionalist.base.043"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Manners don't cost a thing, that's what I always say.",
+   "cond": {},
+   "id": "polite_traditionalist.base.044"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I made a pound cake for the new neighbors.",
+   "cond": {},
+   "id": "polite_traditionalist.base.045"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The choir is practicing a new hymn. It's a beauty.",
+   "cond": {},
+   "id": "polite_traditionalist.base.046"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Rain's coming. My knee told me this morning.",
+   "cond": {},
+   "id": "polite_traditionalist.base.047"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You're the kind of person my mama would've liked.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "polite_traditionalist.base.048"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I pray for you, you know. Every night.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "polite_traditionalist.base.049"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I don't say it enough, but I'm grateful for you.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "polite_traditionalist.base.050"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You can tell me anything, honey. It stays on this porch.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "polite_traditionalist.base.051"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Times change, but good people don't. You're good people.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "polite_traditionalist.base.052"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I worry about you young folks. Come by more often.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "polite_traditionalist.base.053"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Saturday. Football and fried chicken, as the Lord intended.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "polite_traditionalist.base.054"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Sunday. Church at ten, then dinner on the grounds.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "polite_traditionalist.base.055"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "It's the weekend. I'm putting up the porch swing.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "polite_traditionalist.base.056"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I was born and raised right here in Cathedral Mount.",
+   "cond": {},
+   "id": "polite_traditionalist.base.057"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I teach Sunday school. Have for twenty years.",
+   "cond": {},
+   "id": "polite_traditionalist.base.058"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I like baking, football, and family. In that order on Saturdays.",
+   "cond": {},
+   "id": "polite_traditionalist.base.059"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "My mama taught me to say ma'am and sir, and I never stopped.",
+   "cond": {},
+   "id": "polite_traditionalist.base.060"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I've lived in the same house my whole life.",
+   "cond": {},
+   "id": "polite_traditionalist.base.061"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I believe in hard work, good manners, and the Good Book.",
+   "cond": {},
+   "id": "polite_traditionalist.base.062"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I'd like to see the family all together for the holidays again.",
+   "cond": {},
+   "id": "polite_traditionalist.base.063"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? Lovely. Real nice folks there.",
+   "cond": {},
+   "id": "polite_traditionalist.base.064"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place} isn't what it used to be. But what is?",
+   "cond": {},
+   "id": "polite_traditionalist.base.065"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "I like {place}. Reminds me of my grandmama's kitchen.",
+   "cond": {},
+   "id": "polite_traditionalist.base.066"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? I'd wear my Sunday best there.",
+   "cond": {},
+   "id": "polite_traditionalist.base.067"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place} could use some flowers out front, if you ask me.",
+   "cond": {},
+   "id": "polite_traditionalist.base.068"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Well, aren't you sweet. Thank you kindly.",
+   "cond": {},
+   "id": "polite_traditionalist.base.069"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Oh, hush. You're making me blush.",
+   "cond": {},
+   "id": "polite_traditionalist.base.070"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Bless you for saying so.",
+   "cond": {},
+   "id": "polite_traditionalist.base.071"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Thank you, sugar. That means a great deal.",
+   "cond": {},
+   "id": "polite_traditionalist.base.072"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Why, that's the nicest thing anyone's said all week.",
+   "cond": {},
+   "id": "polite_traditionalist.base.073"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Well. I'll pray for you.",
+   "cond": {},
+   "id": "polite_traditionalist.base.074"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "There's no call for that kind of talk.",
+   "cond": {},
+   "id": "polite_traditionalist.base.075"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "My mama would've washed your mouth out with soap.",
+   "cond": {},
+   "id": "polite_traditionalist.base.076"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Bless your heart. Truly. Bless you.",
+   "cond": {},
+   "id": "polite_traditionalist.base.077"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "I think you ought to apologize.",
+   "cond": {},
+   "id": "polite_traditionalist.base.078"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Oh my goodness, you shouldn't have!",
+   "cond": {},
+   "id": "polite_traditionalist.base.079"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Well, I'll be. Thank you, darlin'. I'll write you a proper note.",
+   "cond": {},
+   "id": "polite_traditionalist.base.080"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "This is just lovely. I'll put it on the mantel.",
+   "cond": {},
+   "id": "polite_traditionalist.base.081"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "You remembered! You're too kind.",
+   "cond": {},
+   "id": "polite_traditionalist.base.082"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Thank you, {player}. I'll bake you something in return.",
+   "cond": {},
+   "id": "polite_traditionalist.base.083"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "Why don't Baptists make love standing up? Somebody might think they're dancing.",
+   "cond": {},
+   "id": "polite_traditionalist.base.084"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "What did the biscuit say to the gravy? I'm smothered.",
+   "cond": {},
+   "id": "polite_traditionalist.base.085"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "My husband says I talk too much. I told him to let me finish.",
+   "cond": {},
+   "id": "polite_traditionalist.base.086"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "Sweet tea's so sweet here, the dentist sends us Christmas cards.",
+   "cond": {},
+   "id": "polite_traditionalist.base.087"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Could you help me carry these pies to the car, sugar?",
+   "cond": {},
+   "id": "polite_traditionalist.base.088"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Would you mind reaching that top shelf? My back isn't what it was.",
+   "cond": {},
+   "id": "polite_traditionalist.base.089"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Could you drop this casserole off at the Millers'? They just lost their daddy.",
+   "cond": {},
+   "id": "polite_traditionalist.base.090"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Thank you, darlin'. You're an angel.",
+   "cond": {},
+   "id": "polite_traditionalist.base.091"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Bless you. I owe you a pie.",
+   "cond": {},
+   "id": "polite_traditionalist.base.092"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "That's mighty kind. Your mama raised you right.",
+   "cond": {},
+   "id": "polite_traditionalist.base.093"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I volunteer at the church office three days a week.",
+   "cond": {},
+   "id": "polite_traditionalist.base.094"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I run the bake sale. It's a job, believe me.",
+   "cond": {},
+   "id": "polite_traditionalist.base.095"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "Hard work never hurt anybody.",
+   "cond": {},
+   "id": "polite_traditionalist.base.096"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I used to keep books for the hardware store. Forty years.",
+   "cond": {},
+   "id": "polite_traditionalist.base.097"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "Education is a blessing. Don't waste it.",
+   "cond": {},
+   "id": "polite_traditionalist.base.098"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "I didn't go to college, but I read every night.",
+   "cond": {},
+   "id": "polite_traditionalist.base.099"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "You study hard, now. Make your folks proud.",
+   "cond": {},
+   "id": "polite_traditionalist.base.100"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I'd rather not talk to you right now.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "polite_traditionalist.base.101"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I'm trying to be Christian about this, but you're making it hard.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "polite_traditionalist.base.102"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Good day to you. I said good day.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "polite_traditionalist.base.103"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I don't keep company with folks who act like that.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "polite_traditionalist.base.104"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "You'll excuse me. I have somewhere to be.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "polite_traditionalist.base.105"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I forgive you. I don't have to like you.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "polite_traditionalist.base.106"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Oh, my. That's very forward of you.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "polite_traditionalist.base.107"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "I'm flattered, but I don't think so, sugar.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "polite_traditionalist.base.108"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Let's keep things friendly, shall we?",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "polite_traditionalist.base.109"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Well, aren't you a charmer. Keep going.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "polite_traditionalist.base.110"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Oh, stop it. No, don't stop.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "polite_traditionalist.base.111"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "My stars. You're making me fan myself.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "polite_traditionalist.base.112"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "If you're courting me, you'd better do it proper.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "polite_traditionalist.base.113"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "Why, I'd be delighted. Pick me up at seven, and meet my daddy.",
+   "cond": {},
+   "id": "polite_traditionalist.base.114"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "Yes. I'd love to. I'll wear my good dress.",
+   "cond": {},
+   "id": "polite_traditionalist.base.115"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "That's sweet of you to ask, but no thank you.",
+   "cond": {},
+   "id": "polite_traditionalist.base.116"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "I'm afraid I have to decline. But I'm flattered.",
+   "cond": {},
+   "id": "polite_traditionalist.base.117"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Well, don't you clean up nice. Shall we?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.001"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "You're right on time. I like that in a person.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.002"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "I brought you a peach cobbler. Still warm.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.003"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hello, sugar. You held the door. Mama would approve.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.004"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "You look so handsome. Or pretty. Both, really.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.005"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hey, darlin'. I've been looking forward to this all week.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.006"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're sweeter than my mama's tea.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.007"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I'd bake you a pie every day if you'd let me.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.008"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You make my heart flutter like a hummingbird.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.009"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "My, my. You are a fine sight.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.010"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I might just keep you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.011"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "Hold my hand. People should see us.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.012"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're the answer to a prayer I didn't know I said.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.013"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's go to the Sunday social together. Everyone will talk.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.014"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Tell me about your family. All of them.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.015"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I'd love to take you to meet Grandmama.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.016"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Do you want to go walking downtown? Like the old days.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.017"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I packed us a picnic. Fried chicken and potato salad.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.018"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I want to do this right. No rushing.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.019"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Do you go to church? I'd love for you to sit with me.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.020"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "You make the evenings feel like summer.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.021"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's sit on the porch swing and watch the fireflies.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.022"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I like that you open doors for me.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.023"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I believe in courting. Slow and sweet.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.024"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "You'd make a fine addition to Thanksgiving dinner.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.025"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You've got the kindest eyes.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.026"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You have such good manners. It's rare.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.027"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're a hard worker. I admire that.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.028"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You've got a good heart. I can tell.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.029"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You make me feel like a lady.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.030"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Oh, my. My knees went weak.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.031"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Well. That was proper and improper all at once.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.032"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "I'll be blushing all night now.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.033"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Do that again before I lose my nerve.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.034"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I missed you something terrible.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.035"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "The porch was lonely without you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.036"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I wrote you a letter. An actual letter.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.037"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I baked when I missed you. I have six pies.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.038"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "Who was she? Or he? I'm only asking.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.039"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I don't share, sugar. Just so you know.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.040"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I'd rather be your one and only.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.041"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight, darlin'. Walk me to my door.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.042"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "I had a lovely time. Truly.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.043"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Call me tomorrow. Not too early.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.044"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight, {player}. Sweet dreams.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.045"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Thank you for a wonderful evening.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.046"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I won't be spoken to like that.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.047"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I'm hurt, and I need some time.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.048"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "Let's not go to bed angry. Bless you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.049"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I think we need to talk this through, like grown folks.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.050"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "Yes! Oh, yes! I have to call my mama!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.051"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "Yes, darlin'. I'll be proud to be your spouse.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.dating.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, sweetheart. Biscuits and gravy are ready.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.001"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Mornin', darlin'. Coffee's on the stove.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.002"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning. I made grits. Real ones, not instant.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.003"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Rise and shine, sugar. The good Lord gave us another day.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.004"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, love. I ironed your shirt.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.005"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning. The paper's on the table.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.006"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Mornin'. I already fed the dog and watered the garden.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.007"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, honey. Bacon's in the skillet.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.008"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning. I made your lunch. It's in the icebox.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.009"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning. Did you sleep all right?",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.010"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, sweetheart. I said a prayer for your day.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.011"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, darlin'. You look nice this morning.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.012"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home, darlin'. Supper's almost ready.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.013"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are. Wash up, we're having pot roast.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.014"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, sugar. How was your day?",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.015"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home. I made sweet tea.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.016"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home! Come sit, put your feet up.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.017"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Evenin', sweetheart. The table's set.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.018"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There's my love. I missed you today.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.019"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home. The pastor called. Nothing urgent.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.020"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home. I kept the cornbread warm.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.021"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey there, honey. Sit with me on the porch.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.022"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home late, darlin'. I left a plate in the oven.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.023"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Lord, I was worried. Come here.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.024"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home. I left the porch light on for you.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.025"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "It's late, sugar. Get some rest.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.026"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home. I waited up.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.027"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You must be plumb tuckered out.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.028"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are. I said a prayer you'd get home safe.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.029"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "It's late, love. Bed's turned down.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.030"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a good day, darlin'. Your lunch is packed.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.031"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye, sugar. Drive careful.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.032"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Go on, now. Make us proud.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.033"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "I love you. Don't forget your thermos.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.034"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "God bless your day, sweetheart.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.035"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye, honey. Supper's at six.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.036"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "See you tonight. Don't work too hard.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.037"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye now. I'll be praying for you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.038"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "How was work, darlin'? Tell me everything.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.039"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You look tired. Sit, I'll fetch your tea.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.040"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Did they treat you right today?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.041"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "How'd the meeting go, sugar?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.042"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Come here, let me rub your shoulders.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.043"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Tell me about your day while I finish supper.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.044"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Did you eat lunch? You never eat lunch.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.045"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "I'm proud of how hard you work, honey.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.046"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you more than sweet tea in July.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.047"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're the best thing that ever happened to me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.048"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I thank the Lord for you every night.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.049"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Marrying you was the smartest thing I ever did.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.050"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my rock, darlin'.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.051"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'd follow you anywhere. Even up North.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make this house a home.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.053"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you, sugar. Always have, always will.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.054"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my sweetheart. Forever.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.055"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'm so proud to be married to you. Bless you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.056"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You still give me butterflies.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.057"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're the finest person I know.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.058"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Hold me a minute, would you?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.059"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love growing old with you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.060"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my blessing.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.061"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'd marry you all over again.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.062"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Every day with you is a gift.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.063"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You are the love of my life, {player}.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.064"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The church is having a potluck. I signed us up.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.065"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I talked to your mama today. She sends her love.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.066"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The azaleas are coming in nicely.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.067"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I put up thirty jars of pickles.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.068"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The Johnsons are getting a new roof.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.069"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Pastor's sermon was about patience. I thought of you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.070"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I'm making a quilt for the new grandbaby.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.071"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Our anniversary's coming up. Don't you forget.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.072"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The neighbors' boy mowed our lawn. I gave him five dollars.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.073"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I'm teaching Sunday school this week.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.074"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The ladies' circle meets Thursday.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.075"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I fixed the screen door. Well, I called someone.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.076"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been thinking about painting the shutters.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.077"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "My sister is visiting next month.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.078"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I'm making my grandmama's recipe tonight.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.079"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The Pitch Soles won! I heard it on the radio.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.080"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been reading my Bible on the porch.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.081"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The peach tree is loaded this year.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.082"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I invited the new neighbors for supper.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.083"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "We ought to fix up the guest room.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.084"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The garden club wants me to be president.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.085"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I wrote thank-you cards for the wedding gifts. Finally.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.086"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Your shirt had a button loose. I fixed it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.087"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The church bake sale raised four hundred dollars.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.088"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I put fresh flowers on the table.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.089"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I love our little house.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.090"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I swept the porch. Would you take out the trash, honey?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.091"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "The laundry's on the line.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.092"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I polished the silver.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.093"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Could you fix the dripping faucet, darlin'?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.094"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I scrubbed the kitchen floor on my hands and knees.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.095"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Would you mow the lawn this weekend?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.096"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I dusted the china cabinet.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.097"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I made the beds and fluffed the pillows.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.098"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Could you clean the gutters, sugar?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.099"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I washed the windows. You can see clear through.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.100"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Let's do the dishes together. It's nice.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.101"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I organized the pantry.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.102"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We ought to put a little away for a rainy day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.103"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I clipped coupons. Saved twelve dollars.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.104"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We don't need fancy things. We have each other.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.105"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I set aside money for the church offering.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.106"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Let's not buy on credit. My daddy never did.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.107"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "The budget's tight, but we'll manage.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.108"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I sold some preserves at the market.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.109"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We should save for the grandkids' college.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.110"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Money can't buy happiness, but it pays the light bill.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.111"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We're doing just fine, darlin'.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.112"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Supper's ready. Fried chicken and collards. Bless you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.113"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made your favorite. Chicken and dumplings.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.114"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Pot roast with carrots and potatoes.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.115"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I baked cornbread in Grandmama's skillet.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.116"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Shrimp and grits tonight.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.117"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made biscuits from scratch.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.118"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Meatloaf and mashed potatoes.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.119"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Peach cobbler for dessert.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.120"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I fried some okra.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.121"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Banana pudding. Your favorite.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.122"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You didn't call. I was worried sick.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.123"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You tracked mud on my clean floor.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.124"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You forgot to thank my mama for the gift.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.125"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I won't have that language in this house.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.126"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You didn't come to church with me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.127"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You promised to fix that weeks ago.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.128"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You were rude to the pastor.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.129"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Don't you roll your eyes at me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.130"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You left me to do it all again.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.131"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm not angry. I'm disappointed.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.132"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You need to apologize to my sister.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.133"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "We don't go to bed angry in this house.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.134"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry, darlin'. I lost my temper.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.135"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Come here. Let's pray on it together.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.136"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I forgive you. Do you forgive me?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.137"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I love you even when I'm cross.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.138"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let me make you a slice of pie.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.139"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "We're a team, you and me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.140"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I shouldn't have said that.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.141"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's start fresh tomorrow.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.142"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Come here, sugar. Tell me what's wrong.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.143"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "The Lord never gives us more than we can handle.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.144"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I'm right here. I'm not going anywhere.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.145"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let me make you some tea. Bless you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.146"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You're stronger than you know. Bless you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.147"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "We'll get through this. Together.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.148"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I'll pray for you, and with you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.149"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Lean on me, darlin'.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.150"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Everything'll look better in the morning.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.151"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I love you. That doesn't change. Bless you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.152"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the beach this summer.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.153"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about we visit my sister?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.154"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the homecoming game.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.155"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "I'd like to take a trip to the mountains in fall.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.156"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's have the family over for Thanksgiving.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.157"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a picnic after church?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.158"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's renew our vows someday.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.159"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the county fair. Bless you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.160"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "I'd love to see the Christmas lights in Carrburg.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.161"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's plant a new garden this spring.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.162"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember the day we met at the church picnic?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.163"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our first dance?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.164"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our wedding? Mama cried the whole time.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.165"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we got caught in the rain?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.166"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our honeymoon at the beach?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.167"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I still have the first letter you wrote me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.168"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our first Christmas in this house?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.169"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when you tried to make biscuits?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.170"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I remember the way you looked at me at the altar.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.171"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when you carried me over the threshold?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.172"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary, darlin'. I love you more every year.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.173"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Another year, and you're still my sweetheart.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.174"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I made our wedding cake recipe again.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.175"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary, sugar. I'd say yes all over again.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.176"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Here's to forever, my love. Bless you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.177"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I put on my good dress. Take me dancing.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.178"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You snore like a freight train, darlin'.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.179"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You never put the toilet seat down.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.180"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You eat pie straight from the pan.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.181"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You can't sing a hymn to save your life.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.182"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You're stubborn as a mule.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.183"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You leave your socks everywhere.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.184"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You fall asleep in church.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.185"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You think you can cook. Bless your heart.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.186"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You're lucky you're cute.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.187"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You spoil the dog rotten.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.188"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You can't keep a secret.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.189"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You love football more than me. On Saturdays.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.190"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, darlin'. Say your prayers.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.191"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come to bed, sugar. It's late.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.192"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, love. I love you. Bless you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.193"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sleep tight. Don't let the bedbugs bite.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.194"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Turn out the light, honey.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.195"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "I said a prayer for us.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.196"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, sweetheart. Sweet dreams.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.197"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come here and hold me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.198"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Lord, thank you for another day with this one.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.199"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, {player}. I love you. Bless you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "polite_traditionalist.marriage.200"
+  }
+ ]
+}
