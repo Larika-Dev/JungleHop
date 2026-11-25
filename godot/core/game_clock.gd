@@ -39,10 +39,19 @@ func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_PAUSABLE
 
 
-func _process(delta: float) -> void:
-	if paused:
+var _last_usec: int = 0
+
+
+func _process(_delta: float) -> void:
+	# Real wall-clock time, so 1 game hour = 1 real minute even when the frame rate is low
+	# (Godot clamps a frame's delta to 8 physics steps). Hitches over 1 s (loading) are not counted.
+	var now := Time.get_ticks_usec()
+	if paused or _last_usec == 0:
+		_last_usec = now
 		return
-	_step(delta * GAME_MINUTES_PER_REAL_SECOND * speed)
+	var real_s: float = minf((now - _last_usec) / 1000000.0, 1.0)
+	_last_usec = now
+	_step(real_s * GAME_MINUTES_PER_REAL_SECOND * speed)
 
 
 ## Skip time forward (sleeping, a work shift, a class). Emits every intervening signal in order.
@@ -97,3 +106,8 @@ func load_data(d: Dictionary) -> void:
 	speed = float(d.get("speed", 1.0))
 	_last_minute = int(total_minutes)
 	time_set.emit(total_minutes)
+
+
+func _notification(what: int) -> void:
+	if what == NOTIFICATION_UNPAUSED:
+		_last_usec = 0

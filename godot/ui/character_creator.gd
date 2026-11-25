@@ -80,9 +80,9 @@ func _ready() -> void:
 		profile["sex"] = ["male", "female"][i]
 		_height_slider.value = 176 if i == 0 else 163
 		_weight_slider.value = 72 if i == 0 else 60)
-	_age_slider = _slider_row(v, "Age", 18, 80, 1, profile["age"], func(x): profile["age"] = int(x), func(x): "%d" % int(x))
-	_height_slider = _slider_row(v, "Height", 150, 200, 1, profile["height_cm"], func(x): profile["height_cm"] = int(x), func(x): _fmt_height(int(x)))
-	_weight_slider = _slider_row(v, "Weight", 40, 150, 1, profile["weight_kg"], func(x): profile["weight_kg"] = float(x), func(x): "%d kg (%d lb)" % [int(x), int(round(x * 2.20462))])
+	_age_slider = _slider_row(v, "Age", 18, 80, 1, profile["age"], func(x): profile["age"] = int(x), func(x): return "%d" % int(x))
+	_height_slider = _slider_row(v, "Height", 150, 200, 1, profile["height_cm"], func(x): profile["height_cm"] = int(x), func(x): return _fmt_height(int(x)))
+	_weight_slider = _slider_row(v, "Weight", 40, 150, 1, profile["weight_kg"], func(x): profile["weight_kg"] = float(x), func(x): return "%d kg (%d lb)" % [int(x), int(round(x * 2.20462))])
 	_choice(v, "Muscularity", MUSCLE_PRESETS.map(func(m): return m[0]), 1, func(i): profile["muscle"] = MUSCLE_PRESETS[i][1])
 	_bmi_label = Label.new()
 	_bmi_label.add_theme_color_override("font_color", UI.BLUE)
