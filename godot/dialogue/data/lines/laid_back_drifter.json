@@ -1,0 +1,4076 @@
+{
+ "id": "laid_back_drifter",
+ "lines": [
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Heyyy. I'm {npc}. No rush, just saying hi.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "laid_back_drifter.base.001"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh, hey. Didn't see you there. I was watching a cloud.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "laid_back_drifter.base.002"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Sup. You seem chill. I'm {npc}.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "laid_back_drifter.base.003"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey, friend. Want half a granola bar? It's a little squished.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "laid_back_drifter.base.004"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Yo. New around here? Don't worry, it's a good town to wander.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "laid_back_drifter.base.005"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey there. Name's {npc}. I'm just kinda... here.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "laid_back_drifter.base.006"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}, my dude. What's good?",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "laid_back_drifter.base.007"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh hey, {player}. You still owe me nothing. That's how I like it.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "laid_back_drifter.base.008"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Heyyy, {player}. Perfect timing, I was doing absolutely nothing.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "laid_back_drifter.base.009"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! Want to sit? The bench is warm from the sun.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "laid_back_drifter.base.010"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey, it's {player}. Cool. Cool cool cool.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "laid_back_drifter.base.011"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! My favorite human to do nothing with.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "laid_back_drifter.base.012"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Ayy, {player}. I strung up the hammock on the quad. There's room for two.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "laid_back_drifter.base.013"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey, buddy. I wrote a song about you. It's three chords. All of them about you.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "laid_back_drifter.base.014"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "There's my person. Come chill. No agenda.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "laid_back_drifter.base.015"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! I saved you a spot in the shade.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "laid_back_drifter.base.016"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Duuude. You're here. Now the day's complete.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "laid_back_drifter.base.017"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh, is it morning? Wow. Okay. Hey.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "laid_back_drifter.base.018"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Morning, man. I'm up early. Didn't mean to be. The birds were loud.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "laid_back_drifter.base.019"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey. Breakfast burrito? I got two by accident.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "laid_back_drifter.base.020"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Evening, man. Sunset's doing its thing. Let's watch.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "laid_back_drifter.base.021"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey. The air gets so soft this time of day.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "laid_back_drifter.base.022"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Yo. Perfect frisbee light right now.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "laid_back_drifter.base.023"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Late night vibes. You feel it?",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "laid_back_drifter.base.024"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey. Can't sleep either? Want to just lie on the grass and look up?",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "laid_back_drifter.base.025"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Night, dude. The crickets are jamming.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "laid_back_drifter.base.026"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Later, dude. Take it easy.",
+   "cond": {},
+   "id": "laid_back_drifter.base.027"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Peace. No worries.",
+   "cond": {},
+   "id": "laid_back_drifter.base.028"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Catch you on the flip side.",
+   "cond": {},
+   "id": "laid_back_drifter.base.029"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Alright, be cool. Literally, it's hot out.",
+   "cond": {},
+   "id": "laid_back_drifter.base.030"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "See ya. Or not. It's all good.",
+   "cond": {},
+   "id": "laid_back_drifter.base.031"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye, friend. Go with the flow.",
+   "cond": {},
+   "id": "laid_back_drifter.base.032"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Later, {player}. You're the best kind of company. The quiet kind.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "laid_back_drifter.base.033"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "See ya, buddy. Hammock's always open.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "laid_back_drifter.base.034"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Love you, man. In a totally chill way.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "laid_back_drifter.base.035"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I took a nap under the oaks on the quad. Woke up with a leaf on my face. Perfect.",
+   "cond": {},
+   "id": "laid_back_drifter.base.036"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The guy at Cosmic Carnitas gave me free chips. Universe provides.",
+   "cond": {},
+   "id": "laid_back_drifter.base.037"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You ever just lie on the grass and let the world spin?",
+   "cond": {},
+   "id": "laid_back_drifter.base.038"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I learned a new song on guitar. Well, half a song.",
+   "cond": {},
+   "id": "laid_back_drifter.base.039"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Somebody left a perfectly good couch on Rosemary. I'm considering it.",
+   "cond": {},
+   "id": "laid_back_drifter.base.040"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I tried to get up early. My body said no.",
+   "cond": {},
+   "id": "laid_back_drifter.base.041"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Frisbee golf tournament in Carrburg next week. I'm going. Probably.",
+   "cond": {},
+   "id": "laid_back_drifter.base.042"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I found a quarter on the sidewalk. Today's a good day.",
+   "cond": {},
+   "id": "laid_back_drifter.base.043"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Rain's coming. Good napping weather.",
+   "cond": {},
+   "id": "laid_back_drifter.base.044"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The ravine trail has this one rock that's perfect for sitting. I go there to think. Or not think.",
+   "cond": {},
+   "id": "laid_back_drifter.base.045"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Did you ever notice clouds look like animals? That one's a turtle. Chill turtle.",
+   "cond": {},
+   "id": "laid_back_drifter.base.046"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Smoothie place is open late now. Big win.",
+   "cond": {},
+   "id": "laid_back_drifter.base.047"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You know, you're one of the only people who doesn't tell me to get my life together.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "laid_back_drifter.base.048"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I'm not as lazy as people think. I just don't see the point in rushing.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "laid_back_drifter.base.049"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I think I'm happy, man. Like, actually happy. You're part of that.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "laid_back_drifter.base.050"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "If you ever stress out, just come find me. I'm a professional at not stressing.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "laid_back_drifter.base.051"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I'd share my last snack with you. And I don't say that lightly.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "laid_back_drifter.base.052"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You're like a hammock, man. Comfortable to be around.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "laid_back_drifter.base.053"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Weekend, dude. Not that my weekdays are much different.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "laid_back_drifter.base.054"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Saturday's for lake days. Want to come?",
+   "cond": {
+    "weekend": true
+   },
+   "id": "laid_back_drifter.base.055"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "No plans this weekend. Best plans.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "laid_back_drifter.base.056"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I used to be stressed in high school. Then I just... stopped. Worked out okay.",
+   "cond": {},
+   "id": "laid_back_drifter.base.057"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I work part-time at the record store. Mostly I just vibe.",
+   "cond": {},
+   "id": "laid_back_drifter.base.058"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I play guitar on the steps of the student union. Sometimes people give me money.",
+   "cond": {},
+   "id": "laid_back_drifter.base.059"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I don't really have a five-year plan. I have a five-minute plan. Nap.",
+   "cond": {},
+   "id": "laid_back_drifter.base.060"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I grew up near the beach. That kind of explains everything.",
+   "cond": {},
+   "id": "laid_back_drifter.base.061"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "My parents want me to be a lawyer. I want to be a guy with a hammock.",
+   "cond": {},
+   "id": "laid_back_drifter.base.062"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I've hitchhiked across three states. Met some interesting people. Mostly nice.",
+   "cond": {},
+   "id": "laid_back_drifter.base.063"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? Chill spot. Good vibes.",
+   "cond": {},
+   "id": "laid_back_drifter.base.064"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place} is cool. Not too loud, not too quiet.",
+   "cond": {},
+   "id": "laid_back_drifter.base.065"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "I like {place}. You can sit there forever and nobody bugs you.",
+   "cond": {},
+   "id": "laid_back_drifter.base.066"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? Haven't been. Is there a good couch?",
+   "cond": {},
+   "id": "laid_back_drifter.base.067"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place} is alright. A little hectic. Need more plants.",
+   "cond": {},
+   "id": "laid_back_drifter.base.068"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Aw, thanks, man. That's nice.",
+   "cond": {},
+   "id": "laid_back_drifter.base.069"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Cool. Thanks. You too, though.",
+   "cond": {},
+   "id": "laid_back_drifter.base.070"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Whoa. That's really sweet. I'm gonna hold onto that.",
+   "cond": {},
+   "id": "laid_back_drifter.base.071"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Thanks, dude. Good vibes received.",
+   "cond": {},
+   "id": "laid_back_drifter.base.072"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Heh. Thanks. Appreciate it.",
+   "cond": {},
+   "id": "laid_back_drifter.base.073"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Okay, man. Whatever you say.",
+   "cond": {},
+   "id": "laid_back_drifter.base.074"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "That's a lot of negative energy. I'll pass on it.",
+   "cond": {},
+   "id": "laid_back_drifter.base.075"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Chill, dude. No need for that.",
+   "cond": {},
+   "id": "laid_back_drifter.base.076"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "I'm not gonna let that ruin my day.",
+   "cond": {},
+   "id": "laid_back_drifter.base.077"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Wow. Okay. You need a nap, buddy.",
+   "cond": {},
+   "id": "laid_back_drifter.base.078"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Whoa, for me? That's so rad.",
+   "cond": {},
+   "id": "laid_back_drifter.base.079"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Dude. You didn't have to. Thanks.",
+   "cond": {},
+   "id": "laid_back_drifter.base.080"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "This is awesome. You're awesome.",
+   "cond": {},
+   "id": "laid_back_drifter.base.081"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Nice. I'm totally gonna use this. Eventually.",
+   "cond": {},
+   "id": "laid_back_drifter.base.082"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Thanks, man. This made my day.",
+   "cond": {},
+   "id": "laid_back_drifter.base.083"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "What do you call a lazy kangaroo? A pouch potato.",
+   "cond": {},
+   "id": "laid_back_drifter.base.084"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "I'm not lazy. I'm on energy-saving mode.",
+   "cond": {},
+   "id": "laid_back_drifter.base.085"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "Why did the hammock break up with the tree? It needed some space.",
+   "cond": {},
+   "id": "laid_back_drifter.base.086"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "I was going to do something today, but I didn't.",
+   "cond": {},
+   "id": "laid_back_drifter.base.087"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Can you wake me up in like an hour? I'm gonna nap here.",
+   "cond": {},
+   "id": "laid_back_drifter.base.088"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Could you grab me a smoothie? I'll pay you back. Someday.",
+   "cond": {},
+   "id": "laid_back_drifter.base.089"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Hey, could you help me carry my couch? It's on Rosemary. Long story.",
+   "cond": {},
+   "id": "laid_back_drifter.base.090"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Thanks, man. You're the best.",
+   "cond": {},
+   "id": "laid_back_drifter.base.091"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Dude, that was so helpful. I owe you.",
+   "cond": {},
+   "id": "laid_back_drifter.base.092"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Rad. Thanks. Seriously.",
+   "cond": {},
+   "id": "laid_back_drifter.base.093"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "Work was chill. I sold three records and took a long lunch.",
+   "cond": {},
+   "id": "laid_back_drifter.base.094"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "My boss says I need more hustle. I said I'd think about it.",
+   "cond": {},
+   "id": "laid_back_drifter.base.095"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "Work's fine. It's just a way to fund my snack habit.",
+   "cond": {},
+   "id": "laid_back_drifter.base.096"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I got a job at the frozen yogurt place. Free samples, man.",
+   "cond": {},
+   "id": "laid_back_drifter.base.097"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "I'm taking a pottery class. It's very zen.",
+   "cond": {},
+   "id": "laid_back_drifter.base.098"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "I missed class today. I'll get the notes. Or not.",
+   "cond": {},
+   "id": "laid_back_drifter.base.099"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "I'm technically still enrolled. Technically.",
+   "cond": {},
+   "id": "laid_back_drifter.base.100"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I don't want any drama, man.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "laid_back_drifter.base.101"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "You're killing my vibe.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "laid_back_drifter.base.102"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I'm just gonna walk away. Peace.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "laid_back_drifter.base.103"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "You've got some bad energy, {player}.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "laid_back_drifter.base.104"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Nah. Not today.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "laid_back_drifter.base.105"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I'm too chill to fight with you. Bye.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "laid_back_drifter.base.106"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Ha, thanks, man. But let's just keep it friendly.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "laid_back_drifter.base.107"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Whoa. That's sweet. I'm not really looking for anything right now.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "laid_back_drifter.base.108"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "I appreciate it, dude. But I'm good.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "laid_back_drifter.base.109"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Whoa. Okay. That's... really nice. I'm into it.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "laid_back_drifter.base.110"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "You're making me kinda nervous. And I don't get nervous.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "laid_back_drifter.base.111"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Heh. You're cute. Like, really cute.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "laid_back_drifter.base.112"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "I've been hoping you'd say something like that, man.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "laid_back_drifter.base.113"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "Yeah, totally. Let's do something chill.",
+   "cond": {},
+   "id": "laid_back_drifter.base.114"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "A date? Rad. I know a great spot by the lake.",
+   "cond": {},
+   "id": "laid_back_drifter.base.115"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "Aw, man. I like you, but not like that. Still friends?",
+   "cond": {},
+   "id": "laid_back_drifter.base.116"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "I'm gonna pass, dude. But I'm flattered.",
+   "cond": {},
+   "id": "laid_back_drifter.base.117"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hey, you. I brought a blanket and some snacks. Picnic time.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.001"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "There you are. You look really good.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.002"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hi. I'm so happy to see you, man.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.003"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hey. I put on a clean shirt. For you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.004"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "You made it. Let's just hang out. No pressure.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.005"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hey, cutie. Wanna lie on the grass and look at clouds?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.006"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're my favorite chill spot.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.007"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I could just stare at you all day. Seriously.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.008"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You make me want to put effort into things. Weird, right?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.009"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're like a sunset, man. Gets me every time.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.010"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I'd get up early for you. That's huge for me.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.011"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You smell like summer.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.012"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "Being around you is like a perfect nap. Total relaxation.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.013"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's go to the lake and skip rocks.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.014"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I wrote you a song. It's called \"You.\" It's really short.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.015"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Tell me something you love. Anything.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.016"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I like how we don't have to talk all the time.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.017"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Want to share this milkshake? Two straws, man.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.018"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "You're the first person I've wanted to make plans with.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.019"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I don't usually do dates. But this doesn't feel like a date. It feels right.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.020"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's go to the record store. I'll play you my favorite album.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.021"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Want to go stargazing on Carillon Hill?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.022"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "You're so easy to be with. Like, effortless.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.023"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I think you might be the best thing that's happened to me this year.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.024"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's just walk. No destination.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.025"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You've got a great laugh, man.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.026"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're so chill. I love that.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.027"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're really pretty. Like, sunset pretty.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.028"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're kind to everyone. That's rad.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.029"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You make everything feel easy.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.030"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Whoa. That was rad.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.031"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Mmm. Okay, that was perfect.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.032"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Dude. I'm gonna be thinking about that all week.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.033"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Wow. Let's do that again. Slowly.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.034"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "Missed you, man. The hammock felt empty.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.035"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I kept thinking about you all day. In a chill way.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.036"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I wrote another song about you. It's even shorter.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.037"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "Couldn't nap without you. Weird.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.038"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "Who was that? Not that I care. I care a little.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.039"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I'm not jealous. I just... wanna be the one you hang with.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.040"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "It's cool. I trust you. Just checking in.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.041"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "That was chill. Really chill. Thanks.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.042"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight, cutie. Sleep well.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.043"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Let's do this again. Whenever. No rush.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.044"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "I had a really good time, man.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.045"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Later, you. I'll be thinking about you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.046"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I don't like fighting, man. Let's just talk.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.047"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I'm upset. That doesn't happen often. Let's fix it.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.048"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "Can we take a breath? I don't wanna lose this.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.049"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I need a minute, dude. Then let's figure it out.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.050"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "Whoa. Yeah. Yes. Let's do it, man. Forever.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.051"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "Marry you? Totally. That's the chillest decision I've ever made.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.dating.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Mornin', love. Coffee's on. Took me twenty minutes, but it's on.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.001"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, you're up. Wanna stay in bed a little longer?",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.002"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, babe. I made pancakes. They're kinda burnt. Still good.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.003"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Mornin'. The sun's coming in so nice through the window.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.004"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey. I just woke up too. We're on the same schedule. Nice.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.005"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, love. Let's take it slow today.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.006"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Mornin'. I fed the cat. Well, I opened the bag. She did the rest.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.007"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, sunshine. No rush. We've got all day.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.008"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning. I'm gonna play guitar on the porch. Join me?",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.009"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, babe. You look so peaceful when you sleep.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.010"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Mornin'. Breakfast burritos? I got stuff for burritos.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.011"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning. I didn't set an alarm. Living the dream.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.012"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, you're home. Kick your shoes off, love.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.013"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome back, babe. I set up the hammock in the backyard.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.014"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey. Long day? Come chill on the couch.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.015"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home. Cool. I made a playlist for tonight.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.016"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, love. I ordered pizza. Couldn't decide what to cook.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.017"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home. Let's just relax. No plans.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.018"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, babe. I've been waiting to see you all day.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.019"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're back. Wanna watch the sunset on the porch?",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.020"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey. Dinner's whenever. No pressure.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.021"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home, love. I lit some candles. Very zen.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.022"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, late night. Come lie down with me.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.023"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home. I was just about to fall asleep on the couch.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.024"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "It's late, babe. Come to bed. No stress.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.025"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey. Long day, huh? Let's just cuddle.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.026"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Late shift? I saved you some pizza.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.027"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're back. The stars are out. Wanna look?",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.028"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, love. I kept the porch light on for you.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.029"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are. Come chill. You've earned it.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.030"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a good day, love. Don't stress too much.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.031"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye, babe. Go with the flow.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.032"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Take it easy out there. I'll be here.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.033"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "See ya later, love. Have a chill day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.034"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye. Remember, it's just work. Not life.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.035"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have fun out there. Or at least, try not to stress.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.036"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Later, babe. I'll be in the hammock if you need me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.037"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye, love. Text me if you need a pep talk. A chill one.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.038"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "How was work, babe? Stressful? Let it go.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.039"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You look tired. Come lie down.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.040"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Tell me about it. Or don't. Either's fine.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.041"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Was it a long day? I'm sorry, love.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.042"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Did your boss bug you? Forget about him. You're home.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.043"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You're home now. Nothing else matters.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.044"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Let's not talk about work. Let's talk about tacos.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.045"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Proud of you for going in, babe. That's half the battle.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.046"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you, man. Like, so much.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.047"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my favorite person to do nothing with.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.048"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Being with you is the most relaxing thing in the world.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.049"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make my life feel so easy, love.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.050"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'm so lucky, babe. Really.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.051"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my sunshine. My hammock. My everything.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love just being next to you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.053"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make me want to be a better person. A slightly more productive person.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.054"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'd do anything for you. Even wake up early.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.055"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my home, love.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.056"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love how we can just chill together.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.057"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're the best thing that ever happened to me, man.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.058"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you more than naps. And I really love naps.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.059"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I don't need anything else. Just you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.060"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make every day feel like a Sunday.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.061"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you. Like, a lot a lot.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.062"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my person. Forever.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.063"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'm so happy, babe. Like, actually happy.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.064"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I fixed the hammock. It doesn't sag anymore. Much.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.065"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been playing guitar on the porch. The neighbors clapped.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.066"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I planted some tomatoes. Or weeds. We'll see.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.067"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The cat found a sunny spot on the rug. She's been there all day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.068"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I think we should get a dog. A chill dog.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.069"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I found a perfect couch on the curb. Want me to bring it in?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.070"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a fire pit in the backyard. Well, a hole with some rocks.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.071"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been thinking about building a treehouse. For adults.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.072"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The lake was perfect today. Totally still.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.073"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I tried meditation. Fell asleep. Still counts.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.074"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The neighbors had a barbecue. They invited us. I said maybe.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.075"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I painted the porch. It's kinda uneven. Has character.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.076"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been learning to make kombucha. It's... interesting.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.077"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The rain on the roof last night was so nice.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.078"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I found a new trail by the ravine. Super peaceful.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.079"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I'm thinking of starting a little garden. Herbs and stuff.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.080"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been sleeping so well lately. Must be you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.081"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I think the house is perfect, man. Just like this. Don't change a thing.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.082"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I got a new record. Wanna listen tonight?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.083"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a little reading nook. Mostly for naps.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.084"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The sunset was amazing tonight. I took a picture for you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.085"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I think we should just stay home this weekend.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.086"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The neighbor's kid asked me to teach him guitar.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.087"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I found a bird's nest in the gutter. Left it there.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.088"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I think I'm finally getting good at grilling.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.089"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "We should get a porch swing. For more relaxing.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.090"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I did the dishes. Took a while. I took breaks.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.091"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I swept the porch. Then sat on it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.092"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Could you help me fold laundry? It's more fun with you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.093"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I took out the trash. Big win.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.094"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I mowed half the lawn. I'll do the other half tomorrow.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.095"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I vacuumed the living room. The cat was not happy.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.096"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I cleaned the kitchen. Mostly.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.097"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Let's just do the chores together. Less work.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.098"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I watered the plants. They look happy.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.099"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I tidied up a bit. Don't look in the closet.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.100"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I washed the car. Then it rained. Classic.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.101"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I made the bed. Kinda.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.102"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Money's kinda tight, but we'll figure it out.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.103"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I sold some records. Got a little cash.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.104"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We don't need much, babe. Just each other.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.105"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I found a twenty in my old jeans. Score.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.106"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Let's not stress about money. It'll work out.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.107"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I busked on the quad today. Made thirty bucks.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.108"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We should save a little. Maybe. For a trip.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.109"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I'm not really a money person. But I'm trying.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.110"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I picked up some extra shifts. For us.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.111"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Rent's paid. We're good. That's all that matters.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.112"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Dinner's ready. It's tacos. Again.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.113"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made breakfast burritos. Big ones.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.114"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's grill out tonight. I'll handle the burgers.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.115"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made a smoothie. Banana and peanut butter.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.116"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's order Chinese. I don't feel like cooking.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.117"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made pasta. It's kinda simple. But it's good.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.118"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's have a picnic in the backyard.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.119"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made grilled cheese. Your favorite.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.120"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Dinner's whenever you're hungry, love.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.121"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made a big pot of chili. It'll last all week.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.122"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I don't wanna fight, babe. But this is bugging me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.123"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You're stressing me out, love. And that's hard to do.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.124"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I need you to slow down. We don't have to do everything right now.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.125"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You never relax. It's kinda worrying.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.126"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm trying, okay? I'm just not a planner.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.127"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I know I'm not super ambitious. But I'm here.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.128"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Can we not yell? It's not my thing.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.129"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I feel like you want me to be someone else.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.130"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I forgot. I'm sorry. I'm not perfect.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.131"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You're right. I should have done the dishes. I'm sorry.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.132"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I just need some space to think. I'll be in the hammock.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.133"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Let's not fight about this. It's not worth it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.134"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry, babe. Let's just chill and talk.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.135"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I love you. That's what matters.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.136"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Come here. Let's hug it out.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.137"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I don't like fighting with you. It's the worst.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.138"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's start over. No stress.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.139"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry I was being lazy. I'll do better.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.140"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's go for a walk and clear our heads.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.141"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "We're good, love. We're always good.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.142"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Hey, it's okay. Just breathe.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.143"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Come lie down with me. Let's just be.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.144"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You don't have to fix everything today.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.145"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I'm here, love. No matter what.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.146"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "It'll all work out. It always does.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.147"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let's go to the lake. Nature helps.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.148"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You're doing great. Even when it doesn't feel like it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.149"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let me make you some tea. Chamomile.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.150"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Don't stress, babe. I've got you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.151"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Want me to play you a song? Might help.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.152"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the lake this weekend. Just us.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.153"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a road trip? No destination.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.154"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go camping. I'll bring the hammock.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.155"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the beach. I miss the ocean.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.156"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's spend the whole weekend in bed. Movies and snacks.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.157"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a frisbee golf tournament? Low stakes.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.158"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the farmers market. Get some fresh stuff.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.159"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go stargazing on Carillon Hill.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.160"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a picnic on the quad? Like old times.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.161"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's just see where the weekend takes us.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.162"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our first date? We lay on the grass for hours.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.163"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we got caught in the rain and just laughed?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.164"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I still have the guitar pick you gave me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.165"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our wedding? So chill. Barefoot in the park.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.166"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we drove to the beach on a whim?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.167"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our first apartment? The couch was from the curb.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.168"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I remember the first time you laughed at my joke. I was hooked.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.169"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we stayed up all night talking about nothing?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.170"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember the camping trip where the tent collapsed?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.171"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when you taught me to make coffee? I still do it wrong.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.172"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary, love. Best years of my life.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.173"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Another year with you. So chill. So perfect.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.174"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I got you something. It's a mixtape. Old school.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.175"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary, babe. Let's celebrate by doing nothing.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.176"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I love you more every year. That's the vibe.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.177"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Here's to us, love. Many more chill years.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.178"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You're the only person who can make me get up early.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.179"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You alphabetize the records. That's wild, man.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.180"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You always know where the remote is. It's a superpower.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.181"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You stress about things that haven't happened yet.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.182"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You make a list for everything. Even for lists.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.183"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You can't sit still for five minutes. I've timed it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.184"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You put pineapple on pizza. I love you anyway.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.185"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You snore a little. It's cute.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.186"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You always say we should go to bed early. We never do.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.187"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You hum when you cook. Off-key.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.188"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You're way too organized for me. And I love it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.189"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You get so excited about grocery shopping. It's adorable.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.190"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, love. Sleep good.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.191"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come to bed, babe. Let's get cozy.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.192"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Night, love. Tomorrow we'll take it easy.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.193"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Let's just fall asleep listening to the rain.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.194"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight. I love you, man.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.195"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sleep tight, babe. No alarms tomorrow.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.196"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Night, {player}. You're the best.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.197"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come cuddle. I'm warm.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.198"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight. Dream about the beach.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.199"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Lights out, love. Peace.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "laid_back_drifter.marriage.200"
+  }
+ ]
+}

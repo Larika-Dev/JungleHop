@@ -1,0 +1,22 @@
+{
+  "actions": [
+    {"id": "buy_thrift_outfit", "name": "Buy a thrift-store outfit", "category": "shopping", "target": "place", "minutes": 30, "place": ["clothing", "retail", "mill"], "cost": 15, "needs": {"fun": 4}, "outfit": 0.25, "message": "Vintage. Kind of."},
+    {"id": "buy_nice_outfit", "name": "Buy a nice outfit", "category": "shopping", "target": "place", "minutes": 40, "place": ["clothing"], "cost": 150, "needs": {"fun": 10}, "outfit": 0.7, "message": "You look put together."},
+    {"id": "buy_designer_outfit", "name": "Buy a designer outfit", "category": "shopping", "target": "place", "minutes": 45, "place": ["clothing"], "cost": 450, "needs": {"fun": 15}, "outfit": 1.0, "message": "Heads turn on Hamilton St."},
+    {"id": "buy_designer_shoes", "name": "Buy designer shoes", "category": "shopping", "target": "place", "minutes": 20, "place": ["clothing"], "cost": 220, "needs": {"fun": 8}, "outfit": 0.85, "message": "Your feet have never looked better."},
+    {"id": "get_facial", "name": "Get a facial", "category": "hygiene", "target": "place", "minutes": 50, "place": ["salon"], "cost": 70, "needs": {"hygiene": 15, "fun": 5}, "salon": 1.0, "message": "Your skin glows."},
+    {"id": "get_styled", "name": "Get a full styling session", "category": "hygiene", "target": "place", "minutes": 90, "place": ["salon"], "cost": 160, "needs": {"hygiene": 15, "fun": 8}, "salon": 3.0, "message": "Hair, brows, the works."},
+    {"id": "whiten_teeth", "name": "Get your teeth whitened", "category": "hygiene", "target": "place", "minutes": 60, "place": ["dental", "operatory"], "cost": 200, "salon": 1.0, "cooldown_minutes": 43200, "message": "Blinding."},
+    {"id": "weigh_yourself", "name": "Weigh yourself", "category": "self", "target": "place", "minutes": 1, "place": ["bath", "apartment_bath", "guest_bath", "locker", "gym", "exam"], "special": "weigh"},
+    {"id": "ask_rating", "name": "Ask them to rate you out of 10", "category": "social", "target": "npc", "minutes": 1, "special": "rate_me", "requires": {"met": true, "adult": true}, "rel": {"friendship": 0}, "needs": {"social": 2}, "cooldown_minutes": 1440},
+    {"id": "skincare_routine", "name": "Do your skincare routine", "category": "hygiene", "target": "self", "minutes": 10, "needs": {"hygiene": 6}, "daily_care": 0.8, "cost": 1, "message": "Cleanse, tone, moisturize."},
+    {"id": "iron_clothes", "name": "Iron your clothes", "category": "home", "target": "self", "minutes": 10, "daily_care": 0.5, "message": "Crisp."},
+    {"id": "fix_posture", "name": "Practice good posture", "category": "self", "target": "self", "minutes": 5, "daily_care": 0.3, "skills": {"charm": 2}, "message": "Shoulders back."},
+    {"id": "diet_day", "name": "Eat light today", "category": "food", "target": "self", "minutes": 1, "needs": {"fun": -4}, "sets_flags": {"body.dieting": true}, "message": "Salad. Again."},
+    {"id": "binge_eat", "name": "Eat way too much", "category": "food", "target": "self", "minutes": 30, "cost": 20, "needs": {"hunger": 100, "fun": 8, "energy": -5}, "message": "You regret nothing. Yet."},
+    {"id": "floss", "name": "Floss", "category": "hygiene", "target": "self", "minutes": 2, "needs": {"hygiene": 2}, "daily_care": 0.2, "message": "Your dentist would be proud."},
+    {"id": "wear_cologne", "name": "Put on cologne or perfume", "category": "hygiene", "target": "self", "minutes": 1, "daily_care": 0.6, "cost": 1, "message": "You smell great."},
+    {"id": "trim_nails", "name": "Trim your nails", "category": "hygiene", "target": "self", "minutes": 5, "daily_care": 0.4, "message": "Neat."},
+    {"id": "wash_hair", "name": "Wash and condition your hair", "category": "hygiene", "target": "place", "minutes": 10, "place": ["bath", "apartment_bath", "guest_bath", "locker"], "needs": {"hygiene": 20}, "daily_care": 0.6, "message": "Silky."}
+  ]
+}

@@ -19,7 +19,13 @@ GameClock="*res://core/game_clock.gd"
 GameState="*res://core/game_state.gd"
 CityData="*res://core/city_data.gd"
 UI="*res://ui/ui_root.gd"
+Life="*res://life/life.gd"
+Furniture="*res://furniture/furniture_manager.gd"
+JobSystem="*res://jobs/job_system.gd"
+Education="*res://education/education.gd"
+Law="*res://crime/law.gd"
 NPCs="*res://npc/npc_manager.gd"
+Dialogue="*res://dialogue/dialogue.gd"
 
 [display]
 

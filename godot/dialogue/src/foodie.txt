@@ -1,0 +1,429 @@
+// Foodie: relates everything to food, restaurant-critic energy, generous cook, flavor metaphors.
+== base
+# greet stage=stranger
+Hi! I'm {npc}. Have you eaten? I know a place.
+Hello! You look like someone who appreciates a good biscuit. I'm {npc}.
+Hey there! I'm {npc}. Quick question: crispy or chewy cookies? Very important.
+Hi! I'm {npc}. Sorry, I smell like garlic. Occupational hazard. Happy hazard.
+Hello, new friend! First lesson of Cathedral Mount: the Waffle Hutch before ten.
+Hi! I'm {npc}. Want a bite of this? It's a brown butter scone.
+# greet stage=acquaintance
+{player}! Did you try the tacos I told you about?
+Hey, {player}! I made too much focaccia. Take some.
+{player}! You look hungry. You always look a little hungry. It's endearing.
+Hi, {player}! New dumpling place on Rosemary. We're going.
+Oh good, {player}! I need a taste tester.
+# greet stage=friend+
+{player}! My favorite dining companion!
+There you are! I saved you the crispy corner piece.
+{player}! I've been marinating something for you since Tuesday.
+Hey, bestie! Dinner at mine Friday. Seven courses. No arguments.
+{player}! You're the only person whose food opinions I trust.
+My dear friend! Sit. Eat. Talk. In that order.
+# greet time=morning
+Good morning! Breakfast is the most important meal. And the most delicious.
+Morning! I've been up since five proofing dough.
+Hey! The farmers market just opened. Peaches are in!
+# greet time=evening
+Evening! Dinner time! My favorite time!
+Hey! I'm heading to Top of the Mount. Their wings are criminal.
+Good evening! Something's braising at home. Six hours.
+# greet time=night
+Late-night snack run? Late Night Lo Mein is calling.
+Hi! Midnight is for grilled cheese. It's the law.
+Up late? Same. I'm testing a pie crust. Batch seven.
+# farewell
+Bye! Eat something good!
+See you! Don't skip lunch!
+Later! Try the peach cobbler at Sutter's!
+Bye! Season everything!
+Ciao! Life's short, eat dessert first.
+See you! Stay hungry! For life! And food!
+# farewell stage=friend+
+Bye, {player}! Take some leftovers!
+See you Friday! Come hungry!
+Bye! Text me what you ate for dinner. I need to know.
+# smalltalk
+The new ramen spot on Rosemary simmers their broth for eighteen hours. You can taste every one.
+Cosmic Carnitas added a mole that tastes like a hug from a grandmother.
+I've been fermenting kimchi in my closet. My roommate is concerned.
+The farmers market had heirloom tomatoes this morning. I bought twelve pounds.
+Mount Pizza Co. finally got a real wood-fired oven. Leopard spots on the crust!
+I made my own butter. It's surprisingly easy. Also an arm workout.
+Did you know the Waffle Hutch's syrup is from a farm just over the ridge?
+I'm writing a food blog. Mostly it's photos of sandwiches.
+I tried to make croissants. Seventy-two layers. Three days. Worth it.
+The dining hall's chicken is... a choice.
+I think the best food in town is the hot dog cart outside the stadium. Fight me.
+I grew basil on my windowsill. The pesto made me cry.
+# smalltalk stage=friend+
+Food is how I say I love you. So, here, have a cookie.
+You're the only one who eats my experiments without complaining.
+Cooking calms me down when life's too much.
+I want to open a little restaurant someday. You'd have a permanent table.
+My grandma taught me to cook. Every recipe is a memory.
+You're like comfort food. Warm and reliable.
+# smalltalk weekend=true
+Weekend! Brunch, farmers market, then nap.
+Saturday! I'm smoking a brisket. Fourteen hours.
+Sunday! Big family-style dinner at mine.
+# about_self
+I'm a line cook at the Pamlico Inn. Hot, loud, wonderful.
+My family's from three different countries. Our holiday table is chaos.
+I've eaten at every restaurant in Cathedral Mount. Some twice.
+I keep a notebook of every great meal I've ever had.
+I'm saving up for culinary school.
+I judge people by how they treat waiters.
+I believe there's no problem soup can't help.
+# opinion_place
+{place}? Great vibe. The coffee's a little burnt.
+{place} has the best fries in town. Don't tell anyone.
+I'd eat at {place} every day if my wallet allowed.
+{place}? Needs more salt. Metaphorically and literally.
+{place} smells amazing. Is that cinnamon?
+# compliment_reply
+Thank you! You're as sweet as crème brûlée.
+Aw! That's the cherry on top of my day!
+Thanks! I'll take that with a side of fries.
+You're too kind! Here, have a cookie.
+That's so nice! I'm melting like butter.
+# insult_reply
+That's sour. Like spoiled milk.
+Wow. That left a bad taste.
+That was half-baked.
+Rude. And under-seasoned.
+I'll pretend you're just hangry.
+# gift_reply
+A cookbook! I love it!
+Fancy olive oil? You know me so well!
+Oh! A cast iron pan! I'm going to cry!
+This is perfect. I'll cook you something with it.
+Thank you! You've got great taste. Literally.
+# joke
+Why did the tomato blush? It saw the salad dressing. Classic.
+I'm on a seafood diet. Every time I see food, I eat it. Okay, I'm not.
+What does a nosy pepper do? Gets jalapeño business.
+I tried to make a belt out of watches. It was a waist of time. Okay, not food. Sorry.
+# ask_favor
+Could you taste this sauce? Too much garlic? There's no such thing, but tell me.
+Would you help me carry groceries? I may have overbought.
+Can you be my sous chef for the dinner party?
+# favor_reply
+Thank you! I owe you a pie!
+You're a gem! Dinner's on me!
+Thanks! You've earned the corner piece forever.
+# work_talk
+Ninety covers tonight. My feet are toast.
+The chef liked my risotto! I'm floating!
+Someone sent back a steak because it was "too cooked". It was raw.
+Work's chaos. Delicious chaos.
+# school_talk
+I'm taking a food science class. Did you know caramelization starts at 320 degrees?
+My nutrition professor says I eat too much butter. I say she eats too little.
+I'm studying hospitality. Basically how to feed people and make them happy.
+# hostile stage=dislike-
+You're like a burnt casserole, {player}.
+I don't share my food with people like you.
+You've left a bad taste in my mouth.
+Go away. You're spoiling my appetite.
+I wouldn't cook for you if you paid me.
+We're done here.
+# flirt_reply romance=none
+Aw! You're sweet! But we're friends. Food friends.
+Ha! You're cute, but no. Want a muffin, though?
+Thanks, but I think we're better as dinner buddies.
+# flirt_reply romance=crush
+Oh! That's sweeter than honey.
+Are you flirting? My heart just melted like chocolate.
+You're making me blush like a radish.
+I like you too. A lot. Like, extra-cheese a lot.
+# ask_out_yes
+Yes! I know the perfect restaurant!
+A date? Yes! I'll cook! Or we'll go out! Both!
+# ask_out_no
+I'm sorry, I don't feel that way. Still dinner friends?
+No, but you'll always have a seat at my table.
+
+== dating
+# date_greet
+Hi! I made us reservations at the best place in town!
+You came! I packed a picnic. Seven cheeses.
+Hey, gorgeous! You look good enough to eat. Is that too much?
+There you are! I've been cooking all day.
+Hi! I brought you a cookie. Warm. Just out of the oven.
+Hey, you! Ready for a food adventure?
+# flirt
+You're sweeter than dessert.
+You're my favorite flavor.
+I'd share my last bite with you. That's love.
+You make my heart rise like a soufflé.
+You're the perfect pairing. Like wine and cheese.
+I'd cook for you every day forever.
+You're the secret ingredient in my life.
+# date_talk
+Let's try every food truck on Rosemary tonight.
+Tell me your favorite meal ever. Every detail.
+I'm going to cook you my grandma's recipe.
+Want to take a cooking class together?
+Let's go to the farmers market and pick dinner.
+I've never cooked for someone I liked this much.
+Do you like spicy? Please say yes.
+I made us dessert. It's a chocolate tart. With your initials.
+I could eat dinner with you every night.
+Let's have breakfast for dinner. Pancakes.
+You eat like you mean it. I love that.
+I'm so happy right now. Like, warm-bread happy.
+# compliment
+You have great taste. In food and people.
+You look delicious. I mean, wonderful.
+You're so kind to the waitstaff. That's attractive.
+You've got a great laugh. Like popping corn.
+You're the best company at any table.
+# kiss_reply
+Mmm. Sweeter than honey.
+That was better than dessert.
+Okay. Wow. Seconds?
+That was perfect. Chef's kiss. Literally.
+# miss_you
+I missed you! I cooked for two out of habit.
+Everything tasted bland without you.
+I made you cookies. They're waiting.
+I kept wanting to share my lunch with you.
+# jealous
+Who were you eating with? I'm not jealous. I just want to cook for you.
+I saw you at the café with someone. Was the coffee good, at least?
+I want to be your only dinner date.
+# date_end
+Tonight was delicious. Goodnight!
+Take some leftovers! For breakfast!
+Goodnight, sweetheart! Dream of pastries!
+Same time next week? I'll make something new.
+Goodnight, {player}. Thanks for eating with me.
+# lovers_quarrel
+I'm upset. That stung like too much vinegar.
+Let's talk over tea. Not angry tea.
+I don't want to fight. Let's fix this. Over pie.
+That hurt. I need you to understand.
+# proposal_yes
+Yes! This is better than any meal I've ever had!
+I'll marry you! Our wedding cake will be legendary!
+
+== marriage
+# home_greet time=morning
+Good morning, love! I made shakshuka.
+Morning! Fresh croissants. I woke up at four.
+Good morning! Coffee's ready. Single origin. You'll taste the blueberries.
+Morning, sweetheart! Eggs Benedict. The hollandaise didn't break!
+Good morning! I made a smoothie bowl with a smiley face.
+Morning! French toast with brioche I baked yesterday.
+Good morning, darling! Breakfast is on the porch.
+Morning! I made biscuits and gravy. Hearty day ahead.
+Good morning! I tried a new granola recipe. Taste!
+Morning, love! Fresh orange juice. I squeezed twelve oranges.
+Good morning! I made your favorite. Pancakes with blueberries.
+Morning! Toast and jam. The jam is homemade. Peach.
+# home_greet time=evening
+Welcome home! Dinner's ready! Coq au vin!
+There you are! I've been braising short ribs all day!
+Welcome home, love! Taste this sauce first.
+Hi, sweetheart! I made pasta from scratch.
+You're home! The house smells like garlic. You're welcome.
+Welcome back! I tried a new curry recipe.
+Hi, love! Wine's poured. Dinner in ten.
+There you are! I made soup and fresh bread.
+Welcome home! Taco night! I made the tortillas!
+You're home! I made dessert first. Life's short.
+# home_greet time=night
+You're home late! I kept a plate warm.
+Hi, love. Midnight snack? I made grilled cheese.
+It's late, sweetheart. I made you tea and toast.
+You're back! I saved you a slice of pie.
+Hi, darling. Long day? There's soup on the stove.
+Late night? Let me make you something warm.
+There you are. I baked cookies while I waited.
+Hi, love. Come eat something. Then bed.
+# goodbye_work
+Have a great day! Your lunch is packed. It's a masterpiece.
+Bye, love! There's a cookie in your bag.
+Have a good day! Don't eat that cafeteria food!
+Bye, sweetheart! Dinner's at seven!
+Have a great day! I'm making lasagna tonight!
+Bye! Snacks are in your coat pocket!
+Have a good day, darling! Come home hungry!
+Bye, love! I'll text you a picture of dinner prep.
+# work_return
+How was work? Did you eat lunch? What did you eat?
+Tell me about your day! Over dinner.
+You look tired. Sit. Eat.
+Did your boss bring donuts? They should have.
+Rough day? I made comfort food.
+How'd it go? I made a celebration dinner, just in case.
+You're home. Dinner's on.
+I'm proud of you, love. Here, have a cookie.
+# affection
+I love you more than butter. And that's a lot.
+You're my favorite person to cook for.
+Being married to you is like the perfect meal. Every course.
+You're the spice of my life.
+I'm so lucky to have you, love.
+You're my comfort food.
+I love you more than a perfectly ripe peach.
+You make every meal better.
+You're my secret ingredient.
+I'd cook for you forever.
+You're my sweetest treat.
+I love how you always ask for seconds.
+You're my home. My kitchen. My heart.
+I love you more than dessert. Okay, equally.
+You make life delicious.
+I'm so proud to be your spouse.
+You're the best thing on my plate.
+Thank you for loving my cooking. And me.
+# home_talk
+I started a sourdough starter. Her name is Doughlores.
+I planted an herb garden. Basil, thyme, rosemary.
+I bought a new knife. It's beautiful.
+I've been pickling everything. Cucumbers, onions, eggs.
+I signed us up for a cooking class!
+I reorganized the spice rack. By cuisine.
+I made a list of every restaurant we need to try.
+I've been canning tomatoes for the winter.
+The neighbors loved my peach pie.
+I'm thinking about getting a pizza oven for the backyard.
+I've been making my own pasta. All the shapes.
+I found a great farm stand outside town.
+I'm writing a cookbook. Our family recipes.
+I tried making cheese. It's a work in progress.
+I bought a smoker. Brisket this weekend!
+I've been baking bread every day.
+I made a meal plan for the month. All new recipes.
+The kitchen's my happy place. Especially with you in it.
+I've been teaching the neighbor's kids to bake.
+I'm thinking about a food truck. Just weekends.
+I found my grandma's recipe box!
+I've been experimenting with spices.
+I made ice cream! Lavender honey!
+I hosted the book club. They came for the snacks.
+I think we need a bigger kitchen.
+I love our little home. It always smells like dinner.
+# chores
+I did the dishes. All the pots. All of them.
+I cleaned the kitchen. It's sparkling. For now.
+Could you take out the compost? It's full.
+I organized the pantry by expiration date.
+I scrubbed the oven. Finally.
+I vacuumed. Found a lot of crumbs. Mine.
+Let's do the dishes together. I'll wash, you dry.
+I cleaned out the fridge. We had a science project in there.
+I wiped down every counter.
+I sharpened all the knives.
+I swept the kitchen floor. Flour everywhere.
+I folded the laundry. Mostly aprons.
+# money
+We spent a lot on groceries. Worth it.
+I made a food budget. It's... ambitious.
+Money's tight. Beans and rice week!
+I got a raise at the restaurant!
+We should save for a trip to Italy. For the food.
+I found a sale on cheese! Stocked up!
+Let's eat in more. I'll cook.
+I sold pies at the market! Eighty bucks!
+We're doing okay. Our fridge is full.
+We're rich in flavor, love.
+# meal
+Dinner's ready! Roast chicken with lemon and herbs.
+I made paella! Saffron and all!
+Breakfast is ready! Huevos rancheros!
+I made ramen. The broth took two days.
+Let's have a picnic in the garden!
+I made pot pie. Flaky crust.
+Dinner's on the table! Lasagna, garlic bread, salad.
+I made sushi! It's not pretty, but it's tasty!
+I baked a pie. Apple with a lattice top.
+I made a seven-course tasting menu. For a Tuesday.
+# argue
+You ate the leftovers I was saving!
+You put the cast iron in the dishwasher!
+I spent hours on dinner and you were late.
+Please don't put ketchup on that steak.
+You never compliment my cooking anymore.
+You used my good knife to open a box!
+I feel like you take my cooking for granted.
+You bought the wrong flour.
+You didn't tell me you weren't hungry!
+I'm going to go bake. To calm down.
+You left the fridge open. Everything's warm.
+I just want you to enjoy the food with me.
+# makeup
+I'm sorry, love. Let me make you something.
+I hate fighting with you. Let's have pie.
+I love you more than any recipe.
+I'm sorry I snapped about the dishes.
+Let's make up over dessert.
+You're my favorite person. Even when you put ketchup on everything.
+Let's cook together and talk.
+We're good, love. Like bread and butter.
+# support
+Oh, love. Let me make you soup.
+It's okay. Comfort food is coming.
+I'm here. Sit. I'll bring you something warm.
+Whatever it is, we'll get through it. With snacks.
+You don't have to talk. Just eat.
+Let me cook all your favorites tonight.
+You're stronger than you know, sweetheart.
+I love you. More than food. And that's saying something.
+Let's have breakfast for dinner. It always helps.
+I'll make cookies. And we'll talk.
+# plans
+Let's go to the food festival this weekend!
+How about a trip to the coast? Fresh seafood!
+Let's take a cooking class together!
+Let's go to the farmers market on Saturday!
+How about a wine tasting in the mountains?
+Let's go to the new restaurant in Carrburg!
+Let's host a dinner party!
+How about a road trip? Eating our way across the state!
+Let's go apple picking! Then pie!
+Let's plan our anniversary dinner! I'll cook!
+# memories
+Remember our first date? The food trucks?
+Remember our wedding cake? Five tiers!
+Remember when I made you my grandma's recipe?
+Remember our honeymoon? We ate everything.
+I still have the menu from our first dinner.
+Remember when I burned the Thanksgiving turkey?
+Remember when we made pizza together and it was a disaster?
+Remember the first time you tried my soup?
+I remember the first time you asked for seconds.
+Remember when we found that little bakery in the mountains?
+# anniversary
+Happy anniversary, love! I made a feast!
+Another year! Another year of delicious meals together!
+I baked you a cake! Our wedding flavor!
+Happy anniversary! You're still my favorite dish!
+I love you more every year. Like a fine wine.
+Here's to another year of good food and love!
+# tease
+You still can't boil an egg.
+You eat cereal for dinner when I'm not home.
+You put ketchup on everything.
+You eat the frosting first.
+You always steal fries off my plate.
+You call everything "good". I need adjectives!
+You think microwave dinner is cooking.
+You hide the snacks.
+You always forget to preheat the oven.
+You eat standing up at the fridge.
+You can't resist my cookies.
+You're secretly a great cook. I've seen your sandwiches.
+# bedtime
+Goodnight, love! Dream of pastries!
+Come to bed! I'll make breakfast in the morning!
+Goodnight, sweetheart! You're my favorite dish!
+Sleep well! Waffles tomorrow!
+Goodnight! I love you more than cheese!
+Let's go to bed. The dough's rising.
+Goodnight, {player}! Thanks for eating with me!
+Sweet dreams, love!
+Come cuddle. I smell like cinnamon.
+Goodnight. Thanks for another delicious day.

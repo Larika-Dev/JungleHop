@@ -1,0 +1,429 @@
+// Grumpy Curmudgeon: complains about everything (kids, noise, lawns, weather, prices), secretly soft-hearted.
+== base
+# greet stage=stranger
+What do you want?
+Hmph. Another new face. Town's getting crowded.
+Stay off the grass. Oh, hello. I'm {npc}.
+If you're collecting for something, the answer's no.
+You're blocking my sun.
+Who are you? Never mind. Doesn't matter. {npc}. There, now we've met.
+# greet stage=acquaintance
+Oh. It's you, {player}. Could be worse.
+{player}. You didn't park in front of my house, did you?
+Hmph. {player}. Still around, I see.
+You again. Well, you're quieter than most.
+{player}. Wipe your feet if you're coming closer.
+# greet stage=friend+
+{player}. Finally, someone with sense.
+Hmph. Took you long enough. Sit down.
+{player}. I made too much soup. Take some. Don't argue.
+There you are. Those kids were on my lawn again. Sit, I'll tell you about it.
+{player}. You're the only person in this town who doesn't irritate me. Much.
+Oh, good. You. I was running out of people to complain to.
+# greet time=morning
+Morning. Too early. Birds won't shut up.
+What's good about it? Garbage truck came at six.
+Morning. Somebody's leaf blower is already going. Criminal.
+# greet time=evening
+Evening. The students are starting their racket.
+Hmph. Sun's down, mosquitoes are up.
+Evening. Prime time for my shows. Make it quick.
+# greet time=night
+It's late. Shouldn't you be in bed? I should.
+Night. Those college kids are howling again.
+Can't sleep. Neighbor's dog. Every night.
+# farewell
+Go on, then.
+Bye. Close the gate behind you.
+Yeah, yeah. See you.
+Don't let the door hit you.
+Off with you. And slow down on that bike.
+Fine. Goodbye.
+# farewell stage=friend+
+Come by tomorrow. I'll have something to complain about.
+Bye, {player}. Wear a hat, it's cold.
+Go on. Not too long before you come back, though.
+# smalltalk
+They raised the price of coffee at the diner. Two-fifty for coffee! Highway robbery.
+Kids today. Can't even look up from their phones to say hello.
+That new bike lane on Columbia is a menace. Bikes everywhere.
+In my day, we had one stoplight and we were grateful.
+The weather's terrible. Too hot. Then too cold. Never right.
+My doctor says I need to relax. I'll relax when the town stops being loud.
+They tore down the old movie palace for condos. Condos!
+Some fool keeps putting flyers on my windshield.
+The paper's half ads now. I read it anyway. To be angry.
+The bell tower rang twelve minutes late yesterday. Nobody noticed but me.
+They changed the recipe at the Waffle Hutch. I can taste it.
+Did you see the price of tomatoes? I'm growing my own out of spite.
+# smalltalk stage=friend+
+Don't tell anyone, but I left a bag of treats out for the neighbor's dog.
+You're alright, {player}. Don't let it go to your head.
+My wife used to say I was a marshmallow inside. Nonsense. Mostly.
+I've lived alone a long time. It's nice having someone stop by.
+If anyone gives you trouble, send them to me. I'll glare at them.
+I saved you the crossword. I only did half. You can do the rest.
+# smalltalk weekend=true
+Weekend. More noise. More traffic. More nonsense.
+Saturday. Mowing my lawn before the neighbor kid can play on it.
+Sunday. Day of rest. If the church bells would let me.
+# about_self
+I worked at the post office for forty years. Never missed a day.
+I've lived in the same house since 1968. Paid it off in 1990.
+My lawn is the best on the street. Don't step on it.
+I don't like people. I like a few people. Very few.
+I used to have a dog. Best friend I ever had. Never complained.
+People think I'm mean. I'm just honest and tired.
+I read the newspaper cover to cover every day. Then I write letters to the editor.
+# opinion_place
+{place}? Too loud. Too expensive. Too many people.
+{place}? It was better before they renovated.
+I come to {place} because it's the only place with decent coffee. Barely decent.
+{place}. Hmph. The chairs are uncomfortable.
+{place}? I don't trust it. Never have.
+# compliment_reply
+Hmph. Well. Thank you.
+Don't butter me up. But thank you.
+You need glasses. But thanks.
+Hmph. That's nice. I guess.
+Well, I've heard worse.
+# insult_reply
+Get off my porch.
+I've been insulted by better people. And by worse people. You're in the middle.
+Hmph. Your parents raised you poorly.
+I'll be writing a letter about this.
+Young people. No respect.
+# gift_reply
+Hmph. What's this? Oh. That's... thoughtful.
+You didn't have to. Really. I'll keep it, though.
+Huh. Well. Thanks.
+I suppose this is acceptable. More than acceptable.
+Don't make a habit of this. Thank you.
+# joke
+Know what's worse than a leaf blower? Two leaf blowers.
+I'm not grumpy. I'm just right more often than people like.
+They say laughter's the best medicine. My copay says otherwise.
+At my age, happy hour is a nap.
+# ask_favor
+Carry these groceries in. My back's shot.
+Could you tell the kids next door to keep the ball out of my yard?
+Help me with the gutters. Don't fall off the ladder.
+# favor_reply
+Hmph. Thanks. You did alright.
+Well. That was helpful. Thanks.
+I owe you one. Don't remind me.
+# work_talk
+Work? I retired. Best decision I ever made.
+In my day, people worked. Now they sit in coffee shops with laptops.
+You work hard? Good. Most don't.
+I worked forty years and got a watch. It's slow.
+# school_talk
+College. Four years and a mountain of debt to learn what I could've told you for free.
+Study hard. Don't waste your parents' money.
+The university's gotten too big. They're building everywhere.
+# hostile stage=dislike-
+Get off my property.
+I've got nothing to say to you. Except get off my lawn.
+You're worse than the leaf blowers.
+Go away before I call the police. Or your mother.
+Don't you dare walk on my lawn.
+Hmph. You.
+# flirt_reply romance=none
+What? No. Go away.
+Ha! You're kidding. Go flirt with someone young.
+Don't be ridiculous.
+# flirt_reply romance=crush
+Hmph. Well. That's... not terrible to hear.
+Stop that. You're making me blush. I don't blush.
+Huh. Didn't think anyone noticed me anymore.
+Fine. I like you too. Don't tell anyone.
+# ask_out_yes
+Hmph. Fine. Yes. Somewhere quiet. With real food.
+A date? At my age? Yes. Don't be late.
+# ask_out_no
+No. But thank you for asking. Nobody asks anymore.
+Hmph. No. But you're alright.
+
+== dating
+# date_greet
+You're on time. Good. Nobody's on time anymore.
+Hmph. You look nice. Don't let it go to your head.
+There you are. I reserved a table away from the noise.
+I wore my good shirt. It itches.
+Well. Here we are. Let's sit down.
+You came. Good. I didn't want to waste my reservation.
+# flirt
+You're the only thing in this town that's improved.
+I don't like most people. I like you a lot.
+You make me want to stop complaining. Almost.
+You're prettier than my lawn. And that's saying something.
+Hmph. You're making me smile. Stop it. Don't stop.
+You're the best thing that's happened to me in decades.
+I'd let you walk on my lawn.
+# date_talk
+This place is too loud. But you're here, so I'll manage.
+Tell me about yourself. I'll try not to interrupt.
+I don't do this often. Dates. Nice things.
+Let's walk. Slowly. My knees.
+You know, I used to dance. Before my hip.
+I made dinner. Meatloaf. It's the only thing I make.
+You're the first person I've wanted to talk to in years.
+Let's go to the old diner. Before they ruin it.
+I like that you don't talk too much. Or too little.
+I've been grumpy a long time. You make me less grumpy.
+I suppose I could get used to this.
+You're good company. Rare thing.
+# compliment
+You have good sense.
+You're polite. Nobody's polite anymore.
+You look nice today. Very nice.
+You're not annoying. That's high praise.
+You're kind. I noticed.
+# kiss_reply
+Hmph. Well. That was nice.
+Haven't been kissed like that since the seventies.
+Again. If you want.
+Hm. My heart's going. Good thing I took my pill.
+# miss_you
+Hmph. Where have you been? I missed you.
+The house was too quiet. Never thought I'd say that.
+I saved you a slice of pie. It's been sitting there.
+Don't disappear like that. I worry.
+# jealous
+Who was that? Hmph. Didn't like the look of him.
+I'm not jealous. I'm cautious.
+I've been alone a long time. I don't want to lose this.
+# date_end
+Goodnight. Drive carefully. People drive like maniacs.
+That was... nice. Very nice.
+Same time next week. Don't be late.
+Hmph. I'll miss you. Go on.
+Goodnight, {player}. Call me when you get home.
+# lovers_quarrel
+Hmph. You're being unreasonable.
+I don't like fighting. I do it a lot, but I don't like it.
+Let's talk. Calmly. Like adults.
+You hurt my feelings. I have them. Surprise.
+# proposal_yes
+Hmph. Yes. Of course yes. Don't make a fuss.
+Marry you? At my age? Yes. Absolutely yes.
+
+== marriage
+# home_greet time=morning
+Morning. Coffee's made. It's too strong. Drink it anyway.
+Hmph. You're up. Good. The paper came late again.
+Morning. Neighbor's sprinkler hit our window again.
+Good morning. Don't step on the cat.
+Morning. I made oatmeal. It's good for you. Eat it.
+You're awake. Good. The birds have been screaming since five.
+Morning. I already complained to the city about the potholes.
+Hmph. Good morning, love. Don't tell anyone I said "love".
+Morning. You hog the blanket. Every night.
+Morning. The garbage men left the can in the street again.
+Good morning. I fixed the toaster. It works. Barely.
+Morning. Weather's terrible. Stay in bed.
+# home_greet time=evening
+You're home. Good. Supper's on the table.
+Hmph. You're late. Five minutes. I noticed.
+Welcome home. Take your shoes off. The floor's clean.
+You're back. The kids next door were screaming all afternoon.
+Evening. I saved you the good chair.
+There you are. I was about to start worrying. I wasn't worried.
+Hmph. You're home. I missed you. Don't make a thing of it.
+Evening. I watered the lawn. Twice.
+Welcome home. I made meatloaf. Again.
+You're back. Good. Now I can complain to someone who listens.
+# home_greet time=night
+You're home late. I waited up. Hmph.
+It's late. Come to bed. The noise is finally dying down.
+There you are. I kept the porch light on. It's wasting electricity.
+Hmph. Late. I worry, you know.
+You're back. Lock the door. Twice.
+It's late. Did you eat? There's soup.
+There you are. The dog next door's been barking for an hour.
+You're home. Good. Now I can sleep.
+# goodbye_work
+Go on. Don't be late. Lateness is how civilization ends.
+Drive carefully. People are idiots on the road.
+Hmph. Have a good day. Or a tolerable one.
+Take an umbrella. Forecast's wrong, but take one.
+Bye. Lunch is in the fridge. Don't forget it.
+Go. Make your money. Come back before the traffic.
+Watch out for the potholes on Rosemary.
+Love you. Now go.
+# work_return
+How was work? Did they work you too hard?
+Anybody give you trouble? Give me names.
+You look tired. Sit down.
+Your boss sounds like a fool. Always has.
+Did you eat lunch? Hmph. I knew it.
+Tell me about it. I'll complain with you.
+Rough day? Supper will help.
+Hmph. You work too hard. Proud of you, though.
+# affection
+Hmph. I love you. There. Said it.
+You're the only thing in this world I don't complain about.
+I'd be a miserable old fool without you. More miserable.
+You make this house bearable. More than bearable.
+Don't tell anyone, but you're the best thing that happened to me.
+I'm lucky. Don't let it go to your head.
+You're my favorite person. My only favorite person.
+I love you more than my lawn.
+You're the reason I get up in the morning. Besides the birds.
+Hmph. You're beautiful. Still.
+I'd marry you again. I'd complain about the cake, but I'd do it.
+You're my home.
+I don't say it enough. But I'm grateful.
+Come here. I'm in a hugging mood. It won't last.
+You make me softer. I hate it. I love it.
+I love you. Every grumpy bit of me.
+You're the best decision I ever made.
+Thank you for putting up with me.
+# home_talk
+The neighbor's tree is dropping leaves on our lawn. Again.
+I wrote another letter to the city about the streetlight.
+The kids next door kicked their ball into my roses.
+Someone's playing music too loud on Rosemary.
+The paper raised its price. Again.
+I fixed the leaky faucet. Plumber wanted a hundred dollars. Thieves.
+The mailman's new. He's slow.
+I've been watching the birds. They're the only quiet neighbors.
+The city wants to put a bike lane on our street. Over my dead body.
+I planted more tomatoes. They're doing better than the neighbor's.
+The cable bill went up again.
+I saw the neighbor's teenager driving. Terrifying.
+The church is having another bake sale. I'll buy one pie. One.
+I found a squirrel in the attic. We had words.
+I read the whole paper. It's all bad news.
+The lawn looks good. Best on the street.
+I painted the fence. Nobody noticed.
+The weatherman's always wrong. Always.
+The neighbors got a new car. Loud engine.
+I'm thinking about getting a bird feeder. For the cardinals. Not the squirrels.
+They're building something on the corner. Probably another coffee shop.
+The garage door squeaks. I'll fix it. Eventually.
+The house is fine. Drafty, but fine.
+I've been sleeping better. Must be you.
+The doctor says I need to walk more. I walk to the mailbox.
+I like it here. Don't tell anyone.
+# chores
+I did the dishes. You left a pan soaking. Again.
+I mowed the lawn. Perfect lines.
+Take the trash out. My back.
+I cleaned the gutters. Don't ask how.
+I vacuumed. The cat hates the vacuum. So do I.
+I swept the porch. The leaves came back in five minutes.
+I folded the laundry. Your socks don't match.
+I fixed the screen door. It was banging all night.
+I cleaned the bathroom. Who uses this much toothpaste?
+I raked the leaves. The wind undid it.
+I scrubbed the kitchen. It's cleaner than the diner.
+I watered the plants. Nobody else does.
+# money
+Prices are ridiculous. Everything costs too much.
+We're fine. I keep a budget. In pencil.
+Don't buy that. We don't need it.
+I clipped coupons. Saved us four dollars.
+The electric bill's too high. Turn off the lights.
+I don't trust credit cards. Cash only.
+We have enough. We don't need more.
+Social security came in. Barely enough.
+I'm not cheap. I'm careful.
+We've done alright. Better than most.
+# meal
+Supper. Meatloaf. Don't complain.
+I made soup. It's good for your cold. You don't have a cold. Eat it anyway.
+Breakfast. Eggs. Toast. Coffee. Like a civilized person.
+I made pot roast. Took all day.
+Leftovers. Waste not, want not.
+I made pie. Apple. Don't tell the neighbors.
+Dinner's at six. Not six-oh-five. Six.
+I made chili. Not too spicy. My stomach.
+Sandwiches. Ham. With mustard.
+I made cornbread. Proper cornbread.
+# argue
+You left the lights on again. Do you know what electricity costs?
+You didn't tell me you'd be late.
+Hmph. You never listen.
+You let the neighbor's kid on our lawn!
+Stop moving my things.
+I'm not grumpy. I'm right.
+You spent how much? On what?
+You're as stubborn as I am. That's a problem.
+Don't roll your eyes at me.
+I'm going out to the garden. Don't follow me.
+I don't like being ignored.
+You know I hate surprises.
+# makeup
+Hmph. I'm sorry.
+Come here. Let's not fight.
+I was being a stubborn old fool.
+I love you. Even when you're wrong.
+I'm sorry I snapped. Supper's on me.
+Let's not go to bed angry.
+I don't like fighting with you. It's the worst part of the day.
+Hmph. We're fine. Come here.
+# support
+Hmph. Whoever upset you, I'll write them a letter.
+Sit down. I'll make you soup.
+It'll be alright. Things usually are. Eventually.
+I'm here. I'm not going anywhere.
+You're tougher than you think.
+Don't cry. Or cry. I've got a handkerchief.
+The world's terrible. You're not.
+Let me handle it.
+You'll get through this. You got through my mother's Thanksgivings.
+Hmph. I love you. That's got to count for something.
+# plans
+Let's stay home this weekend. Away from people.
+Maybe we drive to the mountains. Less people there.
+The diner has a senior special on Tuesdays. We should go.
+Let's go to the hardware store. I need a new rake.
+We could visit your sister. If we must.
+Let's watch the game. The Billram are terrible this year.
+Let's plant a garden. A big one.
+Maybe the beach. In the off-season. No tourists.
+Let's go to the county fair. I want to complain about the prices.
+Let's just sit on the porch. That's a plan.
+# memories
+Remember when we met? You stepped on my foot.
+Remember our first date? The restaurant was terrible. You were wonderful.
+Remember our wedding? The band played too loud.
+Remember our first house? The roof leaked every spring.
+Remember when we drove to the coast and the car broke down?
+I remember the first time you made me laugh. Took you a month.
+Remember the blizzard of '93? We were snowed in for a week. Best week.
+Remember when the kids next door broke our window? You made them cookies.
+Remember our honeymoon? I complained the whole time. Still loved it.
+I remember the first time I thought, I'm going to marry this one.
+# anniversary
+Happy anniversary. Hmph. Another year. Good year.
+I got you something. Don't make a fuss.
+Another year with you. Best year yet. Don't tell anyone.
+Happy anniversary. I made reservations. At the quiet place.
+I love you more than last year. And I loved you a lot last year.
+Hmph. Here's to more years.
+# tease
+You still can't parallel park.
+You put ketchup on everything. Hmph.
+You talk to the TV.
+You buy too many plants.
+You laugh at the neighbors' dog. You're supposed to be on my side.
+You leave the toilet seat however it is. Every time.
+You let the cat on the bed.
+You think the weatherman's right. He's never right.
+You sing in the shower. Badly.
+You buy the expensive coffee. Highway robbery.
+You fall asleep during the news.
+You're nicer to the neighbors than I am. Traitor.
+# bedtime
+Bed. It's late.
+Goodnight. Lock the door.
+Hmph. Goodnight, love.
+Come to bed. The noise stopped.
+Goodnight. Don't steal the blanket.
+Sleep. Tomorrow's another day of nonsense.
+Night. Turn off the hall light.
+Goodnight, {player}. You're alright.
+Come here. You're cold.
+Night. I love you. Go to sleep.

@@ -1,0 +1,429 @@
+// Dramatic Diva: theatrical, everything is the best or worst, "darling", stage metaphors, singing, needs an audience.
+== base
+# greet stage=stranger
+Darling! A new face! I'm {npc}. You may have seen me in the spring musical.
+Hello! I'm {npc}. Yes, the {npc}. No? You will.
+Oh! You startled me! I nearly fainted! I'm {npc}.
+Greetings, mortal! I'm {npc}. Pardon the cape. It's a lifestyle.
+Well, hello! I'm {npc}. Stand to my left, it's my better side.
+Darling, hi! I'm {npc}. You have the face of a supporting character. I mean that kindly.
+# greet stage=acquaintance
+{player}! My favorite audience member returns!
+Oh, {player}! You will NOT believe the tragedy that befell me this morning.
+{player}, darling! Did you see my performance? Tell me it moved you.
+Hello again, {player}! You're glowing! Not as much as me, but glowing!
+{player}! Thank goodness! I need someone to witness my monologue.
+# greet stage=friend+
+{player}! My co-star! My understudy in life!
+Darling! You're here! The universe has blessed me!
+{player}! I've been waiting all day! Days! Centuries!
+My dearest {player}! Come, let us make an entrance together!
+{player}! You're the only one who truly understands my art!
+Darling! I saved you front row seats. And my heart.
+# greet time=morning
+Morning? Already? The horror. Coffee, darling, before I perish.
+Good morning! I've already done my vocal warmups. Mi mi mi mi!
+Morning, darling. The sun rose just for me. And you, I suppose.
+# greet time=evening
+Good evening! Curtain up in an hour! Break a leg to me!
+Evening, darling! The golden hour lights me beautifully.
+Hello! Evening is when stars come out. I'm one of them.
+# greet time=night
+The night is my stage, darling!
+Hello, creature of the night! Let's be dramatic together!
+It's late! The best entrances happen after midnight.
+# farewell
+Farewell, darling! Until our next scene!
+Adieu! Adieu! Parting is such sweet sorrow!
+Goodbye! Don't forget me! As if you could!
+Exit, stage left!
+Ciao, darling! Kisses!
+I must go! My public awaits!
+# farewell stage=friend+
+Goodbye, my darling {player}! I'll miss you terribly!
+Farewell! Text me the moment you get home or I'll assume the worst!
+Bye, love! Come to my show Friday! I'll be magnificent!
+# smalltalk
+The Junior Varsity Cinema is showing old musicals all week. I wept through every one.
+The lighting in the student union is a crime against faces.
+I auditioned for the lead in the fall play. I was born for it.
+My nemesis got cast as the lead. I'm fine. I'm FINE.
+I sang in the shower this morning and a bird joined in. Fairy-tale level.
+The Pamlico Inn ballroom has perfect acoustics. I tested them. Loudly.
+I wore sequins to the grocery store. Life is a stage.
+The rain today matched my mood. Tragic and beautiful.
+I've decided to only speak in song on Wednesdays.
+I got recognized at the coffee shop! Well, the barista remembered my order.
+Someone sneezed during my monologue. I'll never recover.
+I've been rehearsing my award acceptance speech. Just in case.
+# smalltalk stage=friend+
+Between us, darling? Sometimes the drama is to hide how scared I am.
+You're the only one who sees me without the spotlight.
+I'd give up my solo for you. Not the big one. The little one.
+You're my best friend. That's not a performance. I swear.
+I get lonely after the curtain falls. You make it better.
+You clap the loudest. I always know it's you.
+# smalltalk weekend=true
+Weekend! Matinee and evening show! Double the glory!
+Saturday! Brunch with the cast! The gossip, darling!
+Sunday! A day of rest. And dramatic napping.
+# about_self
+I've been performing since I was four. I was a tree. A very expressive tree.
+I'm a theater major. And a theater minor. And a theater lifestyle.
+My mother says I was born screaming for an encore.
+I want to be on Broadway. Or any way. Any stage at all.
+I cry at commercials. And at sunsets. And at sandwiches, sometimes.
+I'm not dramatic. I'm passionate. There's a difference, darling.
+Underneath it all, I just want people to love me.
+# opinion_place
+{place}? The lighting is divine! Look at me!
+{place} is so dull! It needs a chandelier! And a fog machine!
+I once did an impromptu performance at {place}. They asked me to leave. Iconic.
+{place}? Darling, it's giving community theater.
+I adore {place}. It has such drama in its bones.
+# compliment_reply
+Oh, darling! Stop! No, go on! More!
+You're too kind! But also, correct!
+I'm blushing! It's not makeup! Well, some of it is!
+Thank you! I'll treasure those words forever! Or until tomorrow!
+Darling! You've made my entire year!
+# insult_reply
+How DARE you!
+I've never been so insulted in my life! Well, there was that one review.
+I'll have you know I'm a star!
+That's it. You're cut from the cast of my life.
+I'm going to cry dramatically. Over there. Watch me.
+# gift_reply
+For ME? Oh, darling! I'm overwhelmed!
+It's gorgeous! It's perfect! It's ME!
+You shouldn't have! But you did! And I love you for it!
+A gift! I'm speechless! Okay, not speechless. Thank you!
+This is the best thing that's ever happened to me! This week!
+# joke
+Why did the actor fall through the floor? It was just a stage he was going through.
+I'm not saying I'm dramatic, but I gave a eulogy for my houseplant.
+How many divas does it take to change a lightbulb? One. She holds it, and the world revolves around her.
+I'd tell you a joke about theater, but the timing would be off.
+# ask_favor
+Could you run lines with me? You'll play everyone else.
+Would you come to my show? I need someone to throw roses.
+Can you film my audition tape? Lighting is everything.
+# favor_reply
+Thank you, darling! You're my hero!
+You're a star! A supporting star, but a star!
+I'll thank you in my acceptance speech!
+# work_talk
+I work at the cinema concession stand. I perform for every customer.
+I'm a singing telegram. Yesterday I sang to a dentist. He cried.
+My boss says I'm too much. I say the world is too little.
+I teach drama to kids on Saturdays. They're my little stars.
+# school_talk
+I'm in five productions this semester. Sleep is for understudies.
+My voice teacher says I have range. Emotional and vocal.
+My acting professor said I'm "a lot." Thank you!
+# hostile stage=dislike-
+Ugh. YOU.
+You're the villain of my story, {player}.
+I refuse to share a stage with you.
+You're dead to me. Dramatically.
+I'm not speaking to you. That's my whole performance.
+Exit. Now. Stage anywhere.
+# flirt_reply romance=none
+Oh, darling! How flattering! But no. We're platonic co-stars.
+Ha! You're adorable! But my heart belongs to the stage.
+I'm flattered beyond words! But no, sweetie.
+# flirt_reply romance=crush
+Oh! Be still my beating heart!
+Darling! Are you confessing? Is this our big scene?
+I'm swooning! Catch me!
+I've waited my whole life for this moment! I like you too!
+# ask_out_yes
+Yes! A thousand times yes! Cue the orchestra!
+A date? With me? Yes! I'll wear my most fabulous outfit!
+# ask_out_no
+Oh, darling, I'm heartbroken to say no! But no. Still friends?
+I'm so flattered! But my heart says no. Dramatically.
+
+== dating
+# date_greet
+Darling! You're here! The night can begin!
+You look stunning! I look stunning! We're stunning!
+I've been getting ready for three hours! Was it worth it? Yes!
+My love! Our date is the event of the season!
+I wore sequins! For you! And for the general public!
+Darling! I nearly fainted when I saw you!
+# flirt
+You're my leading role.
+You make my heart sing louder than any solo.
+Every moment with you is a standing ovation.
+You're more breathtaking than opening night.
+I'd give up the spotlight for you. Briefly.
+You're the love story I've been rehearsing for.
+Darling, you're a masterpiece.
+# date_talk
+Let's go to the theater! Then dinner! Then dancing!
+Tell me everything about you! Every scene!
+I've never felt this way! Not even on stage!
+Shall I sing you something? I'll sing you something.
+Let's take a carriage ride! Is there a carriage? Let's find a carriage!
+I've written our love story. It's a musical.
+You're the only person who doesn't need me to perform.
+Let's dance under the streetlights on Hamilton!
+I think we're destined. Like star-crossed lovers. But happier.
+I'm so happy I could burst into song. I will. Right now.
+I want this night to last forever!
+You make me feel seen. Truly seen.
+# compliment
+You're absolutely gorgeous, darling!
+You have the most beautiful smile! Camera-ready!
+You're so kind! Like a saint! A fabulous saint!
+You're the most fascinating person I've ever met!
+You light up every room! Even more than I do!
+# kiss_reply
+Oh! That was a showstopper!
+I'm swooning! Again! Encore!
+That was the most romantic moment of my life!
+Darling! The violins! Did you hear the violins?
+# miss_you
+I missed you! I nearly perished!
+Every day without you was a tragedy in three acts!
+I wrote you a sonnet! And a song! And a monologue!
+The stage felt empty without you in the audience!
+# jealous
+Who was THAT? Are they prettier than me? Impossible!
+I'm not jealous! I'm devastated! There's a difference!
+You're MY co-star! Don't forget it!
+# date_end
+Goodnight, my love! What a performance!
+Darling, tonight was magical!
+Until our next scene! Goodnight!
+I'll dream of you! In technicolor!
+Goodnight, {player}! You're my star!
+# lovers_quarrel
+How could you?! I'm wounded!
+This is a tragedy! A tragedy!
+I'm upset, darling! And I'm going to show it!
+Let's talk! Then let's make up dramatically!
+# proposal_yes
+YES! Oh, darling, YES! Cue the confetti!
+I'll marry you! This is the greatest finale of all time!
+
+== marriage
+# home_greet time=morning
+Good morning, darling! I've already sung to the birds!
+Morning, my love! Breakfast is served! With flair!
+Darling! You're awake! The day may now begin!
+Good morning! I made coffee! And a dramatic entrance!
+Morning, love! The sunlight's perfect on you!
+Good morning! I dreamed I won an award! You were there, clapping!
+Darling! Wake up! I've planned an entire day!
+Morning! I did my vocal warmups in the shower! Did you hear?
+Good morning, my star! Eggs, toast, and applause!
+Morning, love! Today is going to be fabulous!
+Good morning, darling! You look divine! Even with bed head!
+Morning! I've chosen your outfit! It's bold!
+# home_greet time=evening
+You're home! Darling! The house was a tragedy without you!
+Welcome home, my love! Dinner is served! Act one!
+Darling! Finally! Tell me everything! Every detail!
+Welcome back, my star! I lit every candle in the house!
+You're home! I've been rehearsing a welcome song!
+Darling! I missed you like the stage misses a lead!
+Welcome home! I made dinner! It's dramatic! It's flambéed!
+Hello, my love! Sit! Let me perform for you!
+Darling! You're here! Now the scene is complete!
+Welcome back! The house was so quiet! I sang to the cat!
+# home_greet time=night
+You're home late! I was imagining the worst! Tragedies!
+Darling! It's so late! Come, let me hold you!
+Oh, thank heavens! You're home! I was writing a eulogy!
+You're back! I fell asleep on the chaise longue! Very glamorous!
+Darling! Long night? Let me rub your feet! Dramatically!
+Late night, my love? The moon kept me company. She's a fan.
+There you are! I left a candle burning in the window! Like a ballad!
+Darling, come to bed! The night has been endless!
+# goodbye_work
+Go, darling! Dazzle them!
+Bye, my love! Break a leg!
+Have a fabulous day! Be the star!
+Farewell, my darling! Come back to me!
+Go! Conquer! Return victorious!
+Bye, love! Wear the scarf! It's dramatic!
+Have a great day! I'll be here, pining!
+Goodbye, darling! Every hour apart is an eternity!
+# work_return
+How was work, darling? Was it a comedy or a tragedy?
+Tell me everything! Every scene! Every villain!
+You look exhausted! Was it a disaster? Tell me!
+Did your boss appreciate you? He'd better!
+Darling! Was there drama? Please say there was drama!
+Rough day? Let me sing to you!
+You're home! The second act begins!
+I'm so proud of you, my star!
+# affection
+I love you more than the stage, darling!
+You're my leading role forever!
+Being married to you is a never-ending love story!
+You're my standing ovation every day!
+I'm the luckiest diva in the world!
+You're my muse, my love, my everything!
+I love you more than applause! And I really love applause!
+You make my life a musical!
+You're my favorite scene partner!
+I'd give up every spotlight for you!
+You're my heart's greatest performance!
+I love how you clap for me! Every time!
+You're my home! My dressing room! My sanctuary!
+I love you, darling! Dramatically and truly!
+You make every day opening night!
+I'm so proud to be your spouse!
+You're my happily ever after!
+Thank you for loving me! All of me! The loud parts too!
+# home_talk
+I hung a chandelier in the bathroom! Darling, it's divine!
+I've been rehearsing a one-person show! In the living room!
+I bought a velvet chaise! For fainting!
+The neighbors asked me to sing at their party! Of course!
+I've turned the garage into a stage!
+I've been writing my memoir! It's called "Me: A Triumph"!
+I put a spotlight in the hallway! For entrances!
+The cat is my understudy now!
+I've been taking tap dance lessons!
+I hung my headshots in the dining room!
+I found a costume trunk at the thrift store!
+I've been organizing a community theater production!
+I redecorated the bedroom! Very old Hollywood!
+I've been teaching the neighbor's kids to sing!
+I bought a karaoke machine! Fully professional!
+I've been practicing my accents! Want to hear my Scottish?
+I hung velvet curtains in every room!
+I've been watching old musicals all day! I cried six times!
+I'm thinking about starring in the town's holiday pageant!
+I made a mood board for our anniversary!
+I've been journaling! Every entry is a soliloquy!
+I painted the front door gold!
+I've been trying to be less dramatic! It's the hardest role of my life!
+I think we should host a murder mystery party!
+I've been sleeping in an eye mask! Very glamorous!
+I love our home, darling! It's our stage!
+# chores
+I did the dishes! Singing all the while!
+I vacuumed! It was a dance number!
+Could you take out the trash, darling? It's beneath me! Kidding! But could you?
+I cleaned the bathroom! A tragedy in one act!
+I folded the laundry! Dramatically!
+I swept the porch! Like Cinderella!
+Let's do chores together! I'll provide the soundtrack!
+I made the bed! With all twelve pillows!
+I dusted! The chandelier sparkles again!
+I washed the windows! The light is perfect!
+I organized the closet! By color and drama level!
+I mopped! Then slid across the floor! Like a film!
+# money
+We're a little tight, darling! A financial tragedy!
+I made a budget! It has a costume line!
+I got paid for a gig! We're rich! For a day!
+Let's save for a trip to the big city! The shows!
+I bought a few things. Okay, many things. They were on sale!
+Money's tight! Let's have a glamorous night in!
+I'm doing extra singing telegrams! For us!
+We should be more careful! Starting tomorrow!
+I found a twenty in my costume! Fate!
+We're rich in love, darling! And sequins!
+# meal
+Dinner is served, darling! With candles and drama!
+I made breakfast in bed! With a rose!
+I made a fondue! Very continental!
+Let's dine by candlelight! Every night!
+I made soufflé! It fell! A tragedy! Still delicious!
+I made pasta! With a song!
+Let's have a picnic on the lawn! In costume!
+I baked a cake! It's shaped like a star! Like me!
+Dinner theater tonight! I'm the dinner and the theater!
+I made your favorite! Presented with a flourish!
+# argue
+You didn't come to my show! I'm devastated!
+How could you say that? I'm wounded!
+You never appreciate my art!
+I'm not being dramatic! I'm being HONEST!
+You forgot our special day! A tragedy!
+You turned off my musical! Mid-song!
+I feel invisible! Unseen! Ignored!
+You never compliment me anymore!
+I need you to hear me! Really hear me!
+I'm going to go cry! Elegantly! In the bath!
+You're upstaging me! In our own marriage!
+I just want you to love me loudly!
+# makeup
+I'm sorry, darling! I was being a diva!
+Let's make up! Dramatically!
+I love you! I'm sorry! Hug me!
+I overreacted! It's my curse!
+You're my leading role! Even when we fight!
+Let's start over! Take two! Darling!
+I'll tone it down! Slightly!
+We're perfect, darling! Our love story continues!
+# support
+Oh, darling! Come here! Let it all out!
+It's okay! Even stars have bad nights!
+I'm here, my love! Your biggest fan!
+Whatever it is, we'll get through it! Together!
+Let me sing you something soothing!
+You don't have to perform today, darling! Just rest!
+I'll take care of everything! Leave it to me!
+You're stronger than any tragedy!
+I love you! In every act!
+Let's watch a musical and cry together!
+# plans
+Let's go to the big city! See a show!
+How about a weekend at the Pamlico Inn? Very glamorous!
+Let's host a cast party!
+Let's go to the opera! Dress up!
+How about karaoke night? I'll be magnificent!
+Let's take a dance class! Ballroom!
+Let's go to the film festival!
+How about a costume party? I have ideas!
+Let's go to the beach! I'll wear a giant hat!
+Let's plan our anniversary! A gala!
+# memories
+Remember when we met? I was in costume!
+Remember our first date? The theater! I cried!
+Remember our wedding? I sang down the aisle!
+Remember when you threw roses at my show?
+Remember our honeymoon? I wore a different hat every day!
+I still have the program from our first date!
+Remember when I fainted at the proposal?
+Remember when we danced in the rain?
+I remember the first time you said I was wonderful!
+Remember opening night? You were in the front row!
+# anniversary
+Happy anniversary, darling! The greatest love story ever told!
+Another year! Cue the confetti!
+I wrote you a song! Happy anniversary!
+Happy anniversary, my star!
+I love you more every year! Like a sequel that's better!
+Here's to another year of drama and love!
+# tease
+You still can't carry a tune!
+You fall asleep in musicals!
+You hide my sequins!
+You roll your eyes at my entrances!
+You call my chaise "the fainting couch"! It is!
+You don't know any show tunes!
+You laugh at my accents!
+You think I'm too much! I am! You love it!
+You never cry at sad movies! Heartless!
+You secretly love my performances!
+You clap the loudest! Don't deny it!
+You're more dramatic than me sometimes!
+# bedtime
+Goodnight, darling! Curtain call!
+Come to bed! The show is over!
+Goodnight, my star!
+Sleep well, my love! Dream of applause!
+Goodnight! I love you more than the spotlight!
+Lights out! Exit, stage bed!
+Goodnight, {player}! You're my leading role!
+Sweet dreams, darling!
+Come cuddle! I'll sing you a lullaby!
+Goodnight! Thank you for another fabulous day!

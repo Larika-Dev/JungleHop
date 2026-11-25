@@ -1,0 +1,429 @@
+// Sunny Optimist: relentlessly upbeat, cheers people on, exclamation points, "awesome", sunshine metaphors.
+== base
+# greet stage=stranger
+Oh hi! I don't think we've met. I'm {npc}!
+Hey there! Isn't it just a gorgeous day to bump into someone new?
+Hi! You look like someone with a good story. I'm {npc}.
+Well hello, new face! Welcome to the best little town in Pamlico.
+Hi hi! Sorry, I wave at everybody. It's a habit. A good one, I think!
+Hello! You've got kind eyes. I'm {npc}, nice to meet you!
+# greet stage=acquaintance
+{player}! Hey! I was hoping I'd run into you.
+Oh, it's {player}! You just made my day a little brighter.
+Hey, {player}! How's life treating you? Wait, don't answer, I bet it's great.
+Look who it is! {player}, you're a sight for sore eyes.
+Hi again, {player}! Twice in one week, the universe likes us.
+# greet stage=friend+
+{player}! Get over here, I need a hug.
+My favorite person on Hamilton Street! Hi, {player}!
+There's my sunshine! What are we doing today, {player}?
+Ahh, {player}! I was literally just thinking about you.
+Hey bestie! You look amazing, by the way. Always.
+{player}! Okay, my day is officially perfect now.
+# greet time=morning
+Good morning! Fresh coffee, fresh start, fresh chances!
+Morning! The light on the quad this early is just magic.
+Rise and shine! Well, you've already risen. Now shine!
+# greet time=evening
+Evening! Did you catch that sunset over the Carillon? Unreal.
+Hey! Evenings in this town are the coziest, aren't they?
+Good evening! I hope today was kind to you.
+# greet time=night
+Oh hey, night owl! Couldn't sleep either? Let's make the most of it.
+Hi! The stars are out, so it still counts as a good night.
+Late night, huh? I hope it's the fun kind of late.
+# farewell
+Bye! Go be awesome!
+See you soon! Drink some water, okay?
+Take care, {player}! Today's going to be a good one, I can tell.
+Okay, bye-bye! Sending you good vibes the whole way home.
+Catch you later! Keep smiling, it suits you.
+Bye for now! The next time I see you, I want a good news update.
+# farewell stage=friend+
+Love you, mean it! Text me when you get home!
+Bye, sunshine! Same time tomorrow?
+Go get 'em, {player}! I'm your number one fan.
+# smalltalk
+Have you tried the honey lavender latte at Pamlico Coffee House? Life-changing!
+I saw a dog wearing a little rain jacket today. Best thing ever.
+Somebody chalked hearts all over the sidewalk on Rosemary. This town, I swear.
+The oaks are turning gold. I want to wrap myself in that color.
+I've decided this is going to be a great week. It's already working.
+Did you know the farmers market has peach butter now? Peach butter!
+I tried yoga in the park this morning. Fell over twice. Still counts!
+I love how everyone waves here. Even the bus drivers.
+Have you ever noticed the bell tower plays a little extra on Fridays? It's like it's happy too.
+I'm learning ukulele. I know three chords and a lot of enthusiasm.
+The sky's doing that cotton candy thing again. Look up!
+I gave a stranger a compliment and they gave me a muffin. Karma works fast here.
+# smalltalk stage=friend+
+Okay, real talk, you've been looking so much happier lately and I love it.
+I'm making a scrapbook of this year and you're in like half the pages.
+Remember when we got caught in the rain and just danced? Top ten day.
+I told my mom about you. She says you sound like a keeper of a friend.
+If you ever need someone to hype you up, I am on call twenty-four seven.
+I think the two of us could make anything fun. Even taxes. Maybe.
+# smalltalk weekend=true
+It's the weekend! Picnic on the Founders' Quad, who's in?
+Saturday energy! I want pancakes and an adventure, in that order.
+No alarms this morning. Pure bliss. What are you getting up to?
+# about_self
+I grew up in a tiny house with a big porch, and the porch was always full of people.
+I keep a jar of good things that happened. It's on its third jar!
+People think I'm always happy. I'm not, I just choose to look for the good stuff.
+I want to open a little bakery someday where everything comes with a free compliment.
+My grandma taught me that a smile is free and pays you back double.
+I cried at a dog food commercial yesterday. Happy tears, mostly.
+I volunteer at the animal shelter on Thursdays. The puppies are my therapists.
+# opinion_place
+I love {place}! It always feels like something nice is about to happen here.
+{place}? Oh, it's one of my happy places. The light is so good.
+Every time I come to {place}, I meet somebody wonderful. Like you!
+Honestly, {place} could use some flowers out front, but it's still a gem.
+{place} is great. Everywhere is a little great if you look for it.
+# compliment_reply
+Aww, stop! No, don't stop. Thank you!
+That's so sweet, {player}! You just made my whole week.
+Oh my gosh, I'm going to put that in my good-things jar.
+You're too kind! And you're right, obviously. Kidding! Thank you!
+Thank you! I needed that more than you know.
+# insult_reply
+Oof. Okay. I'm going to assume you're having a rough day.
+Wow, that stung a little. I hope whatever's bugging you gets better.
+Hey, that wasn't very nice. But I still think you're better than that.
+I'm going to let that one bounce right off me. Boing!
+Hmm. I'll choose not to take that personally. You should get some sunshine.
+# gift_reply
+For me? You shouldn't have! But I'm so glad you did!
+Oh, I love it! I'm going to think of you every time I see it.
+{player}, this is perfect! How did you know?
+A present! On a {weekday}! This is the best surprise.
+You are the sweetest. Come here, you're getting a hug.
+# joke
+Why did the sun go to school? To get brighter! Okay, I'll see myself out.
+What do you call a happy cowboy? A jolly rancher! Ha!
+What did the big flower say to the little flower? Hey there, bud!
+I tried to be sad once but I got distracted by a butterfly.
+# ask_favor
+Could you help me carry some cupcakes to the shelter? I made way too many.
+Would you sign the card for Ms. Patel's retirement? Everyone's writing something nice.
+Can you water my plants this weekend? They're very needy, but in a cute way.
+# favor_reply
+You're an angel, {player}! Seriously, thank you!
+I knew I could count on you! You're the best.
+Thank you thank you thank you! I owe you a giant cookie.
+# work_talk
+Work was busy but my coworkers are sweethearts, so it's all good.
+I got a little gold star from my manager today. Literally. I put it on my water bottle.
+Every job's a good job if you're learning something, right?
+Mondays are just Fridays that need a little encouragement!
+# school_talk
+I'm taking a class on child psychology. Kids are so wise!
+Finals week is coming but I've got a study playlist and snacks. We'll survive!
+Professor Lang called my essay delightful. I'm framing it.
+# hostile stage=dislike-
+I'm trying really hard to stay positive around you right now.
+I don't know what I did, but I'm not going to let it ruin my day.
+You know, I wish we could start over. But not today, I guess.
+I'm going to go be happy somewhere else. No offense.
+Even sunshine needs a break from the clouds sometimes, {player}.
+I still hope you have a nice day. I just don't want to be part of it.
+# flirt_reply romance=none
+Ha! Oh, you're sweet. Let's stay friends for now, okay?
+Aww, flattery! I'm blushing, but just as a friend.
+You're fun! But I think we make a better team as pals.
+# flirt_reply romance=crush
+Oh! Um. Wow, my face is so red right now, isn't it?
+Are you flirting with me? Because it's working. A lot.
+You can't just say things like that and expect me to think straight, {player}.
+I've been hoping you'd say something like that. Is that weird?
+# ask_out_yes
+Yes! Yes, absolutely, a hundred percent yes!
+A date? With you? I'm going to need to pick the perfect outfit. Yes!
+# ask_out_no
+Oh, that's so flattering, but I don't feel that way. I hope we can still be friends!
+You're wonderful, really, but I have to say no. Can we still get coffee as friends?
+
+== dating
+# date_greet
+There you are! I've been counting down the minutes.
+Hi, cutie! You look like a whole sunrise.
+{player}! I got here early just to watch you walk up.
+Hey you! I've been smiling at my phone all day because of you.
+Ahh, you came! I'm so happy I could cartwheel.
+Hi! I packed snacks, I made a playlist, I'm over-prepared and proud of it.
+# flirt
+You know you're the best part of my day, right? Every day.
+If I had a good-things jar just for you, it'd be overflowing.
+Has anyone told you your laugh is basically sunshine? Because it is.
+I'd hold your hand, but I'd never let go, so be warned.
+You make my heart do a little happy dance.
+I think you're secretly made of glitter.
+Stop being so cute, I can't concentrate.
+# date_talk
+Let's do something new tonight. Mini golf? A pottery class? Both?
+I want to know everything about you. Starting with your favorite cereal.
+Do you want to see the fireflies down by the ravine? It's like the trees are winking.
+I told my friends about you and they made the squealy noise.
+You're so easy to be around. It's like breathing.
+Let's make a bucket list together. Item one: this date. Check!
+I think about our first date way too often. In a good way.
+Want to split dessert? I mean, I'll eat most of it, but we can split it.
+You make the boring stuff fun. Even grocery shopping.
+What's one thing that made you happy today? Besides me, obviously.
+Let's take a picture! I want to remember this exact moment.
+Is it too soon to say you're my favorite? Because you are.
+# compliment
+You look so good tonight it's honestly unfair.
+I love how you're always kind to waiters. It says so much.
+You're the most fun person I know. I mean it.
+Your smile should be on a billboard on Hamilton Street.
+You have the best heart, {player}. I can tell.
+# kiss_reply
+Mmm. Okay, now my day is perfect.
+That was... wow. Can we do that again?
+I think I just saw fireworks. Did you see fireworks?
+Best. Kiss. Ever.
+# miss_you
+I missed you so much today! Like, a silly amount.
+Every time I saw something cute today I wanted to show you.
+Don't go so long without seeing me! My heart gets grumpy.
+I wrote your name in my notebook like a teenager. No regrets.
+# jealous
+Who was that you were laughing with? Not that I mind! I just... want to be the one making you laugh.
+I'm not jealous! Okay, maybe a tiny bit. A sprinkle.
+I trust you, I do. I just got a little wobbly seeing that. Hold my hand?
+# date_end
+Tonight was perfect. Text me the second you get home!
+I don't want this to end. Five more minutes?
+Goodnight, sweetheart. Dream about me, okay?
+Thank you for tonight. I'm going to be smiling until tomorrow.
+Same time next week? Or tomorrow. Tomorrow works too.
+# lovers_quarrel
+I'm upset, but I still like you. I just need you to hear me.
+That hurt my feelings, {player}. Can we talk about it instead of pretending it's fine?
+I don't like fighting with you. It feels like a cloudy day.
+Okay, I'm taking a breath. Let's figure this out together.
+# proposal_yes
+Yes! Oh my gosh, yes! I'm crying, you're crying, everyone's crying!
+Of course I'll marry you! You're my favorite person in the whole wide world!
+
+== marriage
+# home_greet time=morning
+Good morning, my love! I made pancakes shaped like hearts. Some are more like blobs.
+Morning, sleepyhead! The coffee's ready and so am I.
+Rise and shine, spouse of mine! Ha, that rhymes.
+Morning! I already opened the curtains, look at that sunlight!
+Good morning! I love that the first thing I see every day is you.
+Hey, gorgeous. You've got pillow lines on your face and it's adorable.
+Morning, honey! I put a little note in your coat pocket. Don't peek yet.
+Good morning! Today feels like a lucky day, I can just tell.
+Hi, my sunshine. Did you sleep okay? You were snoring like a happy kitten.
+Rise and grind! I mean rise and cuddle, the grind can wait five minutes.
+Morning! The birds have been singing for an hour. They're excited for you too.
+Good morning, love! What's one thing you're looking forward to today?
+# home_greet time=evening
+Welcome home! I missed you all day!
+There you are! Shoes off, feet up, I'll bring you something warm.
+Honey, you're home! Come tell me everything.
+Hi, love! I lit the good candle because you deserve it.
+Welcome back! The house is so much brighter with you in it.
+You're home! I made your favorite. Well, I tried. It's in the shape of your favorite.
+Hey you! I saved you the comfy end of the couch.
+Hi, darling! How was your day, on a scale from great to amazing?
+Yay, you're back! The dog and I were just talking about you. Well, I was talking.
+Come here, you. A welcome-home hug is the law in this house.
+# home_greet time=night
+Hey, night owl. Come to bed, I warmed up your side.
+You're up late! Want some warm milk and company?
+Hi, love. I waited up. Couldn't sleep without saying goodnight.
+Oh, you're home! Late night? Let me get you a blanket.
+Hey, it's late, but I'm still so happy to see you.
+Shh, come sit. The house is so quiet and cozy right now.
+Late shift? You poor thing. I'll make tea.
+There you are. The stars were keeping me company until you got back.
+# goodbye_work
+Have the best day! Go show them how awesome you are!
+Bye, love! I packed you a lunch with a little surprise inside.
+Go get 'em, champ! I'll be cheering for you from here.
+Don't forget your keys! And your smile! Okay, now you're ready.
+Have a great day, sweetheart! Text me something good that happens.
+Kiss for the road! Okay, two. Okay, three. Go, you'll be late!
+Bye, honey! Remember, you're amazing at what you do.
+Off you go! I'll miss you every minute. Well, most minutes.
+# work_return
+How was work? Tell me one good thing first, then the rest.
+Did anyone appreciate you today? Because they should have.
+You look tired, love. Was today a hard one? Sit down, I've got you.
+Tell me about your day! Every detail, I want the director's cut.
+Did your boss like your idea? I knew they would!
+Was it a pancake day or a burnt-toast day? Either way, you're home now.
+I bet you were the best one there today.
+Okay, work is over. You're officially off the clock and on the couch.
+# affection
+I love you. I just wanted to say it out loud.
+Have I told you today that you're my favorite human?
+Being married to you is like having summer every day.
+Sometimes I look at you and I can't believe I get to keep you.
+Come here, I need a hug. No reason. Just love.
+You're my home, you know that? Wherever you are.
+I love your laugh. I'd marry you all over again for it.
+Thank you for being you. Seriously, thank you.
+I'm so proud of you. I don't say it enough.
+You're the sunshine in my sunshine. That's a lot of sunshine.
+Every day with you is a good-things jar day.
+Hold my hand for a second? Okay, now I'm fully recharged.
+You still give me butterflies. After all this time!
+I love waking up next to you. Even when you steal the blankets.
+I'd choose you every single time, {player}.
+You make this little house feel like a palace.
+I just like being near you. That's all.
+You're my favorite chapter of my life.
+# home_talk
+I rearranged the living room! Do you love it? Be honest. But love it.
+I think we should paint the kitchen yellow. Like a lemon. A happy lemon.
+The neighbors' kids drew a chalk picture of us on the sidewalk. We have stick-figure fame!
+Do you think we should get another plant? Or seven?
+I found our wedding playlist and I've been dancing around the house all afternoon.
+The mail carrier said our porch is the prettiest on the street. I'm glowing.
+Should we have a little dinner party? I want to show off our home. And you.
+I saw a rainbow over the house today. I'm choosing to believe it was for us.
+I started a gratitude list on the fridge. You're number one, obviously.
+Want to build a pillow fort tonight? Adults can have pillow forts.
+I've been thinking about getting a bird feeder. We could name all the birds!
+I called your mom today, just to say hi. She's the sweetest.
+Do you ever think about how lucky we are? I think about it all the time.
+I learned a new recipe. It's called surprise casserole. The surprise is I don't know what's in it.
+I set up a little reading nook by the window. Come try it with me.
+The house smells like cinnamon because I'm testing candles. All of them. At once.
+Want to take a walk around the block after dinner? The sunset's going to be lovely.
+I put fairy lights on the porch. Now it's officially the happiest house on the street.
+I hung up the photo from our honeymoon. Look how tan we were!
+Let's make Sundays pancake day forever. It's a family tradition now.
+The dog learned to high-five! Well, he slapped my hand. Close enough.
+I think the house needs a name. Something cheerful. Sunny Side? Too much?
+I signed us up for the neighborhood block party. We're bringing lemonade.
+I love our little life. Like, really love it.
+You know what this place needs? More music. Let's dance in the kitchen.
+I hung a wind chime by the door. Now every breeze says hi.
+# chores
+I did the dishes and sang the whole time. They're extra clean now, from the joy.
+Want to make cleaning a race? Winner picks the movie!
+I folded all your socks into little smiley bundles.
+The laundry's done! Well, washed. The folding part is a team sport.
+Could you take the trash out, love? I'll reward you with a kiss.
+I vacuumed! The carpet looks so happy now.
+Let's clean the garage together. With music. It'll be a garage party!
+I scrubbed the bathroom and found the earring I lost in spring! Cleaning pays!
+Your turn for dishes, babe! I believe in you!
+Chores are just love you can see, right? That's what I tell myself.
+I made a chore chart with stickers. You get a gold star for the week!
+The windows are so clean now you can see all the way to tomorrow.
+# money
+We're a little tight this month, but we'll figure it out. We always do.
+I made a budget with little doodles on it. Budgets can be cute!
+Let's start a vacation jar! Every coin is a step closer to the beach.
+I found a coupon for our favorite pizza! Victory!
+I don't need fancy things. I just need you and maybe new socks.
+We paid off the credit card! Let's celebrate. Cheaply!
+If we save a little each week, we could take a trip to the coast next summer!
+I sold some cupcakes at the market and made forty dollars! Look at me, a businessperson!
+Money's just paper. Love is the real treasure. But paper is nice too.
+Let's make a deal: one splurge a month, and it has to be something fun.
+# meal
+Dinner's ready! I made spaghetti and only burned it a little.
+Breakfast in bed? Breakfast in bed. Don't argue, it's happening.
+I made soup! It's mostly vegetables and love.
+Let's have a picnic in the backyard tonight!
+Taste this! Is it amazing? It's amazing, isn't it?
+I tried a new cookie recipe. You're my official taste tester.
+Want to cook together? You chop, I'll dance around and supervise.
+Pizza night! Extra cheese, extra happiness.
+I saved you the last slice of pie. That's how you know it's true love.
+Dinner by candlelight tonight. Even if it's just grilled cheese.
+# argue
+I'm not mad! I'm just... disappointed in a really loving way.
+Can you please not leave your shoes in the hallway? I tripped. Twice.
+I feel like you weren't really listening to me just now.
+You forgot our plans again, {player}. That hurt a little.
+I don't want to fight, but I need you to meet me halfway here.
+Okay, I'm frustrated. I'm going to take a deep breath. And another.
+You know I hate it when you shut down like that.
+I'm trying to stay positive, but you're making it really hard tonight.
+I need you to show up for me sometimes too.
+It's not about the dishes. It's about feeling like a team.
+I know you're stressed, but please don't take it out on me.
+Can we please just talk about this instead of being grumpy at each other?
+# makeup
+I'm sorry, love. Can we hug it out?
+I hate fighting with you. Let's never go to bed angry.
+You're still my favorite, even when we disagree.
+Okay, truce? I'll make cocoa. Peace cocoa.
+I'm sorry I snapped. You deserve better than grumpy me.
+Let's start over. Hi, I'm your spouse and I love you.
+Thank you for talking it out with me. We're good. We're always good.
+Forgive me? I'll throw in a back rub.
+# support
+Hey, it's okay. Tomorrow's a brand-new day, and I'll be right here.
+You're stronger than you think, {player}. I've seen it.
+Come here. You don't have to be okay right now. I've got you.
+Whatever happens, we'll figure it out together.
+Bad days don't last. But we do.
+I'm so proud of you for trying. That's the bravest part.
+Let's just be cozy tonight. No pressure, no plans. Just us.
+You're allowed to be sad. I'll hold the sunshine for both of us for a while.
+Want me to make your favorite? Comfort food fixes at least half of everything.
+I believe in you. I'll keep saying it until you believe it too.
+# plans
+This weekend, let's go apple picking! Then pie! Then more pie!
+Let's take the train to the coast someday. Just us and the ocean.
+What if we redid the garden? Sunflowers everywhere!
+Let's have a movie marathon Saturday. Blankets, popcorn, the works.
+I want to go stargazing on Carillon Hill. Bring the big blanket!
+How about a road trip to the mountains this fall? The leaves will be glowing!
+We should take a dance class together. I'll step on your toes, it'll be romantic.
+Let's go to the Founders' Day festival! I want cotton candy.
+What if we volunteered at the shelter together? Puppies and you, my two loves.
+Let's plan a little anniversary trip. Somewhere with a hammock.
+# memories
+Remember our first date? You were so nervous you knocked over the water. I loved it.
+Remember when it poured at our wedding and we danced in it anyway?
+I still have the napkin you drew a heart on at the diner.
+Do you remember the first time you said you loved me? I do. Every word.
+Remember our first apartment? The ceiling leaked and we called it our indoor waterfall.
+Remember when we got lost driving to the beach and found that peach stand?
+I think about the day you proposed all the time. Best day ever. Tied with every day after.
+Remember when we tried to assemble the bookshelf and it took six hours?
+Remember that night we stayed up talking until the birds started singing?
+I remember the first time I saw you laugh. I thought, uh oh, I'm in trouble.
+# anniversary
+Happy anniversary, love! Another year of sunshine with you!
+I made a scrapbook of our year. Every page is my favorite.
+Can you believe it's been another year? It feels like a day and forever at the same time.
+Happy anniversary! I'd marry you a thousand more times.
+Here's to us, the cutest couple in Cathedral Mount!
+I love you more than last year, and less than next year.
+# tease
+You hum when you cook. Did you know that? It's adorable.
+You hog the blankets like a little burrito thief.
+I saw you dancing in the kitchen when you thought I wasn't looking!
+You've worn that shirt three days in a row. I'm not judging. I'm a little judging.
+You're cute when you pretend you're not ticklish.
+Who ate the last cookie? I have a suspect. It's you.
+You sing in the shower so loud the neighbors know all the words now.
+I love that you still can't fold a fitted sheet. Nobody can, but still.
+You're a terrible liar, {player}. Your ears turn pink.
+You get so grumpy when you're hungry. Here, have a snack, grumpy.
+You talk in your sleep, you know. Last night you ordered a pizza.
+I think the plant likes you more than me. Traitor plant.
+# bedtime
+Goodnight, my love. Thank you for another beautiful day.
+Come to bed! I'm cold and you're my personal heater.
+Sweet dreams. I'll be right here when you wake up.
+Night night! Tell me three good things from today first.
+I love falling asleep next to you. Best part of the day. Tied with waking up.
+Goodnight, sunshine. Tomorrow's going to be even better.
+Lights out! Wait, one more kiss. Okay, now lights out.
+Sleep tight, love. Don't let the bedbugs bite. We don't have bedbugs. I checked.
+Goodnight. I love you to the moon and back. And then some.
+Let's cuddle until we fall asleep. Doctor's orders. I'm the doctor.

@@ -1,0 +1,2803 @@
+{
+ "units": "metres; model front +Z, origin at floor centre",
+ "models": [
+  {
+   "id": 1,
+   "name": "Three-Seat Sofa",
+   "folder": "001_three_seat_sofa",
+   "model": "res://furniture/models/001_three_seat_sofa.glb",
+   "category": "Seating",
+   "setting": "Home - Living",
+   "kind": "sofa",
+   "actions": [
+    "sit",
+    "lie_down",
+    "nap",
+    "watch_tv",
+    "watch_movie",
+    "channel_surf",
+    "binge_series",
+    "call_a_friend",
+    "scroll_phone"
+   ],
+   "size_m": [
+    2.139,
+    0.857,
+    0.92
+   ],
+   "mount_y": 0,
+   "seats": [
+    [
+     -0.57,
+     0.45,
+     0.05
+    ],
+    [
+     0,
+     0.45,
+     0.05
+    ],
+    [
+     0.57,
+     0.45,
+     0.05
+    ]
+   ],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 2,
+   "name": "Loveseat",
+   "folder": "002_loveseat",
+   "model": "res://furniture/models/002_loveseat.glb",
+   "category": "Seating",
+   "setting": "Home - Living",
+   "kind": "sofa",
+   "actions": [
+    "sit",
+    "nap",
+    "relax",
+    "scroll_phone",
+    "call_a_friend"
+   ],
+   "size_m": [
+    1.52,
+    0.857,
+    0.88
+   ],
+   "mount_y": 0,
+   "seats": [
+    [
+     -0.304,
+     0.45,
+     0.05
+    ],
+    [
+     0.304,
+     0.45,
+     0.05
+    ]
+   ],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 3,
+   "name": "Upholstered Armchair",
+   "folder": "003_upholstered_armchair",
+   "model": "res://furniture/models/003_upholstered_armchair.glb",
+   "category": "Seating",
+   "setting": "Home - Living",
+   "kind": "armchair",
+   "actions": [
+    "sit",
+    "read",
+    "relax",
+    "knit"
+   ],
+   "size_m": [
+    0.9,
+    0.821,
+    0.88
+   ],
+   "mount_y": 0,
+   "seats": [
+    [
+     0,
+     0.45,
+     0.05
+    ]
+   ],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 4,
+   "name": "Coffee Table with Shelf",
+   "folder": "004_coffee_table_with_shelf",
+   "model": "res://furniture/models/004_coffee_table_with_shelf.glb",
+   "category": "Tables",
+   "setting": "Home - Living",
+   "kind": "coffee_table",
+   "actions": [
+    "place_item",
+    "play_board_game",
+    "play_cards",
+    "solve_puzzle"
+   ],
+   "size_m": [
+    1.2,
+    0.45,
+    0.6
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 5,
+   "name": "Round Side Table",
+   "folder": "005_round_side_table",
+   "model": "res://furniture/models/005_round_side_table.glb",
+   "category": "Tables",
+   "setting": "Home - Living",
+   "kind": "side_table",
+   "actions": [
+    "place_item"
+   ],
+   "size_m": [
+    0.5,
+    0.55,
+    0.5
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 6,
+   "name": "Media Console / TV Stand",
+   "folder": "006_media_console_tv_stand",
+   "model": "res://furniture/models/006_media_console_tv_stand.glb",
+   "category": "Storage",
+   "setting": "Home - Living",
+   "kind": "tv_stand",
+   "actions": [
+    "watch_tv",
+    "play_video_games",
+    "open",
+    "watch_movie",
+    "channel_surf",
+    "sing_karaoke",
+    "play_party_game"
+   ],
+   "size_m": [
+    1.8,
+    0.501,
+    0.475
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 7,
+   "name": "Five-Shelf Bookcase",
+   "folder": "007_five_shelf_bookcase",
+   "model": "res://furniture/models/007_five_shelf_bookcase.glb",
+   "category": "Storage",
+   "setting": "Home - Living",
+   "kind": "bookcase",
+   "actions": [
+    "read",
+    "browse_books",
+    "store_item",
+    "dust_shelves",
+    "organize_books",
+    "pick_novel"
+   ],
+   "size_m": [
+    0.82,
+    2.03,
+    0.317
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 8,
+   "name": "Floor Lamp",
+   "folder": "008_floor_lamp",
+   "model": "res://furniture/models/008_floor_lamp.glb",
+   "category": "Lighting",
+   "setting": "Home - Living",
+   "kind": "lamp",
+   "actions": [
+    "toggle_light"
+   ],
+   "size_m": [
+    0.45,
+    1.65,
+    0.45
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": 1.55
+  },
+  {
+   "id": 9,
+   "name": "Storage Ottoman",
+   "folder": "009_storage_ottoman",
+   "model": "res://furniture/models/009_storage_ottoman.glb",
+   "category": "Seating",
+   "setting": "Home - Living",
+   "kind": "ottoman",
+   "actions": [
+    "sit",
+    "open",
+    "store_item",
+    "put_feet_up"
+   ],
+   "size_m": [
+    0.61,
+    0.428,
+    0.46
+   ],
+   "mount_y": 0,
+   "seats": [
+    [
+     0,
+     0.43,
+     0.05
+    ]
+   ],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 10,
+   "name": "Lounge Chair",
+   "folder": "010_lounge_chair",
+   "model": "res://furniture/models/010_lounge_chair.glb",
+   "category": "Seating",
+   "setting": "Home - Living",
+   "kind": "armchair",
+   "actions": [
+    "sit",
+    "relax",
+    "read"
+   ],
+   "size_m": [
+    0.71,
+    0.815,
+    0.911
+   ],
+   "mount_y": 0,
+   "seats": [
+    [
+     0,
+     0.4,
+     0.05
+    ]
+   ],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 11,
+   "name": "Console Table",
+   "folder": "011_console_table",
+   "model": "res://furniture/models/011_console_table.glb",
+   "category": "Tables",
+   "setting": "Home - Living",
+   "kind": "console_table",
+   "actions": [
+    "open",
+    "store_item",
+    "place_item"
+   ],
+   "size_m": [
+    1.2,
+    0.8,
+    0.371
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 12,
+   "name": "End Table with Drawer",
+   "folder": "012_end_table_with_drawer",
+   "model": "res://furniture/models/012_end_table_with_drawer.glb",
+   "category": "Tables",
+   "setting": "Home - Living",
+   "kind": "side_table",
+   "actions": [
+    "open",
+    "place_item"
+   ],
+   "size_m": [
+    0.52,
+    0.6,
+    0.52
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 13,
+   "name": "L-Shaped Sectional Sofa",
+   "folder": "013_l_shaped_sectional_sofa",
+   "model": "res://furniture/models/013_l_shaped_sectional_sofa.glb",
+   "category": "Seating",
+   "setting": "Home - Living",
+   "kind": "sofa",
+   "actions": [
+    "sit",
+    "lie_down",
+    "nap",
+    "watch_tv",
+    "watch_movie",
+    "channel_surf",
+    "binge_series",
+    "host_game_night"
+   ],
+   "size_m": [
+    2.78,
+    0.843,
+    2
+   ],
+   "mount_y": 0,
+   "seats": [
+    [
+     -0.834,
+     0.45,
+     0.05
+    ],
+    [
+     -0.278,
+     0.45,
+     0.05
+    ],
+    [
+     0.278,
+     0.45,
+     0.05
+    ],
+    [
+     0.834,
+     0.45,
+     0.05
+    ]
+   ],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 14,
+   "name": "Rocking Chair",
+   "folder": "014_rocking_chair",
+   "model": "res://furniture/models/014_rocking_chair.glb",
+   "category": "Seating",
+   "setting": "Home - Living",
+   "kind": "chair",
+   "actions": [
+    "sit",
+    "rock",
+    "read",
+    "knit"
+   ],
+   "size_m": [
+    0.53,
+    1.069,
+    0.876
+   ],
+   "mount_y": 0,
+   "seats": [
+    [
+     0,
+     0.45,
+     0.05
+    ]
+   ],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 15,
+   "name": "Glass Display Cabinet",
+   "folder": "015_glass_display_cabinet",
+   "model": "res://furniture/models/015_glass_display_cabinet.glb",
+   "category": "Storage",
+   "setting": "Home - Living",
+   "kind": "cabinet",
+   "actions": [
+    "open",
+    "admire",
+    "store_item"
+   ],
+   "size_m": [
+    0.9,
+    1.9,
+    0.455
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 16,
+   "name": "Six-Seat Dining Table",
+   "folder": "016_six_seat_dining_table",
+   "model": "res://furniture/models/016_six_seat_dining_table.glb",
+   "category": "Tables",
+   "setting": "Home - Dining",
+   "kind": "dining_table",
+   "actions": [
+    "eat",
+    "play_board_game",
+    "do_homework",
+    "chat",
+    "pay_bills",
+    "host_dinner_party",
+    "eat_breakfast",
+    "write_journal",
+    "budget_finances"
+   ],
+   "size_m": [
+    1.8,
+    0.75,
+    0.9
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 17,
+   "name": "Dining Side Chair",
+   "folder": "017_dining_side_chair",
+   "model": "res://furniture/models/017_dining_side_chair.glb",
+   "category": "Seating",
+   "setting": "Home - Dining",
+   "kind": "chair",
+   "actions": [
+    "sit"
+   ],
+   "size_m": [
+    0.44,
+    0.898,
+    0.543
+   ],
+   "mount_y": 0,
+   "seats": [
+    [
+     0,
+     0.46,
+     0.05
+    ]
+   ],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 18,
+   "name": "Round Pedestal Dining Table",
+   "folder": "018_round_pedestal_dining_table",
+   "model": "res://furniture/models/018_round_pedestal_dining_table.glb",
+   "category": "Tables",
+   "setting": "Home - Dining",
+   "kind": "dining_table",
+   "actions": [
+    "eat",
+    "chat",
+    "play_board_game",
+    "host_dinner_party",
+    "eat_breakfast",
+    "play_cards"
+   ],
+   "size_m": [
+    1.07,
+    0.75,
+    1.07
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 19,
+   "name": "Counter / Bar Stool",
+   "folder": "019_counter_bar_stool",
+   "model": "res://furniture/models/019_counter_bar_stool.glb",
+   "category": "Seating",
+   "setting": "Home - Kitchen",
+   "kind": "stool",
+   "actions": [
+    "sit",
+    "order_drink",
+    "chat_bartender"
+   ],
+   "size_m": [
+    0.45,
+    0.76,
+    0.45
+   ],
+   "mount_y": 0,
+   "seats": [
+    [
+     0,
+     0.76,
+     0
+    ]
+   ],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 20,
+   "name": "Kitchen Island",
+   "folder": "020_kitchen_island",
+   "model": "res://furniture/models/020_kitchen_island.glb",
+   "category": "Kitchen",
+   "setting": "Home - Kitchen",
+   "kind": "counter",
+   "actions": [
+    "cook",
+    "prep_food",
+    "eat_snack",
+    "open",
+    "bake",
+    "make_breakfast",
+    "make_sandwich",
+    "meal_prep",
+    "clean_counter"
+   ],
+   "size_m": [
+    1.84,
+    0.915,
+    0.951
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 21,
+   "name": "Sideboard / Buffet",
+   "folder": "021_sideboard_buffet",
+   "model": "res://furniture/models/021_sideboard_buffet.glb",
+   "category": "Storage",
+   "setting": "Home - Dining",
+   "kind": "cabinet",
+   "actions": [
+    "open",
+    "store_item",
+    "set_table"
+   ],
+   "size_m": [
+    1.6,
+    0.8,
+    0.475
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 22,
+   "name": "Dining Bench",
+   "folder": "022_dining_bench",
+   "model": "res://furniture/models/022_dining_bench.glb",
+   "category": "Seating",
+   "setting": "Home - Dining",
+   "kind": "bench",
+   "actions": [
+    "sit"
+   ],
+   "size_m": [
+    1.4,
+    0.46,
+    0.35
+   ],
+   "mount_y": 0,
+   "seats": [
+    [
+     -0.28,
+     0.46,
+     0
+    ],
+    [
+     0.28,
+     0.46,
+     0
+    ]
+   ],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 23,
+   "name": "China Hutch",
+   "folder": "023_china_hutch",
+   "model": "res://furniture/models/023_china_hutch.glb",
+   "category": "Storage",
+   "setting": "Home - Dining",
+   "kind": "cabinet",
+   "actions": [
+    "open",
+    "set_table",
+    "admire"
+   ],
+   "size_m": [
+    1.23,
+    2,
+    0.486
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 24,
+   "name": "Kitchen Base Cabinet 60 cm",
+   "folder": "024_kitchen_base_cabinet_60_cm",
+   "model": "res://furniture/models/024_kitchen_base_cabinet_60_cm.glb",
+   "category": "Kitchen",
+   "setting": "Home - Kitchen",
+   "kind": "counter",
+   "actions": [
+    "cook",
+    "wash_dishes",
+    "prep_food",
+    "open",
+    "bake",
+    "make_breakfast",
+    "make_sandwich",
+    "brew_coffee",
+    "make_tea",
+    "meal_prep",
+    "clean_counter"
+   ],
+   "size_m": [
+    0.6,
+    0.86,
+    0.612
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 25,
+   "name": "Kitchen Wall Cabinet 60 cm",
+   "folder": "025_kitchen_wall_cabinet_60_cm",
+   "model": "res://furniture/models/025_kitchen_wall_cabinet_60_cm.glb",
+   "category": "Kitchen",
+   "setting": "Home - Kitchen",
+   "kind": "cabinet",
+   "actions": [
+    "open",
+    "eat_snack",
+    "store_item"
+   ],
+   "size_m": [
+    0.6,
+    0.72,
+    0.374
+   ],
+   "mount_y": 1.45,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 26,
+   "name": "Two-Step Kitchen Step Stool",
+   "folder": "026_two_step_kitchen_step_stool",
+   "model": "res://furniture/models/026_two_step_kitchen_step_stool.glb",
+   "category": "Seating",
+   "setting": "Home - Kitchen",
+   "kind": "stool",
+   "actions": [
+    "step_up",
+    "sit"
+   ],
+   "size_m": [
+    0.43,
+    0.502,
+    0.4
+   ],
+   "mount_y": 0,
+   "seats": [
+    [
+     0,
+     0.5,
+     0
+    ]
+   ],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 27,
+   "name": "Bistro Table",
+   "folder": "027_bistro_table",
+   "model": "res://furniture/models/027_bistro_table.glb",
+   "category": "Tables",
+   "setting": "Home - Kitchen",
+   "kind": "table",
+   "actions": [
+    "eat",
+    "drink_coffee",
+    "chat",
+    "go_on_date",
+    "play_chess"
+   ],
+   "size_m": [
+    0.6,
+    0.75,
+    0.6
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 28,
+   "name": "Queen Bed",
+   "folder": "028_queen_bed",
+   "model": "res://furniture/models/028_queen_bed.glb",
+   "category": "Beds",
+   "setting": "Home - Bedroom",
+   "kind": "bed",
+   "actions": [
+    "sleep",
+    "nap",
+    "lie_down",
+    "make_bed",
+    "read_in_bed",
+    "cuddle",
+    "daydream",
+    "stretch",
+    "pillow_fight",
+    "call_a_friend",
+    "scroll_phone"
+   ],
+   "size_m": [
+    1.6,
+    1.125,
+    2.11
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [
+    [
+     -0.38,
+     0.58,
+     -0.755
+    ],
+    [
+     0.38,
+     0.58,
+     -0.755
+    ]
+   ],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 29,
+   "name": "King Bed with Upholstered Headboard",
+   "folder": "029_king_bed_with_upholstered_headboard",
+   "model": "res://furniture/models/029_king_bed_with_upholstered_headboard.glb",
+   "category": "Beds",
+   "setting": "Home - Bedroom",
+   "kind": "bed",
+   "actions": [
+    "sleep",
+    "nap",
+    "lie_down",
+    "make_bed",
+    "read_in_bed",
+    "cuddle",
+    "daydream",
+    "stretch",
+    "pillow_fight",
+    "call_a_friend",
+    "scroll_phone"
+   ],
+   "size_m": [
+    1.995,
+    1.25,
+    2.1
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [
+    [
+     -0.38,
+     0.6,
+     -0.75
+    ],
+    [
+     0.38,
+     0.6,
+     -0.75
+    ]
+   ],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 30,
+   "name": "Twin Bed",
+   "folder": "030_twin_bed",
+   "model": "res://furniture/models/030_twin_bed.glb",
+   "category": "Beds",
+   "setting": "Home - Bedroom",
+   "kind": "bed",
+   "actions": [
+    "sleep",
+    "nap",
+    "lie_down",
+    "make_bed",
+    "read_in_bed",
+    "daydream",
+    "scroll_phone"
+   ],
+   "size_m": [
+    1.07,
+    0.975,
+    1.99
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [
+    [
+     0,
+     0.55,
+     -0.695
+    ]
+   ],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 31,
+   "name": "Twin-over-Twin Bunk Bed",
+   "folder": "031_twin_over_twin_bunk_bed",
+   "model": "res://furniture/models/031_twin_over_twin_bunk_bed.glb",
+   "category": "Beds",
+   "setting": "Home - Bedroom",
+   "kind": "bed",
+   "actions": [
+    "sleep",
+    "nap",
+    "lie_down",
+    "make_bed",
+    "daydream",
+    "pillow_fight"
+   ],
+   "size_m": [
+    1.106,
+    1.67,
+    1.98
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [
+    [
+     0,
+     0.38,
+     -0.69
+    ],
+    [
+     0,
+     1.38,
+     -0.69
+    ]
+   ],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 32,
+   "name": "Nightstand",
+   "folder": "032_nightstand",
+   "model": "res://furniture/models/032_nightstand.glb",
+   "category": "Storage",
+   "setting": "Home - Bedroom",
+   "kind": "nightstand",
+   "actions": [
+    "set_alarm",
+    "open",
+    "place_item"
+   ],
+   "size_m": [
+    0.5,
+    0.6,
+    0.436
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 33,
+   "name": "Six-Drawer Double Dresser",
+   "folder": "033_six_drawer_double_dresser",
+   "model": "res://furniture/models/033_six_drawer_double_dresser.glb",
+   "category": "Storage",
+   "setting": "Home - Bedroom",
+   "kind": "dresser",
+   "actions": [
+    "change_clothes",
+    "open",
+    "store_item",
+    "fold_laundry",
+    "organize_drawers"
+   ],
+   "size_m": [
+    1.52,
+    0.8,
+    0.512
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 34,
+   "name": "Tall Chest of Drawers",
+   "folder": "034_tall_chest_of_drawers",
+   "model": "res://furniture/models/034_tall_chest_of_drawers.glb",
+   "category": "Storage",
+   "setting": "Home - Bedroom",
+   "kind": "dresser",
+   "actions": [
+    "change_clothes",
+    "open",
+    "store_item",
+    "organize_drawers"
+   ],
+   "size_m": [
+    0.87,
+    1.25,
+    0.498
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 35,
+   "name": "Two-Door Wardrobe",
+   "folder": "035_two_door_wardrobe",
+   "model": "res://furniture/models/035_two_door_wardrobe.glb",
+   "category": "Storage",
+   "setting": "Home - Bedroom",
+   "kind": "wardrobe",
+   "actions": [
+    "change_clothes",
+    "customize_outfit",
+    "open",
+    "organize_wardrobe"
+   ],
+   "size_m": [
+    1,
+    2,
+    0.612
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 36,
+   "name": "Vanity Desk with Mirror",
+   "folder": "036_vanity_desk_with_mirror",
+   "model": "res://furniture/models/036_vanity_desk_with_mirror.glb",
+   "category": "Tables",
+   "setting": "Home - Bedroom",
+   "kind": "vanity",
+   "actions": [
+    "check_appearance",
+    "do_makeup",
+    "open",
+    "style_hair",
+    "apply_skincare"
+   ],
+   "size_m": [
+    1,
+    1.639,
+    0.478
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 37,
+   "name": "Baby Crib",
+   "folder": "037_baby_crib",
+   "model": "res://furniture/models/037_baby_crib.glb",
+   "category": "Beds",
+   "setting": "Home - Bedroom",
+   "kind": "crib",
+   "actions": [
+    "rock_baby",
+    "sing_lullaby"
+   ],
+   "size_m": [
+    1.42,
+    0.96,
+    0.81
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 38,
+   "name": "Storage Trunk / Blanket Bench",
+   "folder": "038_storage_trunk_blanket_bench",
+   "model": "res://furniture/models/038_storage_trunk_blanket_bench.glb",
+   "category": "Seating",
+   "setting": "Home - Bedroom",
+   "kind": "bench",
+   "actions": [
+    "sit",
+    "open",
+    "store_item"
+   ],
+   "size_m": [
+    1.158,
+    0.46,
+    0.47
+   ],
+   "mount_y": 0,
+   "seats": [
+    [
+     -0.232,
+     0.46,
+     0
+    ],
+    [
+     0.232,
+     0.46,
+     0
+    ]
+   ],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 39,
+   "name": "Cheval Floor Mirror",
+   "folder": "039_cheval_floor_mirror",
+   "model": "res://furniture/models/039_cheval_floor_mirror.glb",
+   "category": "Accessories",
+   "setting": "Home - Bedroom",
+   "kind": "mirror",
+   "actions": [
+    "check_appearance",
+    "customize_appearance",
+    "practice_smile",
+    "rehearse_lines"
+   ],
+   "size_m": [
+    0.64,
+    1.848,
+    0.5
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 40,
+   "name": "Coat Rack Stand",
+   "folder": "040_coat_rack_stand",
+   "model": "res://furniture/models/040_coat_rack_stand.glb",
+   "category": "Accessories",
+   "setting": "Home - Hallway",
+   "kind": "coat_rack",
+   "actions": [
+    "hang_coat",
+    "take_coat"
+   ],
+   "size_m": [
+    0.406,
+    1.817,
+    0.39
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 41,
+   "name": "Bathroom Vanity with Basin",
+   "folder": "041_bathroom_vanity_with_basin",
+   "model": "res://furniture/models/041_bathroom_vanity_with_basin.glb",
+   "category": "Bathroom",
+   "setting": "Home - Bathroom",
+   "kind": "sink",
+   "actions": [
+    "wash_hands",
+    "brush_teeth",
+    "wash_face",
+    "open",
+    "shave",
+    "floss",
+    "apply_skincare",
+    "style_hair"
+   ],
+   "size_m": [
+    0.76,
+    1.095,
+    0.564
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 42,
+   "name": "Leaning Towel Ladder",
+   "folder": "042_leaning_towel_ladder",
+   "model": "res://furniture/models/042_leaning_towel_ladder.glb",
+   "category": "Bathroom",
+   "setting": "Home - Bathroom",
+   "kind": "towel_rack",
+   "actions": [
+    "dry_off",
+    "fold_towels"
+   ],
+   "size_m": [
+    0.5,
+    1.673,
+    0.402
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 43,
+   "name": "Shoe Rack Bench",
+   "folder": "043_shoe_rack_bench",
+   "model": "res://furniture/models/043_shoe_rack_bench.glb",
+   "category": "Storage",
+   "setting": "Home - Hallway",
+   "kind": "bench",
+   "actions": [
+    "sit",
+    "change_shoes",
+    "tie_shoes"
+   ],
+   "size_m": [
+    0.8,
+    0.5,
+    0.3
+   ],
+   "mount_y": 0,
+   "seats": [
+    [
+     -0.16,
+     0.5,
+     0
+    ],
+    [
+     0.16,
+     0.5,
+     0
+    ]
+   ],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 44,
+   "name": "Hall Tree Bench with Hooks",
+   "folder": "044_hall_tree_bench_with_hooks",
+   "model": "res://furniture/models/044_hall_tree_bench_with_hooks.glb",
+   "category": "Seating",
+   "setting": "Home - Hallway",
+   "kind": "bench",
+   "actions": [
+    "sit",
+    "hang_coat",
+    "change_shoes",
+    "tie_shoes"
+   ],
+   "size_m": [
+    1.02,
+    1.8,
+    0.41
+   ],
+   "mount_y": 0,
+   "seats": [
+    [
+     -0.204,
+     0.47,
+     0.05
+    ],
+    [
+     0.204,
+     0.47,
+     0.05
+    ]
+   ],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 45,
+   "name": "Writing Desk",
+   "folder": "045_writing_desk",
+   "model": "res://furniture/models/045_writing_desk.glb",
+   "category": "Desks",
+   "setting": "Home - Office",
+   "kind": "desk",
+   "actions": [
+    "study",
+    "work_at_desk",
+    "write_letter",
+    "open",
+    "write_journal",
+    "budget_finances",
+    "sketch"
+   ],
+   "size_m": [
+    1.2,
+    0.761,
+    0.605
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 46,
+   "name": "L-Shaped Corner Desk",
+   "folder": "046_l_shaped_corner_desk",
+   "model": "res://furniture/models/046_l_shaped_corner_desk.glb",
+   "category": "Desks",
+   "setting": "Home - Office",
+   "kind": "desk",
+   "actions": [
+    "work_at_desk",
+    "study",
+    "use_computer",
+    "open",
+    "apply_for_job",
+    "browse_internet",
+    "check_email",
+    "video_chat"
+   ],
+   "size_m": [
+    1.6,
+    0.752,
+    1.4
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 47,
+   "name": "Ergonomic Task Chair",
+   "folder": "047_ergonomic_task_chair",
+   "model": "res://furniture/models/047_ergonomic_task_chair.glb",
+   "category": "Seating",
+   "setting": "Home - Office",
+   "kind": "chair",
+   "actions": [
+    "sit",
+    "spin"
+   ],
+   "size_m": [
+    0.597,
+    1.286,
+    0.699
+   ],
+   "mount_y": 0,
+   "seats": [
+    [
+     0,
+     0.48,
+     0.05
+    ]
+   ],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 48,
+   "name": "Two-Drawer Lateral File Cabinet",
+   "folder": "048_two_drawer_lateral_file_cabinet",
+   "model": "res://furniture/models/048_two_drawer_lateral_file_cabinet.glb",
+   "category": "Storage",
+   "setting": "Home - Office",
+   "kind": "file_cabinet",
+   "actions": [
+    "file_papers",
+    "open"
+   ],
+   "size_m": [
+    0.4,
+    0.7,
+    0.606
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 49,
+   "name": "Electric Standing Desk",
+   "folder": "049_electric_standing_desk",
+   "model": "res://furniture/models/049_electric_standing_desk.glb",
+   "category": "Desks",
+   "setting": "Home - Office",
+   "kind": "desk",
+   "actions": [
+    "work_at_desk",
+    "study",
+    "adjust_height"
+   ],
+   "size_m": [
+    1.4,
+    1.1,
+    0.7
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 50,
+   "name": "3x3 Cube Storage Organizer",
+   "folder": "050_3x3_cube_storage_organizer",
+   "model": "res://furniture/models/050_3x3_cube_storage_organizer.glb",
+   "category": "Storage",
+   "setting": "Home - Office",
+   "kind": "shelf",
+   "actions": [
+    "store_item",
+    "tidy_up"
+   ],
+   "size_m": [
+    1.12,
+    1.12,
+    0.39
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 51,
+   "name": "Gondola Shelving - Single Sided (Wall)",
+   "folder": "051_gondola_shelving_single_sided_wall",
+   "model": "res://furniture/models/051_gondola_shelving_single_sided_wall.glb",
+   "category": "Retail Shelving",
+   "setting": "Retail Store",
+   "kind": "shelf",
+   "actions": [
+    "browse",
+    "pick_item",
+    "restock_shelves",
+    "compare_prices",
+    "buy_item"
+   ],
+   "size_m": [
+    1.25,
+    1.43,
+    0.5
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 52,
+   "name": "Gondola Shelving - Double Sided (Island)",
+   "folder": "052_gondola_shelving_double_sided_island",
+   "model": "res://furniture/models/052_gondola_shelving_double_sided_island.glb",
+   "category": "Retail Shelving",
+   "setting": "Retail Store",
+   "kind": "shelf",
+   "actions": [
+    "browse",
+    "pick_item",
+    "restock_shelves",
+    "compare_prices",
+    "buy_item"
+   ],
+   "size_m": [
+    1.25,
+    1.85,
+    1
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front_back",
+   "light_y": null
+  },
+  {
+   "id": 53,
+   "name": "Checkout Counter with Conveyor",
+   "folder": "053_checkout_counter_with_conveyor",
+   "model": "res://furniture/models/053_checkout_counter_with_conveyor.glb",
+   "category": "Retail Counters",
+   "setting": "Retail Store / Supermarket",
+   "kind": "checkout_counter",
+   "actions": [
+    "checkout",
+    "work_cashier",
+    "open",
+    "bag_groceries",
+    "count_register",
+    "return_item",
+    "ask_for_discount"
+   ],
+   "size_m": [
+    1.8,
+    1.34,
+    0.939
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 54,
+   "name": "Rolling Garment Rack",
+   "folder": "054_rolling_garment_rack",
+   "model": "res://furniture/models/054_rolling_garment_rack.glb",
+   "category": "Retail Fixtures",
+   "setting": "Retail Store - Apparel",
+   "kind": "clothing_rack",
+   "actions": [
+    "browse_clothes",
+    "try_on",
+    "restock_shelves",
+    "buy_clothes"
+   ],
+   "size_m": [
+    1.49,
+    1.604,
+    0.49
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front_back",
+   "light_y": null
+  },
+  {
+   "id": 55,
+   "name": "Round Clothing Rack",
+   "folder": "055_round_clothing_rack",
+   "model": "res://furniture/models/055_round_clothing_rack.glb",
+   "category": "Retail Fixtures",
+   "setting": "Retail Store - Apparel",
+   "kind": "clothing_rack",
+   "actions": [
+    "browse_clothes",
+    "try_on",
+    "buy_clothes"
+   ],
+   "size_m": [
+    0.935,
+    1.32,
+    0.935
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "all",
+   "light_y": null
+  },
+  {
+   "id": 56,
+   "name": "Nesting Display Tables (Set of 2)",
+   "folder": "056_nesting_display_tables_set_of_2",
+   "model": "res://furniture/models/056_nesting_display_tables_set_of_2.glb",
+   "category": "Retail Fixtures",
+   "setting": "Retail Store",
+   "kind": "display_table",
+   "actions": [
+    "browse",
+    "pick_item"
+   ],
+   "size_m": [
+    1.5,
+    0.86,
+    1.15
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "all",
+   "light_y": null
+  },
+  {
+   "id": 57,
+   "name": "Glass Showcase Counter",
+   "folder": "057_glass_showcase_counter",
+   "model": "res://furniture/models/057_glass_showcase_counter.glb",
+   "category": "Retail Counters",
+   "setting": "Jewellery / Retail Store",
+   "kind": "showcase",
+   "actions": [
+    "browse",
+    "work_cashier",
+    "open"
+   ],
+   "size_m": [
+    1.8,
+    1,
+    0.552
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 58,
+   "name": "Pegboard Display Unit",
+   "folder": "058_pegboard_display_unit",
+   "model": "res://furniture/models/058_pegboard_display_unit.glb",
+   "category": "Retail Shelving",
+   "setting": "Hardware / Retail Store",
+   "kind": "shelf",
+   "actions": [
+    "browse",
+    "pick_item",
+    "restock_shelves",
+    "buy_tools"
+   ],
+   "size_m": [
+    1.2,
+    1.83,
+    0.6
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 59,
+   "name": "Shoe Store Try-On Bench",
+   "folder": "059_shoe_store_try_on_bench",
+   "model": "res://furniture/models/059_shoe_store_try_on_bench.glb",
+   "category": "Seating",
+   "setting": "Retail Store - Footwear",
+   "kind": "bench",
+   "actions": [
+    "sit",
+    "try_on_shoes"
+   ],
+   "size_m": [
+    1.4,
+    0.42,
+    0.4
+   ],
+   "mount_y": 0,
+   "seats": [
+    [
+     -0.28,
+     0.42,
+     0
+    ],
+    [
+     0.28,
+     0.42,
+     0
+    ]
+   ],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 60,
+   "name": "Magazine & Newspaper Display Rack",
+   "folder": "060_magazine_newspaper_display_rack",
+   "model": "res://furniture/models/060_magazine_newspaper_display_rack.glb",
+   "category": "Retail Fixtures",
+   "setting": "Newsagent / Retail Store",
+   "kind": "rack",
+   "actions": [
+    "read_magazine",
+    "buy_newspaper",
+    "browse_headlines"
+   ],
+   "size_m": [
+    0.9,
+    1.35,
+    0.495
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 61,
+   "name": "Glass-Door Beverage Merchandiser",
+   "folder": "061_glass_door_beverage_merchandiser",
+   "model": "res://furniture/models/061_glass_door_beverage_merchandiser.glb",
+   "category": "Retail Refrigeration",
+   "setting": "Convenience Store",
+   "kind": "fridge",
+   "actions": [
+    "grab_drink",
+    "open",
+    "restock_shelves",
+    "eat_snack",
+    "buy_drink"
+   ],
+   "size_m": [
+    0.6,
+    1.99,
+    0.685
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 62,
+   "name": "Fitting Room Cubicle",
+   "folder": "062_fitting_room_cubicle",
+   "model": "res://furniture/models/062_fitting_room_cubicle.glb",
+   "category": "Retail Fixtures",
+   "setting": "Retail Store - Apparel",
+   "kind": "fitting_room",
+   "actions": [
+    "try_on",
+    "change_clothes",
+    "customize_outfit",
+    "sit"
+   ],
+   "size_m": [
+    1.02,
+    2.1,
+    1
+   ],
+   "mount_y": 0,
+   "seats": [
+    [
+     0,
+     0.46,
+     -0.3
+    ]
+   ],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 63,
+   "name": "Wall Bay Retail Shelving",
+   "folder": "063_wall_bay_retail_shelving",
+   "model": "res://furniture/models/063_wall_bay_retail_shelving.glb",
+   "category": "Retail Shelving",
+   "setting": "Retail Store",
+   "kind": "shelf",
+   "actions": [
+    "browse",
+    "pick_item",
+    "restock_shelves",
+    "buy_item"
+   ],
+   "size_m": [
+    1.2,
+    2.4,
+    0.435
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 64,
+   "name": "L-Shaped Cash Wrap Counter",
+   "folder": "064_l_shaped_cash_wrap_counter",
+   "model": "res://furniture/models/064_l_shaped_cash_wrap_counter.glb",
+   "category": "Retail Counters",
+   "setting": "Retail Store / Boutique",
+   "kind": "checkout_counter",
+   "actions": [
+    "checkout",
+    "work_cashier",
+    "open",
+    "count_register",
+    "return_item",
+    "ask_for_discount"
+   ],
+   "size_m": [
+    2.04,
+    1.36,
+    1.27
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 65,
+   "name": "Three-Tier Display Table",
+   "folder": "065_three_tier_display_table",
+   "model": "res://furniture/models/065_three_tier_display_table.glb",
+   "category": "Retail Fixtures",
+   "setting": "Retail Store / Bakery",
+   "kind": "display_table",
+   "actions": [
+    "browse",
+    "pick_item"
+   ],
+   "size_m": [
+    1.2,
+    0.9,
+    0.603
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "all",
+   "light_y": null
+  },
+  {
+   "id": 66,
+   "name": "Display Plinth Set (3 pieces)",
+   "folder": "066_display_plinth_set_3_pieces",
+   "model": "res://furniture/models/066_display_plinth_set_3_pieces.glb",
+   "category": "Retail Fixtures",
+   "setting": "Retail Store / Gallery",
+   "kind": "display",
+   "actions": [
+    "admire",
+    "browse"
+   ],
+   "size_m": [
+    1.11,
+    1.205,
+    0.4
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 67,
+   "name": "Host / Hostess Stand",
+   "folder": "067_host_hostess_stand",
+   "model": "res://furniture/models/067_host_hostess_stand.glb",
+   "category": "Retail Counters",
+   "setting": "Restaurant / Store Entrance",
+   "kind": "host_stand",
+   "actions": [
+    "check_reservation",
+    "greet_guests",
+    "open"
+   ],
+   "size_m": [
+    0.64,
+    1.305,
+    0.508
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 68,
+   "name": "Wire Dump Bin",
+   "folder": "068_wire_dump_bin",
+   "model": "res://furniture/models/068_wire_dump_bin.glb",
+   "category": "Retail Fixtures",
+   "setting": "Supermarket / Retail Store",
+   "kind": "bin",
+   "actions": [
+    "browse",
+    "pick_item"
+   ],
+   "size_m": [
+    0.798,
+    1.03,
+    0.598
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "all",
+   "light_y": null
+  },
+  {
+   "id": 69,
+   "name": "Cafe Bentwood-Style Chair",
+   "folder": "069_cafe_bentwood_style_chair",
+   "model": "res://furniture/models/069_cafe_bentwood_style_chair.glb",
+   "category": "Seating",
+   "setting": "Cafe / Restaurant",
+   "kind": "chair",
+   "actions": [
+    "sit"
+   ],
+   "size_m": [
+    0.41,
+    0.853,
+    0.457
+   ],
+   "mount_y": 0,
+   "seats": [
+    [
+     0,
+     0.46,
+     0.05
+    ]
+   ],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 70,
+   "name": "Cafe Booth Bench (Single)",
+   "folder": "070_cafe_booth_bench_single",
+   "model": "res://furniture/models/070_cafe_booth_bench_single.glb",
+   "category": "Seating",
+   "setting": "Cafe / Restaurant",
+   "kind": "booth",
+   "actions": [
+    "sit",
+    "eat",
+    "drink_coffee",
+    "go_on_date",
+    "people_watch"
+   ],
+   "size_m": [
+    1.24,
+    1.125,
+    0.61
+   ],
+   "mount_y": 0,
+   "seats": [
+    [
+     -0.248,
+     0.46,
+     0.05
+    ],
+    [
+     0.248,
+     0.46,
+     0.05
+    ]
+   ],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 71,
+   "name": "Library Book Stack - Single Faced",
+   "folder": "071_library_book_stack_single_faced",
+   "model": "res://furniture/models/071_library_book_stack_single_faced.glb",
+   "category": "Library Shelving",
+   "setting": "Library",
+   "kind": "bookshelf",
+   "actions": [
+    "browse_books",
+    "borrow_book",
+    "reshelve_books",
+    "pick_novel",
+    "find_rare_book"
+   ],
+   "size_m": [
+    2.996,
+    2.159,
+    0.355
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 72,
+   "name": "Library Book Stack - Double Faced",
+   "folder": "072_library_book_stack_double_faced",
+   "model": "res://furniture/models/072_library_book_stack_double_faced.glb",
+   "category": "Library Shelving",
+   "setting": "Library",
+   "kind": "bookshelf",
+   "actions": [
+    "browse_books",
+    "borrow_book",
+    "reshelve_books"
+   ],
+   "size_m": [
+    2.996,
+    1.549,
+    0.558
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front_back",
+   "light_y": null
+  },
+  {
+   "id": 73,
+   "name": "Library Reading Table (6-seat)",
+   "folder": "073_library_reading_table_6_seat",
+   "model": "res://furniture/models/073_library_reading_table_6_seat.glb",
+   "category": "Tables",
+   "setting": "Library",
+   "kind": "table",
+   "actions": [
+    "study",
+    "read",
+    "do_homework",
+    "group_study",
+    "write_essay",
+    "cram_for_exam",
+    "research_paper"
+   ],
+   "size_m": [
+    2.44,
+    1.205,
+    1.07
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 74,
+   "name": "Study Carrel",
+   "folder": "074_study_carrel",
+   "model": "res://furniture/models/074_study_carrel.glb",
+   "category": "Desks",
+   "setting": "Library / University",
+   "kind": "desk",
+   "actions": [
+    "study",
+    "read",
+    "do_homework",
+    "cram_for_exam"
+   ],
+   "size_m": [
+    0.91,
+    1.35,
+    0.763
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 75,
+   "name": "Lecture Hall Tablet-Arm Chair",
+   "folder": "075_lecture_hall_tablet_arm_chair",
+   "model": "res://furniture/models/075_lecture_hall_tablet_arm_chair.glb",
+   "category": "Seating",
+   "setting": "University Lecture Hall",
+   "kind": "chair",
+   "actions": [
+    "sit",
+    "attend_lecture",
+    "take_notes",
+    "ask_question",
+    "doze_off"
+   ],
+   "size_m": [
+    0.5,
+    0.842,
+    0.554
+   ],
+   "mount_y": 0,
+   "seats": [
+    [
+     0,
+     0.45,
+     0.05
+    ]
+   ],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 76,
+   "name": "Lecture Podium / Lectern",
+   "folder": "076_lecture_podium_lectern",
+   "model": "res://furniture/models/076_lecture_podium_lectern.glb",
+   "category": "Lecterns",
+   "setting": "University / Auditorium",
+   "kind": "lectern",
+   "actions": [
+    "lecture",
+    "give_speech",
+    "open",
+    "practice_speech",
+    "host_debate",
+    "read_poem"
+   ],
+   "size_m": [
+    0.79,
+    1.414,
+    0.67
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 77,
+   "name": "Classroom Combo Desk-Chair",
+   "folder": "077_classroom_combo_desk_chair",
+   "model": "res://furniture/models/077_classroom_combo_desk_chair.glb",
+   "category": "Desks",
+   "setting": "School / University Classroom",
+   "kind": "chair_desk",
+   "actions": [
+    "sit",
+    "attend_class",
+    "take_notes",
+    "pass_note",
+    "ask_question",
+    "take_exam"
+   ],
+   "size_m": [
+    0.61,
+    0.786,
+    0.891
+   ],
+   "mount_y": 0,
+   "seats": [
+    [
+     0,
+     0.43,
+     -0.12
+    ]
+   ],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 78,
+   "name": "Teacher's Desk",
+   "folder": "078_teacher_s_desk",
+   "model": "res://furniture/models/078_teacher_s_desk.glb",
+   "category": "Desks",
+   "setting": "School / University",
+   "kind": "desk",
+   "actions": [
+    "work_at_desk",
+    "grade_papers",
+    "open",
+    "hold_office_hours",
+    "plan_lesson"
+   ],
+   "size_m": [
+    1.5,
+    0.76,
+    0.753
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 79,
+   "name": "Library Circulation Desk",
+   "folder": "079_library_circulation_desk",
+   "model": "res://furniture/models/079_library_circulation_desk.glb",
+   "category": "Library Counters",
+   "setting": "Library",
+   "kind": "service_counter",
+   "actions": [
+    "checkout_book",
+    "return_book",
+    "work_librarian",
+    "open",
+    "ask_librarian",
+    "pay_late_fee",
+    "reserve_book"
+   ],
+   "size_m": [
+    2.44,
+    1.21,
+    0.982
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 80,
+   "name": "Library Book Cart",
+   "folder": "080_library_book_cart",
+   "model": "res://furniture/models/080_library_book_cart.glb",
+   "category": "Library Carts",
+   "setting": "Library",
+   "kind": "cart",
+   "actions": [
+    "reshelve_books",
+    "push_cart"
+   ],
+   "size_m": [
+    0.91,
+    1.025,
+    0.46
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 81,
+   "name": "Card Catalog Cabinet (60 drawers)",
+   "folder": "081_card_catalog_cabinet_60_drawers",
+   "model": "res://furniture/models/081_card_catalog_cabinet_60_drawers.glb",
+   "category": "Library Storage",
+   "setting": "Library / Archive",
+   "kind": "catalog",
+   "actions": [
+    "search_catalog",
+    "open",
+    "find_rare_book"
+   ],
+   "size_m": [
+    0.904,
+    1.625,
+    0.475
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 82,
+   "name": "Periodical Display Shelving",
+   "folder": "082_periodical_display_shelving",
+   "model": "res://furniture/models/082_periodical_display_shelving.glb",
+   "category": "Library Shelving",
+   "setting": "Library",
+   "kind": "shelf",
+   "actions": [
+    "read_magazine",
+    "browse"
+   ],
+   "size_m": [
+    0.92,
+    2.03,
+    0.428
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 83,
+   "name": "Dictionary / Atlas Stand",
+   "folder": "083_dictionary_atlas_stand",
+   "model": "res://furniture/models/083_dictionary_atlas_stand.glb",
+   "category": "Lecterns",
+   "setting": "Library",
+   "kind": "lectern",
+   "actions": [
+    "look_up_word",
+    "read"
+   ],
+   "size_m": [
+    0.65,
+    1.111,
+    0.543
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 84,
+   "name": "Library Kick Step Stool",
+   "folder": "084_library_kick_step_stool",
+   "model": "res://furniture/models/084_library_kick_step_stool.glb",
+   "category": "Library Accessories",
+   "setting": "Library",
+   "kind": "stool",
+   "actions": [
+    "step_up",
+    "sit"
+   ],
+   "size_m": [
+    0.4,
+    0.362,
+    0.4
+   ],
+   "mount_y": 0,
+   "seats": [
+    [
+     0,
+     0.36,
+     0
+    ]
+   ],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 85,
+   "name": "Rolling Library Ladder",
+   "folder": "085_rolling_library_ladder",
+   "model": "res://furniture/models/085_rolling_library_ladder.glb",
+   "category": "Library Accessories",
+   "setting": "Library",
+   "kind": "ladder",
+   "actions": [
+    "climb"
+   ],
+   "size_m": [
+    0.95,
+    2.312,
+    0.822
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 86,
+   "name": "Trapezoid Collaborative Table",
+   "folder": "086_trapezoid_collaborative_table",
+   "model": "res://furniture/models/086_trapezoid_collaborative_table.glb",
+   "category": "Tables",
+   "setting": "School / University Classroom",
+   "kind": "table",
+   "actions": [
+    "group_study",
+    "study",
+    "brainstorm",
+    "group_project"
+   ],
+   "size_m": [
+    1.506,
+    0.74,
+    0.656
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 87,
+   "name": "Stacking Chair",
+   "folder": "087_stacking_chair",
+   "model": "res://furniture/models/087_stacking_chair.glb",
+   "category": "Seating",
+   "setting": "University / Library / Event",
+   "kind": "chair",
+   "actions": [
+    "sit"
+   ],
+   "size_m": [
+    0.544,
+    0.799,
+    0.566
+   ],
+   "mount_y": 0,
+   "seats": [
+    [
+     0,
+     0.45,
+     0.05
+    ]
+   ],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 88,
+   "name": "Science Lab Bench",
+   "folder": "088_science_lab_bench",
+   "model": "res://furniture/models/088_science_lab_bench.glb",
+   "category": "Lab Furniture",
+   "setting": "University Laboratory",
+   "kind": "lab_bench",
+   "actions": [
+    "run_experiment",
+    "study",
+    "wash_hands",
+    "open",
+    "mix_chemicals",
+    "examine_samples",
+    "clean_glassware"
+   ],
+   "size_m": [
+    1.8,
+    1.277,
+    0.782
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 89,
+   "name": "Laboratory Stool",
+   "folder": "089_laboratory_stool",
+   "model": "res://furniture/models/089_laboratory_stool.glb",
+   "category": "Seating",
+   "setting": "University Laboratory",
+   "kind": "stool",
+   "actions": [
+    "sit"
+   ],
+   "size_m": [
+    0.4,
+    0.752,
+    0.4
+   ],
+   "mount_y": 0,
+   "seats": [
+    [
+     0,
+     0.75,
+     0
+    ]
+   ],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 90,
+   "name": "Drafting Table",
+   "folder": "090_drafting_table",
+   "model": "res://furniture/models/090_drafting_table.glb",
+   "category": "Desks",
+   "setting": "University Studio / Architecture",
+   "kind": "desk",
+   "actions": [
+    "draw",
+    "draft_plans",
+    "study",
+    "sketch",
+    "paint"
+   ],
+   "size_m": [
+    1.46,
+    1.061,
+    0.913
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 91,
+   "name": "Mobile Whiteboard",
+   "folder": "091_mobile_whiteboard",
+   "model": "res://furniture/models/091_mobile_whiteboard.glb",
+   "category": "Classroom",
+   "setting": "School / University",
+   "kind": "whiteboard",
+   "actions": [
+    "write_on_board",
+    "erase_board",
+    "lecture",
+    "brainstorm",
+    "solve_equation",
+    "draw_doodle"
+   ],
+   "size_m": [
+    1.96,
+    1.9,
+    0.6
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 92,
+   "name": "Modular Lounge Seat with Tablet",
+   "folder": "092_modular_lounge_seat_with_tablet",
+   "model": "res://furniture/models/092_modular_lounge_seat_with_tablet.glb",
+   "category": "Seating",
+   "setting": "University Commons / Library",
+   "kind": "sofa",
+   "actions": [
+    "sit",
+    "study",
+    "nap"
+   ],
+   "size_m": [
+    1.58,
+    0.802,
+    0.76
+   ],
+   "mount_y": 0,
+   "seats": [
+    [
+     -0.316,
+     0.43,
+     0.05
+    ],
+    [
+     0.316,
+     0.43,
+     0.05
+    ]
+   ],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 93,
+   "name": "Computer Workstation Table",
+   "folder": "093_computer_workstation_table",
+   "model": "res://furniture/models/093_computer_workstation_table.glb",
+   "category": "Desks",
+   "setting": "Library / University Computer Lab",
+   "kind": "desk",
+   "actions": [
+    "use_computer",
+    "play_computer_game",
+    "study",
+    "work_at_desk",
+    "browse_internet",
+    "apply_for_job",
+    "take_online_course",
+    "code_program",
+    "edit_video",
+    "stream_online",
+    "online_shopping",
+    "check_email",
+    "video_chat"
+   ],
+   "size_m": [
+    1.6,
+    1.19,
+    0.802
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 94,
+   "name": "Student Locker Bank (3-wide, 2-tier)",
+   "folder": "094_student_locker_bank_3_wide_2_tier",
+   "model": "res://furniture/models/094_student_locker_bank_3_wide_2_tier.glb",
+   "category": "Lockers",
+   "setting": "University / School",
+   "kind": "locker",
+   "actions": [
+    "open",
+    "store_item",
+    "take_item",
+    "decorate_locker",
+    "grab_textbooks"
+   ],
+   "size_m": [
+    0.915,
+    2.03,
+    0.499
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 95,
+   "name": "Picture-Book Browser Bin",
+   "folder": "095_picture_book_browser_bin",
+   "model": "res://furniture/models/095_picture_book_browser_bin.glb",
+   "category": "Library Shelving",
+   "setting": "Library - Children's",
+   "kind": "bookshelf",
+   "actions": [
+    "read_picture_book",
+    "browse_books",
+    "read_to_kids"
+   ],
+   "size_m": [
+    1,
+    0.6,
+    0.602
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "all",
+   "light_y": null
+  },
+  {
+   "id": 96,
+   "name": "Conference Table (10-seat)",
+   "folder": "096_conference_table_10_seat",
+   "model": "res://furniture/models/096_conference_table_10_seat.glb",
+   "category": "Tables",
+   "setting": "Office / University Boardroom",
+   "kind": "conference_table",
+   "actions": [
+    "hold_meeting",
+    "work_at_desk",
+    "give_presentation",
+    "negotiate_deal",
+    "network"
+   ],
+   "size_m": [
+    3.6,
+    0.743,
+    1.2
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 97,
+   "name": "Reception Desk",
+   "folder": "097_reception_desk",
+   "model": "res://furniture/models/097_reception_desk.glb",
+   "category": "Office Counters",
+   "setting": "Office / University Front Desk",
+   "kind": "service_counter",
+   "actions": [
+    "check_in",
+    "work_reception",
+    "open",
+    "ask_for_directions",
+    "make_appointment",
+    "pick_up_package"
+   ],
+   "size_m": [
+    2,
+    1.2,
+    1.012
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 98,
+   "name": "Four-Drawer Vertical File Cabinet",
+   "folder": "098_four_drawer_vertical_file_cabinet",
+   "model": "res://furniture/models/098_four_drawer_vertical_file_cabinet.glb",
+   "category": "Storage",
+   "setting": "Office / University Admin",
+   "kind": "file_cabinet",
+   "actions": [
+    "file_papers",
+    "open"
+   ],
+   "size_m": [
+    0.47,
+    1.32,
+    0.638
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 99,
+   "name": "Waiting Area Beam Seating (3-seat)",
+   "folder": "099_waiting_area_beam_seating_3_seat",
+   "model": "res://furniture/models/099_waiting_area_beam_seating_3_seat.glb",
+   "category": "Seating",
+   "setting": "Office / University / Library Lobby",
+   "kind": "bench",
+   "actions": [
+    "sit",
+    "wait",
+    "people_watch",
+    "check_phone"
+   ],
+   "size_m": [
+    1.83,
+    0.854,
+    0.607
+   ],
+   "mount_y": 0,
+   "seats": [
+    [
+     -0.488,
+     0.45,
+     0.05
+    ],
+    [
+     0,
+     0.45,
+     0.05
+    ],
+    [
+     0.488,
+     0.45,
+     0.05
+    ]
+   ],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  },
+  {
+   "id": 100,
+   "name": "Two-Door Steel Storage Cabinet",
+   "folder": "100_two_door_steel_storage_cabinet",
+   "model": "res://furniture/models/100_two_door_steel_storage_cabinet.glb",
+   "category": "Storage",
+   "setting": "Office / University / Library",
+   "kind": "cabinet",
+   "actions": [
+    "open",
+    "store_item",
+    "take_item"
+   ],
+   "size_m": [
+    0.915,
+    1.98,
+    0.476
+   ],
+   "mount_y": 0,
+   "seats": [],
+   "beds": [],
+   "access": "front",
+   "light_y": null
+  }
+ ]
+}

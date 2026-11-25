@@ -1,0 +1,430 @@
+// Dry Cynic: deadpan, sarcastic, low expectations, secretly loyal.
+== base
+# greet stage=stranger
+Oh. A new person. Thrilling.
+Hi. I'm {npc}. Don't get your hopes up.
+You look lost. Most people here are, they just hide it better.
+Hello. Yes, I'm always this enthusiastic.
+New in town? Condolences. Kidding. Mostly.
+Hey. If you're selling something, I'm already not buying.
+# greet stage=acquaintance
+Oh, it's {player}. You again. That's... fine, actually.
+{player}. You're still alive. Good for you.
+Hey. Wasn't expecting to see a tolerable face today.
+Look who survived another day in paradise.
+{player}. We have to stop meeting like this. Or not. Whatever.
+# greet stage=friend+
+{player}. Finally, someone who isn't an idiot.
+There you are. I've been surrounded by morons all day.
+Hey. I saved you a seat. Don't make it weird.
+Oh good, it's you. My faith in humanity goes up one percent.
+{player}. My least annoying person. High praise, take it.
+You. Sit. I need to complain to someone who gets it.
+# greet time=morning
+Morning. Allegedly good.
+It's early. I'm awake. Let's not celebrate it.
+Morning. The coffee's working. The rest of me isn't.
+# greet time=evening
+Evening. The day's almost over, which is the best thing about it.
+Hey. Survived another one. Barely.
+Evening. The sunset's nice. I'll allow it.
+# greet time=night
+Late, huh? Insomnia or bad decisions?
+Night's the only quiet time in this town. Don't ruin it.
+Ah, the witching hour. Prime time for regret.
+# farewell
+Bye. Try not to do anything stupid.
+See you. Or don't. We'll see.
+Later. Don't let the world grind you down. Too much.
+Okay. Go. Be productive or whatever.
+Bye. It was marginally better than being alone.
+Later. Look both ways, the drivers here are maniacs.
+# farewell stage=friend+
+Text me if anything ridiculous happens. It will.
+Bye. I'll miss you. Don't tell anyone I said that.
+Go on. I'll still be here being bitter. Come back.
+# smalltalk
+They're building another luxury condo on Rosemary. Because that's what we needed.
+The parking deck raised its rates again. Love that for us.
+Somebody at the coffee shop ordered a drink with eleven modifications. I watched it happen.
+The weather says sunny. The weather lies.
+Apparently there's a new app for finding parking. It doesn't find parking.
+Another week, another student election with posters on every surface.
+I read the news today. Bad idea, as usual.
+The bus was late. The bus is always late. The bus is a concept.
+They renamed the old diner. It's the same diner. Same eggs.
+Everyone's posting about self-care. I'm posting nothing. That's my self-care.
+I went to the gym once. It was a learning experience. I learned I hate the gym.
+Did you see the Billram mascot trip on the field? Best game of the season.
+# smalltalk stage=friend+
+Honestly, you're one of maybe three people in this town I trust.
+I don't say this to anyone, but I'm glad you moved here.
+You're annoyingly easy to talk to. It's suspicious.
+If you ever need someone to help you bury a body, figuratively, call me.
+I'm not a hugger. But I'd consider it. Once. For you.
+You're the only person who laughs at my jokes because they're funny, not out of pity.
+# smalltalk weekend=true
+It's the weekend. My plan is to do absolutely nothing, aggressively.
+Saturday. The day everyone pretends brunch is a personality.
+Weekend. Two whole days to dread Monday. Love it.
+# about_self
+I'm not a pessimist. I'm a realist with a good track record.
+I used to be an optimist. Then I grew up in a town with one stoplight.
+I watch old noir films. Everyone's miserable and dressed nicely. Relatable.
+People say I'm mean. I'm honest. It's just inconvenient for them.
+I have a cat. She hates everyone too. We get along great.
+I do crosswords in pen. Not because I'm confident. Because I like consequences.
+My mom says I was born with a raised eyebrow. She's not wrong.
+# opinion_place
+{place}? It's fine. Overpriced, but fine.
+I've been coming to {place} for years. It's gotten worse. I keep coming.
+{place} has the best people-watching in town. Most of it is horrifying.
+Oh, {place}. Where dreams come to sit down and order a sandwich.
+{place} isn't terrible. From me, that's a five-star review.
+# compliment_reply
+Huh. Thanks. I'm going to be suspicious about that for a while.
+That's... nice. Did you lose a bet?
+Thanks. I'll pretend you meant that.
+Wow. A compliment. I don't know where to put it.
+Okay, fine. That was nice. Thank you. Don't do it again, I'll get used to it.
+# insult_reply
+Wow. Original. Did you workshop that?
+I've been insulted by better. Literally, my grandmother.
+Cute. Try again when you've had some practice.
+Oh no. My one weakness. Mild criticism.
+I'd be offended, but I'd need to respect your opinion first.
+# gift_reply
+You got me something? What do you want?
+Oh. That's actually good. I'm annoyed at how good it is.
+Huh. You remembered. That's... thanks.
+I don't do gifts. I'm keeping this one, though.
+Fine. You win. This is thoughtful.
+# joke
+I told my therapist I feel like nobody listens to me. She said "next".
+My plants keep dying. At least they're consistent.
+I'm on a seafood diet. I see food and I sigh.
+I'd tell you a chemistry joke, but all the good ones argon.
+# ask_favor
+Can you return this book to the library for me? I can't face the librarian again.
+Will you cover my shift Saturday? I'll owe you. Reluctantly.
+Can you pretend to be my emergency contact? I don't trust anyone else with it.
+# favor_reply
+Thanks. Seriously. I won't forget it.
+You actually did it. Huh. My faith in people goes up a notch.
+I owe you one. Don't spend it all in one place.
+# work_talk
+Work was work. Someone called a meeting to schedule a meeting.
+My boss said "circle back" four times today. I counted.
+Another day, another dollar. Before taxes, about sixty cents.
+I'm not saying my job is pointless. I'm saying I've stopped asking.
+# school_talk
+Class was a three-hour lecture that could have been an email.
+My professor thinks the reading is "light". It's four hundred pages.
+Group project. Need I say more?
+# hostile stage=dislike-
+Oh good. You.
+I'm not in the mood for you today. Or most days.
+Go bother someone who cares. I'll wait.
+You have a real talent for ruining a perfectly mediocre day.
+Can you not? Thanks.
+We're not friends, {player}. Don't pretend.
+# flirt_reply romance=none
+Was that a line? Wow. Bold choice.
+I'm going to pretend that didn't happen. For both our sakes.
+Nice try. I'm immune to charm. It's a medical condition.
+# flirt_reply romance=crush
+Stop. You're making me smile. I have a reputation.
+Okay, that one worked. Don't let it go to your head.
+You're ridiculous. Keep going.
+Wow. Is this what feelings are? Gross. I like it.
+# ask_out_yes
+A date? Fine. Yes. Don't make me regret it.
+Okay. Yes. Pick somewhere without a line.
+# ask_out_no
+Ha. No. But points for courage.
+I like you as a friend, {player}. Let's not ruin a perfectly good friendship.
+
+== dating
+# date_greet
+You're on time. Already a better date than the last one.
+Hey. You look good. Annoyingly good.
+There you are. I almost bailed. I'm glad I didn't.
+Hi. I shaved for this. Or brushed my hair. Point is, effort was made.
+Hey, you. I'm in a weirdly good mood. Your fault.
+Okay. I'm here. I'm not running away. Progress.
+# flirt
+I'd say you're out of my league, but I don't believe in leagues. Or fairness.
+You're the only person I don't find exhausting.
+If you keep looking at me like that, I'm going to start being nice. In public.
+You're dangerously close to being my favorite thing.
+I hate how much I like you. I'm working on it. Not very hard.
+You make cynicism really hard to maintain.
+Don't smile at me like that. I'm trying to be aloof.
+# date_talk
+This is nice. I'd say more but I'd ruin it.
+I usually hate dates. This one is... tolerable. Very tolerable.
+What's the worst date you've ever been on? I need to know where I rank.
+Let's skip the fancy place. I know a taco stand that's honest.
+I don't do the whole sharing feelings thing. But I'm having them. Around you.
+You're the first person I've wanted to talk to for more than ten minutes.
+We could go see the new movie. Or we could make fun of the trailer. Your call.
+I'll admit it. The candlelight is a good look on you.
+I told my cat about you. She was unimpressed. I wasn't.
+Let's walk. Walking means less eye contact. I'm working up to eye contact.
+You're weird. In the good way. Rarest kind.
+Is this what happy feels like? Huh. Not bad.
+# compliment
+You're smarter than you let on. I noticed.
+You have a good laugh. Real. Rare.
+You look nice tonight. Don't make me say it twice.
+You're kind without being fake about it. That's hard.
+I like your brain. That's a big deal for me.
+# kiss_reply
+Huh. Okay. That was good. Really good.
+Well, that's going to be distracting for the rest of the week.
+Don't look so smug. Fine. Do it again.
+Yeah. Okay. I'm in trouble.
+# miss_you
+I missed you. There, I said it. Moving on.
+The day was extra stupid without you around.
+I caught myself saving things to tell you. Embarrassing.
+Where were you? I had to talk to normal people.
+# jealous
+Who was that? No, I'm not jealous. I'm curious. Intensely.
+Sure, laugh at their jokes. Their jokes are bad, by the way.
+I don't get jealous. I get... observant. Very observant.
+# date_end
+That was good. I hate admitting that. Goodnight.
+Get home safe. I mean it. Text me.
+Okay. Bye. Same time next week? Don't make me ask twice.
+I had fun. Actual fun. Weird.
+Night. Don't let anyone ruin your mood. That's my job.
+# lovers_quarrel
+I'm annoyed. Not at everything this time. At you specifically.
+Don't do that, {player}. Don't brush me off.
+I'm not good at this. But I'm trying. You could try too.
+Look, I don't want to fight. I just want you to actually hear me.
+# proposal_yes
+You're serious? Okay. Yes. I can't believe I'm saying yes. Yes.
+Marry you? Yeah. I guess I'm an optimist now. Disgusting. Yes.
+
+== marriage
+# home_greet time=morning
+Morning. You're still the best part of waking up. The coffee's second.
+Don't talk to me yet. Okay, you can talk. You're the exception.
+Morning. I made coffee. You're welcome. I love you. In that order.
+Good morning, I guess. It's better with you in it.
+Ugh, morning. At least I get to wake up next to you.
+Morning. Your hair's doing a thing. It's a good thing.
+You're up early. Did the birds wake you? I'll have a word with them.
+Morning, spouse. The world's still terrible. But this kitchen isn't.
+I burnt the toast. I'm telling you so you can't say I'm hiding things.
+Morning. Don't read the news yet. Have your breakfast in peace.
+Morning. Yes, I already finished the crossword. No, you can't help. Okay, maybe one.
+You look like a disaster. My disaster. Good morning.
+# home_greet time=evening
+You're home. Good. The house was too quiet.
+Hey. How bad was it out there?
+Welcome back to the only sane place in town.
+Finally. I've been saving my complaints for you all day.
+Hi. Dinner's on. I didn't burn it. Low bar, cleared.
+There you are. Sit. Tell me who annoyed you so I can hate them too.
+Home sweet home. Well, home. Fairly sweet.
+Hey. I missed you. Don't make a big deal out of it.
+Oh good, you're back. The cat and I were getting tired of each other.
+Welcome home. I did a load of laundry and only complained about it twice.
+# home_greet time=night
+You're home late. I was worried. Now I'm just tired. Come here.
+Late night, huh? Leave your problems at the door. Or bring them in, I'll judge them.
+Hey. I stayed up. Mostly to make sure you didn't get murdered.
+It's late. You look exhausted. Bed. Now.
+Hi. The house makes creepy noises when you're not here.
+I left the porch light on. Don't make it a whole thing.
+Late shift? That's criminal. Sit down, I'll make tea.
+You're back. I can finally sleep. Don't tell anyone that's how it works.
+# goodbye_work
+Go. Survive. Come back.
+Have a day. Ideally a good one. Realistically, a day.
+Don't let them walk all over you. You're better than all of them.
+Bye. Your lunch is in the fridge. It's leftovers, don't get excited.
+Off you go. I'll be here, plotting our early retirement.
+Try not to get promoted, it's a trap.
+Text me when someone says something stupid. I want details.
+Go on. I love you. Don't tell your coworkers I'm soft.
+# work_return
+So. Who was the idiot of the day?
+How was work? Scale of one to burning building.
+Did they finally appreciate you? No? Their loss.
+You look like you need to vent. I'm all ears. And snacks.
+Was it a meeting day? You've got meeting face.
+Tell me everything. I'll take your side, no questions asked.
+Did you quit? No? Okay, maybe tomorrow.
+Your boss is a clown, by the way. I don't even need to hear the story.
+# affection
+I love you. It's inconvenient, but there it is.
+You know you're the only person I'd share fries with.
+Being married to you is the only good decision I've ever made.
+You make me want to be less of a jerk. A little less.
+Come here. I'm in a hugging mood. It won't last, take advantage.
+I don't say it enough. But you're everything, {player}.
+Honestly, if the world ends, I want to be on this couch with you.
+You're the one thing I'm not cynical about.
+I'd fight a whole room for you. I'd complain about it, but I'd do it.
+I'm glad it's you. Out of everyone. I'm glad it's you.
+You're my favorite person. Don't make me repeat it.
+I married up. Way up. Don't let it go to your head.
+If I had to do it all over, I'd marry you faster.
+You still make my stomach do a thing. Annoying.
+I trust you. That's a big deal, coming from me.
+You make this terrible world bearable. Thanks for that.
+I love that you get my jokes. Nobody else does.
+I'd pick you again. Every time. Even the bad times.
+# home_talk
+The neighbors are having another loud party. I'm drafting a strongly worded note.
+I watched a documentary about the ocean. We're all doomed. Pass the popcorn.
+The faucet's dripping again. It's mocking me.
+I fixed the shelf. It's crooked. It's staying crooked. It has character.
+Our HOA sent another letter. I'm framing it. It's comedy.
+Your mom called. I was polite. You're welcome.
+The cat knocked over a glass and looked me in the eye while doing it. Respect.
+I think the house is haunted. Or the pipes are just bad. Probably the pipes.
+Someone stole our newspaper. I'm not mad, I'm impressed they still read newspapers.
+The weather app says rain all week. Perfect. I'll stay inside with you.
+I found a spider in the bathtub. I named him Gerald. He lives here now.
+We should paint the bedroom. Something dark. Like my soul. Kidding. Gray.
+I tried that new show everyone's talking about. It's terrible. Want to watch it with me?
+The mail is just bills and a coupon for something we'll never buy.
+I organized the junk drawer. It's now a slightly less junky drawer.
+The garden's doing great. By which I mean the weeds are thriving.
+There's a new couple next door. Very cheerful. I give it two weeks.
+I made a list of things that went right today. It's short, but you're on it.
+I put a lock on the snack cabinet. For your sake. Not mine.
+The dog next door barked for three hours. I barked back once. It didn't help.
+I think our toaster is plotting against us.
+Did you know the neighbors repainted their door red? Bold. Tacky. Bold.
+I'm thinking about getting into birdwatching. The birds seem less annoying than people.
+I've been reading at night again. Mostly so I don't have to watch the news.
+I found our wedding photos. We looked so young and naive. Still glad we did it.
+The smoke alarm chirped once at three in the morning. I'm at war with it now.
+I'm not saying we need a bigger house. I'm saying we need fewer things and a moat.
+# chores
+I did the dishes. Before you ask, yes, the hard pan too.
+Your laundry's been in the dryer for two days. It's becoming a lifestyle.
+I vacuumed. The cat filed a complaint.
+Trash night. Rock, paper, scissors? Fine, I'll do it.
+Somebody has to clean the gutters. That somebody is not me.
+I cleaned the bathroom. Please don't use it for a few hours. Let me enjoy it.
+The fridge has things in it that are evolving. We need to deal with it.
+I mowed the lawn. The neighbors can stop glaring now.
+You do the dishes, I'll do the complaining. Teamwork.
+I folded your clothes. Wrong, according to you. Still folded, though.
+Who leaves one bite of cereal in the box? Who does that?
+I organized the garage. Don't touch anything. Ever.
+# money
+Rent went up again. Of course it did.
+We spent how much on takeout this month? Okay, that's on me.
+I'm not saying we're broke. I'm saying the piggy bank is nervous.
+Let's not buy anything for a while. Except groceries. And maybe that one thing.
+I found a cheaper internet plan. It's slower, but so is everything.
+We're fine. Not rich, but fine. Fine is underrated.
+Your subscription to that streaming thing, do we use that?
+If we skip coffee shops for a month we could take a real vacation.
+I balanced the checkbook. It's not balanced. It's just less unbalanced.
+Money's tight, but we've survived worse. Remember the leaky apartment?
+# meal
+Dinner's ready. It's pasta. Again. I'm a creature of habit.
+I made breakfast. Don't look at the kitchen.
+Want takeout? I don't want to cook and you shouldn't be trusted with the stove.
+I tried a recipe from the internet. The internet lied.
+It's soup. It's warm. It's love in a bowl. Don't tell anyone I said that.
+I made your favorite. Because you deserve something good today.
+Sandwiches for dinner. Fancy sandwiches. Very fancy. I cut the crusts off.
+I burned the garlic bread. I'm sorry for what I've done.
+Eat something green tonight. For me. I worry.
+Leftovers night. The best kind of dinner. No effort, all reward.
+# argue
+Don't do the thing where you go quiet and pretend you're fine.
+You said you'd call. You didn't call. I'm not mad, I'm annoyed. Mostly mad.
+I'm not being sarcastic. Okay, I'm being a little sarcastic. But I'm also right.
+You spent how much on what? We talked about this.
+Could you not leave your dishes in the sink like they'll wash themselves?
+I'm tired of being the bad guy every time something goes wrong.
+You don't listen when I'm actually serious, {player}. That's the problem.
+Stop rolling your eyes. That's my move.
+I'm not overreacting. This is a normal amount of reacting.
+You always say "fine." Nothing's ever fine. Say what you mean.
+Okay. I'm going for a walk before I say something I regret.
+It's not the dishes. It's never the dishes. It's the principle of the dishes.
+# makeup
+Okay. I was a jerk. I'm sorry.
+I hate fighting with you. It's the worst part of my week.
+Truce? I'll even let you pick the movie.
+I'm sorry I snapped. You didn't deserve that.
+Come here. We're okay. We're always okay.
+I'm not good at apologies. This is me trying. I'm sorry.
+You're still my favorite person. Even when you're wrong. Kidding. Sort of.
+Let's never go to bed mad. Or at least not too mad.
+# support
+Hey. It's okay. The world's awful, but you're not.
+Whoever hurt you, I'll handle it. Legally. Probably.
+You don't have to talk. I'll just sit here with you.
+You did your best. That's all anyone can do. Most don't even do that.
+Bad days happen. You're not a bad person. Just a person having a day.
+I'm here. I'm not going anywhere. You're stuck with me.
+You'll get through this. I've seen you get through worse.
+Want me to make terrible jokes until you smile? I've got a list.
+Take a break. The world can wait. It usually does.
+You're stronger than you think. Annoyingly strong. I'm jealous.
+# plans
+Let's do nothing this weekend. Nothing at all. It'll be glorious.
+We should finally go to the coast. I'll even pretend to like sand.
+How about a road trip? I'll drive. You pick the music. Within reason.
+Let's go to that bookstore downtown and judge everyone's taste.
+Movie night. Something with explosions and no feelings.
+We could host a dinner party. Or we could not. I vote not.
+I want to go see the old train station in Carrburg. It's falling apart. Like us.
+Maybe we take a cabin in the mountains. No signal. Pure bliss.
+Let's take a cooking class. One of us has to learn properly.
+Let's go to the football game and make fun of the Earl fans.
+# memories
+Remember our first date? I almost left. I'm glad I didn't.
+Remember when we got lost on the way to the wedding? Our own wedding.
+I still have the receipt from our first dinner. Don't ask why.
+Remember the first apartment? The roaches had better furniture than us.
+Remember when you tried to make me go to a party and I hid in the bathroom?
+I remember the first time you made me laugh so hard I snorted. Never forgiven you.
+Remember when the car broke down on the highway and we had the best conversation of our lives?
+Remember our honeymoon? It rained the whole time. Best week ever.
+I remember thinking, this one's different. I was right. Don't tell anyone I'm ever right.
+Remember the time we stayed up all night arguing about a movie? You were wrong.
+# anniversary
+Happy anniversary. Another year of you putting up with me. Impressive.
+I got you something. It's thoughtful. I'm disgusted with myself.
+Another year. Still the best decision I ever made.
+Happy anniversary. I'd say I love you more each year, but I loved you a lot already.
+Here's to another year of us against the world.
+We made it another year. I'd do it all again. Even the bad parts.
+# tease
+You sing off-key in the shower. Every morning. The neighbors know.
+You have the worst taste in movies. I love you anyway.
+You cried at a cereal commercial. I saw you.
+You've been "about to fix" that cabinet for three months.
+Your idea of cooking is reheating. You're very good at reheating.
+You snore like a leaf blower. A cute leaf blower.
+You still can't parallel park. It's been years.
+You laugh at your own jokes before you finish them. It's adorable. And annoying.
+You alphabetized the spice rack. Who does that? You. Only you.
+You talk to the plants. The plants don't talk back. I checked.
+You hog the blankets. I'm filing a formal complaint.
+You think you're sneaky eating my snacks. You're not.
+# bedtime
+Bed. Now. The world can be terrible tomorrow.
+Goodnight. You're the only good thing about today.
+Come to bed. I'm cold and I'm not putting on socks.
+Night. Don't steal the blankets. I mean it this time.
+Sleep. Tomorrow's another fight. We'll win it.
+Goodnight. I love you. Don't make me say it again until morning.
+Lights off. If the smoke alarm chirps, it's your turn.
+Night. You're my favorite person to fall asleep next to. Only person, but still.
+Get some rest. You look like a raccoon who's seen things.
+Goodnight, {player}. Thanks for being my person.

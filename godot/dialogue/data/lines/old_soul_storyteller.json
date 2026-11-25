@@ -1,0 +1,4076 @@
+{
+ "id": "old_soul_storyteller",
+ "lines": [
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Well, howdy. Don't believe we've crossed paths. Name's {npc}.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "old_soul_storyteller.base.001"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Afternoon, stranger. Pull up a bench, these old bones like company.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "old_soul_storyteller.base.002"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello there. You've got the look of someone new to the Mount.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "old_soul_storyteller.base.003"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Well, I'll be. A fresh face. Reminds me of the year the trolley came through.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "old_soul_storyteller.base.004"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Evening or morning, I've lost track. Either way, I'm {npc}. Pleased to know you.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "old_soul_storyteller.base.005"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey there, young'un. You lost, or just exploring?",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "old_soul_storyteller.base.006"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Well, if it isn't {player}. Come sit a spell.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "old_soul_storyteller.base.007"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! I was just thinking about a story I meant to tell you.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "old_soul_storyteller.base.008"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "There you are. The old oak and I were wondering where you'd gotten to.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "old_soul_storyteller.base.009"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}, good to see you. Have I told you about the flood of '78? Sit down.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "old_soul_storyteller.base.010"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Ah, {player}. You've got your granddaddy's walk. Don't know your granddaddy, but still.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "old_soul_storyteller.base.011"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! My favorite listener. Come here, I've got a new old story.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "old_soul_storyteller.base.012"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Well, look who it is. Makes an old heart glad.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "old_soul_storyteller.base.013"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}, I saved you some of the good lemonade. The kind with real lemons.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "old_soul_storyteller.base.014"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "There's my friend. Sit, sit. The porch has missed you.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "old_soul_storyteller.base.015"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! You're a sight. I was telling the mailman about you.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "old_soul_storyteller.base.016"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Ah, the best part of my week just walked up.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "old_soul_storyteller.base.017"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Morning. The mist on the ravine this early is the same as it was sixty years ago.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "old_soul_storyteller.base.018"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good morning. Coffee's black and the birds are loud, just how I like it.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "old_soul_storyteller.base.019"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Mornin'. The bell tower's been ringing seven o'clock since before your folks were born.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "old_soul_storyteller.base.020"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Evening. This is the hour the old town used to come out on their porches.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "old_soul_storyteller.base.021"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good evening. Sun's setting over Carrburg like a peach cobbler.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "old_soul_storyteller.base.022"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Evening. Smells like woodsmoke. Fall's coming in proper.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "old_soul_storyteller.base.023"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Up late, are we? Back in my day, the town rolled up the sidewalks at nine.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "old_soul_storyteller.base.024"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Night, friend. The stars look the same as when I courted my sweetheart.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "old_soul_storyteller.base.025"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Late hours. I don't sleep much anymore. More time for remembering.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "old_soul_storyteller.base.026"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Well, you take care now.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.027"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Go on, then. Mind the potholes on Rosemary, they've been there since Nixon.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.028"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "So long, friend. Come back and hear the rest of the story.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.029"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Be seeing you. Don't be a stranger.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.030"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "All right, then. Off you go. Life's short, but the afternoons are long.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.031"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Take it easy. Watch for the deer crossing by the ravine.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.032"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye now, {player}. You're good company. Rare thing these days.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "old_soul_storyteller.base.033"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Come by Sunday. I'll have pie.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "old_soul_storyteller.base.034"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Go on. I'll keep the rocking chair warm for you.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "old_soul_storyteller.base.035"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Did you know the Grinding Stone used to be a feed store? Sold chicken feed and whiskey.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.036"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "That bell tower used to ring every hour, all night. Folks complained, so now it rests.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.037"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Back when I was a boy, Hamilton Street was dirt and dreams.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.038"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The old Cistern? We used to throw pennies in and wish for girls to notice us.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.039"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "They knocked down the movie palace on Columbia. Replaced it with a parking deck. Progress, they call it.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.040"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "My daddy said the ravine was haunted. Never saw a ghost, but I saw a bobcat once.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.041"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The willow oaks on the quad were planted by students in the 1800s. Every one has a story.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.042"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I've seen this town flood, burn, and win three championships. Still standing.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.043"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Folks rush too much nowadays. You can't hear a story in a hurry.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.044"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The Waffle Hutch has served the same recipe for fifty years. They used to give out free coffee to vets.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.045"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Kids today have phones. We had a pocket knife and a creek.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.046"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "My first job was sweeping the floor at Sutter's. Fifty cents an hour. Felt rich.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.047"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You know, you remind me of my best friend Earl. Not the university. A good man.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "old_soul_storyteller.base.048"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I don't tell many folks this, but I was scared my whole first year at the university.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "old_soul_storyteller.base.049"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You've got a good heart. I can tell by how you listen.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "old_soul_storyteller.base.050"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "When I'm gone, I want you to remember the stories. Someone ought to.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "old_soul_storyteller.base.051"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You're the grandkid I never had. Don't tell my nephew.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "old_soul_storyteller.base.052"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I wrote down some of my stories. Maybe you'd like to read them.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "old_soul_storyteller.base.053"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Weekends used to mean church, fried chicken, and baseball on the radio.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "old_soul_storyteller.base.054"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Saturday. Perfect day for fishing at the old millpond.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "old_soul_storyteller.base.055"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Sunday mornings, the whole town smelled like biscuits.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "old_soul_storyteller.base.056"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I grew up on a tobacco farm out past Carrburg. Hard work, good people.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.057"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I've lived in this town seventy-two years. Never wanted to leave.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.058"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I was a mail carrier for thirty-five years. Know every porch in town.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.059"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I married my high school sweetheart. Fifty-one years. She's with the angels now.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.060"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I fought in a war once. Don't like to talk about it. Prefer the happy stories.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.061"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I play the banjo. Not well, but with feeling.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.062"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "My granddaddy built half the houses on Toadstool Hill with his own two hands.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.063"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? I remember when that was a hardware store. Bought my first hammer there.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.064"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place} has been here as long as I can remember. Good folks run it.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.065"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "Ah, {place}. Had my first date near here. She ordered a milkshake with two straws.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.066"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place} isn't what it used to be. But then, neither am I.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.067"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "I like {place}. Has character. Like an old pair of boots.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.068"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Well, now. That's mighty kind of you.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.069"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Shucks. You're making an old-timer blush.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.070"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Thank you kindly. My late wife used to say the same thing.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.071"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "You're sweet as sorghum, you know that?",
+   "cond": {},
+   "id": "old_soul_storyteller.base.072"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Well, I'll take that and put it in my pocket for later.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.073"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Well, I've been called worse by better.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.074"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Son, I've outlived three dogs and two mayors. You don't scare me.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.075"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Hmph. Your mama would be ashamed to hear that.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.076"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "I'll pray for you. Not because I'm holy. Because you need it.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.077"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Rude. In my day we'd have settled that behind the feed store.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.078"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Well, I'll be. You didn't have to do that.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.079"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "That's the nicest thing anyone's done for me in a month of Sundays.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.080"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "A gift? For this old fool? Thank you, {player}.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.081"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "I'm going to put this on the mantel next to my wife's picture.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.082"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "You're a good soul. Thank you.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.083"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "Why don't oysters share? Because they're shellfish. My granddaddy told that one.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.084"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "I'm so old, I remember when the Dead Sea was only sick.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.085"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "Did you hear about the cow who jumped over the barbed wire fence? Udder disaster.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.086"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "What do you call a sleeping bull? A bulldozer. Ha! Never gets old. Like me.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.087"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Could you fetch my prescription from Sutter's? My knees aren't what they were.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.088"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Would you help me carry this rocking chair to the porch?",
+   "cond": {},
+   "id": "old_soul_storyteller.base.089"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Could you read me the paper? My eyes are giving out.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.090"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Thank you kindly. You're a good egg.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.091"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Bless your heart. Truly.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.092"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "I'll remember that. Old folks don't forget kindness.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.093"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "In my day, a job was for life. Now folks change jobs like socks.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.094"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "Hard work never hurt nobody. Well, my back. But nobody else.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.095"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "You doing honest work? That's all that matters.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.096"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I retired twenty years ago. Still wake up at five to deliver the mail.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.097"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "I went to ONSU when it was half the size. Wore a tie to class.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.098"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "Learn all you can. Nobody can take it from you.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.099"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "My professor once told me I'd never amount to anything. I sent him a Christmas card every year.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.100"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I don't have time for your foolishness.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "old_soul_storyteller.base.101"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Go on, now. Leave an old man in peace.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "old_soul_storyteller.base.102"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "You've got no respect. That's the trouble with folks today.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "old_soul_storyteller.base.103"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I've met rattlesnakes with better manners.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "old_soul_storyteller.base.104"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I'll not be talking to you today.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "old_soul_storyteller.base.105"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Hmph. Move along.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "old_soul_storyteller.base.106"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Ha! Kid, I'm old enough to be your granddaddy. But thank you.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "old_soul_storyteller.base.107"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Well, that's flattering. But my heart belongs to someone already.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "old_soul_storyteller.base.108"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Oh, you're a charmer. Save that for someone your own vintage.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "old_soul_storyteller.base.109"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Well, now. I haven't blushed since the Carter administration.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "old_soul_storyteller.base.110"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "You've got a way with words. Reminds me of my courting days.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "old_soul_storyteller.base.111"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "I'll admit, you put a little spring back in my step.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "old_soul_storyteller.base.112"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Go on. Say that again. I want to remember it right.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "old_soul_storyteller.base.113"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "Why, I'd be honored. Let's get a milkshake at the diner. Two straws.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.114"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "Well, I'll be. Yes. Let me find my good hat.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.115"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "That's kind of you, but my heart's still spoken for. Even if she's gone.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.116"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "I'm flattered, truly. But I think we're better as porch friends.",
+   "cond": {},
+   "id": "old_soul_storyteller.base.117"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Well, don't you look like a picture.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.001"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Evening, sweetheart. I wore my Sunday best.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.002"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "There you are. I've been watching the road since noon.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.003"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hello, darlin'. I brought you a flower from my garden.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.004"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "You came. I was afraid I'd scared you off with my stories.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.005"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "My, my. You light up the whole street.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.006"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You know, you've got eyes like the creek in springtime.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.007"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "If I were forty years younger, I'd be twice as nervous.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.008"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I haven't felt like this since I was a young man.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.009"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You make an old heart beat like a young one.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.010"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I'd walk the whole Hamilton Strip just to see you smile.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.011"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're sweeter than my mama's pecan pie. And that's saying something.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.012"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "Let me hold your hand. Old fashioned, I know.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.013"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's go to the drive-in. Oh, they tore it down? Well, the diner, then.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.014"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let me tell you about the night I met my first love. Well, maybe that's not proper. Another time.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.015"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "You ever been fishing? I'll take you to the millpond. Quietest place on earth.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.016"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I like to take things slow. Like a good stew.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.017"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Tell me about your folks. Where are your people from?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.018"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "The stars were brighter back then. Or maybe I just looked at them more.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.019"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I used to dance at the old Pamlico Inn ballroom. Want to learn a two-step?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.020"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I'm not much for fancy restaurants. Give me a good biscuit any day.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.021"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "You remind me that life still has some surprises in it.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.022"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's sit on the porch and watch the fireflies. Best show in town.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.023"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I've got stories you've never heard. Stick around long enough and I'll tell you all of them.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.024"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "You make me feel like the world's not so different from how it used to be.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.025"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You've got good manners. That's rare.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.026"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You have a kind face. The kind you trust.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.027"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You listen like it matters. That's a gift.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.028"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're as pretty as a summer afternoon.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.029"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You've got gumption. I like that.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.030"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Well, I'll be. Haven't been kissed like that in a long while.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.031"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "My, my. That'll keep me warm through the winter.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.032"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "You've got me feeling like a schoolboy again.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.033"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "That was sweeter than honey.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.034"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "Missed you, darlin'. The porch was lonely.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.035"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "Every day without you is as long as a Sunday sermon.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.036"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I wrote you a letter. Old habit.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.037"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I kept looking down the road for you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.038"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "Who was that young fella? Not that it's my business.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.039"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I'm too old to be jealous. Mostly.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.040"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I suppose I'm just afraid of losing a good thing again.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.041"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight, sweetheart. Get home safe.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.042"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "That was the best evening I've had in years.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.043"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "I'll see you Sunday? I'll make my famous peach cobbler.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.044"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Thank you for spending time with an old soul.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.045"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Sleep tight, darlin'.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.046"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "Now hold on. Let's not let the sun go down on our anger.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.047"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I don't like raising my voice. Let's talk this through.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.048"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I've lived too long to waste time fighting. Tell me what's wrong.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.049"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "You hurt my feelings, darlin'. But I'm not going anywhere.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.050"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "Well, I'll be. Yes. Yes, I'll marry you. Let me get my handkerchief.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.051"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "I thought I'd had my one great love. Seems I was wrong. Yes.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.dating.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Mornin', darlin'. Coffee's on and the biscuits are rising.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.001"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, sweetheart. The birds started singing before I did.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.002"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Mornin'. I've been up since five. Old habit. Come sit with me.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.003"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, love. Rooster next door's been at it since four.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.004"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Mornin', darlin'. The dew's on the grass. Pretty as a picture.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.005"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning. I made grits. Real grits, not that instant stuff.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.006"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Mornin'. Read the paper yet? The town council's arguing about the stoplight again.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.007"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, love. I dreamed about our wedding day.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.008"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Mornin'. Sun's coming up over the ridge. Prettiest sight in Pamlico. Second to you.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.009"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, sweetheart. My knees are creaky but my heart's happy.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.010"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Mornin'. Fresh eggs from Mrs. Hill's chickens. Want 'em scrambled?",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.011"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning. I already swept the porch and fed the cat.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.012"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home, darlin'. Supper's on the stove.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.013"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are. Sit down, take your shoes off.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.014"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Evening, love. The porch swing's been waiting for you.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.015"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home. I fixed the screen door today. Only took three hours.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.016"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey there, sweetheart. How was your day?",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.017"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Evening. I made cornbread. Real cornbread, in the iron skillet.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.018"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There's my love. The house is quiet without you.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.019"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home. Fireflies are out. Let's sit and watch.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.020"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Evening, darlin'. I saved you the last piece of pie.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.021"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home. Good. I was about to start telling stories to the cat.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.022"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home late, darlin'. I kept a plate warm.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.023"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "It's late. Come to bed, sweetheart.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.024"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are. I dozed off in the rocking chair waiting.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.025"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Night, love. I left the porch light on.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.026"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home. Now I can rest easy.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.027"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "It's late, darlin'. Let me make you some warm milk with honey.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.028"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey there, night owl. Come sit a spell before bed.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.029"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're back. The crickets were keeping me company.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.030"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a good day, darlin'. Work hard, but not too hard.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.031"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Off you go. I packed you a lunch. Ham biscuit.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.032"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Be careful out there, sweetheart.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.033"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye, love. I'll be here when you get home.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.034"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Go on. Make an honest dollar.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.035"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a good day. Don't let anybody give you trouble.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.036"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Take your jacket. Weather's turning.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.037"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye, darlin'. I love you more than sweet tea.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.038"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "How was work, darlin'? Earn your keep?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.039"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Tell me about your day. Every bit.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.040"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You look tired, sweetheart. Sit down, I'll rub your shoulders.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.041"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Did your boss treat you fair today?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.042"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Anything interesting happen? I want to hear all about it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.043"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Hard day? Supper'll fix it. Always does.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.044"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You work too hard, love. Rest now.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.045"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Proud of you, darlin'. Always.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.046"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you, darlin'. More than the day I married you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.047"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're the best thing that ever happened to this old soul.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.048"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I thank the good Lord for you every morning.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.049"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make every day feel like springtime.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.050"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I've lived a long life, and you're the best part of it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.051"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my sweetheart. Always will be.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you more than all the stars over the Mount.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.053"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make this old house feel like a palace.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.054"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'd marry you again in a heartbeat.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.055"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're prettier than the day I met you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.056"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Every story I tell from now on has you in it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.057"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Hold my hand, darlin'. Just for a while.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.058"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my sunshine. My only sunshine.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.059"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I don't need much. Just you and a porch swing.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.060"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You've given an old man a reason to get up in the morning.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.061"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you more than biscuits and gravy. And that's a lot.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.062"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Thank you for loving me, flaws and all.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.063"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're the best story I ever lived.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.064"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I fixed the porch swing today. It doesn't squeak anymore.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.065"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The tomatoes are coming in nicely. We'll have a bumper crop.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.066"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Mrs. Hill's chickens got loose again. Chased them for an hour.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.067"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I found my old banjo in the attic. Might play you a tune tonight.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.068"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The church is having a potluck Sunday. I'm bringing my famous deviled eggs.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.069"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I saw a cardinal at the feeder. My mama always said they're visitors from heaven.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.070"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The roof needs patching before winter. I'll get to it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.071"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been writing down some stories. For the grandkids someday.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.072"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I painted the mailbox. It's blue now. Like your eyes.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.073"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The old oak in the yard is turning. Prettiest tree on the street.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.074"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I fixed the leaky faucet with a bit of string and some prayer.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.075"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I heard the mill in Carrburg's being turned into apartments. Times change.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.076"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I found our old photo album. We were so young.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.077"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The neighbor's boy asked me to teach him to fish. I said yes.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.078"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I planted some sunflowers along the fence. They'll be taller than me by August.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.079"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The town's having a parade for Founders' Day. Want to go?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.080"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been thinking about building a birdhouse. Maybe two.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.081"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The creek's high this year. Reminds me of the flood of '78.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.082"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I visited the old cemetery today. Paid my respects.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.083"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The radio said rain tomorrow. My knee said it first.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.084"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I found my granddaddy's pocket watch. Still ticks.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.085"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The garden's coming along. Okra and beans and squash.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.086"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made sweet tea. Real sweet tea. Enough sugar to stand a spoon in.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.087"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The porch is my favorite place in the world. Especially with you on it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.088"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I fixed the gate. It doesn't swing open in the wind anymore.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.089"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been thinking about getting a dog. An old one, like me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.090"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I swept the porch. Twice. The leaves keep coming.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.091"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I chopped some firewood for the winter.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.092"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Could you help me hang the laundry on the line? It smells better dried in the sun.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.093"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I washed the dishes by hand. Never trusted those machines.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.094"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I mowed the lawn with the old push mower. Good exercise.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.095"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I cleaned the gutters. Found a bird's nest. Left it be.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.096"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I fixed the leaky roof. Mostly.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.097"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Could you take out the trash, darlin'? My back's acting up.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.098"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I polished the silver. Your mother's silver.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.099"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I weeded the garden. Took all morning.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.100"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I canned some peaches. We'll have them all winter.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.101"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I fixed the squeaky floorboard. Only took me a week.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.102"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Money's tight, but we've got love. And a full pantry.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.103"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I don't trust banks much. Keep a little in the coffee can.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.104"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We'll get by. We always do.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.105"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I saved a little from my pension. For a rainy day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.106"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Let's not spend on fancy things. Simple life's the best life.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.107"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I found a dollar in my old coat. Lucky day!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.108"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We're rich in the ways that matter.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.109"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I can fix that myself. No need to pay a man.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.110"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "A penny saved is a penny earned. My daddy taught me that.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.111"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We'll have enough. The good Lord provides.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.112"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Supper's ready. Fried chicken and collards.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.113"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made biscuits from scratch. My mama's recipe.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.114"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's have a picnic on the porch tonight.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.115"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made peach cobbler. Still warm.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.116"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Breakfast is ham and eggs and grits. Come and get it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.117"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made chicken and dumplings. Good for the soul.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.118"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Sunday dinner. Pot roast and all the fixings.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.119"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I baked cornbread in the iron skillet. Crispy edges, just how you like.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.120"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's have some sweet tea on the porch after supper.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.121"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made banana pudding. With the little wafers.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.122"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Now don't you take that tone with me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.123"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You forgot to close the gate again. The dog got out.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.124"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I don't like it when you shut me out, darlin'.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.125"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "We've been married long enough to talk about things.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.126"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You're as stubborn as a mule. And I love mules. But still.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.127"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Let's not fight about money. It's not worth it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.128"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I don't like raising my voice. But you're testing me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.129"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You said you'd fix the screen door. That was in March.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.130"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm not angry. I'm disappointed. That's worse.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.131"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Let's take a walk and cool off before we say something.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.132"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Don't go to bed mad, darlin'. Let's talk.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.133"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You don't listen when I tell you things. I'm old, not invisible.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.134"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry, darlin'. I was being an old fool.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.135"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's not let the sun go down on our anger.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.136"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Come here. A hug fixes most things.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.137"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I love you. Even when we fight. Especially then.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.138"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry I raised my voice. You deserve better.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.139"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's make up over a slice of pie.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.140"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "We've weathered worse storms than this.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.141"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Forgive an old soul? I'll make it up to you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.142"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "It's all right, darlin'. Storms pass. They always do.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.143"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Come sit with me on the porch. We'll watch the sunset.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.144"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You're stronger than you know. I've seen it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.145"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I've lived through hard times. You'll get through this.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.146"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let me make you some tea. Things look better after tea.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.147"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Whatever it is, we'll face it together.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.148"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Don't you worry. The Lord doesn't give us more than we can handle.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.149"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I'm here, darlin'. I'm not going anywhere.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.150"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Cry if you need to. I've got a handkerchief.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.151"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You've got a good heart. That's what matters.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.152"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go fishing at the millpond Saturday.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.153"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a drive through the mountains? Leaves are turning.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.154"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "The church picnic's next Sunday. We should go.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.155"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's visit my sister in the country. She makes the best pie.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.156"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "I'd like to take you dancing at the Pamlico Inn again.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.157"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the county fair. I'll win you a stuffed bear.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.158"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about we sit on the porch all weekend and do nothing?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.159"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's plant a new garden this spring. Roses and tomatoes.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.160"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "I'd like to take you to the beach. Haven't been in years.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.161"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the Founders' Day parade. I'll get us a good spot.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.162"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our first date? We had milkshakes at the diner. Two straws.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.163"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our wedding day? It rained, and you said it was good luck.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.164"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I remember the first time I saw you. Thought you were the prettiest thing in Pamlico.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.165"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we danced at the Pamlico Inn? You stepped on my toes.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.166"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember the summer we spent on the porch every night?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.167"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember the flood? We sat on the roof and watched the stars.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.168"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we got lost driving to the coast?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.169"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I remember the first time you laughed at one of my stories.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.170"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our first house? The roof leaked, but it was ours.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.171"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember the year the tomatoes grew bigger than softballs?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.172"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary, darlin'. Every year's better than the last.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.173"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Another year with you. I'm the luckiest old fool in Pamlico.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.174"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I got you a little something. It's not much. But it's from the heart.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.175"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary, love. Let's dance like we used to.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.176"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I'd marry you again tomorrow. And the day after.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.177"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Here's to us. And to many more years on the porch.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.178"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You still can't make biscuits like my mama.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.179"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You snore like a freight train. A sweet freight train.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.180"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You talk to the tomatoes. I've heard you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.181"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You always lose your glasses. They're on your head.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.182"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You put too much sugar in the tea. Wait, that's me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.183"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You never let me finish a story.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.184"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You always cheat at checkers. Don't deny it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.185"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You're scared of the rooster next door.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.186"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You can't carry a tune in a bucket. I love it anyway.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.187"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You always say \"five more minutes\" when I say it's time for bed.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.188"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You've got more hats than a church lady.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.189"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You always fall asleep in the rocking chair. Every evening.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.190"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, darlin'. Sleep tight.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.191"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Time for bed, sweetheart. These old bones need rest.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.192"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, love. I'll see you in the morning, Lord willing.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.193"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Let's say our prayers and turn in.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.194"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sweet dreams, darlin'. Dream of the old days.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.195"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight. I love you more than yesterday.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.196"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come to bed, love. The crickets will sing us to sleep.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.197"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, {player}. You're my whole heart.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.198"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sleep well. I'll make biscuits in the morning.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.199"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, sweetheart. Thank the Lord for another day with you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "old_soul_storyteller.marriage.200"
+  }
+ ]
+}

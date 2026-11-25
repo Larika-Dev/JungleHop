@@ -1,0 +1,56 @@
+{
+ "version": 1,
+ "notes": "Player choices in a conversation. Each turn the player sees min_options..max_options of the options whose 'when' matches (yes/no prompts show exactly 2). 'reply' is the dialogue context the NPC answers with in its personality's voice. 'action' is the Life action run for relationship effects when Life registers it. 'kind': talk (default), question (player asks a yes/no question, NPC answers yes or no), end (closes the conversation). when keys: romance (list), not_romance (list), stage (list, friendship tiers), adult (bool), flag_extra (key that must be truthy in the conversation's extra dict), time (list).",
+ "min_options": 4,
+ "max_options": 6,
+ "npc_asks_favor_chance": 0.12,
+ "options": [
+  {"id": "chat", "reply": "smalltalk", "action": "chat", "labels": ["So, what's new?", "How's it going?", "Anything interesting happen lately?", "What have you been up to?"]},
+  {"id": "ask_about", "reply": "about_self", "action": "deep_talk", "labels": ["Tell me about yourself.", "What's your story?", "What makes you tick?"]},
+  {"id": "compliment", "reply": "compliment_reply", "action": "compliment", "labels": ["You look great today.", "I like talking with you.", "You've got a great vibe."]},
+  {"id": "joke", "reply": "joke", "action": "joke", "labels": ["Know any good jokes?", "Make me laugh.", "Tell me something funny."]},
+  {"id": "opinion_place", "reply": "opinion_place", "labels": ["What do you think of this place?", "Come here often?", "How do you like it here?"]},
+  {"id": "work", "reply": "work_talk", "labels": ["How's work?", "What do you do for a living?", "Busy at work lately?"]},
+  {"id": "school", "reply": "school_talk", "labels": ["How are classes going?", "Are you a student here?", "Studying anything interesting?"]},
+  {"id": "gift", "reply": "gift_reply", "action": "give_gift", "when": {"flag_extra": "has_gift"}, "labels": ["I got you something.", "Here, this is for you."]},
+  {"id": "flirt", "reply": "flirt_reply", "action": "flirt", "when": {"adult": true, "not_romance": ["dating", "partner", "engaged", "married"], "stage": ["acquaintance", "friend", "close_friend", "best_friend"]}, "labels": ["You're kind of cute, you know that?", "Is it hot in here or is it you?", "I can't stop smiling around you."]},
+  {"id": "insult", "reply": "insult_reply", "action": "insult", "labels": ["You're really annoying.", "Nobody likes you.", "Wow, you're boring."]},
+  {"id": "ask_out", "kind": "question", "reply": "ask_out_yes", "reply_no": "ask_out_no", "action": "ask_on_date", "accept_min_romance": 20, "when": {"adult": true, "not_romance": ["dating", "partner", "engaged", "married"], "stage": ["acquaintance", "friend", "close_friend", "best_friend"]}, "labels": ["Would you go on a date with me?", "Want to go out sometime? Like, a date?"]},
+  {"id": "goodbye", "kind": "end", "reply": "farewell", "when": {"not_romance": ["dating", "partner", "engaged", "married"]}, "labels": ["I should get going.", "See you around.", "Bye for now."]},
+
+  {"id": "date_talk", "reply": "date_talk", "action": "chat", "when": {"romance": ["dating", "partner", "engaged"]}, "labels": ["Tell me what's on your mind.", "What should we do tonight?", "I love just talking with you."]},
+  {"id": "date_flirt", "reply": "flirt", "action": "flirt", "when": {"romance": ["dating", "partner", "engaged", "married"]}, "labels": ["You look amazing.", "Come here, you.", "Have I told you how cute you are?"]},
+  {"id": "ask_like", "reply": "compliment", "when": {"romance": ["dating", "partner", "engaged", "married"]}, "labels": ["What do you like about me?", "Why do you put up with me?"]},
+  {"id": "kiss", "reply": "kiss_reply", "action": "kiss", "when": {"romance": ["dating", "partner", "engaged", "married"]}, "labels": ["(Kiss them)", "(Lean in for a kiss)"]},
+  {"id": "missed", "reply": "miss_you", "when": {"romance": ["dating", "partner", "engaged"]}, "labels": ["I missed you.", "It's been too long."]},
+  {"id": "mention_other", "reply": "jealous", "when": {"romance": ["dating", "partner", "engaged"]}, "labels": ["I ran into my ex today.", "Someone at work was flirting with me."]},
+  {"id": "date_issue", "reply": "lovers_quarrel", "when": {"romance": ["dating", "partner", "engaged"]}, "labels": ["We need to talk.", "Something you said bugged me."]},
+  {"id": "propose", "kind": "question", "reply": "proposal_yes", "reply_no": "lovers_quarrel", "action": "propose", "accept_min_romance": 70, "when": {"romance": ["dating", "partner"]}, "labels": ["(Kneel) Will you marry me?", "Will you marry me?"]},
+  {"id": "date_goodbye", "kind": "end", "reply": "date_end", "when": {"romance": ["dating", "partner", "engaged"]}, "labels": ["I should go. Goodnight.", "Talk tomorrow?"]},
+
+  {"id": "home_chat", "reply": "home_talk", "action": "chat", "when": {"romance": ["married"]}, "labels": ["Anything new around the house?", "What did you get up to today?", "Tell me about your day."]},
+  {"id": "love_you", "reply": "affection", "action": "hug", "when": {"romance": ["married"]}, "labels": ["I love you.", "(Hug them)", "I'm lucky to have you."]},
+  {"id": "chores", "reply": "chores", "when": {"romance": ["married"]}, "labels": ["About the chores...", "Who's doing the dishes?"]},
+  {"id": "money", "reply": "money", "when": {"romance": ["married"]}, "labels": ["How are we doing on money?", "We should talk about the budget."]},
+  {"id": "meal", "reply": "meal", "when": {"romance": ["married"]}, "labels": ["What's for dinner?", "I'm starving."]},
+  {"id": "argue", "reply": "argue", "action": "argue", "when": {"romance": ["married"]}, "labels": ["Something's been bothering me.", "We need to talk about this."]},
+  {"id": "apologize", "reply": "makeup", "action": "apologize", "when": {"romance": ["married"]}, "labels": ["I'm sorry about earlier.", "Can we make up?"]},
+  {"id": "rough_day", "reply": "support", "when": {"romance": ["married"]}, "labels": ["I had a rough day.", "I'm not doing great."]},
+  {"id": "plans", "reply": "plans", "when": {"romance": ["married"]}, "labels": ["Any plans for the weekend?", "Let's do something fun soon."]},
+  {"id": "memories", "reply": "memories", "when": {"romance": ["married"]}, "labels": ["Remember when we first met?", "Do you ever think about the old days?"]},
+  {"id": "anniversary", "reply": "anniversary", "when": {"romance": ["married"], "flag_extra": "anniversary"}, "labels": ["Happy anniversary!", "Guess what today is?"]},
+  {"id": "tease_me", "reply": "tease", "when": {"romance": ["married"]}, "labels": ["What's my most annoying habit?", "Go on, roast me."]},
+  {"id": "back_from_work", "reply": "work_return", "when": {"romance": ["married"], "time": ["afternoon", "evening", "night"]}, "labels": ["I'm home from work.", "Long day at work."]},
+  {"id": "leave_for_work", "kind": "end", "reply": "goodbye_work", "when": {"romance": ["married"], "time": ["morning", "afternoon"]}, "labels": ["I'm heading to work.", "I have to go. See you tonight."]},
+  {"id": "go_to_bed", "kind": "end", "reply": "bedtime", "when": {"romance": ["married"], "time": ["evening", "night"]}, "labels": ["Let's go to bed.", "I'm turning in. Goodnight."]},
+  {"id": "home_goodbye", "kind": "end", "reply": "farewell", "when": {"romance": ["married"], "time": ["morning", "afternoon"]}, "labels": ["I'm heading out for a bit.", "Be back later."]}
+ ],
+ "favor": {
+  "ask_context": "ask_favor",
+  "options": [
+   {"id": "favor_yes", "reply": "favor_reply", "action": "help", "labels": ["Sure, I'll help."]},
+   {"id": "favor_no", "reply": "farewell", "labels": ["Sorry, I can't right now."]}
+  ]
+ },
+ "opening": {"hostile_stages": ["enemy", "dislike"]}
+}

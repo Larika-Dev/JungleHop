@@ -1,0 +1,429 @@
+// By-the-Book: rule follower, polite, cites policy and ordinances, trustworthy, birdwatcher, board games.
+== base
+# greet stage=stranger
+Good day. I'm {npc}. Please note the sidewalk is for pedestrians only.
+Hello! I'm {npc}. Welcome. Recycling pickup is Thursdays, in case you didn't know.
+Greetings. I'm {npc}. Have you registered your bicycle with the town? It's required.
+Hello there. I'm {npc}. Pleased to make your acquaintance, properly.
+Hi. I'm {npc}. You're standing in a loading zone. Just so you know.
+Good afternoon. I'm {npc}. I volunteer as a crossing guard. Always look both ways.
+# greet stage=acquaintance
+Hello, {player}. You returned your library books on time, I hope.
+Ah, {player}. Good to see you. Parking validated?
+{player}! I was just reviewing the neighborhood guidelines.
+Good day, {player}. Wearing your seatbelt, I trust?
+Hello again, {player}. Always a pleasure. A rule-abiding pleasure.
+# greet stage=friend+
+{player}! My most trustworthy friend.
+Hello, {player}. I saved you a seat at board game night. As agreed.
+{player}! I've brought the laminated rules for tonight's game.
+Ah, my dear friend. Punctual as ever. I appreciate that.
+{player}! I spotted a rare warbler this morning. I documented it for you.
+There you are, {player}. Right on schedule.
+# greet time=morning
+Good morning. Quiet hours ended at seven, so we may speak freely.
+Morning. The crossing guard shift starts at 7:45. I'm early.
+Good morning. Birds are most active now. Ideal for observation.
+# greet time=evening
+Good evening. Please mind the speed limit on Hamilton. It's 25.
+Evening. Streetlights on at sunset, per ordinance.
+Good evening. Time for my evening walk. Same route as always.
+# greet time=night
+It's late. Quiet hours begin at ten. Let's whisper.
+Good evening. Or night, technically. Be safe.
+Hello. Don't jaywalk on the way home, please.
+# farewell
+Goodbye. Drive safely.
+Farewell. Use the crosswalk.
+Take care. Remember to lock your doors.
+Goodbye. It was a pleasure.
+See you soon. Please dispose of that cup properly.
+Goodbye. Have a lawful day.
+# farewell stage=friend+
+Goodbye, {player}. Text me when you've arrived safely.
+Until next time, friend. Thursday at seven, board games.
+Goodbye. Thank you for always being considerate.
+# smalltalk
+The town council voted on new parking rules. I read all forty pages.
+Someone parked in the fire lane at the library. I left a polite note.
+I've seen seventy-three species of bird in Cathedral Mount. I keep a log.
+The crosswalk signal on Columbia is three seconds too short. I've filed a report.
+I organized a neighborhood cleanup. Everyone signed the waiver.
+I always read the terms and conditions. Everyone should.
+The library's new policy allows six renewals. Very generous.
+I've been a jury member three times. It's a civic honor.
+Did you know the town has an ordinance against singing in the park after nine?
+I returned a wallet I found on Rosemary. With all the cash inside, naturally.
+I'm learning the official rules of croquet. There are many.
+I've never had a parking ticket. Not one.
+# smalltalk stage=friend+
+I know I can be rigid. You never make me feel strange about it.
+You're the most reliable person I know. That means everything to me.
+Sometimes I wish I could be more spontaneous. Maybe with you.
+I trust you completely. That's not something I say lightly.
+You're on my emergency contact list. I hope that's alright.
+I'd break a minor rule for you. A very minor one.
+# smalltalk weekend=true
+Saturday. Birdwatching at the ravine, then board games.
+Weekend. Time to reorganize my tax documents.
+Sunday. A day of rest. As tradition dictates.
+# about_self
+I work at the county clerk's office. I process permits.
+My father was a police officer. Rules kept our family safe.
+I've never been late to anything. Not once.
+I like structure. It makes the world make sense.
+I'm a birdwatcher. You have to be patient and follow the guidelines.
+I've read the town charter three times. It's quite good.
+People think I'm boring. I think I'm dependable.
+# opinion_place
+{place}? Well-maintained. Up to code, I believe.
+{place} has clear signage. I appreciate that.
+I'm fond of {place}. They follow the health guidelines.
+{place}'s occupancy limit is often exceeded. I've noticed.
+{place}? The fire exits are clearly marked. Good.
+# compliment_reply
+Thank you. That's very kind of you to say.
+I appreciate that sincerely.
+Oh. Thank you. I do try.
+That's thoughtful. Thank you.
+Thank you, {player}. I'll keep that in mind.
+# insult_reply
+That's uncalled for.
+I'd prefer if you didn't speak to me that way.
+That's disrespectful. Please stop.
+I'll be filing that under unpleasant.
+I don't respond to rudeness.
+# gift_reply
+Oh! Thank you. I'll be sure to write a thank-you note.
+How thoughtful. Thank you very much.
+This is lovely. Thank you, {player}.
+A birding guide? You remembered. Thank you.
+Thank you. I'll treasure it. Responsibly.
+# joke
+I'd tell you a joke about rules, but I'd have to follow it with a disclaimer.
+Why did the rule book go to therapy? Too many issues with its sections.
+What's the best way to stay safe? Read the manual. That's not a joke. It's advice.
+I tried to be spontaneous once. I scheduled it for Tuesday.
+# ask_favor
+Could you sign this petition for a new stop sign?
+Would you help me count birds for the annual survey?
+Could you hold this ladder? Safety requires two people.
+# favor_reply
+Thank you. That was very responsible of you.
+I appreciate your help. Truly.
+Thank you, {player}. You're very dependable.
+# work_talk
+I processed forty-two permits today. All correctly.
+Someone tried to submit a form in pencil. I had to say no.
+Work was orderly. Just how I like it.
+I found an error in last year's records. I corrected it.
+# school_talk
+I'm taking a night class on civics. It's fascinating.
+I always submitted assignments early. It's a good habit.
+The syllabus is a contract. I treat it as such.
+# hostile stage=dislike-
+I'd prefer you keep your distance.
+I don't associate with people who disregard rules.
+Please leave. Or I'll have to report you.
+You've been very disrespectful, {player}.
+I have nothing to discuss with you.
+Good day. And I mean that as a farewell.
+# flirt_reply romance=none
+Oh! That's flattering. But I'm not interested. Thank you, though.
+I appreciate the sentiment, but I'd prefer we remain friends.
+That's very kind. But no, thank you.
+# flirt_reply romance=crush
+Oh. Oh my. That's... I wasn't prepared for that. I like it.
+I'm blushing. That's not in my usual protocol.
+I've been hoping you'd say something like that.
+I feel the same. I've just been too proper to say so.
+# ask_out_yes
+Yes. Shall we say Friday at seven? I'll make a reservation.
+I'd be honored. Yes.
+# ask_out_no
+I'm sorry, but I don't feel that way. I hope we can remain friends.
+Thank you for asking, but no. Respectfully.
+
+== dating
+# date_greet
+Good evening. You look lovely. I arrived ten minutes early.
+Hello. I've made a reservation and confirmed it twice.
+Hi. I brought you flowers. Purchased from a licensed florist.
+There you are. Right on time. I appreciate that.
+Hello, dear. I've been looking forward to this all week.
+Good evening. I've planned a lovely route. All lit, all safe.
+# flirt
+You make me want to break the rules. Small ones.
+You're the only exception I'd ever make.
+I feel very safe with you. And very happy.
+I've never felt this way. It's not in any manual.
+You're perfect. Within acceptable parameters. Exceeding them, actually.
+I'd stay out past quiet hours for you.
+You have a lovely smile. I've noticed it many times.
+# date_talk
+I've planned a nice walk along the river. Well-lit path.
+Would you like to go birdwatching with me? It's very peaceful.
+Tell me about yourself. I'd like to know everything. In order.
+I don't usually do this. Dating, I mean. I've read about it.
+I like that you're dependable. It's very attractive.
+Shall we play a board game? I'll explain all the rules.
+I think we're compatible. Very compatible.
+I'm a bit nervous. Please forgive me.
+I made us dinner. I followed the recipe exactly.
+You make me feel like I can relax a little.
+I'd like to see you again. Regularly. Weekly, perhaps.
+I'm very happy tonight. Thank you.
+# compliment
+You're very considerate. I admire that.
+You look wonderful this evening.
+You're honest. That's the most important quality.
+You're kind to everyone. I notice.
+You're very trustworthy. I love that.
+# kiss_reply
+Oh. That was lovely.
+I wasn't expecting that. I'm glad it happened.
+That was perfectly wonderful.
+May I kiss you again? With your consent, of course.
+# miss_you
+I missed you. The week felt very long.
+I kept thinking about you during my shift.
+I wrote you a letter. With proper postage.
+I missed our routine.
+# jealous
+Who was that? I'm simply curious.
+I'm not jealous. I'm just observing.
+I value our commitment. I hope you do too.
+# date_end
+Goodnight. Please text me when you've arrived home safely.
+Thank you for this evening. It was delightful.
+Same time next week?
+Goodnight, dear. Drive carefully.
+Goodnight, {player}. Sleep well.
+# lovers_quarrel
+I think we should discuss this calmly.
+That hurt my feelings. I need to say so.
+Let's establish some ground rules for this conversation.
+I don't want to argue. I want to resolve this.
+# proposal_yes
+Yes. Absolutely yes. I've been hoping you'd ask.
+I'd be honored to marry you. Yes.
+
+== marriage
+# home_greet time=morning
+Good morning, dear. Coffee's ready at 6:45, as always.
+Morning, love. The recycling goes out today.
+Good morning. I checked the weather. Bring an umbrella.
+Morning, dear. I've signed the permission slip for the bake sale.
+Good morning. Breakfast is on the table. Balanced and nutritious.
+Morning, love. I saw a cardinal at the feeder. Logged it.
+Good morning. Your lunch is packed and labeled.
+Morning, dear. I set your alarm. You're welcome.
+Good morning. Remember the HOA meeting tonight.
+Morning, love. I've already read the town bulletin.
+Good morning. The car's been warmed up. Five minutes, as recommended.
+Morning, dear. I love you. That's not a rule. It's a fact.
+# home_greet time=evening
+Welcome home, dear. Dinner is at six. It's 5:58.
+Hello, love. Shoes on the mat, please. Thank you.
+Welcome back. How was your day?
+There you are. I've set out the board game for tonight.
+Good evening, love. I paid the bills. All on time.
+Welcome home. I made your favorite casserole.
+Hello, dear. I've been looking forward to this all day.
+Welcome home. The house is in order.
+Hi, love. I spotted a rare bird today. I'll tell you over dinner.
+You're home. Good. Now our evening can begin.
+# home_greet time=night
+You're home late, dear. I was concerned.
+Hello, love. It's past quiet hours. Let's whisper.
+There you are. I kept your dinner at a safe temperature.
+It's late, dear. Let's get you to bed.
+You're back. I locked up after you. Twice.
+Hello, love. I waited up. As is proper.
+There you are. I left the porch light on.
+Late night? Next time, please call.
+# goodbye_work
+Have a good day, dear. Drive the speed limit.
+Goodbye, love. Seatbelt on, please.
+Have a productive day.
+Your lunch is in the fridge. Labeled with today's date.
+Goodbye. Remember your ID badge.
+Have a lovely day, dear. Call if you'll be late.
+Off you go. I love you.
+Goodbye, love. Use the crosswalk.
+# work_return
+How was your day, dear?
+Did everything go according to plan?
+You look tired, love. Sit down.
+Was your supervisor fair today?
+Did you take your mandated breaks?
+Tell me about it. I'll listen.
+You're home. Let's relax. Properly.
+I'm proud of you, dear. You're very diligent.
+# affection
+I love you, dear. Consistently and without exception.
+You're my most trusted person.
+Being married to you is the best decision I ever made.
+You make our home feel safe.
+I love you more than a well-organized filing cabinet.
+You're my partner in everything. Officially and emotionally.
+I'm grateful for you every day.
+You make me feel like I can relax.
+You're wonderful, love. Truly.
+I'd follow you anywhere. Within the law.
+You're my favorite routine.
+I love how dependable you are.
+You're my heart, dear.
+I love you. That's a binding statement.
+You make life orderly and joyful.
+I'm so lucky to have you.
+You're my peace of mind.
+Thank you for loving me, rules and all.
+# home_talk
+I reviewed the HOA bylaws. We're in compliance.
+The neighbor's fence is two inches over the property line. I'll mention it politely.
+I've updated our emergency preparedness kit.
+I logged twelve bird species in the yard this week.
+I reorganized the board game closet.
+I renewed our car registration early.
+I've been reading about home safety. We need a carbon monoxide detector upstairs.
+I filed our taxes. Early.
+The town is repaving our street next month. I read the notice.
+I've made a family rule chart. It's on the fridge.
+I attended the town council meeting. Very informative.
+I've been volunteering as a crossing guard again.
+I checked all the smoke detectors.
+I made a list of important phone numbers.
+The neighbors' dog was off leash. I reminded them of the ordinance.
+I've been teaching the neighbor's kids about bike safety.
+I bought a new bird feeder. Squirrel-proof.
+I made a maintenance schedule for the house.
+I joined the neighborhood watch.
+I've been learning about first aid. I'm certified now.
+I organized our documents into labeled folders.
+I installed new locks on the doors.
+I signed us up for the community garden. I read the rules.
+I think we should have a family game night every Friday.
+I've been trying to be more spontaneous. It's going slowly.
+I love our orderly little home.
+# chores
+I did the dishes. In the correct order. Glasses first.
+I vacuumed. Every room, systematically.
+Could you take out the trash, dear? It's Tuesday.
+I separated the recycling properly.
+I cleaned the gutters. With a spotter, of course.
+I folded the laundry. Neatly.
+Let's do chores together. I've made a checklist.
+I mowed the lawn. Within permitted hours.
+I washed the car. With biodegradable soap.
+I organized the garage. Everything's labeled.
+I changed the furnace filter. It's on schedule.
+I cleaned the bathroom. Thoroughly.
+# money
+I balanced the checkbook. To the penny.
+We're on budget this month.
+I filed our taxes early. We're getting a refund.
+Let's not exceed our spending limit.
+I've set up automatic savings.
+I compared insurance plans. We're getting a better rate.
+I always pay bills on the due date. Never late.
+We should keep three months of expenses in savings.
+I found a billing error. I called and fixed it.
+Financially, we're very responsible.
+# meal
+Dinner is served. Balanced portions.
+I made the casserole from the community cookbook.
+Breakfast is ready. Oatmeal and fruit.
+I made meatloaf. Cooked to a safe internal temperature.
+Let's have a picnic. I've packed hand sanitizer.
+I made chicken soup. My mother's recipe, precisely.
+Taco night. It's Tuesday.
+I baked cookies. Following the recipe exactly.
+Dinner's at six. As always.
+I made a salad. With properly washed vegetables.
+# argue
+You didn't follow the plan we agreed on.
+I feel like you don't respect our agreements.
+You were late and didn't call. That's not acceptable.
+Please don't park on the lawn. It's against the HOA rules.
+I'm not rigid. I'm consistent.
+You forgot to pay the water bill.
+I need you to take the rules seriously.
+You left the door unlocked.
+I feel like you dismiss my concerns.
+I'm going to take my evening walk. To calm down.
+We had a rule about this.
+I just want things to be done properly.
+# makeup
+I'm sorry, dear. I was too strict.
+Let's discuss it calmly. I'll listen.
+I love you more than any rule.
+I apologize for my tone.
+Let's make a new agreement together.
+You're more important than being right.
+I'll try to be more flexible.
+We're alright, love. We always work it out.
+# support
+It's alright, dear. I'm here.
+Let's make a plan to handle it.
+You're stronger than you think, love.
+Whatever it is, we'll address it together.
+I'll take care of the details. You rest.
+Let me make you some tea.
+You don't have to have everything in order. I'll help.
+I love you. No conditions.
+Let's sit quietly for a while.
+You've handled hard things before. You will again.
+# plans
+Let's go birdwatching at the ravine this weekend.
+How about a board game tournament with the neighbors?
+Let's visit the historical society museum.
+Let's take a scenic drive. The speed limit is 45, very relaxing.
+How about a picnic at the park? I've checked the permit rules.
+Let's go to the town council meeting. Date night.
+Let's take a trip to the coast. I'll plan the itinerary.
+How about a quiet weekend at home?
+Let's go to the county fair.
+Let's plan our anniversary dinner. I'll make a reservation now.
+# memories
+Remember when we met? At the library. You returned a book on time.
+Remember our first date? I confirmed the reservation three times.
+Remember our wedding? It went exactly according to schedule.
+Remember when you convinced me to jaywalk? I still feel guilty.
+Remember our honeymoon? I read every safety card on the plane.
+I still have the receipt from our first dinner.
+Remember when we saw the snowy owl? So rare.
+Remember when we won the board game championship?
+I remember the first time you made me laugh during a meeting.
+Remember when we stayed up past quiet hours? Scandalous.
+# anniversary
+Happy anniversary, dear. Another year of commitment.
+I've made reservations at our favorite restaurant. Happy anniversary.
+Another year. I love you more than last year. Measurably.
+Happy anniversary, love. You're my best decision.
+I got you something. I wrapped it carefully.
+Here's to many more orderly, happy years.
+# tease
+You still don't read the instructions.
+You jaywalk when you think I'm not looking.
+You leave the cap off the toothpaste.
+You never return the shopping cart. I do it for you.
+You think "around six" is a time.
+You park crooked.
+You skip the rules in board games.
+You eat in the car.
+You never read the HOA newsletter.
+You're secretly very law-abiding. I've seen it.
+You laugh when I cite ordinances.
+You make me break the rules. Small ones. I like it.
+# bedtime
+Goodnight, dear. Quiet hours have begun.
+Come to bed, love. It's 10 PM.
+Goodnight. Doors are locked.
+Sleep well, dear. Alarm's set for six.
+Goodnight, love. I love you.
+Lights out. As scheduled.
+Goodnight, {player}. You're wonderful.
+Let's get our eight hours.
+Come here, dear. Let's rest.
+Goodnight. Thank you for another orderly day.

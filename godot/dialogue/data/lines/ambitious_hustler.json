@@ -1,0 +1,4076 @@
+{
+ "id": "ambitious_hustler",
+ "lines": [
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey! {npc}, founder, CEO, visionary. Here's my card.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "ambitious_hustler.base.001"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "What's up! You look like someone who appreciates opportunity. I'm {npc}.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "ambitious_hustler.base.002"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi! Quick question: have you ever thought about passive income?",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "ambitious_hustler.base.003"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey there! I'm {npc}. I'm in the space. Every space, really.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "ambitious_hustler.base.004"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Nice to meet you! Firm handshake, good eye contact. I like you already.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "ambitious_hustler.base.005"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello! You don't know me yet, but you will. I'm {npc}.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "ambitious_hustler.base.006"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! My favorite contact! How's business?",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "ambitious_hustler.base.007"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey, {player}! Did you get a chance to look at my deck?",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "ambitious_hustler.base.008"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}, buddy! I was just pitching someone and thought of you.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "ambitious_hustler.base.009"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Yo, {player}! Let's grab coffee. I'll expense it.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "ambitious_hustler.base.010"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! Perfect timing, I've got a new idea. Ten minutes, tops.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "ambitious_hustler.base.011"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! My right hand! My co-founder in spirit!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "ambitious_hustler.base.012"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey, partner! You're the only one in this town who gets the vision.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "ambitious_hustler.base.013"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! I just closed a deal and you're the first person I wanted to tell.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "ambitious_hustler.base.014"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "My guy! My business bestie! What's the move today?",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "ambitious_hustler.base.015"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! I put you on my vision board. Next to the yacht.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "ambitious_hustler.base.016"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "There's my number one investor! Emotionally, anyway.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "ambitious_hustler.base.017"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Morning! I've already answered forty emails and drunk two cold brews.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "ambitious_hustler.base.018"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Rise and grind! Five a.m. club, baby!",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "ambitious_hustler.base.019"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good morning! Early bird gets the equity!",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "ambitious_hustler.base.020"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Evening! Just finished a networking mixer at the Inn. Fourteen new contacts.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "ambitious_hustler.base.021"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey! Long day of hustling. Worth it.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "ambitious_hustler.base.022"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Evening! Golden hour is great for brand photos, just saying.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "ambitious_hustler.base.023"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Still up? Same. Sleep is for people without dreams.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "ambitious_hustler.base.024"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Late night grind! I'm drafting a business plan for a business plan app.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "ambitious_hustler.base.025"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Night owl! The best ideas come after midnight.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "ambitious_hustler.base.026"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Gotta run, I've got a call with Singapore. Well, a guy in Carrburg. Same energy.",
+   "cond": {},
+   "id": "ambitious_hustler.base.027"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Later! Let's circle back!",
+   "cond": {},
+   "id": "ambitious_hustler.base.028"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye! Follow me on everything!",
+   "cond": {},
+   "id": "ambitious_hustler.base.029"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Ciao! Keep hustling!",
+   "cond": {},
+   "id": "ambitious_hustler.base.030"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Alright, I'm off! Time is money!",
+   "cond": {},
+   "id": "ambitious_hustler.base.031"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "See you! Remember, you miss every shot you don't take!",
+   "cond": {},
+   "id": "ambitious_hustler.base.032"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Later, partner! Text me if you hear any good leads!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "ambitious_hustler.base.033"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye, {player}! Seriously, thanks for believing in me.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "ambitious_hustler.base.034"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Catch you on the flip side! Lunch is on me next time. For real this time.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "ambitious_hustler.base.035"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I'm launching a food truck that only sells artisanal toast. Thoughts?",
+   "cond": {},
+   "id": "ambitious_hustler.base.036"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I read forty books on leadership this year. Well, the summaries.",
+   "cond": {},
+   "id": "ambitious_hustler.base.037"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The startup incubator above Hamilton Records is accepting applications. I applied twice.",
+   "cond": {},
+   "id": "ambitious_hustler.base.038"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Did you know the Mount's GDP grew three percent last year? I'm responsible for maybe point one of that.",
+   "cond": {},
+   "id": "ambitious_hustler.base.039"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I've got five side hustles right now. Dog walking, tutoring, reselling sneakers, and two I can't talk about.",
+   "cond": {},
+   "id": "ambitious_hustler.base.040"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Networking tip: always remember people's names. You're... {player}! See?",
+   "cond": {},
+   "id": "ambitious_hustler.base.041"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I'm thinking of starting a podcast. About starting podcasts.",
+   "cond": {},
+   "id": "ambitious_hustler.base.042"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Coffee is my love language. Also wire transfers.",
+   "cond": {},
+   "id": "ambitious_hustler.base.043"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I just bought a domain name. I don't know what for yet.",
+   "cond": {},
+   "id": "ambitious_hustler.base.044"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "There's a market gap in this town for late-night smoothies. I'm on it.",
+   "cond": {},
+   "id": "ambitious_hustler.base.045"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I wake up at four, journal, cold plunge, and then I'm unstoppable until noon.",
+   "cond": {},
+   "id": "ambitious_hustler.base.046"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Have you thought about your personal brand? Everyone has one. Even you.",
+   "cond": {},
+   "id": "ambitious_hustler.base.047"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Honestly? Sometimes I'm scared none of this will work.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "ambitious_hustler.base.048"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You're the only person who doesn't want something from me. That's rare.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "ambitious_hustler.base.049"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "My dad never thought I'd make it. I'm going to prove him wrong.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "ambitious_hustler.base.050"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I'd hire you in a heartbeat. Not as an employee. As a partner.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "ambitious_hustler.base.051"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You keep me grounded. Every hustler needs someone like that.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "ambitious_hustler.base.052"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "If I ever make it big, I'm buying you a house. I'm serious.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "ambitious_hustler.base.053"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Weekends are just weekdays without meetings. More time to build!",
+   "cond": {
+    "weekend": true
+   },
+   "id": "ambitious_hustler.base.054"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Saturday! I'm hitting the farmers market to research small vendors.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "ambitious_hustler.base.055"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "It's the weekend, which means my competition is resting. Not me.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "ambitious_hustler.base.056"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I sold candy out of my locker in middle school. Made four hundred bucks.",
+   "cond": {},
+   "id": "ambitious_hustler.base.057"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I dropped out of business school because they were teaching me how to work for someone else.",
+   "cond": {},
+   "id": "ambitious_hustler.base.058"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I've failed six businesses. Number seven is going to be the one.",
+   "cond": {},
+   "id": "ambitious_hustler.base.059"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I want to own a building on Hamilton Street someday. My name on it.",
+   "cond": {},
+   "id": "ambitious_hustler.base.060"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "My idol is a guy who started with one hot dog cart and ended up with an empire.",
+   "cond": {},
+   "id": "ambitious_hustler.base.061"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I've never taken a vacation. Vacations are for people who've already won.",
+   "cond": {},
+   "id": "ambitious_hustler.base.062"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "Behind the hustle, I just want my family to be proud of me.",
+   "cond": {},
+   "id": "ambitious_hustler.base.063"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? Great foot traffic. Terrible branding. I could fix that.",
+   "cond": {},
+   "id": "ambitious_hustler.base.064"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "I'd invest in {place}. If I had money. Which I will.",
+   "cond": {},
+   "id": "ambitious_hustler.base.065"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place} has potential. Untapped potential.",
+   "cond": {},
+   "id": "ambitious_hustler.base.066"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "Have you seen the margins at {place}? Neither have I, but I bet they're great.",
+   "cond": {},
+   "id": "ambitious_hustler.base.067"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place} needs a loyalty program. I've got a pitch ready.",
+   "cond": {},
+   "id": "ambitious_hustler.base.068"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Thanks! I put a lot of work into this image.",
+   "cond": {},
+   "id": "ambitious_hustler.base.069"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "I appreciate that! Feedback is a gift.",
+   "cond": {},
+   "id": "ambitious_hustler.base.070"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "You've got a great eye. Want a job?",
+   "cond": {},
+   "id": "ambitious_hustler.base.071"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "That's what I'm talking about! Positive vibes increase productivity!",
+   "cond": {},
+   "id": "ambitious_hustler.base.072"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Thanks, {player}! I'll put that on my testimonials page.",
+   "cond": {},
+   "id": "ambitious_hustler.base.073"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Haters are just fans in denial.",
+   "cond": {},
+   "id": "ambitious_hustler.base.074"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Noted. I'll use that as fuel for my next quarter.",
+   "cond": {},
+   "id": "ambitious_hustler.base.075"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Interesting perspective. Wrong, but interesting.",
+   "cond": {},
+   "id": "ambitious_hustler.base.076"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "That's fine. Success is the best revenge.",
+   "cond": {},
+   "id": "ambitious_hustler.base.077"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Wow. Okay. I'm blocking you. Mentally.",
+   "cond": {},
+   "id": "ambitious_hustler.base.078"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Whoa, this is a great gift! Very high perceived value!",
+   "cond": {},
+   "id": "ambitious_hustler.base.079"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Thank you! I'm going to post about this. Tagging you.",
+   "cond": {},
+   "id": "ambitious_hustler.base.080"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "That's thoughtful. I'll remember this when I'm rich.",
+   "cond": {},
+   "id": "ambitious_hustler.base.081"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "No way! You're a real one, {player}.",
+   "cond": {},
+   "id": "ambitious_hustler.base.082"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "I love it! You've got good taste. Want to go into retail?",
+   "cond": {},
+   "id": "ambitious_hustler.base.083"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "Why did the entrepreneur bring a ladder to work? To climb the corporate ladder. Literally.",
+   "cond": {},
+   "id": "ambitious_hustler.base.084"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "My wallet is like an onion. Opening it makes me cry.",
+   "cond": {},
+   "id": "ambitious_hustler.base.085"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "I'm reading a book on reverse psychology. Don't buy it.",
+   "cond": {},
+   "id": "ambitious_hustler.base.086"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "What's the best way to make a small fortune? Start with a large one and launch a startup.",
+   "cond": {},
+   "id": "ambitious_hustler.base.087"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Can you share my post? The algorithm needs a boost.",
+   "cond": {},
+   "id": "ambitious_hustler.base.088"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Would you be a beta tester for my app? It's a to-do list that yells at you.",
+   "cond": {},
+   "id": "ambitious_hustler.base.089"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Could you pretend to be a customer at my pop-up? Just for the photos.",
+   "cond": {},
+   "id": "ambitious_hustler.base.090"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "You're a legend! I'm giving you founding member status!",
+   "cond": {},
+   "id": "ambitious_hustler.base.091"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Thank you! Seriously, you're on the board of advisors now.",
+   "cond": {},
+   "id": "ambitious_hustler.base.092"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "I owe you big. Like, equity-level big.",
+   "cond": {},
+   "id": "ambitious_hustler.base.093"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I'm a barista by day, entrepreneur by night. And by early morning.",
+   "cond": {},
+   "id": "ambitious_hustler.base.094"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "Closed a deal with a local bakery! They're letting me sell their muffins online!",
+   "cond": {},
+   "id": "ambitious_hustler.base.095"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "My boss doesn't know about my side hustles. Don't tell him.",
+   "cond": {},
+   "id": "ambitious_hustler.base.096"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "Work is just a stepping stone. A very boring stepping stone.",
+   "cond": {},
+   "id": "ambitious_hustler.base.097"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "I'm taking a marketing class. I already know everything, but the credential helps.",
+   "cond": {},
+   "id": "ambitious_hustler.base.098"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "My business professor said my plan was ambitious. That's a compliment.",
+   "cond": {},
+   "id": "ambitious_hustler.base.099"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "I'm skipping class to meet a potential investor. Worth it.",
+   "cond": {},
+   "id": "ambitious_hustler.base.100"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I don't have time for you. Literally. My schedule's packed.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "ambitious_hustler.base.101"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "You're bad for business, {player}.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "ambitious_hustler.base.102"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I've cut people out for less.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "ambitious_hustler.base.103"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Not interested. In anything you're selling.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "ambitious_hustler.base.104"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Take me off your contact list.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "ambitious_hustler.base.105"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I'm surrounding myself with winners. Bye.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "ambitious_hustler.base.106"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Ha! Flattered, but I'm married to my business right now.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "ambitious_hustler.base.107"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Interesting proposal. Let me get back to you. Never.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "ambitious_hustler.base.108"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "I appreciate the interest! But I keep my personal and professional separate.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "ambitious_hustler.base.109"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Wow. I didn't see that coming. And I see everything coming.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "ambitious_hustler.base.110"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Okay, you've got my attention. And I'm a very busy person.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "ambitious_hustler.base.111"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "That's the best pitch I've heard all year.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "ambitious_hustler.base.112"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "I'm blushing. That's never happened in a negotiation.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "ambitious_hustler.base.113"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "A date? Absolutely. I'll clear my calendar. Well, move some things.",
+   "cond": {},
+   "id": "ambitious_hustler.base.114"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "Yes! I know the perfect place. The owner owes me a favor.",
+   "cond": {},
+   "id": "ambitious_hustler.base.115"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "I'm flattered, but I can't afford distractions right now. Rain check?",
+   "cond": {},
+   "id": "ambitious_hustler.base.116"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "That's sweet. But I'm going to pass. Strictly business between us.",
+   "cond": {},
+   "id": "ambitious_hustler.base.117"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hey, you! I cancelled two meetings for this. You're worth it.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.001"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "There you are! You look amazing. Very high-end.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.002"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hi! I made reservations at the best place in town. Took some networking.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.003"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hey, babe! Phone's on silent. Mostly. Okay, vibrate.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.004"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "You made it! This is the highlight of my quarter.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.005"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hey, gorgeous! I put this date in my calendar in bold.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.006"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're the best investment I've ever made. Emotionally.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.007"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I'd give up all my side hustles for you. Maybe not the sneaker one.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.008"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're my top priority. Above my inbox.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.009"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "Every time I see you, my stock goes up.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.010"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're the only thing I want more than success.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.011"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're the dream. I'm building the empire for you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.012"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I've never wanted to take a day off until I met you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.013"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Tell me your five-year plan. I want to make sure we're aligned.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.014"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I've never told anyone this, but I'm terrified of failing.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.015"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "What would you do with a million dollars? I've got a list for mine.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.016"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I booked us a tasting menu. Fourteen courses. Very exclusive.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.017"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's go to the rooftop at Top of the Mount. The view's worth it.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.018"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "You make me want to slow down. A little.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.019"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I think we'd make an amazing team. In business and in life.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.020"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Can I be honest? I sometimes forget to have fun. You remind me.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.021"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I turned my phone off. Actually off. That's how much I like you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.022"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "What's your dream? Not job. Dream.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.023"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I love how you challenge me. Nobody challenges me.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.024"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I'm already planning our future. Is that too fast?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.025"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're so smart. Like, boardroom smart.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.026"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You've got great instincts. I trust them.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.027"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're beautiful. And you've got a great work ethic.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.028"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You make everyone around you better. That's leadership.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.029"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're the most genuine person I know.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.030"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Whoa. That's a closing deal if I've ever seen one.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.031"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "That was amazing. Best ROI of my life.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.032"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "I just forgot about every email I have. That's a first.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.033"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Okay, that's going in my journal.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.034"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I missed you. I checked my phone more than my bank app.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.035"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I couldn't focus on my pitch today. Kept thinking about you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.036"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I need you on my calendar more often.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.037"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I closed a deal and wanted to call you first.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.038"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "Who was that? Are they a competitor? In business or for you?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.039"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I don't like sharing. My market share or you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.040"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I trust you. I just need to know you're committed to this partnership.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.041"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Tonight was a big win. Let's schedule a follow-up.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.042"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight! I'll text you a recap. Kidding. Mostly.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.043"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Thanks for tonight. You make the grind worth it.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.044"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "I'm going to sleep happy. Then wake up at four.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.045"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Same time next week? I'll block it out.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.046"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I hear you. Let's find a solution that works for both of us.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.047"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "You're right. I've been prioritizing work. I'm sorry.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.048"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I'm frustrated, but I'm not giving up on us.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.049"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "Let's not make this a negotiation. Let's just talk.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.050"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "Yes! This is the biggest merger of my life!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.051"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "I'll marry you! Best deal I'll ever close. Yes!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.dating.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, babe! I've already been up for two hours, but I waited to have coffee with you.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.001"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, partner! Big day today. For both of us.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.002"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Rise and grind, love! I made you breakfast. Avocado toast.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.003"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning! I meditated, journaled, and made a smoothie. Your turn!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.004"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! I've got a pitch at ten. Wish me luck.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.005"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, gorgeous! Let's make today count.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.006"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, love. I'm leaving my phone in the kitchen for ten minutes. All yours.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.007"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! I read the financial news. We're doing great.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.008"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning! I put your coffee in a thermos. You're welcome.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.009"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, babe. I dreamed about our future house. It had a pool.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.010"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning! I signed us up for a sunrise yoga class. Too late to back out.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.011"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! Let's go over the week's goals. Kidding. Unless?",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.012"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home, love! How'd your day go? Tell me everything.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.013"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There's my partner! I closed a deal today. We're celebrating.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.014"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, babe! I ordered takeout from that place you like.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.015"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home! I put my laptop away. Officially off the clock.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.016"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home! Let's have a glass of wine and decompress.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.017"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, love. Long day? Mine too. Let's just be.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.018"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are! I've been waiting to tell you about my new idea.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.019"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home! I booked us a massage for Saturday.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.020"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, gorgeous. Let's not talk about work tonight. Okay, maybe five minutes.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.021"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home! The house feels like headquarters again.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.022"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, you're home late. Me too. Let's get some sleep.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.023"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Long day, babe? I left a plate in the fridge.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.024"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "It's late, love. Come to bed. I put my phone on airplane mode.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.025"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home. I was drafting an email but I'll stop. For you.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.026"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey. You must be exhausted. Let me rub your shoulders.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.027"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Late night? We're both grinders. Let's rest.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.028"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are. I kept the light on. And the coffee pot ready for tomorrow.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.029"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, babe. Today was a lot. Let's just cuddle.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.030"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Go crush it, babe! You're the best in the business!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.031"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye, love! Network with at least three people today!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.032"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a great day! Remember your elevator pitch!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.033"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Off you go! Make that money!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.034"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye, partner! Text me your wins!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.035"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Go get 'em! You're unstoppable!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.036"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a great day, {player}! Chase those goals!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.037"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Kiss for luck! Now go close something!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.038"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "How'd it go? Any big wins?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.039"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Did your boss notice your work? They should promote you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.040"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Tell me everything. I want the full report.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.041"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You look tired. Was it a grind? Let's unwind.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.042"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Did you meet anyone useful? I'm always looking for connections.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.043"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Proud of you, love. You work so hard.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.044"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Did you ask for that raise? You deserve it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.045"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Rough day? Let's order in and forget about it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.046"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my best decision. Ever.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.047"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you more than my business. And that's saying a lot.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.048"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my partner in everything.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.049"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I couldn't do any of this without you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.050"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're the reason I work so hard. For us.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.051"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you. I'm going to make sure you have everything.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You keep me human, {player}.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.053"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my favorite person. My number one.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.054"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'd trade every deal for one more day with you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.055"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You believe in me. That's everything.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.056"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my safe harbor. In a world of risk.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.057"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'm the luckiest person alive. No, really, I've done the math.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.058"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love that you don't care about money. It keeps me honest.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.059"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're the best thing I ever built. Well, we built it together.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.060"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you more than equity. And I really love equity.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.061"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make me want to slow down and enjoy it all.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.062"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'm so proud to call you my spouse.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.063"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'd go broke for you. Don't let me, though.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.064"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I'm thinking about starting a business from home. A real one this time.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.065"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I set up a home office in the spare room. It's very motivational.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.066"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I read that successful people make their bed every morning. I've started.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.067"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I bought a standing desk. I've been standing for nine hours. My feet hurt.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.068"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I'm thinking about getting into real estate. We could flip houses!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.069"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a vision board for our family. Want to see?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.070"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I joined the neighborhood association. Leadership opportunity.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.071"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been listening to a podcast about generational wealth.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.072"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I'm thinking about selling handmade candles online. Very trendy.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.073"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I organized the garage into a mini warehouse. For inventory.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.074"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The neighbors want me to help with their small business. I said yes, for a fee.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.075"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a spreadsheet for our groceries. We're saving three percent.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.076"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I read that couples who set goals together stay together. Let's set goals.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.077"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I'm learning a new language. Mandarin. For business.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.078"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I'm thinking about investing in crypto. Just a little. Okay, a lot. Kidding.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.079"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I found a great deal on a lawn mower. Bought two. Reselling one.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.080"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been thinking about what kind of legacy we'll leave.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.081"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I hung my first dollar bill on the wall. Framed it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.082"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The house looks great. We should get it appraised.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.083"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I'm thinking about hosting a networking dinner. Here. Next Saturday.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.084"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been trying to take one day off a week. It's hard. But I'm trying.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.085"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I signed us up for a financial literacy class. Couples' edition.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.086"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I'm proud of what we've built. This house. This life.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.087"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I installed a smart thermostat. It saves us twelve dollars a month!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.088"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been reading about minimalism. We should declutter. And sell the clutter.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.089"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I want us to own a cabin someday. With Wi-Fi. For emergencies.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.090"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I hired someone to clean the gutters. Delegation is key.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.091"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I did the dishes while listening to an audiobook. Multitasking!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.092"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I optimized our laundry routine. It's twenty minutes faster now.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.093"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Could you take the trash out? I've got a call in five.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.094"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I mowed the lawn. Thought of three business ideas while doing it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.095"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I organized the pantry by category and expiration date.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.096"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I made a chore schedule. It's color-coded. With incentives.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.097"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I vacuumed. It's surprisingly meditative.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.098"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I cleaned the whole kitchen during a conference call. On mute.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.099"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I fixed the sink myself. Saved us a plumber fee.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.100"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Let's outsource the deep clean. Our time is worth more.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.101"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I washed the car. Got some brand photos while I was at it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.102"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I made a budget. We're on track for our five-year goal.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.103"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I invested a little in an index fund. Slow and steady.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.104"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We should talk about our retirement plan.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.105"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I got a bonus! Let's put half in savings and half into something fun.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.106"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I'm thinking about opening a high-yield savings account.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.107"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We're doing great financially. I checked the numbers this morning.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.108"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Let's not buy anything we don't need this month.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.109"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I sold some of my old sneakers. Made three hundred bucks!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.110"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I want us to be debt-free in two years. I've got a plan.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.111"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Money is a tool. Let's use it to build the life we want.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.112"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Dinner's ready! I followed a chef's recipe exactly. Five stars.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.113"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I ordered from that new place. Supporting local business!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.114"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Breakfast is a power smoothie. Brain fuel for the day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.115"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made salmon. Omega-3s for focus.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.116"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's do a fancy dinner at home. I bought the good wine.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.117"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made meal prep containers for the week. All labeled.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.118"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I tried making sushi. It's harder than it looks.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.119"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's grab tacos. I know the owner. We get a discount.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.120"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made pasta from scratch. Very artisanal.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.121"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Dinner's on me tonight. Literally, I'm cooking.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.122"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You said you'd come to my launch event. You didn't come.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.123"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I feel like you don't take my business seriously.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.124"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Can we not talk about money right now? I'm stressed.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.125"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You spent how much? We had a budget!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.126"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm working this hard for us. For our future.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.127"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I need you to support me. Not question everything.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.128"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I know I've been working too much. But I'm doing it for us.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.129"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Please don't call my business a hobby.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.130"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm not being greedy. I'm being ambitious.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.131"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You never want to talk about our goals.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.132"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I can't keep doing everything alone.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.133"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I just want you to be proud of me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.134"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry, love. I got caught up in work again.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.135"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "You're more important than any deal. I mean that.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.136"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's take a day off together. No phones.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.137"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry I snapped. The stress got to me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.138"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "You're my partner. Partners work things out.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.139"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's not let business come between us. Ever.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.140"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'll do better. I'll schedule time for us. Real time.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.141"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I love you. More than anything I could ever build.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.142"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Hey, it's okay. Setbacks are just setups for comebacks.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.143"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You're going to get through this. I believe in you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.144"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let's make a plan. Together. Step by step.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.145"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You don't have to be productive today. Just rest.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.146"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I'm here, love. No meetings, no calls. Just you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.147"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Every successful person has bad days. You're not alone.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.148"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let me take care of things tonight.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.149"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Whatever happens, we're a team.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.150"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You're stronger than any challenge.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.151"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I've got your back. Always.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.152"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's take a real vacation this year. Somewhere without Wi-Fi.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.153"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "I want to go to that business conference in the city. Come with me?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.154"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a weekend at a cabin? Total unplug.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.155"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the farmers market and support local vendors.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.156"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "I want to take you to a fancy dinner. Black-tie fancy.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.157"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go on a cruise. I hear they have great networking.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.158"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a road trip? I'll plan the whole thing.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.159"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the beach and do absolutely nothing. I'll try.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.160"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's take a cooking class together. Couples' team building.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.161"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "I want to buy us a boat someday. A small one. To start.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.162"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we met? I gave you my business card. You laughed at it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.163"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our first date? I took a work call. You never let me forget it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.164"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when my first business failed? You bought me ice cream.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.165"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I still have the first dollar we made together. From that yard sale.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.166"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our wedding? I didn't check my phone once.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.167"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we were broke and ate ramen every night? We were happy.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.168"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember the night we stayed up planning our future on a napkin?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.169"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when I almost moved to the city for a job, and you said stay?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.170"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I remember the first time you said you believed in me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.171"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our honeymoon? I didn't work. Not once. Okay, once.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.172"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary, love! Best partnership I've ever been in.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.173"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Another year! Our growth is exponential.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.174"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I got you something. It's an investment. In us.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.175"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary! I cleared my whole calendar for you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.176"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Here's to another year of building our empire. Together.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.177"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I love you more every quarter. Every year. Every day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.178"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You put your phone down when I talk. I'm still learning that.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.179"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You think \"hustle\" is a dance. I love it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.180"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You've never once read the terms and conditions.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.181"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You think I work too much. You might be right. Don't tell anyone.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.182"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You laugh at my business cards. Still.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.183"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You bought a lottery ticket. That's not a financial strategy.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.184"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You fall asleep during my pitch practice.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.185"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You spend money like it grows on trees. It doesn't. I checked.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.186"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You call my vision board a collage.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.187"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You hide my laptop on weekends. I always find it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.188"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You're the only person who can make me take a day off.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.189"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You think networking is just making friends. Actually, you might be right.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.190"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, love. Phone's off. I promise.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.191"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Let's go to bed. Big day tomorrow. Every day's a big day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.192"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, partner. We crushed it today.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.193"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sleep well, babe. I'll wake you up with coffee.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.194"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Let's go to bed early. Sleep is a productivity hack.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.195"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, {player}. You're my greatest asset.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.196"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Lights out. Tomorrow we hustle.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.197"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight. I love you. More than my five-year plan.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.198"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come to bed. I'll stop working. Right after this email. Okay, now.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.199"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sweet dreams. Dream big.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "ambitious_hustler.marriage.200"
+  }
+ ]
+}

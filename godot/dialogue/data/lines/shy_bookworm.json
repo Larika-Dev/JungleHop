@@ -1,0 +1,4076 @@
+{
+ "id": "shy_bookworm",
+ "lines": [
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh! Um, hi. Sorry, I was reading.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "shy_bookworm.base.001"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "H-hello. I'm {npc}. I don't usually... talk to new people. Hi.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "shy_bookworm.base.002"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh, hi. Were you looking for the poetry section? No? Okay.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "shy_bookworm.base.003"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello. Sorry, I'm a little shy. It's nice to meet you, though.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "shy_bookworm.base.004"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Um. Hi. You startled me. In a nice way. I think.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "shy_bookworm.base.005"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi there. I'm {npc}. I'm usually at the library, if that helps.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "shy_bookworm.base.006"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh, {player}. Hi. I was hoping you'd... never mind. Hi.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "shy_bookworm.base.007"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello again, {player}. I just finished a book you might like.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "shy_bookworm.base.008"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi, {player}. You remembered my name? That's nice.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "shy_bookworm.base.009"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh, it's you. Hi. I'm less nervous this time. A little.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "shy_bookworm.base.010"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! Sorry, that was loud. Hi.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "shy_bookworm.base.011"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! I saved you a chair at the library. I hope that's okay.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "shy_bookworm.base.012"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi. I'm really glad it's you. I can just be myself around you.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "shy_bookworm.base.013"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh, good, it's you. I've been dying to tell you about this book.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "shy_bookworm.base.014"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi, {player}. You're one of the only people I don't rehearse conversations for.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "shy_bookworm.base.015"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello, friend. I made a bookmark for you. It's a little crooked.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "shy_bookworm.base.016"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi! I've been looking forward to this all day. Really.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "shy_bookworm.base.017"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good morning. I've been up since six with a book. It's a good one.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "shy_bookworm.base.018"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Morning. The library smells best when it's just opened.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "shy_bookworm.base.019"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh, good morning. Is it morning already? I lost track of time reading.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "shy_bookworm.base.020"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good evening. The reading lamps in Wilberforce look so cozy at this hour.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "shy_bookworm.base.021"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Evening. This is the time of day when stories feel most real.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "shy_bookworm.base.022"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi. The sky looks like a watercolor tonight, doesn't it?",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "shy_bookworm.base.023"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh, hi. I couldn't sleep, so I came out to look at the stars.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "shy_bookworm.base.024"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello. Night is when I do my best reading. And thinking.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "shy_bookworm.base.025"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "It's late, isn't it? I keep saying one more chapter.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "shy_bookworm.base.026"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Okay. Bye. It was nice talking to you.",
+   "cond": {},
+   "id": "shy_bookworm.base.027"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Goodbye. I'll, um, see you around?",
+   "cond": {},
+   "id": "shy_bookworm.base.028"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye. Thank you for talking to me.",
+   "cond": {},
+   "id": "shy_bookworm.base.029"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "I should go. My book is waiting. That sounds strange. It's true, though.",
+   "cond": {},
+   "id": "shy_bookworm.base.030"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "See you later. Take care of yourself.",
+   "cond": {},
+   "id": "shy_bookworm.base.031"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye-bye. Don't forget to return your library books.",
+   "cond": {},
+   "id": "shy_bookworm.base.032"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye, {player}. You made today a good chapter.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "shy_bookworm.base.033"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "I'll text you a quote I like. Bye!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "shy_bookworm.base.034"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Goodbye, friend. Let's do this again soon. If you want.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "shy_bookworm.base.035"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I read that octopuses have three hearts. Isn't that lovely?",
+   "cond": {},
+   "id": "shy_bookworm.base.036"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The rare book room got a new first edition. I visited it twice.",
+   "cond": {},
+   "id": "shy_bookworm.base.037"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Have you ever read a book that changed how you see everything? I have a list.",
+   "cond": {},
+   "id": "shy_bookworm.base.038"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The rain sounds so nice on the library skylight.",
+   "cond": {},
+   "id": "shy_bookworm.base.039"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I tried to read in the café, but it's very loud. I went back to the stacks.",
+   "cond": {},
+   "id": "shy_bookworm.base.040"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I found someone's notes in a used book. They were in love. In 1972.",
+   "cond": {},
+   "id": "shy_bookworm.base.041"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "There's a reading group on Thursdays. I go. I don't talk. But I go.",
+   "cond": {},
+   "id": "shy_bookworm.base.042"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I like Tarry Page Books. The cat in the window ignores everyone. Relatable.",
+   "cond": {},
+   "id": "shy_bookworm.base.043"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Have you noticed the old oaks on the quad lean toward each other? Like they're whispering.",
+   "cond": {},
+   "id": "shy_bookworm.base.044"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I started writing a little story. It's about a girl who lives in a lighthouse. It's not very good.",
+   "cond": {},
+   "id": "shy_bookworm.base.045"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I think tea tastes better in a heavy mug. Is that silly?",
+   "cond": {},
+   "id": "shy_bookworm.base.046"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The library is closing early on Sunday. I'm trying not to panic.",
+   "cond": {},
+   "id": "shy_bookworm.base.047"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I don't say this much, but I'm glad I met you.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "shy_bookworm.base.048"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You're the first person I've let read my writing. Please be gentle.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "shy_bookworm.base.049"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Sometimes I'm lonely, but less so since you started visiting.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "shy_bookworm.base.050"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I think if you were a book, you'd be a warm one. With a happy ending.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "shy_bookworm.base.051"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Can I tell you something? I practiced talking to you in the mirror at first.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "shy_bookworm.base.052"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I made you a list of my favorite books. It's four pages. I'm sorry.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "shy_bookworm.base.053"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "It's the weekend. I'm going to read until my eyes hurt. Perfect.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "shy_bookworm.base.054"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Saturdays are for bookstores and blankets.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "shy_bookworm.base.055"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The weekend book sale is today! I've already planned my route.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "shy_bookworm.base.056"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I've always been shy. Books were the friends that didn't mind.",
+   "cond": {},
+   "id": "shy_bookworm.base.057"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I want to be a librarian. Or a writer. Or a librarian who writes.",
+   "cond": {},
+   "id": "shy_bookworm.base.058"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I have a little reading nook in my apartment. It's my favorite place in the world.",
+   "cond": {},
+   "id": "shy_bookworm.base.059"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "When I was a kid I read under my blanket with a flashlight. I still do sometimes.",
+   "cond": {},
+   "id": "shy_bookworm.base.060"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I'm not antisocial. I'm just... very introverted. And a bit scared.",
+   "cond": {},
+   "id": "shy_bookworm.base.061"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I've read every book in my hometown library. Twice.",
+   "cond": {},
+   "id": "shy_bookworm.base.062"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "My dream is to visit all the old libraries in Europe. One day.",
+   "cond": {},
+   "id": "shy_bookworm.base.063"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place} is nice. A little loud. Is there a quiet corner?",
+   "cond": {},
+   "id": "shy_bookworm.base.064"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "I like {place}. It would be a good setting for a mystery novel.",
+   "cond": {},
+   "id": "shy_bookworm.base.065"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place} makes me feel calm. That's rare for me in public.",
+   "cond": {},
+   "id": "shy_bookworm.base.066"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "I've never been to {place} before. Is it... always this busy?",
+   "cond": {},
+   "id": "shy_bookworm.base.067"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place} reminds me of a story I read once. In a good way.",
+   "cond": {},
+   "id": "shy_bookworm.base.068"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Oh. Um. Thank you. Nobody's ever said that to me.",
+   "cond": {},
+   "id": "shy_bookworm.base.069"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "That's very kind. I'm going to think about that all day.",
+   "cond": {},
+   "id": "shy_bookworm.base.070"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Really? Thank you. I'm blushing, aren't I?",
+   "cond": {},
+   "id": "shy_bookworm.base.071"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Thank you. I'll write that down so I remember it.",
+   "cond": {},
+   "id": "shy_bookworm.base.072"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Oh! That's... thank you. That means a lot.",
+   "cond": {},
+   "id": "shy_bookworm.base.073"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Oh. Okay. I'll just... go back to my book.",
+   "cond": {},
+   "id": "shy_bookworm.base.074"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "That was mean. I didn't do anything to you.",
+   "cond": {},
+   "id": "shy_bookworm.base.075"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "I've read about people like you. They don't usually have happy endings.",
+   "cond": {},
+   "id": "shy_bookworm.base.076"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Please don't talk to me like that.",
+   "cond": {},
+   "id": "shy_bookworm.base.077"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "I think I'm going to leave now.",
+   "cond": {},
+   "id": "shy_bookworm.base.078"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "For me? Oh, thank you. I'll treasure it.",
+   "cond": {},
+   "id": "shy_bookworm.base.079"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "You got me a book? You know me so well.",
+   "cond": {},
+   "id": "shy_bookworm.base.080"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "I don't know what to say. Thank you, {player}. Really.",
+   "cond": {},
+   "id": "shy_bookworm.base.081"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "This is beautiful. I'll keep it on my nightstand.",
+   "cond": {},
+   "id": "shy_bookworm.base.082"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Oh! It's perfect. I'm a little teary. Sorry.",
+   "cond": {},
+   "id": "shy_bookworm.base.083"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "Why did the librarian get kicked off the plane? She was overbooked. Sorry.",
+   "cond": {},
+   "id": "shy_bookworm.base.084"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "I'd tell you a joke about paper, but it's tearable.",
+   "cond": {},
+   "id": "shy_bookworm.base.085"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "I'm reading a book about anti-gravity. I can't put it down. Was that okay?",
+   "cond": {},
+   "id": "shy_bookworm.base.086"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "Why don't books ever get cold? They have covers.",
+   "cond": {},
+   "id": "shy_bookworm.base.087"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Could you, um, ask the librarian about my hold? I get nervous talking to her.",
+   "cond": {},
+   "id": "shy_bookworm.base.088"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Would you come with me to the reading group? I'd feel braver.",
+   "cond": {},
+   "id": "shy_bookworm.base.089"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Could you read my story and tell me if it's terrible? Honestly?",
+   "cond": {},
+   "id": "shy_bookworm.base.090"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Thank you. You have no idea how much that helped.",
+   "cond": {},
+   "id": "shy_bookworm.base.091"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "You're really kind, {player}. I won't forget it.",
+   "cond": {},
+   "id": "shy_bookworm.base.092"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Thank you. I'll put you in the acknowledgments of my first book.",
+   "cond": {},
+   "id": "shy_bookworm.base.093"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I shelve books at the library. It's peaceful. Mostly.",
+   "cond": {},
+   "id": "shy_bookworm.base.094"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "Someone returned a book with a sandwich inside. Who does that?",
+   "cond": {},
+   "id": "shy_bookworm.base.095"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I'm good at my job because nobody talks to me. It's ideal.",
+   "cond": {},
+   "id": "shy_bookworm.base.096"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I helped a little kid find their first chapter book today. Best day.",
+   "cond": {},
+   "id": "shy_bookworm.base.097"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "I'm studying literature. I know, surprise.",
+   "cond": {},
+   "id": "shy_bookworm.base.098"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "My professor said my essay was insightful. I reread the comment eleven times.",
+   "cond": {},
+   "id": "shy_bookworm.base.099"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "I don't like presenting in class. My voice shakes.",
+   "cond": {},
+   "id": "shy_bookworm.base.100"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Oh. It's you. I'd rather not talk right now.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "shy_bookworm.base.101"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I'm busy. With this book. Please go away.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "shy_bookworm.base.102"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I don't feel comfortable around you. Sorry. Not sorry.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "shy_bookworm.base.103"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "You were cruel to me before. I remember.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "shy_bookworm.base.104"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Please just let me read in peace.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "shy_bookworm.base.105"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I'll go somewhere else. It's fine.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "shy_bookworm.base.106"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Oh! Um. I don't think... I'm not... I need to sit down.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "shy_bookworm.base.107"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "That's very flattering. But I think we're just friends.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "shy_bookworm.base.108"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "I'm going to pretend I didn't hear that, because I'm too embarrassed.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "shy_bookworm.base.109"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Oh. Oh my. That's... I don't know what to say. I like it.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "shy_bookworm.base.110"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "You're making me lose my place in my book. And my train of thought.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "shy_bookworm.base.111"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "I think my heart just skipped a page.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "shy_bookworm.base.112"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Did you mean that? Because I... I think I'd like it if you did.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "shy_bookworm.base.113"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "A date? With me? Yes. I mean, yes, please. Yes.",
+   "cond": {},
+   "id": "shy_bookworm.base.114"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "Okay. Yes. Could it be somewhere quiet?",
+   "cond": {},
+   "id": "shy_bookworm.base.115"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "I'm sorry, I don't think I feel that way. I hope I didn't hurt you.",
+   "cond": {},
+   "id": "shy_bookworm.base.116"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "That's so kind. But no. I like you as a friend. A very good friend.",
+   "cond": {},
+   "id": "shy_bookworm.base.117"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hi. You came. I wasn't sure you would.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.001"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hello. I wore my nice cardigan. For you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.002"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hi, {player}. I'm nervous. Good nervous.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.003"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Oh! You look nice. Very nice. Hi.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.004"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "I brought you a book. Is that weird for a date? It's a good book.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.005"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hi. I've been thinking about this all week.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.006"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're like my favorite book. I keep wanting to go back to you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.007"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I like the way you listen. Nobody listens like you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.008"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I wrote a poem about you. I'm not going to show you. Yet.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.009"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "If you were a novel, I'd stay up all night reading.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.010"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You make me braver. Did you know that?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.011"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "Your voice sounds like the first page of a good story.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.012"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I like you so much it's a little scary.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.013"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Can I tell you about the book I'm reading? You can say no.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.014"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I don't usually do things like this. Dates, I mean. I'm glad I did.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.015"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "What's your favorite story? Not a book, a story. From your life.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.016"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I like walking with you. It feels like we're in a movie.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.017"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Do you want to see the rare book room? I know the librarian. She likes me.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.018"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I've never told anyone this, but I sleep with a nightlight.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.019"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Do you believe in soulmates? I think I might. Now.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.020"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's sit by the fountain and read together. Quietly.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.021"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I made us a picnic. Cucumber sandwiches. Very literary.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.022"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "You make me feel like the main character for once.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.023"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I'm sorry I'm so quiet. I'm happy, I promise.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.024"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Could we stay a little longer? I don't want this to end.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.025"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're so kind to everyone. It's my favorite thing about you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.026"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You have really nice hands. Sorry. That was weird. They're nice.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.027"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're the bravest person I know.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.028"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "I think you're beautiful. There. I said it.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.029"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You make the world feel softer.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.030"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Oh. That was... I need to write that down.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.031"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "That was my first kiss in a long time. It was perfect.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.032"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "I think I'm going to faint. In a good way.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.033"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Can we... do that again?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.034"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I missed you. I read the same page four times thinking about you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.035"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "Today felt like a sad chapter without you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.036"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I wrote you a letter. A real one. With a stamp.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.037"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I kept checking my phone. Hoping it was you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.038"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "Who was that? Sorry. I don't mean to pry. I just... wondered.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.039"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I'm not jealous. I just felt a little invisible.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.040"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "They were very pretty. I'm just me. Is that enough?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.041"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Thank you for tonight. I'll remember it forever.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.042"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight, {player}. Sweet dreams. ...um, yes.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.043"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Can I see you again soon? Please?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.044"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "I had the best time. Really.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.045"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "I'll be reading tonight, but I'll be thinking about you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.046"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "You hurt my feelings. I'm not good at saying that out loud.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.047"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I need a minute. I'm going to go read and calm down.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.048"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I don't like conflict. But I need you to understand.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.049"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "Please don't raise your voice. It scares me.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.050"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "Yes. Oh, yes. I've read a thousand love stories and none of them were this good.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.051"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "I'll marry you. I can't believe it. Yes, {player}. Yes.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.dating.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning. I made tea. Earl Grey, the way you like it.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.001"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, love. I was reading, but I'd rather look at you.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.002"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi. You're awake. I've been waiting quietly. Very quietly.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.003"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning. The light's coming in so nicely through the window.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.004"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning. I left a bookmark in your coat pocket. It has a note on it.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.005"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, {player}. I dreamed about you. A nice dream.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.006"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, sleepy. Want to read the paper together?",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.007"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning. I've been up for an hour, but I didn't want to wake you.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.008"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning. Breakfast is toast and jam. It's all I could manage.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.009"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, love. I love the quiet before the world wakes up. With you.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.010"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi. You look so peaceful when you sleep. I didn't want to wake you.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.011"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning. I found a quote this morning that made me think of you.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.012"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home. I missed you. The house was too quiet, even for me.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.013"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home, love. I made soup. And I saved you a chapter to read.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.014"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi. Come sit. I've lit the reading lamp.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.015"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're back. I've been waiting by the window. Like in a novel.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.016"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home. How was your day? You can tell me everything.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.017"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, love. I'm glad you're home. The evening feels complete now.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.018"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home! I tried a new recipe from a book. It might be edible.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.019"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome back. I warmed up the blanket for the couch.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.020"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi. I wrote a little today. Want to hear it? Later, maybe.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.021"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home. Good. Everything's better when you're here.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.022"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home late. I waited up. I was reading.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.023"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi. It's so late. Come to bed, I'll read to you.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.024"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Shh. It's late. Let me make you some warm milk.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.025"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're back. I couldn't sleep without you here.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.026"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi, love. Long day? Come here.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.027"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "It's late. I left the reading lamp on for you.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.028"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home. I fell asleep on the couch waiting. Sorry.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.029"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi. The house is so quiet at night. I'm glad you're here.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.030"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a good day. I put a little note in your lunch.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.031"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye, love. Be safe. Come home soon.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.032"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Goodbye. I'll be here, probably with a book.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.033"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a nice day, {player}. I'll miss you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.034"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Don't forget your umbrella. It might rain. I checked.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.035"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye. I love you. I'll think about you all day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.036"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Go on. You'll do great. You always do.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.037"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a good day. Text me if you need anything.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.038"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "How was work? Did anyone say anything nice to you?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.039"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You look tired. Was it a long day?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.040"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Tell me about your day. I want to hear all of it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.041"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Did anything interesting happen? Or should I tell you about my book?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.042"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Was your boss nice today? I hope so.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.043"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "I hope your day was gentle. Was it?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.044"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Did you eat lunch? I worry when you don't.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.045"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You can rest now. You're home.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.046"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you. I don't say it enough, but I do.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.047"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're the best thing that ever happened to me. ...um, yes.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.048"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I feel so safe with you. Like a good blanket.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.049"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I used to think love only happened in books. Then I met you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.050"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my favorite story. My favorite one.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.051"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'm so lucky. Every day I'm reminded how lucky I am.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Can I hold your hand? Just for a while.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.053"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make me feel brave. And loved. Both at once.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.054"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'd read a thousand books just to find words for how much I love you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.055"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my quiet place. My happy place.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.056"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Thank you for loving me, even when I'm too shy to say things.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.057"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love the way you look at me when you think I'm not looking.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.058"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my home. Wherever you are.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.059"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I don't need a happy ending. I already have you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.060"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I wrote your name in the margin of my favorite book.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.061"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You understand me without words. That's rare.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.062"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you more than all the books in the world. And that's a lot of books.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.063"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Thank you for choosing me. I still can't believe you did.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.064"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I reorganized the bookshelf. By color this time. Do you like it?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.065"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I found a first edition at the used bookstore. It was only five dollars!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.066"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The rain's been so nice today. I read on the window seat for hours.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.067"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been thinking about starting a book club. Just you and me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.068"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The neighbor's cat came to visit again. I gave it some tuna.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.069"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I finished my short story. Would you like to read it?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.070"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I think we need another bookshelf. Or two.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.071"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made tea and forgot it. Then made more and forgot that too.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.072"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The library's having a sale next week. Can we go?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.073"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I planted some herbs on the windowsill. Basil and mint.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.074"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I read about a little town in Scotland. We should visit someday.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.075"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I think the house is perfect. Just like this.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.076"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I found an old letter in a book. It was a love letter. It made me think of us.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.077"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been learning to knit. I'm making you a scarf. It's lumpy.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.078"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The quiet in this house is my favorite sound.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.079"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I organized your desk. Sorry. I couldn't help it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.080"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I think I want to write a novel. A real one. Is that silly?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.081"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I bought new candles. They smell like old books.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.082"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I reread our wedding vows today. I cried again.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.083"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I think we should get a cat. A quiet one.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.084"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The window seat is my favorite place. Especially when you're sitting with me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.085"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a list of all the books I want to read this year. It's long.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.086"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Your mom sent a letter. She asked about my writing. That was nice.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.087"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I saw a fox in the garden this morning. It looked right at me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.088"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I fixed the squeaky door. I watched a video. I'm very proud.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.089"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been feeling more confident lately. I think it's because of you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.090"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I washed the dishes. I like the sound of the water. It's calming.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.091"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I dusted the bookshelves. All of them. It took all morning.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.092"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Could you help me fold the laundry? It's more fun with you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.093"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I swept the porch. The leaves keep coming back, though.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.094"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I cleaned the kitchen. Don't look at the oven, though.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.095"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I tidied the reading nook. It's perfect now.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.096"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "The trash needs to go out. Could you? I'm scared of the raccoons.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.097"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I watered all the plants. They look happy.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.098"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I made the bed. With the nice sheets.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.099"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I organized the pantry alphabetically. Is that too much?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.100"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I scrubbed the bathroom. It was meditative, actually.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.101"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I vacuumed, but I was reading at the same time. I missed some spots.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.102"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I think we need to be a little careful this month.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.103"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I've been saving my book money. It's for a trip.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.104"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I found a coupon for the bookstore! Twenty percent off!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.105"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I made a little budget. It has a section just for books.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.106"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I don't need much. Just books and tea and you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.107"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I sold some of my old books. I made thirty dollars.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.108"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Maybe I could tutor some kids. For extra money.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.109"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We're doing okay. I think. I checked the numbers twice.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.110"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I think we should save for a rainy day. And a bookshelf.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.111"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I'm not good with money. But I'm good at not spending it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.112"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made soup. It's from an old cookbook. Very traditional.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.113"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Dinner's ready. It's pasta. I read the recipe very carefully.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.114"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made scones. They're a little hard. Sorry.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.115"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Breakfast in bed? I'll bring tea.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.116"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I tried a recipe from a novel. It's a very old recipe.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.117"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's eat by candlelight. It's more romantic. And literary.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.118"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made your favorite. I hope it's right.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.119"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I baked bread. It's my first time. Be nice.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.120"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's have a picnic in the garden.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.121"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Would you like some tea with dinner? Or after?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.122"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You didn't listen to me. Again.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.123"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I feel like you don't take me seriously sometimes.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.124"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Please don't interrupt me. It's hard enough to speak up.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.125"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You forgot. Again. It's not a big deal. But it is to me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.126"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I need some space right now. I'm going to read.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.127"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I don't want to fight. But you hurt me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.128"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Why do you always do that? Make me feel small?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.129"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm not being dramatic. I'm being honest.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.130"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You said you'd help. And you didn't.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.131"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I can't talk when you're like this.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.132"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I feel like I'm always the one who has to apologize.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.133"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Please don't shut me out. I need you to talk to me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.134"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry. I didn't mean what I said.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.135"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Can we start over? I don't like fighting.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.136"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I wrote you a note. It says I'm sorry. And I love you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.137"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's not go to bed angry. Please.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.138"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry I went quiet. I didn't know what to say.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.139"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "You're still my favorite person. Even when we fight.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.140"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's make tea and talk it out.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.141"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I love you. I'm sorry. Both are true.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.142"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "It's okay. I'm here. You don't have to say anything.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.143"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let me hold you. Just for a while.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.144"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You're stronger than you think. I believe in you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.145"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Bad days end. I promise.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.146"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Do you want me to read to you? It always helps me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.147"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Whatever it is, we'll get through it together.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.148"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You don't have to be strong all the time. Not with me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.149"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I'll make tea. And we'll just sit. Quietly.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.150"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You're doing your best. That's enough.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.151"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I love you. Even on the hard days. Especially then.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.152"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Can we go to the library sale this weekend?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.153"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's spend Sunday reading in bed. All day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.154"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "I want to visit the old bookstore in Carrburg.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.155"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Maybe we could take a trip to the mountains. Somewhere quiet.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.156"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the poetry reading at the café on Friday.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.157"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "I'd love to see the ocean with you. Just once.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.158"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's plant a garden. With roses. Like in the books.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.159"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "We could take a writing class together.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.160"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's have a quiet night in. Just us and a movie.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.161"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "I want to visit a castle someday. A real one.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.162"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember the first time we met? I was so nervous. I dropped my books.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.163"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I still have the first book you gave me. It's my favorite.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.164"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our first date? I hardly said a word.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.165"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I remember the first time you held my hand. I couldn't concentrate on anything.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.166"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember the rainy day we spent in the library?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.167"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I still have the letter you wrote me. I read it sometimes.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.168"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our wedding? I was so scared. Then I saw you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.169"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I remember the first time you said you loved me. I wrote it down.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.170"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we got lost in the bookstore for hours?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.171"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I remember the first poem I wrote about you. It was terrible. I still love it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.172"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary. I wrote you a poem. It's better than the first one.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.173"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Another year with you. It's the best book I've ever read.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.174"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary, love. I can't believe it's been another year.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.175"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I got you a first edition of your favorite book. Happy anniversary.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.176"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I love you more every chapter.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.177"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Here's to another year of quiet mornings and happy endings.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.178"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You read the last page of books first. It's a crime.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.179"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You fold the corners of pages. I've forgiven you. Mostly.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.180"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You fall asleep during movies. Every time.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.181"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You sing to yourself when you think I can't hear.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.182"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You put books back on the wrong shelf. I always notice.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.183"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You eat all the cookies and leave one. Every time.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.184"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You talk to the cat like it's a person.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.185"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You're terrible at hide and seek. I always find you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.186"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You make the bed wrong. But I love you anyway.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.187"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You hum when you cook. It's very cute.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.188"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You lose your glasses on your head. Every morning.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.189"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You always say \"five more minutes\" when it's never five.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.190"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, love. Do you want me to read you a chapter?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.191"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Let's go to bed. I'm sleepy. And you look sleepy too.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.192"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight. I love you. Sweet dreams.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.193"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come to bed. I've warmed up the blankets.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.194"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sleep well, {player}. I'll be right here.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.195"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight. Thank you for today.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.196"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Let's read for a while before we sleep. Just a little.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.197"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight. I love falling asleep next to you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.198"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "I'll turn off the lamp. Goodnight, love.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.199"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sweet dreams. I hope you dream of nice things. Like libraries.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "shy_bookworm.marriage.200"
+  }
+ ]
+}

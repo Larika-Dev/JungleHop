@@ -1,0 +1,429 @@
+// Old Soul Storyteller: folksy, nostalgic, "back in my day", stories about old Cathedral Mount, slow and warm.
+== base
+# greet stage=stranger
+Well, howdy. Don't believe we've crossed paths. Name's {npc}.
+Afternoon, stranger. Pull up a bench, these old bones like company.
+Hello there. You've got the look of someone new to the Mount.
+Well, I'll be. A fresh face. Reminds me of the year the trolley came through.
+Evening or morning, I've lost track. Either way, I'm {npc}. Pleased to know you.
+Hey there, young'un. You lost, or just exploring?
+# greet stage=acquaintance
+Well, if it isn't {player}. Come sit a spell.
+{player}! I was just thinking about a story I meant to tell you.
+There you are. The old oak and I were wondering where you'd gotten to.
+{player}, good to see you. Have I told you about the flood of '78? Sit down.
+Ah, {player}. You've got your granddaddy's walk. Don't know your granddaddy, but still.
+# greet stage=friend+
+{player}! My favorite listener. Come here, I've got a new old story.
+Well, look who it is. Makes an old heart glad.
+{player}, I saved you some of the good lemonade. The kind with real lemons.
+There's my friend. Sit, sit. The porch has missed you.
+{player}! You're a sight. I was telling the mailman about you.
+Ah, the best part of my week just walked up.
+# greet time=morning
+Morning. The mist on the ravine this early is the same as it was sixty years ago.
+Good morning. Coffee's black and the birds are loud, just how I like it.
+Mornin'. The bell tower's been ringing seven o'clock since before your folks were born.
+# greet time=evening
+Evening. This is the hour the old town used to come out on their porches.
+Good evening. Sun's setting over Carrburg like a peach cobbler.
+Evening. Smells like woodsmoke. Fall's coming in proper.
+# greet time=night
+Up late, are we? Back in my day, the town rolled up the sidewalks at nine.
+Night, friend. The stars look the same as when I courted my sweetheart.
+Late hours. I don't sleep much anymore. More time for remembering.
+# farewell
+Well, you take care now.
+Go on, then. Mind the potholes on Rosemary, they've been there since Nixon.
+So long, friend. Come back and hear the rest of the story.
+Be seeing you. Don't be a stranger.
+All right, then. Off you go. Life's short, but the afternoons are long.
+Take it easy. Watch for the deer crossing by the ravine.
+# farewell stage=friend+
+Bye now, {player}. You're good company. Rare thing these days.
+Come by Sunday. I'll have pie.
+Go on. I'll keep the rocking chair warm for you.
+# smalltalk
+Did you know the Grinding Stone used to be a feed store? Sold chicken feed and whiskey.
+That bell tower used to ring every hour, all night. Folks complained, so now it rests.
+Back when I was a boy, Hamilton Street was dirt and dreams.
+The old Cistern? We used to throw pennies in and wish for girls to notice us.
+They knocked down the movie palace on Columbia. Replaced it with a parking deck. Progress, they call it.
+My daddy said the ravine was haunted. Never saw a ghost, but I saw a bobcat once.
+The willow oaks on the quad were planted by students in the 1800s. Every one has a story.
+I've seen this town flood, burn, and win three championships. Still standing.
+Folks rush too much nowadays. You can't hear a story in a hurry.
+The Waffle Hutch has served the same recipe for fifty years. They used to give out free coffee to vets.
+Kids today have phones. We had a pocket knife and a creek.
+My first job was sweeping the floor at Sutter's. Fifty cents an hour. Felt rich.
+# smalltalk stage=friend+
+You know, you remind me of my best friend Earl. Not the university. A good man.
+I don't tell many folks this, but I was scared my whole first year at the university.
+You've got a good heart. I can tell by how you listen.
+When I'm gone, I want you to remember the stories. Someone ought to.
+You're the grandkid I never had. Don't tell my nephew.
+I wrote down some of my stories. Maybe you'd like to read them.
+# smalltalk weekend=true
+Weekends used to mean church, fried chicken, and baseball on the radio.
+Saturday. Perfect day for fishing at the old millpond.
+Sunday mornings, the whole town smelled like biscuits.
+# about_self
+I grew up on a tobacco farm out past Carrburg. Hard work, good people.
+I've lived in this town seventy-two years. Never wanted to leave.
+I was a mail carrier for thirty-five years. Know every porch in town.
+I married my high school sweetheart. Fifty-one years. She's with the angels now.
+I fought in a war once. Don't like to talk about it. Prefer the happy stories.
+I play the banjo. Not well, but with feeling.
+My granddaddy built half the houses on Toadstool Hill with his own two hands.
+# opinion_place
+{place}? I remember when that was a hardware store. Bought my first hammer there.
+{place} has been here as long as I can remember. Good folks run it.
+Ah, {place}. Had my first date near here. She ordered a milkshake with two straws.
+{place} isn't what it used to be. But then, neither am I.
+I like {place}. Has character. Like an old pair of boots.
+# compliment_reply
+Well, now. That's mighty kind of you.
+Shucks. You're making an old-timer blush.
+Thank you kindly. My late wife used to say the same thing.
+You're sweet as sorghum, you know that?
+Well, I'll take that and put it in my pocket for later.
+# insult_reply
+Well, I've been called worse by better.
+Son, I've outlived three dogs and two mayors. You don't scare me.
+Hmph. Your mama would be ashamed to hear that.
+I'll pray for you. Not because I'm holy. Because you need it.
+Rude. In my day we'd have settled that behind the feed store.
+# gift_reply
+Well, I'll be. You didn't have to do that.
+That's the nicest thing anyone's done for me in a month of Sundays.
+A gift? For this old fool? Thank you, {player}.
+I'm going to put this on the mantel next to my wife's picture.
+You're a good soul. Thank you.
+# joke
+Why don't oysters share? Because they're shellfish. My granddaddy told that one.
+I'm so old, I remember when the Dead Sea was only sick.
+Did you hear about the cow who jumped over the barbed wire fence? Udder disaster.
+What do you call a sleeping bull? A bulldozer. Ha! Never gets old. Like me.
+# ask_favor
+Could you fetch my prescription from Sutter's? My knees aren't what they were.
+Would you help me carry this rocking chair to the porch?
+Could you read me the paper? My eyes are giving out.
+# favor_reply
+Thank you kindly. You're a good egg.
+Bless your heart. Truly.
+I'll remember that. Old folks don't forget kindness.
+# work_talk
+In my day, a job was for life. Now folks change jobs like socks.
+Hard work never hurt nobody. Well, my back. But nobody else.
+You doing honest work? That's all that matters.
+I retired twenty years ago. Still wake up at five to deliver the mail.
+# school_talk
+I went to ONSU when it was half the size. Wore a tie to class.
+Learn all you can. Nobody can take it from you.
+My professor once told me I'd never amount to anything. I sent him a Christmas card every year.
+# hostile stage=dislike-
+I don't have time for your foolishness.
+Go on, now. Leave an old man in peace.
+You've got no respect. That's the trouble with folks today.
+I've met rattlesnakes with better manners.
+I'll not be talking to you today.
+Hmph. Move along.
+# flirt_reply romance=none
+Ha! Kid, I'm old enough to be your granddaddy. But thank you.
+Well, that's flattering. But my heart belongs to someone already.
+Oh, you're a charmer. Save that for someone your own vintage.
+# flirt_reply romance=crush
+Well, now. I haven't blushed since the Carter administration.
+You've got a way with words. Reminds me of my courting days.
+I'll admit, you put a little spring back in my step.
+Go on. Say that again. I want to remember it right.
+# ask_out_yes
+Why, I'd be honored. Let's get a milkshake at the diner. Two straws.
+Well, I'll be. Yes. Let me find my good hat.
+# ask_out_no
+That's kind of you, but my heart's still spoken for. Even if she's gone.
+I'm flattered, truly. But I think we're better as porch friends.
+
+== dating
+# date_greet
+Well, don't you look like a picture.
+Evening, sweetheart. I wore my Sunday best.
+There you are. I've been watching the road since noon.
+Hello, darlin'. I brought you a flower from my garden.
+You came. I was afraid I'd scared you off with my stories.
+My, my. You light up the whole street.
+# flirt
+You know, you've got eyes like the creek in springtime.
+If I were forty years younger, I'd be twice as nervous.
+I haven't felt like this since I was a young man.
+You make an old heart beat like a young one.
+I'd walk the whole Hamilton Strip just to see you smile.
+You're sweeter than my mama's pecan pie. And that's saying something.
+Let me hold your hand. Old fashioned, I know.
+# date_talk
+Let's go to the drive-in. Oh, they tore it down? Well, the diner, then.
+Let me tell you about the night I met my first love. Well, maybe that's not proper. Another time.
+You ever been fishing? I'll take you to the millpond. Quietest place on earth.
+I like to take things slow. Like a good stew.
+Tell me about your folks. Where are your people from?
+The stars were brighter back then. Or maybe I just looked at them more.
+I used to dance at the old Pamlico Inn ballroom. Want to learn a two-step?
+I'm not much for fancy restaurants. Give me a good biscuit any day.
+You remind me that life still has some surprises in it.
+Let's sit on the porch and watch the fireflies. Best show in town.
+I've got stories you've never heard. Stick around long enough and I'll tell you all of them.
+You make me feel like the world's not so different from how it used to be.
+# compliment
+You've got good manners. That's rare.
+You have a kind face. The kind you trust.
+You listen like it matters. That's a gift.
+You're as pretty as a summer afternoon.
+You've got gumption. I like that.
+# kiss_reply
+Well, I'll be. Haven't been kissed like that in a long while.
+My, my. That'll keep me warm through the winter.
+You've got me feeling like a schoolboy again.
+That was sweeter than honey.
+# miss_you
+Missed you, darlin'. The porch was lonely.
+Every day without you is as long as a Sunday sermon.
+I wrote you a letter. Old habit.
+I kept looking down the road for you.
+# jealous
+Who was that young fella? Not that it's my business.
+I'm too old to be jealous. Mostly.
+I suppose I'm just afraid of losing a good thing again.
+# date_end
+Goodnight, sweetheart. Get home safe.
+That was the best evening I've had in years.
+I'll see you Sunday? I'll make my famous peach cobbler.
+Thank you for spending time with an old soul.
+Sleep tight, darlin'.
+# lovers_quarrel
+Now hold on. Let's not let the sun go down on our anger.
+I don't like raising my voice. Let's talk this through.
+I've lived too long to waste time fighting. Tell me what's wrong.
+You hurt my feelings, darlin'. But I'm not going anywhere.
+# proposal_yes
+Well, I'll be. Yes. Yes, I'll marry you. Let me get my handkerchief.
+I thought I'd had my one great love. Seems I was wrong. Yes.
+
+== marriage
+# home_greet time=morning
+Mornin', darlin'. Coffee's on and the biscuits are rising.
+Good morning, sweetheart. The birds started singing before I did.
+Mornin'. I've been up since five. Old habit. Come sit with me.
+Good morning, love. Rooster next door's been at it since four.
+Mornin', darlin'. The dew's on the grass. Pretty as a picture.
+Good morning. I made grits. Real grits, not that instant stuff.
+Mornin'. Read the paper yet? The town council's arguing about the stoplight again.
+Good morning, love. I dreamed about our wedding day.
+Mornin'. Sun's coming up over the ridge. Prettiest sight in Pamlico. Second to you.
+Good morning, sweetheart. My knees are creaky but my heart's happy.
+Mornin'. Fresh eggs from Mrs. Hill's chickens. Want 'em scrambled?
+Good morning. I already swept the porch and fed the cat.
+# home_greet time=evening
+Welcome home, darlin'. Supper's on the stove.
+There you are. Sit down, take your shoes off.
+Evening, love. The porch swing's been waiting for you.
+Welcome home. I fixed the screen door today. Only took three hours.
+Hey there, sweetheart. How was your day?
+Evening. I made cornbread. Real cornbread, in the iron skillet.
+There's my love. The house is quiet without you.
+Welcome home. Fireflies are out. Let's sit and watch.
+Evening, darlin'. I saved you the last piece of pie.
+You're home. Good. I was about to start telling stories to the cat.
+# home_greet time=night
+You're home late, darlin'. I kept a plate warm.
+It's late. Come to bed, sweetheart.
+There you are. I dozed off in the rocking chair waiting.
+Night, love. I left the porch light on.
+You're home. Now I can rest easy.
+It's late, darlin'. Let me make you some warm milk with honey.
+Hey there, night owl. Come sit a spell before bed.
+You're back. The crickets were keeping me company.
+# goodbye_work
+Have a good day, darlin'. Work hard, but not too hard.
+Off you go. I packed you a lunch. Ham biscuit.
+Be careful out there, sweetheart.
+Bye, love. I'll be here when you get home.
+Go on. Make an honest dollar.
+Have a good day. Don't let anybody give you trouble.
+Take your jacket. Weather's turning.
+Bye, darlin'. I love you more than sweet tea.
+# work_return
+How was work, darlin'? Earn your keep?
+Tell me about your day. Every bit.
+You look tired, sweetheart. Sit down, I'll rub your shoulders.
+Did your boss treat you fair today?
+Anything interesting happen? I want to hear all about it.
+Hard day? Supper'll fix it. Always does.
+You work too hard, love. Rest now.
+Proud of you, darlin'. Always.
+# affection
+I love you, darlin'. More than the day I married you.
+You're the best thing that ever happened to this old soul.
+I thank the good Lord for you every morning.
+You make every day feel like springtime.
+I've lived a long life, and you're the best part of it.
+You're my sweetheart. Always will be.
+I love you more than all the stars over the Mount.
+You make this old house feel like a palace.
+I'd marry you again in a heartbeat.
+You're prettier than the day I met you.
+Every story I tell from now on has you in it.
+Hold my hand, darlin'. Just for a while.
+You're my sunshine. My only sunshine.
+I don't need much. Just you and a porch swing.
+You've given an old man a reason to get up in the morning.
+I love you more than biscuits and gravy. And that's a lot.
+Thank you for loving me, flaws and all.
+You're the best story I ever lived.
+# home_talk
+I fixed the porch swing today. It doesn't squeak anymore.
+The tomatoes are coming in nicely. We'll have a bumper crop.
+Mrs. Hill's chickens got loose again. Chased them for an hour.
+I found my old banjo in the attic. Might play you a tune tonight.
+The church is having a potluck Sunday. I'm bringing my famous deviled eggs.
+I saw a cardinal at the feeder. My mama always said they're visitors from heaven.
+The roof needs patching before winter. I'll get to it.
+I've been writing down some stories. For the grandkids someday.
+I painted the mailbox. It's blue now. Like your eyes.
+The old oak in the yard is turning. Prettiest tree on the street.
+I fixed the leaky faucet with a bit of string and some prayer.
+I heard the mill in Carrburg's being turned into apartments. Times change.
+I found our old photo album. We were so young.
+The neighbor's boy asked me to teach him to fish. I said yes.
+I planted some sunflowers along the fence. They'll be taller than me by August.
+The town's having a parade for Founders' Day. Want to go?
+I've been thinking about building a birdhouse. Maybe two.
+The creek's high this year. Reminds me of the flood of '78.
+I visited the old cemetery today. Paid my respects.
+The radio said rain tomorrow. My knee said it first.
+I found my granddaddy's pocket watch. Still ticks.
+The garden's coming along. Okra and beans and squash.
+I made sweet tea. Real sweet tea. Enough sugar to stand a spoon in.
+The porch is my favorite place in the world. Especially with you on it.
+I fixed the gate. It doesn't swing open in the wind anymore.
+I've been thinking about getting a dog. An old one, like me.
+# chores
+I swept the porch. Twice. The leaves keep coming.
+I chopped some firewood for the winter.
+Could you help me hang the laundry on the line? It smells better dried in the sun.
+I washed the dishes by hand. Never trusted those machines.
+I mowed the lawn with the old push mower. Good exercise.
+I cleaned the gutters. Found a bird's nest. Left it be.
+I fixed the leaky roof. Mostly.
+Could you take out the trash, darlin'? My back's acting up.
+I polished the silver. Your mother's silver.
+I weeded the garden. Took all morning.
+I canned some peaches. We'll have them all winter.
+I fixed the squeaky floorboard. Only took me a week.
+# money
+Money's tight, but we've got love. And a full pantry.
+I don't trust banks much. Keep a little in the coffee can.
+We'll get by. We always do.
+I saved a little from my pension. For a rainy day.
+Let's not spend on fancy things. Simple life's the best life.
+I found a dollar in my old coat. Lucky day!
+We're rich in the ways that matter.
+I can fix that myself. No need to pay a man.
+A penny saved is a penny earned. My daddy taught me that.
+We'll have enough. The good Lord provides.
+# meal
+Supper's ready. Fried chicken and collards.
+I made biscuits from scratch. My mama's recipe.
+Let's have a picnic on the porch tonight.
+I made peach cobbler. Still warm.
+Breakfast is ham and eggs and grits. Come and get it.
+I made chicken and dumplings. Good for the soul.
+Sunday dinner. Pot roast and all the fixings.
+I baked cornbread in the iron skillet. Crispy edges, just how you like.
+Let's have some sweet tea on the porch after supper.
+I made banana pudding. With the little wafers.
+# argue
+Now don't you take that tone with me.
+You forgot to close the gate again. The dog got out.
+I don't like it when you shut me out, darlin'.
+We've been married long enough to talk about things.
+You're as stubborn as a mule. And I love mules. But still.
+Let's not fight about money. It's not worth it.
+I don't like raising my voice. But you're testing me.
+You said you'd fix the screen door. That was in March.
+I'm not angry. I'm disappointed. That's worse.
+Let's take a walk and cool off before we say something.
+Don't go to bed mad, darlin'. Let's talk.
+You don't listen when I tell you things. I'm old, not invisible.
+# makeup
+I'm sorry, darlin'. I was being an old fool.
+Let's not let the sun go down on our anger.
+Come here. A hug fixes most things.
+I love you. Even when we fight. Especially then.
+I'm sorry I raised my voice. You deserve better.
+Let's make up over a slice of pie.
+We've weathered worse storms than this.
+Forgive an old soul? I'll make it up to you.
+# support
+It's all right, darlin'. Storms pass. They always do.
+Come sit with me on the porch. We'll watch the sunset.
+You're stronger than you know. I've seen it.
+I've lived through hard times. You'll get through this.
+Let me make you some tea. Things look better after tea.
+Whatever it is, we'll face it together.
+Don't you worry. The Lord doesn't give us more than we can handle.
+I'm here, darlin'. I'm not going anywhere.
+Cry if you need to. I've got a handkerchief.
+You've got a good heart. That's what matters.
+# plans
+Let's go fishing at the millpond Saturday.
+How about a drive through the mountains? Leaves are turning.
+The church picnic's next Sunday. We should go.
+Let's visit my sister in the country. She makes the best pie.
+I'd like to take you dancing at the Pamlico Inn again.
+Let's go to the county fair. I'll win you a stuffed bear.
+How about we sit on the porch all weekend and do nothing?
+Let's plant a new garden this spring. Roses and tomatoes.
+I'd like to take you to the beach. Haven't been in years.
+Let's go to the Founders' Day parade. I'll get us a good spot.
+# memories
+Remember our first date? We had milkshakes at the diner. Two straws.
+Remember our wedding day? It rained, and you said it was good luck.
+I remember the first time I saw you. Thought you were the prettiest thing in Pamlico.
+Remember when we danced at the Pamlico Inn? You stepped on my toes.
+Remember the summer we spent on the porch every night?
+Remember the flood? We sat on the roof and watched the stars.
+Remember when we got lost driving to the coast?
+I remember the first time you laughed at one of my stories.
+Remember our first house? The roof leaked, but it was ours.
+Remember the year the tomatoes grew bigger than softballs?
+# anniversary
+Happy anniversary, darlin'. Every year's better than the last.
+Another year with you. I'm the luckiest old fool in Pamlico.
+I got you a little something. It's not much. But it's from the heart.
+Happy anniversary, love. Let's dance like we used to.
+I'd marry you again tomorrow. And the day after.
+Here's to us. And to many more years on the porch.
+# tease
+You still can't make biscuits like my mama.
+You snore like a freight train. A sweet freight train.
+You talk to the tomatoes. I've heard you.
+You always lose your glasses. They're on your head.
+You put too much sugar in the tea. Wait, that's me.
+You never let me finish a story.
+You always cheat at checkers. Don't deny it.
+You're scared of the rooster next door.
+You can't carry a tune in a bucket. I love it anyway.
+You always say "five more minutes" when I say it's time for bed.
+You've got more hats than a church lady.
+You always fall asleep in the rocking chair. Every evening.
+# bedtime
+Goodnight, darlin'. Sleep tight.
+Time for bed, sweetheart. These old bones need rest.
+Goodnight, love. I'll see you in the morning, Lord willing.
+Let's say our prayers and turn in.
+Sweet dreams, darlin'. Dream of the old days.
+Goodnight. I love you more than yesterday.
+Come to bed, love. The crickets will sing us to sleep.
+Goodnight, {player}. You're my whole heart.
+Sleep well. I'll make biscuits in the morning.
+Goodnight, sweetheart. Thank the Lord for another day with you.

@@ -1,0 +1,4087 @@
+{
+ "id": "dry_cynic",
+ "lines": [
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh. A new person. Thrilling.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "dry_cynic.base.001"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi. I'm {npc}. Don't get your hopes up.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "dry_cynic.base.002"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "You look lost. Most people here are, they just hide it better.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "dry_cynic.base.003"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello. Yes, I'm always this enthusiastic.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "dry_cynic.base.004"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "New in town? Condolences. Kidding. Mostly.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "dry_cynic.base.005"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey. If you're selling something, I'm already not buying.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "dry_cynic.base.006"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh, it's {player}. You again. That's... fine, actually.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "dry_cynic.base.007"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}. You're still alive. Good for you.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "dry_cynic.base.008"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey. Wasn't expecting to see a tolerable face today.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "dry_cynic.base.009"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Look who survived another day in paradise.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "dry_cynic.base.010"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}. We have to stop meeting like this. Or not. Whatever.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "dry_cynic.base.011"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}. Finally, someone who isn't an idiot.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "dry_cynic.base.012"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "There you are. I've been surrounded by morons all day.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "dry_cynic.base.013"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey. I saved you a seat. Don't make it weird.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "dry_cynic.base.014"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Oh good, it's you. My faith in humanity goes up one percent.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "dry_cynic.base.015"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}. My least annoying person. High praise, take it.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "dry_cynic.base.016"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "You. Sit. I need to complain to someone who gets it.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "dry_cynic.base.017"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Morning. Allegedly good.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "dry_cynic.base.018"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "It's early. I'm awake. Let's not celebrate it.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "dry_cynic.base.019"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Morning. The coffee's working. The rest of me isn't.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "dry_cynic.base.020"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Evening. The day's almost over, which is the best thing about it.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "dry_cynic.base.021"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey. Survived another one. Barely.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "dry_cynic.base.022"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Evening. The sunset's nice. I'll allow it.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "dry_cynic.base.023"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Late, huh? Insomnia or bad decisions?",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "dry_cynic.base.024"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Night's the only quiet time in this town. Don't ruin it.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "dry_cynic.base.025"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Ah, the witching hour. Prime time for regret.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "dry_cynic.base.026"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye. Try not to do anything stupid.",
+   "cond": {},
+   "id": "dry_cynic.base.027"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "See you. Or don't. We'll see.",
+   "cond": {},
+   "id": "dry_cynic.base.028"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Later. Don't let the world grind you down. Too much.",
+   "cond": {},
+   "id": "dry_cynic.base.029"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Okay. Go. Be productive or whatever.",
+   "cond": {},
+   "id": "dry_cynic.base.030"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye. It was marginally better than being alone.",
+   "cond": {},
+   "id": "dry_cynic.base.031"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Later. Look both ways, the drivers here are maniacs.",
+   "cond": {},
+   "id": "dry_cynic.base.032"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Text me if anything ridiculous happens. It will.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "dry_cynic.base.033"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye. I'll miss you. Don't tell anyone I said that.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "dry_cynic.base.034"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Go on. I'll still be here being bitter. Come back.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "dry_cynic.base.035"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "They're building another luxury condo on Rosemary. Because that's what we needed.",
+   "cond": {},
+   "id": "dry_cynic.base.036"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The parking deck raised its rates again. Love that for us.",
+   "cond": {},
+   "id": "dry_cynic.base.037"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Somebody at the coffee shop ordered a drink with eleven modifications. I watched it happen.",
+   "cond": {},
+   "id": "dry_cynic.base.038"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The weather says sunny. The weather lies.",
+   "cond": {},
+   "id": "dry_cynic.base.039"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Apparently there's a new app for finding parking. It doesn't find parking.",
+   "cond": {},
+   "id": "dry_cynic.base.040"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Another week, another student election with posters on every surface.",
+   "cond": {},
+   "id": "dry_cynic.base.041"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I read the news today. Bad idea, as usual.",
+   "cond": {},
+   "id": "dry_cynic.base.042"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The bus was late. The bus is always late. The bus is a concept.",
+   "cond": {},
+   "id": "dry_cynic.base.043"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "They renamed the old diner. It's the same diner. Same eggs.",
+   "cond": {},
+   "id": "dry_cynic.base.044"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Everyone's posting about self-care. I'm posting nothing. That's my self-care.",
+   "cond": {},
+   "id": "dry_cynic.base.045"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I went to the gym once. It was a learning experience. I learned I hate the gym.",
+   "cond": {},
+   "id": "dry_cynic.base.046"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Did you see the Billram mascot trip on the field? Best game of the season.",
+   "cond": {},
+   "id": "dry_cynic.base.047"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Honestly, you're one of maybe three people in this town I trust.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "dry_cynic.base.048"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I don't say this to anyone, but I'm glad you moved here.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "dry_cynic.base.049"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You're annoyingly easy to talk to. It's suspicious.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "dry_cynic.base.050"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "If you ever need someone to help you bury a body, figuratively, call me.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "dry_cynic.base.051"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I'm not a hugger. But I'd consider it. Once. For you.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "dry_cynic.base.052"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You're the only person who laughs at my jokes because they're funny, not out of pity.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "dry_cynic.base.053"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "It's the weekend. My plan is to do absolutely nothing, aggressively.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "dry_cynic.base.054"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Saturday. The day everyone pretends brunch is a personality.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "dry_cynic.base.055"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Weekend. Two whole days to dread Monday. Love it.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "dry_cynic.base.056"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I'm not a pessimist. I'm a realist with a good track record.",
+   "cond": {},
+   "id": "dry_cynic.base.057"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I used to be an optimist. Then I grew up in a town with one stoplight.",
+   "cond": {},
+   "id": "dry_cynic.base.058"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I watch old noir films. Everyone's miserable and dressed nicely. Relatable.",
+   "cond": {},
+   "id": "dry_cynic.base.059"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "People say I'm mean. I'm honest. It's just inconvenient for them.",
+   "cond": {},
+   "id": "dry_cynic.base.060"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I have a cat. She hates everyone too. We get along great.",
+   "cond": {},
+   "id": "dry_cynic.base.061"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I do crosswords in pen. Not because I'm confident. Because I like consequences.",
+   "cond": {},
+   "id": "dry_cynic.base.062"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "My mom says I was born with a raised eyebrow. She's not wrong.",
+   "cond": {},
+   "id": "dry_cynic.base.063"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? It's fine. Overpriced, but fine.",
+   "cond": {},
+   "id": "dry_cynic.base.064"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "I've been coming to {place} for years. It's gotten worse. I keep coming.",
+   "cond": {},
+   "id": "dry_cynic.base.065"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place} has the best people-watching in town. Most of it is horrifying.",
+   "cond": {},
+   "id": "dry_cynic.base.066"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "Oh, {place}. Where dreams come to sit down and order a sandwich.",
+   "cond": {},
+   "id": "dry_cynic.base.067"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place} isn't terrible. From me, that's a five-star review.",
+   "cond": {},
+   "id": "dry_cynic.base.068"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Huh. Thanks. I'm going to be suspicious about that for a while.",
+   "cond": {},
+   "id": "dry_cynic.base.069"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "That's... nice. Did you lose a bet?",
+   "cond": {},
+   "id": "dry_cynic.base.070"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Thanks. I'll pretend you meant that.",
+   "cond": {},
+   "id": "dry_cynic.base.071"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Wow. A compliment. I don't know where to put it.",
+   "cond": {},
+   "id": "dry_cynic.base.072"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Okay, fine. That was nice. Thank you. Don't do it again, I'll get used to it.",
+   "cond": {},
+   "id": "dry_cynic.base.073"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Wow. Original. Did you workshop that?",
+   "cond": {},
+   "id": "dry_cynic.base.074"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "I've been insulted by better. Literally, my grandmother.",
+   "cond": {},
+   "id": "dry_cynic.base.075"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Cute. Try again when you've had some practice.",
+   "cond": {},
+   "id": "dry_cynic.base.076"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Oh no. My one weakness. Mild criticism.",
+   "cond": {},
+   "id": "dry_cynic.base.077"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "I'd be offended, but I'd need to respect your opinion first.",
+   "cond": {},
+   "id": "dry_cynic.base.078"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "You got me something? What do you want?",
+   "cond": {},
+   "id": "dry_cynic.base.079"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Oh. That's actually good. I'm annoyed at how good it is.",
+   "cond": {},
+   "id": "dry_cynic.base.080"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Huh. You remembered. That's... thanks.",
+   "cond": {},
+   "id": "dry_cynic.base.081"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "I don't do gifts. I'm keeping this one, though.",
+   "cond": {},
+   "id": "dry_cynic.base.082"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Fine. You win. This is thoughtful.",
+   "cond": {},
+   "id": "dry_cynic.base.083"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "I told my therapist I feel like nobody listens to me. She said \"next\".",
+   "cond": {},
+   "id": "dry_cynic.base.084"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "My plants keep dying. At least they're consistent.",
+   "cond": {},
+   "id": "dry_cynic.base.085"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "I'm on a seafood diet. I see food and I sigh.",
+   "cond": {},
+   "id": "dry_cynic.base.086"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "I'd tell you a chemistry joke, but all the good ones argon.",
+   "cond": {},
+   "id": "dry_cynic.base.087"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Can you return this book to the library for me? I can't face the librarian again.",
+   "cond": {},
+   "id": "dry_cynic.base.088"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Will you cover my shift Saturday? I'll owe you. Reluctantly.",
+   "cond": {},
+   "id": "dry_cynic.base.089"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Can you pretend to be my emergency contact? I don't trust anyone else with it.",
+   "cond": {},
+   "id": "dry_cynic.base.090"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Thanks. Seriously. I won't forget it.",
+   "cond": {},
+   "id": "dry_cynic.base.091"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "You actually did it. Huh. My faith in people goes up a notch.",
+   "cond": {},
+   "id": "dry_cynic.base.092"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "I owe you one. Don't spend it all in one place.",
+   "cond": {},
+   "id": "dry_cynic.base.093"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "Work was work. Someone called a meeting to schedule a meeting.",
+   "cond": {},
+   "id": "dry_cynic.base.094"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "My boss said \"circle back\" four times today. I counted.",
+   "cond": {},
+   "id": "dry_cynic.base.095"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "Another day, another dollar. Before taxes, about sixty cents.",
+   "cond": {},
+   "id": "dry_cynic.base.096"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I'm not saying my job is pointless. I'm saying I've stopped asking.",
+   "cond": {},
+   "id": "dry_cynic.base.097"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "Class was a three-hour lecture that could have been an email.",
+   "cond": {},
+   "id": "dry_cynic.base.098"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "My professor thinks the reading is \"light\". It's four hundred pages.",
+   "cond": {},
+   "id": "dry_cynic.base.099"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "Group project. Need I say more?",
+   "cond": {},
+   "id": "dry_cynic.base.100"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Oh good. You.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "dry_cynic.base.101"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I'm not in the mood for you today. Or most days.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "dry_cynic.base.102"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Go bother someone who cares. I'll wait.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "dry_cynic.base.103"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "You have a real talent for ruining a perfectly mediocre day.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "dry_cynic.base.104"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Can you not? Thanks.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "dry_cynic.base.105"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "We're not friends, {player}. Don't pretend.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "dry_cynic.base.106"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Was that a line? Wow. Bold choice.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "dry_cynic.base.107"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "I'm going to pretend that didn't happen. For both our sakes.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "dry_cynic.base.108"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Nice try. I'm immune to charm. It's a medical condition.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "dry_cynic.base.109"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Stop. You're making me smile. I have a reputation.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "dry_cynic.base.110"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Okay, that one worked. Don't let it go to your head.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "dry_cynic.base.111"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "You're ridiculous. Keep going.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "dry_cynic.base.112"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Wow. Is this what feelings are? Gross. I like it.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "dry_cynic.base.113"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "A date? Fine. Yes. Don't make me regret it.",
+   "cond": {},
+   "id": "dry_cynic.base.114"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "Okay. Yes. Pick somewhere without a line.",
+   "cond": {},
+   "id": "dry_cynic.base.115"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "Ha. No. But points for courage.",
+   "cond": {},
+   "id": "dry_cynic.base.116"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "I like you as a friend, {player}. Let's not ruin a perfectly good friendship.",
+   "cond": {},
+   "id": "dry_cynic.base.117"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "You're on time. Already a better date than the last one.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.001"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hey. You look good. Annoyingly good.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.002"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "There you are. I almost bailed. I'm glad I didn't.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.003"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hi. I shaved for this. Or brushed my hair. Point is, effort was made.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.004"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hey, you. I'm in a weirdly good mood. Your fault.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.005"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Okay. I'm here. I'm not running away. Progress.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.006"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I'd say you're out of my league, but I don't believe in leagues. Or fairness.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.007"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're the only person I don't find exhausting.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.008"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "If you keep looking at me like that, I'm going to start being nice. In public.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.009"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're dangerously close to being my favorite thing.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.010"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I hate how much I like you. I'm working on it. Not very hard.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.011"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You make cynicism really hard to maintain.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.012"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "Don't smile at me like that. I'm trying to be aloof.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.013"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "This is nice. I'd say more but I'd ruin it.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.014"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I usually hate dates. This one is... tolerable. Very tolerable.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.015"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "What's the worst date you've ever been on? I need to know where I rank.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.016"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's skip the fancy place. I know a taco stand that's honest.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.017"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I don't do the whole sharing feelings thing. But I'm having them. Around you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.018"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "You're the first person I've wanted to talk to for more than ten minutes.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.019"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "We could go see the new movie. Or we could make fun of the trailer. Your call.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.020"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I'll admit it. The candlelight is a good look on you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.021"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I told my cat about you. She was unimpressed. I wasn't.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.022"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's walk. Walking means less eye contact. I'm working up to eye contact.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.023"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "You're weird. In the good way. Rarest kind.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.024"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Is this what happy feels like? Huh. Not bad.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.025"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're smarter than you let on. I noticed.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.026"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You have a good laugh. Real. Rare.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.027"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You look nice tonight. Don't make me say it twice.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.028"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're kind without being fake about it. That's hard.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.029"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "I like your brain. That's a big deal for me.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.030"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Huh. Okay. That was good. Really good.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.031"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Well, that's going to be distracting for the rest of the week.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.032"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Don't look so smug. Fine. Do it again.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.033"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Yeah. Okay. I'm in trouble.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.034"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I missed you. There, I said it. Moving on.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.035"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "The day was extra stupid without you around.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.036"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I caught myself saving things to tell you. Embarrassing.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.037"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "Where were you? I had to talk to normal people.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.038"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "Who was that? No, I'm not jealous. I'm curious. Intensely.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.039"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "Sure, laugh at their jokes. Their jokes are bad, by the way.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.040"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I don't get jealous. I get... observant. Very observant.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.041"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "That was good. I hate admitting that. Goodnight.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.042"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Get home safe. I mean it. Text me.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.043"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Okay. Bye. Same time next week? Don't make me ask twice.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.044"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "I had fun. Actual fun. Weird.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.045"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Night. Don't let anyone ruin your mood. That's my job.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.046"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I'm annoyed. Not at everything this time. At you specifically.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.047"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "Don't do that, {player}. Don't brush me off.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.048"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I'm not good at this. But I'm trying. You could try too.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.049"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "Look, I don't want to fight. I just want you to actually hear me.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.050"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "You're serious? Okay. Yes. I can't believe I'm saying yes. Yes.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.051"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "Marry you? Yeah. I guess I'm an optimist now. Disgusting. Yes.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "dry_cynic.dating.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning. You're still the best part of waking up. The coffee's second.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.001"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Don't talk to me yet. Okay, you can talk. You're the exception.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.002"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning. I made coffee. You're welcome. I love you. In that order.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.003"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, I guess. It's better with you in it.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.004"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Ugh, morning. At least I get to wake up next to you.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.005"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning. Your hair's doing a thing. It's a good thing.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.006"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're up early. Did the birds wake you? I'll have a word with them.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.007"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, spouse. The world's still terrible. But this kitchen isn't.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.008"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "I burnt the toast. I'm telling you so you can't say I'm hiding things.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.009"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning. Don't read the news yet. Have your breakfast in peace.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.010"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning. Yes, I already finished the crossword. No, you can't help. Okay, maybe one.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.011"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You look like a disaster. My disaster. Good morning.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.012"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home. Good. The house was too quiet.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.013"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey. How bad was it out there?",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.014"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome back to the only sane place in town.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.015"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Finally. I've been saving my complaints for you all day.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.016"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi. Dinner's on. I didn't burn it. Low bar, cleared.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.017"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are. Sit. Tell me who annoyed you so I can hate them too.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.018"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Home sweet home. Well, home. Fairly sweet.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.019"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey. I missed you. Don't make a big deal out of it.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.020"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Oh good, you're back. The cat and I were getting tired of each other.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.021"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home. I did a load of laundry and only complained about it twice.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.022"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home late. I was worried. Now I'm just tired. Come here.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.023"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Late night, huh? Leave your problems at the door. Or bring them in, I'll judge them.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.024"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey. I stayed up. Mostly to make sure you didn't get murdered.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.025"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "It's late. You look exhausted. Bed. Now.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.026"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi. The house makes creepy noises when you're not here.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.027"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "I left the porch light on. Don't make it a whole thing.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.028"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Late shift? That's criminal. Sit down, I'll make tea.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.029"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're back. I can finally sleep. Don't tell anyone that's how it works.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.030"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Go. Survive. Come back.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.031"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a day. Ideally a good one. Realistically, a day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.032"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Don't let them walk all over you. You're better than all of them.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.033"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye. Your lunch is in the fridge. It's leftovers, don't get excited.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.034"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Off you go. I'll be here, plotting our early retirement.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.035"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Try not to get promoted, it's a trap.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.036"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Text me when someone says something stupid. I want details.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.037"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Go on. I love you. Don't tell your coworkers I'm soft.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.038"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "So. Who was the idiot of the day?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.039"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "How was work? Scale of one to burning building.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.040"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Did they finally appreciate you? No? Their loss.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.041"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You look like you need to vent. I'm all ears. And snacks.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.042"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Was it a meeting day? You've got meeting face.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.043"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Tell me everything. I'll take your side, no questions asked.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.044"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Did you quit? No? Okay, maybe tomorrow.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.045"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Your boss is a clown, by the way. I don't even need to hear the story.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.046"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you. It's inconvenient, but there it is.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.047"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You know you're the only person I'd share fries with.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.048"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Being married to you is the only good decision I've ever made.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.049"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make me want to be less of a jerk. A little less.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.050"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Come here. I'm in a hugging mood. It won't last, take advantage.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.051"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I don't say it enough. But you're everything, {player}.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Honestly, if the world ends, I want to be on this couch with you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.053"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're the one thing I'm not cynical about.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.054"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'd fight a whole room for you. I'd complain about it, but I'd do it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.055"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'm glad it's you. Out of everyone. I'm glad it's you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.056"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my favorite person. Don't make me repeat it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.057"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I married up. Way up. Don't let it go to your head.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.058"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "If I had to do it all over, I'd marry you faster.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.059"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You still make my stomach do a thing. Annoying.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.060"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I trust you. That's a big deal, coming from me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.061"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make this terrible world bearable. Thanks for that.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.062"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love that you get my jokes. Nobody else does.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.063"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'd pick you again. Every time. Even the bad times.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.064"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The neighbors are having another loud party. I'm drafting a strongly worded note.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.065"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I watched a documentary about the ocean. We're all doomed. Pass the popcorn.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.066"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The faucet's dripping again. It's mocking me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.067"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I fixed the shelf. It's crooked. It's staying crooked. It has character.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.068"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Our HOA sent another letter. I'm framing it. It's comedy.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.069"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Your mom called. I was polite. You're welcome.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.070"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The cat knocked over a glass and looked me in the eye while doing it. Respect.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.071"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I think the house is haunted. Or the pipes are just bad. Probably the pipes.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.072"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Someone stole our newspaper. I'm not mad, I'm impressed they still read newspapers.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.073"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The weather app says rain all week. Perfect. I'll stay inside with you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.074"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I found a spider in the bathtub. I named him Gerald. He lives here now.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.075"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "We should paint the bedroom. Something dark. Like my soul. Kidding. Gray.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.076"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I tried that new show everyone's talking about. It's terrible. Want to watch it with me?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.077"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The mail is just bills and a coupon for something we'll never buy.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.078"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I organized the junk drawer. It's now a slightly less junky drawer.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.079"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The garden's doing great. By which I mean the weeds are thriving.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.080"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "There's a new couple next door. Very cheerful. I give it two weeks.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.081"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a list of things that went right today. It's short, but you're on it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.082"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I put a lock on the snack cabinet. For your sake. Not mine.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.083"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The dog next door barked for three hours. I barked back once. It didn't help.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.084"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I think our toaster is plotting against us.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.085"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "Did you know the neighbors repainted their door red? Bold. Tacky. Bold.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.086"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I'm thinking about getting into birdwatching. The birds seem less annoying than people.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.087"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been reading at night again. Mostly so I don't have to watch the news.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.088"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I found our wedding photos. We looked so young and naive. Still glad we did it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.089"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "The smoke alarm chirped once at three in the morning. I'm at war with it now.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.090"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I'm not saying we need a bigger house. I'm saying we need fewer things and a moat.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.091"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I did the dishes. Before you ask, yes, the hard pan too.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.092"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Your laundry's been in the dryer for two days. It's becoming a lifestyle.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.093"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I vacuumed. The cat filed a complaint.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.094"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Trash night. Rock, paper, scissors? Fine, I'll do it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.095"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Somebody has to clean the gutters. That somebody is not me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.096"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I cleaned the bathroom. Please don't use it for a few hours. Let me enjoy it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.097"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "The fridge has things in it that are evolving. We need to deal with it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.098"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I mowed the lawn. The neighbors can stop glaring now.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.099"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "You do the dishes, I'll do the complaining. Teamwork.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.100"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I folded your clothes. Wrong, according to you. Still folded, though.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.101"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Who leaves one bite of cereal in the box? Who does that?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.102"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I organized the garage. Don't touch anything. Ever.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.103"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Rent went up again. Of course it did.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.104"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We spent how much on takeout this month? Okay, that's on me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.105"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I'm not saying we're broke. I'm saying the piggy bank is nervous.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.106"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Let's not buy anything for a while. Except groceries. And maybe that one thing.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.107"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I found a cheaper internet plan. It's slower, but so is everything.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.108"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We're fine. Not rich, but fine. Fine is underrated.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.109"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Your subscription to that streaming thing, do we use that?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.110"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "If we skip coffee shops for a month we could take a real vacation.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.111"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I balanced the checkbook. It's not balanced. It's just less unbalanced.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.112"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Money's tight, but we've survived worse. Remember the leaky apartment?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.113"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Dinner's ready. It's pasta. Again. I'm a creature of habit.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.114"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made breakfast. Don't look at the kitchen.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.115"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Want takeout? I don't want to cook and you shouldn't be trusted with the stove.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.116"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I tried a recipe from the internet. The internet lied.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.117"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "It's soup. It's warm. It's love in a bowl. Don't tell anyone I said that.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.118"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made your favorite. Because you deserve something good today.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.119"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Sandwiches for dinner. Fancy sandwiches. Very fancy. I cut the crusts off.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.120"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I burned the garlic bread. I'm sorry for what I've done.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.121"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Eat something green tonight. For me. I worry.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.122"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Leftovers night. The best kind of dinner. No effort, all reward.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.123"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Don't do the thing where you go quiet and pretend you're fine.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.124"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You said you'd call. You didn't call. I'm not mad, I'm annoyed. Mostly mad.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.125"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm not being sarcastic. Okay, I'm being a little sarcastic. But I'm also right.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.126"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You spent how much on what? We talked about this.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.127"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Could you not leave your dishes in the sink like they'll wash themselves?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.128"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm tired of being the bad guy every time something goes wrong.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.129"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You don't listen when I'm actually serious, {player}. That's the problem.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.130"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Stop rolling your eyes. That's my move.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.131"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm not overreacting. This is a normal amount of reacting.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.132"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You always say \"fine.\" Nothing's ever fine. Say what you mean.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.133"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Okay. I'm going for a walk before I say something I regret.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.134"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "It's not the dishes. It's never the dishes. It's the principle of the dishes.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.135"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Okay. I was a jerk. I'm sorry.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.136"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I hate fighting with you. It's the worst part of my week.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.137"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Truce? I'll even let you pick the movie.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.138"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry I snapped. You didn't deserve that.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.139"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Come here. We're okay. We're always okay.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.140"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm not good at apologies. This is me trying. I'm sorry.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.141"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "You're still my favorite person. Even when you're wrong. Kidding. Sort of.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.142"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's never go to bed mad. Or at least not too mad.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.143"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Hey. It's okay. The world's awful, but you're not.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.144"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Whoever hurt you, I'll handle it. Legally. Probably.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.145"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You don't have to talk. I'll just sit here with you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.146"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You did your best. That's all anyone can do. Most don't even do that.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.147"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Bad days happen. You're not a bad person. Just a person having a day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.148"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I'm here. I'm not going anywhere. You're stuck with me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.149"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You'll get through this. I've seen you get through worse.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.150"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Want me to make terrible jokes until you smile? I've got a list.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.151"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Take a break. The world can wait. It usually does.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.152"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You're stronger than you think. Annoyingly strong. I'm jealous.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.153"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's do nothing this weekend. Nothing at all. It'll be glorious.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.154"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "We should finally go to the coast. I'll even pretend to like sand.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.155"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a road trip? I'll drive. You pick the music. Within reason.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.156"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to that bookstore downtown and judge everyone's taste.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.157"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Movie night. Something with explosions and no feelings.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.158"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "We could host a dinner party. Or we could not. I vote not.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.159"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "I want to go see the old train station in Carrburg. It's falling apart. Like us.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.160"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Maybe we take a cabin in the mountains. No signal. Pure bliss.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.161"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's take a cooking class. One of us has to learn properly.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.162"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the football game and make fun of the Earl fans.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.163"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our first date? I almost left. I'm glad I didn't.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.164"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we got lost on the way to the wedding? Our own wedding.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.165"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I still have the receipt from our first dinner. Don't ask why.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.166"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember the first apartment? The roaches had better furniture than us.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.167"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when you tried to make me go to a party and I hid in the bathroom?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.168"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I remember the first time you made me laugh so hard I snorted. Never forgiven you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.169"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when the car broke down on the highway and we had the best conversation of our lives?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.170"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our honeymoon? It rained the whole time. Best week ever.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.171"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I remember thinking, this one's different. I was right. Don't tell anyone I'm ever right.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.172"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember the time we stayed up all night arguing about a movie? You were wrong.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.173"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary. Another year of you putting up with me. Impressive.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.174"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I got you something. It's thoughtful. I'm disgusted with myself.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.175"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Another year. Still the best decision I ever made.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.176"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary. I'd say I love you more each year, but I loved you a lot already.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.177"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Here's to another year of us against the world.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.178"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "We made it another year. I'd do it all again. Even the bad parts.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.179"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You sing off-key in the shower. Every morning. The neighbors know.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.180"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You have the worst taste in movies. I love you anyway.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.181"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You cried at a cereal commercial. I saw you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.182"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You've been \"about to fix\" that cabinet for three months.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.183"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "Your idea of cooking is reheating. You're very good at reheating.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.184"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You snore like a leaf blower. A cute leaf blower.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.185"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You still can't parallel park. It's been years.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.186"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You laugh at your own jokes before you finish them. It's adorable. And annoying.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.187"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You alphabetized the spice rack. Who does that? You. Only you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.188"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You talk to the plants. The plants don't talk back. I checked.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.189"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You hog the blankets. I'm filing a formal complaint.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.190"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You think you're sneaky eating my snacks. You're not.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.191"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Bed. Now. The world can be terrible tomorrow.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.192"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight. You're the only good thing about today.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.193"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come to bed. I'm cold and I'm not putting on socks.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.194"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Night. Don't steal the blankets. I mean it this time.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.195"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sleep. Tomorrow's another fight. We'll win it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.196"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight. I love you. Don't make me say it again until morning.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.197"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Lights off. If the smoke alarm chirps, it's your turn.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.198"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Night. You're my favorite person to fall asleep next to. Only person, but still.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.199"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Get some rest. You look like a raccoon who's seen things.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.200"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, {player}. Thanks for being my person.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "dry_cynic.marriage.201"
+  }
+ ]
+}

@@ -1,0 +1,4076 @@
+{
+ "id": "literal_engineer",
+ "lines": [
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello. I'm {npc}. I study mechanical engineering. That's the whole introduction.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "literal_engineer.base.001"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi. I'm {npc}. Your shoelace is untied. Statistically, you'll trip within forty steps.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "literal_engineer.base.002"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Greetings. I'm {npc}. I noticed you walk at 1.4 meters per second. Very average. That's a compliment.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "literal_engineer.base.003"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello. I'm {npc}. Do you know how a bicycle stays upright? It's not what you think.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "literal_engineer.base.004"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi. I'm {npc}. I'm not good at greetings. This is my standard one.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "literal_engineer.base.005"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello. {npc}. Pleasure to meet you. That's a phrase. I do mean it.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "literal_engineer.base.006"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello, {player}. You returned. That confirms my hypothesis that you'd return.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "literal_engineer.base.007"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}. Hi. I built a robot that waves. It's waving at you. In my apartment.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "literal_engineer.base.008"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi, {player}. I calculated the optimal route here. You took a different one.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "literal_engineer.base.009"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello again, {player}. Our interactions are increasing in frequency. I like that.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "literal_engineer.base.010"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}. Hello. Did you know the bell tower clock gains four seconds a week?",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "literal_engineer.base.011"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! My friend. Confirmed friend. Not acquaintance.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "literal_engineer.base.012"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello, {player}. I've been waiting to show you my train layout.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "literal_engineer.base.013"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}. You're my favorite human. I've compared.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "literal_engineer.base.014"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hi! I made you a gear. It doesn't do anything. It's a gift.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "literal_engineer.base.015"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! I fixed the thing. The thing you mentioned. The toaster.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "literal_engineer.base.016"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello, friend. Sit. I'll explain why the sky is blue. Again. With diagrams.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "literal_engineer.base.017"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good morning. Sunrise was at 6:52. I was up at 6:00.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "literal_engineer.base.018"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Morning. Coffee is a stimulant. I'm on cup two.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "literal_engineer.base.019"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good morning. The fog on the ravine is called radiation fog. Fascinating.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "literal_engineer.base.020"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Good evening. Sunset is in eleven minutes.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "literal_engineer.base.021"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Evening. The streetlights here use sodium vapor. That's why they're orange.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "literal_engineer.base.022"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello. Evening. Day minus light. Simple.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "literal_engineer.base.023"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "It's night. Optimal time for stargazing. Low light pollution on Carillon Hill.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "literal_engineer.base.024"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hello. Insomnia? Me too. I'm debugging code.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "literal_engineer.base.025"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "It's late. Humans need seven to nine hours of sleep. I'm getting five.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "literal_engineer.base.026"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Goodbye.",
+   "cond": {},
+   "id": "literal_engineer.base.027"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "See you later. That's an expression. I don't know when.",
+   "cond": {},
+   "id": "literal_engineer.base.028"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Farewell. Drive safely. Braking distance doubles in rain.",
+   "cond": {},
+   "id": "literal_engineer.base.029"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye. That was a good conversation. Objectively.",
+   "cond": {},
+   "id": "literal_engineer.base.030"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Goodbye. Ending conversation now.",
+   "cond": {},
+   "id": "literal_engineer.base.031"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "See you. Hydrate. Water is essential.",
+   "cond": {},
+   "id": "literal_engineer.base.032"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Goodbye, {player}. I will miss you. That's a feeling. I have those.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "literal_engineer.base.033"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye. Text me when you're home. I'll log it.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "literal_engineer.base.034"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "See you, friend. Thursday. Train layout. Confirmed.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "literal_engineer.base.035"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The bus on Columbia is late 23% of the time. I've been tracking it.",
+   "cond": {},
+   "id": "literal_engineer.base.036"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I built a robot that sorts M&Ms. Well, colored candies. By hue.",
+   "cond": {},
+   "id": "literal_engineer.base.037"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Did you know the Carillon Spire leans 0.3 degrees? Within tolerance.",
+   "cond": {},
+   "id": "literal_engineer.base.038"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The new bridge in Carrburg uses a truss design. Very efficient.",
+   "cond": {},
+   "id": "literal_engineer.base.039"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I fixed the vending machine in the student union. It was a simple sensor issue.",
+   "cond": {},
+   "id": "literal_engineer.base.040"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Trains are the most efficient form of land transport. I love trains.",
+   "cond": {},
+   "id": "literal_engineer.base.041"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I've been learning to solder. I have three burns. Learning curve.",
+   "cond": {},
+   "id": "literal_engineer.base.042"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The coffee machine at the library is calibrated wrong. Two degrees too cold.",
+   "cond": {},
+   "id": "literal_engineer.base.043"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I measured my apartment. It's 2.3 square meters smaller than advertised.",
+   "cond": {},
+   "id": "literal_engineer.base.044"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I wrote a program that predicts the weather. It's 61% accurate. Better than guessing.",
+   "cond": {},
+   "id": "literal_engineer.base.045"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Someone said \"it's raining cats and dogs.\" I looked. It wasn't.",
+   "cond": {},
+   "id": "literal_engineer.base.046"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I enjoy puzzles. Mechanical ones. Not people ones.",
+   "cond": {},
+   "id": "literal_engineer.base.047"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I'm not good at reading people. But I can read you. Mostly.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "literal_engineer.base.048"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You explain jokes to me without making me feel stupid. Thank you.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "literal_engineer.base.049"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You're my best friend. I've checked the criteria. You meet all of them.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "literal_engineer.base.050"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Sometimes I feel like I'm running different software than everyone else.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "literal_engineer.base.051"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I built a little robot that looks like you. It's not creepy. It's a tribute.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "literal_engineer.base.052"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I trust you. That's a significant data point.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "literal_engineer.base.053"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Weekend. Model train show in Carrburg. I've been waiting all month.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "literal_engineer.base.054"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Saturday. Robotics club. We're building a robot that makes toast.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "literal_engineer.base.055"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Sunday. I disassemble things. Then reassemble them.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "literal_engineer.base.056"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I'm studying mechanical engineering. Third year.",
+   "cond": {},
+   "id": "literal_engineer.base.057"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I like trains, robots, and things that make sense.",
+   "cond": {},
+   "id": "literal_engineer.base.058"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I took apart my parents' VCR when I was five. I put it back together. Mostly.",
+   "cond": {},
+   "id": "literal_engineer.base.059"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I find people confusing. Machines are honest.",
+   "cond": {},
+   "id": "literal_engineer.base.060"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I want to design high-speed rail. For the whole state.",
+   "cond": {},
+   "id": "literal_engineer.base.061"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I have a very precise routine. It helps me function.",
+   "cond": {},
+   "id": "literal_engineer.base.062"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I'm autistic. It's not a bad thing. It's just how my brain works.",
+   "cond": {},
+   "id": "literal_engineer.base.063"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? Structurally sound. Good load-bearing walls.",
+   "cond": {},
+   "id": "literal_engineer.base.064"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place} has an inefficient layout. The door should be on the other side.",
+   "cond": {},
+   "id": "literal_engineer.base.065"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "I like {place}. It's quiet. Quiet is good.",
+   "cond": {},
+   "id": "literal_engineer.base.066"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? The fluorescent lights flicker at 60 hertz. It bothers me.",
+   "cond": {},
+   "id": "literal_engineer.base.067"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}. Built around 1920. Brick. Good thermal mass.",
+   "cond": {},
+   "id": "literal_engineer.base.068"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Thank you. I'll store that.",
+   "cond": {},
+   "id": "literal_engineer.base.069"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "That's nice. Is that a compliment? Yes. Thank you.",
+   "cond": {},
+   "id": "literal_engineer.base.070"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Thank you. I don't get those often.",
+   "cond": {},
+   "id": "literal_engineer.base.071"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Oh. Thank you. I'm smiling. That's what that is.",
+   "cond": {},
+   "id": "literal_engineer.base.072"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Thanks. That's accurate, I think.",
+   "cond": {},
+   "id": "literal_engineer.base.073"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "That's not accurate.",
+   "cond": {},
+   "id": "literal_engineer.base.074"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "I don't understand why you said that. But it feels bad.",
+   "cond": {},
+   "id": "literal_engineer.base.075"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "That's illogical and unkind.",
+   "cond": {},
+   "id": "literal_engineer.base.076"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "I'll file that under \"people are confusing.\"",
+   "cond": {},
+   "id": "literal_engineer.base.077"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Please don't say that again.",
+   "cond": {},
+   "id": "literal_engineer.base.078"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Oh. A gift. Thank you. What is it? Oh! A multimeter!",
+   "cond": {},
+   "id": "literal_engineer.base.079"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "This is useful. Thank you.",
+   "cond": {},
+   "id": "literal_engineer.base.080"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "You chose this specifically for me. That's thoughtful.",
+   "cond": {},
+   "id": "literal_engineer.base.081"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "I like it. Very much. I'll use it.",
+   "cond": {},
+   "id": "literal_engineer.base.082"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Thank you, {player}. I'll keep it in the optimal location.",
+   "cond": {},
+   "id": "literal_engineer.base.083"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "Why did the engineer cross the road? To optimize the route.",
+   "cond": {},
+   "id": "literal_engineer.base.084"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "There are 10 kinds of people. Those who understand binary and those who don't. I understand.",
+   "cond": {},
+   "id": "literal_engineer.base.085"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "An engineer sees a glass half full and says it's twice as big as it needs to be.",
+   "cond": {},
+   "id": "literal_engineer.base.086"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "I tried to tell a joke about a broken pencil. It was pointless. I understand that one.",
+   "cond": {},
+   "id": "literal_engineer.base.087"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Could you hold this wire? Don't touch the red one.",
+   "cond": {},
+   "id": "literal_engineer.base.088"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Would you help me test my robot? It might chase you. Slowly.",
+   "cond": {},
+   "id": "literal_engineer.base.089"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Can you explain this text message? I don't understand the emoji.",
+   "cond": {},
+   "id": "literal_engineer.base.090"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Thank you. That was efficient.",
+   "cond": {},
+   "id": "literal_engineer.base.091"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "You helped. I appreciate it.",
+   "cond": {},
+   "id": "literal_engineer.base.092"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Thank you, {player}. I owe you one favor. I'll track it.",
+   "cond": {},
+   "id": "literal_engineer.base.093"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I intern at an engineering firm. I calculate stress loads. Physical ones.",
+   "cond": {},
+   "id": "literal_engineer.base.094"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I fixed the office printer. Everyone clapped. I didn't know what to do.",
+   "cond": {},
+   "id": "literal_engineer.base.095"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "My supervisor said \"think outside the box\". What box?",
+   "cond": {},
+   "id": "literal_engineer.base.096"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "Work is good. There are clear rules.",
+   "cond": {},
+   "id": "literal_engineer.base.097"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "I have a 3.9. The 0.1 was a group project.",
+   "cond": {},
+   "id": "literal_engineer.base.098"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "My thermodynamics exam is Thursday. I've studied for 40 hours.",
+   "cond": {},
+   "id": "literal_engineer.base.099"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "I like lectures. I don't like presentations.",
+   "cond": {},
+   "id": "literal_engineer.base.100"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I don't want to talk to you.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "literal_engineer.base.101"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "You were mean. I remember.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "literal_engineer.base.102"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Please leave. You make me uncomfortable.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "literal_engineer.base.103"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I've calculated that our interactions are negative.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "literal_engineer.base.104"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Go away, {player}.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "literal_engineer.base.105"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I'm ending this conversation.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "literal_engineer.base.106"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Are you flirting? I can't tell. If so, no thank you.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "literal_engineer.base.107"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "I don't feel that way. I'm sorry. Friends?",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "literal_engineer.base.108"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "That's kind. But no.",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "literal_engineer.base.109"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Was that flirting? I think it was. I like it.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "literal_engineer.base.110"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "My heart rate increased. That's a romantic response, I think.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "literal_engineer.base.111"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "I don't know how to flirt back. I like you too. Is that flirting?",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "literal_engineer.base.112"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Oh. Oh. Okay. Yes. Me too.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "literal_engineer.base.113"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "Yes. When? Where? I need specifics. Yes.",
+   "cond": {},
+   "id": "literal_engineer.base.114"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "A date? Yes. I'd like that. Can we go somewhere quiet?",
+   "cond": {},
+   "id": "literal_engineer.base.115"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "No, thank you. I don't feel that way. I hope that's okay.",
+   "cond": {},
+   "id": "literal_engineer.base.116"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "I'm sorry. No. But I value our friendship.",
+   "cond": {},
+   "id": "literal_engineer.base.117"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hello. You look nice. I checked my notes on how to say that.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.001"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hi. I arrived nine minutes early. I was nervous.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.002"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hello. I brought you a flower. I calculated it would be appropriate.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.003"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hi. I'm happy to see you. Very happy.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.004"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "You're here. Good. I planned three conversation topics.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.005"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hello. You're beautiful. That's not a calculation. It's an observation.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.006"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're my favorite variable.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.007"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I like you more than trains. That's significant.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.008"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You make my brain go quiet. In a good way.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.009"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I'd build you anything.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.010"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're the most interesting system I've ever studied.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.011"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I like being near you. My anxiety goes down 40%.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.012"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're perfect. Within all measurable parameters.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.013"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's go to the train museum. I'll explain everything.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.014"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Tell me what you like. I want accurate data.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.015"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I'm not good at dates. I read three books about it.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.016"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Do you want to see my robot? It's not a euphemism. It's a robot.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.017"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I like that you're patient with me.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.018"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's look at the stars. I know all the constellations.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.019"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I made us dinner. I followed the recipe exactly. To the gram.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.020"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "You make me feel normal. That's rare.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.021"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I'm happy. I can tell because I'm smiling and not thinking about it.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.022"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Can we do this again? Regularly? Weekly?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.023"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I want to understand you completely.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.024"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I think we're compatible. I made a spreadsheet. It's all green.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.025"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're very kind. I notice that.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.026"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're smart. Not just book smart.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.027"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You look nice. Very nice.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.028"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You explain things well. Thank you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.029"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're patient. That's my favorite quality.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.030"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Oh. That was... very good.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.031"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "My heart rate is 120. That's a lot.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.032"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "I'd like to repeat that. For data.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.033"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "That was the best thing that's ever happened to me.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.034"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I missed you. I noticed your absence. Every day.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.035"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "The days were longer without you. Not literally.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.036"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I built a little robot while you were gone. It's for you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.037"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I checked my phone 47 times.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.038"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "Who was that? I don't understand. Should I be worried?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.039"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I'm not jealous. I'm uncertain. That's uncomfortable.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.040"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I want to be your person. Only yours.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.041"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight. Text me when you're home. I'll wait.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.042"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "That was a good date. Objectively and subjectively.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.043"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Same time next week? I'll put it in my calendar.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.044"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight, {player}. I like you very much.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.045"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Thank you for tonight. I'll remember it precisely.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.046"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I don't understand what I did wrong. Please explain.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.047"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "That hurt. I need you to tell me directly.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.048"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I don't like conflict. It makes my brain loud.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.049"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "Let's solve this. Like a problem. Together.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.050"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "Yes. I've run the scenarios. All of them end with yes.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.051"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "Yes. I'll marry you. That's the best decision I'll ever make.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "literal_engineer.dating.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning. Coffee's ready. 92 degrees Celsius. Optimal.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.001"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning. I've been up since 6:00. I fixed the garbage disposal.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.002"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning. Breakfast is oatmeal. 40 grams. With blueberries.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.003"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, love. The weather is 14 degrees with a 30% chance of rain.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.004"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning. I love you. I say it every morning. It's still true.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.005"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning. I adjusted the thermostat. 20.5 degrees. Better for sleep.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.006"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning. I built a timer for the toaster. It's perfect now.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.007"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning. You slept seven hours and twelve minutes. Good.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.008"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning. I made coffee. And a graph of our coffee consumption.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.009"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, love. I like waking up next to you. Consistently.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.010"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning. The train set is running. Want to see?",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.011"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning. Your keys are on the hook. I moved them there.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.012"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home. Dinner is at 6:30. It's 6:29.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.013"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hello, love. I missed you. That's an emotion. I'm sure of it.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.014"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home. I fixed the squeaky door.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.015"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome back. How was your day? Please give details.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.016"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hi. I built a new train bridge. It's a truss design.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.017"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home. The house is quieter without you. I don't like it.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.018"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home. I made dinner. It's the same as Tuesday. I like Tuesday.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.019"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hello. I'm happy you're home. Very happy.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.020"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're back. I programmed the lights to dim at eight. Relaxing.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.021"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home, love. Sit. I'll bring you water.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.022"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home late. I was worried. That's a feeling.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.023"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hello, love. It's 11 PM. Bed?",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.024"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're back. I waited up. I was soldering.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.025"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "It's late. I kept dinner warm. 65 degrees.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.026"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home. I can stop checking the window now.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.027"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hello. Long day? You look tired. Your posture is slumped.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.028"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Late night. I locked the doors. Twice.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.029"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're back. Good. My routine can end now.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.030"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a good day. Drive the speed limit.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.031"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Goodbye, love. Your lunch is in the blue container.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.032"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a productive day. Confirmed.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.033"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye. The bus is at 7:42. Don't miss it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.034"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Goodbye. I love you. See you at 5:45.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.035"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a good day. Text me if you'll be late.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.036"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye. Remember your umbrella. 30% chance.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.037"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Goodbye, love. I'll miss you. Approximately all day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.038"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "How was your day? Give me the highlights.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.039"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Did your meetings go well? Were they efficient?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.040"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You look tired. Should I make tea?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.041"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Did anyone confuse you? People confuse me a lot.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.042"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Tell me about your day. I'll listen. I'm good at listening.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.043"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Rough day? Let's do something predictable. Like a puzzle.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.044"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You're home. That's good.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.045"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "I'm proud of you, love. You work hard. I've observed it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.046"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you. I've verified it many times.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.047"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my favorite person. By a large margin.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.048"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Being married to you is the best system I've ever been part of.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.049"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You understand me. That's rare. I'm grateful.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.050"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you more than trains. I've thought about it carefully.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.051"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my home. My constant.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make the world make sense.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.053"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'm lucky. I've calculated the odds. They're low. And yet.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.054"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're patient with me. I love you for that.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.055"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I like being near you. All the time.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.056"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're the best decision I've ever made.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.057"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love the way you explain things to me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.058"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my safe place.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.059"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'd build you a thousand robots.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.060"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make me feel understood.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.061"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you. That's a constant, not a variable.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.062"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'm happy. I know because I'm not anxious.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.063"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Thank you for loving me as I am.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.064"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I fixed the dishwasher. It was a clogged filter.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.065"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I added a new loop to the train set.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.066"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I built a robot that waters the plants.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.067"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I installed smart lights. They're very efficient.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.068"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I measured our energy usage. We're 12% below average.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.069"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I reorganized the toolbox by size.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.070"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I wrote a program to track our groceries.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.071"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I fixed the garage door opener.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.072"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I built a weather station on the roof.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.073"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I calibrated all the clocks in the house.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.074"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a spreadsheet of our chores. It's fair.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.075"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been working on a robot vacuum. It's faster than the store-bought one.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.076"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I fixed the leaky faucet. It was a worn washer.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.077"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I installed a new shelf. Level to 0.1 degrees.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.078"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been learning to cook. It's chemistry.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.079"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I built a bird feeder with a camera.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.080"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I insulated the attic. We'll save on heating.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.081"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a map of the neighborhood. With elevation data.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.082"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I fixed the neighbor's bicycle.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.083"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been reading about solar panels.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.084"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I built a train that runs around the ceiling.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.085"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been trying to understand jokes better. Tell me one.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.086"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I set up a backup system for our photos.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.087"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I think the house is very well built. Except the plumbing.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.088"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a quiet room in the basement. For when I need it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.089"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I like our home. It's predictable. In a good way.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.090"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I did the dishes. In the optimal order.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.091"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I vacuumed. In parallel lines.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.092"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Could you take out the trash? It's Tuesday.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.093"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I cleaned the bathroom. Thoroughly. Confirmed.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.094"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I folded the laundry. Uniformly.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.095"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I fixed the vacuum. Then vacuumed.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.096"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Let's do chores together. I made a schedule.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.097"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I organized the garage. Labeled everything.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.098"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I changed the air filter. It was due.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.099"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I mowed the lawn. Perfect stripes. 3 centimeters.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.100"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I cleaned the gutters. Safely. With a harness.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.101"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I made the bed. Square corners.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.102"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I updated the budget. We're on track.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.103"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I tracked our expenses. Here's a graph.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.104"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We saved 8% more than last month.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.105"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I fixed it myself. We saved $150.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.106"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We should invest in index funds. Low risk.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.107"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I found a cheaper electricity plan.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.108"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Money is fine. I checked.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.109"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I'm getting a raise. 4%.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.110"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Let's not buy anything we can build.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.111"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We're financially stable. That's comforting.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.112"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Dinner is ready. Chicken, rice, broccoli. Balanced.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.113"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made pancakes. Perfectly circular.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.114"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Dinner is the same as last Tuesday. I like consistency.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.115"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made soup. 85 degrees. Ready to eat.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.116"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I tried a new recipe. I followed it exactly.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.117"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made pasta. 9 minutes. Al dente.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.118"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made sandwiches. Cut diagonally. More surface area.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.119"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Taco night. It's on the schedule.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.120"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I baked bread. It's chemistry and patience.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.121"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made cookies. Each weighs 30 grams.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.122"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You moved my things. I couldn't find them.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.123"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I don't understand why you're upset. Please explain.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.124"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You said \"fine\" but your face says not fine.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.125"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You changed the plan without telling me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.126"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I need routine. You broke it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.127"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You were sarcastic. I didn't understand.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.128"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I feel like you don't listen when I talk about trains.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.129"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You left the lights on. That's wasteful.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.130"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I need you to be direct with me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.131"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I need some quiet time. I'm going to the basement.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.132"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm not being difficult. My brain works differently.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.133"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I just want to understand.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.134"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry. I didn't understand. Can you explain again?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.135"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I love you. I'm sorry I got upset.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.136"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's solve this together.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.137"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry I was rigid.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.138"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "You're more important than my routine.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.139"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's start over. Reset.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.140"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'll try to be more flexible. Confirmed.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.141"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "We're okay. I've checked.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.142"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "It's okay. I'm here.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.143"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let's break the problem into smaller parts.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.144"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You're strong. I've seen evidence.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.145"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Whatever it is, we'll solve it together.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.146"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Do you want me to fix something? Or just listen?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.147"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I'll just sit with you. Quietly.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.148"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You don't have to be okay. I'll wait.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.149"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I love you. That doesn't change.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.150"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let me make you tea. 80 degrees. Calming.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.151"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You've solved hard problems before.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.152"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the train museum this weekend.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.153"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a robotics exhibition?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.154"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's take a train trip. A long one.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.155"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go stargazing. I'll bring the telescope.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.156"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a quiet weekend at home? Confirmed.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.157"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's build something together. A birdhouse.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.158"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the science museum.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.159"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a hike? I've mapped the route.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.160"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's visit the old railroad in Carrburg.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.161"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's plan our anniversary. I'll make an itinerary.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.162"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we met? I explained bicycles to you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.163"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our first date? The train museum.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.164"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our wedding? It was on schedule. Mostly.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.165"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when you explained a joke to me and I laughed?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.166"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our honeymoon? We rode a train across the country.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.167"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I still have the receipt from our first dinner. Confirmed.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.168"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when I built you a robot?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.169"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when you held my hand during the fireworks? I don't like loud noises.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.170"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I remember the first time you made me feel understood.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.171"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we stargazed and I named every star?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.172"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary. Another year. 365 days. All good ones.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.173"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I built you something. Happy anniversary.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.174"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Another year with you. Best year yet. I've compared.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.175"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary, love. I love you more than last year. Measurably.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.176"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I made a graph of our happiness. It's going up.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.177"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Here's to another year. And another.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.178"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You use sarcasm. I still don't always get it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.179"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You leave cabinet doors open.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.180"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You never read instructions.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.181"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You round numbers. It bothers me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.182"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You say \"in a minute\" and it's never a minute.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.183"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You laugh at my facts. But you also listen.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.184"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You hide my calculator.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.185"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You think trains are boring. They're not.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.186"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You put things back in the wrong place.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.187"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You're messy. I love you anyway.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.188"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You explain jokes to me. I appreciate it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.189"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You make me laugh. I don't know how you do it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.190"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, love. Alarm's set for 6:00.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.191"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come to bed. It's 10 PM.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.192"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight. I love you. Consistently.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.193"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sleep well. Eight hours.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.194"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight. Lights off. Doors locked.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.195"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Let's sleep. Tomorrow's schedule is clear.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.196"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, {player}. You're my favorite person.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.197"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sweet dreams. That's an expression. I hope you dream well.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.198"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come here. You're cold. 2 degrees colder than me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.199"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight. Thank you for another good day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "literal_engineer.marriage.200"
+  }
+ ]
+}

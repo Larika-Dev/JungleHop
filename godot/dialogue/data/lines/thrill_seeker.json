@@ -1,0 +1,4076 @@
+{
+ "id": "thrill_seeker",
+ "lines": [
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Yo! You look like you've never jumped off anything. We can fix that. I'm {npc}.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "thrill_seeker.base.001"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey! I'm {npc}. Got a scar for every year I've been alive.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "thrill_seeker.base.002"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "What's up! Wanna see me ollie that bench? Watch. Okay, I'm fine. I'm {npc}.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "thrill_seeker.base.003"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey, new blood! You into climbing? Skating? Danger in general?",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "thrill_seeker.base.004"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Sup! I'm {npc}. Life's short. Let's make it interesting.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "thrill_seeker.base.005"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey! Don't mind the cast. Broke it rappelling. Totally worth it.",
+   "cond": {
+    "stage": [
+     "stranger"
+    ]
+   },
+   "id": "thrill_seeker.base.006"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! You ready to do something stupid? I mean, awesome?",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "thrill_seeker.base.007"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey, {player}! I found a new ledge by the ravine. It's sick.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "thrill_seeker.base.008"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! I dare you to eat the hottest wing at Top of the Mount.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "thrill_seeker.base.009"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Yo, {player}! I just bombed Columbia Street on my board. No brakes.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "thrill_seeker.base.010"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! Perfect timing. I need someone to film my jump.",
+   "cond": {
+    "stage": [
+     "acquaintance"
+    ]
+   },
+   "id": "thrill_seeker.base.011"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! My adrenaline buddy! Let's go!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "thrill_seeker.base.012"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "There's my wingman! What are we risking today?",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "thrill_seeker.base.013"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! I bought a second parachute. It's for you.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "thrill_seeker.base.014"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Ayy, {player}! You're the only one brave enough to keep up with me.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "thrill_seeker.base.015"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "{player}! I've been waiting all day to drag you somewhere dangerous.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "thrill_seeker.base.016"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "My partner in recklessness! Let's send it!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "thrill_seeker.base.017"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Morning! Already went for a sunrise climb. Feet still shaking.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "thrill_seeker.base.018"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Yo! Cold plunge in the creek at six. Wakes you right up.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "thrill_seeker.base.019"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Morning! Perfect fog for a mountain bike run.",
+   "cond": {
+    "time": [
+     "morning"
+    ]
+   },
+   "id": "thrill_seeker.base.020"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Evening! Sunset skate session on the parking deck. You in?",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "thrill_seeker.base.021"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Hey! Golden hour means epic footage. Let's go!",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "thrill_seeker.base.022"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Evening! The ravine's perfect right now. Spooky and fast.",
+   "cond": {
+    "time": [
+     "evening"
+    ]
+   },
+   "id": "thrill_seeker.base.023"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Night! Wanna climb the water tower? Kidding. Mostly.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "thrill_seeker.base.024"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Late night? Midnight bike ride down Carillon Hill!",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "thrill_seeker.base.025"
+  },
+  {
+   "tier": "base",
+   "context": "greet",
+   "text": "Yo, night owl! The best adventures start after dark.",
+   "cond": {
+    "time": [
+     "night"
+    ]
+   },
+   "id": "thrill_seeker.base.026"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Later! Stay dangerous!",
+   "cond": {},
+   "id": "thrill_seeker.base.027"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "See ya! Don't break anything I wouldn't!",
+   "cond": {},
+   "id": "thrill_seeker.base.028"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Peace! Send it!",
+   "cond": {},
+   "id": "thrill_seeker.base.029"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye! Live like you've got nine lives!",
+   "cond": {},
+   "id": "thrill_seeker.base.030"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Catch you later! I gotta go jump off something.",
+   "cond": {},
+   "id": "thrill_seeker.base.031"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Gotta bounce! Literally, there's a trampoline park.",
+   "cond": {},
+   "id": "thrill_seeker.base.032"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Later, {player}! Saturday, cliff jumping, don't flake!",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "thrill_seeker.base.033"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "See ya, buddy! Wear a helmet. I won't, but you should.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "thrill_seeker.base.034"
+  },
+  {
+   "tier": "base",
+   "context": "farewell",
+   "text": "Bye! You're the only one I trust to call my mom if something happens.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "thrill_seeker.base.035"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I jumped off the rope swing at the quarry. Did a backflip. Landed a belly flop.",
+   "cond": {},
+   "id": "thrill_seeker.base.036"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The parking deck on Rosemary has the best ramps in town. Security disagrees.",
+   "cond": {},
+   "id": "thrill_seeker.base.037"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I'm saving up for a motorcycle. A fast one.",
+   "cond": {},
+   "id": "thrill_seeker.base.038"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I tried the ghost pepper challenge at Cosmic Carnitas. I saw the afterlife.",
+   "cond": {},
+   "id": "thrill_seeker.base.039"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I climbed the outside of the old mill. Got a great view. And a fine.",
+   "cond": {},
+   "id": "thrill_seeker.base.040"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "There's a zip line in the mountains that goes sixty miles an hour. I'm going.",
+   "cond": {},
+   "id": "thrill_seeker.base.041"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I got stung by a jellyfish last summer. Still the best beach day ever.",
+   "cond": {},
+   "id": "thrill_seeker.base.042"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "The ravine has a waterfall. Twenty feet. Jumpable.",
+   "cond": {},
+   "id": "thrill_seeker.base.043"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I did a polar plunge in January. Lost feeling in my toes for an hour.",
+   "cond": {},
+   "id": "thrill_seeker.base.044"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I'm learning to skydive. Tandem first. Then solo.",
+   "cond": {},
+   "id": "thrill_seeker.base.045"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Somebody said the bell tower roof is off limits. That's an invitation.",
+   "cond": {},
+   "id": "thrill_seeker.base.046"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I went bungee jumping last month. My soul left my body. Ten out of ten.",
+   "cond": {},
+   "id": "thrill_seeker.base.047"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Honestly? Sometimes I chase danger because sitting still makes my brain loud.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "thrill_seeker.base.048"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You're the only person who doesn't tell me to be careful. Thank you.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "thrill_seeker.base.049"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "I'd jump out of a plane for you. I'd also jump out of a plane for fun.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "thrill_seeker.base.050"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You keep me alive. Literally. You talked me out of the water tower.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "thrill_seeker.base.051"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "If anything ever happens to me, take my skateboard. It's yours.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "thrill_seeker.base.052"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "You're braver than you think. I've seen it.",
+   "cond": {
+    "stage": [
+     "friend",
+     "close_friend",
+     "best_friend"
+    ]
+   },
+   "id": "thrill_seeker.base.053"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Weekend! White water rafting! Let's go!",
+   "cond": {
+    "weekend": true
+   },
+   "id": "thrill_seeker.base.054"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Saturday! Rock climbing at the gorge. Bring chalk.",
+   "cond": {
+    "weekend": true
+   },
+   "id": "thrill_seeker.base.055"
+  },
+  {
+   "tier": "base",
+   "context": "smalltalk",
+   "text": "Sunday! Motocross track in Carrburg!",
+   "cond": {
+    "weekend": true
+   },
+   "id": "thrill_seeker.base.056"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I broke my first bone at six. Jumped off the roof with an umbrella.",
+   "cond": {},
+   "id": "thrill_seeker.base.057"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I want to climb every mountain on every continent.",
+   "cond": {},
+   "id": "thrill_seeker.base.058"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I work at the climbing gym. Free climbing all day.",
+   "cond": {},
+   "id": "thrill_seeker.base.059"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "My parents have stopped asking what I'm up to. They don't want to know.",
+   "cond": {},
+   "id": "thrill_seeker.base.060"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I've been in the ER eleven times. The nurses know me by name.",
+   "cond": {},
+   "id": "thrill_seeker.base.061"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "I'm not reckless. I'm calculated. Mostly.",
+   "cond": {},
+   "id": "thrill_seeker.base.062"
+  },
+  {
+   "tier": "base",
+   "context": "about_self",
+   "text": "The scariest thing for me is a boring life.",
+   "cond": {},
+   "id": "thrill_seeker.base.063"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? Good roof. I could jump that.",
+   "cond": {},
+   "id": "thrill_seeker.base.064"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}'s okay. Needs a zip line.",
+   "cond": {},
+   "id": "thrill_seeker.base.065"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "I skated past {place} once. Got chased by the owner.",
+   "cond": {},
+   "id": "thrill_seeker.base.066"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place} is way too safe. Where's the edge?",
+   "cond": {},
+   "id": "thrill_seeker.base.067"
+  },
+  {
+   "tier": "base",
+   "context": "opinion_place",
+   "text": "{place}? Great spot for parkour.",
+   "cond": {},
+   "id": "thrill_seeker.base.068"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Thanks! That's the adrenaline glow!",
+   "cond": {},
+   "id": "thrill_seeker.base.069"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Aw, really? You're making my heart race. And that's hard to do.",
+   "cond": {},
+   "id": "thrill_seeker.base.070"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Ha! Thanks! You should see me mid-air.",
+   "cond": {},
+   "id": "thrill_seeker.base.071"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "You're sweet! Wanna go do something crazy?",
+   "cond": {},
+   "id": "thrill_seeker.base.072"
+  },
+  {
+   "tier": "base",
+   "context": "compliment_reply",
+   "text": "Thanks, {player}! That's going in my highlight reel.",
+   "cond": {},
+   "id": "thrill_seeker.base.073"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Ha! I've had worse. I've had a bear growl at me.",
+   "cond": {},
+   "id": "thrill_seeker.base.074"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "That doesn't scare me. Nothing scares me.",
+   "cond": {},
+   "id": "thrill_seeker.base.075"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Whatever, man. I've fallen off cliffs. Words don't hurt.",
+   "cond": {},
+   "id": "thrill_seeker.base.076"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "Wow. That's weak. Try harder.",
+   "cond": {},
+   "id": "thrill_seeker.base.077"
+  },
+  {
+   "tier": "base",
+   "context": "insult_reply",
+   "text": "You're just mad you're scared of heights.",
+   "cond": {},
+   "id": "thrill_seeker.base.078"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "No way! New gloves! These are perfect for climbing!",
+   "cond": {},
+   "id": "thrill_seeker.base.079"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Whoa! This is so cool! I'm taking it on my next trip!",
+   "cond": {},
+   "id": "thrill_seeker.base.080"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "You got me a GoPro mount?! You're the best!",
+   "cond": {},
+   "id": "thrill_seeker.base.081"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "Dude! Thank you! You know me so well!",
+   "cond": {},
+   "id": "thrill_seeker.base.082"
+  },
+  {
+   "tier": "base",
+   "context": "gift_reply",
+   "text": "This is awesome! I'm gonna break it in. Hopefully not break it.",
+   "cond": {},
+   "id": "thrill_seeker.base.083"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "I used to be afraid of heights. Then I fell. Now I'm afraid of the ground.",
+   "cond": {},
+   "id": "thrill_seeker.base.084"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "Why don't skydivers ever get lonely? They're always dropping in.",
+   "cond": {},
+   "id": "thrill_seeker.base.085"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "I told my doctor I broke my arm in two places. He told me to stop going to those places.",
+   "cond": {},
+   "id": "thrill_seeker.base.086"
+  },
+  {
+   "tier": "base",
+   "context": "joke",
+   "text": "What's a thrill seeker's favorite letter? The X. Extreme.",
+   "cond": {},
+   "id": "thrill_seeker.base.087"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Can you film my jump? Don't stop recording no matter what.",
+   "cond": {},
+   "id": "thrill_seeker.base.088"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Would you spot me on the climbing wall? I'm trying a new route.",
+   "cond": {},
+   "id": "thrill_seeker.base.089"
+  },
+  {
+   "tier": "base",
+   "context": "ask_favor",
+   "text": "Can you drive me to the ER if this goes badly? Kidding! Mostly.",
+   "cond": {},
+   "id": "thrill_seeker.base.090"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Legend! Thanks!",
+   "cond": {},
+   "id": "thrill_seeker.base.091"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "You're the best! That footage is gonna be epic!",
+   "cond": {},
+   "id": "thrill_seeker.base.092"
+  },
+  {
+   "tier": "base",
+   "context": "favor_reply",
+   "text": "Thanks, man! You saved my life. Maybe literally.",
+   "cond": {},
+   "id": "thrill_seeker.base.093"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I'm a river guide. I get paid to almost drown.",
+   "cond": {},
+   "id": "thrill_seeker.base.094"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I work at the climbing gym. Today a kid did his first overhang. So proud.",
+   "cond": {},
+   "id": "thrill_seeker.base.095"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "I do stunt work for local commercials. I fell off a car for a mattress ad.",
+   "cond": {},
+   "id": "thrill_seeker.base.096"
+  },
+  {
+   "tier": "base",
+   "context": "work_talk",
+   "text": "Work's fun! I got to rappel down the bank building for a window cleaning gig.",
+   "cond": {},
+   "id": "thrill_seeker.base.097"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "I'm studying outdoor recreation. It's a real major!",
+   "cond": {},
+   "id": "thrill_seeker.base.098"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "I skipped class to go cliff jumping. Worth it.",
+   "cond": {},
+   "id": "thrill_seeker.base.099"
+  },
+  {
+   "tier": "base",
+   "context": "school_talk",
+   "text": "My professor said I'm a risk-taker. I said thanks.",
+   "cond": {},
+   "id": "thrill_seeker.base.100"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "You're boring and you're mean. Worst combo.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "thrill_seeker.base.101"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I'd rather jump off a cliff than talk to you. And I would.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "thrill_seeker.base.102"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Get out of my way.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "thrill_seeker.base.103"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "You're a coward, {player}.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "thrill_seeker.base.104"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "I'm not scared of you. Nothing scares me.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "thrill_seeker.base.105"
+  },
+  {
+   "tier": "base",
+   "context": "hostile",
+   "text": "Bye. Go be lame somewhere else.",
+   "cond": {
+    "stage": [
+     "enemy",
+     "dislike"
+    ]
+   },
+   "id": "thrill_seeker.base.106"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Ha! Whoa! I'm flattered, but I'm not into that right now!",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "thrill_seeker.base.107"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Aw, you're sweet! But let's just be adventure buddies!",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "thrill_seeker.base.108"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Nah, but thanks! Want to go skydiving instead?",
+   "cond": {
+    "romance": [
+     "none"
+    ]
+   },
+   "id": "thrill_seeker.base.109"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Whoa! My heart just did a backflip!",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "thrill_seeker.base.110"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Okay, that's scarier than any cliff. And I like it.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "thrill_seeker.base.111"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "You're making me nervous. That never happens!",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "thrill_seeker.base.112"
+  },
+  {
+   "tier": "base",
+   "context": "flirt_reply",
+   "text": "Is this what falling feels like? Because I'm into it.",
+   "cond": {
+    "romance": [
+     "crush"
+    ]
+   },
+   "id": "thrill_seeker.base.113"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "Yes! Let's go skydiving! Or dinner. Or both!",
+   "cond": {},
+   "id": "thrill_seeker.base.114"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_yes",
+   "text": "A date? Heck yes! Let's do something wild!",
+   "cond": {},
+   "id": "thrill_seeker.base.115"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "Ah, I'm sorry. I don't feel that way. Still adventure buddies?",
+   "cond": {},
+   "id": "thrill_seeker.base.116"
+  },
+  {
+   "tier": "base",
+   "context": "ask_out_no",
+   "text": "I'm gonna pass, but you're brave for asking! Respect!",
+   "cond": {},
+   "id": "thrill_seeker.base.117"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "There you are! I planned a date. It involves a helmet.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.001"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hey, gorgeous! Ready for an adventure?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.002"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "You came! I've got two tickets to the haunted corn maze!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.003"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hey, babe! I brought the motorcycle. Hop on.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.004"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hi! You look amazing! Let's go do something crazy!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.005"
+  },
+  {
+   "tier": "dating",
+   "context": "date_greet",
+   "text": "Hey, you! I found a secret swimming hole!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.006"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're scarier than any cliff. In a good way.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.007"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You make my heart race faster than freefall.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.008"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I'd jump off anything for you. Literally anything.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.009"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're the best adrenaline rush I've ever had.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.010"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "Being with you is the most thrilling thing I've ever done.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.011"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "You're my favorite adventure.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.012"
+  },
+  {
+   "tier": "dating",
+   "context": "flirt",
+   "text": "I'd give up skydiving for you. Okay, not really. But I'd take you with me.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.013"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's go to the top of Carillon Hill and watch the sunset. Then run down.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.014"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Tell me the scariest thing you've ever done.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.015"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I want to take you everywhere. Every mountain. Every ocean.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.016"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Want to go rock climbing next weekend? I'll teach you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.017"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I've never told anyone this, but I'm scared of being alone.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.018"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's do a midnight bike ride. Under the stars.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.019"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I love that you're brave enough to keep up with me.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.020"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I made us a campfire. With marshmallows. And ghost stories.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.021"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "You make me want to slow down. Just a little.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.022"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "Let's go white water rafting! I'll hold you if we flip.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.023"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I think you're the best thing that's happened to me.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.024"
+  },
+  {
+   "tier": "dating",
+   "context": "date_talk",
+   "text": "I'm so happy right now. Like, top-of-a-mountain happy.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.025"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're so brave. Braver than you think.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.026"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You look amazing. Like, wind-in-your-hair amazing.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.027"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're the most fun person I know.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.028"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You've got guts. I love that.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.029"
+  },
+  {
+   "tier": "dating",
+   "context": "compliment",
+   "text": "You're beautiful, {player}. Seriously.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.030"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Whoa! That was better than bungee jumping!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.031"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "My heart's pounding! Again!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.032"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "That was the best rush ever!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.033"
+  },
+  {
+   "tier": "dating",
+   "context": "kiss_reply",
+   "text": "Okay, I'm officially addicted.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.034"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I missed you! The climb wasn't the same without you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.035"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I kept thinking about you on the trail.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.036"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "Every jump today, I thought about you.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.037"
+  },
+  {
+   "tier": "dating",
+   "context": "miss_you",
+   "text": "I hate being away from you. It's the scariest thing.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.038"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "Who was that? Are they braver than me? They're not.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.039"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I'm not jealous! I'm just... competitive!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.040"
+  },
+  {
+   "tier": "dating",
+   "context": "jealous",
+   "text": "I want to be your only adventure.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.041"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Tonight was epic! Get home safe!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.042"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight, babe! Text me when you're home!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.043"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Best date ever! Same time next week?",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.044"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "That was amazing! You're amazing!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.045"
+  },
+  {
+   "tier": "dating",
+   "context": "date_end",
+   "text": "Goodnight, {player}! Dream about adventures!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.046"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I'm upset, and that's scarier than any cliff.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.047"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "Let's talk. I don't want to run away from this.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.048"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "That hurt. I don't get hurt easily.",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.049"
+  },
+  {
+   "tier": "dating",
+   "context": "lovers_quarrel",
+   "text": "I don't want to fight. I want to fix this. Rush!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.050"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "YES! This is the biggest leap I've ever taken!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.051"
+  },
+  {
+   "tier": "dating",
+   "context": "proposal_yes",
+   "text": "I'll marry you! Let's do it at the top of a mountain!",
+   "cond": {
+    "romance": [
+     "dating",
+     "partner",
+     "engaged",
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.dating.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, babe! I already went for a run. Up the mountain.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.001"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, love! I made coffee. Strong. Like, rocket fuel strong.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.002"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! I planned a hike for this afternoon!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.003"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning! The sunrise was incredible. I watched it from the roof.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.004"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, sweetheart! Breakfast and then adventure?",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.005"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, sleepyhead! The weather's perfect for climbing!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.006"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! I fixed your bike. It's faster now.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.007"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning, love! I love waking up next to my favorite adventure.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.008"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning! Let's do something crazy today.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.009"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning! I made protein pancakes. Fuel for the day.",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.010"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Good morning, babe! The river's high. Rafting?",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.011"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Morning! I already did a cold plunge. You next!",
+   "cond": {
+    "time": [
+     "morning"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.012"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home, babe! Let's go for a sunset ride!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.013"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home! I found a new trail. Want to check it out?",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.014"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, love! Dinner's ready. Then night hike?",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.015"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome back! I built a fire pit in the backyard!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.016"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are! I've been bouncing off the walls waiting.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.017"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, sweetheart! I signed us up for a ropes course!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.018"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home! Let's go watch the stars from the roof!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.019"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Welcome home! I bought new climbing gear for both of us!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.020"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, babe! I missed you so much today!",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.021"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're back! The house is too quiet without your laugh.",
+   "cond": {
+    "time": [
+     "evening"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.022"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're home late! Midnight adventure?",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.023"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, love. Long day? Let's just cuddle tonight.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.024"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "It's late! Come to bed. Big hike tomorrow!",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.025"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "You're back! I was on the roof looking at the stars.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.026"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, babe. I waited up. Sharpening my ice axes.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.027"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Late night? Let me rub your feet.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.028"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "There you are! I was getting antsy.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.029"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_greet",
+   "text": "Hey, sweetheart. Let's sleep. We need energy for tomorrow.",
+   "cond": {
+    "time": [
+     "night"
+    ],
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.030"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a great day, babe! Live dangerously!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.031"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye, love! Take the stairs. Two at a time!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.032"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a good day! I'll plan our next adventure!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.033"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Go crush it! You're fearless!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.034"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye! Text me if anything exciting happens!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.035"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Have a great day, sweetheart! Don't be boring!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.036"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Off you go! I'll be at the climbing gym!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.037"
+  },
+  {
+   "tier": "marriage",
+   "context": "goodbye_work",
+   "text": "Bye, love! Kiss for luck!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.038"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "How was work? Anything exciting?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.039"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Tell me about your day! Was it an adventure?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.040"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You look tired, babe. Let's go for a quick hike to recharge.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.041"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Did your boss stress you out? Let's go punch a bag.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.042"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "How'd it go? Any wins? Rush!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.043"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "Rough day? Let's go ride bikes and forget about it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.044"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "You're home now! Let's have some fun!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.045"
+  },
+  {
+   "tier": "marriage",
+   "context": "work_return",
+   "text": "I'm proud of you, love. You're brave every day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.046"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you more than any mountain.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.047"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my favorite adventure. Forever.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.048"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "Being married to you is the biggest thrill of my life.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.049"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make my heart race every day.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.050"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'm so lucky to have you, babe.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.051"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my partner in every adventure.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.052"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'd climb any mountain for you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.053"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're the bravest person I know. Rush!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.054"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you more than skydiving. And I really love skydiving.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.055"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You keep me grounded. Literally.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.056"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my safe place. My base camp.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.057"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love how you keep up with me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.058"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're the best thing that ever happened to me. Better than any jump.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.059"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you, babe. More than adrenaline.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.060"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You make me want to come home.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.061"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I'm so proud to be your spouse. Rush!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.062"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "You're my anchor, love.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.063"
+  },
+  {
+   "tier": "marriage",
+   "context": "affection",
+   "text": "I love you more every day. Like a summit that keeps getting higher.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.064"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I built a climbing wall in the garage!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.065"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I found a new cliff to jump off. It's fifty feet!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.066"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been training for a marathon. A mountain marathon.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.067"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I bought a kayak! Two kayaks!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.068"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I'm thinking about doing an ironman.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.069"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been learning to surf. On YouTube. Then a real wave.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.070"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I signed us up for a skydiving class!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.071"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I fixed the motorcycle. It purrs now.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.072"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been planning a trip to the Himalayas.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.073"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I put a zip line in the backyard. Don't tell the HOA.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.074"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I built a treehouse. For adults.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.075"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been teaching the neighbor's kid to skateboard.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.076"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I found a cave by the ravine. Want to explore it?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.077"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been doing parkour on the roof.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.078"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I bought a paddleboard!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.079"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been learning to ride a unicycle.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.080"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I set up a slackline between the trees.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.081"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been taking flying lessons. Small planes.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.082"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I found a hot spring in the mountains!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.083"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been trying to be more careful. For you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.084"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I made a list of all the adventures we've had.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.085"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I bought a tent for four seasons!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.086"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I've been rock climbing every morning.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.087"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I think we should get a dog. An adventure dog.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.088"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I set up a trampoline in the backyard!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.089"
+  },
+  {
+   "tier": "marriage",
+   "context": "home_talk",
+   "text": "I love our wild life together.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.090"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I did the dishes! As fast as I could. Speed run!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.091"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I vacuumed! While doing lunges.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.092"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Could you take out the trash? I'm in the middle of a pull-up set.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.093"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I cleaned the gutters! From the roof!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.094"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I mowed the lawn! Fastest time yet!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.095"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I fixed the roof! Climbed up there myself!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.096"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "Let's do chores together! Race you!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.097"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I washed the car! And the motorcycle!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.098"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I cleaned out the garage! Found my old skateboard!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.099"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I raked the leaves! Then jumped in them!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.100"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I chopped firewood! With an axe! Very satisfying!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.101"
+  },
+  {
+   "tier": "marriage",
+   "context": "chores",
+   "text": "I scrubbed the bathroom! Like a challenge!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.102"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I spent too much on gear this month. Sorry, babe.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.103"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We should save for a big trip! Mount Everest!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.104"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Money's tight. Let's do free adventures!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.105"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I got a bonus for stunt work! Let's go skydiving!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.106"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I sold my old bike. Bought a better one.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.107"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We're doing okay! Adventures don't have to be expensive!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.108"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "Let's save for a camper van!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.109"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "I'm picking up extra guiding shifts!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.110"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We should get better insurance. For me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.111"
+  },
+  {
+   "tier": "marriage",
+   "context": "money",
+   "text": "We're rich in memories, love!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.112"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Dinner's ready! Grilled over the campfire!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.113"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made trail mix! For our next hike!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.114"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's have a picnic on the mountain!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.115"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made the spiciest chili ever! Dare you to eat it!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.116"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Breakfast of champions! Eggs and adrenaline!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.117"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made foil packet dinners! Camping style!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.118"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's grill out! Steaks and corn!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.119"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made smoothies! With extra protein!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.120"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "Let's eat on the roof!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.121"
+  },
+  {
+   "tier": "marriage",
+   "context": "meal",
+   "text": "I made s'mores! In the fire pit!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.122"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You said you'd come climbing with me! You didn't!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.123"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I feel like you don't like my adventures.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.124"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm not reckless! I'm adventurous!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.125"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You hid my motorcycle keys! Again!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.126"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "Can you please not worry so much?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.127"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I know I take risks. But I'm careful!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.128"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You never want to do anything exciting anymore.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.129"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I feel like you want me to be boring.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.130"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm trying to be safe! It's hard for me!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.131"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I'm going to go for a run. To cool off.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.132"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "I just want you to have fun with me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.133"
+  },
+  {
+   "tier": "marriage",
+   "context": "argue",
+   "text": "You're scared. And that's okay. But don't hold me back.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.134"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'm sorry, babe. I'll be more careful.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.135"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I hate fighting with you. It's worse than any fall.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.136"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's make up. With a hike!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.137"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I love you. I'm sorry I scared you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.138"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "You're my favorite person. Even when we fight. Rush!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.139"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "Let's start over. New trail.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.140"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "I'll wear the helmet. For you.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.141"
+  },
+  {
+   "tier": "marriage",
+   "context": "makeup",
+   "text": "We're good, love. We always land on our feet.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.142"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Hey, it's okay. Let's go for a walk. Fresh air.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.143"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You're stronger than any mountain, babe.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.144"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I'm here, love. Always. Rush!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.145"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Whatever it is, we'll climb over it together.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.146"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let's take a break from everything.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.147"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You don't have to be brave today. I'll be brave for both of us.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.148"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let's sit by the fire and just be.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.149"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "I love you. Even on the hard days. Rush!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.150"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "You're my hero, love. Rush!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.151"
+  },
+  {
+   "tier": "marriage",
+   "context": "support",
+   "text": "Let me take care of you tonight. Rush!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.152"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go cliff jumping this weekend!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.153"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a road trip to the mountains?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.154"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go white water rafting!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.155"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's try hang gliding!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.156"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a camping trip? Off the grid!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.157"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go to the motocross track!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.158"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go scuba diving!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.159"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "How about a weekend at the beach? Surfing!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.160"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's go rock climbing at the gorge!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.161"
+  },
+  {
+   "tier": "marriage",
+   "context": "plans",
+   "text": "Let's plan our anniversary on a mountaintop!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.162"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our first date? The haunted corn maze!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.163"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we went skydiving together?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.164"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our wedding? On the mountain!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.165"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we got lost on the trail?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.166"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember our honeymoon? We climbed a volcano!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.167"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I still have the carabiner from our first climb together.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.168"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we flipped the raft?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.169"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember the night we camped in the rain?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.170"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "I remember the first time you jumped off the cliff with me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.171"
+  },
+  {
+   "tier": "marriage",
+   "context": "memories",
+   "text": "Remember when we watched the sunrise from the summit?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.172"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary, babe! Let's go skydiving!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.173"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Another year! Let's climb a new mountain!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.174"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I got you new climbing shoes! Happy anniversary!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.175"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Happy anniversary, love! You're still my favorite adventure!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.176"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "I love you more every year! Like altitude!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.177"
+  },
+  {
+   "tier": "marriage",
+   "context": "anniversary",
+   "text": "Here's to another year of adventures! Rush!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.178"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You still scream on roller coasters.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.179"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You won't jump off the high dive.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.180"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You're scared of spiders. And you climb with me?",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.181"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You always pack too much for camping.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.182"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You walk around puddles. I jump in them.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.183"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You check the weather three times before a hike.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.184"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You hold the railing on stairs.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.185"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You're secretly braver than me.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.186"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You always say \"be careful\". I never am.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.187"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You hide the motorcycle keys.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.188"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You can't start a campfire.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.189"
+  },
+  {
+   "tier": "marriage",
+   "context": "tease",
+   "text": "You love adventure. Admit it.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.190"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, babe! Big adventure tomorrow!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.191"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come to bed! We need rest for the climb!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.192"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, love! You're my favorite adventure!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.193"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sleep tight! Dream about mountains!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.194"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight! I love you more than adrenaline!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.195"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Let's sleep. Then let's live!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.196"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight, {player}! You're amazing!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.197"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Sweet dreams, babe!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.198"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Come cuddle! I'm warm from the fire!",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.199"
+  },
+  {
+   "tier": "marriage",
+   "context": "bedtime",
+   "text": "Goodnight. Thanks for keeping me alive.",
+   "cond": {
+    "romance": [
+     "married"
+    ]
+   },
+   "id": "thrill_seeker.marriage.200"
+  }
+ ]
+}
