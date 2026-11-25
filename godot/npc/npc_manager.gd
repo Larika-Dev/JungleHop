@@ -208,6 +208,40 @@ func on_npc_witnessed_crime(index: int, crime_id, crime_class, position: Vector3
 
 # --- persistence ----------------------------------------------------------------
 
+## Moves someone's home (they go back there at night): used when a partner moves in
+## with the player. building_id is a buildings.json id.
+func relocate_home(id, building_id: String) -> bool:
+	var i := index_of(id)
+	if i < 0 or i >= population.size():
+		return false
+	var bi := -1
+	for k in buildings.size():
+		if str(buildings[k].id) == building_id:
+			bi = k
+			break
+	if bi < 0:
+		return false
+	var rec: Dictionary = population[i]
+	if not rec.has("original_home"):
+		rec.original_home = rec.home
+	rec.home = building_id
+	for key in ["day_work", "day_off"]:
+		for ev in rec.get(key, []):
+			if ev.size() >= 3 and str(ev[1]) == "home":
+				ev[2] = bi
+	if sim:
+		sim._key[i] = -1
+	return true
+
+
+## Undo relocate_home (break-up, divorce).
+func restore_home(id) -> void:
+	var rec := get_record(id)
+	if rec.has("original_home"):
+		relocate_home(id, str(rec.original_home))
+		rec.erase("original_home")
+
+
 func save_data() -> Dictionary:
 	var status := {}
 	if sim:

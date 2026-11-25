@@ -114,6 +114,8 @@ func _run() -> void:
 				if c is Interactable:
 					inter = c
 			check(inter != null, "nearest NPC has an interactable")
+			var inf: Dictionary = life.relationships.npc_info(str(near.npc_id))
+			check(str(inf.get("name", "")) != "" and inf.has("attractiveness"), "streamed NPC registered with Life (%s)" % inf.get("name", "?"))
 			if inter:
 				var acts: Array = inter.get_actions(p)
 				check(acts.size() >= 4, "NPC offers %d actions" % acts.size())
@@ -125,6 +127,7 @@ func _run() -> void:
 					var panel: Control = dlg.open_conversation(near)
 					await snap("04-conversation", 30)
 					var st: Dictionary = dlg.start_conversation(near)
+					check(life.relationships.npc_info(str(near.npc_id)).has("first_impression"), "first impression formed")
 					var opts: Array = st.get("options", [])
 					check(opts.size() >= 4, "conversation has %d choices" % opts.size())
 					UI.close_all()

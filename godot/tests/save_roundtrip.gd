@@ -52,6 +52,17 @@ func _run() -> void:
 	law.commit("littering", {"success": true})
 	var rec0 := str(law.record.to_save()) if law.get("record") and law.record.has_method("to_save") else str(law.save_data())
 	dlg.set_personality("npc_42", dlg.personality_ids()[3])
+	# A partner moves in
+	var npcs = r.get_node("NPCs")
+	while not npcs.ready_state:
+		await process_frame
+	var home0 = r.get_node("Home")
+	var partner: String = str(npcs.population[123].npc_id)
+	await process_frame
+	home0.add_to_household(partner)
+	await process_frame
+	check(str(npcs.get_record(partner).home) == home0.building_id, "partner's home is now yours")
+	check(is_equal_approx(float(life.money.bills.rent.amount), home0.WEEKLY_RENT / 2.0), "rent split (%.2f)" % float(life.money.bills.rent.amount))
 	GameClock.set_time(3, 14, 25)
 	print("NOTE  energy at save ", life.needs.get_value("energy"))
 	check(gs.save_game(7), "saved")
@@ -81,6 +92,7 @@ func _run() -> void:
 	var home = r.get_node("Home")
 	check(home.room_id != "", "home assigned on new game (%s)" % home.room_id)
 	check(life.money.bills.has("rent"), "weekly rent bill")
+	check(home.household.has(partner), "household restored")
 	check(GameClock.day == 3 and GameClock.hour == 14, "clock restored (%s day %d)" % [GameClock.time_string(), GameClock.day])
 	print("SAVE ROUNDTRIP: ", "OK" if failures == 0 else "%d failures" % failures)
 	quit(1 if failures else 0)

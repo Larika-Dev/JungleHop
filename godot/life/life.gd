@@ -82,6 +82,7 @@ func _ready() -> void:
 	var n: int = actions.load_dir()
 	print_verbose("Life: %d actions loaded" % n)
 	get_tree().node_added.connect(_on_node_added)
+	_hook_npcs.call_deferred()
 	_scan_existing(get_tree().root)
 	_hook_foundation.call_deferred()
 	_load_business_index()
@@ -356,9 +357,22 @@ func _on_node_added(node: Node) -> void:
 		_register_npc_node(node)
 
 
+## NPC bodies get their identity (npc_id, name, traits, looks) after they enter the tree,
+## and pooled bodies are reused for other people: register on every streamer load.
+func _hook_npcs() -> void:
+	var npcs := get_node_or_null("/root/NPCs")
+	if npcs and npcs.has_signal("npc_loaded") and not npcs.npc_loaded.is_connected(_on_npc_loaded):
+		npcs.npc_loaded.connect(_on_npc_loaded)
+
+
+func _on_npc_loaded(_i: int, body: Node) -> void:
+	if body and "npc_id" in body and str(body.npc_id) != "":
+		_register_npc_node(body)
+
+
 func _register_npc_node(node: Node) -> void:
 	var inf := {}
-	for k in ["display_name", "name_full", "traits", "interests", "age", "sex"]:
+	for k in ["display_name", "name_full", "traits", "interests", "age", "sex", "attractiveness"]:
 		if k in node:
 			inf[{"display_name": "name", "name_full": "name"}.get(k, k)] = node.get(k)
 	relationships.register_npc(str(node.npc_id), inf)
