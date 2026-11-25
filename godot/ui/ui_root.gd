@@ -275,6 +275,12 @@ func open_people() -> void:
 	center(wrap)
 
 
+func open_map() -> void:
+	if is_panel_open():
+		return
+	open_panel(load("res://ui/map_screen.gd").new())
+
+
 func open_pause_menu() -> void:
 	if is_panel_open():
 		return

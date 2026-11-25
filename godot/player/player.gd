@@ -173,6 +173,8 @@ func _unhandled_input(event: InputEvent) -> void:
 		UI.open_life_menu()
 	elif event.is_action_pressed("people"):
 		UI.open_people()
+	elif event.is_action_pressed("map"):
+		UI.open_map()
 
 
 func _run_first(it: Interactable) -> void:

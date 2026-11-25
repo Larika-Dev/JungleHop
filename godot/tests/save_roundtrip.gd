@@ -29,6 +29,7 @@ func _run() -> void:
 	gs.player_profile = gs.default_profile()
 	gs.game_started.emit()
 	await process_frame
+	await process_frame
 	# State
 	life.money.cash = 777.0
 	for n in life.needs.ids():
@@ -77,6 +78,9 @@ func _run() -> void:
 	var rec1 := str(law.record.to_save()) if law.get("record") and law.record.has_method("to_save") else str(law.save_data())
 	check(rec0 == rec1, "criminal record restored")
 	check(dlg.get_personality_id("npc_42") == dlg.personality_ids()[3], "personality override restored")
+	var home = r.get_node("Home")
+	check(home.room_id != "", "home assigned on new game (%s)" % home.room_id)
+	check(life.money.bills.has("rent"), "weekly rent bill")
 	check(GameClock.day == 3 and GameClock.hour == 14, "clock restored (%s day %d)" % [GameClock.time_string(), GameClock.day])
 	print("SAVE ROUNDTRIP: ", "OK" if failures == 0 else "%d failures" % failures)
 	quit(1 if failures else 0)

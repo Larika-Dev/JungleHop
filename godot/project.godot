@@ -26,6 +26,7 @@ Education="*res://education/education.gd"
 Law="*res://crime/law.gd"
 NPCs="*res://npc/npc_manager.gd"
 Dialogue="*res://dialogue/dialogue.gd"
+Home="*res://core/home.gd"
 
 [display]
 
