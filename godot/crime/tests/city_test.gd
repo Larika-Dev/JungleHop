@@ -39,7 +39,7 @@ func _ready() -> void:
 	check(not law.booking.is_empty(), "booked after contact")
 	var hours: int = int(law.booking.jail_hours)
 	law.serve_sentence()
-	check(is_equal_approx(GameClock.total_minutes - t0, hours * 60.0), "GameClock skipped %d jail hours" % hours)
+	check(is_equal_approx(GameClock.total_minutes - t0, hours * 60.0), "GameClock skipped %d jail hours (got %.1f min)" % [hours, GameClock.total_minutes - t0])
 	check(law.record.has_felony() and not law.job_check("standard").ok, "felony blocks standard jobs")
 	check(not law.in_jail and law.wanted() == 0, "released")
 	get_tree().quit(1 if fails else 0)

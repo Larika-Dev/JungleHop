@@ -154,6 +154,11 @@ func test_flow() -> void:
 	check(is_equal_approx(before - e.cash(), CATALOG.TUITION_UNDERGRAD), "tuition charged")
 	check(e.drop("CHEM 101") and is_equal_approx(e.cash(), before), "full refund when dropped before homework")
 	e._fallback_cash = 10.0
+	var lf := root.get_node_or_null("Life")
+	if lf and lf.get("money"):
+		lf.money.cash = 10.0
+		if "bank" in lf.money:
+			lf.money.bank = 0.0
 	check(e.can_enroll("CHEM 101") != "", "cannot enroll without tuition")
 	check(e.take_loan(1000.0), "loan")
 	check(e.enroll("CHEM 101").ok, "enroll with loan money")

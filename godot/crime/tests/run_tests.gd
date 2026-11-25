@@ -34,6 +34,11 @@ func reset() -> void:
 			n.free()
 	for n in get_nodes_in_group("police"):
 		n.free()
+	# The real Life autoload also lives at /root/Life; swap it out so Law binds to the mock.
+	var real := root.get_node_or_null("Life")
+	if real and real.get_script() != MockLife:
+		root.remove_child(real)
+		real.queue_free()
 	life = MockLife.new()
 	life.name = "Life"
 	root.add_child(life)

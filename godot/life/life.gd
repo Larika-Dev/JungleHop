@@ -402,11 +402,7 @@ func _is_player_actor(actor: Variant) -> bool:
 ## the furniture manager exists, else the entry from the node's get_actions().
 ## Shape: {label, minutes, needs, perHour?}.
 func _furniture_def(action_id: String, target: Variant) -> Dictionary:
-	var mgr := get_node_or_null("/root/Furniture")
-	if mgr and mgr.has_method("action_def"):
-		var d: Variant = mgr.action_def(action_id)
-		if d is Dictionary and not d.is_empty():
-			return d
+	# The piece's own action list is the most specific; the Furniture catalog is the fallback.
 	if target is Node and target.has_method("get_actions"):
 		for a in actions.native_furniture_actions(target):
 			if str(a.get("id", "")) == action_id:
@@ -415,7 +411,20 @@ func _furniture_def(action_id: String, target: Variant) -> Dictionary:
 					d2["needs"] = a.get("needs_effects", {})
 				if not d2.has("minutes"):
 					d2["minutes"] = int(a.get("duration_game_minutes", 0))
+				if d2.get("needs", {}).is_empty() or not d2.has("perHour"):
+					var mgr0 := get_node_or_null("/root/Furniture")
+					if mgr0 and mgr0.has_method("action_def"):
+						var base: Variant = mgr0.action_def(action_id)
+						if base is Dictionary:
+							for k in base:
+								if not d2.has(k) or (k == "needs" and d2[k].is_empty()):
+									d2[k] = base[k]
 				return d2
+	var mgr := get_node_or_null("/root/Furniture")
+	if mgr and mgr.has_method("action_def"):
+		var d: Variant = mgr.action_def(action_id)
+		if d is Dictionary and not d.is_empty():
+			return d
 	return {}
 
 
