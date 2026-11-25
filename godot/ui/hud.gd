@@ -11,6 +11,10 @@ var _fps: Label
 var _cross: Control
 var _right: VBoxContainer
 var _player: Node
+var _bars := {}
+var _mood: Label
+var _activity: Label
+var _activity_bar: ProgressBar
 
 
 func _ready() -> void:
@@ -41,6 +45,7 @@ func _ready() -> void:
 	_district = Label.new()
 	_district.add_theme_color_override("font_color", UI.BLUE)
 	v.add_child(_district)
+	_build_needs(v)
 	_right = VBoxContainer.new()
 	_right.set_anchors_preset(Control.PRESET_TOP_RIGHT)
 	_right.position = Vector2(-360, 24)
@@ -63,6 +68,10 @@ func _ready() -> void:
 	_prompt.add_theme_color_override("font_outline_color", Color.BLACK)
 	_prompt.add_theme_constant_override("outline_size", 6)
 	root.add_child(_prompt)
+	# Life's messages (action results, "You passed out", warnings) show as toasts.
+	var life := get_node_or_null("/root/Life")
+	if life and life.has_signal("notify") and not life.notify.is_connected(UI.notify):
+		life.notify.connect(UI.notify)
 	UI.panel_opened.connect(func(_p): root.visible = false)
 	UI.panel_closed.connect(func(): root.visible = true)
 
@@ -93,6 +102,7 @@ func _process(_d: float) -> void:
 			_prompt.text = "[E] Stand up"
 		elif _player.get("focus") == null:
 			_prompt.text = ""
+	_update_needs(life)
 	_fps.visible = Settings.show_fps
 	_fps.text = "%d FPS" % Engine.get_frames_per_second()
 
@@ -127,3 +137,56 @@ static func _commas(v) -> String:
 		if n % 3 == 0 and i > 0 and s[i - 1] != "-":
 			out = "," + out
 	return out
+
+
+# --- Needs ------------------------------------------------------------------
+
+func _build_needs(v: VBoxContainer) -> void:
+	var life := get_node_or_null("/root/Life")
+	if life == null or not ("needs" in life) or life.needs == null:
+		return
+	v.add_child(HSeparator.new())
+	_mood = Label.new()
+	v.add_child(_mood)
+	for id in life.needs.ids():
+		var row := HBoxContainer.new()
+		var l := Label.new()
+		l.text = life.needs.label(id)
+		l.custom_minimum_size = Vector2(84, 0)
+		l.add_theme_font_size_override("font_size", 15)
+		row.add_child(l)
+		var bar := ProgressBar.new()
+		bar.custom_minimum_size = Vector2(130, 10)
+		bar.show_percentage = false
+		bar.max_value = 100
+		bar.size_flags_vertical = Control.SIZE_SHRINK_CENTER
+		row.add_child(bar)
+		v.add_child(row)
+		_bars[id] = bar
+	_activity = Label.new()
+	_activity.add_theme_color_override("font_color", UI.BLUE)
+	_activity.visible = false
+	v.add_child(_activity)
+	_activity_bar = ProgressBar.new()
+	_activity_bar.custom_minimum_size = Vector2(214, 8)
+	_activity_bar.max_value = 1.0
+	_activity_bar.show_percentage = false
+	_activity_bar.visible = false
+	v.add_child(_activity_bar)
+
+
+func _update_needs(life: Node) -> void:
+	if life == null or _bars.is_empty():
+		return
+	_mood.text = "Mood: %s" % life.needs.mood_label() if life.needs.enabled else "Needs off"
+	for id in _bars:
+		var val: float = life.needs.get_value(id)
+		var bar: ProgressBar = _bars[id]
+		bar.value = val
+		bar.modulate = Color(1, 0.35, 0.3) if val < 20.0 else (Color(1, 0.85, 0.4) if val < 45.0 else Color(0.55, 0.95, 0.6))
+	var busy: bool = life.actions.busy()
+	_activity.visible = busy
+	_activity_bar.visible = busy
+	if busy:
+		_activity.text = str(life.actions.get_def(life.actions.current.id).get("name", ""))
+		_activity_bar.value = life.actions.progress()

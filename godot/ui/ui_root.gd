@@ -193,13 +193,23 @@ func open_action_menu(target: Interactable, actor: Node) -> void:
 		return
 	var acts := target.get_actions(actor)
 	var pc := PanelContainer.new()
-	var v := VBoxContainer.new()
-	v.add_theme_constant_override("separation", 8)
-	pc.add_child(v)
+	var outer := VBoxContainer.new()
+	outer.add_theme_constant_override("separation", 8)
+	pc.add_child(outer)
 	var title := Label.new()
 	title.theme_type_variation = "HeaderSmall"
 	title.text = target.display_name
-	v.add_child(title)
+	outer.add_child(title)
+	# Long lists (NPCs offer dozens of Life actions) scroll instead of running off screen.
+	var scroll := ScrollContainer.new()
+	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
+	var vh: float = get_viewport().get_visible_rect().size.y
+	scroll.custom_minimum_size = Vector2(460, minf(acts.size() * 46.0, vh * 0.62))
+	outer.add_child(scroll)
+	var v := VBoxContainer.new()
+	v.add_theme_constant_override("separation", 8)
+	v.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	scroll.add_child(v)
 	var first: Button
 	for a in acts:
 		var b := Button.new()
@@ -218,7 +228,7 @@ func open_action_menu(target: Interactable, actor: Node) -> void:
 	var cancel := Button.new()
 	cancel.text = "Cancel"
 	cancel.pressed.connect(func(): close_panel(pc))
-	v.add_child(cancel)
+	outer.add_child(cancel)
 	open_panel(pc)
 	pc.reset_size()
 	center(pc)
@@ -229,6 +239,40 @@ static func _dur(m: float) -> String:
 	if m < 60.0:
 		return "%d min" % int(m)
 	return "%.1f h" % (m / 60.0)
+
+
+## Everything you can do by yourself or at this place (Life "self" and "place" actions):
+## exercise, check your phone, shop, study, apply for a job here, shoplift...
+func open_life_menu() -> void:
+	if is_panel_open():
+		return
+	var life := get_node_or_null("/root/Life")
+	if life == null:
+		return
+	var m: Control = load("res://life/ui/action_menu.gd").new()
+	m.custom_minimum_size = Vector2(560, minf(760.0, get_viewport().get_visible_rect().size.y * 0.85))
+	open_panel(m)
+	m.open_for(null)
+	m.reset_size()
+	center(m)
+
+
+## The people you know: relationship tier, friendship, romance.
+func open_people() -> void:
+	if is_panel_open():
+		return
+	var p: Control = load("res://life/ui/relationships_panel.gd").new()
+	var wrap := PanelContainer.new()
+	var v := VBoxContainer.new()
+	wrap.add_child(v)
+	v.add_child(p)
+	var close := Button.new()
+	close.text = "Close"
+	close.pressed.connect(func(): close_panel(wrap))
+	v.add_child(close)
+	open_panel(wrap)
+	wrap.reset_size()
+	center(wrap)
 
 
 func open_pause_menu() -> void:

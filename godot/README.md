@@ -18,6 +18,8 @@ Plug-in contract for other systems (NPCs, life, jobs, education, furniture, crim
 | Mouse | Look (click to recapture the mouse) |
 | Space | Jump |
 | E | Use what you are looking at (open a door, sit, take the stairs). **Hold E** or **Tab** for all actions |
+| Tab (looking at nothing) or Q | Everything you can do yourself or at this place: exercise, phone, shop, study, apply for a job, crimes |
+| R | People you know (relationship tiers) |
 | C | First / third person |
 | Esc | Pause menu (save, load, settings, quit) |
 | F | Free-fly (debug builds only) |

@@ -578,6 +578,8 @@ func _register_life_actions(life: Node) -> void:
 		}
 		if c.has("place"):
 			def.place = c.place
+		elif String(c.target) == "furniture":
+			def.furniture = c.get("furniture", ["any"])
 		if c.has("cost"):
 			def.cost = c.cost
 		if c.has("requires_flag"):
@@ -641,7 +643,7 @@ func _on_life_action_finished(id, _target, _result) -> void:
 
 func _is_police(target) -> bool:
 	if target is Node:
-		return target.is_in_group("police") or bool(target.get("is_police"))
+		return target.is_in_group("police") or target.get("is_police") == true
 	return false
 
 
@@ -744,7 +746,17 @@ func _is_night() -> bool:
 func _advance_clock(minutes: int) -> void:
 	var life := _life()
 	if life and life.get("clock") and life.clock.has_method("advance_minutes"):
+		# Jail feeds you and gives you a bunk: needs don't decay (and you don't pass out)
+		# while the sentence is skipped; you come out tired, hungry and bored, not dying.
+		var nd = life.get("needs")
+		if nd and nd.has_method("hold"):
+			nd.hold(nd.ids())
 		life.clock.advance_minutes(minutes)
+		if nd and nd.has_method("release_all"):
+			nd.release_all()
+			if minutes >= 480:
+				for n in nd.ids():
+					nd.set_value(n, clampf(nd.get_value(n), 35.0, 70.0) if n != "fun" else 20.0)
 	elif _node("GameClock") and _node("GameClock").has_method("advance_minutes"):
 		_node("GameClock").advance_minutes(minutes)
 

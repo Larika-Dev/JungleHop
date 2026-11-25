@@ -26,6 +26,8 @@ func _ready() -> void:
 		TitleScreen.load_and_start(1))
 	load_b.disabled = not GameState.has_save(1)
 	_btn(v, "Settings", func(): UI.open_panel(load("res://ui/settings_menu.gd").new()))
+	if ResourceLoader.exists("res://npc/generator/npc_generator.gd"):
+		_btn(v, "NPC generator", func(): UI.open_panel(load("res://npc/generator/npc_generator.gd").new()))
 	_btn(v, "Quit to title", func():
 		UI.close_all()
 		GameState.in_game = false

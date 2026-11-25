@@ -914,12 +914,12 @@ func _register_life_actions() -> void:
 		return
 	var A = life.actions
 	var defs := [
-		{"id": "job_apply", "name": "Apply for a job here", "category": "work", "target": "place", "minutes": 20},
-		{"id": "job_start_shift", "name": "Clock in", "category": "work", "target": "place", "minutes": 0},
+		{"id": "job_apply", "name": "Apply for a job here", "category": "work", "target": "place", "place": ["any"], "minutes": 20},
+		{"id": "job_start_shift", "name": "Clock in", "category": "work", "target": "place", "place": ["any"], "minutes": 0},
 		{"id": "job_end_shift", "name": "Clock out", "category": "work", "target": "self", "minutes": 0},
-		{"id": "job_ask_promotion", "name": "Ask for a promotion", "category": "work", "target": "place", "minutes": 15},
-		{"id": "job_ask_raise", "name": "Ask for a raise", "category": "work", "target": "place", "minutes": 15},
-		{"id": "job_quit", "name": "Quit job", "category": "work", "target": "place", "minutes": 5},
+		{"id": "job_ask_promotion", "name": "Ask for a promotion", "category": "work", "target": "place", "place": ["any"], "minutes": 15},
+		{"id": "job_ask_raise", "name": "Ask for a raise", "category": "work", "target": "place", "place": ["any"], "minutes": 15},
+		{"id": "job_quit", "name": "Quit job", "category": "work", "target": "place", "place": ["any"], "minutes": 5},
 		{"id": "job_check_schedule", "name": "Check work schedule", "category": "work", "target": "self", "minutes": 1},
 		{"id": "job_browse_listings", "name": "Browse job listings", "category": "work", "target": "self", "minutes": 10},
 		{"id": "job_chat_coworker", "name": "Chat with a coworker", "category": "work", "target": "npc", "minutes": 10,

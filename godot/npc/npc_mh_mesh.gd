@@ -47,7 +47,34 @@ static func get_mesh(sex: String) -> ArrayMesh:
 	return mesh
 
 
+static var _sources := {}
+
+
+## The raw surface arrays and blend-shape arrays the mesh is built from: [arrays, shapes].
+## Garments are cut from these (an ArrayMesh made by ImporterMesh can't hand its
+## blend-shape arrays back: surface_get_blend_shape_arrays returns nothing).
+static func source(sex: String) -> Array:
+	if not _sources.has(sex):
+		_sources[sex] = _read(sex)
+	return _sources[sex]
+
+
 static func build(sex: String) -> ArrayMesh:
+	var src := source(sex)
+	var arrays: Array = src[0]
+	var shapes: Array = src[1]
+	var im := ImporterMesh.new()
+	im.set_blend_shape_mode(Mesh.BLEND_SHAPE_MODE_NORMALIZED)
+	for s in shape_list():
+		im.add_blend_shape(s)
+	im.add_surface(Mesh.PRIMITIVE_TRIANGLES, arrays, shapes)
+	im.generate_lods(60.0, 25.0, [])
+	var mesh := im.get_mesh()
+	mesh.resource_name = "npc_mh_%s" % sex
+	return mesh
+
+
+static func _read(sex: String) -> Array:
 	var md := meta(sex)
 	var n: int = md.vertices
 	var ni: int = md.indices
@@ -92,15 +119,7 @@ static func build(sex: String) -> ArrayMesh:
 		sa[Mesh.ARRAY_VERTEX] = _v3(take.call(n * 3).to_float32_array())
 		sa[Mesh.ARRAY_NORMAL] = _v3(take.call(n * 3).to_float32_array())
 		shapes.append(sa)
-	var im := ImporterMesh.new()
-	im.set_blend_shape_mode(Mesh.BLEND_SHAPE_MODE_NORMALIZED)
-	for s in shape_list():
-		im.add_blend_shape(s)
-	im.add_surface(Mesh.PRIMITIVE_TRIANGLES, arrays, shapes)
-	im.generate_lods(60.0, 25.0, [])
-	var mesh := im.get_mesh()
-	mesh.resource_name = "npc_mh_%s" % sex
-	return mesh
+	return [arrays, shapes]
 
 
 static func _v3(f: PackedFloat32Array) -> PackedVector3Array:

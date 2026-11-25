@@ -75,6 +75,8 @@ func _build_menu() -> void:
 		first = _btn(v, "Continue", func(): load_and_start(1))
 	var ng := _btn(v, "New Game", _new_game)
 	_btn(v, "Settings", func(): UI.open_panel(load("res://ui/settings_menu.gd").new()))
+	if ResourceLoader.exists("res://npc/generator/npc_generator.gd"):
+		_btn(v, "NPC Generator", func(): UI.open_panel(load("res://npc/generator/npc_generator.gd").new()))
 	_btn(v, "Quit", func(): get_tree().quit())
 	(first if first else ng).grab_focus()
 	var ver := Label.new()

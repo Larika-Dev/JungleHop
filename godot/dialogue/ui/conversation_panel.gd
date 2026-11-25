@@ -17,8 +17,10 @@ func _init() -> void:
 	var panel := PanelContainer.new()
 	panel.anchor_left = 0.15
 	panel.anchor_right = 0.85
-	panel.anchor_top = 0.55
-	panel.anchor_bottom = 0.95
+	# Pinned to the bottom of the screen and growing upward, so every choice stays visible.
+	panel.anchor_top = 0.97
+	panel.anchor_bottom = 0.97
+	panel.grow_vertical = Control.GROW_DIRECTION_BEGIN
 	add_child(panel)
 	var margin := MarginContainer.new()
 	for side in ["left", "right", "top", "bottom"]:

@@ -232,8 +232,15 @@ static func material(it: Dictionary, tint = null) -> ShaderMaterial:
 
 static func _build(sex: String, it: Dictionary) -> ArrayMesh:
 	var src: ArrayMesh = NpcBody.mesh_for(sex, 0)
-	var a := src.surface_get_arrays(0)
-	var shapes := src.surface_get_blend_shape_arrays(0)
+	var a: Array
+	var shapes: Array
+	if NpcBody.use_mh:
+		var raw: Array = NpcMhMesh.source(sex)
+		a = raw[0]
+		shapes = raw[1]
+	else:
+		a = src.surface_get_arrays(0)
+		shapes = src.surface_get_blend_shape_arrays(0)
 	var V: PackedVector3Array = a[Mesh.ARRAY_VERTEX]
 	var N: PackedVector3Array = a[Mesh.ARRAY_NORMAL]
 	var UV: PackedVector2Array = a[Mesh.ARRAY_TEX_UV]

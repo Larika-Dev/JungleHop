@@ -189,7 +189,7 @@ func _def_matches_target(def: Dictionary, kind: String, target: Variant, ftags: 
 			if t != "furniture":
 				return false
 			for tag in def.get("furniture", []):
-				if tag in ftags:
+				if tag == "any" or tag in ftags:
 					return true
 			return false
 		"place":
