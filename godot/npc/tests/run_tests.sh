@@ -6,7 +6,7 @@ GODOT=${GODOT:-godot}
 PROJ=$(cd "$(dirname "$0")/../.." && pwd)
 "$GODOT" --headless --path "$PROJ" --import >/dev/null 2>&1 || true
 TESTS=("$@")
-[ ${#TESTS[@]} -eq 0 ] && TESTS=(test_population test_simulation test_streaming test_body)
+[ ${#TESTS[@]} -eq 0 ] && TESTS=(test_population test_simulation test_streaming test_body test_clothes)
 status=0
 for t in "${TESTS[@]}"; do
   echo "== $t"

@@ -55,6 +55,7 @@ static var use_mh: bool = NpcMhMesh.available()
 var _arm_down := [Quaternion.IDENTITY, Quaternion.IDENTITY]
 var _forearm_axis := [Vector3.RIGHT, Vector3.RIGHT]
 var _finger_axes := []
+var _finger_together := []
 
 
 static func mesh_for(p_sex: String, p_lod: int) -> ArrayMesh:
@@ -119,13 +120,15 @@ func _setup_skeleton(p_sex: String) -> void:
 		skeleton.set_bone_rest(i, Transform3D(Basis.IDENTITY, local))
 	skeleton.reset_bone_poses()
 	_finger_axes.clear()
+	_finger_together.clear()
 	if use_mh:
-		# The MakeHuman rest pose is an A-pose: hang the arms down by the sides.
+		# The MakeHuman rest pose is an A-pose: hang the arms down by the sides,
+		# a little out from the hips so loose shirts and jackets have room.
 		for side in 2:
 			var o := side * 3
 			var sd := -1.0 if side == 0 else 1.0
 			var d: Vector3 = (model[NpcBodyMesh.B_FOREARM_L + o] - model[NpcBodyMesh.B_UPPERARM_L + o]).normalized()
-			_arm_down[side] = Quaternion(d, Vector3(sd * 0.1, -1.0, 0.03).normalized())
+			_arm_down[side] = Quaternion(d, Vector3(sd * 0.16, -1.0, 0.03).normalized())
 			_forearm_axis[side] = _arm_down[side].inverse() * Vector3.RIGHT
 			# Curl axis per finger: across the finger, so the tip moves toward the palm.
 			var w: Vector3 = model[NpcBodyMesh.B_HAND_L + o]
@@ -133,10 +136,17 @@ func _setup_skeleton(p_sex: String) -> void:
 			var palm: Vector3 = (model[bi0 + 2] - w).cross(model[bi0 + 8] - w).normalized()
 			if palm.y > 0.0:
 				palm = -palm
+			var md: Vector3 = (model[bi0 + 5] - model[bi0 + 4]).normalized()
 			for fi in 5:
 				var fd: Vector3 = (model[bi0 + fi * 2 + 1] - model[bi0 + fi * 2]).normalized()
 				var pn: Vector3 = palm
 				_finger_axes.append(fd.cross(pn).normalized())
+				# The scan's hands are splayed; a relaxed hand keeps the fingers
+				# together (thumb a little toward the index).
+				var to: Vector3 = fd.slerp(md, 0.6 if fi > 0 else 0.0)
+				if fi == 0:
+					to = fd.slerp((model[bi0 + 3] - model[bi0 + 2]).normalized(), 0.3)
+				_finger_together.append(Quaternion(fd, to.normalized()))
 	if not _skins.has(p_sex):
 		_skins[p_sex] = skeleton.create_skin_from_rest_transforms()
 	mesh_instance.skin = _skins[p_sex]
@@ -179,7 +189,10 @@ func apply_record(rec: Dictionary) -> void:
 		"curly": [0.964, 0.944, 0.89, 1.0], "bald": [1.1, 0.95, 0.915, 0.35]}.get(hs, [0.966, 0.946, 0.9, 1.0])
 	if use_mh:
 		var hl: Dictionary = NpcMhMesh.meta(sex).landmarks.hair
-		hair = [hl.front + hair[0] - 0.966, hl.side + hair[1] - 0.946, hl.back + hair[2] - 0.9, hair[3]]
+		# the scan's forehead hairline sits ~3 cm above the temples (a bald wedge
+		# under a centre parting): keep it close to the temple height
+		var front: float = minf(hl.front, hl.side + 0.009)
+		hair = [front + hair[0] - 0.966, hl.side + hair[1] - 0.946, hl.back + hair[2] - 0.9, hair[3]]
 		var eth: String = rec.get("ethnicity", "white")
 		var mix: Array = {"white": [1, 0, 0], "black": [0, 1, 0], "asian": [0, 0, 1], "hispanic": [0.6, 0.2, 0.2],
 			"multiracial": [0.5, 0.5, 0], "american_indian": [0.4, 0.1, 0.5], "international": [0.2, 0.2, 0.6]}.get(eth, [0.34, 0.33, 0.33])
@@ -329,9 +342,11 @@ func _pose_fingers(curl: float) -> void:
 		for k in _finger_axes.size():
 			var fi := k % 5
 			var bi := NpcBodyMesh.B_FINGER0 + k * 2
-			var a1 := deg_to_rad(lerpf(22.0, 70.0, curl) + fi * 3.0) * (0.4 if fi == 0 else 1.0)
-			var a2 := deg_to_rad(lerpf(28.0, 95.0, curl) + fi * 4.0) * (0.6 if fi == 0 else 1.0)
-			skeleton.set_bone_pose_rotation(bi, Quaternion(_finger_axes[k], a1))
+			# relaxed: a soft, natural curl that increases from index to little finger
+			var a1 := deg_to_rad(lerpf(10.0 + fi * 3.0, 72.0, curl)) * (0.35 if fi == 0 else 1.0)
+			var a2 := deg_to_rad(lerpf(14.0 + fi * 4.0, 95.0, curl)) * (0.5 if fi == 0 else 1.0)
+			var tog: Quaternion = _finger_together[k] if k < _finger_together.size() else Quaternion.IDENTITY
+			skeleton.set_bone_pose_rotation(bi, tog * Quaternion(_finger_axes[k], a1))
 			skeleton.set_bone_pose_rotation(bi + 1, Quaternion(_finger_axes[k], a2))
 		return
 	var specs: Array = NpcBodyMesh.finger_specs(sex)

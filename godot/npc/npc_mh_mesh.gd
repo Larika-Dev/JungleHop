@@ -4,7 +4,7 @@ extends RefCounted
 ## tools/build_mh_body.py from CC0 MakeHuman data) as a skinned ArrayMesh with
 ## blend shapes and automatic LODs. Cached in user://npc_cache.
 
-const VERSION := 9
+const VERSION := 10
 ## Blend shape names come from the model's meta (body, flex, ethnicity, face variety).
 static func shape_list() -> Array:
 	return meta("male").get("shapes", [])
@@ -53,10 +53,16 @@ static var _sources := {}
 ## The raw surface arrays and blend-shape arrays the mesh is built from: [arrays, shapes].
 ## Garments are cut from these (an ArrayMesh made by ImporterMesh can't hand its
 ## blend-shape arrays back: surface_get_blend_shape_arrays returns nothing).
+static var _src_lock := Mutex.new()
+
+
 static func source(sex: String) -> Array:
+	_src_lock.lock()
 	if not _sources.has(sex):
 		_sources[sex] = _read(sex)
-	return _sources[sex]
+	var out: Array = _sources[sex]
+	_src_lock.unlock()
+	return out
 
 
 static func build(sex: String) -> ArrayMesh:
@@ -119,7 +125,37 @@ static func _read(sex: String) -> Array:
 		sa[Mesh.ARRAY_VERTEX] = _v3(take.call(n * 3).to_float32_array())
 		sa[Mesh.ARRAY_NORMAL] = _v3(take.call(n * 3).to_float32_array())
 		shapes.append(sa)
+	_normalize_race_shapes(pos, uv, shapes)
 	return [arrays, shapes]
+
+
+## The MakeHuman ethnicity targets also change stature (about +8 cm african,
+## -10 cm asian at full weight), which broke the record heights (cm precision)
+## and slid shoulders and arms off their joints (sleeves sank into jackets).
+## Scale each one back to the base height: the face and body proportions stay.
+const HEIGHT_NEUTRAL := ["caucasian", "african", "asian"]
+
+static func _normalize_race_shapes(pos: PackedVector3Array, uv: PackedVector2Array, shapes: Array) -> void:
+	var names := shape_list()
+	var top0 := 0.0
+	for i in pos.size():
+		if int(floor(uv[i].x + 0.01)) == 3:
+			top0 = maxf(top0, pos[i].y)
+	for nm in HEIGHT_NEUTRAL:
+		var si: int = names.find(nm)
+		if si < 0:
+			continue
+		var sp: PackedVector3Array = shapes[si][Mesh.ARRAY_VERTEX]
+		var top := 0.0
+		for i in sp.size():
+			if int(floor(uv[i].x + 0.01)) == 3:
+				top = maxf(top, sp[i].y)
+		if top <= 0.0:
+			continue
+		var k := top0 / top
+		for i in sp.size():
+			sp[i] = Vector3(sp[i].x * k, sp[i].y * k, sp[i].z * k)
+		shapes[si][Mesh.ARRAY_VERTEX] = sp
 
 
 static func _v3(f: PackedFloat32Array) -> PackedVector3Array:

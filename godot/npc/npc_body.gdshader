@@ -44,6 +44,9 @@ void fragment() {
 	float th = UV2.x * 360.0;
 	float df = abs(th - 270.0);          // degrees away from facing forward
 	vec3 col = skin_color;
+	float hairline_w = 0.0;
+	float lip_w = 0.0;
+	float brow_w = 0.0;
 	float rough = 0.55;
 	float spec = 0.4;
 	int mat = 0;                          // 0 skin, 1 top, 2 bottom, 3 shoe, 4 hair, 5 eye, 6 lip
@@ -74,21 +77,36 @@ void fragment() {
 			vec3 dv = normalize(COLOR.rgb * 2.0 - 1.0);
 			e = degrees(acos(clamp(-dv.z, -1.0, 1.0))) / 32.0 * 0.075;
 		}
-		col = e < 0.075 ? (e < 0.024 ? vec3(0.015) : eye_color * (0.7 + 6.0 * (e - 0.032))) : mix(vec3(0.95, 0.93, 0.9), vec3(0.88, 0.8, 0.78), smoothstep(0.2, 0.5, e));
+		col = e < 0.075 ? (e < 0.024 ? vec3(0.015) : eye_color * (0.7 + 6.0 * (e - 0.032))) : mix(vec3(0.86, 0.84, 0.8), vec3(0.8, 0.72, 0.7), smoothstep(0.2, 0.5, e));
 		if (e > 0.06 && e < 0.08) col *= 0.6;   // limbal ring
+		if (use_regions > 0.5 && e < 0.075 && e > 0.024) {
+			// iris fibres radiating from the pupil, darker outer ring, lighter collarette
+			vec3 dv2 = normalize(COLOR.rgb * 2.0 - 1.0);
+			float ia = atan(dv2.y, dv2.x);
+			float fib = vnoise(vec2(ia * 22.0, e * 90.0)) * 0.6 + vnoise(vec2(ia * 60.0, e * 200.0)) * 0.4;
+			col *= 0.7 + 0.6 * fib;
+			col = mix(col, eye_color * 1.5, smoothstep(0.034, 0.028, e) * 0.5);
+			col *= mix(1.0, 0.55, smoothstep(0.055, 0.072, e));
+		}
+		if (use_regions > 0.5 && e > 0.09) col = mix(col, vec3(0.86, 0.7, 0.68), smoothstep(0.3, 0.6, e) * 0.5);   // warmer corners
 	} else if (part == 7) {               // finger: nail on the back near the tip
 		float a = min(th, 360.0 - th);    // 0 = back of the finger
 		if (use_regions > 0.5 ? COLOR.b > 0.5 : (a < 42.0 && UV2.y > 0.74 && UV2.y < 0.97)) mat = 7;
 	} else if (part == 3 && use_regions > 0.5) {   // MakeHuman head
 		float line = df < 40.0 ? mix(hair_front, hair_side, smoothstep(20.0, 40.0, df))
 			: (df < 110.0 ? mix(hair_side, hair_back, smoothstep(70.0, 110.0, df)) : hair_back);
-		if (hair_amount > 0.01 && yn > line - 0.004) mat = 4;
+		// soft, irregular hairline: fine hairs thin out over ~1 cm instead of a hard edge
+		float hn = vnoise(vec2(UV2.x * 1400.0, yn * 260.0));
+		hairline_w = hair_amount > 0.01 ? smoothstep(line - 0.009, line + 0.001, yn + (hn - 0.5) * 0.005) : 0.0;
+		if (hairline_w > 0.97) mat = 4;
 		if (stubble > 0.01 && COLOR.a > 0.01) {
 			float dots = step(1.0 - stubble * 0.9, vnoise(vec2(UV2.x * 2400.0, yn * 8000.0)));
 			col = mix(col, hair_color * 0.8, COLOR.a * mix(dots * 0.6, 0.9, smoothstep(0.6, 1.0, stubble)));
 		}
-		if (COLOR.r > 0.5) mat = 6;
-		if (COLOR.g > 0.55) mat = 9;
+		// lips and brows blend into the skin (no cut-out edges)
+		lip_w = smoothstep(0.3, 0.8, COLOR.r);
+		float bs = vnoise(vec2(UV2.x * 3600.0 + yn * 900.0, yn * 700.0));   // hairs along the brow
+		brow_w = smoothstep(0.3, 0.7, COLOR.g) * (0.75 + 0.25 * bs);
 		if (UV2.y > 0.72) col = mix(col, hair_color * 0.2 + vec3(0.02), clamp((UV2.y - 0.72) / 0.2, 0.0, 1.0));   // lash line
 	} else if (part == 3) {               // head
 		float line = df < 40.0 ? mix(hair_front, hair_side, smoothstep(20.0, 40.0, df))
@@ -133,6 +151,16 @@ void fragment() {
 			float warm = smoothstep(55.0, 20.0, abs(df - 28.0)) * smoothstep(0.035, 0.0, abs(yn - 0.925)) * 0.5
 				+ smoothstep(9.0, 0.0, df) * smoothstep(0.02, 0.0, abs(yn - 0.918)) * 0.6;
 			col = mix(col, col * vec3(1.08, 0.86, 0.84), warm * 0.45);
+			float under_eye = smoothstep(14.0, 4.0, abs(df - 22.0)) * smoothstep(0.008, 0.0, abs(yn - 0.931));
+			col *= 1.0 - 0.1 * under_eye;
+			// broad, low-frequency tone variation (no skin is one flat colour)
+			col *= 1.0 + 0.05 * (vnoise(vec2(UV2.x * 40.0, yn * 90.0)) - 0.5) * detail;
+			vec3 lipc = skin_color * vec3(0.92, 0.74, 0.74) * mix(0.85, 0.75, smoothstep(0.4, 0.1, skin_color.r));
+			col = mix(col, lipc, lip_w);
+			rough = mix(rough, 0.42, lip_w);
+			col = mix(col, hair_color * 0.6 + skin_color * 0.05, brow_w);
+			float hs = vnoise(vec2(UV2.x * 900.0, yn * 160.0));
+			col = mix(col, hair_color * (0.6 + 0.35 * hs), hairline_w);
 		}
 	} else if (mat == 1 || mat == 2) {
 		col = mat == 1 ? top_color : bottom_color;
@@ -170,7 +198,7 @@ void fragment() {
 	SPECULAR = spec;
 	if (mat == 0 || mat == 6) {
 		// Skin: subsurface scattering (soft light bleed, red terminator) and a faint peach-fuzz rim.
-		SSS_STRENGTH = 0.55 * detail;
+		SSS_STRENGTH = 0.7 * detail;
 		RIM = 0.12;
 		RIM_TINT = 0.6;
 		if (part == 3 && mat == 0) {
@@ -181,7 +209,7 @@ void fragment() {
 	}
 	if (mat == 5 || mat == 6 || mat == 7) {
 		// wet eyes, lips and nails: a thin clear coat over the base
-		CLEARCOAT = mat == 5 ? 1.0 : (mat == 6 ? 0.35 : 0.7);
+		CLEARCOAT = mat == 5 ? 1.0 : (mat == 6 ? 0.15 : 0.7);
 		CLEARCOAT_ROUGHNESS = mat == 5 ? 0.02 : 0.25;
 	}
 	if (mat == 1 || mat == 2) {

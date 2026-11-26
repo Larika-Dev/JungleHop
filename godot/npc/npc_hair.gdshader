@@ -20,27 +20,11 @@ void fragment() {
 	ALPHA = strand * edge;
 	ALPHA_SCISSOR_THRESHOLD = 0.35;
 	vec3 c = hair_color * (0.7 + 0.4 * r) * mix(0.75, 1.05, UV.y);
-	// strand direction from the UV derivatives -> anisotropic highlight running across the
-	// strands (the bright band on real hair), plus a dimmer secondary band via rim light
-	vec3 dpdx = dFdx(VERTEX);
-	vec3 dpdy = dFdy(VERTEX);
-	float dudx = dFdx(UV.x);
-	float dudy = dFdy(UV.x);
-	vec3 strand_dir = dudy * dpdx - dudx * dpdy;
-	if (dot(strand_dir, dFdx(UV.y) * dpdx + dFdy(UV.y) * dpdy) < 0.0) strand_dir = -strand_dir;
-	if (length(strand_dir) > 1e-8) {
-		vec3 tn = normalize(strand_dir - NORMAL * dot(NORMAL, strand_dir));
-		TANGENT = tn;
-		BINORMAL = cross(NORMAL, tn);
-		ANISOTROPY = 0.85;
-		ANISOTROPY_FLOW = vec2(1.0, 0.0);
-	}
 	// root-to-tip darkening and per-strand value noise
 	c *= 0.85 + 0.3 * hash(lane * 7.3 + floor(UV.x * 31.0));
 	ALBEDO = c;
-	ROUGHNESS = 0.38;
-	SPECULAR = 0.5;
-	RIM = 0.25;
-	RIM_TINT = 0.8;
-	BACKLIGHT = c * 0.4;
+	// soft sheen, no glitter: strand cards facing the sun used to flash white
+	ROUGHNESS = 0.55;
+	SPECULAR = 0.15;
+	AO = mix(0.55, 1.0, UV.y);   // roots sit in the shadow of the hair above
 }
