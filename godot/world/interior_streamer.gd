@@ -324,7 +324,7 @@ func _attic_cap(id: String, r: Dictionary) -> float:
 		var w: float = bd["footprintCm"][0] / 100.0
 		edge = minf(edge, minf(minf(rc[0], w - rc[0]), minf(rc[2], w - rc[2])))
 	var pitch := deg_to_rad(35.0 if bd.get("typology", "") == "house" else 28.0)
-	return maxf(eave + edge * tan(pitch) - y - 0.08, 1.0)
+	return maxf(eave + edge * tan(pitch) - y - 0.08, 0.3)
 
 
 ## One wall run along a room edge (a -> b, axis-aligned), offset outward by WALL_T, with openings cut.
