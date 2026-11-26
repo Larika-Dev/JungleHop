@@ -27,6 +27,8 @@ var _tree_far: Array[MultiMeshInstance3D] = []
 var _terrain_meshes: Array = []
 var _road_mesh: MeshInstance3D
 var street_lights: StreetLights
+var street_props: StreetProps
+var ground_decals: GroundDecals
 
 
 func _ready() -> void:
@@ -53,6 +55,13 @@ func _ready() -> void:
 		add_child(street_lights)
 		street_lights.setup(_road_mesh)
 		street_lights.target = player
+	street_props = StreetProps.new()
+	street_props.name = "StreetProps"
+	add_child(street_props)
+	street_props.target = player
+	ground_decals = GroundDecals.new()
+	ground_decals.name = "GroundDecals"
+	add_child(ground_decals)
 	add_child(load(HUD_SCENE).instantiate())
 	GameState.world = self
 	GameState.in_game = true

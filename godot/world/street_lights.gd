@@ -10,12 +10,23 @@ const LIGHT_RANGE := 20.0
 
 var target: Node3D
 var positions: PackedVector3Array = PackedVector3Array()
+var colors: PackedColorArray = PackedColorArray()
+## Lamp posts from data/props.json (acorn LED on Hamilton & main streets, campus lanterns, sodium
+## cobra heads on side streets), placed by the web city's road network. Falls back to the
+## sidewalk-triangle scan when the file is missing.
+const PROPS := "res://data/props.json"
+const LAMP_MODELS := ["lamp_acorn", "lamp_lantern", "lamp_cobra"]
+const LAMP_HEIGHT := [4.1, 3.35, 8.2]
+const LAMP_KEYS := ["LAMP_LED", "LAMP_CAMPUS", "LAMP_SODIUM"]
 var _pool: Array[OmniLight3D] = []
 var _head_mat: StandardMaterial3D
 var _timer := 0.0
 
 
 func setup(road_mesh: MeshInstance3D) -> void:
+	if _load_lamps():
+		_make_pool()
+		return
 	var a := road_mesh.mesh.surface_get_arrays(0)
 	var v: PackedVector3Array = a[Mesh.ARRAY_VERTEX]
 	var c: PackedColorArray = a[Mesh.ARRAY_COLOR]
@@ -42,6 +53,13 @@ func setup(road_mesh: MeshInstance3D) -> void:
 		if not _in_building(p):
 			positions.append(p)
 	_build_meshes()
+	for i in positions.size():
+		positions[i] += Vector3(0, 4.0, 0)
+		colors.append(CityData.color("LAMP_SODIUM", Color(1.0, 0.72, 0.4)))
+	_make_pool()
+
+
+func _make_pool() -> void:
 	for i in POOL:
 		var l := OmniLight3D.new()
 		l.light_color = CityData.color("LAMP_SODIUM", Color(1.0, 0.72, 0.4))
@@ -53,6 +71,40 @@ func setup(road_mesh: MeshInstance3D) -> void:
 		l.visible = false
 		add_child(l)
 		_pool.append(l)
+
+
+func _load_lamps() -> bool:
+	if not FileAccess.file_exists(PROPS):
+		return false
+	var d = JSON.parse_string(FileAccess.get_file_as_string(PROPS))
+	if typeof(d) != TYPE_DICTIONARY or d.get("lamps", []).is_empty():
+		return false
+	var by_type := [[], [], []]
+	for e in d["lamps"]:
+		var t := clampi(int(e[4]), 0, 2)
+		var xf := Transform3D(Basis(Vector3.UP, float(e[3])), Vector3(e[0], e[1], e[2]))
+		by_type[t].append(xf)
+		# cobra heads hang 2.2 m out over the street (local -z)
+		positions.append(xf * Vector3(0, LAMP_HEIGHT[t], -2.2 if t == 2 else 0.0))
+		colors.append(CityData.color(LAMP_KEYS[t], Color(1.0, 0.8, 0.6)))
+	_head_mat = StandardMaterial3D.new()   # unused with typed lamps (their glow parts follow cm_night)
+	for t in 3:
+		if by_type[t].is_empty():
+			continue
+		var info := PropModels.build(LAMP_MODELS[t])
+		var mm := MultiMesh.new()
+		mm.transform_format = MultiMesh.TRANSFORM_3D
+		mm.use_custom_data = true
+		mm.mesh = info.mesh
+		mm.instance_count = by_type[t].size()
+		for i in by_type[t].size():
+			mm.set_instance_transform(i, by_type[t][i])
+			mm.set_instance_custom_data(i, Color(1, 1, 1, fposmod(i * 0.618, 1.0)))
+		var mmi := MultiMeshInstance3D.new()
+		mmi.name = LAMP_MODELS[t]
+		mmi.multimesh = mm
+		add_child(mmi)
+	return true
 
 
 func _in_building(p: Vector3) -> bool:
@@ -118,14 +170,16 @@ func _process(d: float) -> void:
 	# nearest lamps get the real lights
 	var p := target.global_position
 	var near: Array = []
-	for q in positions:
+	for qi in positions.size():
+		var q := positions[qi]
 		var dd := q.distance_squared_to(p)
 		if dd < 160.0 * 160.0:
-			near.append([dd, q])
+			near.append([dd, q, colors[qi]])
 	near.sort_custom(func(x, y): return x[0] < y[0])
 	for i in _pool.size():
 		if i < near.size():
-			_pool[i].position = near[i][1] + Vector3(0, 4.0, 0)
+			_pool[i].position = near[i][1]
+			_pool[i].light_color = near[i][2]
 			_pool[i].visible = true
 		else:
 			_pool[i].visible = false

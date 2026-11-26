@@ -43,7 +43,9 @@ void fragment() {
 	float sat = mx > 0.0001 ? (mx - mn) / mx : 0.0;
 	bool grass = base.g > base.r * 1.15 && base.g > base.b * 1.6;
 	bool marking = base.r > 0.35 && base.b < 0.1 && sat > 0.8;
-	bool brick = !grass && !marking && base.r > base.g * 2.2 && mx > 0.08;
+	bool soil_red = lift <= 0.0 && !grass && !marking && base.r > base.g * 2.2 && mx > 0.08;   // RED_CLAY banks / PINE_STRAW beds on the terrain
+	bool brick = !grass && !marking && !soil_red && base.r > base.g * 2.2 && mx > 0.08;
+	bool forest = lift <= 0.0 && !grass && !marking && !soil_red && sat > 0.6 && mx < 0.25 && base.b < base.g * 0.45;   // forest floor
 	bool asphalt = !grass && !marking && mx < 0.09 && sat < 0.5;
 	vec3 col = base;
 	float rough = 0.9;
@@ -51,7 +53,24 @@ void fragment() {
 	float spec = 0.4;
 	float macro = cm_fbm(p * 0.03, 3);
 	float meso = cm_fbm(p * 0.35, 3);
-	if (grass) {
+	if (forest || soil_red) {
+		// forest floor / clay banks: leaf litter over dark soil, twigs, moss, exposed clay
+		vec3 soil = soil_red ? base : vec3(0.1, 0.07, 0.035);
+		vec3 leafa = vec3(0.258, 0.102, 0.027);   // FALLEN_LEAF_A, linear
+		vec3 leafb = vec3(0.434, 0.254, 0.027);   // FALLEN_LEAF_B
+		vec3 moss = vec3(0.075, 0.11, 0.025);     // MOSS
+		float litter = smoothstep(0.35, 0.65, cm_fbm(p * 0.25 + 3.0, 3));
+		vec2 lc = cm_voronoi(p * 9.0);
+		float leaf = mix(0.5, step(0.08, lc.x), cm_aa(9.0, fw));   // leaf-sized cells, dark gaps
+		vec3 lcol = mix(leafa, leafb, lc.y) * (0.7 + 0.5 * cm_hash(floor(p * 9.0)));
+		col = mix(soil * (0.8 + 0.4 * meso), lcol * (0.6 + 0.4 * leaf), soil_red ? litter * 0.35 : 0.55 + 0.4 * litter);
+		col = mix(col, moss, smoothstep(0.62, 0.8, cm_fbm(p * 0.7 + 11.0, 3)) * 0.5);
+		float twig = 1.0 - smoothstep(0.0, 0.02 + fw, abs(cm_noise(p * vec2(1.3, 11.0)) - 0.5));
+		col *= 1.0 - twig * 0.3 * cm_aa(11.0, fw) * near;
+		rough = 0.95;
+		h = leaf * 0.006 * cm_aa(9.0, fw) + meso * 0.02;
+		spec = 0.3;
+	} else if (grass) {
 		// patchy lawns: lush/dry hue shifts, worn dirt, clover clumps, leaf litter under trees
 		vec3 worn = vec3(0.21, 0.25, 0.075);     // GRASS_WORN, linear
 		vec3 dirt = vec3(0.26, 0.2, 0.11);       // DIRT_PATH, linear
@@ -71,11 +90,12 @@ void fragment() {
 		float grit = mix(0.5, cm_noise(p * 300.0), cm_aa(300.0, fw));
 		col = base * (0.85 + 0.25 * macro + 0.3 * (agg - 0.5) + 0.15 * (grit - 0.5));
 		vec2 vc = cm_voronoi(p * 0.35);
-		float crack = (1.0 - smoothstep(0.0, 0.035 + fw * 0.35, vc.x)) * smoothstep(0.55, 0.75, cm_fbm(p * 0.08, 3)) * mid * cm_aa(8.0, fw);
+		// hairline cracks, only in patches and broken along their length
+		float crack = (1.0 - smoothstep(0.0, 0.012 + fw * 0.3, vc.x)) * smoothstep(0.62, 0.8, cm_fbm(p * 0.08, 3)) * step(0.4, cm_noise(p * 1.7)) * mid * cm_aa(8.0, fw);
 		vec3 patch_col = vec3(0.039, 0.041, 0.044);   // ASPHALT_PATCH, linear
 		float patchm = step(0.82, vc.y) * smoothstep(0.62, 0.66, cm_fbm(p * 0.2 + 2.0, 2));
 		col = mix(col, patch_col, patchm * 0.8);
-		col = mix(col, vec3(0.012), crack * 0.85);
+		col = mix(col, vec3(0.018), crack * 0.7);
 		rough = 0.82 - 0.12 * smoothstep(0.4, 0.8, macro) + 0.1 * grit;
 		h = (agg - 0.5) * 0.0008 * cm_aa(120.0, fw) + (grit - 0.5) * 0.0003 * cm_aa(300.0, fw) - crack * 0.004;
 		spec = 0.45;

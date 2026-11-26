@@ -6,3 +6,4 @@ cd "$(dirname "$0")/../.."
 cp data/buildings.json data/rooms.json data/palette.json godot/data/
 cp export/cathedral-mount-map-labels.json godot/data/map-labels.json
 node tools/godot/export-godot-map.mjs
+npx vite-node tools/godot/export-godot-props.ts   # street props, parked cars, lamps, poles, decals -> godot/data/props.json
