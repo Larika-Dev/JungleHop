@@ -31,6 +31,10 @@ func _ready() -> void:
 		# Load every class on the main thread before the worker uses them.
 		NpcDemographics.complexion_for("white", RandomNumberGenerator.new())
 		NpcHeights.inverse_normal(0.5)
+		if NpcBody.use_mh:
+			NpcMhMesh.meta("male")
+			NpcMhMesh.meta("female")
+			var _w := NpcWardrobe.FIT_SHAPES.size() + NpcGarmentFit.REGIONS
 		_thread = Thread.new()
 		_thread.start(_generate_in_background)
 	var gs := get_node_or_null("/root/GameState")
@@ -51,6 +55,9 @@ func _generate_in_background() -> Array:
 			if not FileAccess.file_exists(path):
 				var arrays := NpcBodyMesh.new().build_arrays(sex, lod)
 				_finish_mesh.call_deferred(sex, lod, arrays)
+	# Clothing fit tables (body cross-sections) for loose garments.
+	if NpcBody.use_mh:
+		NpcGarmentFit.warm()
 	_finish.call_deferred(pop)
 	return pop
 

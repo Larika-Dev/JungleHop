@@ -36,7 +36,7 @@ static func _items() -> Array:
 		_it("puffer", "Puffer jacket", "outer", "#142B4E", "#0E1E38", 0, {"thick": 0.022, "hem": 0.52, "sleeve": 0.49}),
 		_it("rain_shell", "Rain shell", "outer", "#C9A227", "#3A3C3E", 0, {"thick": 0.009, "hem": 0.5, "sleeve": 0.48, "turtle": true}),
 		_it("peacoat", "Wool peacoat", "outer", "#1E2633", "#B08D57", 4, {"thick": 0.013, "hem": 0.5, "sleeve": 0.49, "coat": 0.38}),
-		_it("blazer", "Blazer", "outer", "#3A3C3E", "#1E1F1F", 4, {"thick": 0.008, "hem": 0.5, "sleeve": 0.49, "open": true}),
+		_it("blazer", "Blazer", "outer", "#3A3C3E", "#1E1F1F", 4, {"thick": 0.008, "hem": 0.5, "sleeve": 0.49, "vneck": 0.1}),
 		_it("varsity", "ONSU varsity jacket", "outer", "#142B4E", "#80B4D9", 0, {"thick": 0.011, "hem": 0.555, "sleeve": 0.49}),
 		_it("cardigan", "Cardigan", "outer", "#8E7A5E", "#6E5E48", 4, {"thick": 0.007, "hem": 0.5, "sleeve": 0.49, "open": true}),
 		_it("trench", "Trench coat", "outer", "#B5A68A", "#8C7E62", 0, {"thick": 0.011, "hem": 0.5, "sleeve": 0.48, "coat": 0.30, "open": true}),
@@ -144,6 +144,9 @@ static func outfit_for(rec: Dictionary) -> Dictionary:
 ## signed distance (in height fractions) inside the garment's edges. Vertices a
 ## little outside (y > -MARGIN) are kept so the shader can cut clean hems.
 const MARGIN := 0.025
+## Body shapes that change the build or proportions: garments are re-fitted for
+## each (the others just follow the body).
+const FIT_SHAPES := ["fat", "slim", "muscle"]
 const NONE := Vector2(0.0, -1.0)
 
 
@@ -197,17 +200,29 @@ static func _cover(it: Dictionary, part: int, yn: float, df: float, x: float = 0
 
 static func _upper(it: Dictionary, part: int, yn: float, df: float, t: float) -> Vector2:
 	if part == 0:
-		var top_y: float = it.neck - (it.vneck * clampf(1.0 - df / 25.0, 0.0, 1.0))
-		var m := minf(yn - it.hem, top_y - yn)
+		# Neckline: a round crew neck around the base of the neck (not a straight
+		# cut across the shoulders), lowered into a V at the front for V-necks.
+		var p := _pos
+		var dz := p.z - _neck.z
+		var dh := Vector2(p.x, dz * 1.15).length()
+		var r_n := 0.074 + (0.012 if it.slot == "outer" else 0.0)
+		var top := maxf(it.neck - 0.035 - yn, (dh - r_n) / _H)
+		if it.vneck > 0.0 and dz < 0.0:
+			# the V: from the neck down to (neck - vneck) at the centre front
+			var v_bottom: float = it.neck - 0.03 - it.vneck
+			var half_w := clampf((yn - v_bottom) * 0.55, 0.0, 0.06) * _H
+			if yn > v_bottom:
+				top = minf(top, (absf(p.x) - half_w) / _H)
+		var m := minf(yn - it.hem, top)
 		if it.open:
-			m = minf(m, (df - 5.0) / 400.0)
+			m = minf(m, (df - 11.0) / 400.0)
 		# looser over the belly and back than over the shoulders
 		var loose := 1.0 + 0.8 * clampf((0.72 - yn) / 0.12, 0.0, 1.0)
 		return Vector2(t * loose, m)
 	if part == 2:
 		return Vector2(t * 1.2, yn - it.sleeve)
 	if part == 6:
-		return Vector2(t, 0.86 - yn) if it.turtle else Vector2(t, it.neck - yn)
+		return Vector2(t, 0.86 - yn) if it.turtle else Vector2(t, it.neck - 0.04 - yn)
 	return NONE
 
 
@@ -227,10 +242,32 @@ static func material(it: Dictionary, tint = null) -> ShaderMaterial:
 	m.set_shader_parameter("color2", it.color2)
 	m.set_shader_parameter("pattern", it.pattern)
 	m.set_shader_parameter("is_shoe", 1.0 if it.slot == "shoes" else 0.0)
+	var kind := 0
+	match it.slot:
+		"bottom":
+			kind = 2 if it.skirt > 0.0 else 1
+		"outer":
+			kind = 3
+		"shoes":
+			kind = 4
+		"under_top", "under_bottom":
+			kind = 5
+	m.set_shader_parameter("kind", kind)
+	m.set_shader_parameter("quilted", 1.0 if it.id == "puffer" else 0.0)
+	m.set_shader_parameter("pockets", 1.0 if it.id in ["jeans_dark", "jeans_light", "chinos_khaki", "chinos_navy", "denim_shorts", "cargo_shorts", "slacks", "corduroy"] else 0.0)
 	return m
 
 
+# Neckline context for _cover: the neck's centre and the model height.
+static var _neck := Vector3(0, 1.45, -0.01)
+static var _H := 1.7
+static var _pos := Vector3.ZERO
+
+
 static func _build(sex: String, it: Dictionary) -> ArrayMesh:
+	if NpcBody.use_mh:
+		_neck = NpcMhMesh.rest_positions(sex)[NpcBodyMesh.B_NECK]
+		_H = NpcMhMesh.height(sex)
 	var src: ArrayMesh = NpcBody.mesh_for(sex, 0)
 	var a: Array
 	var shapes: Array
@@ -255,6 +292,7 @@ static func _build(sex: String, it: Dictionary) -> ArrayMesh:
 	mg.resize(n)
 	for i in n:
 		var part := int(floor(UV[i].x + 0.01))
+		_pos = V[i]
 		var cv := _cover(it, part, UV[i].y, absf(UV2[i].x * 360.0 - 270.0), V[i].x) if part <= 6 else NONE
 		th[i] = cv.x
 		mg[i] = cv.y
@@ -282,10 +320,12 @@ static func _build(sex: String, it: Dictionary) -> ArrayMesh:
 	out[Mesh.ARRAY_TEX_UV2] = ouv2
 	var out_shapes := []
 	for s in shapes:
-		out_shapes.append(_gather(keep, s[Mesh.ARRAY_VERTEX], s[Mesh.ARRAY_NORMAL], th, null, null, null, null, null))
-	_drape(it, out, out_shapes, keep, V, N, th, UV, UV2)
+		# offset along the base normals: some shapes' normals are flipped in the
+		# source data, which pushed sleeves inside the arm for those people
+		out_shapes.append(_gather(keep, s[Mesh.ARRAY_VERTEX], N, th, null, null, null, null, null))
+	_drape(it, sex, out, out_shapes, keep, V, N, th, UV, UV2, shapes)
 	if it.skirt > 0.0 or it.coat > 0.0:
-		_add_skirt(it, V, UV, src.get_blend_shape_count(), out, out_shapes)
+		_add_skirt(it, sex, V, UV, src.get_blend_shape_count(), out, out_shapes)
 	var m := ArrayMesh.new()
 	m.blend_shape_mode = Mesh.BLEND_SHAPE_MODE_NORMALIZED
 	for i in src.get_blend_shape_count():
@@ -332,29 +372,21 @@ static func _gather(keep: PackedInt32Array, V: PackedVector3Array, N: PackedVect
 	return arr
 
 
-## A flared tube from the hips to the hem, around both legs.
-static func _add_skirt(it: Dictionary, V: PackedVector3Array, UV: PackedVector2Array, nshapes: int, out: Array, out_shapes: Array) -> void:
+## A tube from the hips to the hem, around both legs: each ring is the hull
+## of the hips/legs at that height (NpcGarmentFit), hanging down from the hips,
+## with ease, flare and soft vertical folds (sharp ones for pleats).
+static func _add_skirt(it: Dictionary, sex: String, V: PackedVector3Array, UV: PackedVector2Array, nshapes: int, out: Array, out_shapes: Array) -> void:
 	var H := 0.0
 	for p in V:
 		H = maxf(H, p.y)
-	var y0 := (0.52 if it.coat <= 0.0 else 0.5) * H
-	var rx := 0.0
-	var zmin := 1.0
-	var zmax := -1.0
-	for i in V.size():
-		var part := int(floor(UV[i].x + 0.01))
-		if (part == 0 or part == 1) and absf(V[i].y - y0) < 0.02 * H:
-			rx = maxf(rx, absf(V[i].x))
-			zmin = minf(zmin, V[i].z)
-			zmax = maxf(zmax, V[i].z)
-	var cz := (zmin + zmax) * 0.5
-	var rz := (zmax - zmin) * 0.5
-	rx += it.thick + 0.012
-	rz += it.thick + 0.012
-	var y1: float = (it.skirt if it.coat <= 0.0 else it.coat) * H
-	var flare: float = it.flare if it.coat <= 0.0 else 1.12
-	var rings := int((y0 - y1) / 0.02) + 1
-	const SEG := 40
+	var coat: bool = it.coat > 0.0
+	var y0 := (float(it.waist) - 0.035) * H if not coat else 0.535 * H
+	var y1: float = (it.skirt if not coat else it.coat) * H
+	var flare: float = it.flare if not coat else 1.1
+	var ease: float = 0.012 + float(it.thick) + (0.012 if coat else 0.0)
+	var pleats: bool = it.pattern == 1 and not it.get("dress", false) and it.id.contains("pleat")
+	var rings := int((y0 - y1) / 0.015) + 1
+	const SEG := 72
 	var pv: PackedVector3Array = out[Mesh.ARRAY_VERTEX]
 	var pn: PackedVector3Array = out[Mesh.ARRAY_NORMAL]
 	var uv: PackedVector2Array = out[Mesh.ARRAY_TEX_UV]
@@ -364,23 +396,51 @@ static func _add_skirt(it: Dictionary, V: PackedVector3Array, UV: PackedVector2A
 	var idx: PackedInt32Array = out[Mesh.ARRAY_INDEX]
 	var base := pv.size()
 	var pelvis := NpcBodyMesh.B_PELVIS
-	var shape_scale := {"fat": 1.12, "slim": 0.94}
-	var ring_pts := []
+	var names: Array = NpcBody.shape_names()
+	var ring_sets := {}
+	for sidx in [-1] + range(names.size()).filter(func(i): return names[i] in FIT_SHAPES):
+		var tab := NpcGarmentFit.draped(NpcGarmentFit.tables(sex, sidx)[NpcGarmentFit.R_TRUNK], y0, 0.16, 3)
+		var r0 := 0.0
+		for k in SEG:
+			r0 += NpcGarmentFit.lookup(tab, y0, TAU * k / SEG).x / SEG
+		var pts := PackedVector3Array()
+		var prev := PackedFloat32Array()
+		prev.resize(SEG)
+		for r in rings + 1:
+			var f := float(r) / rings
+			var y := lerpf(y0, y1, f)
+			for k in SEG:
+				var ang := TAU * k / SEG
+				var L := NpcGarmentFit.lookup(tab, y, ang)
+				var R := L.x + ease + (flare - 1.0) * r0 * pow(f, 1.6)
+				if r > 0:
+					R = maxf(R, prev[k] - 0.12 * (y0 - y1) / rings)   # cloth can't tuck in under the seat
+				prev[k] = R
+				var fold := 0.0
+				if pleats:
+					fold = 0.006 * (absf(fposmod(ang * 32.0 / TAU, 1.0) - 0.5) * 4.0 - 1.0) * (0.3 + f)
+				else:
+					fold = (0.004 + 0.012 * (flare - 1.0)) * f * (sin(ang * 11.0 + 0.7) * 0.6 + sin(ang * 19.0 + 2.1) * 0.4)
+				R += fold
+				var c := Vector2(L.y + cos(ang) * R, L.z + sin(ang) * R)
+				pts.append(tab.o + tab.a * y + tab.e1 * c.x + tab.e2 * c.y)
+		ring_sets[sidx] = pts
+	var P0: PackedVector3Array = ring_sets[-1]
 	for r in rings + 1:
 		var f := float(r) / rings
 		var y := lerpf(y0, y1, f)
-		var s := lerpf(1.0, flare, f)
 		for k in SEG:
 			var ang := TAU * k / SEG
-			var d := Vector3(cos(ang) * rx * s, 0, sin(ang) * rz * s)
-			pv.append(Vector3(d.x, y, cz + d.z))
-			pn.append(Vector3(cos(ang) * rz, 0.15, sin(ang) * rx).normalized())
+			var i := r * SEG + k
+			pv.append(P0[i])
+			var nrm := Vector3(cos(ang), 0.12, sin(ang)).normalized()
+			pn.append(nrm)
 			uv.append(Vector2(12.0, y / H))
 			uv2.append(Vector2(fposmod(ang / TAU, 1.0), 1.0))
 			# the hem follows the legs: left half with the left thigh, right with the right
 			var u := clampf(cos(ang), -1.0, 1.0)
-			var wl := 0.9 * f * (0.5 - 0.5 * u)
-			var wr := 0.9 * f * (0.5 + 0.5 * u)
+			var wl := 0.85 * f * (0.5 - 0.5 * u)
+			var wr := 0.85 * f * (0.5 + 0.5 * u)
 			b.append_array([pelvis, NpcBodyMesh.B_THIGH_L, NpcBodyMesh.B_THIGH_R, 0])
 			w.append_array([1.0 - wl - wr, wl, wr, 0.0])
 			if r < rings:
@@ -390,12 +450,10 @@ static func _add_skirt(it: Dictionary, V: PackedVector3Array, UV: PackedVector2A
 	for si in out_shapes.size():
 		var sp: PackedVector3Array = out_shapes[si][Mesh.ARRAY_VERTEX]
 		var sn: PackedVector3Array = out_shapes[si][Mesh.ARRAY_NORMAL]
-		var nm: String = NpcBody.shape_names()[si]
-		var sc: float = shape_scale.get(nm, 1.0)
-		for j in range(base, pv.size()):
-			var p := pv[j]
-			sp.append(Vector3(p.x * sc, p.y, cz + (p.z - cz) * sc))
-			sn.append(pn[j])
+		var src: PackedVector3Array = ring_sets.get(si, P0)
+		for j in src.size():
+			sp.append(src[j])
+			sn.append(pn[base + j])
 		out_shapes[si][Mesh.ARRAY_VERTEX] = sp
 		out_shapes[si][Mesh.ARRAY_NORMAL] = sn
 	out[Mesh.ARRAY_VERTEX] = pv
@@ -407,12 +465,178 @@ static func _add_skirt(it: Dictionary, V: PackedVector3Array, UV: PackedVector2A
 	out[Mesh.ARRAY_INDEX] = idx
 
 
+static var _crotch := {}
+
+
+## Height of the crotch (lowest point of the trunk) in the rest mesh.
+static func crotch_y(sex: String) -> float:
+	if not _crotch.has(sex):
+		var src: Array = NpcMhMesh.source(sex)
+		var V: PackedVector3Array = src[0][Mesh.ARRAY_VERTEX]
+		var UV: PackedVector2Array = src[0][Mesh.ARRAY_TEX_UV]
+		var y := INF
+		for i in V.size():
+			if int(floor(UV[i].x + 0.01)) == 0:
+				y = minf(y, V[i].y)
+		_crotch[sex] = y
+	return _crotch[sex]
+
+
+## How each garment vertex is fitted: region, blend weight (0 = plain offset,
+## 1 = envelope), ease (looseness, m), drape slope per region and fold depth.
+static func _fit_plan(it: Dictionary, sex: String, keep: PackedInt32Array, V: PackedVector3Array, UV: PackedVector2Array) -> Dictionary:
+	var n := keep.size()
+	var rg := PackedInt32Array()
+	var W := PackedFloat32Array()
+	var E := PackedFloat32Array()
+	var F := PackedFloat32Array()
+	var TB := PackedFloat32Array()
+	var CR := PackedFloat32Array()
+	CR.resize(n)
+	rg.resize(n)
+	W.resize(n)
+	E.resize(n)
+	F.resize(n)
+	TB.resize(n)
+	var slot: String = it.slot
+	var loose: float = it.get("loose", 1.0)
+	var thick: float = it.thick
+	var H := NpcMhMesh.height(sex)
+	var rp: Array = NpcMhMesh.rest_positions(sex)
+	var arm_y: float = rp[NpcBodyMesh.B_UPPERARM_L].y - 0.035
+	var yc := crotch_y(sex)
+	var under: bool = slot in UNDER
+	var tight: bool = it.id == "leggings"
+	var baggy: bool = it.id in ["joggers", "sweatpants", "cargo_shorts", "athletic_shorts"]
+	var upper_cloth: bool = slot in ["top", "outer", "under_top"] or it.get("dress", false)
+	var base := NpcGarmentFit.tables(sex, -1)
+	var k := PackedFloat32Array()
+	k.resize(NpcGarmentFit.REGIONS)
+	k.fill(4.0)
+	var ttop := PackedFloat32Array()
+	ttop.resize(NpcGarmentFit.REGIONS)
+	ttop.fill(-INF)
+	var waist_y: float = float(it.waist) * H
+	for j in n:
+		var v := keep[j]
+		var p := V[v]
+		var r := NpcGarmentFit.region_of(UV[v])
+		rg[j] = r
+		if r < 0:
+			continue
+		var w := 1.0
+		var e := 0.0
+		var f := 0.0
+		match r:
+			NpcGarmentFit.R_TRUNK:
+				if upper_cloth and not (slot == "bottom" and p.y < waist_y - 0.02):
+					w = 1.0 - smoothstep(arm_y - 0.03, arm_y + 0.05, p.y)
+					e = (0.0012 if under else (0.024 + thick if slot == "outer" else 0.015)) * loose
+					if slot == "outer":
+						# jackets and coats stand out over the hips (room for a skirt or a tucked shirt)
+						e += 0.02 * smoothstep(0.6 * H, 0.5 * H, p.y)
+					f = 0.0 if under else (0.004 if slot == "outer" else 0.003)
+				else:
+					var band := smoothstep(waist_y + 0.01, waist_y - 0.07, p.y)
+					e = 0.0012 if under else (0.002 if tight else lerpf(0.003, 0.010, band))
+					f = 0.0 if under or tight else 0.002 * band
+			NpcGarmentFit.R_LEG_L, NpcGarmentFit.R_LEG_R:
+				e = 0.0012 if under else (0.002 if tight else (0.022 if baggy else 0.016))
+				TB[j] = 0.0 if tight else smoothstep(yc - 0.13, yc + 0.01, p.y)
+				f = 0.0 if under or tight else 0.003
+			NpcGarmentFit.R_ARM_L, NpcGarmentFit.R_ARM_R:
+				var tab: Dictionary = base[r]
+				var L: float = (rp[NpcBodyMesh.B_UPPERARM_L].distance_to(rp[NpcBodyMesh.B_HAND_L]))
+				var t := NpcGarmentFit.t_of(tab, p)
+				w = 1.0 - smoothstep(L - 0.07, L + 0.01, t)
+				e = 0.0012 if under else (0.016 + thick * 0.5 if slot == "outer" else 0.009)
+				f = 0.0 if under else 0.002
+			NpcGarmentFit.R_FOOT_L, NpcGarmentFit.R_FOOT_R:
+				e = 0.002 + thick * 0.4
+		W[j] = w
+		E[j] = e
+		F[j] = f
+		# the crotch of trousers and pants: cloth bridges front to back
+		if slot in ["bottom", "under_bottom"] and it.skirt <= 0.0 and not it.get("dress", false) and r <= NpcGarmentFit.R_LEG_R:
+			CR[j] = 0.6 * smoothstep(yc + 0.08, yc + 0.03, p.y) * smoothstep(0.07, 0.03, absf(p.x)) * (1.0 if r == NpcGarmentFit.R_TRUNK else 0.0)
+			if CR[j] > 0.0:
+				ttop[NpcGarmentFit.R_TRUNK] = maxf(ttop[NpcGarmentFit.R_TRUNK], NpcGarmentFit.t_of(base[NpcGarmentFit.R_TRUNK], p))
+		ttop[r] = maxf(ttop[r], NpcGarmentFit.t_of(base[r], p))
+		if TB[j] > 0.0:
+			ttop[NpcGarmentFit.R_TRUNK] = maxf(ttop[NpcGarmentFit.R_TRUNK], NpcGarmentFit.t_of(base[NpcGarmentFit.R_TRUNK], p))
+	if not under:
+		k[NpcGarmentFit.R_TRUNK] = 0.25 if slot == "outer" else (0.35 if upper_cloth else 0.5)
+		var leg_k := 3.0 if tight else (0.12 if baggy else 0.08)
+		k[NpcGarmentFit.R_LEG_L] = leg_k
+		k[NpcGarmentFit.R_LEG_R] = leg_k
+		k[NpcGarmentFit.R_ARM_L] = 0.3
+		k[NpcGarmentFit.R_ARM_R] = 0.3
+	if tight:
+		k[NpcGarmentFit.R_TRUNK] = 1.5
+	if upper_cloth:
+		# hang from just under the armpits (the shoulders are wider than the
+		# chest; cloth hanging from them would cut into the arms)
+		ttop[NpcGarmentFit.R_TRUNK] = minf(ttop[NpcGarmentFit.R_TRUNK], arm_y - 0.03)
+	var sm := PackedInt32Array()
+	sm.resize(NpcGarmentFit.REGIONS)
+	sm.fill(2 if under else 5)
+	var tol := PackedFloat32Array()
+	tol.resize(NpcGarmentFit.REGIONS)
+	tol.fill(0.0 if under or tight else 0.007)
+	sm[NpcGarmentFit.R_FOOT_L] = 3
+	sm[NpcGarmentFit.R_FOOT_R] = 3
+	tol[NpcGarmentFit.R_FOOT_L] = 0.0
+	tol[NpcGarmentFit.R_FOOT_R] = 0.0
+	return {"rg": rg, "w": W, "ease": E, "fold": F, "tb": TB, "cr": CR, "k": k, "ttop": ttop, "smooth": sm, "tol": tol}
+
+
+static var _draped_cache := {}
+
+
+static func _draped_tables(fit: Dictionary, sex: String, sidx: int) -> Array:
+	var tabs: Array = NpcGarmentFit.tables(sex, sidx)
+	var out := []
+	for r in NpcGarmentFit.REGIONS:
+		if fit.ttop[r] > -INF:
+			# many garments share the same drape (same top slice and settings)
+			var top_slice := int(floor((fit.ttop[r] - tabs[r].tmin) / NpcGarmentFit.DT))
+			var key := "%s|%d|%d|%d|%.3f|%d|%.4f" % [sex, sidx, r, top_slice, fit.k[r], fit.smooth[r], fit.tol[r]]
+			if not _draped_cache.has(key):
+				_draped_cache[key] = NpcGarmentFit.draped(tabs[r], fit.ttop[r], fit.k[r], fit.smooth[r], fit.tol[r])
+			out.append(_draped_cache[key])
+		else:
+			out.append({})
+	return out
+
+
+## [position on the envelope, how much to trust it (0..1), angle 0..1]
+static func _envelope_point(fit: Dictionary, dr: Array, j: int, p: Vector3, min_off: float) -> Array:
+	var r: int = fit.rg[j]
+	var e: float = fit.ease[j]
+	var f: float = fit.fold[j]
+	var pr: Array = NpcGarmentFit.project(dr[r], p, e, min_off, f)
+	var trust := smoothstep(0.35, 0.7, pr[2]) if r == NpcGarmentFit.R_TRUNK else 1.0
+	var tb: float = fit.tb[j]
+	if tb > 0.0 and not dr[NpcGarmentFit.R_TRUNK].is_empty():
+		# near the crotch the front and back of the legs join the trunk panel
+		# (no notch between the legs); inner-thigh points keep their own tube
+		var tp: Array = NpcGarmentFit.project(dr[NpcGarmentFit.R_TRUNK], p, e, min_off, f)
+		var s := tb * smoothstep(0.55, 0.8, tp[2])
+		pr[0] = (pr[0] as Vector3).lerp(tp[0], s)
+	var cr: float = fit.cr[j]
+	if cr > 0.0 and not dr[NpcGarmentFit.R_TRUNK].is_empty():
+		var cp: Array = NpcGarmentFit.project(dr[NpcGarmentFit.R_TRUNK], p, e, min_off, 0.0, 0.2)
+		pr[0] = (pr[0] as Vector3).lerp(cp[0], cr)
+		trust = maxf(trust, cr)
+	return [pr[0], trust, pr[3]]
+
+
 ## Smooths the garment so it hangs over the body instead of following every
 ## muscle (shoes lose the toes), keeps it at least a minimum distance off the
 ## skin, and adds real fold geometry where cloth bunches (elbows, knees, ankles,
 ## waist). The same offsets go onto every blend shape so the garment still
 ## follows weight, muscle and face shapes.
-static func _drape(it: Dictionary, out: Array, out_shapes: Array, keep: PackedInt32Array, V: PackedVector3Array, N: PackedVector3Array, th: PackedFloat32Array, UV: PackedVector2Array, UV2: PackedVector2Array) -> void:
+static func _drape(it: Dictionary, sex: String, out: Array, out_shapes: Array, keep: PackedInt32Array, V: PackedVector3Array, N: PackedVector3Array, th: PackedFloat32Array, UV: PackedVector2Array, UV2: PackedVector2Array, src_shapes: Array) -> void:
 	var pv: PackedVector3Array = out[Mesh.ARRAY_VERTEX]
 	var idx: PackedInt32Array = out[Mesh.ARRAY_INDEX]
 	var n := pv.size()
@@ -454,6 +678,8 @@ static func _drape(it: Dictionary, out: Array, out_shapes: Array, keep: PackedIn
 	var min_off: float = maxf(float(it.thick) * 0.75, MIN_OFF.get(it.slot, 0.004))
 	var delta := PackedVector3Array()
 	delta.resize(n)
+	var bunch := PackedVector3Array()
+	bunch.resize(n)
 	for j in n:
 		var w := weld[j]
 		var v := keep[j]
@@ -477,16 +703,55 @@ static func _drape(it: Dictionary, out: Array, out_shapes: Array, keep: PackedIn
 			joint = 0.6 * exp(-pow((yn - 0.58) / 0.03, 2.0))
 		if joint > 0.0 and not it.slot in UNDER:
 			var wave := sin(yn * 175.0 + sin(ang * 31.0) * 1.7 + sin(ang * 13.0 + yn * 40.0))
-			p += N[v] * (0.0045 * joint * (0.5 + 0.5 * wave))
+			bunch[j] = N[v] * (0.004 * joint * (0.5 + 0.5 * wave))
 		delta[j] = p - pv[j]
-	for j in n:
-		pv[j] += delta[j]
-	out[Mesh.ARRAY_VERTEX] = pv
-	for sa in out_shapes:
-		var sp: PackedVector3Array = sa[Mesh.ARRAY_VERTEX]
+	# Volume: push onto the hull envelope (NpcGarmentFit), for the base body and
+	# for each build shape, so clothes stand off the body and still follow it.
+	var fit := _fit_plan(it, sex, keep, V, UV)
+	var ouv2: PackedVector2Array = out[Mesh.ARRAY_TEX_UV2]
+	var W: PackedFloat32Array = fit.w
+	var names: Array = NpcBody.shape_names()
+	var base_final := PackedVector3Array()
+	base_final.resize(n)
+	var sets := [-1]
+	for si in names.size():
+		if names[si] in FIT_SHAPES:
+			sets.append(si)
+	var finals := {}
+	for sidx in sets:
+		var P: PackedVector3Array = V if sidx < 0 else src_shapes[sidx][Mesh.ARRAY_VERTEX]
+		var G: PackedVector3Array = pv if sidx < 0 else out_shapes[sidx][Mesh.ARRAY_VERTEX]
+		var dr := _draped_tables(fit, sex, sidx)
+		var res := PackedVector3Array()
+		res.resize(n)
 		for j in n:
-			sp[j] += delta[j]
-		sa[Mesh.ARRAY_VERTEX] = sp
+			var off_p := G[j] + delta[j]
+			if W[j] > 0.0:
+				var env: Array = _envelope_point(fit, dr, j, P[keep[j]], min_off)
+				var wj: float = W[j] * env[1]
+				if sidx < 0:
+					W[j] = wj
+					if wj > 0.5:
+						ouv2[j].x = env[2]   # pattern/seam angle around this limb
+				off_p = off_p.lerp(env[0], wj)
+			res[j] = off_p + bunch[j]
+		finals[sidx] = res
+	base_final = finals[-1]
+	for si in out_shapes.size():
+		var sp: PackedVector3Array = out_shapes[si][Mesh.ARRAY_VERTEX]
+		if finals.has(si):
+			sp = finals[si]
+		else:
+			# other shapes (ethnicity, face, muscle flex): follow the body, but flexing
+			# muscles don't show through loose cloth
+			var flex: bool = String(names[si]).contains("_flex")
+			for j in n:
+				var k := 1.0 - W[j] if flex else 1.0
+				sp[j] = base_final[j] + (sp[j] - pv[j]) * k
+		out_shapes[si][Mesh.ARRAY_VERTEX] = sp
+	pv = base_final
+	out[Mesh.ARRAY_VERTEX] = pv
+	out[Mesh.ARRAY_TEX_UV2] = ouv2
 	# smooth normals from the new surface
 	var nn := PackedVector3Array()
 	nn.resize(n)
@@ -505,3 +770,5 @@ static func _drape(it: Dictionary, out: Array, out_shapes: Array, keep: PackedIn
 			v2 = v2.normalized()
 			on[j] = v2 if v2.dot(on[j]) >= 0.0 else -v2
 	out[Mesh.ARRAY_NORMAL] = on
+	for sa in out_shapes:
+		sa[Mesh.ARRAY_NORMAL] = on.duplicate()

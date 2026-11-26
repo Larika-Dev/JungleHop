@@ -57,7 +57,7 @@ static func _build(sex: String, style: String) -> ArrayMesh:
 	var st: Array = STYLE[style]
 	var rng := RandomNumberGenerator.new()
 	rng.seed = hash(key_of(sex, style))
-	var want := 2600
+	var want := 4200
 	var step := maxi(1, roots.size() / want)
 	var pos := PackedVector3Array()
 	var nrm := PackedVector3Array()
@@ -73,7 +73,8 @@ static func _build(sex: String, style: String) -> ArrayMesh:
 		var p := p0
 		# comb: away from the face (back and to the side), parted at the middle
 		var sx := signf(p0.x) if absf(p0.x) > 0.004 else (1.0 if r % 2 == 0 else -1.0)
-		var comb := Vector3(sx * 0.6, 0.15, 1.0).normalized()
+		# roots near the middle comb mostly back (a thin parting, not a bald wedge)
+		var comb := Vector3(sx * 0.6 * clampf(absf(p0.x) / 0.035, 0.2, 1.0), 0.15, 1.0).normalized()
 		var d := (n0 * 0.5 + comb).normalized()
 		var tied := false
 		var face_y := c.y + rad.y * 0.05

@@ -8,6 +8,9 @@ uniform vec3 color2 : source_color = vec3(0.3);
 uniform int pattern = 0;     // 0 solid, 1 stripes, 2 plaid, 3 denim, 4 knit, 5 leather
 uniform float is_shoe = 0.0;
 uniform float detail = 1.0;
+uniform int kind = 0;          // 0 top, 1 trousers, 2 skirt/dress, 3 jacket/coat, 4 shoes, 5 underwear
+uniform float quilted = 0.0;   // puffer baffles
+uniform float pockets = 0.0;   // jeans/chinos: front pocket openings, back pockets, belt loops
 
 float hash(vec2 p) { return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453); }
 float vnoise(vec2 p) {
@@ -51,8 +54,11 @@ void fragment() {
 		c = mix(color, color2, max(a, b) * 0.75);
 		c = mix(c, color2 * 0.7, a * b);
 	} else if (pattern == 3) {
-		float twill = fract((q.x + q.y) * 0.9);
-		c *= 0.85 + 0.25 * step(0.5, twill) * detail + 0.12 * vnoise(q * vec2(0.05, 0.6));
+		// diagonal twill, faded out where it would alias into moire at a distance
+		float tw = (q.x + q.y) * 0.9;
+		float aa = clamp(1.0 - fwidth(tw) * 1.5, 0.0, 1.0);
+		float twill = 0.5 + 0.5 * sin(tw * 6.2832);
+		c *= 0.9 + 0.14 * twill * detail * aa + 0.1 * vnoise(q * vec2(0.05, 0.6));
 	} else if (pattern == 4) {
 		c *= 0.9 + 0.12 * abs(sin(q.x * 2.2)) * detail * (0.7 + 0.3 * sin(q.y * 1.6));
 		rough = 0.95;
@@ -64,11 +70,43 @@ void fragment() {
 	if (is_shoe > 0.5 && yn < 0.012) { c = color2; rough = 0.7; }   // sole
 	c *= 0.93 + 0.07 * f0;   // shading in the fold valleys
 	// seams: a stitched line down the sides and around the hems
-	float seam_d = min(abs(fract(UV2.x + 0.25) - 0.5), abs(fract(UV2.x) - 0.5));
+	float seam_d = min(abs(fract(UV2.x + 0.5) - 0.5), abs(fract(UV2.x) - 0.5));   // side seams (0.75 = front)
 	float seam = 1.0 - smoothstep(0.002, 0.004, seam_d);
 	float stitch = step(0.5, fract(yn * 900.0)) * (1.0 - smoothstep(0.004, 0.006, abs(seam_d - 0.006)));
 	c *= 1.0 - seam * 0.15 * detail;
 	c = mix(c, color2 * 1.2, stitch * 0.5 * detail * float(pattern == 3));
+	// Construction details. UV2.y = distance inside the garment's edge (height
+	// fractions, ~1.7 m), so hems, cuffs, collars and waistbands sit at the edges.
+	float edge = UV2.y;
+	float ang = UV2.x;    // 0.75 = centre front, 0.25 = centre back
+	if (kind != 4 && kind != 5 && part != 12) {
+		float band = (kind == 1) ? 0.022 : 0.012;          // waistband / hem band
+		float in_band = 1.0 - smoothstep(band - 0.001, band, edge);
+		c *= 1.0 - 0.07 * in_band;
+		float st = 1.0 - smoothstep(0.0006, 0.0012, abs(edge - band + 0.002));
+		c = mix(c, c * 0.72, st * step(0.5, fract(yn * 600.0)) * detail);
+	}
+	if (pockets > 0.5 && part <= 1) {
+		float fa = abs(ang - 0.75);           // from centre front
+		float ba = abs(ang - 0.25);           // from centre back
+		// front pocket openings: a curve from the waistband down to the side
+		float py = 0.6 - 0.022 - (fa - 0.07) * 0.55;
+		float pk = (1.0 - smoothstep(0.0008, 0.0018, abs(yn - py))) * step(0.07, fa) * step(fa, 0.15);
+		// back patch pockets
+		float bp = step(0.025, ba) * step(ba, 0.1) * step(0.505, yn) * step(yn, 0.565);
+		float bpe = bp * (1.0 - step(0.03, ba) * step(ba, 0.095) * step(0.51, yn) * step(yn, 0.56));
+		// belt loops
+		float loop = step(abs(fract(ang * 8.0 + 0.5) - 0.5), 0.012) * (1.0 - smoothstep(0.02, 0.022, edge));
+		c = mix(c, c * 0.62, max(pk, bpe * 0.8) * detail);
+		c = mix(c, c * 0.8, loop);
+	}
+	if (quilted > 0.5) {
+		float q = abs(fract(yn * 38.0) - 0.5) * 2.0;     // horizontal baffles ~4.5 cm
+		NORMAL_MAP = normalize(vec3(0.0, (q < 0.15 ? 1.0 : -0.25) * sign(fract(yn * 38.0) - 0.5) * 0.45, 1.0)) * 0.5 + 0.5;
+		c *= 0.78 + 0.22 * smoothstep(0.0, 0.35, q);
+		rough = 0.6;
+		spec = 0.3;
+	}
 	ALBEDO = c;
 	ROUGHNESS = rough;
 	SPECULAR = spec;
