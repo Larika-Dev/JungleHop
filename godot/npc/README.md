@@ -51,8 +51,19 @@ without anyone leaving the bounds. Verified on the 4,000: men 89.9%, women 90.0%
 * Hands: palm, four fingers and a thumb with knuckles and nails, two bones per finger (38 bones total). Fingers curl a little while walking; `body.set_grip(0..1)` closes them into a fist.
 * Feet: five toes with nails inside the shoe toe box; `outfit.barefoot = true` (or `body.set_barefoot(true)`) reshapes the foot and shows them.
 * Face: eyeballs (iris, pupil, limbal ring) in sockets with upper and lower lids; nose with bridge, tip, alae and nostrils; philtrum, upper and lower lips and mouth line; cheekbones, nasolabial folds, jaw and chin; ears with concha and lobe; brow ridge. The fat shape fills out cheeks and jaw.
-* Not modeled: facial expressions or talking mouth, hair strands, faces with expressions, cloth
-  simulation. Hair, eyes, lips and clothing are painted by the shader.
+* Clothes (`npc_wardrobe.gd` + `npc_garment_fit.gd`): every garment is its own skinned mesh with
+  real volume. The body is sliced along the trunk, legs, arms and feet; each slice outline is
+  replaced by its convex hull (cloth bridges the chest, the groin and the seat instead of
+  following them), cloth hangs from the widest point above it (it can only come back in at a
+  limited slope), is smoothed, and gets ease: about 1.5 cm on shirts, 2.5-4.5 cm on jackets,
+  1.6-2.2 cm on trouser legs. Skirts and dresses add a tube around both legs that hangs from the
+  hips with flare, folds or pleats. The fit is redone for the fat, slim and muscle shapes, so
+  clothes follow weight and muscle changes; muscle flex does not show through. Crew and V
+  necklines, waistbands, hem bands, jean pockets and belt loops, quilted puffers.
+  `npc/tests/test_clothes.gd` checks ease, chest and groin coverage; `npc/tests/render_people.sh`
+  renders close-ups (faces, torsos, backs, hands) of six people.
+* Ethnicity blend shapes are height-neutral (MakeHuman's targets changed stature by up to 10 cm).
+* Not modeled: facial expressions or talking mouth, cloth simulation (cloth is fitted, not simulated).
 
 ## API (`NPCs` autoload)
 
