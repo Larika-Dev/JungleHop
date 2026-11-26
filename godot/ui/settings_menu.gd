@@ -131,6 +131,7 @@ func _fill_graphics() -> void:
 	_check(g, "Volumetric fog and light shafts", Settings.volumetric_fog, func(x): Settings.volumetric_fog = x)
 	_slider(g, "Grass density", 0.0, 1.0, 0.05, Settings.grass_density, "%.2f", func(x): Settings.grass_density = x)
 	_slider(g, "Detailed tree distance", 100, 500, 10, Settings.foliage_distance, "%d m", func(x): Settings.foliage_distance = x)
+	_slider(g, "Detailed building distance", 50, 300, 10, Settings.building_distance, "%d m", func(x): Settings.building_distance = x)
 
 
 func _option(g: GridContainer, t: String, items: Array, val: int, cb: Callable) -> void:

@@ -234,6 +234,7 @@ func _build(id: String) -> void:
 		var z1: float = rc[3]
 		var y: float = r["y"]
 		var h: float = maxf(r.get("ceilingCm", 280) / 100.0, 2.3)
+		h = minf(h, _attic_cap(id, r))
 		floors[int(r["floor"])] = y
 		var room_node := Node3D.new()
 		room_node.name = String(r["roomId"])
@@ -304,6 +305,26 @@ func _build(id: String) -> void:
 	add_child(root)
 	loaded[id] = root
 	building_loaded.emit(id, root)
+
+
+## Attic rooms under a pitched roof: keep the room's ceiling under the roof slope so the walls
+## don't poke through the modeled roof (BuildingDetail uses the same eave height and pitch).
+func _attic_cap(id: String, r: Dictionary) -> float:
+	var bd := CityData.building(id)
+	if id.begins_with("LM") or String(bd.get("facade", {}).get("roof", "flat")) == "flat":
+		return 99.0
+	var eave: float = bd.get("roofCm", 0) / 100.0
+	var y: float = r["y"]
+	if y < eave - 0.05:
+		return 99.0
+	var d: float = bd.get("footprintCm", [1000, 1000])[1] / 100.0
+	var rc: Array = r["rect"]
+	var edge := minf(minf(rc[1], d - rc[1]), minf(rc[3], d - rc[3]))
+	if String(bd["facade"].get("roof", "")) == "hip":
+		var w: float = bd["footprintCm"][0] / 100.0
+		edge = minf(edge, minf(minf(rc[0], w - rc[0]), minf(rc[2], w - rc[2])))
+	var pitch := deg_to_rad(35.0 if bd.get("typology", "") == "house" else 28.0)
+	return maxf(eave + edge * tan(pitch) - y - 0.08, 0.3)
 
 
 ## One wall run along a room edge (a -> b, axis-aligned), offset outward by WALL_T, with openings cut.

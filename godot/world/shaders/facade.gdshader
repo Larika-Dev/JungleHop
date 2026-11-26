@@ -55,16 +55,49 @@ void fragment() {
 	float spec = 0.45;
 	float h = 0.0;
 	vec3 emis = vec3(0.0);
-	bool roof = n.y > 0.55;
+	// explicit surface kind from the modeled buildings (Mesher.KIND_*), 20 = classify by color
+	int kind = int(round(COLOR.a * 20.0));
+	bool modeled = kind < 20;
+	float hb = UV2.x;      // height above the ground floor (modeled only)
+	float dirt = UV2.y;    // per-building dirt amount (modeled only)
+	bool roof = modeled ? (kind >= 12 && kind <= 16) : n.y > 0.55;
 	if (roof) {
 		vec2 p = wpos.xz;
-		if (mx < 0.06) {
+		if (modeled && n.y < 0.97) {
+			// slope-aligned coordinates: along the eave, up the slope
+			vec3 te = normalize(cross(vec3(0.0, 1.0, 0.0), n) + vec3(1e-5, 0.0, 0.0));
+			vec3 up_s = normalize(cross(n, te));
+			p = vec2(dot(wpos, te), dot(wpos, up_s));
+		}
+		if (modeled && kind == 13) {
+			// slate: staggered courses with chipped edges and color variation
+			vec2 b = cm_bricks(p, vec2(0.3, 0.16), 0.01);
+			col = base * (0.75 + 0.5 * b.y) * (0.9 + 0.2 * cm_fbm(p * 0.3, 3));
+			h = (1.0 - b.x) * cm_aa(6.0, fw) + fract(p.y / 0.16) * 0.6 * cm_aa(6.0, fw);
+			rough = 0.55 + 0.25 * b.y;
+			spec = 0.55;
+		} else if (modeled && kind == 12) {
+			// asphalt shingles: tabs, granule noise, algae streaks
+			vec2 b = cm_bricks(p, vec2(0.333, 0.142), 0.008);
+			float gran = cm_noise(p * 120.0) * cm_aa(120.0, fw);
+			col = base * (0.85 + 0.3 * b.y) * (0.92 + 0.16 * gran);
+			float algae = smoothstep(0.55, 0.8, cm_noise(vec2(p.x * 2.0, p.y * 0.3))) * (0.3 + dirt * 0.5);
+			col = mix(col, col * vec3(0.55, 0.6, 0.55), algae * 0.5);
+			h = (1.0 - fract(p.y / 0.142)) * cm_aa(7.0, fw) + b.x * cm_aa(4.0, fw);
+			rough = 0.92;
+		} else if (modeled && kind == 16) {
+			float rib = smoothstep(0.46, 0.5, abs(fract(p.x / 0.45) - 0.5));
+			col = base * (0.85 + 0.2 * cm_fbm(p * 0.5, 3));
+			h = rib * cm_aa(4.0, fw) * 2.0;
+			metal = 0.6;
+			rough = 0.4;
+		} else if (!modeled && mx < 0.06) {
 			// slate / shingle courses
 			vec2 b = cm_bricks(p, vec2(0.36, 0.2), 0.012);
 			col = base * (0.8 + 0.4 * b.y) * (0.9 + 0.2 * cm_fbm(p * 0.2, 3));
 			h = (1.0 - b.x) * cm_aa(5.0, fw);
 			rough = 0.7 + 0.2 * b.y;
-		} else if (sat < 0.12 && mx > 0.45) {
+		} else if ((modeled && kind == 14) || (sat < 0.12 && mx > 0.45)) {
 			// membrane roof with seams, ponding stains and HVAC grime
 			col = base * (0.9 + 0.12 * cm_fbm(p * 0.4, 3));
 			col = mix(col, base * 0.6, smoothstep(0.6, 0.85, cm_fbm(p * 0.15, 4)) * 0.5);
@@ -84,8 +117,44 @@ void fragment() {
 		float u = dot(wpos, t);
 		float v = wpos.y;
 		vec2 wp = vec2(u, v);
-		bool brick = base.r > base.g * 1.7 && base.r > base.b * 1.7 && mx > 0.05;
-		if (brick) {
+		bool brick = modeled ? kind == 2 : (base.r > base.g * 1.7 && base.r > base.b * 1.7 && mx > 0.05);
+		bool stucco = modeled ? (kind == 6 || kind == 10 || kind == 18) : (sat < 0.25 && mx > 0.3);
+		bool stone = modeled ? (kind == 8 || kind == 5) : sat < 0.3;
+		if (modeled && kind == 3) {
+			// fieldstone: irregular stones, deep mortar, moss in the joints
+			vec2 vo = cm_voronoi(wp * vec2(3.2, 4.2));
+			float jm = 1.0 - smoothstep(0.03, 0.09, vo.x);
+			col = base * (0.75 + 0.5 * vo.y) * (0.9 + 0.2 * cm_fbm(wp * 3.0, 3));
+			col = mix(col, mortar * 0.5, jm * 0.8);
+			h = (1.0 - jm) * 3.0 * cm_aa(4.0, fw) + cm_fbm(wp * 9.0, 3) * cm_aa(18.0, fw);
+			rough = 0.9;
+		} else if (modeled && kind == 4) {
+			// painted lap siding: 15 cm boards with a shadow line, brush grain, paint fade
+			float lap = fract(v / 0.152);
+			col = base * (0.9 + 0.1 * lap) * (0.95 + 0.06 * cm_noise(vec2(u * 0.7, v * 30.0)) * cm_aa(30.0, fw));
+			col *= 1.0 - (1.0 - smoothstep(0.0, 0.08, lap)) * 0.35 * cm_aa(7.0, fw);
+			h = lap * cm_aa(7.0, fw) * 2.0 + (cm_noise(vec2(u * 40.0, v * 3.0)) - 0.5) * 0.2 * cm_aa(40.0, fw);
+			rough = 0.55;
+		} else if (modeled && kind == 11) {
+			// painted wood: vertical grain
+			col = base * (0.92 + 0.08 * cm_noise(vec2(u * 3.0, v * 40.0)) * cm_aa(40.0, fw));
+			h = cm_noise(vec2(u * 2.0, v * 60.0)) * 0.3 * cm_aa(60.0, fw);
+			rough = 0.6;
+		} else if (modeled && kind == 18) {
+			// awning canvas: weave + sun fade on top
+			float weave = (cm_noise(wp * 220.0) - 0.5) * cm_aa(220.0, fw);
+			col = base * (0.95 + 0.08 * weave) * (1.0 + max(n.y, 0.0) * 0.12);
+			h = weave * 0.3;
+			rough = 0.95;
+			spec = 0.2;
+		} else if (modeled && kind == 10) {
+			// smooth paint / trim / metalwork: faint orange peel + chipping
+			col = base * (0.97 + 0.05 * cm_fbm(wp * 6.0, 3));
+			float chip = smoothstep(0.78, 0.84, cm_fbm(wp * 9.0 + 3.1, 4)) * dirt;
+			col = mix(col, col * 0.6, chip);
+			h = cm_noise(wp * 90.0) * 0.08 * cm_aa(90.0, fw) - chip * 0.6;
+			rough = 0.5;
+		} else if (brick) {
 			// modular brick 19.4 x 5.7 cm + 1 cm joints (CLAUDE.md §5), jitter value ±6%
 			vec2 b = cm_bricks(wp, vec2(0.204, 0.067), 0.01);
 			float ba = cm_aa(15.0, fw);
@@ -95,12 +164,12 @@ void fragment() {
 			col = mix(col, mortar * 0.55, b.x * ba);
 			rough = mix(0.78 + 0.14 * b.y, 0.95, b.x);
 			h = (1.0 - b.x) * ba + (cm_noise(wp * 60.0) - 0.5) * 0.15 * cm_aa(60.0, fw);
-		} else if (sat < 0.25 && mx > 0.3) {
+		} else if (stucco) {
 			// stucco, painted trim, limestone: fine grain + soft mottling
 			col = base * (0.94 + 0.08 * cm_fbm(wp * 3.0, 4) + 0.04 * (cm_noise(wp * 50.0) - 0.5) * cm_aa(50.0, fw));
 			h = cm_fbm(wp * 12.0, 3) * cm_aa(30.0, fw) * 0.5;
 			rough = 0.8;
-		} else if (sat < 0.3) {
+		} else if (stone) {
 			// stone / concrete: coursed blocks with chiselled faces
 			vec2 b = cm_bricks(wp, vec2(0.61, 0.305), 0.012);
 			col = base * (0.88 + 0.22 * b.y) * (0.92 + 0.16 * cm_fbm(wp * 2.0, 4));
@@ -117,6 +186,20 @@ void fragment() {
 		float streak = cm_noise(vec2(u * 6.0, v * 0.25)) * cm_noise(vec2(u * 1.3, v * 0.6));
 		col *= 1.0 - smoothstep(0.35, 0.7, streak) * 0.18;
 		col *= 0.9 + 0.12 * cm_fbm(wp * 0.15, 3);
+		if (modeled && kind != 18) {
+			// splash-zone grime at the base, dark drip trails, moss on north faces
+			float splash = 1.0 - smoothstep(0.0, 0.9 + 0.4 * cm_noise(vec2(u * 2.0, 0.0)), hb);
+			col *= 1.0 - splash * (0.18 + 0.25 * dirt);
+			float drip = smoothstep(0.62, 0.9, cm_noise(vec2(u * 9.0, v * 0.35 + cm_hash(vec2(floor(u * 9.0), 1.0)) * 7.0)));
+			col *= 1.0 - drip * 0.22 * dirt;
+			if (kind == 2 || kind == 3 || kind == 8) {
+				float north = clamp(-n.z, 0.0, 1.0);
+				float moss = splash * north * smoothstep(0.45, 0.75, cm_fbm(wp * 2.5, 3));
+				col = mix(col, vec3(0.08, 0.1, 0.035), moss * 0.6);
+				// efflorescence blooms on masonry
+				col = mix(col, vec3(0.8, 0.78, 0.72), smoothstep(0.7, 0.9, cm_fbm(wp * 1.7 + 9.0, 4)) * 0.12 * dirt);
+			}
+		}
 		if (windows) {
 			// window grid
 			float cu = floor(u / bay_w);
