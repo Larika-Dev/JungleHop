@@ -47,6 +47,9 @@ The pck is embedded, so `CathedralMount.exe` is a single file (about 130 MB). It
 ```bash
 godot --headless --path godot res://tests/smoke_test.tscn      # clock, spawn, interiors, doors, stairs, walking, save/load
 xvfb-run godot --path godot res://tests/shots.tscn -- /tmp/shots  # review screenshots (needs a real renderer)
+godot --headless --path godot -s res://world/tests/props_test.gd < /dev/null   # street props, decals, café furniture
+xvfb-run godot --path godot res://tests/env_shots.tscn -- /tmp/env   # 9 street-level environment views
+xvfb-run godot --path godot res://tests/prop_gallery.tscn -- /tmp/gallery.png [--lod] [model ...]   # prop catalog
 ```
 
 ## Updating the city
@@ -62,14 +65,22 @@ tools/godot/sync-data.sh         # copies data into godot/data and rebuilds godo
 interiors are built at runtime from `rooms.json` within 35 m of the player (`world/interior_streamer.gd`),
 with hinged doors and stair/elevator travel between floors.
 
+Street dressing comes from `data/props.json` (`tools/godot/export-godot-props.ts`, placed on the web city's
+road network): lamp posts, signals, signs, benches, bins, hydrants, bike racks and bicycles, parked cars,
+café seating (real Furniture pieces), planters, mailboxes, dumpsters, utility poles with wires, litter,
+shrubs, ferns, and ground decals (leaves, needles, cracks, patches, puddles, oil, mulch). Props are
+code-built meshes (`world/props/`), drawn as 64 m chunk MultiMeshes with LODs; the graphics preset scales
+their density and draw distance, and solid props get colliders near the player (`world/street_props.gd`,
+`world/ground_decals.gd`).
+
 ## Layout
 
 ```
 core/       autoloads: GameClock, GameState, Settings, CityData; interaction/interactable.gd
-world/      city scene, day/night, interior streamer, doors, floor travel, trees
+world/      city scene, day/night, interior streamer, doors, floor travel, trees, street props, decals
 player/     player controller and procedural character body
 ui/         UI autoload (theme, toasts, panels, action menu), title, settings, character creator, HUD, pause
-data/       buildings.json, rooms.json, palette.json, map labels, trees.json
+data/       buildings.json, rooms.json, palette.json, map labels, trees.json, props.json
 assets/     map GLBs and fonts (open licenses in assets/fonts)
 tests/      smoke test and screenshot scenes
 ```
