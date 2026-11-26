@@ -89,25 +89,60 @@ func _check(g: GridContainer, t: String, val: bool, cb: Callable) -> void:
 	g.add_child(c)
 
 
+var _gfx_grid: GridContainer
+
+
 func _graphics() -> Control:
-	var g := _grid("Graphics")
+	_gfx_grid = _grid("Graphics")
+	_fill_graphics()
+	return _gfx_grid.get_parent()
+
+
+## Rebuilt whenever the preset changes so every control shows the preset's value.
+func _fill_graphics() -> void:
+	var g := _gfx_grid
+	for c in g.get_children():
+		g.remove_child(c)
+		c.queue_free()
 	_label(g, "Quality preset")
 	var q := OptionButton.new()
 	for n in Settings.QUALITY_NAMES:
 		q.add_item(n)
 	q.selected = Settings.quality
+	q.tooltip_text = "Low: integrated graphics. Medium: older GPUs. High: most gaming PCs. Ultra: recent high-end GPUs."
 	q.item_selected.connect(func(i):
 		Settings.set_quality(i)
-		Settings.apply())
+		Settings.apply()
+		_fill_graphics.call_deferred())
 	g.add_child(q)
 	_check(g, "Fullscreen", Settings.fullscreen, func(x): Settings.fullscreen = x)
 	_check(g, "V-Sync", Settings.vsync, func(x): Settings.vsync = x)
-	_check(g, "Shadows", Settings.shadows, func(x): Settings.shadows = x)
 	_check(g, "Show FPS", Settings.show_fps, func(x): Settings.show_fps = x)
 	_slider(g, "Field of view", 55, 110, 1, Settings.fov, "%d°", func(x): Settings.fov = x)
 	_slider(g, "Resolution scale", 0.5, 1.0, 0.05, Settings.resolution_scale, "%.2f", func(x): Settings.resolution_scale = x)
+	_option(g, "Upscaler", ["Bilinear", "FSR 1", "FSR 2"], Settings.upscaler, func(i): Settings.upscaler = i)
+	_option(g, "Anti-aliasing", ["FXAA (fast)", "TAA", "TAA + MSAA 2x"], Settings.antialiasing, func(i): Settings.antialiasing = i)
 	_slider(g, "View distance", 300, 3000, 50, Settings.view_distance, "%d m", func(x): Settings.view_distance = x)
-	return g.get_parent()
+	_check(g, "Shadows", Settings.shadows, func(x): Settings.shadows = x)
+	_option(g, "Shadow quality", ["Low", "Medium", "High", "Ultra"], Settings.shadow_quality, func(i): Settings.shadow_quality = i)
+	_option(g, "Global illumination", ["Off", "Screen-space", "Full (SDFGI)"], Settings.gi, func(i): Settings.gi = i)
+	_check(g, "Ambient occlusion", Settings.ambient_occlusion, func(x): Settings.ambient_occlusion = x)
+	_check(g, "Reflections", Settings.reflections, func(x): Settings.reflections = x)
+	_check(g, "Volumetric fog and light shafts", Settings.volumetric_fog, func(x): Settings.volumetric_fog = x)
+	_slider(g, "Grass density", 0.0, 1.0, 0.05, Settings.grass_density, "%.2f", func(x): Settings.grass_density = x)
+	_slider(g, "Detailed tree distance", 100, 500, 10, Settings.foliage_distance, "%d m", func(x): Settings.foliage_distance = x)
+
+
+func _option(g: GridContainer, t: String, items: Array, val: int, cb: Callable) -> void:
+	_label(g, t)
+	var o := OptionButton.new()
+	for it in items:
+		o.add_item(it)
+	o.selected = clampi(val, 0, items.size() - 1)
+	o.item_selected.connect(func(i):
+		cb.call(i)
+		Settings.apply())
+	g.add_child(o)
 
 
 func _audio() -> Control:

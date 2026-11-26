@@ -168,7 +168,24 @@ void fragment() {
 	ALBEDO = col;
 	ROUGHNESS = rough;
 	SPECULAR = spec;
-	if (mat == 0) {
-		SSS_STRENGTH = 0.0;
+	if (mat == 0 || mat == 6) {
+		// Skin: subsurface scattering (soft light bleed, red terminator) and a faint peach-fuzz rim.
+		SSS_STRENGTH = 0.55 * detail;
+		RIM = 0.12;
+		RIM_TINT = 0.6;
+		if (part == 3 && mat == 0) {
+			// oilier T-zone (forehead, nose) is a little glossier
+			float tz = smoothstep(14.0, 0.0, df) * smoothstep(0.9, 0.95, yn);
+			ROUGHNESS = rough - 0.12 * tz;
+		}
+	}
+	if (mat == 5 || mat == 6 || mat == 7) {
+		// wet eyes, lips and nails: a thin clear coat over the base
+		CLEARCOAT = mat == 5 ? 1.0 : (mat == 6 ? 0.35 : 0.7);
+		CLEARCOAT_ROUGHNESS = mat == 5 ? 0.02 : 0.25;
+	}
+	if (mat == 1 || mat == 2) {
+		RIM = 0.3;          // cloth sheen
+		RIM_TINT = 0.7;
 	}
 }

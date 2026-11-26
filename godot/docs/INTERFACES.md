@@ -63,6 +63,13 @@ Same as the three.js city: **1 unit = 1 m, +X east, −Z north, +Y up**, origin 
 Graphics (quality preset, resolution scale, fullscreen, vsync, fov, shadows, view distance), audio buses
 (Master/Music/SFX/Ambient), controls (mouse sensitivity, invert Y, rebindable keys). `signal settings_changed`.
 Read `Settings.view_distance` (m) and `Settings.quality` (0 low … 3 ultra) to scale NPC/furniture detail.
+Advanced graphics (set by `Settings.set_quality`, each overridable): `gi` (0 off, 1 SSIL, 2 SDFGI), `reflections`,
+`volumetric_fog`, `ambient_occlusion`, `antialiasing` (0 FXAA, 1 TAA, 2 TAA+MSAA), `upscaler` (0 bilinear, 1 FSR1, 2 FSR2),
+`shadow_quality` (0..3), `grass_density` (0..1), `foliage_distance` (m). First launch picks a preset from the GPU.
+
+Shader globals (project.godot `[shader_globals]`, set by DayNight / Settings): `cm_night` (0 day … 1 night),
+`cm_wind` (xy direction, z gust, w time), `cm_sun_dir`, `cm_quality`. World shaders live in `world/shaders/`
+(ground, facade, foliage, grass, water, interior, sky; shared noise in `noise.gdshaderinc`).
 
 ### `CityData` — `res://core/city_data.gd`
 `buildings` (array), `building(id)`, `building_ids()`, `building_transform(id) -> Transform3D`,

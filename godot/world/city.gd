@@ -20,6 +20,13 @@ var interiors: InteriorStreamer
 var day_night: DayNight
 var map_root: Node3D
 var terrain_mat: ShaderMaterial
+var grass: GrassField
+var creek: Creek
+var _tree_near: Array[MultiMeshInstance3D] = []
+var _tree_far: Array[MultiMeshInstance3D] = []
+var _terrain_meshes: Array = []
+var _road_mesh: MeshInstance3D
+var street_lights: StreetLights
 
 
 func _ready() -> void:
@@ -34,6 +41,18 @@ func _ready() -> void:
 	interiors.building_loaded.connect(func(_id, _n): _update_terrain_holes())
 	interiors.building_unloaded.connect(func(_id): _update_terrain_holes.call_deferred())
 	_spawn_player()
+	grass = GrassField.new()
+	grass.name = "Grass"
+	add_child(grass)
+	grass.setup(_terrain_meshes)
+	grass.target = player
+	_build_creek.call_deferred()
+	if _road_mesh:
+		street_lights = StreetLights.new()
+		street_lights.name = "StreetLights"
+		add_child(street_lights)
+		street_lights.setup(_road_mesh)
+		street_lights.target = player
 	add_child(load(HUD_SCENE).instantiate())
 	GameState.world = self
 	GameState.in_game = true
@@ -59,12 +78,34 @@ func _load_map() -> void:
 	map_root.name = "Map"
 	add_child(map_root)
 	terrain_mat = ShaderMaterial.new()
-	terrain_mat.shader = load("res://world/terrain.gdshader")
+	terrain_mat.shader = load("res://world/shaders/ground.gdshader")
+	var road_mat := ShaderMaterial.new()
+	road_mat.shader = terrain_mat.shader
+	road_mat.set_shader_parameter("lift", 0.015)
+	var facade_shader: Shader = load("res://world/shaders/facade.gdshader")
+	var bld_mat := ShaderMaterial.new()
+	bld_mat.shader = facade_shader
+	bld_mat.set_shader_parameter("windows", true)
+	var lm_mat := ShaderMaterial.new()
+	lm_mat.shader = facade_shader
 	for mi in map_root.find_children("*", "MeshInstance3D", true, false):
 		var m := mi as MeshInstance3D
-		if String(m.name).to_lower().begins_with("terrain"):
+		var nm := String(m.name).to_lower()
+		var mat: Material = null
+		if nm.begins_with("terrain"):
+			mat = terrain_mat
+			if nm.begins_with("terrain_core"):
+				_terrain_meshes.append(m)
+		elif nm.begins_with("roads"):
+			mat = road_mat
+			_road_mesh = m
+		elif nm.begins_with("buildings"):
+			mat = bld_mat
+		elif nm.begins_with("landmarks"):
+			mat = lm_mat
+		if mat:
 			for s in m.mesh.get_surface_count():
-				m.set_surface_override_material(s, terrain_mat)
+				m.set_surface_override_material(s, mat)
 		else:
 			_fix_materials(m)
 		var lname := String(m.name).to_lower()
@@ -134,7 +175,7 @@ func _load_trees() -> void:
 	for key in leaf:
 		var pine: bool = key == "loblolly"
 		var bark := CityData.color("PINE_BARK" if pine else "OAK_BARK", Color(0.36, 0.34, 0.32))
-		near[key] = TreeKit.make(pine, leaf[key], bark, i)
+		near[key] = TreeKit.make(pine, leaf[key], bark, i, [0, 18, 30, 44][clampi(Settings.quality, 0, 3)])
 		far[key] = TreeKit.make_far(pine, leaf[key], bark)
 		i += 1
 	# Bucket instances into 200 m chunks so near/far meshes can switch per chunk.
@@ -170,10 +211,14 @@ func _load_trees() -> void:
 			if lod == 0:
 				mmi.visibility_range_end = TREE_NEAR
 				mmi.visibility_range_end_margin = 20.0
+				mmi.visibility_range_fade_mode = GeometryInstance3D.VISIBILITY_RANGE_FADE_SELF
+				_tree_near.append(mmi)
 			else:
 				mmi.visibility_range_begin = TREE_NEAR
 				mmi.visibility_range_begin_margin = 20.0
+				mmi.visibility_range_fade_mode = GeometryInstance3D.VISIBILITY_RANGE_FADE_SELF
 				mmi.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+				_tree_far.append(mmi)
 			root.add_child(mmi)
 
 
@@ -207,3 +252,16 @@ func _apply_settings() -> void:
 		player.camera.far = Settings.view_distance
 		player.camera.fov = Settings.fov
 	day_night.set_shadows(Settings.shadows, Settings.quality)
+	for m in _tree_near:
+		m.visibility_range_end = Settings.foliage_distance
+	for m in _tree_far:
+		m.visibility_range_begin = Settings.foliage_distance
+
+
+func _build_creek() -> void:
+	for i in 3:
+		await get_tree().physics_frame
+	creek = Creek.new()
+	creek.name = "Creek"
+	add_child(creek)
+	creek.build(func(x: float, z: float) -> float: return ground_height(Vector3(x, -100.0, z)))
