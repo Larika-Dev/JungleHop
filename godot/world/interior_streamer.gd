@@ -115,29 +115,61 @@ func _footprint_distance(id: String, p: Vector3) -> float:
 	return Vector2(dx, dz).length()
 
 
-func _mat(key: String) -> StandardMaterial3D:
+## Surface pattern per finish key (see world/shaders/interior.gdshader).
+const PATTERNS := {
+	"OAK_FLOOR": 1, "HEART_PINE": 1, "WALNUT_DARK": 1, "SPORTS_MAPLE": 1,
+	"VCT_A": 2, "VCT_B": 2, "TILE_WHITE_SUBWAY": 2, "HEX_TILE_WHITE": 2, "ACOUSTIC_TILE": 2, "MARBLE_WHITE": 2,
+	"CARPET_INN": 3, "CARPET_OFFICE": 3, "RUBBER_FLOOR": 3,
+	"SEALED_CONCRETE": 4, "CONCRETE_NEW": 4, "CONCRETE_AGED": 4, "CONCRETE_BOARDFORM": 4,
+	"TERRAZZO": 5, "PLASTER_CAMPUS": 6, "PLASTER_IVORY": 6,
+}
+const TILE_SIZES := {"TILE_WHITE_SUBWAY": 0.15, "HEX_TILE_WHITE": 0.05, "ACOUSTIC_TILE": 0.61, "MARBLE_WHITE": 0.61}
+
+
+func _mat(key: String) -> Material:
 	if _mats.has(key):
 		return _mats[key]
-	var m := StandardMaterial3D.new()
+	var m: Material
 	match key:
 		"_glass":
-			m.albedo_color = Color(0.75, 0.85, 0.9, 0.22)
-			m.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
-			m.roughness = 0.05
-			m.cull_mode = BaseMaterial3D.CULL_DISABLED
+			var g := StandardMaterial3D.new()
+			g.albedo_color = Color(0.75, 0.85, 0.9, 0.12)
+			g.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
+			g.roughness = 0.02
+			g.metallic_specular = 0.9
+			g.cull_mode = BaseMaterial3D.CULL_DISABLED
+			m = g
 		"_light":
-			m.albedo_color = Color(1, 1, 1)
-			m.emission_enabled = true
-			m.emission = CityData.color("INTERIOR_WARM", Color(1, 0.85, 0.63))
-			m.emission_energy_multiplier = 1.6
+			var l := StandardMaterial3D.new()
+			l.albedo_color = Color(1, 1, 1)
+			l.emission_enabled = true
+			l.emission = CityData.color("INTERIOR_WARM", Color(1, 0.85, 0.63))
+			l.emission_energy_multiplier = 3.0
+			m = l
 		"_door":
-			m.albedo_color = CityData.color("WALNUT_DARK", Color(0.31, 0.21, 0.14))
-			m.roughness = 0.6
+			var d := ShaderMaterial.new()
+			d.shader = _interior_shader()
+			d.set_shader_parameter("albedo", CityData.color("WALNUT_DARK", Color(0.31, 0.21, 0.14)))
+			d.set_shader_parameter("pattern", 1)
+			m = d
 		_:
-			m.albedo_color = CityData.color(key)
-			m.roughness = 0.85
+			var s := ShaderMaterial.new()
+			s.shader = _interior_shader()
+			s.set_shader_parameter("albedo", CityData.color(key))
+			s.set_shader_parameter("pattern", PATTERNS.get(key, 0))
+			s.set_shader_parameter("tile", TILE_SIZES.get(key, 0.305))
+			s.set_shader_parameter("grout", CityData.color("MORTAR_MODERN", Color(0.73, 0.71, 0.67)))
+			m = s
 	_mats[key] = m
 	return m
+
+
+var _ishader: Shader
+
+func _interior_shader() -> Shader:
+	if _ishader == null:
+		_ishader = load("res://world/shaders/interior.gdshader")
+	return _ishader
 
 
 # ------------------------------------------------------------------------------------------ build
@@ -211,7 +243,9 @@ func _build(id: String) -> void:
 		lamp.name = "Light"
 		lamp.position = Vector3((x0 + x1) * 0.5, y + h - 0.3, (z0 + z1) * 0.5)
 		lamp.omni_range = clampf(Vector2(x1 - x0, z1 - z0).length() * 0.75, 3.0, 18.0)
-		lamp.light_energy = 1.4
+		lamp.light_energy = 1.6
+		lamp.light_specular = 0.6
+		lamp.omni_attenuation = 1.4
 		lamp.light_color = CityData.color(String(r.get("lightingKey", "INTERIOR_WARM")), Color(1, 0.85, 0.63))
 		lamp.shadow_enabled = false
 		lamp.visible = false

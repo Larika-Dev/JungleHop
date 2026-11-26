@@ -63,7 +63,20 @@ void fragment() {
 	c *= 0.97 + 0.06 * vnoise(q * 0.35) * detail;
 	if (is_shoe > 0.5 && yn < 0.012) { c = color2; rough = 0.7; }   // sole
 	c *= 0.93 + 0.07 * f0;   // shading in the fold valleys
+	// seams: a stitched line down the sides and around the hems
+	float seam_d = min(abs(fract(UV2.x + 0.25) - 0.5), abs(fract(UV2.x) - 0.5));
+	float seam = 1.0 - smoothstep(0.002, 0.004, seam_d);
+	float stitch = step(0.5, fract(yn * 900.0)) * (1.0 - smoothstep(0.004, 0.006, abs(seam_d - 0.006)));
+	c *= 1.0 - seam * 0.15 * detail;
+	c = mix(c, color2 * 1.2, stitch * 0.5 * detail * float(pattern == 3));
 	ALBEDO = c;
 	ROUGHNESS = rough;
 	SPECULAR = spec;
+	if (pattern == 5) {
+		CLEARCOAT = 0.4;            // leather / shoe finish
+		CLEARCOAT_ROUGHNESS = 0.35;
+	} else {
+		RIM = pattern == 4 ? 0.5 : 0.3;   // fabric sheen at grazing angles (fuzz on knits)
+		RIM_TINT = 0.75;
+	}
 }
