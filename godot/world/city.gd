@@ -27,6 +27,7 @@ var _tree_far: Array[MultiMeshInstance3D] = []
 var _terrain_meshes: Array = []
 var _road_mesh: MeshInstance3D
 var street_lights: StreetLights
+var buildings: BuildingStreamer
 
 
 func _ready() -> void:
@@ -40,6 +41,11 @@ func _ready() -> void:
 	add_child(interiors)
 	interiors.building_loaded.connect(func(_id, _n): _update_terrain_holes())
 	interiors.building_unloaded.connect(func(_id): _update_terrain_holes.call_deferred())
+	buildings = BuildingStreamer.new()
+	buildings.name = "Buildings"
+	add_child(buildings)
+	interiors.building_loaded.connect(func(id, _n): buildings.set_interior_loaded(id, true))
+	interiors.building_unloaded.connect(func(id): buildings.set_interior_loaded(id, false))
 	_spawn_player()
 	grass = GrassField.new()
 	grass.name = "Grass"
@@ -100,7 +106,9 @@ func _load_map() -> void:
 			mat = road_mat
 			_road_mesh = m
 		elif nm.begins_with("buildings"):
-			mat = bld_mat
+			# replaced by the modeled exteriors (BuildingStreamer)
+			m.visible = false
+			continue
 		elif nm.begins_with("landmarks"):
 			mat = lm_mat
 		if mat:
@@ -252,6 +260,8 @@ func _apply_settings() -> void:
 		player.camera.far = Settings.view_distance
 		player.camera.fov = Settings.fov
 	day_night.set_shadows(Settings.shadows, Settings.quality)
+	if buildings:
+		buildings.set_quality(Settings.quality, Settings.building_distance)
 	for m in _tree_near:
 		m.visibility_range_end = Settings.foliage_distance
 	for m in _tree_far:

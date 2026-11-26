@@ -8,7 +8,7 @@ const PATH := "user://settings.cfg"
 const QUALITY_NAMES := ["Low", "Medium", "High", "Ultra"]
 const GRAPHICS_KEYS := ["quality", "fullscreen", "vsync", "resolution_scale", "fov", "shadows", "view_distance",
 	"show_fps", "gi", "reflections", "volumetric_fog", "ambient_occlusion", "antialiasing", "upscaler",
-	"grass_density", "foliage_distance", "shadow_quality"]
+	"grass_density", "foliage_distance", "shadow_quality", "building_distance"]
 const AUDIO_BUSES := ["Master", "Music", "SFX", "Ambient"]
 ## Rebindable actions shown in the Controls tab: action -> label.
 const REBINDABLE := {
@@ -46,6 +46,7 @@ var upscaler: int = 2
 var grass_density: float = 0.75       # 0 = no 3D grass
 var foliage_distance: float = 260.0   # detailed trees within this distance
 var shadow_quality: int = 2           # 0..3 -> atlas size and softness
+var building_distance: float = 160.0  # modeled building exteriors within this distance
 # Audio, linear 0..1
 var volumes := {"Master": 0.8, "Music": 0.6, "SFX": 0.8, "Ambient": 0.7}
 # Controls
@@ -167,6 +168,7 @@ func set_quality(q: int) -> void:
 	antialiasing = [0, 1, 1, 2][quality]
 	grass_density = [0.0, 0.35, 0.75, 1.0][quality]
 	foliage_distance = [140.0, 200.0, 260.0, 400.0][quality]
+	building_distance = [70.0, 110.0, 160.0, 240.0][quality]
 
 
 func save_settings() -> void:

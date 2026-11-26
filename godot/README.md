@@ -47,7 +47,22 @@ The pck is embedded, so `CathedralMount.exe` is a single file (about 130 MB). It
 ```bash
 godot --headless --path godot res://tests/smoke_test.tscn      # clock, spawn, interiors, doors, stairs, walking, save/load
 xvfb-run godot --path godot res://tests/shots.tscn -- /tmp/shots  # review screenshots (needs a real renderer)
+godot --headless --path godot -s res://tests/buildings_test.gd   # modeled building exteriors, all quality tiers
+xvfb-run godot --path godot --rendering-driver vulkan res://tests/building_shots.tscn -- /tmp/shots after-  # building review shots
 ```
+
+## Buildings
+
+Every non-landmark building's exterior is modeled in code (`world/buildings/`): `BuildingDetail` builds
+walls with real window and door openings (taken from the exterior openings in `rooms.json`, so they line
+up with the streamed interiors), sashes and muntins, sills, lintels, shutters, storefronts with signs and
+awnings, porches, cornices, gable / hip / gambrel roofs with gutters and downspouts, chimneys, fire
+escapes, balconies, utility clutter and rooftop units. `BuildingStreamer` builds them on worker threads
+around the camera and swaps between three levels: a simple massing far away, the modeled building, and a
+"fine" layer of small parts close up. Ranges follow the quality preset and the "Detailed building
+distance" setting (Low 70 m, Medium 110 m, High 160 m, Ultra 240 m). Surfaces use `facade.gdshader`
+(material kind in the vertex alpha: brick, siding, fieldstone, slate, shingle, canvas ... plus grime,
+drips, moss) and `window_glass.gdshader` (interior-mapped rooms and lit shops).
 
 ## Updating the city
 
